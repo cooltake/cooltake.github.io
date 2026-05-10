@@ -4,29 +4,17 @@ layout: default
 <article>
   <div class="post-header">
     <div class="container">
-      <a href="{{ '/' | relative_url }}" class="back-link">← 記事一覧に戻る</a>
+      <a href="{{ '/' | relative_url }}" class="back-link">← 記事一覧</a>
       <div class="post-meta">
-        <span class="post-tag">GUIDE</span>
-        <span class="post-date">{{ page.date | date: "%Y年%m月%d日" }}</span>
+        <span class="post-tag">{{ page.categories | first | default: "Guide" | upcase }}</span>
+        <span class="post-date">{{ page.date | date: "%Y.%m.%d" }}</span>
       </div>
       <h1 class="post-title">{{ page.title }}</h1>
     </div>
   </div>
   <div class="container">
     <div class="post-content">
-      <div class="post-author">
-        <div class="author-avatar">♪</div>
-        <div>
-          <p class="author-name">Cooltake Studio</p>
-          <p class="author-bio">DTM・音楽制作を始めたい人のための専門メディア。機材選びから録音・MIXの基礎まで、実践的な情報をお届けします。</p>
-        </div>
-      </div>
       {{ content }}
-      <div class="cta-banner">
-        <h3>DTM・音楽制作の情報を随時更新中</h3>
-        <p>マイク・ミキサー・エフェクターの選び方から録音・MIXの基礎まで解説しています。</p>
-        <a href="{{ '/' | relative_url }}" class="btn">他の記事も読む</a>
-      </div>
     </div>
   </div>
 </article>
