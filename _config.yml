@@ -1,0 +1,18 @@
+title: Cooltake Studio
+description: DTM・音楽制作を始めたい人のための専門メディア。マイク・ミキサー・エフェクターの選び方から録音・MIXの基礎まで丁寧に解説。
+url: "https://www.cooltakestudio.com"
+baseurl: ""
+lang: ja
+timezone: Asia/Tokyo
+markdown: kramdown
+highlighter: rouge
+permalink: /:year/:month/:day/:title/
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
