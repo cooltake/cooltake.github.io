@@ -3,22 +3,22 @@ layout: default
 ---
 <section class="hero">
   <div class="container">
-    <p class="hero-eyebrow">DTM & Music Production Guide</p>
-    <h1>Cooltake<span class="hero-dot"> Studio</span><br><span>音楽制作の専門メディア</span></h1>
+    <p class="hero-eyebrow">DTM &amp; Music Production Guide</p>
+    <h1>音楽制作を、<br><span class="gradient-text">もっと深く。</span></h1>
     <p class="hero-desc">マイク・ミキサー・エフェクターの選び方から録音・MIXの基礎まで。DTMを始めたい人のための実践的ガイドをお届けします。</p>
   </div>
 </section>
 <section class="section">
   <div class="container">
     <div class="section-header">
-      <h2 class="section-title">最新記事</h2>
+      <h2 class="section-title">Latest Articles</h2>
       <div class="section-line"></div>
     </div>
     <div class="article-grid">
       {% for post in site.posts %}
       <a href="{{ post.url | relative_url }}" class="article-card">
         <div class="card-meta">
-          <span class="card-tag">GUIDE</span>
+          <span class="card-tag">Guide</span>
           <span class="card-date">{{ post.date | date: "%Y.%m.%d" }}</span>
         </div>
         <h3 class="card-title">{{ post.title }}</h3>
