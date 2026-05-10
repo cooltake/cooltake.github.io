@@ -39,12 +39,7 @@ a { color: inherit; text-decoration: none; }
   justify-content: space-between; height: 68px;
 }
 .logo { display: flex; align-items: center; gap: 12px; font-weight: 800; font-size: 1.05rem; letter-spacing: -0.02em; }
-.logo-badge {
-  background: var(--gradient);
-  width: 34px; height: 34px; border-radius: 10px;
-  display: flex; align-items: center; justify-content: center;
-  font-size: 1.1rem; color: #fff; flex-shrink: 0;
-}
+.logo-icon { flex-shrink: 0; }
 .logo-dot {
   background: var(--gradient);
   -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
