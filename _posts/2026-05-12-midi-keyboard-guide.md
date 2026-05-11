@@ -27,13 +27,6 @@ MIDIキーボードは音を出す楽器ではなく、DAWへ「音の情報（�
 
 ## 選び方のポイント
 
-<figure style="margin: 2rem 0; text-align: center;">
-  <img src="https://images.unsplash.com/photo-1520523839897-bd0b52f945a0?w=800&q=75&auto=format&fit=crop"
-       alt="MIDIキーボードの選び方ポイント"
-       style="width: 100%; max-width: 720px; border-radius: 10px; box-shadow: 0 2px 12px rgba(0,0,0,0.12);">
-  <figcaption style="font-size: 0.8rem; color: #888; margin-top: 0.5rem;">Photo: <a href="https://unsplash.com" target="_blank" rel="noopener">Unsplash</a></figcaption>
-</figure>
-
 ### 1. 鍵盤数
 | 鍵盤数 | 特徴 | 向いている人 |
 |--------|------|------------|
@@ -59,13 +52,6 @@ DTM専用なら**49鍵**がもっともバランスが良く、コードを押�
 ---
 
 ## おすすめMIDIキーボード5選
-
-<figure style="margin: 2rem 0; text-align: center;">
-  <img src="https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?w=800&q=75&auto=format&fit=crop"
-       alt="DTM用MIDIキーボードのおすすめ比較"
-       style="width: 100%; max-width: 720px; border-radius: 10px; box-shadow: 0 2px 12px rgba(0,0,0,0.12);">
-  <figcaption style="font-size: 0.8rem; color: #888; margin-top: 0.5rem;">Photo: <a href="https://unsplash.com" target="_blank" rel="noopener">Unsplash</a></figcaption>
-</figure>
 
 ### 【コスパ最強】AKAI Professional MPK Mini Play MK3
 - 25鍵・8パッド・8ノブ
