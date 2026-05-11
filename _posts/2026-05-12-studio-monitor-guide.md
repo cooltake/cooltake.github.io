@@ -9,6 +9,14 @@ tags: [スタジオモニター, スピーカー, YAMAHA, KRK, Genelec, DTM, ミ
 
 本記事にはプロモーション・広告が含まれる場合があります。
 
+<figure style="margin: 2rem 0; text-align: center;">
+  <img src="https://images.unsplash.com/photo-1609702847389?w=800&q=75&auto=format&fit=crop" 
+       alt="スタジオモニタースピーカー" 
+       style="width: 100%; max-width: 720px; border-radius: 10px; box-shadow: 0 2px 12px rgba(0,0,0,0.12);">
+  <figcaption style="font-size: 0.8rem; color: #888; margin-top: 0.5rem;">Photo: <a href="https://unsplash.com" target="_blank" rel="noopener">Unsplash</a></figcaption>
+</figure>
+
+
 ## なぜスタジオモニタースピーカーが必要なのか
 
 一般的なスピーカーやテレビのスピーカーは「聴き心地よく」チューニングされており、低音が強調されていたり特定の周波数が持ち上げられています。DTMのミックス作業でこうしたスピーカーを使うと、「自宅では良く聴こえるのにCarステレオや他の環境では低音が出すぎる」という問題が起きます。
