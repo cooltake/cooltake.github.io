@@ -27,13 +27,6 @@ tags: [スタジオモニター, スピーカー, YAMAHA, KRK, Genelec, DTM, ミ
 
 ## アクティブ型 vs パッシブ型
 
-<figure style="margin: 2rem 0; text-align: center;">
-  <img src="https://images.unsplash.com/photo-1468164016595-6108e4c60c8b?w=800&q=75&auto=format&fit=crop"
-       alt="スタジオモニタースピーカーの種類"
-       style="width: 100%; max-width: 720px; border-radius: 10px; box-shadow: 0 2px 12px rgba(0,0,0,0.12);">
-  <figcaption style="font-size: 0.8rem; color: #888; margin-top: 0.5rem;">Photo: <a href="https://unsplash.com" target="_blank" rel="noopener">Unsplash</a></figcaption>
-</figure>
-
 | 種類 | 特徴 |
 |------|------|
 | **アクティブ型（パワードモニター）** | アンプ内蔵。オーディオインターフェースに直接接続可。初心者向け |
@@ -63,13 +56,6 @@ DTMを始める場合はアクティブ型（パワードモニター）一択�
 ---
 
 ## おすすめスタジオモニター
-
-<figure style="margin: 2rem 0; text-align: center;">
-  <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800&q=75&auto=format&fit=crop"
-       alt="プロのモニタリング環境"
-       style="width: 100%; max-width: 720px; border-radius: 10px; box-shadow: 0 2px 12px rgba(0,0,0,0.12);">
-  <figcaption style="font-size: 0.8rem; color: #888; margin-top: 0.5rem;">Photo: <a href="https://unsplash.com" target="_blank" rel="noopener">Unsplash</a></figcaption>
-</figure>
 
 ### YAMAHA HS5（5インチ・約¥40,000/1本）
 「ホワイトコーン」が特徴のYAMAHAの定番モニター。長年スタジオで使われてきた「NS-10M」の流れを汲む設計。音が「シビア」でミックスの粗が見えやすいと言われており、これで仕上げたミックスは他の環境でも崩れにくいと評判。
