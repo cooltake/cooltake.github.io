@@ -31,13 +31,6 @@ tags: [DTM入門, 機材セット, 予算別, 初心者, 宅録]
 
 ## 【2万円セット】まずは始める構成
 
-<figure style="margin: 2rem 0; text-align: center;">
-  <img src="https://images.unsplash.com/photo-1598653222000-6b7b7a552625?w=800&q=75&auto=format&fit=crop"
-       alt="エントリーDTM機材の構成例"
-       style="width: 100%; max-width: 720px; border-radius: 10px; box-shadow: 0 2px 12px rgba(0,0,0,0.12);">
-  <figcaption style="font-size: 0.8rem; color: #888; margin-top: 0.5rem;">Photo: <a href="https://unsplash.com" target="_blank" rel="noopener">Unsplash</a></figcaption>
-</figure>
-
 音楽制作を「とにかく試してみたい」という段階の構成です。クオリティの高い録音はできませんが、DAWの操作やアレンジの基礎を学ぶには十分です。
 
 | 機材 | モデル例 | 価格 |
@@ -54,13 +47,6 @@ tags: [DTM入門, 機材セット, 予算別, 初心者, 宅録]
 ---
 
 ## 【5万円セット】本格入門構成
-
-<figure style="margin: 2rem 0; text-align: center;">
-  <img src="https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?w=800&q=75&auto=format&fit=crop"
-       alt="本格入門DTMセットアップ"
-       style="width: 100%; max-width: 720px; border-radius: 10px; box-shadow: 0 2px 12px rgba(0,0,0,0.12);">
-  <figcaption style="font-size: 0.8rem; color: #888; margin-top: 0.5rem;">Photo: <a href="https://unsplash.com" target="_blank" rel="noopener">Unsplash</a></figcaption>
-</figure>
 
 本格的にDTMを学びたい方向けの構成です。マイクも揃え、ある程度のクオリティでボーカルや楽器を録音できます。
 
