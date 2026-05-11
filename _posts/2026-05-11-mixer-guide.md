@@ -25,6 +25,13 @@ tags: [ミキサー, ゲイン, フェーダー, EQ, レコーディング]
 
 ## ミキサーの基本構造
 
+<figure style="margin: 2rem 0; text-align: center;">
+  <img src="https://images.unsplash.com/photo-1598520106830-8c45c2035460?w=800&q=75&auto=format&fit=crop"
+       alt="ミキシングコンソールの基本構造"
+       style="width: 100%; max-width: 720px; border-radius: 10px; box-shadow: 0 2px 12px rgba(0,0,0,0.12);">
+  <figcaption style="font-size: 0.8rem; color: #888; margin-top: 0.5rem;">Photo: <a href="https://unsplash.com" target="_blank" rel="noopener">Unsplash</a></figcaption>
+</figure>
+
 ミキサーには「チャンネル」と呼ばれる縦の入力列が複数あり、それぞれに独立したコントロールがついています。
 
 ### 主要なコントロール
@@ -61,6 +68,13 @@ tags: [ミキサー, ゲイン, フェーダー, EQ, レコーディング]
 ---
 
 ## EQ（イコライザー）の使い方
+
+<figure style="margin: 2rem 0; text-align: center;">
+  <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800&q=75&auto=format&fit=crop"
+       alt="EQを使ったサウンド調整・ミキシング"
+       style="width: 100%; max-width: 720px; border-radius: 10px; box-shadow: 0 2px 12px rgba(0,0,0,0.12);">
+  <figcaption style="font-size: 0.8rem; color: #888; margin-top: 0.5rem;">Photo: <a href="https://unsplash.com" target="_blank" rel="noopener">Unsplash</a></figcaption>
+</figure>
 
 EQは音の周波数バランスを調整するツールです。
 
