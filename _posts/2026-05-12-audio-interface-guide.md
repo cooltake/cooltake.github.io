@@ -25,13 +25,6 @@ tags: [オーディオインターフェース, Focusrite, Scarlett, DTM, 録音
 
 ## オーディオインターフェースが必要な理由
 
-<figure style="margin: 2rem 0; text-align: center;">
-  <img src="https://images.unsplash.com/photo-1598653222000-6b7b7a552625?w=800&q=75&auto=format&fit=crop"
-       alt="オーディオインターフェースの接続と役割"
-       style="width: 100%; max-width: 720px; border-radius: 10px; box-shadow: 0 2px 12px rgba(0,0,0,0.12);">
-  <figcaption style="font-size: 0.8rem; color: #888; margin-top: 0.5rem;">Photo: <a href="https://unsplash.com" target="_blank" rel="noopener">Unsplash</a></figcaption>
-</figure>
-
 ### 音質の改善
 パソコン内蔵のサウンドカードはノイズが多く、レコーディングには不向きです。専用のオーディオインターフェースはS/N比（シグナル対ノイズ比）が高く、クリアな録音が可能です。
 
@@ -65,13 +58,6 @@ DAWで打ち込んだ音やリアルタイムで演奏した音は、スピー�
 ---
 
 ## おすすめモデル比較
-
-<figure style="margin: 2rem 0; text-align: center;">
-  <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800&q=75&auto=format&fit=crop"
-       alt="宅録スタジオのセットアップ例"
-       style="width: 100%; max-width: 720px; border-radius: 10px; box-shadow: 0 2px 12px rgba(0,0,0,0.12);">
-  <figcaption style="font-size: 0.8rem; color: #888; margin-top: 0.5rem;">Photo: <a href="https://unsplash.com" target="_blank" rel="noopener">Unsplash</a></figcaption>
-</figure>
 
 | モデル | 価格帯 | 入力数 | 特徴 |
 |--------|--------|--------|------|
