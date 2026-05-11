@@ -9,6 +9,14 @@ tags: [DTM入門, 機材セット, 予算別, 初心者, 宅録]
 
 本記事にはプロモーション・広告が含まれる場合があります。
 
+<figure style="margin: 2rem 0; text-align: center;">
+  <img src="https://images.unsplash.com/photo-1627407660893?w=800&q=75&auto=format&fit=crop" 
+       alt="自宅DTMスタジオセットアップ" 
+       style="width: 100%; max-width: 720px; border-radius: 10px; box-shadow: 0 2px 12px rgba(0,0,0,0.12);">
+  <figcaption style="font-size: 0.8rem; color: #888; margin-top: 0.5rem;">Photo: <a href="https://unsplash.com" target="_blank" rel="noopener">Unsplash</a></figcaption>
+</figure>
+
+
 ## DTMを始める前に確認すること
 
 機材を揃える前に、どんな音楽を作りたいのかを大まかに決めておくと、無駄な出費を防げます。
