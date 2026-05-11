@@ -25,13 +25,6 @@ tags: [コンプレッサー, リバーブ, ゲート, エフェクター, MIX]
 
 ## コンプレッサー — 音量の「でこぼこ」を平らにする
 
-<figure style="margin: 2rem 0; text-align: center;">
-  <img src="https://images.unsplash.com/photo-1598520106830-8c45c2035460?w=800&q=75&auto=format&fit=crop"
-       alt="コンプレッサーエフェクターの活用イメージ"
-       style="width: 100%; max-width: 720px; border-radius: 10px; box-shadow: 0 2px 12px rgba(0,0,0,0.12);">
-  <figcaption style="font-size: 0.8rem; color: #888; margin-top: 0.5rem;">Photo: <a href="https://unsplash.com" target="_blank" rel="noopener">Unsplash</a></figcaption>
-</figure>
-
 ### コンプレッサーとは
 
 コンプレッサーは**音量の大きい部分を圧縮**して、音量のばらつきを均一にするエフェクトです。
@@ -109,13 +102,6 @@ tags: [コンプレッサー, リバーブ, ゲート, エフェクター, MIX]
 ---
 
 ## 3つのエフェクトの組み合わせ方
-
-<figure style="margin: 2rem 0; text-align: center;">
-  <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800&q=75&auto=format&fit=crop"
-       alt="DAWでエフェクト処理を組み合わせるイメージ"
-       style="width: 100%; max-width: 720px; border-radius: 10px; box-shadow: 0 2px 12px rgba(0,0,0,0.12);">
-  <figcaption style="font-size: 0.8rem; color: #888; margin-top: 0.5rem;">Photo: <a href="https://unsplash.com" target="_blank" rel="noopener">Unsplash</a></figcaption>
-</figure>
 
 プロのボーカルトラックでの一般的な順序：
 
