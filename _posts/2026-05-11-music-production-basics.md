@@ -25,6 +25,13 @@ tags: [初心者, 機材, 準備, オーディオインターフェース, DAW]
 
 ## 必ず必要なもの（必須4アイテム）
 
+<figure style="margin: 2rem 0; text-align: center;">
+  <img src="https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?w=800&q=75&auto=format&fit=crop"
+       alt="DTMに必要な必須機材セットのイメージ"
+       style="width: 100%; max-width: 720px; border-radius: 10px; box-shadow: 0 2px 12px rgba(0,0,0,0.12);">
+  <figcaption style="font-size: 0.8rem; color: #888; margin-top: 0.5rem;">Photo: <a href="https://unsplash.com" target="_blank" rel="noopener">Unsplash</a></figcaption>
+</figure>
+
 ### 1. パソコン（Mac / Windows）
 
 音楽制作の中核です。既存のパソコンが使えるなら、まずそれで始めましょう。
@@ -86,6 +93,13 @@ MacはGarageBandが無料で付属するため、入門コストが低くなり�
 ---
 
 ## 予算別スターターセット
+
+<figure style="margin: 2rem 0; text-align: center;">
+  <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800&q=75&auto=format&fit=crop"
+       alt="ホームスタジオの機材構成イメージ"
+       style="width: 100%; max-width: 720px; border-radius: 10px; box-shadow: 0 2px 12px rgba(0,0,0,0.12);">
+  <figcaption style="font-size: 0.8rem; color: #888; margin-top: 0.5rem;">Photo: <a href="https://unsplash.com" target="_blank" rel="noopener">Unsplash</a></figcaption>
+</figure>
 
 ### プランA：¥20,000以下でスタート
 
