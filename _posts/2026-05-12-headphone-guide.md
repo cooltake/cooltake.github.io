@@ -25,13 +25,6 @@ tags: [ヘッドフォン, モニタリング, DTM, 宅録, SONY, AKG, audio-tec
 
 ## 密閉型 vs 開放型：何が違う？
 
-<figure style="margin: 2rem 0; text-align: center;">
-  <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800&q=75&auto=format&fit=crop"
-       alt="DTM用ヘッドフォンの密閉型・開放型の違い"
-       style="width: 100%; max-width: 720px; border-radius: 10px; box-shadow: 0 2px 12px rgba(0,0,0,0.12);">
-  <figcaption style="font-size: 0.8rem; color: #888; margin-top: 0.5rem;">Photo: <a href="https://unsplash.com" target="_blank" rel="noopener">Unsplash</a></figcaption>
-</figure>
-
 ### 密閉型（クローズドバック）
 - 音が外に漏れない → 録音時のモニタリングに必須
 - 低音域がタイトに感じられやすい
@@ -63,13 +56,6 @@ tags: [ヘッドフォン, モニタリング, DTM, 宅録, SONY, AKG, audio-tec
 ---
 
 ## おすすめ6選（予算別）
-
-<figure style="margin: 2rem 0; text-align: center;">
-  <img src="https://images.unsplash.com/photo-1590602847861-f357a9332bbc?w=800&q=75&auto=format&fit=crop"
-       alt="DTM・宅録に最適なヘッドフォン選び"
-       style="width: 100%; max-width: 720px; border-radius: 10px; box-shadow: 0 2px 12px rgba(0,0,0,0.12);">
-  <figcaption style="font-size: 0.8rem; color: #888; margin-top: 0.5rem;">Photo: <a href="https://unsplash.com" target="_blank" rel="noopener">Unsplash</a></figcaption>
-</figure>
 
 ### ¥5,000以下
 **SONY MDR-CD900ST** — 日本のスタジオ定番。フラットな特性とタイトな低音。密閉型。初心者から上級者まで幅広く使われる。価格はAmazonで変動するが概ね¥15,000〜¥20,000前後。
