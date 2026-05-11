@@ -27,13 +27,6 @@ tags: [マイク, コンデンサーマイク, ダイナミックマイク, 録�
 
 ## 構造と仕組みの違い
 
-<figure style="margin: 2rem 0; text-align: center;">
-  <img src="https://images.unsplash.com/photo-1478737270239-2f02b77fc618?w=800&q=75&auto=format&fit=crop"
-       alt="コンデンサーマイクとダイナミックマイクの構造比較"
-       style="width: 100%; max-width: 720px; border-radius: 10px; box-shadow: 0 2px 12px rgba(0,0,0,0.12);">
-  <figcaption style="font-size: 0.8rem; color: #888; margin-top: 0.5rem;">Photo: <a href="https://unsplash.com" target="_blank" rel="noopener">Unsplash</a></figcaption>
-</figure>
-
 ### ダイナミックマイク
 
 音の振動を**コイルの動き（電磁誘導）**で電気信号に変換します。
@@ -62,13 +55,6 @@ tags: [マイク, コンデンサーマイク, ダイナミックマイク, 録�
 ---
 
 ## 用途別おすすめの選び方
-
-<figure style="margin: 2rem 0; text-align: center;">
-  <img src="https://images.unsplash.com/photo-1520523839897-bd0b52f945a0?w=800&q=75&auto=format&fit=crop"
-       alt="用途に合ったマイクの選び方・宅録環境"
-       style="width: 100%; max-width: 720px; border-radius: 10px; box-shadow: 0 2px 12px rgba(0,0,0,0.12);">
-  <figcaption style="font-size: 0.8rem; color: #888; margin-top: 0.5rem;">Photo: <a href="https://unsplash.com" target="_blank" rel="noopener">Unsplash</a></figcaption>
-</figure>
 
 ### 宅録ボーカル・ポッドキャストに最適：コンデンサーマイク
 
