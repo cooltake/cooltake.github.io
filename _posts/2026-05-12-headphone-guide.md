@@ -69,20 +69,21 @@ tags: [ヘッドフォン, モニタリング, DTM, 宅録, SONY, AKG, audio-tec
 <figure style="text-align:center;margin:2rem auto;max-width:800px;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 278" style="max-width:100%;height:auto;border-radius:10px;display:block;"><rect width="800" height="278" fill="#0f172a" rx="10"/><defs><marker id="ah" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#3b82f6"/></marker></defs><rect x="40" y="20" width="160" height="48" fill="#22c55e" rx="8"/><text x="52" y="40" text-anchor="start" font-family="sans-serif" font-size="13" fill="#f1f5f9" font-weight="bold">¥3〜5万</text><text x="52" y="57" text-anchor="start" font-family="sans-serif" font-size="11" fill="#cbd5e1">オーディオIF＋ヘッドフォン＋無料DAW</text><text x="750" y="50" text-anchor="end" font-family="sans-serif" font-size="11" fill="#94a3b8">エントリー</text><rect x="40" y="78" width="280" height="48" fill="#3b82f6" rx="8"/><text x="52" y="98" text-anchor="start" font-family="sans-serif" font-size="13" fill="#f1f5f9" font-weight="bold">¥5〜15万</text><text x="52" y="115" text-anchor="start" font-family="sans-serif" font-size="11" fill="#cbd5e1">＋コンデンサーマイク＋モニタースピーカー</text><text x="750" y="108" text-anchor="end" font-family="sans-serif" font-size="11" fill="#94a3b8">スタンダード</text><rect x="40" y="136" width="400" height="48" fill="#6366f1" rx="8"/><text x="52" y="156" text-anchor="start" font-family="sans-serif" font-size="13" fill="#f1f5f9" font-weight="bold">¥15〜30万</text><text x="52" y="173" text-anchor="start" font-family="sans-serif" font-size="11" fill="#cbd5e1">＋MIDIキーボード＋プラグイン充実</text><text x="750" y="166" text-anchor="end" font-family="sans-serif" font-size="11" fill="#94a3b8">プロ志向</text><rect x="40" y="194" width="520" height="48" fill="#ec4899" rx="8"/><text x="52" y="214" text-anchor="start" font-family="sans-serif" font-size="13" fill="#f1f5f9" font-weight="bold">¥30万+</text><text x="52" y="231" text-anchor="start" font-family="sans-serif" font-size="11" fill="#cbd5e1">ハードウェア音源＋アウトボード導入</text><text x="750" y="224" text-anchor="end" font-family="sans-serif" font-size="11" fill="#94a3b8">ハイエンド</text></svg><figcaption style="font-size:.82em;color:#64748b;margin-top:.4em;font-family:sans-serif;">図：予算別DTM機材セット構成ガイド</figcaption></figure>
 
 
-### ¥5,000以下
-**SONY MDR-CD900ST** — 日本のスタジオ定番。フラットな特性とタイトな低音。密閉型。初心者から上級者まで幅広く使われる。価格はAmazonで変動するが概ね¥15,000〜¥20,000前後。
-
-### ¥10,000前後
+### ¥5,000前後
 **audio-technica ATH-M30x** — コストパフォーマンスが高い密閉型。フラットな特性で初心者に扱いやすい。折りたたみ可能でコンパクト。
 
+### ¥8,000〜¥12,000
 **audio-technica ATH-M40x** — M30xの上位版。より広い周波数特性と精細な音の分離感。DTMのスタートアップに最適な一台。
 
-### ¥15,000〜¥20,000
-**SONY MDR-7506** — プロの現場でも使われるスタジオ定番。M30xよりさらに細かい音の粒が聴こえる。米国のスタジオで見かけることも多い。
+### ¥13,000〜¥15,000
+**SONY MDR-7506** — プロの現場でも使われるスタジオ定番。M40xよりさらに細かい音の粒が聴こえる。米国のスタジオで見かけることも多い。
 
+**SONY MDR-CD900ST** — 日本のスタジオ定番。フラットな特性とタイトな低音。密閉型。初心者から上級者まで幅広く使われる。概ね¥15,000〜¥20,000前後。
+
+### ¥15,000〜¥20,000
 **audio-technica ATH-M50x** — ATHシリーズ最高峰の人気モデル。低音から高音まで全域にわたってバランスが良く、初心者が最初の「基準」にしやすい。
 
-### ¥30,000以上
+### ¥25,000以上
 **AKG K271 MKII** — 密閉型ながら開放型に近い空間感。ミックス作業に向いており、「装着すると自動的にミュートになる」機能も便利。
 
 ---
