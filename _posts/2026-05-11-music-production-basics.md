@@ -17,6 +17,9 @@ tags: [初心者, 機材, 準備, オーディオインターフェース, DAW]
 
 ## 「何から始めればいい？」最初の壁を突破する
 
+<figure style="text-align:center;margin:2rem auto;max-width:800px;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 110" style="max-width:100%;height:auto;border-radius:10px;display:block;"><rect width="800" height="110" fill="#0f172a" rx="10"/><rect x="10" y="10" width="185" height="80" fill="#3b82f6" rx="8"/><text x="102" y="47" text-anchor="middle" font-family="sans-serif" font-size="26" fill="#f1f5f9">✅</text><text x="102" y="67" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#f1f5f9" font-weight="bold">必須アイテム1</text><rect x="210" y="10" width="185" height="80" fill="#6366f1" rx="8"/><text x="302" y="47" text-anchor="middle" font-family="sans-serif" font-size="26" fill="#f1f5f9">✅</text><text x="302" y="67" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#f1f5f9" font-weight="bold">必須アイテム2</text><rect x="410" y="10" width="185" height="80" fill="#ec4899" rx="8"/><text x="502" y="47" text-anchor="middle" font-family="sans-serif" font-size="26" fill="#f1f5f9">✅</text><text x="502" y="67" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#f1f5f9" font-weight="bold">必須アイテム3</text><rect x="610" y="10" width="185" height="80" fill="#14b8a6" rx="8"/><text x="702" y="47" text-anchor="middle" font-family="sans-serif" font-size="26" fill="#f1f5f9">✅</text><text x="702" y="67" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#f1f5f9" font-weight="bold">必須アイテム4</text></svg><figcaption style="font-size:.82em;color:#64748b;margin-top:.4em;font-family:sans-serif;">図：まず揃えるべき必須アイテム</figcaption></figure>
+
+
 音楽制作を始めたいと思ったとき、多くの人が「何を買えばいいかわからない」という壁にぶつかります。検索すると機材の種類や価格帯がバラバラで、かえって混乱することも。
 
 このガイドでは**必要なものを優先度順**に整理し、予算に応じたスタート方法を解説します。
@@ -24,6 +27,9 @@ tags: [初心者, 機材, 準備, オーディオインターフェース, DAW]
 ---
 
 ## 必ず必要なもの（必須4アイテム）
+
+<figure style="text-align:center;margin:2rem auto;max-width:800px;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 110" style="max-width:100%;height:auto;border-radius:10px;display:block;"><rect width="800" height="110" fill="#0f172a" rx="10"/><rect x="10" y="10" width="185" height="80" fill="#3b82f6" rx="8"/><text x="102" y="47" text-anchor="middle" font-family="sans-serif" font-size="26" fill="#f1f5f9">✅</text><text x="102" y="67" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#f1f5f9" font-weight="bold">必須アイテム1</text><rect x="210" y="10" width="185" height="80" fill="#6366f1" rx="8"/><text x="302" y="47" text-anchor="middle" font-family="sans-serif" font-size="26" fill="#f1f5f9">✅</text><text x="302" y="67" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#f1f5f9" font-weight="bold">必須アイテム2</text><rect x="410" y="10" width="185" height="80" fill="#ec4899" rx="8"/><text x="502" y="47" text-anchor="middle" font-family="sans-serif" font-size="26" fill="#f1f5f9">✅</text><text x="502" y="67" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#f1f5f9" font-weight="bold">必須アイテム3</text><rect x="610" y="10" width="185" height="80" fill="#14b8a6" rx="8"/><text x="702" y="47" text-anchor="middle" font-family="sans-serif" font-size="26" fill="#f1f5f9">✅</text><text x="702" y="67" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#f1f5f9" font-weight="bold">必須アイテム4</text></svg><figcaption style="font-size:.82em;color:#64748b;margin-top:.4em;font-family:sans-serif;">図：まず揃えるべき必須アイテム</figcaption></figure>
+
 
 ### 1. パソコン（Mac / Windows）
 
@@ -113,6 +119,9 @@ MacはGarageBandが無料で付属するため、入門コストが低くなり�
 ---
 
 ## 最初の一歩は「完璧な環境」より「始めること」
+
+<figure style="text-align:center;margin:2rem auto;max-width:800px;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 110" style="max-width:100%;height:auto;border-radius:10px;display:block;"><rect width="800" height="110" fill="#0f172a" rx="10"/><rect x="10" y="10" width="185" height="80" fill="#3b82f6" rx="8"/><text x="102" y="47" text-anchor="middle" font-family="sans-serif" font-size="26" fill="#f1f5f9">✅</text><text x="102" y="67" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#f1f5f9" font-weight="bold">必須アイテム1</text><rect x="210" y="10" width="185" height="80" fill="#6366f1" rx="8"/><text x="302" y="47" text-anchor="middle" font-family="sans-serif" font-size="26" fill="#f1f5f9">✅</text><text x="302" y="67" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#f1f5f9" font-weight="bold">必須アイテム2</text><rect x="410" y="10" width="185" height="80" fill="#ec4899" rx="8"/><text x="502" y="47" text-anchor="middle" font-family="sans-serif" font-size="26" fill="#f1f5f9">✅</text><text x="502" y="67" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#f1f5f9" font-weight="bold">必須アイテム3</text><rect x="610" y="10" width="185" height="80" fill="#14b8a6" rx="8"/><text x="702" y="47" text-anchor="middle" font-family="sans-serif" font-size="26" fill="#f1f5f9">✅</text><text x="702" y="67" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#f1f5f9" font-weight="bold">必須アイテム4</text></svg><figcaption style="font-size:.82em;color:#64748b;margin-top:.4em;font-family:sans-serif;">図：まず揃えるべき必須アイテム</figcaption></figure>
+
 
 機材をすべて揃えてから始める必要はありません。まずは**PC + 無料DAW + ヘッドフォン**の最小構成でスタートして、必要になったら順次追加していくのが現実的です。
 
