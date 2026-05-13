@@ -25,6 +25,9 @@ tags: [コンプレッサー, リバーブ, ゲート, エフェクター, MIX]
 
 ## コンプレッサー — 音量の「でこぼこ」を平らにする
 
+<figure style="text-align:center;margin:2rem auto;max-width:800px;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 220" style="max-width:100%;height:auto;border-radius:10px;display:block;"><rect width="800" height="220" fill="#0f172a" rx="10"/><defs><marker id="ah" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#3b82f6"/></marker></defs><rect x="15" y="12" width="360" height="196" fill="#1e3a5f" rx="8"/><text x="195" y="36" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#3b82f6" font-weight="bold">コンプレッサー前（大きな音量差）</text><polyline points="30,110 55,40 75,175 100,30 125,170 150,35 175,165 200,38 225,168 250,42 285,160 320,50 350,110" stroke="#3b82f6" stroke-width="2.5" fill="none"/><line x1="380" y1="110" x2="415" y2="110" stroke="#3b82f6" stroke-width="2" marker-end="url(#ah)"/><rect x="425" y="12" width="360" height="196" fill="#0d2d1f" rx="8"/><text x="605" y="36" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#22c55e" font-weight="bold">コンプレッサー後（均一な音量）</text><polyline points="440,110 465,68 490,148 515,65 540,150 565,66 590,148 615,68 640,146 665,70 700,144 745,74 775,110" stroke="#22c55e" stroke-width="2.5" fill="none"/></svg><figcaption style="font-size:.82em;color:#64748b;margin-top:.4em;font-family:sans-serif;">図：コンプレッサーによるダイナミクス制御のイメージ</figcaption></figure>
+
+
 ### コンプレッサーとは
 
 コンプレッサーは**音量の大きい部分を圧縮**して、音量のばらつきを均一にするエフェクトです。
@@ -53,6 +56,9 @@ tags: [コンプレッサー, リバーブ, ゲート, エフェクター, MIX]
 
 ## リバーブ — 空間・距離感を演出する
 
+<figure style="text-align:center;margin:2rem auto;max-width:800px;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 200" style="max-width:100%;height:auto;border-radius:10px;display:block;"><rect width="800" height="200" fill="#0f172a" rx="10"/><defs><marker id="ah" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#3b82f6"/></marker></defs><rect x="40" y="68" width="120" height="64" fill="#3b82f6" rx="8"/><text x="100" y="105" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#f1f5f9" font-weight="bold">原音 (Dry)</text><line x1="162" y1="100" x2="186" y2="100" stroke="#3b82f6" stroke-width="2" marker-end="url(#ah)"/><rect x="190" y="68" width="120" height="64" fill="#6366f1" rx="8"/><text x="250" y="96" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#f1f5f9" font-weight="bold">リバーブ</text><text x="250" y="114" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#f1f5f9">ユニット</text><line x1="312" y1="100" x2="336" y2="100" stroke="#3b82f6" stroke-width="2" marker-end="url(#ah)"/><rect x="340" y="68" width="120" height="64" fill="#ec4899" rx="8"/><text x="400" y="105" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#f1f5f9" font-weight="bold">残響音生成</text><line x1="462" y1="100" x2="486" y2="100" stroke="#3b82f6" stroke-width="2" marker-end="url(#ah)"/><rect x="490" y="68" width="120" height="64" fill="#14b8a6" rx="8"/><text x="550" y="96" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#f1f5f9" font-weight="bold">Dry/Wet</text><text x="550" y="114" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#f1f5f9">ブレンド</text><line x1="612" y1="100" x2="636" y2="100" stroke="#3b82f6" stroke-width="2" marker-end="url(#ah)"/><rect x="640" y="68" width="120" height="64" fill="#22c55e" rx="8"/><text x="700" y="105" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#f1f5f9" font-weight="bold">出力</text></svg><figcaption style="font-size:.82em;color:#64748b;margin-top:.4em;font-family:sans-serif;">図：リバーブのシグナルフロー</figcaption></figure>
+
+
 ### リバーブとは
 
 録音した音に**空間の響き**を加えるエフェクトです。ドライ（響きのない）な録音音源を、まるでスタジオや大ホールで録ったように変換できます。
@@ -77,6 +83,9 @@ tags: [コンプレッサー, リバーブ, ゲート, エフェクター, MIX]
 ---
 
 ## ゲート — 不要なノイズを自動でカット
+
+<figure style="text-align:center;margin:2rem auto;max-width:800px;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 220" style="max-width:100%;height:auto;border-radius:10px;display:block;"><rect width="800" height="220" fill="#0f172a" rx="10"/><defs><marker id="ah" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#3b82f6"/></marker></defs><rect x="15" y="12" width="360" height="196" fill="#1e3a5f" rx="8"/><text x="195" y="36" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#3b82f6" font-weight="bold">ゲート前（ノイズあり）</text><polyline points="30,110 55,40 75,175 100,30 125,170 150,35 175,165 200,38 225,168 250,42 285,160 320,50 350,110" stroke="#3b82f6" stroke-width="2.5" fill="none"/><line x1="380" y1="110" x2="415" y2="110" stroke="#3b82f6" stroke-width="2" marker-end="url(#ah)"/><rect x="425" y="12" width="360" height="196" fill="#0d2d1f" rx="8"/><text x="605" y="36" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#22c55e" font-weight="bold">ゲート後（無音時カット）</text><polyline points="440,110 465,68 490,148 515,65 540,150 565,66 590,148 615,68 640,146 665,70 700,144 745,74 775,110" stroke="#22c55e" stroke-width="2.5" fill="none"/></svg><figcaption style="font-size:.82em;color:#64748b;margin-top:.4em;font-family:sans-serif;">図：ノイズゲートによる不要ノイズの除去イメージ</figcaption></figure>
+
 
 ### ゲートとは
 
@@ -115,6 +124,9 @@ tags: [コンプレッサー, リバーブ, ゲート, エフェクター, MIX]
 ---
 
 ## DAW付属のプラグインから始める
+
+<figure style="text-align:center;margin:2rem auto;max-width:800px;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 200" style="max-width:100%;height:auto;border-radius:10px;display:block;"><rect width="800" height="200" fill="#0f172a" rx="10"/><defs><marker id="ah" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#3b82f6"/></marker></defs><rect x="40" y="68" width="120" height="64" fill="#3b82f6" rx="8"/><text x="100" y="96" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#f1f5f9" font-weight="bold">音源の準備</text><text x="100" y="114" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#f1f5f9">(楽器/マイク)</text><line x1="162" y1="100" x2="186" y2="100" stroke="#3b82f6" stroke-width="2" marker-end="url(#ah)"/><rect x="190" y="68" width="120" height="64" fill="#6366f1" rx="8"/><text x="250" y="96" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#f1f5f9" font-weight="bold">録音</text><text x="250" y="114" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#f1f5f9">(Audioトラック)</text><line x1="312" y1="100" x2="336" y2="100" stroke="#3b82f6" stroke-width="2" marker-end="url(#ah)"/><rect x="340" y="68" width="120" height="64" fill="#ec4899" rx="8"/><text x="400" y="96" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#f1f5f9" font-weight="bold">編集</text><text x="400" y="114" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#f1f5f9">(カット/修正)</text><line x1="462" y1="100" x2="486" y2="100" stroke="#3b82f6" stroke-width="2" marker-end="url(#ah)"/><rect x="490" y="68" width="120" height="64" fill="#14b8a6" rx="8"/><text x="550" y="96" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#f1f5f9" font-weight="bold">ミックス</text><text x="550" y="114" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#f1f5f9">(EQ/FX)</text><line x1="612" y1="100" x2="636" y2="100" stroke="#3b82f6" stroke-width="2" marker-end="url(#ah)"/><rect x="640" y="68" width="120" height="64" fill="#22c55e" rx="8"/><text x="700" y="96" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#f1f5f9" font-weight="bold">書き出し</text><text x="700" y="114" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#f1f5f9">(WAV/MP3)</text></svg><figcaption style="font-size:.82em;color:#64748b;margin-top:.4em;font-family:sans-serif;">図：DAWによる音楽制作の基本ワークフロー</figcaption></figure>
+
 
 最初から高価なサードパーティプラグインを購入する必要はありません。
 
