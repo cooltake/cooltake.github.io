@@ -59,6 +59,9 @@ DTM専用なら**49鍵**がもっともバランスが良く、コードを押�
 
 ## おすすめMIDIキーボード5選
 
+<figure style="text-align:center;margin:2rem auto;max-width:800px;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 216" style="max-width:100%;height:auto;border-radius:10px;display:block;"><rect width="800" height="216" fill="#0f172a" rx="10"/><defs><marker id="ah" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#3b82f6"/></marker></defs><rect x="40" y="20" width="160" height="48" fill="#22c55e" rx="8"/><text x="52" y="40" text-anchor="start" font-family="sans-serif" font-size="13" fill="#f1f5f9" font-weight="bold">エントリー</text><text x="52" y="57" text-anchor="start" font-family="sans-serif" font-size="11" fill="#cbd5e1">コスパ最重視モデル。初心者に最適</text><rect x="40" y="78" width="280" height="48" fill="#3b82f6" rx="8"/><text x="52" y="98" text-anchor="start" font-family="sans-serif" font-size="13" fill="#f1f5f9" font-weight="bold">ミドル</text><text x="52" y="115" text-anchor="start" font-family="sans-serif" font-size="11" fill="#cbd5e1">バランス型。本格派ユーザーに</text><rect x="40" y="136" width="400" height="48" fill="#6366f1" rx="8"/><text x="52" y="156" text-anchor="start" font-family="sans-serif" font-size="13" fill="#f1f5f9" font-weight="bold">ハイエンド</text><text x="52" y="173" text-anchor="start" font-family="sans-serif" font-size="11" fill="#cbd5e1">プロ水準。妥協なく音質を追求</text></svg><figcaption style="font-size:.82em;color:#64748b;margin-top:.4em;font-family:sans-serif;">図：価格帯別おすすめモデルの位置づけ</figcaption></figure>
+
+
 ### 【コスパ最強】AKAI Professional MPK Mini Play MK3
 - 25鍵・8パッド・8ノブ
 - 内蔵音源あり（PCなしでも音が出る）
