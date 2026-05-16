@@ -5,41 +5,56 @@ layout: default
   body { background: linear-gradient(160deg,#111b2e 0%,#0d1525 50%,#111827 100%) !important; }
 
   .post-header {
-    position: relative; overflow: hidden;
-    background-color: #0b1220;
-    background-size: cover;
-    background-position: center center;
-    min-height: 260px;
-    padding: 64px 0 44px;
-    display: flex;
-    align-items: flex-end;
+    background: linear-gradient(160deg,#0e1929 0%,#0b1220 60%,#101827 100%);
+    padding: 48px 20px 40px;
     border-bottom: 1px solid rgba(255,255,255,.06);
   }
-  /* hero画像あり: 上は薄め・下は濃いめのグラデーション + 画像 */
-  .post-header.has-hero {
-    background-image:
-      linear-gradient(to bottom,
-        rgba(5,10,20,0.38) 0%,
-        rgba(5,10,20,0.62) 55%,
-        rgba(5,10,20,0.80) 100%),
-      var(--hero-img);
-  }
-  /* 青いグロー装飾 */
-  .post-header::before {
-    content: '';
-    position: absolute; inset: 0;
-    background: radial-gradient(ellipse 70% 80% at 50% 0%,rgba(59,130,246,.10) 0%,transparent 70%);
-    pointer-events: none;
-  }
-  .post-header .container { position: relative; width: 100%; }
 
+  /* ヒーローラップ: 1000px幅センタリング、画像を背景に */
+  .post-hero-wrap {
+    max-width: 1000px;
+    min-height: 300px;
+    margin: 0 auto;
+    padding: 54px 48px 36px;
+    border-radius: 14px;
+    background-color: #0b1220;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+  .post-hero-wrap.has-image {
+    background-image:
+      linear-gradient(rgba(5,10,20,0.52), rgba(5,10,20,0.70)),
+      var(--hero-img);
+    background-size: cover;
+    background-position: center center;
+  }
+
+  /* 戻るリンク: カード最上部に絶対配置 */
   .back-link {
-    display: inline-flex; align-items: center; gap: 6px;
-    color: rgba(200,210,230,0.85); font-size: .85rem; font-weight: 500;
-    margin-bottom: 20px; text-decoration: none; transition: color .2s;
-    text-shadow: 0 1px 6px rgba(0,0,0,.7);
+    position: absolute;
+    top: 16px;
+    left: 48px;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: rgba(200,210,230,0.85);
+    font-size: .85rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color .2s;
   }
   .back-link:hover { color: #f1f5ff; }
+
+  /* メタ・タイトルを垂直中央（padding-bottomで20px上にオフセット） */
+  .post-hero-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 40px;
+  }
 
   .post-meta { display: flex; gap: 10px; align-items: center; margin-bottom: 12px; }
   .post-tag {
@@ -55,7 +70,12 @@ layout: default
     font-size: clamp(1rem,2.2vw,1.6rem);
     font-weight: 400; letter-spacing: .02em; line-height: 1.55;
     color: #f1f5ff; margin-bottom: 0;
-    text-shadow: 0 2px 16px rgba(0,0,0,.85), 0 1px 4px rgba(0,0,0,.9);
+    text-shadow:
+      -1px -1px 0 rgba(0,0,0,0.9),
+       1px -1px 0 rgba(0,0,0,0.9),
+      -1px  1px 0 rgba(0,0,0,0.9),
+       1px  1px 0 rgba(0,0,0,0.9),
+      0 3px 12px rgba(0,0,0,0.85);
   }
 
   /* カード = 画面の90%（左右5%ずつ） */
@@ -120,21 +140,25 @@ layout: default
   }
 
   @media (max-width: 768px) {
+    .post-header { padding: 40px 12px 32px; }
+    .post-hero-wrap { min-height: 220px; padding: 48px 24px 28px; border-radius: 10px; }
+    .back-link { left: 24px; }
     .post-content { padding: 32px 6%; }
     .post-body { padding: 24px 3% 48px; }
-    .post-header { min-height: 200px; padding: 48px 0 32px; }
   }
 </style>
 
 <article>
-  <div class="post-header{% if page.image %} has-hero{% endif %}"{% if page.image %} style="--hero-img: url('{{ page.image }}');"{% endif %}>
-    <div class="container">
+  <div class="post-header">
+    <div class="post-hero-wrap{% if page.image %} has-image{% endif %}"{% if page.image %} style="--hero-img: url('{{ page.image }}');"{% endif %}>
       <a href="{{ '/' | relative_url }}" class="back-link">← 記事一覧に戻る</a>
-      <div class="post-meta">
-        <span class="post-tag">{{ page.categories | first | default: "Guide" | upcase }}</span>
-        <span class="post-date">{{ page.date | date: "%Y.%m.%d" }}</span>
+      <div class="post-hero-body">
+        <div class="post-meta">
+          <span class="post-tag">{{ page.categories | first | default: "Guide" | upcase }}</span>
+          <span class="post-date">{{ page.date | date: "%Y.%m.%d" }}</span>
+        </div>
+        <h1 class="post-title">{{ page.title }}</h1>
       </div>
-      <h1 class="post-title">{{ page.title }}</h1>
     </div>
   </div>
   <div class="post-body">
