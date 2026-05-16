@@ -232,6 +232,7 @@
     .art-title { font-size: .93rem; font-weight: 700; line-height: 1.55; letter-spacing: -.01em; margin-bottom: 10px; }
     .art-excerpt { font-size: .82rem; color: var(--muted); line-height: 1.75; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; flex: 1; }
     .art-read { margin-top: 18px; color: var(--accent); font-size: .8rem; font-weight: 600; }
+    .thumb-img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block; }
 
     /* ─── COMING SOON ─── */
     .section-coming { padding: 0 0 80px; }
@@ -363,14 +364,7 @@
       <div class="featured-img">
         <span class="pick-badge">PICK UP</span>
         <div class="featured-img-inner">
-          <!-- Mic icon -->
-          <svg width="90" height="90" viewBox="0 0 90 90" fill="white">
-            <rect x="33" y="6" width="24" height="48" rx="12" fill="white"/>
-            <path d="M18 44 C18 62 72 62 72 44" stroke="white" stroke-width="4" fill="none" stroke-linecap="round"/>
-            <line x1="45" y1="62" x2="45" y2="80" stroke="white" stroke-width="4" stroke-linecap="round"/>
-            <line x1="30" y1="80" x2="60" y2="80" stroke="white" stroke-width="4" stroke-linecap="round"/>
-          </svg>
-          <span>ARTICLE THUMBNAIL</span>
+          <img src="/assets/images/thumb-microphone.png" alt="マイク比較" class="thumb-img">
         </div>
       </div>
       <div class="featured-body">
@@ -484,11 +478,7 @@
       <a href="/2026/05/11/microphone-guide/" class="art-card">
         <div class="art-img">
           <div class="art-img-inner">
-            <svg width="48" height="48" viewBox="0 0 48 48" fill="white">
-              <rect x="18" y="3" width="12" height="24" rx="6" fill="white"/>
-              <path d="M9 22 C9 31 39 31 39 22" stroke="white" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-              <line x1="24" y1="31" x2="24" y2="42" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
-            </svg>
+            <img src="/assets/images/thumb-microphone.png" alt="" class="thumb-img">
           </div>
         </div>
         <div class="art-body">
@@ -501,13 +491,7 @@
       <a href="/2026/05/12/audio-interface-guide/" class="art-card">
         <div class="art-img" style="background: linear-gradient(135deg,#162240 0%,#0f1835 100%)">
           <div class="art-img-inner">
-            <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
-              <rect x="4" y="18" width="40" height="22" rx="4" stroke="white" stroke-width="2.5"/>
-              <circle cx="14" cy="29" r="5" fill="white"/>
-              <circle cx="34" cy="29" r="5" fill="white"/>
-              <line x1="14" y1="14" x2="14" y2="18" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
-              <line x1="34" y1="8" x2="34" y2="18" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
-            </svg>
+            <img src="/assets/images/thumb-audio-interface.png" alt="" class="thumb-img">
           </div>
         </div>
         <div class="art-body">
@@ -520,9 +504,7 @@
       <a href="/2026/05/11/effects-guide/" class="art-card">
         <div class="art-img" style="background: linear-gradient(135deg,#16201e 0%,#0f1a18 100%)">
           <div class="art-img-inner">
-            <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
-              <polyline points="4,34 11,20 18,28 26,14 34,24 44,16" stroke="white" stroke-width="2.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
+            <img src="/assets/images/thumb-effects.png" alt="" class="thumb-img">
           </div>
         </div>
         <div class="art-body">
