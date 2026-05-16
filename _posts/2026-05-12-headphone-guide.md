@@ -8,11 +8,6 @@ tags: [ヘッドフォン, モニタリング, DTM, 宅録, SONY, AKG, audio-tec
 image: /assets/images/thumb-headphone.png
 ---
 
-<figure style="margin: 2rem 0; text-align: center;">
-  <img src="{{ site.baseurl }}/assets/images/thumb-headphone.png"
-       alt="スタジオモニターヘッドフォン"
-       style="width: 100%; max-width: 720px; border-radius: 10px; box-shadow: 0 2px 12px rgba(0,0,0,0.12);">
-</figure>
 
 
 ## DTM用ヘッドフォンの選び方
