@@ -7,8 +7,6 @@ categories: [basics]
 tags: [初心者, 機材, 準備, オーディオインターフェース, DAW]
 image: /assets/images/thumb-basics.png
 ---
-
-本記事にはプロモーション・広告が含まれる場合があります。
 <figure style="margin: 2rem 0; text-align: center;">
   <img src="{{ site.baseurl }}/assets/images/thumb-basics.png"
        alt="音楽制作スタジオ"
