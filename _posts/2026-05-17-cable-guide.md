@@ -8,8 +8,6 @@ tags: [XLRケーブル, シールドケーブル, INSERTケーブル, スピー�
 image: /assets/images/thumb-cable.png
 ---
 
-本記事にはプロモーション・広告が含まれる場合があります。
-
 <figure style="margin: 2rem 0; text-align: center;">
   <img src="{{ site.baseurl }}/assets/images/thumb-cable.png"
        alt="音楽制作ケーブル各種"
