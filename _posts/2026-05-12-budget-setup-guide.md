@@ -8,8 +8,6 @@ tags: [DTM入門, 機材セット, 予算別, 初心者, 宅録]
 image: /assets/images/thumb-budget.png
 ---
 
-本記事にはプロモーション・広告が含まれる場合があります。
-
 <figure style="margin: 2rem 0; text-align: center;">
   <img src="{{ site.baseurl }}/assets/images/thumb-budget.png"
        alt="予算ホームスタジオ"
