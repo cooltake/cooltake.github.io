@@ -8,8 +8,6 @@ categories: [microphone]
 tags: [マイク, コンデンサーマイク, ダイナミックマイク, 録音, 宅録]
 ---
 
-本記事にはプロモーション・広告が含まれる場合があります。
-
 <figure style="margin: 2rem 0; text-align: center;">
   <img src="{{ site.baseurl }}/assets/images/thumb-microphone.png"
        alt="マイクロフォン録音"
