@@ -41,16 +41,15 @@ layout: default
     color: #f1f5ff; margin-bottom: 36px;
   }
 
-  /* ── タイトル直下のサムネイル（ダーク帯内） ── */
+  /* タイトル直下のサムネイル — aspect-ratio で明示的な高さを確保し object-fit: cover が中央表示される */
   .post-hero {
-    margin: 0 0 0;
-    border-radius: 16px 16px 0 0;
+    aspect-ratio: 16 / 7;
+    max-height: 480px;
     overflow: hidden;
-    max-height: 400px;
   }
   .post-hero img {
     width: 100%; height: 100%;
-    object-fit: cover; object-position: center;
+    object-fit: cover; object-position: center center;
     display: block;
   }
 
@@ -118,7 +117,7 @@ layout: default
   @media (max-width: 768px) {
     .post-content { padding: 32px 6%; }
     .post-body { padding: 32px 3% 60px; }
-    .post-hero { border-radius: 0; }
+    .post-hero { border-radius: 0; max-height: 280px; }
   }
 </style>
 
