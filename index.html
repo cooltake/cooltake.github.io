@@ -47,7 +47,13 @@
     }
     .hero-bg {
       position: absolute; inset: 0;
-      background: linear-gradient(160deg, #111b2e 0%, #0c1422 45%, #101828 100%);
+      background: #0a0e1a;
+    }
+    .hero-photo {
+      position: absolute; inset: 0;
+      width: 100%; height: 100%;
+      object-fit: cover; object-position: center 30%;
+      opacity: 0.72;
     }
     /* Radial glows */
     .hero-bg::before {
@@ -305,7 +311,9 @@
 
 <!-- ═══ HERO ═══ -->
 <section class="hero">
-  <div class="hero-bg"></div>
+  <div class="hero-bg">
+    <img src="/assets/images/hero-studio.png" alt="" class="hero-photo">
+  </div>
 
   <!-- Waveform SVG decoration -->
   <svg class="hero-wave" viewBox="0 0 1440 400" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
