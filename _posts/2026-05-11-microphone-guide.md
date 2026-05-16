@@ -23,7 +23,7 @@ tags: [マイク, コンデンサーマイク, ダイナミックマイク, 録�
 
 ## 構造と仕組みの違い
 
-<figure style="text-align:center;margin:2rem auto;max-width:800px;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 194" style="max-width:100%;height:auto;border-radius:10px;display:block;"><rect width="800" height="194" fill="#0f172a" rx="10"/><defs><marker id="ah" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#3b82f6"/></marker></defs><line x1="400" y1="10" x2="400" y2="184" stroke="#334155" stroke-width="1.5" stroke-dasharray="6,4"/><rect x="20" y="15" width="360" height="44" fill="#3b82f6" rx="8"/><text x="200" y="44" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#f1f5f9" font-weight="bold">タイプA</text><rect x="420" y="15" width="360" height="44" fill="#6366f1" rx="8"/><text x="600" y="44" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#f1f5f9" font-weight="bold">タイプB</text><rect x="28" y="80" width="352" height="32" fill="#1e293b" rx="6"/><text x="45" y="101" text-anchor="start" font-family="sans-serif" font-size="12" fill="#f1f5f9">▸ 高機能・高コスト</text><rect x="28" y="118" width="352" height="32" fill="#1e293b" rx="6"/><text x="45" y="139" text-anchor="start" font-family="sans-serif" font-size="12" fill="#f1f5f9">▸ プロ向け機能充実</text><rect x="28" y="156" width="352" height="32" fill="#1e293b" rx="6"/><text x="45" y="177" text-anchor="start" font-family="sans-serif" font-size="12" fill="#f1f5f9">▸ 学習コスト高め</text><rect x="428" y="80" width="352" height="32" fill="#1e293b" rx="6"/><text x="445" y="101" text-anchor="start" font-family="sans-serif" font-size="12" fill="#f1f5f9">▸ シンプル・低コスト</text><rect x="428" y="118" width="352" height="32" fill="#1e293b" rx="6"/><text x="445" y="139" text-anchor="start" font-family="sans-serif" font-size="12" fill="#f1f5f9">▸ 初心者でも使いやすい</text><rect x="428" y="156" width="352" height="32" fill="#1e293b" rx="6"/><text x="445" y="177" text-anchor="start" font-family="sans-serif" font-size="12" fill="#f1f5f9">▸ 機能は絞られる</text></svg><figcaption style="font-size:.82em;color:#64748b;margin-top:.4em;font-family:sans-serif;">図：選択肢の比較（詳細は本文参照）</figcaption></figure>
+
 
 
 ### ダイナミックマイク
@@ -42,7 +42,7 @@ tags: [マイク, コンデンサーマイク, ダイナミックマイク, 録�
 
 ## 特性の比較
 
-<figure style="text-align:center;margin:2rem auto;max-width:800px;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 194" style="max-width:100%;height:auto;border-radius:10px;display:block;"><rect width="800" height="194" fill="#0f172a" rx="10"/><defs><marker id="ah" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#3b82f6"/></marker></defs><line x1="400" y1="10" x2="400" y2="184" stroke="#334155" stroke-width="1.5" stroke-dasharray="6,4"/><rect x="20" y="15" width="360" height="44" fill="#3b82f6" rx="8"/><text x="200" y="44" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#f1f5f9" font-weight="bold">タイプA</text><rect x="420" y="15" width="360" height="44" fill="#6366f1" rx="8"/><text x="600" y="44" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#f1f5f9" font-weight="bold">タイプB</text><rect x="28" y="80" width="352" height="32" fill="#1e293b" rx="6"/><text x="45" y="101" text-anchor="start" font-family="sans-serif" font-size="12" fill="#f1f5f9">▸ 高機能・高コスト</text><rect x="28" y="118" width="352" height="32" fill="#1e293b" rx="6"/><text x="45" y="139" text-anchor="start" font-family="sans-serif" font-size="12" fill="#f1f5f9">▸ プロ向け機能充実</text><rect x="28" y="156" width="352" height="32" fill="#1e293b" rx="6"/><text x="45" y="177" text-anchor="start" font-family="sans-serif" font-size="12" fill="#f1f5f9">▸ 学習コスト高め</text><rect x="428" y="80" width="352" height="32" fill="#1e293b" rx="6"/><text x="445" y="101" text-anchor="start" font-family="sans-serif" font-size="12" fill="#f1f5f9">▸ シンプル・低コスト</text><rect x="428" y="118" width="352" height="32" fill="#1e293b" rx="6"/><text x="445" y="139" text-anchor="start" font-family="sans-serif" font-size="12" fill="#f1f5f9">▸ 初心者でも使いやすい</text><rect x="428" y="156" width="352" height="32" fill="#1e293b" rx="6"/><text x="445" y="177" text-anchor="start" font-family="sans-serif" font-size="12" fill="#f1f5f9">▸ 機能は絞られる</text></svg><figcaption style="font-size:.82em;color:#64748b;margin-top:.4em;font-family:sans-serif;">図：選択肢の比較（詳細は本文参照）</figcaption></figure>
+
 
 
 | 項目 | ダイナミック | コンデンサー |
@@ -58,7 +58,7 @@ tags: [マイク, コンデンサーマイク, ダイナミックマイク, 録�
 
 ## 用途別おすすめの選び方
 
-<figure style="text-align:center;margin:2rem auto;max-width:800px;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 194" style="max-width:100%;height:auto;border-radius:10px;display:block;"><rect width="800" height="194" fill="#0f172a" rx="10"/><defs><marker id="ah" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#3b82f6"/></marker></defs><line x1="400" y1="10" x2="400" y2="184" stroke="#334155" stroke-width="1.5" stroke-dasharray="6,4"/><rect x="20" y="15" width="360" height="44" fill="#3b82f6" rx="8"/><text x="200" y="44" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#f1f5f9" font-weight="bold">タイプA</text><rect x="420" y="15" width="360" height="44" fill="#6366f1" rx="8"/><text x="600" y="44" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#f1f5f9" font-weight="bold">タイプB</text><rect x="28" y="80" width="352" height="32" fill="#1e293b" rx="6"/><text x="45" y="101" text-anchor="start" font-family="sans-serif" font-size="12" fill="#f1f5f9">▸ 高機能・高コスト</text><rect x="28" y="118" width="352" height="32" fill="#1e293b" rx="6"/><text x="45" y="139" text-anchor="start" font-family="sans-serif" font-size="12" fill="#f1f5f9">▸ プロ向け機能充実</text><rect x="28" y="156" width="352" height="32" fill="#1e293b" rx="6"/><text x="45" y="177" text-anchor="start" font-family="sans-serif" font-size="12" fill="#f1f5f9">▸ 学習コスト高め</text><rect x="428" y="80" width="352" height="32" fill="#1e293b" rx="6"/><text x="445" y="101" text-anchor="start" font-family="sans-serif" font-size="12" fill="#f1f5f9">▸ シンプル・低コスト</text><rect x="428" y="118" width="352" height="32" fill="#1e293b" rx="6"/><text x="445" y="139" text-anchor="start" font-family="sans-serif" font-size="12" fill="#f1f5f9">▸ 初心者でも使いやすい</text><rect x="428" y="156" width="352" height="32" fill="#1e293b" rx="6"/><text x="445" y="177" text-anchor="start" font-family="sans-serif" font-size="12" fill="#f1f5f9">▸ 機能は絞られる</text></svg><figcaption style="font-size:.82em;color:#64748b;margin-top:.4em;font-family:sans-serif;">図：選択肢の比較（詳細は本文参照）</figcaption></figure>
+
 
 
 ### 宅録ボーカル・ポッドキャストに最適：コンデンサーマイク
@@ -119,8 +119,11 @@ tags: [マイク, コンデンサーマイク, ダイナミックマイク, 録�
 
 マイクとオーディオインターフェースをつなぐケーブルです。USB接続のマイクは不要ですが、XLRタイプのマイクには必須です。
 
----
+## まとめ：迷ったらコンデンサーマイク
 
+宅録・音楽制作を主目的とするなら、感度と音質の面から**コンデンサーマイクが最初の選択**として適しています。
+
+静かな録音環境を確保できる方は、エントリーモデルのコンデンサーマイクからスタートし、用途が広がったらダイナミックマイクを追加するのが合理的です。
 
 ---
 
@@ -194,8 +197,8 @@ tags: [マイク, コンデンサーマイク, ダイナミックマイク, 録�
 
 **定番モデル**: Rode NT5 / AKG C451B
 
-## まとめ：迷ったらコンデンサーマイク
+---
 
-宅録・音楽制作を主目的とするなら、感度と音質の面から**コンデンサーマイクが最初の選択**として適しています。
+## 楽器別マイク まとめ：1本から始めるなら
 
-静かな録音環境を確保できる方は、エントリーモデルのコンデンサーマイクからスタートし、用途が広がったらダイナミックマイクを追加するのが合理的です。
+楽器ごとに「これ一本で万能」なマイクは存在しません。まずは**Shure SM57（ダイナミック）を1本**用意すると、エレキギター・スネア・アンプ録音など幅広い用途に対応できます。ボーカルや弦楽器・アコギなど繊細な収音には**コンデンサーマイクを1本追加**するのが現実的なスタートです。予算に余裕が出てきたらドラム向けにクリップマイク（Sennheiser e604など）とオーバーヘッド用の小口径コンデンサーを追加していくと、本格的なマルチトラック録音環境が整います。
