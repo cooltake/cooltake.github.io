@@ -3,15 +3,12 @@ layout: post
 title: "コンプレッサー・リバーブ・ゲートの使い方 - 音楽制作エフェクター入門"
 description: "音楽制作で欠かせないコンプレッサー・リバーブ・ゲートの基本的な使い方を解説。各エフェクターの役割とパラメーターを初心者向けにわかりやすく紹介します。"
 date: 2026-05-11
+image: /assets/images/thumb-effects.png
 categories: [effects]
 tags: [コンプレッサー, リバーブ, ゲート, エフェクター, MIX]
 ---
 
 本記事にはプロモーション・広告が含まれる場合があります。
-<figure class="hero-img-wrap">
-  <img src="/assets/images/thumb-effects.png" alt="UREI 1176コンプレッサーとエフェクトプロセッサー">
-</figure>
-
 ## エフェクターとは — 音に「処理」を加えるツール
 
 <figure style="text-align:center;margin:2rem auto;max-width:800px;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 200" style="max-width:100%;height:auto;border-radius:10px;display:block;"><rect width="800" height="200" fill="#0f172a" rx="10"/><defs><marker id="ah" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#3b82f6"/></marker></defs><rect x="95" y="68" width="130" height="64" fill="#3b82f6" rx="8"/><text x="160" y="105" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#f1f5f9" font-weight="bold">課題・ニーズ</text><line x1="227" y1="100" x2="251" y2="100" stroke="#3b82f6" stroke-width="2" marker-end="url(#ah)"/><rect x="255" y="68" width="130" height="64" fill="#6366f1" rx="8"/><text x="320" y="105" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#f1f5f9" font-weight="bold">ツール活用</text><line x1="387" y1="100" x2="411" y2="100" stroke="#3b82f6" stroke-width="2" marker-end="url(#ah)"/><rect x="415" y="68" width="130" height="64" fill="#ec4899" rx="8"/><text x="480" y="105" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#f1f5f9" font-weight="bold">効率化・改善</text><line x1="547" y1="100" x2="571" y2="100" stroke="#3b82f6" stroke-width="2" marker-end="url(#ah)"/><rect x="575" y="68" width="130" height="64" fill="#14b8a6" rx="8"/><text x="640" y="105" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#f1f5f9" font-weight="bold">成果・価値</text></svg><figcaption style="font-size:.82em;color:#64748b;margin-top:.4em;font-family:sans-serif;">図：このツール/サービスが提供する価値の流れ</figcaption></figure>
