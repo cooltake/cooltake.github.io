@@ -9,11 +9,6 @@ tags: [オーディオインターフェース, Focusrite, Scarlett, DTM, 録音
 ---
 本記事にはプロモーション・広告が含まれる場合があります。
 
-<figure style="margin: 2rem 0; text-align: center;">
-  <img src="{{ site.baseurl }}/assets/images/thumb-audio-interface.png"
-       alt="オーディオインターフェース"
-       style="width: 100%; max-width: 720px; border-radius: 10px; box-shadow: 0 2px 12px rgba(0,0,0,0.12);">
-</figure>
 
 
 
