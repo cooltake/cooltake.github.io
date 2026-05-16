@@ -113,6 +113,70 @@ Arturia（フランスのブランド）のソフトシンセ「Analog Lab」が
 
 最初の1台は**Arturia MiniLab 3**か**AKAI MPK Mini MK3**が最もコストパフォーマンスに優れています。演奏に慣れてきたら49鍵以上にステップアップしましょう。
 
+
+---
+
+## 購入後の設定手順
+
+MIDIキーボードはドライバーいらずで使えるものがほとんどですが、DAWとの連携を最適化するために以下の手順を踏みましょう。
+
+### 1. 接続と認識確認
+1. MIDIキーボードをUSBでPCに接続する
+2. 多くのモデルはドライバー不要（クラスコンプライアント）でOS側が自動認識する
+3. デバイスマネージャー（Windows）またはシステム情報 → USB（Mac）で認識されていることを確認する
+
+### 2. DAWの設定
+DAW側でMIDIデバイスを有効化する必要があります。
+
+| DAW | 設定場所 |
+|-----|---------|
+| Ableton Live | 環境設定 → MIDI → 「トラック」と「同期」をON |
+| Logic Pro | 環境設定 → MIDIデバイスを追加 |
+| Cubase | スタジオ設定 → MIDIポート設定 |
+| FL Studio | オプション → MIDIセッティング → 入力ポートを選択 |
+
+### 3. 音源の選択
+MIDIキーボードはあくまでコントローラーです。実際の音は**DAW内の音源（VSTiプラグイン）**が担当します。
+
+- **付属音源を使う**：DAW付属のソフトシンセ（Logic ProのSculpture等）や、MIDIキーボード付属の音源（Arturia Analog Lab等）を選択
+- **追加音源を購入する**：Native Instruments KOMPLETEなど、目的に合った音源を追加
+
+### 4. ベロシティ感度の調整
+鍵盤の押し込み具合と音量の変化（ベロシティカーブ）をDAWまたはMIDIキーボード本体の設定で調整できます。ハードタッチが苦手な場合は「ソフト」カーブに設定すると演奏しやすくなります。
+
+---
+
+## MIDIキーボードでできること
+
+MIDIキーボードを導入するだけで作業効率が大幅に向上します。
+
+**1. リアルタイム演奏入力**
+鍵盤を弾きながらDAWにリアルタイムでMIDIノートを入力できます。マウス入力に比べてタイミングの微妙なズレ（ヒューマナイズ）がつき、より自然な演奏に仕上がります。
+
+**2. コード一発入力**
+コードを覚えていればコード進行を素早く打ち込めます。ストロークのリズム感もそのままMIDIに記録されます。
+
+**3. ドラムパッドでのビートメイキング**
+パッド付きモデルでは、ドラムパターンを指でたたいてリアルタイム入力できます。サンプラーやドラム音源（NI Maschineなど）との相性が特に良いです。
+
+**4. ノブ・フェーダーでのDAW操作**
+ノブやフェーダー付きモデルでは、DAWのミキサーフェーダーやエフェクトパラメーターをハードウェアから直接操作できます。マウス操作よりも直感的でスムーズなミックスが可能です。
+
+---
+
+## よくある質問（FAQ）
+
+**Q. MIDIキーボードだけで音は出ますか？**
+基本的には出ません。MIDIキーボードはコントローラーであり、音を鳴らすにはDAWとソフトシンセ（音源）が必要です。ただし「AKAI MPK Mini Play MK3」など内蔵音源を持つモデルはPC不要でスタンドアローン演奏が可能です。
+
+**Q. 鍵盤を弾いても音が出ないときは？**
+DAWでMIDIデバイスが有効になっているか確認してください。次に、DAWのトラックに音源（VSTi）が設定されているか確認します。それでも出ない場合はUSBポートを差し替えるか、ドライバーを再インストールしてください。
+
+**Q. 弾けなくてもMIDIキーボードは必要ですか？**
+必要です。鍵盤が弾けなくても、コードを1音ずつ押さえて録音したり、パッドでリズムを叩いたりするだけで作業効率が大幅に向上します。最初は25鍵の安価なモデルから試してみることをおすすめします。
+
+**Q. iPhone・iPadでも使えますか？**
+多くのモデルはiOS/iPadOSに対応しています。Lightning→USB-Aアダプター（Apple Camera Connection Kit）またはUSB-Cで接続すると、GarageBand等のアプリで使用できます。
 <div style="margin:2rem 0;padding:1.2rem 1.5rem;background:#fff7ed;border-left:4px solid #f97316;border-radius:8px;">
 <p style="margin:0 0 .6rem;font-weight:bold;font-size:1rem;">&#x1F6D2; この記事で紹介した機材を楽天市場でチェック</p>
 <a href="//af.moshimo.com/af/c/click?a_id=5565352&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2FMIDI%25E3%2582%25AD%25E3%2583%25BC%25E3%2583%259C%25E3%2583%25BC%25E3%2583%2589%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="display:inline-block;background:#bf0000;color:#fff;padding:.45rem 1.1rem;border-radius:4px;text-decoration:none;font-weight:bold;font-size:.95rem;">楽天市場でMIDIキーボードを探す →</a>
