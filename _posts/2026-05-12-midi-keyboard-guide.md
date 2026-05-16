@@ -8,8 +8,6 @@ tags: [MIDIキーボード, AKAI, Roland, Arturia, DTM, 打ち込み]
 image: /assets/images/thumb-midi-keyboard.png
 ---
 
-本記事にはプロモーション・広告が含まれる場合があります。
-
 <figure style="margin: 2rem 0; text-align: center;">
   <img src="{{ site.baseurl }}/assets/images/thumb-midi-keyboard.png"
        alt="MIDIキーボードコントローラー"
