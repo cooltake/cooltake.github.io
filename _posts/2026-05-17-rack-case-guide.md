@@ -8,8 +8,6 @@ tags: [ラックケース, フライトケース, ARMOR, DUPLEX, SKB, 楽器ケ�
 image: /assets/images/thumb-rack-case.png
 ---
 
-本記事にはプロモーション・広告が含まれる場合があります。
-
 <figure style="margin: 2rem 0; text-align: center;">
   <img src="{{ site.baseurl }}/assets/images/thumb-rack-case.png"
        alt="プロフェッショナルラックケースと楽器ケース"
