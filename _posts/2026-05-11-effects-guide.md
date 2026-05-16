@@ -8,6 +8,15 @@ categories: [effects]
 tags: [コンプレッサー, リバーブ, ゲート, エフェクター, MIX]
 ---
 
+本記事にはプロモーション・広告が含まれる場合があります。
+
+<figure style="margin: 2rem 0; text-align: center;">
+  <img src="{{ site.baseurl }}/assets/images/thumb-effects.png"
+       alt="音楽制作エフェクター"
+       style="width: 100%; max-width: 720px; border-radius: 10px; box-shadow: 0 2px 12px rgba(0,0,0,0.12);">
+</figure>
+
+
 ## エフェクターとは — 音に「処理」を加えるツール
 
 <figure style="text-align:center;margin:2rem auto;max-width:800px;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 200" style="max-width:100%;height:auto;border-radius:10px;display:block;"><rect width="800" height="200" fill="#0f172a" rx="10"/><defs><marker id="ah" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#3b82f6"/></marker></defs><rect x="95" y="68" width="130" height="64" fill="#3b82f6" rx="8"/><text x="160" y="105" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#f1f5f9" font-weight="bold">課題・ニーズ</text><line x1="227" y1="100" x2="251" y2="100" stroke="#3b82f6" stroke-width="2" marker-end="url(#ah)"/><rect x="255" y="68" width="130" height="64" fill="#6366f1" rx="8"/><text x="320" y="105" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#f1f5f9" font-weight="bold">ツール活用</text><line x1="387" y1="100" x2="411" y2="100" stroke="#3b82f6" stroke-width="2" marker-end="url(#ah)"/><rect x="415" y="68" width="130" height="64" fill="#ec4899" rx="8"/><text x="480" y="105" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#f1f5f9" font-weight="bold">効率化・改善</text><line x1="547" y1="100" x2="571" y2="100" stroke="#3b82f6" stroke-width="2" marker-end="url(#ah)"/><rect x="575" y="68" width="130" height="64" fill="#14b8a6" rx="8"/><text x="640" y="105" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#f1f5f9" font-weight="bold">成果・価値</text></svg><figcaption style="font-size:.82em;color:#64748b;margin-top:.4em;font-family:sans-serif;">図：このツール/サービスが提供する価値の流れ</figcaption></figure>
