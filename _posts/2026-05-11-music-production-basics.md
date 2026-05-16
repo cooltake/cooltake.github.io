@@ -7,11 +7,6 @@ categories: [basics]
 tags: [初心者, 機材, 準備, オーディオインターフェース, DAW]
 image: /assets/images/thumb-basics.png
 ---
-<figure style="margin: 2rem 0; text-align: center;">
-  <img src="{{ site.baseurl }}/assets/images/thumb-basics.png"
-       alt="音楽制作スタジオ"
-       style="width: 100%; max-width: 720px; border-radius: 10px; box-shadow: 0 2px 12px rgba(0,0,0,0.12);">
-</figure>
 
 ## 「何から始めればいい？」最初の壁を突破する
 
