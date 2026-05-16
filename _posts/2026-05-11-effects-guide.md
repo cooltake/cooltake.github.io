@@ -8,8 +8,6 @@ categories: [effects]
 tags: [コンプレッサー, リバーブ, ゲート, エフェクター, MIX]
 ---
 
-本記事にはプロモーション・広告が含まれる場合があります。
-
 <figure style="margin: 2rem 0; text-align: center;">
   <img src="{{ site.baseurl }}/assets/images/thumb-effects.png"
        alt="音楽制作エフェクター"
