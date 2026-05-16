@@ -171,10 +171,12 @@ layout: default
     var el = document.querySelector('.post-title');
     if (!el) return;
     var full = el.textContent.trim();
-    var idx = full.indexOf(' - ');
+    var sep = ' - ';
+    var idx = full.indexOf(sep);
+    if (idx === -1) { sep = ' — '; idx = full.indexOf(sep); }
     if (idx > -1) {
       el.innerHTML = '<span class="title-main">' + full.slice(0, idx) + '</span>' +
-                     '<span class="title-sub">' + full.slice(idx + 3) + '</span>';
+                     '<span class="title-sub">' + full.slice(idx + sep.length) + '</span>';
     } else {
       el.innerHTML = '<span class="title-main">' + full + '</span>';
     }
@@ -184,7 +186,7 @@ layout: default
 <article>
   <div class="post-header">
     <div class="post-hero-wrap{% if page.image %} has-image{% endif %}"{% if page.image %} style="--hero-img: url('{{ page.image }}');"{% endif %}>
-      <a href="{{ '/' | relative_url }}" class="back-link">← 記事一覧に戻る</a>
+      <a href="{{ '/' | relative_url }}" class="back-link">&larr; 記事一覧に戻る</a>
       <div class="post-hero-body">
         <div class="post-meta">
           <span class="post-tag">{{ page.categories | first | default: "Guide" | upcase }}</span>
