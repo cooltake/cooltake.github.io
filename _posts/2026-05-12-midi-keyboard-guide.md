@@ -8,11 +8,6 @@ tags: [MIDIキーボード, AKAI, Roland, Arturia, DTM, 打ち込み]
 image: /assets/images/thumb-midi-keyboard.png
 ---
 
-<figure style="margin: 2rem 0; text-align: center;">
-  <img src="{{ site.baseurl }}/assets/images/thumb-midi-keyboard.png"
-       alt="MIDIキーボードコントローラー"
-       style="width: 100%; max-width: 720px; border-radius: 10px; box-shadow: 0 2px 12px rgba(0,0,0,0.12);">
-</figure>
 
 
 ## MIDIキーボードとは
