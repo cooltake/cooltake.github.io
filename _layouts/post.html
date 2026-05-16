@@ -5,29 +5,16 @@ layout: default
   body { background: linear-gradient(160deg,#111b2e 0%,#0d1525 50%,#111827 100%) !important; }
 
   .post-header {
-    position: relative; overflow: hidden;
-    background-color: #0b1220;
-    background-image: none;
-    background-size: cover;
-    background-position: center center;
-    padding: 56px 0 32px;
+    position: relative;
+    background: linear-gradient(160deg,#0e1929 0%,#0b1220 60%,#101827 100%);
+    padding: 56px 0 40px;
     border-bottom: 1px solid rgba(255,255,255,.06);
+    overflow: hidden;
   }
-  /* hero画像がある場合: 暗いグラデーション + 画像を1つのbackground-imageで重ねる */
-  .post-header.has-hero {
-    background-image:
-      linear-gradient(to bottom,
-        rgba(6,12,24,0.82) 0%,
-        rgba(6,12,24,0.88) 100%),
-      var(--hero-img);
-    background-size: cover;
-    background-position: center center;
-  }
-  /* 青いグロー装飾 */
   .post-header::before {
     content: '';
     position: absolute; inset: 0;
-    background: radial-gradient(ellipse 70% 80% at 50% 0%,rgba(59,130,246,.10) 0%,transparent 70%);
+    background: radial-gradient(ellipse 70% 80% at 50% 0%,rgba(59,130,246,.12) 0%,transparent 70%);
     pointer-events: none;
   }
   .post-header .container { position: relative; }
@@ -52,12 +39,23 @@ layout: default
     font-family: 'Kiwi Maru','Noto Sans JP',serif;
     font-size: clamp(1rem,2.2vw,1.6rem);
     font-weight: 400; letter-spacing: .02em; line-height: 1.55;
-    color: #f1f5ff; margin-bottom: 0;
-    text-shadow: 0 1px 8px rgba(0,0,0,.6);
+    color: #f1f5ff; margin-bottom: 28px;
   }
 
-  /* カード = 画面の90%（左右5%ずつ）、ヘッダーとの隙間を詰める */
-  .post-body { padding: 20px 5% 60px; }
+  /* サムネイル: タイトル直下にセンタリング、最大700px */
+  .post-hero {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  .post-hero img {
+    width: 100%;
+    display: block;
+    border-radius: 12px;
+    box-shadow: 0 8px 32px rgba(0,0,0,.55);
+  }
+
+  /* カード = 画面の90%（左右5%ずつ） */
+  .post-body { padding: 32px 5% 60px; }
 
   .post-content {
     max-width: 100%;
@@ -119,13 +117,14 @@ layout: default
 
   @media (max-width: 768px) {
     .post-content { padding: 32px 6%; }
-    .post-body { padding: 16px 3% 48px; }
-    .post-header { padding: 48px 0 28px; }
+    .post-body { padding: 24px 3% 48px; }
+    .post-header { padding: 48px 0 32px; }
+    .post-hero { max-width: 100%; }
   }
 </style>
 
 <article>
-  <div class="post-header{% if page.image %} has-hero{% endif %}"{% if page.image %} style="--hero-img: url('{{ page.image }}');"{% endif %}>
+  <div class="post-header">
     <div class="container">
       <a href="{{ '/' | relative_url }}" class="back-link">← 記事一覧に戻る</a>
       <div class="post-meta">
@@ -133,6 +132,11 @@ layout: default
         <span class="post-date">{{ page.date | date: "%Y.%m.%d" }}</span>
       </div>
       <h1 class="post-title">{{ page.title }}</h1>
+      {% if page.image %}
+      <div class="post-hero">
+        <img src="{{ page.image }}" alt="{{ page.title }}">
+      </div>
+      {% endif %}
     </div>
   </div>
   <div class="post-body">
