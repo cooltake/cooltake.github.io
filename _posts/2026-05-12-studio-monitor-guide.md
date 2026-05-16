@@ -8,8 +8,6 @@ tags: [スタジオモニター, スピーカー, YAMAHA, KRK, Genelec, DTM, ミ
 image: /assets/images/thumb-studio-monitor.png
 ---
 
-本記事にはプロモーション・広告が含まれる場合があります。
-
 <figure style="margin: 2rem 0; text-align: center;">
   <img src="{{ site.baseurl }}/assets/images/thumb-studio-monitor.png"
        alt="スタジオモニタースピーカー"
