@@ -7,6 +7,14 @@ image: /assets/images/thumb-audio-interface.png
 categories: [gear]
 tags: [オーディオインターフェース, Focusrite, Scarlett, DTM, 録音機材]
 ---
+本記事にはプロモーション・広告が含まれる場合があります。
+
+<figure style="margin: 2rem 0; text-align: center;">
+  <img src="{{ site.baseurl }}/assets/images/thumb-audio-interface.png"
+       alt="オーディオインターフェース"
+       style="width: 100%; max-width: 720px; border-radius: 10px; box-shadow: 0 2px 12px rgba(0,0,0,0.12);">
+</figure>
+
 
 
 ## オーディオインターフェースとは
@@ -152,6 +160,25 @@ ADAT構成例：8ch I/F + 外部プリアンプ8ch（ADAT経由）= 計16ch同�
 
 ドラムのフルマイキングやバンド一発録りに取り組むなら、**Focusrite Scarlett 18i20**がコスパ重視の定番選択肢です。ADATで外部プリアンプを増設すれば16ch以上のシステムを構築でき、ドラム全パーツ＋バンド全員を同時収音できます。さらに上の品質を求めるなら**MOTU 828es**、プロフェッショナルスタジオ水準では**RME Fireface UCX II**や**Universal Audio Apollo x8**が業界標準です。将来マルチch化を見据えるなら、最初からADAT対応機種を選んでおくと拡張がスムーズになります。
 
+
+---
+
+## よくある質問（FAQ）
+
+**Q. ドライバーのインストールは必ず必要ですか？**
+Macではドライバー不要でプラグ＆プレイで使えるモデルが多いです。WindowsではASIOドライバー（メーカー公式）をインストールすることでレイテンシーが大幅に改善されます。
+
+**Q. USBハブ経由で使っても大丈夫ですか？**
+推奨しません。PCのUSBポートに直接接続してください。バスパワーの電力不足やUSB帯域の競合でノイズや不安定な動作が起きやすくなります。
+
+**Q. オーディオインターフェースがあればスピーカーは不要ですか？**
+いいえ。オーディオインターフェースはアナログ→デジタル変換を行う機器です。音を聞くにはヘッドフォンをI/Fのヘッドフォン端子に、またはスタジオモニターを出力端子に接続する必要があります。
+
+**Q. ファンタム電源（+48V）とは何ですか？**
+コンデンサーマイクが動作するために必要な電源です。ほとんどのオーディオインターフェースにはファンタム電源スイッチが搭載されており、ON/OFFで切り替えられます。ダイナミックマイクに対してONにしても基本的に問題ありませんが、一部のリボンマイクは破損するため注意が必要です。
+
+**Q. 複数のI/Fを同時使用できますか？**
+Macでは「Aggregate Device（集約デバイス）」機能で複数のI/Fを1つとして使えます。ただし同期精度や安定性の問題が生じやすいため、本格録音では推奨しません。チャンネルが増えた場合はADAT拡張か多入力モデルへの買い替えが確実です。
 <div style="margin:2rem 0;padding:1.2rem 1.5rem;background:#fff7ed;border-left:4px solid #f97316;border-radius:8px;">
 <p style="margin:0 0 .6rem;font-weight:bold;font-size:1rem;">&#x1F6D2; この記事で紹介した機材を楽天市場でチェック</p>
 <a href="//af.moshimo.com/af/c/click?a_id=5565352&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%25E3%2582%25AA%25E3%2583%25BC%25E3%2583%2587%25E3%2582%25A3%25E3%2582%25AA%25E3%2582%25A4%25E3%2583%25B3%25E3%2582%25BF%25E3%2583%25BC%25E3%2583%2595%25E3%2582%25A7%25E3%2583%25BC%25E3%2582%25B9%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="display:inline-block;background:#bf0000;color:#fff;padding:.45rem 1.1rem;border-radius:4px;text-decoration:none;font-weight:bold;font-size:.95rem;">楽天市場でオーディオインターフェースを探す →</a>
