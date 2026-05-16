@@ -8,8 +8,6 @@ tags: [マイクスタンド, K&M, ブームスタンド, ストレートスタ�
 image: /assets/images/thumb-mic-stand.png
 ---
 
-本記事にはプロモーション・広告が含まれる場合があります。
-
 <figure style="margin: 2rem 0; text-align: center;">
   <img src="{{ site.baseurl }}/assets/images/thumb-mic-stand.png"
        alt="マイクスタンドとコンデンサーマイク"
