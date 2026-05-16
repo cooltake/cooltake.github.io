@@ -36,7 +36,7 @@ DAWで打ち込んだ音やリアルタイムで演奏した音は、スピー�
 
 ## 選び方のポイント
 
-<figure style="text-align:center;margin:2rem auto;max-width:800px;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 194" style="max-width:100%;height:auto;border-radius:10px;display:block;"><rect width="800" height="194" fill="#0f172a" rx="10"/><defs><marker id="ah" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#3b82f6"/></marker></defs><line x1="400" y1="10" x2="400" y2="184" stroke="#334155" stroke-width="1.5" stroke-dasharray="6,4"/><rect x="20" y="15" width="360" height="44" fill="#3b82f6" rx="8"/><text x="200" y="44" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#f1f5f9" font-weight="bold">タイプA</text><rect x="420" y="15" width="360" height="44" fill="#6366f1" rx="8"/><text x="600" y="44" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#f1f5f9" font-weight="bold">タイプB</text><rect x="28" y="80" width="352" height="32" fill="#1e293b" rx="6"/><text x="45" y="101" text-anchor="start" font-family="sans-serif" font-size="12" fill="#f1f5f9">▸ 高機能・高コスト</text><rect x="28" y="118" width="352" height="32" fill="#1e293b" rx="6"/><text x="45" y="139" text-anchor="start" font-family="sans-serif" font-size="12" fill="#f1f5f9">▸ プロ向け機能充実</text><rect x="28" y="156" width="352" height="32" fill="#1e293b" rx="6"/><text x="45" y="177" text-anchor="start" font-family="sans-serif" font-size="12" fill="#f1f5f9">▸ 学習コスト高め</text><rect x="428" y="80" width="352" height="32" fill="#1e293b" rx="6"/><text x="445" y="101" text-anchor="start" font-family="sans-serif" font-size="12" fill="#f1f5f9">▸ シンプル・低コスト</text><rect x="428" y="118" width="352" height="32" fill="#1e293b" rx="6"/><text x="445" y="139" text-anchor="start" font-family="sans-serif" font-size="12" fill="#f1f5f9">▸ 初心者でも使いやすい</text><rect x="428" y="156" width="352" height="32" fill="#1e293b" rx="6"/><text x="445" y="177" text-anchor="start" font-family="sans-serif" font-size="12" fill="#f1f5f9">▸ 機能は絞られる</text></svg><figcaption style="font-size:.82em;color:#64748b;margin-top:.4em;font-family:sans-serif;">図：選択肢の比較（詳細は本文参照）</figcaption></figure>
+
 
 
 ### 1. 入出力数（I/O数）
@@ -60,7 +60,7 @@ DAWで打ち込んだ音やリアルタイムで演奏した音は、スピー�
 
 ## おすすめモデル比較
 
-<figure style="text-align:center;margin:2rem auto;max-width:800px;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 194" style="max-width:100%;height:auto;border-radius:10px;display:block;"><rect width="800" height="194" fill="#0f172a" rx="10"/><defs><marker id="ah" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#3b82f6"/></marker></defs><line x1="400" y1="10" x2="400" y2="184" stroke="#334155" stroke-width="1.5" stroke-dasharray="6,4"/><rect x="20" y="15" width="360" height="44" fill="#3b82f6" rx="8"/><text x="200" y="44" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#f1f5f9" font-weight="bold">タイプA</text><rect x="420" y="15" width="360" height="44" fill="#6366f1" rx="8"/><text x="600" y="44" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#f1f5f9" font-weight="bold">タイプB</text><rect x="28" y="80" width="352" height="32" fill="#1e293b" rx="6"/><text x="45" y="101" text-anchor="start" font-family="sans-serif" font-size="12" fill="#f1f5f9">▸ 高機能・高コスト</text><rect x="28" y="118" width="352" height="32" fill="#1e293b" rx="6"/><text x="45" y="139" text-anchor="start" font-family="sans-serif" font-size="12" fill="#f1f5f9">▸ プロ向け機能充実</text><rect x="28" y="156" width="352" height="32" fill="#1e293b" rx="6"/><text x="45" y="177" text-anchor="start" font-family="sans-serif" font-size="12" fill="#f1f5f9">▸ 学習コスト高め</text><rect x="428" y="80" width="352" height="32" fill="#1e293b" rx="6"/><text x="445" y="101" text-anchor="start" font-family="sans-serif" font-size="12" fill="#f1f5f9">▸ シンプル・低コスト</text><rect x="428" y="118" width="352" height="32" fill="#1e293b" rx="6"/><text x="445" y="139" text-anchor="start" font-family="sans-serif" font-size="12" fill="#f1f5f9">▸ 初心者でも使いやすい</text><rect x="428" y="156" width="352" height="32" fill="#1e293b" rx="6"/><text x="445" y="177" text-anchor="start" font-family="sans-serif" font-size="12" fill="#f1f5f9">▸ 機能は絞られる</text></svg><figcaption style="font-size:.82em;color:#64748b;margin-top:.4em;font-family:sans-serif;">図：選択肢の比較（詳細は本文参照）</figcaption></figure>
+
 
 
 | モデル | 価格帯 | 入力数 | 特徴 |
@@ -96,6 +96,9 @@ Focusrite Scarlettシリーズは世界シェアNo.1のオーディオインタ�
 
 ---
 
+## まとめ①：ホームスタジオ・宅録向けI/Fの選び方
+
+予算が限られているなら**Focusrite Scarlett 2i2**が最初の選択肢です。予算に余裕があり音質を重視するなら**MOTU M2**が候補に入ります。まずは2イン2アウトのモデルから始めて、録音規模が拡大したときに下記のマルチchモデルへアップグレードする戦略が堅実です。
 
 ---
 
@@ -145,6 +148,6 @@ ADAT構成例：8ch I/F + 外部プリアンプ8ch（ADAT経由）= 計16ch同�
 - **ミッドレンジスタジオ**：MOTU 828esで音質・安定性を確保
 - **プロフェッショナルスタジオ**：Universal Audio Apollo x8 または RME Fireface UCX II — UADプラグインやドライバー品質が段違い
 
-## まとめ
+## まとめ②：マルチch録音・スタジオ・バンドレコーディング向けI/F
 
-オーディオインターフェースは音楽制作の土台となる機器です。予算が限られているなら**Focusrite Scarlett 2i2**一択。予算に余裕があり音質を重視するなら**MOTU M2**が選択肢に入ります。まずは2イン2アウトのモデルから始めて、必要に応じて入力数が多いモデルへアップグレードする戦略が堅実です。
+ドラムのフルマイキングやバンド一発録りに取り組むなら、**Focusrite Scarlett 18i20**がコスパ重視の定番選択肢です。ADATで外部プリアンプを増設すれば16ch以上のシステムを構築でき、ドラム全パーツ＋バンド全員を同時収音できます。さらに上の品質を求めるなら**MOTU 828es**、プロフェッショナルスタジオ水準では**RME Fireface UCX II**や**Universal Audio Apollo x8**が業界標準です。将来マルチch化を見据えるなら、最初からADAT対応機種を選んでおくと拡張がスムーズになります。
