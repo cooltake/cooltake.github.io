@@ -2,13 +2,12 @@
 layout: default
 ---
 <style>
-  /* ── Post page: Panel B (light card on dark bg) ── */
   body { background: linear-gradient(160deg,#111b2e 0%,#0d1525 50%,#111827 100%) !important; }
 
   .post-header {
     position: relative; overflow: hidden;
     background: linear-gradient(160deg,#0e1929 0%,#0b1220 60%,#101827 100%);
-    padding: 80px 0 56px;
+    padding: 72px 0 0;
     border-bottom: 1px solid rgba(255,255,255,.06);
   }
   .post-header::before {
@@ -22,11 +21,11 @@ layout: default
   .back-link {
     display: inline-flex; align-items: center; gap: 6px;
     color: #8896b3; font-size: .85rem; font-weight: 500;
-    margin-bottom: 32px; text-decoration: none; transition: color .2s;
+    margin-bottom: 28px; text-decoration: none; transition: color .2s;
   }
   .back-link:hover { color: #f1f5ff; }
 
-  .post-meta { display: flex; gap: 10px; align-items: center; margin-bottom: 20px; }
+  .post-meta { display: flex; gap: 10px; align-items: center; margin-bottom: 18px; }
   .post-tag {
     background: rgba(59,130,246,.1); color: #93c5fd;
     border: 1px solid rgba(59,130,246,.2);
@@ -39,22 +38,34 @@ layout: default
     font-family: 'Kiwi Maru','Noto Sans JP',serif;
     font-size: clamp(1rem,2.2vw,1.6rem);
     font-weight: 400; letter-spacing: .02em; line-height: 1.55;
-    color: #f1f5ff;
+    color: #f1f5ff; margin-bottom: 36px;
+  }
+
+  /* ── タイトル直下のサムネイル（ダーク帯内） ── */
+  .post-hero {
+    margin: 0 0 0;
+    border-radius: 16px 16px 0 0;
+    overflow: hidden;
+    max-height: 400px;
+  }
+  .post-hero img {
+    width: 100%; height: 100%;
+    object-fit: cover; object-position: center;
+    display: block;
   }
 
   /* カード = 画面の90%（左右5%ずつ） */
   .post-body { padding: 48px 5% 80px; }
 
-  /* オフホワイトカード = 幅100%（post-bodyのpaddingで90%になる） */
   .post-content {
     max-width: 100%;
     background: #d6d5d2; color: #1c1c2e;
     border-radius: 16px;
-    padding: 48px 12.5%;   /* 両側12.5% → 本文列 = カードの75% */
+    padding: 48px 12.5%;
     box-shadow: 0 4px 40px rgba(0,0,0,.65);
   }
 
-  /* テキスト表示領域 = max 1000px（中央寄せ） */
+  /* テキスト表示領域 max 1000px */
   .post-inner {
     max-width: 1000px;
     margin: 0 auto;
@@ -98,13 +109,6 @@ layout: default
     padding: 6px 14px; border-radius: 8px; margin-bottom: 28px;
   }
 
-  .hero-img-wrap { margin: 0 0 36px; }
-  .hero-img-wrap img { width: 100%; border-radius: 10px; display: block; }
-  .hero-img-wrap figcaption {
-    font-family: 'BIZ UDPGothic','Noto Sans JP',sans-serif;
-    font-size: .8rem; color: #6b7280; margin-top: 6px; text-align: center;
-  }
-
   .post-inner blockquote {
     border-left: 4px solid #3b82f6; background: #c8c7c4;
     margin: 28px 0; padding: 16px 20px;
@@ -114,6 +118,7 @@ layout: default
   @media (max-width: 768px) {
     .post-content { padding: 32px 6%; }
     .post-body { padding: 32px 3% 60px; }
+    .post-hero { border-radius: 0; }
   }
 </style>
 
@@ -127,6 +132,11 @@ layout: default
       </div>
       <h1 class="post-title">{{ page.title }}</h1>
     </div>
+    {% if page.image %}
+    <div class="post-hero">
+      <img src="{{ page.image }}" alt="{{ page.title }}">
+    </div>
+    {% endif %}
   </div>
   <div class="post-body">
     <div class="post-content">
