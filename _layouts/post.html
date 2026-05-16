@@ -43,14 +43,16 @@ layout: default
     color: #f1f5ff;
   }
 
+  /* オフホワイトカード = 画面の90%、本文 = カードの75% */
   .post-body { padding: 48px 5% 80px; }
 
   .post-content {
-    max-width: 900px; margin: 0 auto;
+    max-width: 100%;           /* 幅はpost-bodyのpadding(5%×2)で制御 */
+    margin: 0 auto;
     font-size: 1.025rem; line-height: 1.95;
     background: #d6d5d2; color: #1c1c2e;
     border-radius: 16px;
-    padding: 48px 12%;
+    padding: 48px 12.5%;      /* 両側12.5% → テキスト列幅はカードの75% */
     box-shadow: 0 4px 40px rgba(0,0,0,.65);
   }
 
@@ -91,7 +93,6 @@ layout: default
     padding: 6px 14px; border-radius: 8px; margin-bottom: 28px;
   }
 
-  /* hero thumbnail */
   .hero-img-wrap { margin: 0 0 36px; }
   .hero-img-wrap img { width: 100%; border-radius: 10px; display: block; }
   .hero-img-wrap figcaption {
@@ -99,7 +100,6 @@ layout: default
     font-size: .8rem; color: #6b7280; margin-top: 6px; text-align: center;
   }
 
-  /* blockquote / callout */
   .post-content blockquote {
     border-left: 4px solid #3b82f6;
     background: #c8c7c4; margin: 28px 0;
