@@ -8,11 +8,6 @@ categories: [microphone]
 tags: [マイク, コンデンサーマイク, ダイナミックマイク, 録音, 宅録]
 ---
 
-<figure style="margin: 2rem 0; text-align: center;">
-  <img src="{{ site.baseurl }}/assets/images/thumb-microphone.png"
-       alt="マイクロフォン録音"
-       style="width: 100%; max-width: 720px; border-radius: 10px; box-shadow: 0 2px 12px rgba(0,0,0,0.12);">
-</figure>
 
 
 ## マイク選びで最初に知るべき「2種類の違い」
