@@ -8,11 +8,6 @@ tags: [マイクスタンド, K&M, ブームスタンド, ストレートスタ�
 image: /assets/images/thumb-mic-stand.png
 ---
 
-<figure style="margin: 2rem 0; text-align: center;">
-  <img src="{{ site.baseurl }}/assets/images/thumb-mic-stand.png"
-       alt="マイクスタンドとコンデンサーマイク"
-       style="width: 100%; max-width: 720px; border-radius: 10px; box-shadow: 0 2px 12px rgba(0,0,0,0.12);">
-</figure>
 
 ## マイクスタンドの種類と用途
 
