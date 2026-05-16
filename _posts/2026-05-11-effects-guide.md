@@ -8,11 +8,6 @@ categories: [effects]
 tags: [コンプレッサー, リバーブ, ゲート, エフェクター, MIX]
 ---
 
-<figure style="margin: 2rem 0; text-align: center;">
-  <img src="{{ site.baseurl }}/assets/images/thumb-effects.png"
-       alt="音楽制作エフェクター"
-       style="width: 100%; max-width: 720px; border-radius: 10px; box-shadow: 0 2px 12px rgba(0,0,0,0.12);">
-</figure>
 
 
 ## エフェクターとは — 音に「処理」を加えるツール
