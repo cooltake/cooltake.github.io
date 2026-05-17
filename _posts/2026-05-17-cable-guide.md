@@ -113,7 +113,127 @@ TIPがSEND（IF → コンプ）、RINGがRETURN（コンプ → IF）です。�
 
 **ステージ端のマルチボックス（ステージボックス）**にXLRを集約し、1本のスネークケーブルで卓（ミキサー）側まで引きます。主ミキサー（FOH）への送りと、モニターミキサーへの返しを同時に処理するのが実際の現場の使い方です。
 
-<figure style="text-align:center;margin:2rem auto;max-width:800px;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 440" style="max-width:100%;height:auto;border-radius:10px;display:block;"><rect width="800" height="440" fill="#0f172a" rx="10"/><!-- Title --><text x="400" y="20" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#64748b">ライブハウス ケーブリング構成図（マルチケーブル）</text><!-- Stage area --><rect x="30" y="28" width="740" height="110" fill="#1e293b" rx="8" stroke="#475569" stroke-width="1.5"/><text x="400" y="44" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#94a3b8" font-weight="bold">STAGE（ステージ）</text><!-- Performer boxes: Vocal=128, Guitar=256, Keys=400, Bass=544, Drums=672 --><rect x="68" y="52" width="72" height="36" fill="#334155" rx="5"/><text x="104" y="68" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#e2e8f0">🎤 Vocal</text><text x="104" y="82" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#94a3b8">XLR ×1</text><rect x="192" y="52" width="72" height="36" fill="#334155" rx="5"/><text x="228" y="68" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#e2e8f0">🎸 Guitar</text><text x="228" y="82" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#94a3b8">XLR ×1</text><rect x="320" y="52" width="72" height="36" fill="#334155" rx="5"/><text x="356" y="68" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#e2e8f0">🎹 Keys</text><text x="356" y="82" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#94a3b8">XLR ×1</text><rect x="448" y="52" width="72" height="36" fill="#334155" rx="5"/><text x="484" y="68" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#e2e8f0">🎸 Bass</text><text x="484" y="82" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#94a3b8">XLR ×1</text><rect x="576" y="52" width="72" height="36" fill="#334155" rx="5"/><text x="612" y="68" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#e2e8f0">🥁 Drums</text><text x="612" y="82" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#94a3b8">XLR ×4〜8</text><!-- Mic lines from performers to stage box (y=140 top) --><line x1="104" y1="88" x2="104" y2="120" stroke="#60a5fa" stroke-width="1.5"/><line x1="228" y1="88" x2="228" y2="120" stroke="#60a5fa" stroke-width="1.5"/><line x1="356" y1="88" x2="356" y2="120" stroke="#60a5fa" stroke-width="1.5"/><line x1="484" y1="88" x2="484" y2="120" stroke="#60a5fa" stroke-width="1.5"/><line x1="612" y1="88" x2="612" y2="120" stroke="#60a5fa" stroke-width="1.5"/><!-- Lines converge to stage box --><line x1="104" y1="120" x2="104" y2="132" stroke="#60a5fa" stroke-width="1.5"/><line x1="228" y1="120" x2="228" y2="132" stroke="#60a5fa" stroke-width="1.5"/><line x1="356" y1="120" x2="356" y2="132" stroke="#60a5fa" stroke-width="1.5"/><line x1="484" y1="120" x2="484" y2="132" stroke="#60a5fa" stroke-width="1.5"/><line x1="612" y1="120" x2="612" y2="132" stroke="#60a5fa" stroke-width="1.5"/><!-- Wedge monitors (転がし) at stage floor --><rect x="68" y="120" width="56" height="20" fill="#1e3a5f" rx="3" stroke="#3b82f6" stroke-width="1"/><text x="96" y="133" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#93c5fd">転がし</text><rect x="560" y="120" width="56" height="20" fill="#1e3a5f" rx="3" stroke="#3b82f6" stroke-width="1"/><text x="588" y="133" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#93c5fd">転がし</text><!-- Stage box (multibox) --><rect x="290" y="158" width="220" height="48" fill="#292524" rx="8" stroke="#f59e0b" stroke-width="2"/><text x="400" y="177" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#fcd34d" font-weight="bold">マルチボックス（ステージボックス）</text><text x="400" y="197" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#a8a29e">XLR IN 8〜32ch ／ RETURN OUT</text><!-- Lines from stage to stage box --><line x1="104" y1="132" x2="290" y2="182" stroke="#60a5fa" stroke-width="1" stroke-dasharray="3,2" opacity="0.6"/><line x1="228" y1="132" x2="320" y2="170" stroke="#60a5fa" stroke-width="1" stroke-dasharray="3,2" opacity="0.6"/><line x1="356" y1="132" x2="380" y2="158" stroke="#60a5fa" stroke-width="1.5"/><line x1="484" y1="132" x2="460" y2="158" stroke="#60a5fa" stroke-width="1" stroke-dasharray="3,2" opacity="0.6"/><line x1="612" y1="132" x2="510" y2="170" stroke="#60a5fa" stroke-width="1" stroke-dasharray="3,2" opacity="0.6"/><!-- Multicable (thick amber) going down --><rect x="384" y="206" width="32" height="76" fill="#92400e" rx="4" stroke="#f59e0b" stroke-width="2"/><text x="400" y="238" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#fde68a" font-weight="bold">マルチ</text><text x="400" y="252" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#fde68a">ケーブル</text><text x="400" y="266" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#fbbf24">16〜32芯</text><!-- Split fork lines --><line x1="400" y1="282" x2="180" y2="300" stroke="#f59e0b" stroke-width="3"/><line x1="400" y1="282" x2="620" y2="300" stroke="#f59e0b" stroke-width="3"/><!-- Monitor Mixer (left, purple) --><rect x="60" y="300" width="220" height="68" fill="#1e1b4b" rx="8" stroke="#8b5cf6" stroke-width="2"/><text x="170" y="322" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#c4b5fd" font-weight="bold">モニターミキサー</text><text x="170" y="338" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#8b5cf6">（ステージ袖）</text><text x="170" y="358" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#6d28d9">返し信号をコントロール</text><!-- FOH Mixer (right, blue) --><rect x="520" y="300" width="220" height="68" fill="#1e3a5f" rx="8" stroke="#2563eb" stroke-width="2"/><text x="630" y="322" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#93c5fd" font-weight="bold">メインミキサー（FOH）</text><text x="630" y="338" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#3b82f6">（客席後方・PAオペレーター）</text><text x="630" y="358" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#1d4ed8">客席へのメイン音声をコントロール</text><!-- Return arrows (dashed, from monitor mixer back to stage wedge monitors) --><line x1="100" y1="300" x2="88" y2="140" stroke="#a78bfa" stroke-width="2" stroke-dasharray="6,3"/><polygon points="88,130 84,145 92,145" fill="#a78bfa"/><text x="52" y="230" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#a78bfa" transform="rotate(-90,52,230)">RETURN（モニター送り）</text><line x1="240" y1="300" x2="240" y2="200" stroke="#a78bfa" stroke-width="1.5" stroke-dasharray="4,3" opacity="0.5"/><!-- Legend --><rect x="30" y="400" width="740" height="32" fill="#1e293b" rx="6"/><line x1="50" y1="416" x2="80" y2="416" stroke="#60a5fa" stroke-width="2"/><text x="88" y="420" font-family="sans-serif" font-size="9" fill="#94a3b8">XLRケーブル（SEND）</text><rect x="188" y="410" width="26" height="12" fill="#92400e" rx="2" stroke="#f59e0b" stroke-width="1"/><text x="222" y="420" font-family="sans-serif" font-size="9" fill="#94a3b8">マルチケーブル</text><line x1="320" y1="416" x2="350" y2="416" stroke="#a78bfa" stroke-width="2" stroke-dasharray="5,3"/><text x="358" y="420" font-family="sans-serif" font-size="9" fill="#94a3b8">RETURN（モニター返し）</text><rect x="498" y="410" width="14" height="12" fill="#1e3a5f" rx="2" stroke="#2563eb" stroke-width="1"/><text x="518" y="420" font-family="sans-serif" font-size="9" fill="#93c5fd">FOH</text><rect x="562" y="410" width="14" height="12" fill="#1e1b4b" rx="2" stroke="#8b5cf6" stroke-width="1"/><text x="582" y="420" font-family="sans-serif" font-size="9" fill="#c4b5fd">モニター卓</text></svg><figcaption style="font-size:.82em;color:#64748b;margin-top:.4em;font-family:sans-serif;">図：ライブハウスのマルチケーブル構成 — 各演奏者のXLRをマルチボックスに集約し、FOHミキサーとモニターミキサーへ同時伝送</figcaption></figure>
+<figure style="text-align:center;margin:2rem auto;max-width:820px;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 490" style="max-width:100%;height:auto;border-radius:10px;display:block;">
+<rect width="800" height="490" fill="#0f172a" rx="10"/>
+<!-- Title -->
+<text x="400" y="22" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#94a3b8" font-weight="bold">マルチケーブル 2系統構成図 — ライブPA</text>
+<!-- Zone: STAGE -->
+<rect x="10" y="32" width="228" height="418" fill="#1a2035" rx="8" stroke="#334155" stroke-width="1.5"/>
+<text x="124" y="52" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#64748b" font-weight="bold">STAGE（ステージ）</text>
+<!-- Zone: FOH -->
+<rect x="553" y="32" width="237" height="216" fill="#1a2035" rx="8" stroke="#334155" stroke-width="1.5"/>
+<text x="671" y="52" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#64748b" font-weight="bold">FOH（客席後方）</text>
+<!-- Zone: Stage Wing -->
+<rect x="553" y="258" width="237" height="192" fill="#1a1535" rx="8" stroke="#334155" stroke-width="1.5"/>
+<text x="671" y="278" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#64748b" font-weight="bold">ステージ袖</text>
+<!-- Performers (upper group: Vocal/Guitar/Keys → MB①) -->
+<rect x="15" y="65" width="85" height="33" fill="#243454" rx="4"/>
+<text x="57" y="79" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#e2e8f0">🎤 Vocal</text>
+<text x="57" y="91" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#64748b">XLR×1</text>
+<rect x="15" y="107" width="85" height="33" fill="#243454" rx="4"/>
+<text x="57" y="121" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#e2e8f0">🎸 Guitar</text>
+<text x="57" y="133" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#64748b">XLR×1</text>
+<rect x="15" y="149" width="85" height="33" fill="#243454" rx="4"/>
+<text x="57" y="163" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#e2e8f0">🎹 Keys</text>
+<text x="57" y="175" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#64748b">XLR×2</text>
+<!-- Performers (lower group: Bass/Drums → MB②) -->
+<rect x="15" y="252" width="85" height="33" fill="#243454" rx="4"/>
+<text x="57" y="266" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#e2e8f0">🎸 Bass</text>
+<text x="57" y="278" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#64748b">XLR×1</text>
+<rect x="15" y="294" width="85" height="42" fill="#243454" rx="4"/>
+<text x="57" y="309" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#e2e8f0">🥁 Drums</text>
+<text x="57" y="322" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#64748b">XLR×4〜8</text>
+<text x="57" y="333" text-anchor="middle" font-family="sans-serif" font-size="7" fill="#475569">（専用可）</text>
+<!-- XLR lines: upper performers → MB① -->
+<line x1="100" y1="81" x2="142" y2="110" stroke="#60a5fa" stroke-width="1.3" opacity="0.8"/>
+<line x1="100" y1="123" x2="142" y2="126" stroke="#60a5fa" stroke-width="1.3" opacity="0.8"/>
+<line x1="100" y1="165" x2="142" y2="142" stroke="#60a5fa" stroke-width="1.3" opacity="0.8"/>
+<!-- XLR lines: lower performers → MB② -->
+<line x1="100" y1="268" x2="142" y2="278" stroke="#60a5fa" stroke-width="1.3" opacity="0.8"/>
+<line x1="100" y1="315" x2="142" y2="300" stroke="#60a5fa" stroke-width="1.3" opacity="0.8"/>
+<!-- Stage MultiBox① (上手) -->
+<rect x="142" y="82" width="74" height="88" fill="#1e3a5f" rx="6" stroke="#f59e0b" stroke-width="2"/>
+<text x="179" y="107" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#fcd34d" font-weight="bold">マルチ</text>
+<text x="179" y="120" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#fcd34d" font-weight="bold">ボックス①</text>
+<text x="179" y="134" text-anchor="middle" font-family="sans-serif" font-size="7" fill="#94a3b8">（上手・前方）</text>
+<text x="179" y="146" text-anchor="middle" font-family="sans-serif" font-size="7" fill="#64748b">XLR 8ch IN</text>
+<text x="179" y="158" text-anchor="middle" font-family="sans-serif" font-size="7" fill="#64748b">RETURN OUT</text>
+<!-- Stage MultiBox② (下手) -->
+<rect x="142" y="248" width="74" height="88" fill="#1e3a5f" rx="6" stroke="#f59e0b" stroke-width="2"/>
+<text x="179" y="273" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#fcd34d" font-weight="bold">マルチ</text>
+<text x="179" y="286" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#fcd34d" font-weight="bold">ボックス②</text>
+<text x="179" y="300" text-anchor="middle" font-family="sans-serif" font-size="7" fill="#94a3b8">（下手・後方）</text>
+<text x="179" y="312" text-anchor="middle" font-family="sans-serif" font-size="7" fill="#64748b">XLR 8ch IN</text>
+<text x="179" y="324" text-anchor="middle" font-family="sans-serif" font-size="7" fill="#64748b">RETURN OUT</text>
+<!-- Left trunk bar at x=228: collects both MBs → cables -->
+<line x1="216" y1="126" x2="228" y2="126" stroke="#475569" stroke-width="1.8"/>
+<line x1="216" y1="292" x2="228" y2="292" stroke="#475569" stroke-width="1.8"/>
+<line x1="228" y1="126" x2="228" y2="292" stroke="#475569" stroke-width="1.8"/>
+<!-- Trunk → SEND cable (blue solid) -->
+<line x1="228" y1="152" x2="240" y2="152" stroke="#3b82f6" stroke-width="2.2"/>
+<!-- Trunk → RETURN cable (purple dashed) -->
+<line x1="228" y1="292" x2="240" y2="292" stroke="#7c3aed" stroke-width="2.2" stroke-dasharray="5,3"/>
+<!-- SEND CABLE (BLUE, left→right) -->
+<rect x="240" y="130" width="305" height="44" fill="#081a38" rx="6" stroke="#3b82f6" stroke-width="2.5"/>
+<text x="392" y="150" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#60a5fa" font-weight="bold">マルチケーブル SEND — 16ch ▶</text>
+<text x="392" y="166" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#3b82f6">マイク信号 : ステージ → FOH卓</text>
+<!-- Arrow at SEND cable right end -->
+<polygon points="545,152 532,144 532,160" fill="#3b82f6"/>
+<!-- RETURN CABLE (PURPLE, right→left) -->
+<rect x="240" y="270" width="305" height="44" fill="#120830" rx="6" stroke="#7c3aed" stroke-width="2.5"/>
+<text x="392" y="290" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#a78bfa" font-weight="bold">◀ モニター RETURN — 8ch</text>
+<text x="392" y="306" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#7c3aed">モニターミキサー → ステージ（専用系統）</text>
+<!-- Arrow at RETURN cable left end -->
+<polygon points="240,292 253,284 253,300" fill="#7c3aed"/>
+<!-- Label between cables -->
+<text x="392" y="230" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#475569" font-weight="bold">2系統を独立した別ケーブルで伝送</text>
+<text x="392" y="248" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#334155">（同一バンドル内のSENDとRETURNとは別に、モニター専用の独立ケーブルを追加した構成）</text>
+<!-- Right connections: SEND → FOH MB -->
+<line x1="545" y1="152" x2="558" y2="97" stroke="#3b82f6" stroke-width="2"/>
+<!-- Right connections: RETURN ← Monitor Mixer -->
+<line x1="545" y1="292" x2="558" y2="330" stroke="#7c3aed" stroke-width="2"/>
+<!-- FOH MULTIBOX -->
+<rect x="562" y="62" width="126" height="68" fill="#0e2840" rx="6" stroke="#f59e0b" stroke-width="2"/>
+<text x="625" y="86" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#fcd34d" font-weight="bold">マルチボックス</text>
+<text x="625" y="99" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#fcd34d" font-weight="bold">（FOH受け）</text>
+<text x="625" y="113" text-anchor="middle" font-family="sans-serif" font-size="7" fill="#94a3b8">16ch SEND IN</text>
+<text x="625" y="124" text-anchor="middle" font-family="sans-serif" font-size="7" fill="#64748b">→ FOH卓へXLR</text>
+<!-- FOH MB → FOH Mixer -->
+<line x1="625" y1="130" x2="625" y2="147" stroke="#60a5fa" stroke-width="1.8"/>
+<polygon points="625,148 619,137 631,137" fill="#60a5fa"/>
+<!-- FOH MIXER -->
+<rect x="562" y="150" width="218" height="72" fill="#1e3a5f" rx="8" stroke="#2563eb" stroke-width="2"/>
+<text x="671" y="175" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#93c5fd" font-weight="bold">メイン卓（FOH）</text>
+<text x="671" y="192" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#3b82f6">PAオペレーター</text>
+<text x="671" y="207" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#1d4ed8">客席への出音をコントロール</text>
+<!-- MONITOR MIXER -->
+<rect x="562" y="295" width="218" height="110" fill="#2d1b69" rx="8" stroke="#8b5cf6" stroke-width="2"/>
+<text x="671" y="322" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#c4b5fd" font-weight="bold">モニターミキサー</text>
+<text x="671" y="340" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#8b5cf6">（ステージ袖に設置）</text>
+<text x="671" y="357" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#6d28d9">演奏者ごとの返し信号を生成し</text>
+<text x="671" y="371" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#6d28d9">8ch専用マルチでステージへ送出</text>
+<text x="671" y="385" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#6d28d9">→ マルチボックス経由で転がしへ</text>
+<!-- Stage monitors (wedges) -->
+<rect x="15" y="385" width="96" height="28" fill="#0c1e3a" rx="4" stroke="#3b82f6" stroke-width="1.2"/>
+<text x="63" y="403" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#93c5fd">転がし①</text>
+<rect x="120" y="385" width="96" height="28" fill="#0c1e3a" rx="4" stroke="#3b82f6" stroke-width="1.2"/>
+<text x="168" y="403" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#93c5fd">転がし②</text>
+<!-- RETURN distribution: MBs → stage monitors (purple dashed) -->
+<line x1="179" y1="170" x2="63" y2="385" stroke="#a78bfa" stroke-width="1.3" stroke-dasharray="4,3"/>
+<line x1="179" y1="336" x2="168" y2="385" stroke="#a78bfa" stroke-width="1.3" stroke-dasharray="4,3"/>
+<!-- Legend -->
+<rect x="10" y="458" width="780" height="26" fill="#1e293b" rx="6"/>
+<line x1="22" y1="471" x2="50" y2="471" stroke="#60a5fa" stroke-width="1.5"/>
+<text x="56" y="475" font-family="sans-serif" font-size="8" fill="#94a3b8">XLR（個別）</text>
+<rect x="145" y="464" width="24" height="12" fill="#081a38" rx="2" stroke="#3b82f6" stroke-width="1.5"/>
+<text x="176" y="475" font-family="sans-serif" font-size="8" fill="#60a5fa">マルチSEND 16ch（マイク系）</text>
+<rect x="342" y="464" width="24" height="12" fill="#120830" rx="2" stroke="#7c3aed" stroke-width="1.5"/>
+<text x="373" y="475" font-family="sans-serif" font-size="8" fill="#a78bfa">マルチRETURN 8ch（モニター返し専用）</text>
+<line x1="580" y1="471" x2="608" y2="471" stroke="#a78bfa" stroke-width="1.3" stroke-dasharray="4,3"/>
+<text x="614" y="475" font-family="sans-serif" font-size="8" fill="#94a3b8">モニター分配線</text>
+<rect x="710" y="464" width="12" height="12" fill="#1e3a5f" rx="1" stroke="#f59e0b" stroke-width="1.5"/>
+<text x="728" y="475" font-family="sans-serif" font-size="8" fill="#fcd34d">マルチボックス</text>
+</svg><figcaption style="font-size:.82em;color:#64748b;margin-top:.4em;font-family:sans-serif;">図：ライブPA マルチケーブル2系統構成 — マイクSEND（16ch）とモニターRETURN（8ch専用）を独立した別ケーブルで伝送する実際の配置イメージ</figcaption></figure>
 
 **返し（モニター）とは**: 演奏者が自分の演奏を耳元で聞くために、ステージ前方に置かれるスピーカー（転がし）のことです。モニターミキサーはステージ袖に置かれ、各演奏者の要望に合わせたミックスをRETURN経由でステージに返します。FOHミキサーは客席後方に配置され、客席への出音を担当します。この2系統のルーティングを1本のマルチケーブルが担います。
 
