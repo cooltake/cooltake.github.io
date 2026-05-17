@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: "マイクスタンドの種類と選び方【K&Mスタンド購入ガイド2026】"
 description: "マイクスタンドのストレート・ブーム・デスクアームの違いを解説。K&M（König & Meyer）の定番モデル比較と、用途別おすすめの選び方を初心者にもわかりやすく紹介します。"
@@ -8,10 +8,9 @@ tags: [マイクスタンド, K&M, ブームスタンド, ストレートスタ�
 image: /assets/images/thumb-mic-stand.png
 ---
 
-
 ## マイクスタンドの種類と用途
 
-<figure style="text-align:center;margin:2rem auto;max-width:800px;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 220" style="max-width:100%;height:auto;border-radius:10px;display:block;"><rect width="800" height="220" fill="#0f172a" rx="10"/><rect x="20" y="20" width="170" height="180" fill="#1e293b" rx="8" stroke="#3b82f6" stroke-width="1.5"/><text x="105" y="46" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#60a5fa" font-weight="bold">ストレート</text><text x="105" y="68" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#cbd5e1">垂直固定</text><text x="105" y="88" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#94a3b8">ボーカル・ライブ</text><text x="105" y="108" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#94a3b8">シンプル操作</text><text x="105" y="128" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#94a3b8">倒れにくい</text><rect x="210" y="20" width="170" height="180" fill="#1e293b" rx="8" stroke="#7c3aed" stroke-width="1.5"/><text x="295" y="46" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#a78bfa" font-weight="bold">ブーム</text><text x="295" y="68" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#cbd5e1">横アーム付き</text><text x="295" y="88" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#94a3b8">スタジオ録音</text><text x="295" y="108" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#94a3b8">角度・距離を自在に</text><text x="295" y="128" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#94a3b8">ドラム・ギター録音に最適</text><rect x="400" y="20" width="170" height="180" fill="#1e293b" rx="8" stroke="#059669" stroke-width="1.5"/><text x="485" y="46" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#34d399" font-weight="bold">デスクアーム</text><text x="485" y="68" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#cbd5e1">デスク固定型</text><text x="485" y="88" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#94a3b8">ポッドキャスト</text><text x="485" y="108" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#94a3b8">配信・Zoom</text><text x="485" y="128" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#94a3b8">デスク節約</text><rect x="590" y="20" width="170" height="180" fill="#1e293b" rx="8" stroke="#f59e0b" stroke-width="1.5"/><text x="675" y="46" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#fbbf24" font-weight="bold">ミニスタンド</text><text x="675" y="68" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#cbd5e1">卓上固定</text><text x="675" y="88" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#94a3b8">コンパクト収録</text><text x="675" y="108" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#94a3b8">インタビュー</text><text x="675" y="128" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#94a3b8">会議・ビデオ通話</text></svg><figcaption style="font-size:.82em;color:#64748b;margin-top:.4em;font-family:sans-serif;">図：マイクスタンドの種類と主な用途</figcaption></figure>
+<figure style="text-align:center;margin:2rem auto;max-width:800px;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 220" style="max-width:100%;height:auto;border-radius:10px;display:block;"><rect width="800" height="220" fill="#0f172a" rx="10"/><rect x="20" y="20" width="170" height="180" fill="#1e293b" rx="8" stroke="#3b82f6" stroke-width="1.5"/><text x="105" y="46" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#60a5fa" font-weight="bold">ストレート</text><text x="105" y="68" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#cbd5e1">垂直固定</text><text x="105" y="88" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#94a3b8">ボーカル・ライブ</text><text x="105" y="108" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#94a3b8">シンプル操作</text><text x="105" y="128" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#94a3b8">倒れにくい</text><rect x="210" y="20" width="170" height="180" fill="#1e293b" rx="8" stroke="#7c3aed" stroke-width="1.5"/><text x="295" y="46" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#a78bfa" font-weight="bold">ブーム</text><text x="295" y="68" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#cbd5e1">横アーム付き</text><text x="295" y="88" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#94a3b8">スタジオ録音</text><text x="295" y="108" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#94a3b8">角度・距離を自在に</text><text x="295" y="128" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#94a3b8">ドラム・ギター録音に最適</text><rect x="400" y="20" width="170" height="180" fill="#1e293b" rx="8" stroke="#059669" stroke-width="1.5"/><text x="485" y="46" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#34d399" font-weight="bold">デスクアーム</text><text x="485" y="68" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#cbd5e1">デスク固定型</text><text x="485" y="88" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#94a3b8">ポッドキャスト</text><text x="485" y="108" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#94a3b8">配信・Zoom</text><text x="485" y="128" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#94a3b8">デスク節約</text><rect x="590" y="20" width="170" height="180" fill="#1e293b" rx="8" stroke="#f59e0b" stroke-width="1.5"/><text x="675" y="46" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#fbbf24" font-weight="bold">グースネック</text><text x="675" y="68" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#cbd5e1">フレキシブルアーム</text><text x="675" y="88" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#94a3b8">固定設置</text><text x="675" y="108" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#94a3b8">インタビュー</text><text x="675" y="128" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#94a3b8">会議・放送</text></svg><figcaption style="font-size:.82em;color:#64748b;margin-top:.4em;font-family:sans-serif;">図：マイクスタンドの種類と主な用途</figcaption></figure>
 
 マイクスタンドには大きく4種類あります。それぞれの特徴と向いている用途を理解してから選ぶと、後悔しません。
 
@@ -43,28 +42,9 @@ image: /assets/images/thumb-mic-stand.png
 
 ---
 
-### デスクアーム（クランプ型）
+### デスクアーム（クランプ型）・グースネック
 
-机の縁にクランプで固定するタイプです。スタンドの脚が不要なため、デスクスペースを広く使えます。
-
-**向いている場面**
-- ポッドキャスト・YouTube撮影・Zoom会議
-- 配信（ゲーム実況・歌ってみた）
-- デスクで長時間マイクを使う場面
-
-バネやガスダンパーで動きをコントロールするタイプが多く、マイクをサッと引き寄せてすぐ使えます。
-
----
-
-### ミニスタンド（卓上スタンド）
-
-低価格で小型のスタンドです。机上に直置きして使います。
-
-**向いている場面**
-- 会議・インタビューなどの近距離収録
-- ダイナミックマイクとの組み合わせ
-
-精度の高い録音には向いておらず、振動がマイクに伝わりやすいため、本格録音には不向きです。
+机の縁にクランプで固定するデスクアームと、フレキシブルな金属アームを使うグースネックスタンドはどちらも固定設置向けです。ポッドキャスト・配信・インタビュー・講演台などで使われます。一度セットすれば動かす必要がないため、頻繁に向きを変える録音用途よりも据え置き用途に向いています。
 
 ---
 
@@ -80,31 +60,78 @@ K&M（ケーニッヒ・アンド・マイヤー）は1949年創業のドイツ�
 
 ## K&Mおすすめモデル比較
 
-| モデル | 種類 | 高さ | 対荷重 | 参考価格 |
-|--------|------|------|--------|---------|
-| **210/9（21090）** | ストレート | 87〜157cm | 約3kg | ¥5,000〜¥8,000 |
-| **21021** | ブーム | 92〜160cm | 約5kg | ¥10,000〜¥15,000 |
-| **27195** | ブーム（大型） | 97〜167cm | 約8kg | ¥18,000〜¥25,000 |
-| **23860** | デスクアーム | — | 約3kg | ¥12,000〜¥18,000 |
-| **25910** | テーブルスタンド | 46〜64cm | 約3kg | ¥6,000〜¥9,000 |
+| モデル | 種類 | 高さ範囲 | ブーム長 | 重さ |
+|--------|------|---------|---------|------|
+| **21020** | ブームスタンド（定番） | 90〜160cm | 約84cm | 約3.2kg |
+| **21021** | ブームスタンド（オーバーヘッド） | 112〜201cm | 約107cm | 約5.9kg |
+| **27195** | ヘビーデューティーブーム | 90〜160cm | 42〜72cm（伸縮） | 約2.3kg |
+| **25950 RIEN** | ショートブーム（キック用） | 28cm（固定） | 42〜72cm（伸縮） | 約3.0kg |
+| **20120** | ストレートスタンド | 89〜159cm | — | 約2.0kg |
+| **23860** | デスクアーム（クランプ） | リーチ 46〜96cm | — | — |
 
 ---
 
-### 21021（ブームスタンド）— 最初の1本に最適
+### 21020（標準ブームスタンド）— 最初の1本に最適
 
-K&Mの定番ブームスタンドです。高さ・アーム角度ともに幅広く調整でき、**ボーカル録音・ギターアンプ・ドラムマイキング**とあらゆる場面に対応します。コンデンサーマイクの重さも問題なく支えられ、宅録環境に1本あれば長年使えます。
+K&Mの定番ブームスタンドです。高さ90〜160cm、ブーム長約84cmと使いやすいサイズ感で、**ボーカル録音・ギターアンプ・宅録**とあらゆる場面に対応します。コンデンサーマイクの重さも問題なく支えられ、宅録環境に1本あれば長年使えます。迷ったらまずこれです。
+
+---
+
+### 21021（オーバーヘッド用ブームスタンド）— 高い位置での使用に
+
+21020より長く・重い設計のブームスタンドです。高さ112〜201cm、ブーム長約107cmと大きく、**ドラムのオーバーヘッドマイキング・ハイハット・金管楽器の高い位置**への設置に適しています。高いところからブームを大きく張り出す用途向けです。
 
 ---
 
 ### 27195（ヘビーデューティーブームスタンド）— 重いマイクに
 
-SHUREのSM7Bなど、比較的重量のあるダイナミックマイクや大型コンデンサーマイクを使う場合はこちら。アームが太く・長く、カウンターウエイトが付いているため安定感が段違いです。
+SHUREのSM7Bなど、比較的重量のあるダイナミックマイクや大型コンデンサーマイクを使う場合はこちら。カウンターウエイトが付いているため、重いマイクをブームの先に取り付けても安定感が段違いです。
+
+---
+
+### 25950 RIEN（ショートブーム重量型）— バスドラムマイキングに
+
+高さ28cm固定の超低位置スタンドです。極太・重量のある脚で重心が低く、ブームを大きく伸ばしてバスドラムの正面にマイクを突き込む**キックドラムマイキング**に特化した設計です。転倒リスクが最も低いキック用スタンドとして現場で定評があります。
+
+---
+
+### 20120 / ST201（ストレートスタンド）— ライブ・シンプル用途に
+
+ブームなしのシンプルな縦型スタンドです。高さ89〜159cm、重さ約2kgと軽量で、ライブのボーカルマイクスタンドとして長年の定番です。
 
 ---
 
 ### 23860（デスクアーム）— 配信・ポッドキャストに
 
-クランプ式デスクアームです。マイクを使わないときは邪魔にならない位置に退かせ、使うときだけサッと引き出せます。配信・テレワーク・ポッドキャストに最適です。
+クランプ式デスクアームです。マイクを使わないときは邪魔にならない位置に退かせ、使うときだけサッと引き出せます。最大耐荷重1.5kgのため、軽量なコンデンサーマイクやダイナミックマイクとの組み合わせが前提です。
+
+---
+
+### グースネックスタンドについて
+
+グースネックスタンドはフレキシブルな金属アームでマイクの向きを細かく調整できるスタンドです。一度セットすれば固定したまま使う用途に向いており、ポッドキャスト・インタビュー・講演台・会議室などで使われます。K&Mの **27500**（XLR配線内蔵の床置き型）や、既存スタンドに取り付ける延長アーム **230/1**（長さ約30cm）がこのカテゴリに入ります。録音スタジオよりも放送・公共設備向けの需要が高い製品群です。
+
+---
+
+## スタンドの接地タイプについて
+
+### 3本足（トライポッド）
+
+最も一般的な形状です。ひとつ重要な注意点があります。**シャフト（垂直軸）の下端が床に直接触れてはいけません**。
+
+脚を十分に広げないと、シャフト下端が床に接地してしまいます。この状態では脚が浮き気味になり、スタンドが不安定になるだけでなく、床や脚に傷がつく原因にもなります。使用前に脚を均等に広げ、シャフト下端が浮いた状態になっているか確認してください。
+
+### 円形ベース（ラウンドベース）
+
+円盤形の台座のタイプです。ケーブルを踏まずに済む・設置スペースがコンパクトなメリットがあります。ただし、トライポッドと比べると安定性はやや劣ります。
+
+---
+
+## ブームを伸ばしたときの転倒リスク
+
+**重いマイクをブームを大きく伸ばして設置すると、重心がブーム側に傾いてスタンドが転倒することがあります。**
+
+特にSM7BやAT4050など重量のあるマイクを使う場合は、スタンド自体にも十分な重量が必要です。スタンド側のカウンターウエイトや脚の重さが安定の鍵になります。25950 RIENのような重量設計のスタンドが選択肢に上がる理由はここにあります。
 
 ---
 
@@ -138,10 +165,12 @@ SHUREのSM7Bなど、比較的重量のあるダイナミックマイクや大�
 
 | 用途 | おすすめスタンド | K&Mモデル |
 |------|--------------|----------|
-| ボーカル録音・宅録 | ブームスタンド | 21021 |
-| 重いマイク（SM7B等） | ヘビーブーム | 27195 |
+| ボーカル録音・宅録・汎用 | ブームスタンド（定番） | 21020 |
+| ドラムオーバーヘッド・金管楽器 | ブームスタンド（オーバーヘッド） | 21021 |
+| 重いマイク（SM7B等） | ヘビーデューティーブーム | 27195 |
+| バスドラムマイキング | ショートブーム（重量型） | 25950 RIEN |
 | 配信・ポッドキャスト | デスクアーム | 23860 |
-| ライブ・シンプル用途 | ストレート | 210/9 |
+| ライブ・シンプル用途 | ストレートスタンド | 20120 |
 
 マイクスタンドは消耗品ではなく、一度良いものを買えば10年以上使えます。K&Mは初期投資がやや高めですが、安価なスタンドを2〜3本買い替えることを考えると、長期的にコストパフォーマンスに優れています。
 
