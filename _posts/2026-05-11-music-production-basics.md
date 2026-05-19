@@ -119,6 +119,21 @@ MacはGarageBandが無料で付属するため、入門コストが低くなり�
 機材をすべて揃えてから始める必要はありません。まずは**PC + 無料DAW + ヘッドフォン**の最小構成でスタートして、必要になったら順次追加していくのが現実的です。
 
 音楽制作は機材より「アイデアと継続」が大切です。手元にあるものから今日始めましょう。
+---
+
+## この機材でもっと上達したい方へ
+
+機材を揃えたら、次は「正しい使い方と音楽制作の進め方」を学ぶとグッと上達が早くなります。初心者でも取り組みやすい入門書を厳選しました。
+
+| 書名 | 著者 | 対象 | 特徴 |
+|------|------|------|------|
+| 作りながら覚える 3日で作曲入門 2.0 | monaca:factory | 完全初心者 | 無料DAW「Studio One Prime」付属。3日で1曲完成できる構成 |
+| DTMがわからなすぎる！と思った時に読む本 | サンレコ編集部 | 完全初心者 | 機材の揃え方から曲作り・ミックスまで3ステージで解説 |
+| 宅録＆DTM制作ガイド | サンレコ編集部 | 完全初心者 | 機材選び〜録音〜MIXまで一冊で網羅。宅録の全体像をつかめる |
+| 作曲少女（シリーズ） | 濱田夏緒 | 完全初心者 | 女子高生が14日で作曲を学ぶストーリー形式。読みながら自然に学べる |
+
+<!-- AFFILIATE_PLACEHOLDER: Amazon教則本リンク（もしもアフィリエイト Amazon審査通過後に設置予定 site_id=672391） -->
+
 <div style="margin:2rem 0;padding:1.2rem 1.5rem;background:#fff7ed;border-left:4px solid #f97316;border-radius:8px;">
 <p style="margin:0 0 .6rem;font-weight:bold;font-size:1rem;">&#x1F6D2; この記事で紹介した機材を楽天市場でチェック</p>
 <a href="//af.moshimo.com/af/c/click?a_id=5565352&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2FDTM%2520%25E3%2582%25B9%25E3%2582%25BF%25E3%2583%25BC%25E3%2582%25BF%25E3%2583%25BC%25E3%2582%25BB%25E3%2583%2583%25E3%2583%2588%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="display:inline-block;background:#bf0000;color:#fff;padding:.45rem 1.1rem;border-radius:4px;text-decoration:none;font-weight:bold;font-size:.95rem;">楽天市場でDTM機材セットを探す →</a>
