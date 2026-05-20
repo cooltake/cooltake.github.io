@@ -285,6 +285,77 @@
     .footer-links a { color: var(--muted); font-size: .82rem; margin-left: 20px; transition: color .2s; }
     .footer-links a:hover { color: var(--text); }
     .footer-copy { font-size: .72rem; text-align: center; padding-top: 20px; border-top: 1px solid var(--border); line-height: 1.6; }
+
+    /* ─── HAMBURGER ─── */
+    .nav-toggle {
+      display: none; background: none; border: none; cursor: pointer;
+      flex-direction: column; justify-content: center; gap: 5px; padding: 6px;
+    }
+    .nav-toggle span {
+      display: block; width: 22px; height: 2px;
+      background: var(--muted); border-radius: 2px;
+      transition: transform .25s, opacity .25s;
+    }
+    .nav-toggle.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+    .nav-toggle.open span:nth-child(2) { opacity: 0; }
+    .nav-toggle.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+    /* ─── TABLET (≤ 900px) ─── */
+    @media (max-width: 900px) {
+      .featured-body { padding: 36px 36px; }
+      .article-grid { grid-template-columns: repeat(2, 1fr); }
+      .bento { grid-template-columns: repeat(2, 1fr); }
+      .coming-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+
+    /* ─── MOBILE (≤ 768px) ─── */
+    @media (max-width: 768px) {
+      .container { padding: 0 16px; }
+      .site-header .container { height: 60px; }
+      .nav-toggle { display: flex; }
+      .site-nav {
+        display: none; flex-direction: column; gap: 0;
+        position: absolute; top: 60px; left: 0; right: 0;
+        background: rgba(10,14,26,.97); border-bottom: 1px solid var(--border);
+        padding: 8px 0; z-index: 99;
+      }
+      .site-nav.open { display: flex; }
+      .site-nav a { padding: 13px 20px; border-radius: 0; font-size: .9rem; }
+      .nav-cta { margin: 8px 16px !important; border-radius: 8px !important; text-align: center; }
+
+      .hero { min-height: 72vh; }
+      .hero h1 { white-space: normal; word-break: auto-phrase; }
+      .hero-visual { display: none; }
+      .hero-content { padding: 0 0 52px; }
+      .hero-actions { flex-direction: column; gap: 10px; }
+      .btn-primary, .btn-ghost { width: 100%; justify-content: center; padding: 13px 20px; }
+
+      .featured-card { grid-template-columns: 1fr; }
+      .featured-img { aspect-ratio: 16/9; }
+      .featured-body { padding: 28px 24px 36px; }
+
+      .bento { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+      .article-grid { grid-template-columns: 1fr; gap: 16px; }
+      .coming-grid { grid-template-columns: 1fr; }
+
+      .about-inner { grid-template-columns: 1fr; padding: 36px 24px; gap: 24px; text-align: center; }
+      .about-logo { flex-direction: row; justify-content: center; }
+
+      .section-featured { padding: 48px 0 0; }
+      .section-categories { padding: 56px 0; }
+      .section-articles { padding: 0 0 56px; }
+      .section-coming { padding: 0 0 56px; }
+      .section-about { padding: 0 0 64px; }
+
+      .footer-inner { flex-direction: column; align-items: flex-start; gap: 16px; }
+      .footer-links { display: flex; flex-wrap: wrap; gap: 8px; }
+      .footer-links a { margin-left: 0; }
+    }
+
+    /* ─── SMALL MOBILE (≤ 480px) ─── */
+    @media (max-width: 480px) {
+      .bento { grid-template-columns: 1fr; }
+    }
   </style>
 </head>
 <body>
@@ -308,6 +379,9 @@
       <a href="#categories">カテゴリ</a>
       <a href="#about" class="nav-cta">About</a>
     </nav>
+    <button class="nav-toggle" aria-label="メニューを開く">
+      <span></span><span></span><span></span>
+    </button>
   </div>
 </header>
 
@@ -707,5 +781,25 @@
   </div>
 </footer>
 
+
+<script>
+  (function() {
+    var toggle = document.querySelector('.nav-toggle');
+    var nav = document.querySelector('.site-nav');
+    if (!toggle || !nav) return;
+    toggle.addEventListener('click', function() {
+      var open = nav.classList.toggle('open');
+      toggle.classList.toggle('open', open);
+      toggle.setAttribute('aria-label', open ? 'メニューを閉じる' : 'メニューを開く');
+    });
+    nav.querySelectorAll('a').forEach(function(a) {
+      a.addEventListener('click', function() {
+        nav.classList.remove('open');
+        toggle.classList.remove('open');
+        toggle.setAttribute('aria-label', 'メニューを開く');
+      });
+    });
+  })();
+</script>
 </body>
 </html>
