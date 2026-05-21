@@ -31,8 +31,8 @@ image: /assets/images/thumb-budget.png
 
 | 機材 | モデル例 | 価格 |
 |------|---------|------|
-| オーディオインターフェース | Focusrite Scarlett Solo (4th Gen) | 約¥15,000 |
-| ヘッドフォン | audio-technica ATH-M30x | 約¥5,000 |
+| オーディオインターフェース | Focusrite Scarlett Solo (4th Gen)<a href="https://h.accesstrade.net/sp/cc?rk=01001xqc00os63&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fproducts%2Fdetail%2Fitem%2F328778%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="margin-left:.3em;font-size:.85em;text-decoration:none;" title="サウンドハウスで見る">🛒</a> | 約¥15,000 |
+| ヘッドフォン | audio-technica ATH-M30x<a href="https://h.accesstrade.net/sp/cc?rk=01001xqc00os63&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fproducts%2Fdetail%2Fitem%2F192278%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="margin-left:.3em;font-size:.85em;text-decoration:none;" title="サウンドハウスで見る">🛒</a> | 約¥5,000 |
 | DAW | GarageBand（Mac）/ REAPER（30日間無料） | 無料 |
 | マイク | スマートフォン付属イヤホンのマイク | — |
 
@@ -51,10 +51,10 @@ image: /assets/images/thumb-budget.png
 
 | 機材 | モデル例 | 価格 |
 |------|---------|------|
-| オーディオインターフェース | Focusrite Scarlett 2i2 (4th Gen) | 約¥22,000 |
-| コンデンサーマイク | Audio-Technica AT2020 | 約¥10,000 |
-| ヘッドフォン | audio-technica ATH-M50x | 約¥16,000 |
-| MIDIキーボード | Arturia MiniLab 3（付属音源あり） | 約¥13,000 |
+| オーディオインターフェース | Focusrite Scarlett 2i2 (4th Gen)<a href="https://h.accesstrade.net/sp/cc?rk=01001xqc00os63&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fproducts%2Fdetail%2Fitem%2F328775%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="margin-left:.3em;font-size:.85em;text-decoration:none;" title="サウンドハウスで見る">🛒</a> | 約¥22,000 |
+| コンデンサーマイク | Audio-Technica AT2020<a href="https://h.accesstrade.net/sp/cc?rk=01001xqc00os63&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fproducts%2Fdetail%2Fitem%2F16117%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="margin-left:.3em;font-size:.85em;text-decoration:none;" title="サウンドハウスで見る">🛒</a> | 約¥10,000 |
+| ヘッドフォン | audio-technica ATH-M50x<a href="https://h.accesstrade.net/sp/cc?rk=01001xqc00os63&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fproducts%2Fdetail%2Fitem%2F192282%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="margin-left:.3em;font-size:.85em;text-decoration:none;" title="サウンドハウスで見る">🛒</a> | 約¥16,000 |
+| MIDIキーボード | Arturia MiniLab 3（付属音源あり）<a href="https://h.accesstrade.net/sp/cc?rk=01001xqc00os63&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fproducts%2Fdetail%2Fitem%2F319348%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="margin-left:.3em;font-size:.85em;text-decoration:none;" title="サウンドハウスで見る">🛒</a> | 約¥13,000 |
 | DAW | Ableton Live Lite（Scarlettに付属） | 付属 |
 
 **合計目安：約¥50,000〜¥60,000**
@@ -72,11 +72,11 @@ AT2020はコンデンサーマイクのエントリーモデルとして世界�
 
 | 機材 | モデル例 | 価格 |
 |------|---------|------|
-| オーディオインターフェース | MOTU M4（4入力） | 約¥40,000 |
-| コンデンサーマイク | RODE NT1 5th Gen | 約¥28,000 |
-| ヘッドフォン | SONY MDR-7506 | 約¥16,000 |
+| オーディオインターフェース | MOTU M4（4入力）<a href="https://h.accesstrade.net/sp/cc?rk=01001xqc00os63&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fproducts%2Fdetail%2Fitem%2F269731%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="margin-left:.3em;font-size:.85em;text-decoration:none;" title="サウンドハウスで見る">🛒</a> | 約¥40,000 |
+| コンデンサーマイク | RODE NT1 5th Gen<a href="https://h.accesstrade.net/sp/cc?rk=01001xqc00os63&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fproducts%2Fdetail%2Fitem%2F365622%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="margin-left:.3em;font-size:.85em;text-decoration:none;" title="サウンドハウスで見る">🛒</a> | 約¥28,000 |
+| ヘッドフォン | SONY MDR-7506<a href="https://h.accesstrade.net/sp/cc?rk=01001xqc00os63&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fproducts%2Fdetail%2Fitem%2F71254%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="margin-left:.3em;font-size:.85em;text-decoration:none;" title="サウンドハウスで見る">🛒</a> | 約¥16,000 |
 | スタジオモニター | PreSonus Eris E3.5（ペア） | 約¥12,000 |
-| MIDIキーボード | Nektar Impact LX49+ | 約¥20,000 |
+| MIDIキーボード | Nektar Impact LX49 mk3<a href="https://h.accesstrade.net/sp/cc?rk=01001xqc00os63&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fproducts%2Fdetail%2Fitem%2F375150%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="margin-left:.3em;font-size:.85em;text-decoration:none;" title="サウンドハウスで見る">🛒</a> | 約¥20,000 |
 | DAW | Studio One Artist（本格的な有料DAW） | 約¥15,000 |
 
 **合計目安：約¥100,000〜¥130,000**
