@@ -138,7 +138,7 @@ tags: [マイク, コンデンサーマイク, ダイナミックマイク, 録�
 
 声のニュアンス・ブレス・繊細な表情を最大限に収音します。ポップフィルターを必ず組み合わせて使用してください。
 
-**定番モデル**: Audio-Technica AT2035 / Rode NT1 / AKG C214
+**定番モデル**: Audio-Technica AT2035<a href="https://h.accesstrade.net/sp/cc?rk=01001xqc00os63&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fproducts%2Fdetail%2Fitem%2F130804%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="margin-left:.3em;font-size:.85em;text-decoration:none;" title="サウンドハウスで見る">🛒</a> / Rode NT1<a href="https://h.accesstrade.net/sp/cc?rk=01001xqc00os63&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fproducts%2Fdetail%2Fitem%2F144847%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="margin-left:.3em;font-size:.85em;text-decoration:none;" title="サウンドハウスで見る">🛒</a> / AKG C214<a href="https://h.accesstrade.net/sp/cc?rk=01001xqc00os63&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fproducts%2Fdetail%2Fitem%2F126591%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="margin-left:.3em;font-size:.85em;text-decoration:none;" title="サウンドハウスで見る">🛒</a>
 
 ---
 
@@ -147,7 +147,7 @@ tags: [マイク, コンデンサーマイク, ダイナミックマイク, 録�
 
 サウンドホールではなく12〜14フレット付近に向けて設置すると自然なバランスになります。ステレオ録音する場合は同一モデル2本をXY配置またはAB配置で使用します。
 
-**定番モデル**: Shure SM81 / AKG C451B / Rode NT5
+**定番モデル**: Shure SM81<a href="https://h.accesstrade.net/sp/cc?rk=01001xqc00os63&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fproducts%2Fdetail%2Fitem%2F69789%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="margin-left:.3em;font-size:.85em;text-decoration:none;" title="サウンドハウスで見る">🛒</a> / AKG C451B<a href="https://h.accesstrade.net/sp/cc?rk=01001xqc00os63&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fproducts%2Fdetail%2Fitem%2F5266%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="margin-left:.3em;font-size:.85em;text-decoration:none;" title="サウンドハウスで見る">🛒</a> / Rode NT5<a href="https://h.accesstrade.net/sp/cc?rk=01001xqc00os63&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fproducts%2Fdetail%2Fitem%2F65865%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="margin-left:.3em;font-size:.85em;text-decoration:none;" title="サウンドハウスで見る">🛒</a>
 
 ---
 
@@ -156,7 +156,7 @@ tags: [マイク, コンデンサーマイク, ダイナミックマイク, 録�
 
 アンプのコーン中央〜エッジにかけてマイクを設置します。中央に近いほど高域が強く、エッジに近づくほど柔らかいトーンになります。コンデンサーマイクを離れた位置に置いてルームマイクとしてブレンドする「2マイク技法」もよく使われます。
 
-**業界標準**: Shure SM57
+**業界標準**: Shure SM57<a href="https://h.accesstrade.net/sp/cc?rk=01001xqc00os63&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fproducts%2Fdetail%2Fitem%2F69778%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="margin-left:.3em;font-size:.85em;text-decoration:none;" title="サウンドハウスで見る">🛒</a>
 
 ---
 
@@ -165,7 +165,7 @@ tags: [マイク, コンデンサーマイク, ダイナミックマイク, 録�
 
 大口径ダイナミックでアンプを収音しつつ、DIでラインシグナルも同時録音し、後からブレンドするのがプロの定番手法です。
 
-**定番モデル**: Shure SM57 / AKG D112（大口径）
+**定番モデル**: Shure SM57<a href="https://h.accesstrade.net/sp/cc?rk=01001xqc00os63&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fproducts%2Fdetail%2Fitem%2F69778%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="margin-left:.3em;font-size:.85em;text-decoration:none;" title="サウンドハウスで見る">🛒</a> / AKG D112<a href="https://h.accesstrade.net/sp/cc?rk=01001xqc00os63&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fproducts%2Fdetail%2Fitem%2F203458%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="margin-left:.3em;font-size:.85em;text-decoration:none;" title="サウンドハウスで見る">🛒</a>（大口径）
 
 ---
 
@@ -174,12 +174,12 @@ tags: [マイク, コンデンサーマイク, ダイナミックマイク, 録�
 
 | パーツ | 推奨タイプ | 定番モデル |
 |--------|-----------|----------|
-| キックドラム | 大口径ダイナミック | AKG D112 / Shure Beta 52A |
-| スネア（表） | ダイナミック | Shure SM57 |
-| タム各個 | ダイナミック（クリップ型） | Sennheiser e604 / AKG D40 |
-| ハイハット | 小口径コンデンサー | Shure SM81 / AKG C451B |
-| オーバーヘッド（L/R） | コンデンサーペア | Rode NT5 / AKG C451B |
-| ルームマイク | 大口径コンデンサー | AKG C414 / Neumann U87 |
+| キックドラム | 大口径ダイナミック | AKG D112<a href="https://h.accesstrade.net/sp/cc?rk=01001xqc00os63&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fproducts%2Fdetail%2Fitem%2F203458%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="margin-left:.3em;font-size:.85em;text-decoration:none;" title="サウンドハウスで見る">🛒</a> / Shure Beta 52A<a href="https://h.accesstrade.net/sp/cc?rk=01001xqc00os63&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fproducts%2Fdetail%2Fitem%2F69490%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="margin-left:.3em;font-size:.85em;text-decoration:none;" title="サウンドハウスで見る">🛒</a> |
+| スネア（表） | ダイナミック | Shure SM57<a href="https://h.accesstrade.net/sp/cc?rk=01001xqc00os63&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fproducts%2Fdetail%2Fitem%2F69778%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="margin-left:.3em;font-size:.85em;text-decoration:none;" title="サウンドハウスで見る">🛒</a> |
+| タム各個 | ダイナミック（クリップ型） | Sennheiser e604<a href="https://h.accesstrade.net/sp/cc?rk=01001xqc00os63&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fproducts%2Fdetail%2Fitem%2F68359%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="margin-left:.3em;font-size:.85em;text-decoration:none;" title="サウンドハウスで見る">🛒</a> / AKG D40<a href="https://h.accesstrade.net/sp/cc?rk=01001xqc00os63&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fproducts%2Fdetail%2Fitem%2F133771%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="margin-left:.3em;font-size:.85em;text-decoration:none;" title="サウンドハウスで見る">🛒</a> |
+| ハイハット | 小口径コンデンサー | Shure SM81<a href="https://h.accesstrade.net/sp/cc?rk=01001xqc00os63&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fproducts%2Fdetail%2Fitem%2F69789%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="margin-left:.3em;font-size:.85em;text-decoration:none;" title="サウンドハウスで見る">🛒</a> / AKG C451B<a href="https://h.accesstrade.net/sp/cc?rk=01001xqc00os63&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fproducts%2Fdetail%2Fitem%2F5266%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="margin-left:.3em;font-size:.85em;text-decoration:none;" title="サウンドハウスで見る">🛒</a> |
+| オーバーヘッド（L/R） | コンデンサーペア | Rode NT5<a href="https://h.accesstrade.net/sp/cc?rk=01001xqc00os63&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fproducts%2Fdetail%2Fitem%2F65865%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="margin-left:.3em;font-size:.85em;text-decoration:none;" title="サウンドハウスで見る">🛒</a> / AKG C451B<a href="https://h.accesstrade.net/sp/cc?rk=01001xqc00os63&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fproducts%2Fdetail%2Fitem%2F5266%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="margin-left:.3em;font-size:.85em;text-decoration:none;" title="サウンドハウスで見る">🛒</a> |
+| ルームマイク | 大口径コンデンサー | AKG C414<a href="https://h.accesstrade.net/sp/cc?rk=01001xqc00os63&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fproducts%2Fdetail%2Fitem%2F156034%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="margin-left:.3em;font-size:.85em;text-decoration:none;" title="サウンドハウスで見る">🛒</a> / Neumann U87<a href="https://h.accesstrade.net/sp/cc?rk=01001xqc00os63&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fproducts%2Fdetail%2Fitem%2F286536%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="margin-left:.3em;font-size:.85em;text-decoration:none;" title="サウンドハウスで見る">🛒</a> |
 
 ---
 
@@ -188,7 +188,7 @@ tags: [マイク, コンデンサーマイク, ダイナミックマイク, 録�
 
 グランドピアノは蓋を開けてハンマー上部に2本をAB配置（低音側・高音側）で設置するのが基本です。アップライトは背面に設置するとリアルなサウンドが得られます。
 
-**定番モデル**: AKG C414 / Neumann KM184（小口径ペア）
+**定番モデル**: AKG C414<a href="https://h.accesstrade.net/sp/cc?rk=01001xqc00os63&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fproducts%2Fdetail%2Fitem%2F156034%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="margin-left:.3em;font-size:.85em;text-decoration:none;" title="サウンドハウスで見る">🛒</a> / Neumann KM184<a href="https://h.accesstrade.net/sp/cc?rk=01001xqc00os63&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fproducts%2Fdetail%2Fitem%2F55868%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="margin-left:.3em;font-size:.85em;text-decoration:none;" title="サウンドハウスで見る">🛒</a>（小口径ペア）
 
 ---
 
@@ -197,7 +197,7 @@ tags: [マイク, コンデンサーマイク, ダイナミックマイク, 録�
 
 距離30〜50cmから音色と残響のバランスを探ります。近づけすぎると弓の摩擦音が強調されるため注意が必要です。
 
-**定番モデル**: Rode NT5 / AKG C451B
+**定番モデル**: Rode NT5<a href="https://h.accesstrade.net/sp/cc?rk=01001xqc00os63&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fproducts%2Fdetail%2Fitem%2F65865%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="margin-left:.3em;font-size:.85em;text-decoration:none;" title="サウンドハウスで見る">🛒</a> / AKG C451B<a href="https://h.accesstrade.net/sp/cc?rk=01001xqc00os63&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fproducts%2Fdetail%2Fitem%2F5266%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="margin-left:.3em;font-size:.85em;text-decoration:none;" title="サウンドハウスで見る">🛒</a>
 
 ---
 
