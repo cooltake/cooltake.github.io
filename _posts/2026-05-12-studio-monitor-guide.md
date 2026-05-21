@@ -62,15 +62,15 @@ DTMを始める場合はアクティブ型（パワードモニター）一択�
 <figure style="text-align:center;margin:2rem auto;max-width:800px;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 216" style="max-width:100%;height:auto;border-radius:10px;display:block;"><rect width="800" height="216" fill="#0f172a" rx="10"/><defs><marker id="ah" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#3b82f6"/></marker></defs><rect x="40" y="20" width="160" height="48" fill="#22c55e" rx="8"/><text x="52" y="40" text-anchor="start" font-family="sans-serif" font-size="13" fill="#f1f5f9" font-weight="bold">エントリー</text><text x="52" y="57" text-anchor="start" font-family="sans-serif" font-size="11" fill="#cbd5e1">コスパ最重視モデル。初心者に最適</text><rect x="40" y="78" width="280" height="48" fill="#3b82f6" rx="8"/><text x="52" y="98" text-anchor="start" font-family="sans-serif" font-size="13" fill="#f1f5f9" font-weight="bold">ミドル</text><text x="52" y="115" text-anchor="start" font-family="sans-serif" font-size="11" fill="#cbd5e1">バランス型。本格派ユーザーに</text><rect x="40" y="136" width="400" height="48" fill="#6366f1" rx="8"/><text x="52" y="156" text-anchor="start" font-family="sans-serif" font-size="13" fill="#f1f5f9" font-weight="bold">ハイエンド</text><text x="52" y="173" text-anchor="start" font-family="sans-serif" font-size="11" fill="#cbd5e1">プロ水準。妥協なく音質を追求</text></svg><figcaption style="font-size:.82em;color:#64748b;margin-top:.4em;font-family:sans-serif;">図：価格帯別おすすめモデルの位置づけ</figcaption></figure>
 
 
-### YAMAHA HS5（5インチ・約¥40,000/1本）
+### YAMAHA HS5<a href="https://h.accesstrade.net/sp/cc?rk=01001xqc00os63&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fproducts%2Fdetail%2Fitem%2F184221%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="margin-left:.3em;font-size:.85em;text-decoration:none;" title="サウンドハウスで見る">🛒</a>（5インチ・約¥40,000/1本）
 「ホワイトコーン」が特徴のYAMAHAの定番モニター。長年スタジオで使われてきた「NS-10M」の流れを汲む設計。音が「シビア」でミックスの粗が見えやすいと言われており、これで仕上げたミックスは他の環境でも崩れにくいと評判。
 
 HS5単体では低音域が少し物足りない場合もあるため、**YHSサブウーファー（HS8S）**との組み合わせを推奨する人も多いです。
 
-### KRK ROKIT 5 G4（5インチ・約¥35,000/1本）
+### KRK ROKIT 5 G5<a href="https://h.accesstrade.net/sp/cc?rk=01001xqc00os63&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fproducts%2Fdetail%2Fitem%2F346956%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="margin-left:.3em;font-size:.85em;text-decoration:none;" title="サウンドハウスで見る">🛒</a>（5インチ・約¥35,000/1本）
 黄色いウーファーが目印のKRK。HS5よりも低音が豊かで「楽しく」聴けるモニター。ロック・ヒップホップ・EDMなど低音が重要なジャンルで人気。内蔵DSPイコライザーで部屋の特性に合わせた補正も可能。
 
-### Genelec 8010A（3インチ・約¥35,000/1本）
+### Genelec 8010AP<a href="https://h.accesstrade.net/sp/cc?rk=01001xqc00os63&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fproducts%2Fdetail%2Fitem%2F193510%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="margin-left:.3em;font-size:.85em;text-decoration:none;" title="サウンドハウスで見る">🛒</a>（3インチ・約¥35,000/1本）
 フィンランドの高級モニターブランド。コンパクトながら広いスイートスポット（良い音で聴ける範囲）を持つ。省スペースでも本格的なモニタリングがしたい人に向いている。
 
 ### PreSonus Eris E3.5（3.5インチ・約¥12,000/ペア）
@@ -94,7 +94,7 @@ HS5単体では低音域が少し物足りない場合もあるため、**YHSサ
 
 ## まとめ
 
-自宅DTMのスタートには**YAMAHA HS5**か**KRK ROKIT 5 G4**が最もオーソドックスな選択です。予算が限られる場合は**PreSonus Eris E3.5**でスピーカーの感覚に慣れてから、本格的なモニターへステップアップする方法もあります。スピーカーは「使い方」と「設置環境」が音質を左右するため、ある程度の音響環境整備とセットで導入することをおすすめします。
+自宅DTMのスタートには**YAMAHA HS5**か**KRK ROKIT 5 G5**が最もオーソドックスな選択です。予算が限られる場合は**PreSonus Eris E3.5**でスピーカーの感覚に慣れてから、本格的なモニターへステップアップする方法もあります。スピーカーは「使い方」と「設置環境」が音質を左右するため、ある程度の音響環境整備とセットで導入することをおすすめします。
 
 <div style="margin:2rem 0;padding:1.2rem 1.5rem;background:#fff7ed;border-left:4px solid #f97316;border-radius:8px;">
 <p style="margin:0 0 .6rem;font-weight:bold;font-size:1rem;">&#x1F6D2; この記事で紹介した機材を楽天市場でチェック</p>
