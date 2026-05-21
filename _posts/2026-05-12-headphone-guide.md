@@ -63,21 +63,21 @@ image: /assets/images/thumb-headphone.png
 
 
 ### ¥5,000前後
-**audio-technica ATH-M30x** — コストパフォーマンスが高い密閉型。フラットな特性で初心者に扱いやすい。折りたたみ可能でコンパクト。
+**audio-technica ATH-M30x**<a href="https://h.accesstrade.net/sp/cc?rk=01001xqc00os63&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fproducts%2Fdetail%2Fitem%2F192278%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="margin-left:.3em;font-size:.85em;text-decoration:none;" title="サウンドハウスで見る">🛒</a> — コストパフォーマンスが高い密閉型。フラットな特性で初心者に扱いやすい。折りたたみ可能でコンパクト。
 
 ### ¥8,000〜¥12,000
-**audio-technica ATH-M40x** — M30xの上位版。より広い周波数特性と精細な音の分離感。DTMのスタートアップに最適な一台。
+**audio-technica ATH-M40x**<a href="https://h.accesstrade.net/sp/cc?rk=01001xqc00os63&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fproducts%2Fdetail%2Fitem%2F192281%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="margin-left:.3em;font-size:.85em;text-decoration:none;" title="サウンドハウスで見る">🛒</a> — M30xの上位版。より広い周波数特性と精細な音の分離感。DTMのスタートアップに最適な一台。
 
 ### ¥13,000〜¥15,000
-**SONY MDR-7506** — プロの現場でも使われるスタジオ定番。M40xよりさらに細かい音の粒が聴こえる。米国のスタジオで見かけることも多い。
+**SONY MDR-7506**<a href="https://h.accesstrade.net/sp/cc?rk=01001xqc00os63&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fproducts%2Fdetail%2Fitem%2F71254%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="margin-left:.3em;font-size:.85em;text-decoration:none;" title="サウンドハウスで見る">🛒</a> — プロの現場でも使われるスタジオ定番。M40xよりさらに細かい音の粒が聴こえる。米国のスタジオで見かけることも多い。
 
-**SONY MDR-CD900ST** — 日本のスタジオ定番。フラットな特性とタイトな低音。密閉型。初心者から上級者まで幅広く使われる。概ね¥15,000〜¥20,000前後。
+**SONY MDR-CD900ST**<a href="https://h.accesstrade.net/sp/cc?rk=01001xqc00os63&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fproducts%2Fdetail%2Fitem%2F71265%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="margin-left:.3em;font-size:.85em;text-decoration:none;" title="サウンドハウスで見る">🛒</a> — 日本のスタジオ定番。フラットな特性とタイトな低音。密閉型。初心者から上級者まで幅広く使われる。概ね¥15,000〜¥20,000前後。
 
 ### ¥15,000〜¥20,000
-**audio-technica ATH-M50x** — ATHシリーズ最高峰の人気モデル。低音から高音まで全域にわたってバランスが良く、初心者が最初の「基準」にしやすい。
+**audio-technica ATH-M50x**<a href="https://h.accesstrade.net/sp/cc?rk=01001xqc00os63&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fproducts%2Fdetail%2Fitem%2F192282%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="margin-left:.3em;font-size:.85em;text-decoration:none;" title="サウンドハウスで見る">🛒</a> — ATHシリーズ最高峰の人気モデル。低音から高音まで全域にわたってバランスが良く、初心者が最初の「基準」にしやすい。
 
 ### ¥25,000以上
-**AKG K271 MKII** — 密閉型ながら開放型に近い空間感。ミックス作業に向いており、「装着すると自動的にミュートになる」機能も便利。
+**AKG K271 MKII**<a href="https://h.accesstrade.net/sp/cc?rk=01001xqc00os63&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fproducts%2Fdetail%2Fitem%2F124431%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="margin-left:.3em;font-size:.85em;text-decoration:none;" title="サウンドハウスで見る">🛒</a> — 密閉型ながら開放型に近い空間感。ミックス作業に向いており、「装着すると自動的にミュートになる」機能も便利。
 
 ---
 
