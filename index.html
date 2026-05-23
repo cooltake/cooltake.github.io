@@ -45,15 +45,17 @@
     .hero-bg::after { content: ''; position: absolute; inset: 0; background-image: linear-gradient(rgba(59,130,246,.045) 1px, transparent 1px), linear-gradient(90deg, rgba(59,130,246,.045) 1px, transparent 1px); background-size: 56px 56px; }
     .hero-wave { position: absolute; bottom: 0; left: 0; right: 0; height: 55%; opacity: .14; pointer-events: none; }
     .hero-overlay { position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(10,14,26,.55) 0%, transparent 40%, rgba(10,14,26,.55) 100%); }
-    .hero-content { position: relative; z-index: 10; padding: 100px 0 64px; }
-    .hero-right-col { margin-left: auto; max-width: 980px; text-align: right; }
+    .hero-content { position: relative; z-index: 10; flex: 1; display: flex; flex-direction: column; }
+    .hero-content .container-wide { flex: 1; position: relative; width: 100%; }
+    .hero-top-group { position: absolute; top: 16px; right: 28px; text-align: right; max-width: 1100px; }
+    .hero-bottom-group { position: absolute; bottom: 48px; right: 28px; text-align: right; max-width: 980px; }
     .hero h1 { font-family: 'Kiwi Maru','Noto Sans JP',serif; font-size: clamp(1.2rem, 3vw, 3rem); font-weight: 400; line-height: 1.35; letter-spacing: .015em; margin-bottom: 0; white-space: nowrap; }
     .hero-br { display: none; }
     .hero-divider { height: 1px; background: rgba(255,255,255,.14); margin: 16px 0 18px; }
-    .hero-theme { font-size: clamp(1.1rem, 1.8vw, 1.85rem); color: var(--muted); line-height: 1.4; letter-spacing: -.01em; padding-top: 28px; margin-bottom: 0; }
+    .hero-theme { font-size: clamp(1.1rem, 1.8vw, 1.85rem); color: var(--muted); line-height: 1.4; letter-spacing: -.01em; margin-bottom: 0; }
     .hero-brand-900 { display: flex; align-items: center; justify-content: flex-end; gap: 28px; }
     .hero-brand-wordmark { font-weight: 500; font-size: clamp(2.2rem, 5.75vw, 5.75rem); letter-spacing: -.02em; line-height: 1; }
-    .hero-sub { font-size: clamp(1.1rem, 2.2vw, 2.2rem); color: var(--muted); margin-bottom: 28px; line-height: 1.5; letter-spacing: -.01em; }
+    .hero-sub { font-size: clamp(1.1rem, 2.2vw, 2.2rem); color: var(--muted); margin-bottom: 0; line-height: 1.5; letter-spacing: -.01em; }
     .hero-actions { display: flex; gap: 14px; flex-wrap: wrap; justify-content: flex-end; }
     .btn-primary { display: inline-flex; align-items: center; gap: 8px; background: var(--gradient); color: #fff; font-weight: 700; padding: 14px 32px; border-radius: 9999px; font-size: .95rem; transition: opacity .2s, transform .2s; }
     .btn-primary:hover { opacity: .86; transform: translateY(-2px); }
@@ -240,8 +242,8 @@
       .site-nav { display: none; flex-direction: column; gap: 0; position: absolute; top: 68px; left: 0; right: 0; background: rgba(10,14,26,.97); border-bottom: 1px solid var(--border); padding: 8px 0; z-index: 99; }
       .site-nav.open { display: flex; }
       .site-nav a { padding: 13px 20px; border-radius: 0; }
-      .hero-right-col { max-width: 100%; text-align: left; }
-      .hero h1 { white-space: normal; }
+      .hero-content .container-wide { display: flex; flex-direction: column; justify-content: space-between; padding-top: 80px; padding-bottom: 48px; }
+      .hero-top-group, .hero-bottom-group { position: static; max-width: 100%; text-align: left; }
       .hero-br { display: inline; }
       .hero-brand-900 { justify-content: flex-start; }
       .hero-actions { justify-content: flex-start; }
@@ -294,9 +296,15 @@
   <div class="hero-overlay"></div>
   <div class="hero-content">
     <div class="container-wide">
-      <div class="hero-right-col">
+      <!-- 右上: メインキャッチ + 線 + サブキャッチ -->
+      <div class="hero-top-group">
         <h1>あなたの音が、届く喜び、<br class="hero-br">伝わる感動。。。</h1>
         <div class="hero-divider"></div>
+        <p class="hero-sub">音楽制作を、もっと自由に。</p>
+      </div>
+
+      <!-- 右下: ブランドコピー + ロゴ -->
+      <div class="hero-bottom-group">
         <p class="hero-theme">音楽制作者のための、実践的な情報メディア</p>
         <div class="hero-brand-900">
           <svg width="184" height="184" viewBox="0 0 28 28" fill="none">
@@ -308,12 +316,6 @@
             <defs><linearGradient id="lgh" x1="2" y1="2" x2="25" y2="26"><stop offset="0%" stop-color="#3b82f6"/><stop offset="100%" stop-color="#818cf8"/></linearGradient></defs>
           </svg>
           <span class="hero-brand-wordmark">Cooltake <span class="logo-dot">Studio</span></span>
-        </div>
-        <div class="hero-divider"></div>
-        <p class="hero-sub">音楽制作を、もっと自由に。</p>
-        <div class="hero-actions">
-          <a href="#series" class="btn-primary">記事を読む →</a>
-          <a href="#showcase" class="btn-ghost">Showcaseを見る</a>
         </div>
       </div>
     </div>
