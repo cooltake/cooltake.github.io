@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: "音楽制作ケーブル全種類ガイド【XLR・シールド・USB・Thunderbolt・INSERTの違いと高品位ケーブルの必要性】"
 description: "音楽制作・宅録で使うケーブルの種類と用途を網羅解説。XLRケーブル・シールド・INSERTケーブル・スピーカーケーブル・USBケーブル・Thunderboltケーブルの違いと、高品位ケーブルを選ぶ基準を紹介します。"
@@ -20,7 +20,7 @@ image: /assets/images/thumb-cable.png
 
 音声ケーブルには「バランス（平衡）」と「アンバランス（不平衡）」の2つの接続方式があります。XLRがなぜプロ現場で標準なのかは、この仕組みを知ると明快です。
 
-<figure style="text-align:center;margin:2rem auto;max-width:900px;"><img src="/assets/images/cable-bal-diagram.png" alt="バランス（差動）ケーブルのしくみ — 正相信号と逆相信号を1本のケーブルで送り、到達点でノイズを打ち消す5ステップ図解" style="max-width:100%;height:auto;border-radius:10px;display:block;"><figcaption style="font-size:.82em;color:#64748b;margin-top:.4em;font-family:sans-serif;">図：バランス接続のしくみ — 正相・逆相の2線でノイズを打ち消す差動増幅の5ステップ</figcaption></figure>
+<figure style="text-align:center;margin:2rem auto;max-width:800px;"><img src="/assets/images/cable-bal-diagram.png" alt="バランス接続CMRのしくみ図 — HOT/COLD 2線で外来ノイズを差動増幅器がキャンセル" style="max-width:100%;height:auto;border-radius:10px;display:block;"><figcaption style="font-size:.82em;color:#64748b;margin-top:.4em;font-family:sans-serif;">図：バランス接続（CMR）のしくみ — HOT/COLD 2線で外来ノイズを差動増幅器がキャンセル</figcaption></figure>
 
 ### アンバランス接続
 
