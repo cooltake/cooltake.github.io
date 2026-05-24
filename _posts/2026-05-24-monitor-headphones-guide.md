@@ -5,7 +5,7 @@ description: "DTM・宅録・ミックスに使うモニターヘッドフォン
 date: 2026-05-24
 categories: [gear]
 tags: [モニターヘッドフォン, DTM, 宅録, ミックス, Audio-Technica, SONY, Beyerdynamic, ヘッドフォン選び]
-image: /assets/images/thumb-monitor-headphones.png
+image: /assets/images/thumb-monitor-headphones.jpg
 ---
 
 ## なぜ「モニターヘッドフォン」が必要なのか
