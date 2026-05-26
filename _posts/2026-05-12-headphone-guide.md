@@ -88,18 +88,18 @@ image: /assets/images/thumb-headphone.png
 
 | モデル | 価格帯 | タイプ | インピーダンス | おすすめ用途 |
 |--------|--------|--------|---------------|------------|
-| ATH-M30x | ¥5,000〜 | 密閉 | 47Ω | エントリー全般 |
-| ATH-M40x | ¥8,000〜 | 密閉 | 35Ω | DTM入門 |
-| SONY MDR-7506 | ¥13,000〜 | 密閉 | 63Ω | 宅録・モニタリング |
-| ATH-M50x | ¥16,000〜 | 密閉 | 38Ω | DTM・ミックス全般 |
-| SONY MDR-CD900ST | ¥15,000〜 | 密閉 | 63Ω | 本格スタジオ |
-| AKG K271 MKII | ¥25,000〜 | 密閉 | 55Ω | ミックス・マスタリング |
+| ATH-M30x<a href="https://h.accesstrade.net/sp/cc?rk=01001xqc00os63&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fproducts%2Fdetail%2Fitem%2F192278%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="margin-left:.3em;font-size:.85em;text-decoration:none;" title="サウンドハウスで見る">🛒</a> | ¥5,000〜 | 密閉 | 47Ω | エントリー全般 |
+| ATH-M40x<a href="https://h.accesstrade.net/sp/cc?rk=01001xqc00os63&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fproducts%2Fdetail%2Fitem%2F192281%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="margin-left:.3em;font-size:.85em;text-decoration:none;" title="サウンドハウスで見る">🛒</a> | ¥8,000〜 | 密閉 | 35Ω | DTM入門 |
+| SONY MDR-7506<a href="https://h.accesstrade.net/sp/cc?rk=01001xqc00os63&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fproducts%2Fdetail%2Fitem%2F71254%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="margin-left:.3em;font-size:.85em;text-decoration:none;" title="サウンドハウスで見る">🛒</a> | ¥13,000〜 | 密閉 | 63Ω | 宅録・モニタリング |
+| ATH-M50x<a href="https://h.accesstrade.net/sp/cc?rk=01001xqc00os63&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fproducts%2Fdetail%2Fitem%2F192282%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="margin-left:.3em;font-size:.85em;text-decoration:none;" title="サウンドハウスで見る">🛒</a> | ¥16,000〜 | 密閉 | 38Ω | DTM・ミックス全般 |
+| SONY MDR-CD900ST<a href="https://h.accesstrade.net/sp/cc?rk=01001xqc00os63&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fproducts%2Fdetail%2Fitem%2F71265%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="margin-left:.3em;font-size:.85em;text-decoration:none;" title="サウンドハウスで見る">🛒</a> | ¥15,000〜 | 密閉 | 63Ω | 本格スタジオ |
+| AKG K271 MKII<a href="https://h.accesstrade.net/sp/cc?rk=01001xqc00os63&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fproducts%2Fdetail%2Fitem%2F124431%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="margin-left:.3em;font-size:.85em;text-decoration:none;" title="サウンドハウスで見る">🛒</a> | ¥25,000〜 | 密閉 | 55Ω | ミックス・マスタリング |
 
 ---
 
 ## まとめ
 
-予算¥10,000以下でスタートするなら**audio-technica ATH-M40x**。本格的にDTMを学ぶなら**ATH-M50x**か**SONY MDR-7506**がコスパ面でも品質面でも優れた選択肢です。ヘッドフォンはスタジオモニタースピーカーが使えない夜間の作業でも活躍するため、早めに良いものを揃えることをおすすめします。
+予算¥10,000以下でスタートするなら**audio-technica ATH-M40x**<a href="https://h.accesstrade.net/sp/cc?rk=01001xqc00os63&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fproducts%2Fdetail%2Fitem%2F192281%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="margin-left:.3em;font-size:.85em;text-decoration:none;" title="サウンドハウスで見る">🛒</a>。本格的にDTMを学ぶなら**ATH-M50x**<a href="https://h.accesstrade.net/sp/cc?rk=01001xqc00os63&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fproducts%2Fdetail%2Fitem%2F192282%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="margin-left:.3em;font-size:.85em;text-decoration:none;" title="サウンドハウスで見る">🛒</a>か**SONY MDR-7506**<a href="https://h.accesstrade.net/sp/cc?rk=01001xqc00os63&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fproducts%2Fdetail%2Fitem%2F71254%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="margin-left:.3em;font-size:.85em;text-decoration:none;" title="サウンドハウスで見る">🛒</a>がコスパ面でも品質面でも優れた選択肢です。ヘッドフォンはスタジオモニタースピーカーが使えない夜間の作業でも活躍するため、早めに良いものを揃えることをおすすめします。
 
 <div style="margin:2rem 0;padding:1.2rem 1.5rem;background:#fff7ed;border-left:4px solid #f97316;border-radius:8px;">
 <p style="margin:0 0 .6rem;font-weight:bold;font-size:1rem;">&#x1F6D2; この記事で紹介した機材を楽天市場でチェック</p>
