@@ -79,7 +79,7 @@ Arturia（フランスのブランド）のソフトシンセ「Analog Lab」が
 
 ローランドのシンプルな49鍵モデル。鍵盤の弾きやすさと耐久性に定評があり、長く使えます。
 
-### 【本格DTM向け】Nektar Impact LX49 mk3<a href="https://h.accesstrade.net/sp/cc?rk=01001xqc00os63&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fproducts%2Fdetail%2Fitem%2F375150%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="margin-left:.3em;font-size:.85em;text-decoration:none;" title="サウンドハウスで見る">🛒</a>
+### 【本格DTM向け】Nektar Impact LX49+<a href="https://h.accesstrade.net/sp/cc?rk=01001xqc00os63&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fproducts%2Fdetail%2Fitem%2F227186%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="margin-left:.3em;font-size:.85em;text-decoration:none;" title="サウンドハウスで見る">🛒</a>
 - 49鍵・8パッド・9フェーダー・8ノブ
 - DAWとの深い統合（Cubase・Logic・Ableton対応）
 - 価格：約¥18,000〜¥22,000
@@ -99,12 +99,12 @@ Arturia（フランスのブランド）のソフトシンセ「Analog Lab」が
 
 | 予算 | おすすめ | 理由 |
 |------|---------|------|
-| ¥10,000以下 | AKAI MPK Mini Play MK3 | 内蔵音源付き。PC不要で即演奏可 |
-| ¥10,000〜¥15,000 | Arturia MiniLab 3 | 音源付属で即戦力。パッドも使える |
-| ¥20,000前後 | Roland A-49 | 弾きやすさと耐久性のバランス |
-| ¥20,000（DAW連携重視） | Nektar Impact LX49 mk3 | フェーダー・ノブで本格操作 |
+| ¥10,000以下 | AKAI MPK Mini Play MK3<a href="https://h.accesstrade.net/sp/cc?rk=01001xqc00os63&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fproducts%2Fdetail%2Fitem%2F303084%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="margin-left:.3em;font-size:.85em;text-decoration:none;" title="サウンドハウスで見る">🛒</a> | 内蔵音源付き。PC不要で即演奏可 |
+| ¥10,000〜¥15,000 | Arturia MiniLab 3<a href="https://h.accesstrade.net/sp/cc?rk=01001xqc00os63&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fproducts%2Fdetail%2Fitem%2F319348%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="margin-left:.3em;font-size:.85em;text-decoration:none;" title="サウンドハウスで見る">🛒</a> | 音源付属で即戦力。パッドも使える |
+| ¥20,000前後 | Roland A-49<a href="https://h.accesstrade.net/sp/cc?rk=01001xqc00os63&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fproducts%2Fdetail%2Fitem%2F176056%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="margin-left:.3em;font-size:.85em;text-decoration:none;" title="サウンドハウスで見る">🛒</a> | 弾きやすさと耐久性のバランス |
+| ¥20,000（DAW連携重視） | Nektar Impact LX49+<a href="https://h.accesstrade.net/sp/cc?rk=01001xqc00os63&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fproducts%2Fdetail%2Fitem%2F227186%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="margin-left:.3em;font-size:.85em;text-decoration:none;" title="サウンドハウスで見る">🛒</a> | フェーダー・ノブで本格操作 |
 
-最初の1台は**Arturia MiniLab 3**か**AKAI MPK Mini MK3**が最もコストパフォーマンスに優れています。演奏に慣れてきたら49鍵以上にステップアップしましょう。
+最初の1台は**Arturia MiniLab 3**<a href="https://h.accesstrade.net/sp/cc?rk=01001xqc00os63&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fproducts%2Fdetail%2Fitem%2F319348%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="margin-left:.3em;font-size:.85em;text-decoration:none;" title="サウンドハウスで見る">🛒</a>か**AKAI MPK Mini MK3**<a href="https://h.accesstrade.net/sp/cc?rk=01001xqc00os63&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fproducts%2Fdetail%2Fitem%2F303084%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="margin-left:.3em;font-size:.85em;text-decoration:none;" title="サウンドハウスで見る">🛒</a>が最もコストパフォーマンスに優れています。演奏に慣れてきたら49鍵以上にステップアップしましょう。
 
 
 ---
