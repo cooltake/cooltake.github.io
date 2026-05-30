@@ -108,8 +108,7 @@ image: /assets/images/thumb-guitar.png
 
 <div style="margin:2rem 0;padding:1.2rem 1.5rem;background:#fff7ed;border-left:4px solid #f97316;border-radius:8px;">
 <p style="margin:0 0 .6rem;font-weight:bold;font-size:1rem;">&#x1F6D2; 楽天市場でギターをチェック</p>
-<a href="//af.moshimo.com/af/c/click?a_id=5588301&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%25E3%2582%25AE%25E3%2582%25BF%25E3%2583%25BC+%25E5%2588%259D%25E5%25BF%2583%25E8%2580%2585+%25E3%2582%25BB%25E3%2583%2583%25E3%2583%2588%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="display:inline-block;background:#bf0000;color:#fff;padding:.45rem 1.1rem;border-radius:4px;text-decoration:none;font-weight:bold;font-size:.95rem;">楽天市場でギター初心者セットを探す →</a>
-<img src="//i.moshimo.com/af/i/impression?a_id=5588301&amp;p_id=54&amp;pc_id=54&amp;pl_id=616" width="1" height="1" style="border:none;" alt="" loading="lazy">
+<a href="https://hb.afl.rakuten.co.jp/ichiba/54518dd8.3792440a.54518dd9.03b99be4/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%25E3%2582%25AE%25E3%2582%25BF%25E3%2583%25BC+%25E5%2588%259D%25E5%25BF%2583%25E8%2580%2585+%25E3%2582%25BB%25E3%2583%2583%25E3%2583%2588%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="display:inline-block;background:#bf0000;color:#fff;padding:.45rem 1.1rem;border-radius:4px;text-decoration:none;font-weight:bold;font-size:.95rem;">楽天市場でギター初心者セットを探す →</a>
 </div>
 
 <div style="margin:2rem 0;padding:1.2rem 1.5rem;background:#f0f9ff;border-left:4px solid #0ea5e9;border-radius:8px;">
