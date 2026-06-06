@@ -34,7 +34,7 @@ image: /assets/images/thumb-guitar.png
 
 | 予算 | モデル | 特徴 |
 |------|-------|------|
-| 〜¥15,000 | Squier Bullet Stratocaster<a href="https://h.accesstrade.net/sp/cc?rk=01001xqc00os63&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fproducts%2Fdetail%2Fitem%2F143662%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="margin-left:.3em;font-size:.85em;text-decoration:none;" title="サウンドハウスで見る">🛒</a> | Fenderの廉価ブランド。音程の安定感と弾きやすさのコスパ◎ |
+| 〜¥15,000 | Squier Bullet Stratocaster | Fenderの廉価ブランド。音程の安定感と弾きやすさのコスパ◎ |
 | 〜¥30,000 | Fender Japan MIJシリーズ | 日本製クオリティ。チューニング安定性が上がり長く使える |
 | 〜¥60,000 | Fender Standard（Mexico製） | プロも使う本格品質。上達してからも買い替え不要 |
 | ¥60,000〜 | Fender American Professional | 本物の弾き心地。本気で音楽を続けるなら最終回答 |
@@ -46,9 +46,9 @@ image: /assets/images/thumb-guitar.png
 | 予算 | モデル | 特徴 |
 |------|-------|------|
 | 〜¥15,000 | Yamaha F315D | 初心者に最適なチューニング安定性と音質 |
-| 〜¥30,000 | Yamaha FG800<a href="https://h.accesstrade.net/sp/cc?rk=01001xqc00os63&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fproducts%2Fdetail%2Fitem%2F210808%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="margin-left:.3em;font-size:.85em;text-decoration:none;" title="サウンドハウスで見る">🛒</a> | 単板トップで豊かな響き。長年愛されるロングセラー |
+| 〜¥30,000 | Yamaha FG800 | 単板トップで豊かな響き。長年愛されるロングセラー |
 | 〜¥60,000 | Taylor Academy 12 | ネックが薄く握りやすい。コードが押さえやすい |
-| ¥60,000〜 | Martin 000-15M<a href="https://h.accesstrade.net/sp/cc?rk=01001xqc00os63&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fproducts%2Fdetail%2Fitem%2F159605%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="margin-left:.3em;font-size:.85em;text-decoration:none;" title="サウンドハウスで見る">🛒</a> | マホガニー単板の暖かいサウンド。本格的な弾き語りに |
+| ¥60,000〜 | Martin 000-15M | マホガニー単板の暖かいサウンド。本格的な弾き語りに |
 
 ---
 
@@ -106,13 +106,15 @@ image: /assets/images/thumb-guitar.png
 
 <!-- AFFILIATE_PLACEHOLDER: Amazon教則本リンク（もしもアフィリエイト Amazon審査通過後に設置予定 site_id=672391） -->
 
-<div style="margin:2rem 0;padding:1.2rem 1.5rem;background:#fff7ed;border-left:4px solid #f97316;border-radius:8px;">
-<p style="margin:0 0 .6rem;font-weight:bold;font-size:1rem;">&#x1F6D2; 楽天市場でギターをチェック</p>
-<a href="https://hb.afl.rakuten.co.jp/ichiba/54518dd8.3792440a.54518dd9.03b99be4/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%25E3%2582%25AE%25E3%2582%25BF%25E3%2583%25BC+%25E5%2588%259D%25E5%25BF%2583%25E8%2580%2585+%25E3%2582%25BB%25E3%2583%2583%25E3%2583%2588%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="display:inline-block;background:#bf0000;color:#fff;padding:.45rem 1.1rem;border-radius:4px;text-decoration:none;font-weight:bold;font-size:.95rem;">楽天市場でギター初心者セットを探す →</a>
-</div>
-
-<div style="margin:2rem 0;padding:1.2rem 1.5rem;background:#f0f9ff;border-left:4px solid #0ea5e9;border-radius:8px;">
+<div style="display:flex;gap:.75rem;margin:2rem 0;">
+<div style="flex:1;padding:1.2rem 1.5rem;background:#f0f9ff;border-left:4px solid #0ea5e9;border-radius:8px;">
 <p style="margin:0 0 .6rem;font-weight:bold;font-size:1rem;">&#x1F3B8; サウンドハウスでもチェック（国内最大の音楽機材専門店）</p>
 <a href="https://h.accesstrade.net/sp/cc?rk=01001xqc00os63&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fsearch%2Findex%2F%3Fsearch_all%3D%25E3%2582%25AE%25E3%2582%25BF%25E3%2583%25BC" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="display:inline-block;background:#0369a1;color:#fff;padding:.45rem 1.1rem;border-radius:4px;text-decoration:none;font-weight:bold;font-size:.95rem;">サウンドハウスで探す →</a>
 <img src="https://h.accesstrade.net/sp/rr?rk=01001xqc00os63" width="1" height="1" border="0" alt="" loading="lazy">
+</div>
+<div style="flex:1;padding:1.2rem 1.5rem;background:#fff7ed;border-left:4px solid #f97316;border-radius:8px;">
+<p style="margin:0 0 .6rem;font-weight:bold;font-size:1rem;">&#x1F6D2; 楽天市場でギターをチェック</p>
+<a href="https://hb.afl.rakuten.co.jp/hgc/0b15ddc7.28c5c9ed.0b15ddc8.5d23dd4d/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%25E3%2582%25AE%25E3%2582%25BF%25E3%2583%25BC+%25E5%2588%259D%25E5%25BF%2583%25E8%2580%2585+%25E3%2582%25BB%25E3%2583%2583%25E3%2583%2588%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="display:inline-block;background:#bf0000;color:#fff;padding:.45rem 1.1rem;border-radius:4px;text-decoration:none;font-weight:bold;font-size:.95rem;">楽天市場でギター初心者セットを探す →</a>
+<img src="//i.moshimo.com/af/i/impression?a_id=5565352&amp;p_id=54&amp;pc_id=54&amp;pl_id=616" width="1" height="1" style="border:none;" alt="" loading="lazy">
+</div>
 </div>
