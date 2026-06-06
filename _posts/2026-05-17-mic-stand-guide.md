@@ -62,46 +62,46 @@ K&M（ケーニッヒ・アンド・マイヤー）は1949年創業のドイツ�
 
 | モデル | 種類 | 高さ範囲 | ブーム長 | 重さ |
 |--------|------|---------|---------|------|
-| **21020**<a href="https://h.accesstrade.net/sp/cc?rk=01001xqc00os63&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fproducts%2Fdetail%2Fitem%2F47932%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="margin-left:.3em;font-size:.85em;text-decoration:none;" title="サウンドハウスで見る">🛒</a> | ブームスタンド（定番） | 90〜160cm | 約84cm | 約3.2kg |
-| **21021**<a href="https://h.accesstrade.net/sp/cc?rk=01001xqc00os63&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fproducts%2Fdetail%2Fitem%2F47935%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="margin-left:.3em;font-size:.85em;text-decoration:none;" title="サウンドハウスで見る">🛒</a> | ブームスタンド（オーバーヘッド） | 112〜201cm | 約107cm | 約5.9kg |
-| **27195**<a href="https://h.accesstrade.net/sp/cc?rk=01001xqc00os63&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fproducts%2Fdetail%2Fitem%2F48124%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="margin-left:.3em;font-size:.85em;text-decoration:none;" title="サウンドハウスで見る">🛒</a> | ヘビーデューティーブーム | 90〜160cm | 42〜72cm（伸縮） | 約2.3kg |
-| **25950 RIEN**<a href="https://h.accesstrade.net/sp/cc?rk=01001xqc00os63&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fproducts%2Fdetail%2Fitem%2F48105%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="margin-left:.3em;font-size:.85em;text-decoration:none;" title="サウンドハウスで見る">🛒</a> | ショートブーム（キック用） | 28cm（固定） | 42〜72cm（伸縮） | 約3.0kg |
-| **20120**<a href="https://h.accesstrade.net/sp/cc?rk=01001xqc00os63&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fproducts%2Fdetail%2Fitem%2F47926%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="margin-left:.3em;font-size:.85em;text-decoration:none;" title="サウンドハウスで見る">🛒</a> | ストレートスタンド | 89〜159cm | — | 約2.0kg |
-| **23860**<a href="https://h.accesstrade.net/sp/cc?rk=01001xqc00os63&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fproducts%2Fdetail%2Fitem%2F136727%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="margin-left:.3em;font-size:.85em;text-decoration:none;" title="サウンドハウスで見る">🛒</a> | デスクアーム（クランプ） | リーチ 46〜96cm | — | — |
+| **21020** <a href="https://h.accesstrade.net/sp/cc?rk=01001xqc00os63&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fproducts%2Fdetail%2Fitem%2F47933%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="margin-left:.3em;font-size:.85em;text-decoration:none;" title="サウンドハウスで見る">🛒</a> | ブームスタンド（定番） | 90〜160cm | 約84cm | 約3.2kg |
+| **21021** <a href="https://h.accesstrade.net/sp/cc?rk=01001xqc00os63&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fproducts%2Fdetail%2Fitem%2F47935%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="margin-left:.3em;font-size:.85em;text-decoration:none;" title="サウンドハウスで見る">🛒</a> | ブームスタンド（オーバーヘッド） | 112〜201cm | 約107cm | 約5.9kg |
+| **27195** <a href="https://h.accesstrade.net/sp/cc?rk=01001xqc00os63&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fproducts%2Fdetail%2Fitem%2F48124%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="margin-left:.3em;font-size:.85em;text-decoration:none;" title="サウンドハウスで見る">🛒</a> | ヘビーデューティーブーム | 90〜160cm | 42〜72cm（伸縮） | 約2.3kg |
+| **25950 RIEN** <a href="https://h.accesstrade.net/sp/cc?rk=01001xqc00os63&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fproducts%2Fdetail%2Fitem%2F48105%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="margin-left:.3em;font-size:.85em;text-decoration:none;" title="サウンドハウスで見る">🛒</a> | ショートブーム（キック用） | 28cm（固定） | 42〜72cm（伸縮） | 約3.0kg |
+| **20120** <a href="https://h.accesstrade.net/sp/cc?rk=01001xqc00os63&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fproducts%2Fdetail%2Fitem%2F47926%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="margin-left:.3em;font-size:.85em;text-decoration:none;" title="サウンドハウスで見る">🛒</a> | ストレートスタンド | 89〜159cm | — | 約2.0kg |
+| **23860** <a href="https://h.accesstrade.net/sp/cc?rk=01001xqc00os63&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fproducts%2Fdetail%2Fitem%2F136727%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="margin-left:.3em;font-size:.85em;text-decoration:none;" title="サウンドハウスで見る">🛒</a> | デスクアーム（クランプ） | リーチ 46〜96cm | — | — |
 
 ---
 
-### 21020（標準ブームスタンド）— 最初の1本に最適
+### 21020 <a href="https://h.accesstrade.net/sp/cc?rk=01001xqc00os63&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fproducts%2Fdetail%2Fitem%2F47933%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="margin-left:.3em;font-size:.85em;text-decoration:none;" title="サウンドハウスで見る">🛒</a>（標準ブームスタンド）— 最初の1本に最適
 
 K&Mの定番ブームスタンドです。高さ90〜160cm、ブーム長約84cmと使いやすいサイズ感で、**ボーカル録音・ギターアンプ・宅録**とあらゆる場面に対応します。コンデンサーマイクの重さも問題なく支えられ、宅録環境に1本あれば長年使えます。迷ったらまずこれです。
 
 ---
 
-### 21021（オーバーヘッド用ブームスタンド）— 高い位置での使用に
+### 21021 <a href="https://h.accesstrade.net/sp/cc?rk=01001xqc00os63&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fproducts%2Fdetail%2Fitem%2F47935%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="margin-left:.3em;font-size:.85em;text-decoration:none;" title="サウンドハウスで見る">🛒</a>（オーバーヘッド用ブームスタンド）— 高い位置での使用に
 
 21020より長く・重い設計のブームスタンドです。高さ112〜201cm、ブーム長約107cmと大きく、**ドラムのオーバーヘッドマイキング・ハイハット・金管楽器の高い位置**への設置に適しています。高いところからブームを大きく張り出す用途向けです。
 
 ---
 
-### 27195（ヘビーデューティーブームスタンド）— 重いマイクに
+### 27195 <a href="https://h.accesstrade.net/sp/cc?rk=01001xqc00os63&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fproducts%2Fdetail%2Fitem%2F48124%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="margin-left:.3em;font-size:.85em;text-decoration:none;" title="サウンドハウスで見る">🛒</a>（ヘビーデューティーブームスタンド）— 重いマイクに
 
 SHUREのSM7Bなど、比較的重量のあるダイナミックマイクや大型コンデンサーマイクを使う場合はこちら。カウンターウエイトが付いているため、重いマイクをブームの先に取り付けても安定感が段違いです。
 
 ---
 
-### 25950 RIEN（ショートブーム重量型）— 低い位置からのブーム使いに
+### 25950 RIEN <a href="https://h.accesstrade.net/sp/cc?rk=01001xqc00os63&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fproducts%2Fdetail%2Fitem%2F48105%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="margin-left:.3em;font-size:.85em;text-decoration:none;" title="サウンドハウスで見る">🛒</a>（ショートブーム重量型）— 低い位置からのブーム使いに
 
 高さ28cm固定の超低位置スタンドです。極太・重量のある脚で重心が低く、ブームを大きく伸ばしても転倒しにくい設計です。バスドラムのマイキングをはじめ、低い位置からブームを張り出してマイクを入れたい場面全般に向いています。
 
 ---
 
-### 20120 / ST201（ストレートスタンド）— ライブ・シンプル用途に
+### 20120 <a href="https://h.accesstrade.net/sp/cc?rk=01001xqc00os63&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fproducts%2Fdetail%2Fitem%2F47926%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="margin-left:.3em;font-size:.85em;text-decoration:none;" title="サウンドハウスで見る">🛒</a> / ST201（ストレートスタンド）— ライブ・シンプル用途に
 
 ブームなしのシンプルな縦型スタンドです。高さ89〜159cm、重さ約2kgと軽量で、ライブのボーカルマイクスタンドとして長年の定番です。
 
 ---
 
-### 23860（デスクアーム）— 配信・ポッドキャストに
+### 23860 <a href="https://h.accesstrade.net/sp/cc?rk=01001xqc00os63&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fproducts%2Fdetail%2Fitem%2F136727%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="margin-left:.3em;font-size:.85em;text-decoration:none;" title="サウンドハウスで見る">🛒</a>（デスクアーム）— 配信・ポッドキャストに
 
 クランプ式デスクアームです。マイクを使わないときは邪魔にならない位置に退かせ、使うときだけサッと引き出せます。最大耐荷重1.5kgのため、軽量なコンデンサーマイクやダイナミックマイクとの組み合わせが前提です。
 
@@ -109,7 +109,7 @@ SHUREのSM7Bなど、比較的重量のあるダイナミックマイクや大�
 
 ### グースネックスタンドについて
 
-グースネックスタンドはフレキシブルな金属アームでマイクの向きを細かく調整できるスタンドです。一度セットすれば固定したまま使う用途に向いており、ポッドキャスト・インタビュー・講演台・会議室などで使われます。K&Mの **27500**<a href="https://h.accesstrade.net/sp/cc?rk=01001xqc00os63&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fproducts%2Fdetail%2Fitem%2F344668%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="margin-left:.3em;font-size:.85em;text-decoration:none;" title="サウンドハウスで見る">🛒</a>（XLR配線内蔵の床置き型）や、既存スタンドに取り付ける延長アーム **230/1**（長さ約30cm）がこのカテゴリに入ります。録音スタジオよりも放送・公共設備向けの需要が高い製品群です。
+グースネックスタンドはフレキシブルな金属アームでマイクの向きを細かく調整できるスタンドです。一度セットすれば固定したまま使う用途に向いており、ポッドキャスト・インタビュー・講演台・会議室などで使われます。K&Mの **27500**（XLR配線内蔵の床置き型）や、既存スタンドに取り付ける延長アーム **230/1**（長さ約30cm）がこのカテゴリに入ります。録音スタジオよりも放送・公共設備向けの需要が高い製品群です。
 
 ---
 
@@ -131,7 +131,7 @@ SHUREのSM7Bなど、比較的重量のあるダイナミックマイクや大�
 
 **重いマイクをブームを大きく伸ばして設置すると、重心がブーム側に傾いてスタンドが転倒することがあります。**
 
-特にSM7BやAT4050など重量のあるマイクを使う場合は、スタンド自体にも十分な重量が必要です。スタンド側のカウンターウエイトや脚の重さが安定の鍵になります。25950 RIENのような重量設計のスタンドが選択肢に上がる理由はここにあります。
+特にSM7BやAT4050など重量のあるマイクを使う場合は、スタンド自体にも十分な重量が必要です。スタンド側のカウンターウエイトや脚の重さが安定の鍵になります。25950 RIEN<a href="https://h.accesstrade.net/sp/cc?rk=01001xqc00os63&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fproducts%2Fdetail%2Fitem%2F48105%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="margin-left:.3em;font-size:.85em;text-decoration:none;" title="サウンドハウスで見る">🛒</a>のような重量設計のスタンドが選択肢に上がる理由はここにあります。
 
 ---
 
@@ -165,22 +165,24 @@ SHUREのSM7Bなど、比較的重量のあるダイナミックマイクや大�
 
 | 用途 | おすすめスタンド | K&Mモデル |
 |------|--------------|----------|
-| ボーカル録音・宅録・汎用 | ブームスタンド（定番） | 21020<a href="https://h.accesstrade.net/sp/cc?rk=01001xqc00os63&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fproducts%2Fdetail%2Fitem%2F47932%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="margin-left:.3em;font-size:.85em;text-decoration:none;" title="サウンドハウスで見る">🛒</a> |
-| ドラムオーバーヘッド・金管楽器 | ブームスタンド（オーバーヘッド） | 21021<a href="https://h.accesstrade.net/sp/cc?rk=01001xqc00os63&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fproducts%2Fdetail%2Fitem%2F47935%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="margin-left:.3em;font-size:.85em;text-decoration:none;" title="サウンドハウスで見る">🛒</a> |
-| 重いマイク（SM7B等） | ヘビーデューティーブーム | 27195<a href="https://h.accesstrade.net/sp/cc?rk=01001xqc00os63&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fproducts%2Fdetail%2Fitem%2F48124%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="margin-left:.3em;font-size:.85em;text-decoration:none;" title="サウンドハウスで見る">🛒</a> |
-| 低い位置からのブームマイキング | ショートブーム（重量型） | 25950 RIEN<a href="https://h.accesstrade.net/sp/cc?rk=01001xqc00os63&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fproducts%2Fdetail%2Fitem%2F48105%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="margin-left:.3em;font-size:.85em;text-decoration:none;" title="サウンドハウスで見る">🛒</a> |
-| 配信・ポッドキャスト | デスクアーム | 23860<a href="https://h.accesstrade.net/sp/cc?rk=01001xqc00os63&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fproducts%2Fdetail%2Fitem%2F136727%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="margin-left:.3em;font-size:.85em;text-decoration:none;" title="サウンドハウスで見る">🛒</a> |
-| ライブ・シンプル用途 | ストレートスタンド | 20120<a href="https://h.accesstrade.net/sp/cc?rk=01001xqc00os63&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fproducts%2Fdetail%2Fitem%2F47926%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="margin-left:.3em;font-size:.85em;text-decoration:none;" title="サウンドハウスで見る">🛒</a> |
+| ボーカル録音・宅録・汎用 | ブームスタンド（定番） | 21020 <a href="https://h.accesstrade.net/sp/cc?rk=01001xqc00os63&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fproducts%2Fdetail%2Fitem%2F47933%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="margin-left:.3em;font-size:.85em;text-decoration:none;" title="サウンドハウスで見る">🛒</a> |
+| ドラムオーバーヘッド・金管楽器 | ブームスタンド（オーバーヘッド） | 21021 <a href="https://h.accesstrade.net/sp/cc?rk=01001xqc00os63&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fproducts%2Fdetail%2Fitem%2F47935%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="margin-left:.3em;font-size:.85em;text-decoration:none;" title="サウンドハウスで見る">🛒</a> |
+| 重いマイク（SM7B等） | ヘビーデューティーブーム | 27195 <a href="https://h.accesstrade.net/sp/cc?rk=01001xqc00os63&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fproducts%2Fdetail%2Fitem%2F48124%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="margin-left:.3em;font-size:.85em;text-decoration:none;" title="サウンドハウスで見る">🛒</a> |
+| 低い位置からのブームマイキング | ショートブーム（重量型） | 25950 RIEN <a href="https://h.accesstrade.net/sp/cc?rk=01001xqc00os63&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fproducts%2Fdetail%2Fitem%2F48105%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="margin-left:.3em;font-size:.85em;text-decoration:none;" title="サウンドハウスで見る">🛒</a> |
+| 配信・ポッドキャスト | デスクアーム | 23860 <a href="https://h.accesstrade.net/sp/cc?rk=01001xqc00os63&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fproducts%2Fdetail%2Fitem%2F136727%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="margin-left:.3em;font-size:.85em;text-decoration:none;" title="サウンドハウスで見る">🛒</a> |
+| ライブ・シンプル用途 | ストレートスタンド | 20120 <a href="https://h.accesstrade.net/sp/cc?rk=01001xqc00os63&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fproducts%2Fdetail%2Fitem%2F47926%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="margin-left:.3em;font-size:.85em;text-decoration:none;" title="サウンドハウスで見る">🛒</a> |
 
 マイクスタンドは消耗品ではなく、一度良いものを買えば10年以上使えます。K&Mは初期投資がやや高めですが、安価なスタンドを2〜3本買い替えることを考えると、長期的にコストパフォーマンスに優れています。
 
-<div style="margin:2rem 0;padding:1.2rem 1.5rem;background:#fff7ed;border-left:4px solid #f97316;border-radius:8px;">
-<p style="margin:0 0 .6rem;font-weight:bold;font-size:1rem;">&#x1F6D2; K&Mスタンドを楽天市場でチェック</p>
-<a href="https://hb.afl.rakuten.co.jp/ichiba/54518dd8.3792440a.54518dd9.03b99be4/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2FK%2526M%2B%25E3%2583%259E%25E3%2582%25A4%25E3%2582%25AF%25E3%2582%25B9%25E3%2582%25BF%25E3%2583%25B3%25E3%2583%2589%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="display:inline-block;background:#bf0000;color:#fff;padding:.45rem 1.1rem;border-radius:4px;text-decoration:none;font-weight:bold;font-size:.95rem;">楽天市場でK&Mスタンドを探す →</a>
-</div>
-
-<div style="margin:2rem 0;padding:1.2rem 1.5rem;background:#f0f9ff;border-left:4px solid #0ea5e9;border-radius:8px;">
+<div style="display:flex;gap:.75rem;margin:2rem 0;">
+<div style="flex:1;padding:1.2rem 1.5rem;background:#f0f9ff;border-left:4px solid #0ea5e9;border-radius:8px;">
 <p style="margin:0 0 .6rem;font-weight:bold;font-size:1rem;">&#x1F3B5; サウンドハウスでもチェック（国内最大の音楽機材専門店）</p>
 <a href="https://h.accesstrade.net/sp/cc?rk=01001xqc00os63&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fsearch%2Findex%2F%3Fsearch_all%3DK%2526M%2520%25E3%2583%259E%25E3%2582%25A4%25E3%2582%25AF%25E3%2582%25B9%25E3%2582%25BF%25E3%2583%25B3%25E3%2583%2589" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="display:inline-block;background:#0369a1;color:#fff;padding:.45rem 1.1rem;border-radius:4px;text-decoration:none;font-weight:bold;font-size:.95rem;">サウンドハウスで探す →</a>
 <img src="https://h.accesstrade.net/sp/rr?rk=01001xqc00os63" width="1" height="1" border="0" alt="" loading="lazy">
+</div>
+<div style="flex:1;padding:1.2rem 1.5rem;background:#fff7ed;border-left:4px solid #f97316;border-radius:8px;">
+<p style="margin:0 0 .6rem;font-weight:bold;font-size:1rem;">&#x1F6D2; K&Mスタンドを楽天市場でチェック</p>
+<a href="https://hb.afl.rakuten.co.jp/hgc/0b15ddc7.28c5c9ed.0b15ddc8.5d23dd4d/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2FK%2526M%2B%25E3%2583%259E%25E3%2582%25A4%25E3%2582%25AF%25E3%2582%25B9%25E3%2582%25BF%25E3%2583%25B3%25E3%2583%2589%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="display:inline-block;background:#bf0000;color:#fff;padding:.45rem 1.1rem;border-radius:4px;text-decoration:none;font-weight:bold;font-size:.95rem;">楽天市場でK&Mスタンドを探す →</a>
+<img src="//i.moshimo.com/af/i/impression?a_id=5565352&amp;p_id=54&amp;pc_id=54&amp;pl_id=616" width="1" height="1" style="border:none;" alt="" loading="lazy">
+</div>
 </div>
