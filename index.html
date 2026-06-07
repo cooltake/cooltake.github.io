@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
@@ -202,6 +202,8 @@
     .series-scroll::-webkit-scrollbar { height: 4px; }
     .series-scroll::-webkit-scrollbar-track { background: transparent; }
     .series-scroll::-webkit-scrollbar-thumb { background: rgba(255,255,255,.1); border-radius: 2px; }
+    .sc-img-wrap { aspect-ratio: 16/9; overflow: hidden; background: #1a1a2e; }
+    .sc-img-wrap img { width: 100%; height: 100%; object-fit: cover; display: block; }
     .series-card { flex: 0 0 340px; scroll-snap-align: start; background: var(--bg-card); border: 1px solid var(--border); border-radius: 16px; overflow: hidden; display: flex; flex-direction: column; transition: transform .25s, border-color .25s; }
     .series-card:hover { transform: translateY(-4px); border-color: rgba(59,130,246,.4); }
     .series-card-img { aspect-ratio: 16/9; position: relative; overflow: hidden; background: linear-gradient(135deg, #162040 0%, #0f1a38 100%); }
@@ -261,10 +263,75 @@
       .series-card { flex: 0 0 240px; }
     }
   </style>
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9451940529827362" crossorigin="anonymous"></script>
-</head>
+  <style>
+    .nav-drawer-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.55);z-index:199;opacity:0;transition:opacity .28s;}
+    .nav-drawer-overlay.open{display:block;opacity:1;}
+    .nav-drawer{position:fixed;top:0;right:-320px;width:300px;max-width:86vw;height:100%;background:#0f172a;border-left:1px solid rgba(255,255,255,.1);z-index:200;overflow-y:auto;transition:right .28s cubic-bezier(.4,0,.2,1);-webkit-overflow-scrolling:touch;}
+    .nav-drawer.open{right:0;}
+    .drawer-header{display:flex;align-items:center;justify-content:space-between;padding:16px 20px;border-bottom:1px solid rgba(255,255,255,.1);}
+    .drawer-logo{font-size:.88rem;font-weight:700;color:#f0f0f0;text-decoration:none;}
+    .drawer-close{background:none;border:none;color:#94a3b8;font-size:1.3rem;cursor:pointer;padding:4px 8px;line-height:1;}
+    .drawer-section{padding:14px 20px 8px;}
+    .drawer-section-label{font-size:.58rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#06b6d4;margin-bottom:6px;}
+    .drawer-link{display:flex;align-items:center;gap:10px;padding:10px 0;color:#cbd5e1;text-decoration:none;font-size:.84rem;font-weight:500;border-bottom:1px solid rgba(255,255,255,.06);transition:color .15s;}
+    .drawer-link:last-child{border-bottom:none;}
+    .drawer-link:hover,.drawer-link:active{color:#f0f0f0;}
+    .drawer-link-icon{width:28px;height:28px;border-radius:8px;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:.82rem;}
+    .di-blue{background:rgba(59,130,246,.18);}.di-indigo{background:rgba(129,140,248,.18);}.di-cyan{background:rgba(6,182,212,.18);}
+    .di-green{background:rgba(52,211,153,.18);}.di-orange{background:rgba(251,146,60,.18);}.di-pink{background:rgba(232,121,249,.18);}
+    .di-red{background:rgba(248,113,113,.18);}.di-lime{background:rgba(163,230,53,.18);}.di-violet{background:rgba(168,85,247,.18);}
+    .di-amber{background:rgba(251,191,36,.18);}.di-rose{background:rgba(244,63,94,.18);}.di-sky{background:rgba(56,189,248,.18);}
+    .drawer-divider{height:1px;background:rgba(255,255,255,.08);margin:8px 20px;}
+    @media (min-width:769px){.nav-drawer,.nav-drawer-overlay{display:none !important;}}
+  </style></head>
 <body>
 
+
+  <!-- Mobile drawer overlay -->
+  <div class="nav-drawer-overlay" id="nav-drawer-overlay"></div>
+  <!-- Mobile drawer -->
+  <div class="nav-drawer" id="nav-drawer" role="dialog" aria-modal="true" aria-label="ナビゲーション">
+    <div class="drawer-header">
+      <a href="/" class="drawer-logo">Cooltake Studio</a>
+      <button class="drawer-close" id="drawer-close" aria-label="閉じる">&#x2715;</button>
+    </div>
+    <div class="drawer-section">
+      <div class="drawer-section-label">メニュー</div>
+      <a href="/#series" class="drawer-link"><span class="drawer-link-icon di-blue">&#x1F4CB;</span>記事一覧</a>
+      <a href="/showcase/" class="drawer-link"><span class="drawer-link-icon di-indigo">&#x1F3B8;</span>Showcase</a>
+      <a href="/#about" class="drawer-link"><span class="drawer-link-icon di-cyan">&#x2139;&#xFE0F;</span>About</a>
+    </div>
+    <div class="drawer-divider"></div>
+    <div class="drawer-section">
+      <div class="drawer-section-label">機材・ギア</div>
+      <a href="/series-list.html?series=mic" class="drawer-link"><span class="drawer-link-icon di-blue">&#x1F399;&#xFE0F;</span>マイク</a>
+      <a href="/series-list.html?series=audio-interface" class="drawer-link"><span class="drawer-link-icon di-indigo">&#x1F39B;&#xFE0F;</span>オーディオI/F・ミキサー</a>
+      <a href="/series-list.html?series=headphones-monitor" class="drawer-link"><span class="drawer-link-icon di-green">&#x1F3A7;</span>ヘッドフォン・モニター</a>
+    </div>
+    <div class="drawer-divider"></div>
+    <div class="drawer-section">
+      <div class="drawer-section-label">楽器</div>
+      <a href="/series-list.html?series=guitar-bass" class="drawer-link"><span class="drawer-link-icon di-orange">&#x1F3B8;</span>ギター・ベース</a>
+      <a href="/series-list.html?series=instrument-guide" class="drawer-link"><span class="drawer-link-icon di-amber">&#x1F3B5;</span>楽器モデル詳細ガイド</a>
+      <a href="/series-list.html?series=drums" class="drawer-link"><span class="drawer-link-icon di-red">&#x1F941;</span>ドラム・打楽器</a>
+      <a href="/series-list.html?series=keyboard-piano" class="drawer-link"><span class="drawer-link-icon di-violet">&#x1F3B9;</span>キーボード・ピアノ</a>
+    </div>
+    <div class="drawer-divider"></div>
+    <div class="drawer-section">
+      <div class="drawer-section-label">DTM・制作</div>
+      <a href="/series-list.html?series=daw-software" class="drawer-link"><span class="drawer-link-icon di-cyan">&#x1F4BB;</span>DAW・ソフト</a>
+      <a href="/series-list.html?series=recording-techniques" class="drawer-link"><span class="drawer-link-icon di-lime">&#x1F39A;&#xFE0F;</span>録音テクニック</a>
+      <a href="/series-list.html?series=mix-mastering" class="drawer-link"><span class="drawer-link-icon di-pink">&#x1F39B;&#xFE0F;</span>MIX・マスタリング</a>
+      <a href="/series-list.html?series=music-production" class="drawer-link"><span class="drawer-link-icon di-sky">&#x1F3BC;</span>音楽制作入門</a>
+    </div>
+    <div class="drawer-divider"></div>
+    <div class="drawer-section">
+      <div class="drawer-section-label">シリーズ</div>
+      <a href="/series-list.html?series=japan-music-series" class="drawer-link"><span class="drawer-link-icon di-rose">&#x1F1EF;&#x1F1F5;</span>音楽史シリーズ</a>
+      <a href="/series-list.html?series=chord-progression" class="drawer-link"><span class="drawer-link-icon di-violet">&#x1F3B5;</span>コード進行シリーズ</a>
+    </div>
+    <div style="height:32px;"></div>
+  </div>
 <header class="site-header">
   <div class="container-wide">
     <a href="/" class="logo">
@@ -272,7 +339,7 @@
     </a>
     <nav class="site-nav" id="site-nav">
       <a href="#series">記事一覧</a>
-      <!-- <a href="#showcase">Showcase</a> -->
+      <a href="#showcase">Showcase</a>
       <a href="#about">About</a>
     </nav>
     <button class="nav-toggle" id="nav-toggle" aria-label="メニューを開く"><span></span><span></span><span></span></button>
@@ -439,6 +506,32 @@
               <span class="cat-sidebar-count">2本</span>
             </a>
 
+
+            <!-- ── グループ3: 音楽史・理論 ── -->
+            <div class="cat-group-label">音楽史・理論</div>
+
+            <a href="/series-list.html?series=japan-music-series" class="cat-sidebar-item">
+              <div class="cat-sidebar-icon csi-10">
+                <svg width="18" height="18" viewBox="0 0 26 26" fill="none"><circle cx="13" cy="13" r="9" stroke="#fb923c" stroke-width="1.5"/><path d="M9 8 L17 8 L17 18 L13 15 L9 18 Z" fill="#fb923c" opacity=".5"/></svg>
+              </div>
+              <div class="cat-sidebar-info">
+                <div class="cat-sidebar-name">音楽史シリーズ</div>
+                <div class="cat-sidebar-sub">GSブームから現代まで</div>
+              </div>
+              <span class="cat-sidebar-count">13本</span>
+            </a>
+
+            <a href="/series-list.html?series=chord-progression" class="cat-sidebar-item">
+              <div class="cat-sidebar-icon csi-11">
+                <svg width="18" height="18" viewBox="0 0 26 26" fill="none"><rect x="3" y="7" width="5" height="12" rx="1" fill="#a78bfa" opacity=".6"/><rect x="10" y="4" width="5" height="15" rx="1" fill="#a78bfa" opacity=".8"/><rect x="17" y="9" width="5" height="10" rx="1" fill="#a78bfa"/></svg>
+              </div>
+              <div class="cat-sidebar-info">
+                <div class="cat-sidebar-name">コード進行シリーズ</div>
+                <div class="cat-sidebar-sub">王道・カノン・小室進行</div>
+              </div>
+              <span class="cat-sidebar-count">8本</span>
+            </a>
+
           </nav>
         </div>
 
@@ -460,75 +553,846 @@
       </aside>
 
       <!-- ── 右: Featured + Showcase + Community + Coming Soon ── -->
-      <div class="main-col">
+      <div class="main-col" style="min-width:0">
 
         <!-- Featured スライダー -->
-        <div class="featured-slider-wrap">
-          <div class="featured-slider" id="featured-slider">
+        <div class="featured-slider-wrap" style="min-width:0;overflow:hidden">
+          <div class="featured-slider" id="featured-slider" style="width:100%;overflow:hidden">
             <div class="featured-track" id="featured-track">
 
-              <a href="/2026/05/11/microphone-guide/" class="featured-card">
+              <a href="/2026/05/30/japan-music-18-modern-scene/" class="featured-card">
                 <div class="featured-img" style="background:linear-gradient(135deg,#0e1a38,#0a1228)">
                   <span class="pick-badge">PICK UP</span>
-                  <div class="featured-img-inner"><img src="/assets/images/thumb-microphone.png" alt="" class="thumb-img" onerror="this.style.display='none'"><svg width="72" height="72" viewBox="0 0 26 26" fill="none" style="opacity:.13"><rect x="9" y="1" width="8" height="16" rx="4" fill="#3b82f6"/><path d="M4 12 C4 19 22 19 22 12" stroke="#3b82f6" stroke-width="2" fill="none"/></svg></div>
+                  <div class="featured-img-inner"><img src="/assets/images/thumb-modern-scene.jpg" alt="" class="thumb-img" onerror="this.style.display='none'"><svg width="72" height="72" viewBox="0 0 26 26" fill="none" style="opacity:.13"><circle cx="13" cy="10" r="5" fill="#93c5fd"/><path d="M4 22 C4 17 8 14 13 14 C18 14 22 17 22 22" stroke="#93c5fd" stroke-width="2" fill="none"/></svg></div>
                 </div>
                 <div class="featured-body">
                   <p class="featured-label">Featured Article</p>
-                  <h2 class="featured-title">ダイナミックマイクとコンデンサーマイクの違い — 録音・宅録向け選び方ガイド</h2>
-                  <p class="featured-excerpt">自宅で高品質な録音を実現するために、最初に理解しておきたいのがマイクの種類の違いです。ダイナミックマイクは耐久性が高く扱いやすい一方、コンデンサーマイクは繊細な音をとらえます。</p>
-                  <div class="featured-footer"><span class="featured-date">2026.05.11</span><span class="read-more">続きを読む →</span></div>
+                  <h2 class="featured-title">現代の日本音楽シーン【2020年代】Vtuber・サブスク・AI音楽が変えた音楽の作り方</h2>
+                  <p class="featured-excerpt">Vtuber・サブスク・AI音楽が共存する2020年代の日本音楽シーン。米津玄師からYOASOBIまで、現代の音楽制作の潮流と、今から音楽で収益を得るためのロードマップを解説。</p>
+                  <div class="featured-footer"><span class="featured-date">2026.05.30</span><span class="read-more">続きを読む →</span></div>
                 </div>
               </a>
 
-              <a href="/2026/05/12/audio-interface-guide/" class="featured-card">
+              <a href="/2026/05/30/japan-music-17-city-pop-revival/" class="featured-card">
                 <div class="featured-img" style="background:linear-gradient(135deg,#16203a,#0f1830)">
                   <span class="pick-badge">PICK UP</span>
-                  <div class="featured-img-inner"><img src="/assets/images/thumb-audio-interface.png" alt="" class="thumb-img" onerror="this.style.display='none'"><svg width="72" height="72" viewBox="0 0 26 26" fill="none" style="opacity:.13"><rect x="2" y="11" width="22" height="12" rx="3" stroke="#818cf8" stroke-width="1.5"/></svg></div>
+                  <div class="featured-img-inner"><img src="/assets/images/thumb-city-pop-revival.jpg" alt="" class="thumb-img" onerror="this.style.display='none'"><svg width="72" height="72" viewBox="0 0 26 26" fill="none" style="opacity:.13"><circle cx="13" cy="10" r="5" fill="#c4b5fd"/><path d="M4 22 C4 17 8 14 13 14 C18 14 22 17 22 22" stroke="#c4b5fd" stroke-width="2" fill="none"/></svg></div>
                 </div>
                 <div class="featured-body">
                   <p class="featured-label" style="color:#c4b5fd">Featured Article</p>
-                  <h2 class="featured-title">オーディオインターフェース 選び方完全ガイド 2026</h2>
-                  <p class="featured-excerpt">Focusrite Scarlett、MOTU M2、SSL 2など価格帯別に徹底比較。初心者が最初の1台を選ぶポイントから、プロが求める多チャンネル構成まで解説します。</p>
-                  <div class="featured-footer"><span class="featured-date">2026.05.12</span><span class="read-more" style="color:#c4b5fd">続きを読む →</span></div>
+                  <h2 class="featured-title">シティポップ・リバイバル現象【2020年代】世界が再発見した日本の「失われた音楽」</h2>
+                  <p class="featured-excerpt">山下達郎・竹内まりや・大貫妙子が世界で再評価されたシティポップリバイバル現象。YouTubeアルゴリズムが発掘した80年代の名盤と、現代で「シティポップ風サウンド」を作るDTGガイド。</p>
+                  <div class="featured-footer"><span class="featured-date">2026.05.30</span><span class="read-more" style="color:#c4b5fd">続きを読む →</span></div>
+                </div>
+              </a>
+
+              <a href="/2026/05/30/japan-music-16-2010s-band/" class="featured-card">
+                <div class="featured-img" style="background:linear-gradient(135deg,#1a1030,#120a24)">
+                  <span class="pick-badge">PICK UP</span>
+                  <div class="featured-img-inner"><img src="/assets/images/thumb-2010s-band.jpg" alt="" class="thumb-img" onerror="this.style.display='none'"><svg width="72" height="72" viewBox="0 0 26 26" fill="none" style="opacity:.13"><circle cx="13" cy="10" r="5" fill="#e879f9"/><path d="M4 22 C4 17 8 14 13 14 C18 14 22 17 22 22" stroke="#e879f9" stroke-width="2" fill="none"/></svg></div>
+                </div>
+                <div class="featured-body">
+                  <p class="featured-label" style="color:#e879f9">Featured Article</p>
+                  <h2 class="featured-title">2010年代バンドリバイバル・インディーズ台頭【2010〜2019年】RADWIMPS・星野源・ゲスの極み乙女。</h2>
+                  <p class="featured-excerpt">ストリーミング以前の最後の時代、2010年代の日本音楽は多様化と「発見の時代」だった。RADWIMPS、星野源、ゲスの極み乙女。、amazarashi——個性的なバンドが乱立し、タイアップアニメ・映画との連動で世界市場へ。サブスク普及前夜の音楽シーンを解説。</p>
+                  <div class="featured-footer"><span class="featured-date">2026.05.30</span><span class="read-more" style="color:#e879f9">続きを読む →</span></div>
+                </div>
+              </a>
+
+              <a href="/2026/05/30/japan-music-15-vocaloid-dtm/" class="featured-card">
+                <div class="featured-img" style="background:linear-gradient(135deg,#0e201a,#091510)">
+                  <span class="pick-badge">PICK UP</span>
+                  <div class="featured-img-inner"><img src="/assets/images/thumb-vocaloid-dtm.jpg" alt="" class="thumb-img" onerror="this.style.display='none'"><svg width="72" height="72" viewBox="0 0 26 26" fill="none" style="opacity:.13"><circle cx="13" cy="10" r="5" fill="#6ee7b7"/><path d="M4 22 C4 17 8 14 13 14 C18 14 22 17 22 22" stroke="#6ee7b7" stroke-width="2" fill="none"/></svg></div>
+                </div>
+                <div class="featured-body">
+                  <p class="featured-label" style="color:#6ee7b7">Featured Article</p>
+                  <h2 class="featured-title">ボカロ革命とDTM民主化【2007年〜】初音ミクが変えた音楽制作の常識</h2>
+                  <p class="featured-excerpt">2007年の初音ミク登場からニコニコ動画・YouTube・Spotifyへ。ボカロPたちが切り開いたDTM民主化の歴史と、今から音楽制作を始めるための完全スタートガイド。</p>
+                  <div class="featured-footer"><span class="featured-date">2026.05.30</span><span class="read-more" style="color:#6ee7b7">続きを読む →</span></div>
+                </div>
+              </a>
+
+              <a href="/2026/05/30/japan-music-14-2000s-idol/" class="featured-card">
+                <div class="featured-img" style="background:linear-gradient(135deg,#201810,#180e08)">
+                  <span class="pick-badge">PICK UP</span>
+                  <div class="featured-img-inner"><img src="/assets/images/thumb-2000s-idol.jpg" alt="" class="thumb-img" onerror="this.style.display='none'"><svg width="72" height="72" viewBox="0 0 26 26" fill="none" style="opacity:.13"><circle cx="13" cy="10" r="5" fill="#fdba74"/><path d="M4 22 C4 17 8 14 13 14 C18 14 22 17 22 22" stroke="#fdba74" stroke-width="2" fill="none"/></svg></div>
+                </div>
+                <div class="featured-body">
+                  <p class="featured-label" style="color:#fdba74">Featured Article</p>
+                  <h2 class="featured-title">2000年代アイドル・着うた時代【2003〜2012年】AKB48とモバイル音楽革命</h2>
+                  <p class="featured-excerpt">モーニング娘。からAKB48へ、着うたからYouTubeへ——2000年代の日本音楽はビジネスモデルごと激変した。EXILE・EXILE系列の台頭、EXILEブーム、そして秋元康が設計した「参加型アイドル」AKB48が音楽産業を塗り替えた10年間を解説。</p>
+                  <div class="featured-footer"><span class="featured-date">2026.05.30</span><span class="read-more" style="color:#fdba74">続きを読む →</span></div>
+                </div>
+              </a>
+
+              <a href="/2026/05/30/japan-music-13-hiphop-rb/" class="featured-card">
+                <div class="featured-img" style="background:linear-gradient(135deg,#1a1a10,#121208)">
+                  <span class="pick-badge">PICK UP</span>
+                  <div class="featured-img-inner"><img src="/assets/images/thumb-hiphop-rb.jpg" alt="" class="thumb-img" onerror="this.style.display='none'"><svg width="72" height="72" viewBox="0 0 26 26" fill="none" style="opacity:.13"><circle cx="13" cy="10" r="5" fill="#fde68a"/><path d="M4 22 C4 17 8 14 13 14 C18 14 22 17 22 22" stroke="#fde68a" stroke-width="2" fill="none"/></svg></div>
+                </div>
+                <div class="featured-body">
+                  <p class="featured-label" style="color:#fde68a">Featured Article</p>
+                  <h2 class="featured-title">ヒップホップ・R&Bブームの台頭【2000年代】m-flo・SOUL'd OUTが拓いた日本語ラップの世界</h2>
+                  <p class="featured-excerpt">m-flo・SOUL'd OUT・BENNIE Kが牽引した2000年代の日本語ヒップホップ・R&Bブーム。サンプリング文化とビートメイキングの手法、現代のDAWで同じサウンドを作る完全ガイド。</p>
+                  <div class="featured-footer"><span class="featured-date">2026.05.30</span><span class="read-more" style="color:#fde68a">続きを読む →</span></div>
+                </div>
+              </a>
+
+              <a href="/2026/05/30/japan-music-12-shibuya-kei/" class="featured-card">
+                <div class="featured-img" style="background:linear-gradient(135deg,#0e1a2a,#091520)">
+                  <span class="pick-badge">PICK UP</span>
+                  <div class="featured-img-inner"><img src="/assets/images/thumb-shibuya-kei.jpg" alt="" class="thumb-img" onerror="this.style.display='none'"><svg width="72" height="72" viewBox="0 0 26 26" fill="none" style="opacity:.13"><circle cx="13" cy="10" r="5" fill="#7dd3fc"/><path d="M4 22 C4 17 8 14 13 14 C18 14 22 17 22 22" stroke="#7dd3fc" stroke-width="2" fill="none"/></svg></div>
+                </div>
+                <div class="featured-body">
+                  <p class="featured-label" style="color:#7dd3fc">Featured Article</p>
+                  <h2 class="featured-title">渋谷系・J-R&Bの時代【1993〜2000年】フリッパーズ・ギターから宇多田ヒカルまで</h2>
+                  <p class="featured-excerpt">90年代中盤、渋谷を舞台に花開いたサブカルチャー音楽「渋谷系」と、宇多田ヒカル登場で完成したJ-R&B黄金期を解説。フリッパーズ・ギター、ピチカート・ファイヴ、小沢健二、宇多田ヒカルらが変えた日本の音楽地図。</p>
+                  <div class="featured-footer"><span class="featured-date">2026.05.30</span><span class="read-more" style="color:#7dd3fc">続きを読む →</span></div>
+                </div>
+              </a>
+
+              <a href="/2026/05/30/japan-music-11-komuro-jpop/" class="featured-card">
+                <div class="featured-img" style="background:linear-gradient(135deg,#1a100e,#120a08)">
+                  <span class="pick-badge">PICK UP</span>
+                  <div class="featured-img-inner"><img src="/assets/images/thumb-komuro-jpop.jpg" alt="" class="thumb-img" onerror="this.style.display='none'"><svg width="72" height="72" viewBox="0 0 26 26" fill="none" style="opacity:.13"><circle cx="13" cy="10" r="5" fill="#fca5a5"/><path d="M4 22 C4 17 8 14 13 14 C18 14 22 17 22 22" stroke="#fca5a5" stroke-width="2" fill="none"/></svg></div>
+                </div>
+                <div class="featured-body">
+                  <p class="featured-label" style="color:#fca5a5">Featured Article</p>
+                  <h2 class="featured-title">小室サウンドとJ-POP量産時代【1993〜1999年】TK・avexが変えた日本の音楽産業</h2>
+                  <p class="featured-excerpt">小室哲哉・avexが牽引した1990年代J-POPの黄金期。TRF・globe・安室奈美恵・SPEEDを生んだ「打ち込みポップス」の制作手法と、現代DTMで小室サウンドを再現する完全ガイド。</p>
+                  <div class="featured-footer"><span class="featured-date">2026.05.30</span><span class="read-more" style="color:#fca5a5">続きを読む →</span></div>
+                </div>
+              </a>
+
+              <a href="/2026/05/30/japan-music-10-visual-kei/" class="featured-card">
+                <div class="featured-img" style="background:linear-gradient(135deg,#0e1a20,#091518)">
+                  <span class="pick-badge">PICK UP</span>
+                  <div class="featured-img-inner"><img src="/assets/images/thumb-visual-kei.jpg" alt="" class="thumb-img" onerror="this.style.display='none'"><svg width="72" height="72" viewBox="0 0 26 26" fill="none" style="opacity:.13"><circle cx="13" cy="10" r="5" fill="#a5f3fc"/><path d="M4 22 C4 17 8 14 13 14 C18 14 22 17 22 22" stroke="#a5f3fc" stroke-width="2" fill="none"/></svg></div>
+                </div>
+                <div class="featured-body">
+                  <p class="featured-label" style="color:#a5f3fc">Featured Article</p>
+                  <h2 class="featured-title">ヴィジュアル系とハードロック化【1990年代】X JAPAN・hide・GLAYが世界に証明したこと</h2>
+                  <p class="featured-excerpt">X JAPAN・hide・GLAY・L'Arc-en-Cielが牽引した1990年代ヴィジュアル系ムーブメント。日本独自のロック美学とハードロック技術の融合、当時の機材とアンプセッティングを現代で再現する方法。</p>
+                  <div class="featured-footer"><span class="featured-date">2026.05.30</span><span class="read-more" style="color:#a5f3fc">続きを読む →</span></div>
+                </div>
+              </a>
+
+              <a href="/2026/05/30/japan-music-09-fusion-jazz/" class="featured-card">
+                <div class="featured-img" style="background:linear-gradient(135deg,#14101a,#0e0a14)">
+                  <span class="pick-badge">PICK UP</span>
+                  <div class="featured-img-inner"><img src="/assets/images/thumb-godiego.jpg" alt="" class="thumb-img" onerror="this.style.display='none'"><svg width="72" height="72" viewBox="0 0 26 26" fill="none" style="opacity:.13"><circle cx="13" cy="10" r="5" fill="#d8b4fe"/><path d="M4 22 C4 17 8 14 13 14 C18 14 22 17 22 22" stroke="#d8b4fe" stroke-width="2" fill="none"/></svg></div>
+                </div>
+                <div class="featured-body">
+                  <p class="featured-label" style="color:#d8b4fe">Featured Article</p>
+                  <h2 class="featured-title">カシオペア vs T-SQUARE【1980年代フュージョン】バークリー世代が極めた日本発インストゥルメンタル</h2>
+                  <p class="featured-excerpt">1980年代、カシオペアとT-SQUAREが日本フュージョンを世界水準に押し上げた。野呂一生の超絶ギター、F1テーマ「TRUTH」の誕生——ジャズ×ロックが生んだ日本独自のインスト音楽史を解説。</p>
+                  <div class="featured-footer"><span class="featured-date">2026.05.30</span><span class="read-more" style="color:#d8b4fe">続きを読む →</span></div>
+                </div>
+              </a>
+
+              <a href="/2026/05/30/japan-music-08-band-boom/" class="featured-card">
+                <div class="featured-img" style="background:linear-gradient(135deg,#0e1a38,#0a1228)">
+                  <span class="pick-badge">PICK UP</span>
+                  <div class="featured-img-inner"><img src="/assets/images/thumb-band-boom.jpg" alt="" class="thumb-img" onerror="this.style.display='none'"><svg width="72" height="72" viewBox="0 0 26 26" fill="none" style="opacity:.13"><circle cx="13" cy="10" r="5" fill="#93c5fd"/><path d="M4 22 C4 17 8 14 13 14 C18 14 22 17 22 22" stroke="#93c5fd" stroke-width="2" fill="none"/></svg></div>
+                </div>
+                <div class="featured-body">
+                  <p class="featured-label">Featured Article</p>
+                  <h2 class="featured-title">バンドブーム第一波【1980年代後半】BOØWY・BUCK-TICK・イカ天世代が切り開いた日本のロック</h2>
+                  <p class="featured-excerpt">1987〜1990年、BOØWY・BUCK-TICK・THE BLUE HEARTSが牽引した空前のバンドブーム。イカ天・ホコ天が生んだDIYロック精神と、当時の機材・現代エフェクターで同じサウンドを出す方法を解説。</p>
+                  <div class="featured-footer"><span class="featured-date">2026.05.30</span><span class="read-more">続きを読む →</span></div>
+                </div>
+              </a>
+
+              <a href="/2026/05/30/japan-music-07-80s-commercial/" class="featured-card">
+                <div class="featured-img" style="background:linear-gradient(135deg,#16203a,#0f1830)">
+                  <span class="pick-badge">PICK UP</span>
+                  <div class="featured-img-inner"><img src="/assets/images/thumb-80s-commercial.jpg" alt="" class="thumb-img" onerror="this.style.display='none'"><svg width="72" height="72" viewBox="0 0 26 26" fill="none" style="opacity:.13"><circle cx="13" cy="10" r="5" fill="#c4b5fd"/><path d="M4 22 C4 17 8 14 13 14 C18 14 22 17 22 22" stroke="#c4b5fd" stroke-width="2" fill="none"/></svg></div>
+                </div>
+                <div class="featured-body">
+                  <p class="featured-label" style="color:#c4b5fd">Featured Article</p>
+                  <h2 class="featured-title">1980年代半ばの商業音楽【1984〜1987年】バブル前夜に花開いたJ-POP黄金期</h2>
+                  <p class="featured-excerpt">80年代アイドルとバンドブームの間に存在する「バブル前夜の商業音楽」。角松敏生・杉山清貴・渡辺美里・小比類巻かほる——この時代に完成したJ-POPの文法とサウンドを解説。</p>
+                  <div class="featured-footer"><span class="featured-date">2026.05.30</span><span class="read-more" style="color:#c4b5fd">続きを読む →</span></div>
+                </div>
+              </a>
+
+              <a href="/2026/05/30/japan-music-06-80s-idol-production/" class="featured-card">
+                <div class="featured-img" style="background:linear-gradient(135deg,#1a1030,#120a24)">
+                  <span class="pick-badge">PICK UP</span>
+                  <div class="featured-img-inner"><img src="/assets/images/thumb-80s-idol.jpg" alt="" class="thumb-img" onerror="this.style.display='none'"><svg width="72" height="72" viewBox="0 0 26 26" fill="none" style="opacity:.13"><circle cx="13" cy="10" r="5" fill="#e879f9"/><path d="M4 22 C4 17 8 14 13 14 C18 14 22 17 22 22" stroke="#e879f9" stroke-width="2" fill="none"/></svg></div>
+                </div>
+                <div class="featured-body">
+                  <p class="featured-label" style="color:#e879f9">Featured Article</p>
+                  <h2 class="featured-title">80年代アイドル黄金期の音楽制作【1980〜1988年】松田聖子・中森明菜を支えた職人サウンド</h2>
+                  <p class="featured-excerpt">松田聖子・中森明菜・少年隊が輝いた80年代アイドル黄金期。大村雅朗・松任谷正隆ら編曲家が作り上げた「バブル前夜のサウンド」の秘密と、現代DAWでの再現テクニックを完全解説。</p>
+                  <div class="featured-footer"><span class="featured-date">2026.05.30</span><span class="read-more" style="color:#e879f9">続きを読む →</span></div>
+                </div>
+              </a>
+
+              <a href="/2026/05/30/japan-music-05-ymo-techno/" class="featured-card">
+                <div class="featured-img" style="background:linear-gradient(135deg,#0e201a,#091510)">
+                  <span class="pick-badge">PICK UP</span>
+                  <div class="featured-img-inner"><img src="/assets/images/thumb-ymo-techno.jpg" alt="" class="thumb-img" onerror="this.style.display='none'"><svg width="72" height="72" viewBox="0 0 26 26" fill="none" style="opacity:.13"><circle cx="13" cy="10" r="5" fill="#6ee7b7"/><path d="M4 22 C4 17 8 14 13 14 C18 14 22 17 22 22" stroke="#6ee7b7" stroke-width="2" fill="none"/></svg></div>
+                </div>
+                <div class="featured-body">
+                  <p class="featured-label" style="color:#6ee7b7">Featured Article</p>
+                  <h2 class="featured-title">YMOとテクノポップ革命【1978〜1983年】シンセとシーケンサーが世界を変えた</h2>
+                  <p class="featured-excerpt">Yellow Magic Orchestra（YMO）が世界に放ったテクノポップ革命。TR-808・MC-8・Moogが生み出した未来の音と、現代のDAW・ソフトシンセでYMOサウンドを再現する完全ガイド。</p>
+                  <div class="featured-footer"><span class="featured-date">2026.05.30</span><span class="read-more" style="color:#6ee7b7">続きを読む →</span></div>
+                </div>
+              </a>
+
+              <a href="/2026/05/30/japan-music-04-foreign-influence/" class="featured-card">
+                <div class="featured-img" style="background:linear-gradient(135deg,#201810,#180e08)">
+                  <span class="pick-badge">PICK UP</span>
+                  <div class="featured-img-inner"><img src="/assets/images/thumb-godiego-fusion.jpg" alt="" class="thumb-img" onerror="this.style.display='none'"><svg width="72" height="72" viewBox="0 0 26 26" fill="none" style="opacity:.13"><circle cx="13" cy="10" r="5" fill="#fdba74"/><path d="M4 22 C4 17 8 14 13 14 C18 14 22 17 22 22" stroke="#fdba74" stroke-width="2" fill="none"/></svg></div>
+                </div>
+                <div class="featured-body">
+                  <p class="featured-label" style="color:#fdba74">Featured Article</p>
+                  <h2 class="featured-title">海外音楽の融合と日本化【1970年代後期】ゴダイゴが証明した「日本語×西洋音楽」の可能性</h2>
+                  <p class="featured-excerpt">1970年代後期、ゴダイゴをはじめとするバークリー帰りのミュージシャンが西洋音楽理論を日本のポップスに融合。英語×日本語の歌詞スタイルとプロフェッショナルなアレンジが、後のJ-POP全体の水準を引き上げた過程を解説。</p>
+                  <div class="featured-footer"><span class="featured-date">2026.05.30</span><span class="read-more" style="color:#fdba74">続きを読む →</span></div>
+                </div>
+              </a>
+
+              <a href="/2026/05/30/japan-music-03-idol-candies-era/" class="featured-card">
+                <div class="featured-img" style="background:linear-gradient(135deg,#1a1a10,#121208)">
+                  <span class="pick-badge">PICK UP</span>
+                  <div class="featured-img-inner"><img src="/assets/images/thumb-idol-candies.jpg" alt="" class="thumb-img" onerror="this.style.display='none'"><svg width="72" height="72" viewBox="0 0 26 26" fill="none" style="opacity:.13"><circle cx="13" cy="10" r="5" fill="#fde68a"/><path d="M4 22 C4 17 8 14 13 14 C18 14 22 17 22 22" stroke="#fde68a" stroke-width="2" fill="none"/></svg></div>
+                </div>
+                <div class="featured-body">
+                  <p class="featured-label" style="color:#fde68a">Featured Article</p>
+                  <h2 class="featured-title">キャンディーズ・ピンクレディーと歌謡曲黄金期【1970年代中期】アイドルが生んだ職人サウンド</h2>
+                  <p class="featured-excerpt">1970年代中期、キャンディーズ・ピンクレディーが席巻した歌謡曲黄金期。阿久悠・都倉俊一らの職人が作り上げたサウンドの秘密と、現代DTMでの再現テクニックを解説。</p>
+                  <div class="featured-footer"><span class="featured-date">2026.05.30</span><span class="read-more" style="color:#fde68a">続きを読む →</span></div>
+                </div>
+              </a>
+
+              <a href="/2026/05/30/japan-music-02-folk-new-music/" class="featured-card">
+                <div class="featured-img" style="background:linear-gradient(135deg,#0e1a2a,#091520)">
+                  <span class="pick-badge">PICK UP</span>
+                  <div class="featured-img-inner"><img src="/assets/images/thumb-folk-new-music.jpg" alt="" class="thumb-img" onerror="this.style.display='none'"><svg width="72" height="72" viewBox="0 0 26 26" fill="none" style="opacity:.13"><circle cx="13" cy="10" r="5" fill="#7dd3fc"/><path d="M4 22 C4 17 8 14 13 14 C18 14 22 17 22 22" stroke="#7dd3fc" stroke-width="2" fill="none"/></svg></div>
+                </div>
+                <div class="featured-body">
+                  <p class="featured-label" style="color:#7dd3fc">Featured Article</p>
+                  <h2 class="featured-title">フォーク・ニューミュージックの誕生【1970年代】拓郎・陽水・ユーミンが変えた日本の音楽</h2>
+                  <p class="featured-excerpt">1970年代、吉田拓郎・井上陽水・荒井由実が牽引したフォーク・ニューミュージック。アコギ一本で社会を歌い、マルチトラック録音が日本の音楽制作を変えた時代の記録。</p>
+                  <div class="featured-footer"><span class="featured-date">2026.05.30</span><span class="read-more" style="color:#7dd3fc">続きを読む →</span></div>
+                </div>
+              </a>
+
+              <a href="/2026/05/30/japan-music-01-gs-boom/" class="featured-card">
+                <div class="featured-img" style="background:linear-gradient(135deg,#1a100e,#120a08)">
+                  <span class="pick-badge">PICK UP</span>
+                  <div class="featured-img-inner"><img src="/assets/images/thumb-gs-boom.jpg" alt="" class="thumb-img" onerror="this.style.display='none'"><svg width="72" height="72" viewBox="0 0 26 26" fill="none" style="opacity:.13"><circle cx="13" cy="10" r="5" fill="#fca5a5"/><path d="M4 22 C4 17 8 14 13 14 C18 14 22 17 22 22" stroke="#fca5a5" stroke-width="2" fill="none"/></svg></div>
+                </div>
+                <div class="featured-body">
+                  <p class="featured-label" style="color:#fca5a5">Featured Article</p>
+                  <h2 class="featured-title">グループサウンズ革命【1960年代】エレキギターが日本を変えた日</h2>
+                  <p class="featured-excerpt">1960年代、ベンチャーズ来日をきっかけに爆発したグループサウンズブーム。日本にエレキギター文化を根付かせたムーブメントの全貌と、現代で同じサウンドを再現する方法を解説。</p>
+                  <div class="featured-footer"><span class="featured-date">2026.05.30</span><span class="read-more" style="color:#fca5a5">続きを読む →</span></div>
+                </div>
+              </a>
+
+              <a href="/2026/05/30/chord-progression-08-cliche/" class="featured-card">
+                <div class="featured-img" style="background:linear-gradient(135deg,#0e1a20,#091518)">
+                  <span class="pick-badge">PICK UP</span>
+                  <div class="featured-img-inner"><img src="/assets/images/thumb-chord-08.jpg" alt="" class="thumb-img" onerror="this.style.display='none'"><svg width="72" height="72" viewBox="0 0 26 26" fill="none" style="opacity:.13"><circle cx="13" cy="10" r="5" fill="#a5f3fc"/><path d="M4 22 C4 17 8 14 13 14 C18 14 22 17 22 22" stroke="#a5f3fc" stroke-width="2" fill="none"/></svg></div>
+                </div>
+                <div class="featured-body">
+                  <p class="featured-label" style="color:#a5f3fc">Featured Article</p>
+                  <h2 class="featured-title">クリシェ進行（半音下降ライン）完全解説【コード進行シリーズ #08】代表曲20選＋演歌から映画音楽まで</h2>
+                  <p class="featured-excerpt">半音下降ベースラインが生む哀愁「クリシェ進行」を徹底解説。津軽海峡・Michelle（Beatles）・Hotel California（Eagles）など日本・海外の代表曲20曲を楽天購入リンク付きで完全網羅。</p>
+                  <div class="featured-footer"><span class="featured-date">2026.05.30</span><span class="read-more" style="color:#a5f3fc">続きを読む →</span></div>
+                </div>
+              </a>
+
+              <a href="/2026/05/30/chord-progression-07-blues/" class="featured-card">
+                <div class="featured-img" style="background:linear-gradient(135deg,#14101a,#0e0a14)">
+                  <span class="pick-badge">PICK UP</span>
+                  <div class="featured-img-inner"><img src="/assets/images/thumb-chord-07.jpg" alt="" class="thumb-img" onerror="this.style.display='none'"><svg width="72" height="72" viewBox="0 0 26 26" fill="none" style="opacity:.13"><circle cx="13" cy="10" r="5" fill="#d8b4fe"/><path d="M4 22 C4 17 8 14 13 14 C18 14 22 17 22 22" stroke="#d8b4fe" stroke-width="2" fill="none"/></svg></div>
+                </div>
+                <div class="featured-body">
+                  <p class="featured-label" style="color:#d8b4fe">Featured Article</p>
+                  <h2 class="featured-title">ブルース進行（Ⅰ-Ⅳ-Ⅴ）完全解説【コード進行シリーズ #07】代表曲20選＋すべてのロックの母胎</h2>
+                  <p class="featured-excerpt">すべてのロックの起源「ブルース進行（Ⅰ-Ⅳ-Ⅴ）」を徹底解説。尾崎豊・B'z・Chuck Berry・Led Zeppelinなど日本・海外の代表曲20曲を楽天購入リンク付きで完全網羅。12小節ブルースの弾き方も解説。</p>
+                  <div class="featured-footer"><span class="featured-date">2026.05.30</span><span class="read-more" style="color:#d8b4fe">続きを読む →</span></div>
+                </div>
+              </a>
+
+              <a href="/2026/05/30/chord-progression-06-kanashii/" class="featured-card">
+                <div class="featured-img" style="background:linear-gradient(135deg,#0e1a38,#0a1228)">
+                  <span class="pick-badge">PICK UP</span>
+                  <div class="featured-img-inner"><img src="/assets/images/thumb-chord-06.jpg" alt="" class="thumb-img" onerror="this.style.display='none'"><svg width="72" height="72" viewBox="0 0 26 26" fill="none" style="opacity:.13"><circle cx="13" cy="10" r="5" fill="#93c5fd"/><path d="M4 22 C4 17 8 14 13 14 C18 14 22 17 22 22" stroke="#93c5fd" stroke-width="2" fill="none"/></svg></div>
+                </div>
+                <div class="featured-body">
+                  <p class="featured-label">Featured Article</p>
+                  <h2 class="featured-title">切ない系進行完全解説【コード進行シリーズ #06】代表曲20選＋アニソン・J-POP「泣き」のコード</h2>
+                  <p class="featured-excerpt">ヴィジュアル系・アニソンに多い「切ない系進行」を徹底解説。紅蓮華・ロマンスの神様・X JAPANなど代表曲20曲を楽天購入リンク付きで完全網羅。Ⅲmコードが生む「泣き」の正体も解説。</p>
+                  <div class="featured-footer"><span class="featured-date">2026.05.30</span><span class="read-more">続きを読む →</span></div>
+                </div>
+              </a>
+
+              <a href="/2026/05/30/chord-progression-05-junkan/" class="featured-card">
+                <div class="featured-img" style="background:linear-gradient(135deg,#16203a,#0f1830)">
+                  <span class="pick-badge">PICK UP</span>
+                  <div class="featured-img-inner"><img src="/assets/images/thumb-chord-05.jpg" alt="" class="thumb-img" onerror="this.style.display='none'"><svg width="72" height="72" viewBox="0 0 26 26" fill="none" style="opacity:.13"><circle cx="13" cy="10" r="5" fill="#c4b5fd"/><path d="M4 22 C4 17 8 14 13 14 C18 14 22 17 22 22" stroke="#c4b5fd" stroke-width="2" fill="none"/></svg></div>
+                </div>
+                <div class="featured-body">
+                  <p class="featured-label" style="color:#c4b5fd">Featured Article</p>
+                  <h2 class="featured-title">循環コード（Ⅰ-Ⅵm-Ⅳ-Ⅴ）完全解説【コード進行シリーズ #05】代表曲20選＋50年代から令和まで</h2>
+                  <p class="featured-excerpt">50年代ロカビリーから現代J-POPまで使われる「循環コード（Ⅰ-Ⅵm-Ⅳ-Ⅴ）」を徹底解説。Stand By Me・亜麻色の髪の乙女・ロビンソンなど代表曲20曲を楽天購入リンク付きで完全網羅。</p>
+                  <div class="featured-footer"><span class="featured-date">2026.05.30</span><span class="read-more" style="color:#c4b5fd">続きを読む →</span></div>
+                </div>
+              </a>
+
+              <a href="/2026/05/30/chord-progression-04-marusa/" class="featured-card">
+                <div class="featured-img" style="background:linear-gradient(135deg,#1a1030,#120a24)">
+                  <span class="pick-badge">PICK UP</span>
+                  <div class="featured-img-inner"><img src="/assets/images/thumb-chord-04.jpg" alt="" class="thumb-img" onerror="this.style.display='none'"><svg width="72" height="72" viewBox="0 0 26 26" fill="none" style="opacity:.13"><circle cx="13" cy="10" r="5" fill="#e879f9"/><path d="M4 22 C4 17 8 14 13 14 C18 14 22 17 22 22" stroke="#e879f9" stroke-width="2" fill="none"/></svg></div>
+                </div>
+                <div class="featured-body">
+                  <p class="featured-label" style="color:#e879f9">Featured Article</p>
+                  <h2 class="featured-title">丸サ進行（ツーファイブ系）完全解説【コード進行シリーズ #04】代表曲20選＋シティポップの核心</h2>
+                  <p class="featured-excerpt">シティポップとジャズを繋ぐ「丸サ進行」を徹底解説。Plastic Love・真夜中のドア・夜に駆けるなど日本・海外の代表曲20曲を楽天購入リンク付きで完全網羅。オシャレなコードの弾き方も解説。</p>
+                  <div class="featured-footer"><span class="featured-date">2026.05.30</span><span class="read-more" style="color:#e879f9">続きを読む →</span></div>
+                </div>
+              </a>
+
+              <a href="/2026/05/30/chord-progression-03-komuro/" class="featured-card">
+                <div class="featured-img" style="background:linear-gradient(135deg,#0e201a,#091510)">
+                  <span class="pick-badge">PICK UP</span>
+                  <div class="featured-img-inner"><img src="/assets/images/thumb-chord-03.jpg" alt="" class="thumb-img" onerror="this.style.display='none'"><svg width="72" height="72" viewBox="0 0 26 26" fill="none" style="opacity:.13"><circle cx="13" cy="10" r="5" fill="#6ee7b7"/><path d="M4 22 C4 17 8 14 13 14 C18 14 22 17 22 22" stroke="#6ee7b7" stroke-width="2" fill="none"/></svg></div>
+                </div>
+                <div class="featured-body">
+                  <p class="featured-label" style="color:#6ee7b7">Featured Article</p>
+                  <h2 class="featured-title">小室進行（Ⅵm-Ⅳ-Ⅰ-Ⅴ）完全解説【コード進行シリーズ #03】代表曲20選＋90年代J-POP完全攻略</h2>
+                  <p class="featured-excerpt">小室哲哉が多用した小室進行（Ⅵm-Ⅳ-Ⅰ-Ⅴ）を徹底解説。globe・TRF・宇多田ヒカル・安室奈美恵など90年代J-POPの代表曲20曲を楽天購入リンク付きで完全網羅。</p>
+                  <div class="featured-footer"><span class="featured-date">2026.05.30</span><span class="read-more" style="color:#6ee7b7">続きを読む →</span></div>
+                </div>
+              </a>
+
+              <a href="/2026/05/30/chord-progression-02-canon/" class="featured-card">
+                <div class="featured-img" style="background:linear-gradient(135deg,#201810,#180e08)">
+                  <span class="pick-badge">PICK UP</span>
+                  <div class="featured-img-inner"><img src="/assets/images/thumb-chord-02.jpg" alt="" class="thumb-img" onerror="this.style.display='none'"><svg width="72" height="72" viewBox="0 0 26 26" fill="none" style="opacity:.13"><circle cx="13" cy="10" r="5" fill="#fdba74"/><path d="M4 22 C4 17 8 14 13 14 C18 14 22 17 22 22" stroke="#fdba74" stroke-width="2" fill="none"/></svg></div>
+                </div>
+                <div class="featured-body">
+                  <p class="featured-label" style="color:#fdba74">Featured Article</p>
+                  <h2 class="featured-title">カノン進行完全解説【コード進行シリーズ #02】代表曲20選＋300年愛される理由</h2>
+                  <p class="featured-excerpt">パッヘルベルのカノンに由来する「カノン進行」を徹底解説。千本桜・愛は勝つ・Let It Beなど世界中の代表曲20曲を楽天購入リンク付きで紹介。ギター・ピアノでの弾き方も完全網羅。</p>
+                  <div class="featured-footer"><span class="featured-date">2026.05.30</span><span class="read-more" style="color:#fdba74">続きを読む →</span></div>
+                </div>
+              </a>
+
+              <a href="/2026/05/30/chord-progression-01-oudo/" class="featured-card">
+                <div class="featured-img" style="background:linear-gradient(135deg,#1a1a10,#121208)">
+                  <span class="pick-badge">PICK UP</span>
+                  <div class="featured-img-inner"><img src="/assets/images/thumb-chord-01.jpg" alt="" class="thumb-img" onerror="this.style.display='none'"><svg width="72" height="72" viewBox="0 0 26 26" fill="none" style="opacity:.13"><circle cx="13" cy="10" r="5" fill="#fde68a"/><path d="M4 22 C4 17 8 14 13 14 C18 14 22 17 22 22" stroke="#fde68a" stroke-width="2" fill="none"/></svg></div>
+                </div>
+                <div class="featured-body">
+                  <p class="featured-label" style="color:#fde68a">Featured Article</p>
+                  <h2 class="featured-title">王道進行（Ⅳ-Ⅴ-Ⅲm-Ⅵm）完全解説【コード進行シリーズ #01】代表曲20選＋弾き方ガイド</h2>
+                  <p class="featured-excerpt">日本のJ-POP・アニソンで最も使われる王道進行（Ⅳ-Ⅴ-Ⅲm-Ⅵm）を徹底解説。エヴァ・鬼滅・YOASOBI・米津玄師など代表曲20曲を紹介し、楽天で購入できる全リンク付き。ギター・ピアノでの弾き方も完全網羅。</p>
+                  <div class="featured-footer"><span class="featured-date">2026.05.30</span><span class="read-more" style="color:#fde68a">続きを読む →</span></div>
+                </div>
+              </a>
+
+    
+          <a href="/2026/05/29/fender-jazzmaster-guide/" class="series-card">
+            <div class="series-card-img"><div class="series-card-img-inner"><img src="/assets/images/thumb-jazzmaster.jpg" alt="" class="thumb-img" onerror="this.style.display='none'"><svg width="36" height="36" viewBox="0 0 26 26" fill="none" style="opacity:.18"><path d="M13 4 Q18 6 18 13 Q18 20 13 22 Q8 20 8 13 Q8 6 13 4 Z" stroke="#a855f7" stroke-width="1.5" fill="none"/></svg></div></div>
+            <div class="series-card-body">
+              <div class="series-card-meta"><span class="series-tag" style="background:rgba(168,85,247,.1);color:#d8b4fe;border:1px solid rgba(168,85,247,.2)">ギター</span><span class="series-date">2026.05.29</span></div>
+              <h3 class="series-card-title">Fender Jazzmaster の特徴・音・選び方ガイド</h3>
+              <p class="series-card-excerpt">オルタナ・シューゲイザーの象徴。広面積シングルコイルとリズム/リードサーキットを徹底解説。</p>
+              <p class="series-card-read">続きを読む →</p>
+            </div>
+          </a>
+
+          <a href="/2026/05/29/fender-jaguar-guide/" class="series-card">
+            <div class="series-card-img"><div class="series-card-img-inner"><img src="/assets/images/thumb-jaguar.jpg" alt="" class="thumb-img" onerror="this.style.display='none'"><svg width="36" height="36" viewBox="0 0 26 26" fill="none" style="opacity:.18"><path d="M13 4 Q18 6 18 13 Q18 20 13 22 Q8 20 8 13 Q8 6 13 4 Z" stroke="#10b981" stroke-width="1.5" fill="none"/></svg></div></div>
+            <div class="series-card-body">
+              <div class="series-card-meta"><span class="series-tag" style="background:rgba(16,185,129,.1);color:#6ee7b7;border:1px solid rgba(16,185,129,.2)">ギター</span><span class="series-date">2026.05.29</span></div>
+              <h3 class="series-card-title">Fender Jaguar の特徴・音・選び方ガイド</h3>
+              <p class="series-card-excerpt">24インチショートスケールと独自スイッチ群。サーフ・ガレージ・パンクのアイコニックなギター。</p>
+              <p class="series-card-read">続きを読む →</p>
+            </div>
+          </a>
+
+          <a href="/2026/05/29/musicman-stingray-bass-guide/" class="series-card">
+            <div class="series-card-img"><div class="series-card-img-inner"><img src="/assets/images/thumb-stingray-bass.jpg" alt="" class="thumb-img" onerror="this.style.display='none'"><svg width="36" height="36" viewBox="0 0 26 26" fill="none" style="opacity:.18"><path d="M13 4 Q18 6 18 13 Q18 20 13 22 Q8 20 8 13 Q8 6 13 4 Z" stroke="#ef4444" stroke-width="1.5" fill="none"/></svg></div></div>
+            <div class="series-card-body">
+              <div class="series-card-meta"><span class="series-tag" style="background:rgba(239,68,68,.1);color:#fca5a5;border:1px solid rgba(239,68,68,.2)">ベース</span><span class="series-date">2026.05.29</span></div>
+              <h3 class="series-card-title">Music Man StingRay Bass の特徴・音・選び方ガイド</h3>
+              <p class="series-card-excerpt">世界初の量産アクティブベース。ハムバッカー＋3バンドEQが生む圧倒的なスラップサウンド。</p>
+              <p class="series-card-read">続きを読む →</p>
+            </div>
+          </a>
+          <a href="/2026/05/29/guitar-bass-pickup-guide/" class="featured-card">
+                <div class="featured-img" style="background:linear-gradient(135deg,#0e1a2a,#091520)">
+                  <span class="pick-badge">PICK UP</span>
+                  <div class="featured-img-inner"><img src="/assets/images/thumb-pickup-guide.jpg" alt="" class="thumb-img" onerror="this.style.display='none'"><svg width="72" height="72" viewBox="0 0 26 26" fill="none" style="opacity:.13"><circle cx="13" cy="10" r="5" fill="#7dd3fc"/><path d="M4 22 C4 17 8 14 13 14 C18 14 22 17 22 22" stroke="#7dd3fc" stroke-width="2" fill="none"/></svg></div>
+                </div>
+                <div class="featured-body">
+                  <p class="featured-label" style="color:#7dd3fc">Featured Article</p>
+                  <h2 class="featured-title">ギター・ベースのピックアップ入門ガイド【2026年版】パッシブ/アクティブ/種類と選び方</h2>
+                  <p class="featured-excerpt">ギター・ベースのピックアップの種類（シングル/ハムバッカー/スプリットコイル）とパッシブ/アクティブの違いを初心者にわかりやすく解説。交換・改造を考えている方にも役立つ基礎知識。</p>
+                  <div class="featured-footer"><span class="featured-date">2026.05.29</span><span class="read-more" style="color:#7dd3fc">続きを読む →</span></div>
+                </div>
+              </a>
+
+              <a href="/2026/05/29/gibson-les-paul-custom-guide/" class="featured-card">
+                <div class="featured-img" style="background:linear-gradient(135deg,#1a100e,#120a08)">
+                  <span class="pick-badge">PICK UP</span>
+                  <div class="featured-img-inner"><img src="/assets/images/thumb-les-paul-custom.jpg" alt="" class="thumb-img" onerror="this.style.display='none'"><svg width="72" height="72" viewBox="0 0 26 26" fill="none" style="opacity:.13"><circle cx="13" cy="10" r="5" fill="#fca5a5"/><path d="M4 22 C4 17 8 14 13 14 C18 14 22 17 22 22" stroke="#fca5a5" stroke-width="2" fill="none"/></svg></div>
+                </div>
+                <div class="featured-body">
+                  <p class="featured-label" style="color:#fca5a5">Featured Article</p>
+                  <h2 class="featured-title">Gibson Les Paul Customの特徴・音・選び方ガイド【2026年版】レスポールの最高峰</h2>
+                  <p class="featured-excerpt">Gibson Les Paul Customの特徴・音の傾向・スタンダードとの違い・おすすめの購入方法を解説。クラシックロック・ジャズ・ファットなリードトーンを求めるギタリスト必見。</p>
+                  <div class="featured-footer"><span class="featured-date">2026.05.29</span><span class="read-more" style="color:#fca5a5">続きを読む →</span></div>
+                </div>
+              </a>
+
+              <a href="/2026/05/29/fender-telecaster-guide/" class="featured-card">
+                <div class="featured-img" style="background:linear-gradient(135deg,#0e1a20,#091518)">
+                  <span class="pick-badge">PICK UP</span>
+                  <div class="featured-img-inner"><img src="/assets/images/thumb-telecaster.jpg" alt="" class="thumb-img" onerror="this.style.display='none'"><svg width="72" height="72" viewBox="0 0 26 26" fill="none" style="opacity:.13"><circle cx="13" cy="10" r="5" fill="#a5f3fc"/><path d="M4 22 C4 17 8 14 13 14 C18 14 22 17 22 22" stroke="#a5f3fc" stroke-width="2" fill="none"/></svg></div>
+                </div>
+                <div class="featured-body">
+                  <p class="featured-label" style="color:#a5f3fc">Featured Article</p>
+                  <h2 class="featured-title">Fender Telecasterの特徴・音・選び方ガイド【2026年版】テレキャスターを徹底解説</h2>
+                  <p class="featured-excerpt">Fender Telecasterの特徴・音の傾向・Stratocasterとの違い・Playerシリーズの選び方を解説。カントリー・ロックンロール・オルタナを弾きたいギタリスト必見。</p>
+                  <div class="featured-footer"><span class="featured-date">2026.05.29</span><span class="read-more" style="color:#a5f3fc">続きを読む →</span></div>
+                </div>
+              </a>
+
+              <a href="/2026/05/29/fender-stratocaster-guide/" class="featured-card">
+                <div class="featured-img" style="background:linear-gradient(135deg,#14101a,#0e0a14)">
+                  <span class="pick-badge">PICK UP</span>
+                  <div class="featured-img-inner"><img src="/assets/images/thumb-stratocaster.jpg" alt="" class="thumb-img" onerror="this.style.display='none'"><svg width="72" height="72" viewBox="0 0 26 26" fill="none" style="opacity:.13"><circle cx="13" cy="10" r="5" fill="#d8b4fe"/><path d="M4 22 C4 17 8 14 13 14 C18 14 22 17 22 22" stroke="#d8b4fe" stroke-width="2" fill="none"/></svg></div>
+                </div>
+                <div class="featured-body">
+                  <p class="featured-label" style="color:#d8b4fe">Featured Article</p>
+                  <h2 class="featured-title">Fender Stratocasterの特徴・音・選び方ガイド【2026年版】ストラトキャスターを徹底解説</h2>
+                  <p class="featured-excerpt">Fender Stratocasterの特徴・ピックアップ構成・テレキャスターとの違い・Playerシリーズの選び方をわかりやすく解説。ロック・ブルース・ファンクを弾きたいギタリスト必見。</p>
+                  <div class="featured-footer"><span class="featured-date">2026.05.29</span><span class="read-more" style="color:#d8b4fe">続きを読む →</span></div>
+                </div>
+              </a>
+
+              <a href="/2026/05/29/fender-precision-bass-guide/" class="featured-card">
+                <div class="featured-img" style="background:linear-gradient(135deg,#0e1a38,#0a1228)">
+                  <span class="pick-badge">PICK UP</span>
+                  <div class="featured-img-inner"><img src="/assets/images/thumb-precision-bass.jpg" alt="" class="thumb-img" onerror="this.style.display='none'"><svg width="72" height="72" viewBox="0 0 26 26" fill="none" style="opacity:.13"><circle cx="13" cy="10" r="5" fill="#93c5fd"/><path d="M4 22 C4 17 8 14 13 14 C18 14 22 17 22 22" stroke="#93c5fd" stroke-width="2" fill="none"/></svg></div>
+                </div>
+                <div class="featured-body">
+                  <p class="featured-label">Featured Article</p>
+                  <h2 class="featured-title">Fender Precision Bassの特徴・音・選び方ガイド【2026年版】プレシジョンベースを徹底解説</h2>
+                  <p class="featured-excerpt">Fender Precision Bassの特徴・音の傾向・Jazz Bassとの違い・Playerシリーズの選び方を解説。ロック・ポップ・オルタナを支えるベーシスト必見。</p>
+                  <div class="featured-footer"><span class="featured-date">2026.05.29</span><span class="read-more">続きを読む →</span></div>
+                </div>
+              </a>
+
+              <a href="/2026/05/29/fender-jazz-bass-guide/" class="featured-card">
+                <div class="featured-img" style="background:linear-gradient(135deg,#16203a,#0f1830)">
+                  <span class="pick-badge">PICK UP</span>
+                  <div class="featured-img-inner"><img src="/assets/images/thumb-jazz-bass.jpg" alt="" class="thumb-img" onerror="this.style.display='none'"><svg width="72" height="72" viewBox="0 0 26 26" fill="none" style="opacity:.13"><circle cx="13" cy="10" r="5" fill="#c4b5fd"/><path d="M4 22 C4 17 8 14 13 14 C18 14 22 17 22 22" stroke="#c4b5fd" stroke-width="2" fill="none"/></svg></div>
+                </div>
+                <div class="featured-body">
+                  <p class="featured-label" style="color:#c4b5fd">Featured Article</p>
+                  <h2 class="featured-title">Fender Jazz Bassの特徴・音・選び方ガイド【2026年版】ジャズベースを徹底解説</h2>
+                  <p class="featured-excerpt">Fender Jazz Bassの特徴・音の傾向・Precision Bassとの違い・Playerシリーズの選び方を解説。ジャズ・フュージョン・ファンク・ロックを弾くベーシスト必見。</p>
+                  <div class="featured-footer"><span class="featured-date">2026.05.29</span><span class="read-more" style="color:#c4b5fd">続きを読む →</span></div>
+                </div>
+              </a>
+
+              <a href="/2026/05/24/vst-plugin-guide/" class="featured-card">
+                <div class="featured-img" style="background:linear-gradient(135deg,#1a1030,#120a24)">
+                  <span class="pick-badge">PICK UP</span>
+                  <div class="featured-img-inner"><img src="/assets/images/thumb-vst-plugin.png" alt="" class="thumb-img" onerror="this.style.display='none'"><svg width="72" height="72" viewBox="0 0 26 26" fill="none" style="opacity:.13"><circle cx="13" cy="10" r="5" fill="#e879f9"/><path d="M4 22 C4 17 8 14 13 14 C18 14 22 17 22 22" stroke="#e879f9" stroke-width="2" fill="none"/></svg></div>
+                </div>
+                <div class="featured-body">
+                  <p class="featured-label" style="color:#e879f9">Featured Article</p>
+                  <h2 class="featured-title">VST・AUプラグイン選び方【2026年版】初心者向け無料・有料おすすめ20選</h2>
+                  <p class="featured-excerpt">VST・AUプラグインとは何かから、初心者が最初に揃えるべき無料・有料プラグインまで徹底解説。シンセ・エフェクト・サンプラーの種類別おすすめを紹介します。</p>
+                  <div class="featured-footer"><span class="featured-date">2026.05.24</span><span class="read-more" style="color:#e879f9">続きを読む →</span></div>
+                </div>
+              </a>
+
+              <a href="/2026/05/24/vocal-recording-guide/" class="featured-card">
+                <div class="featured-img" style="background:linear-gradient(135deg,#0e201a,#091510)">
+                  <span class="pick-badge">PICK UP</span>
+                  <div class="featured-img-inner"><img src="/assets/images/thumb-vocal-recording.jpg" alt="" class="thumb-img" onerror="this.style.display='none'"><svg width="72" height="72" viewBox="0 0 26 26" fill="none" style="opacity:.13"><circle cx="13" cy="10" r="5" fill="#6ee7b7"/><path d="M4 22 C4 17 8 14 13 14 C18 14 22 17 22 22" stroke="#6ee7b7" stroke-width="2" fill="none"/></svg></div>
+                </div>
+                <div class="featured-body">
+                  <p class="featured-label" style="color:#6ee7b7">Featured Article</p>
+                  <h2 class="featured-title">ボーカル宅録ガイド【マイク選び・録音設定・歌ってみた機材セット完全解説】</h2>
+                  <p class="featured-excerpt">自宅でボーカル録音を始める方法を徹底解説。マイクの選び方からオーディオIF・防音対策・DAWの録音設定まで、歌ってみた・宅録に必要なすべてをまとめました。</p>
+                  <div class="featured-footer"><span class="featured-date">2026.05.24</span><span class="read-more" style="color:#6ee7b7">続きを読む →</span></div>
+                </div>
+              </a>
+
+              <a href="/2026/05/24/suno-ai-music-guide/" class="featured-card">
+                <div class="featured-img" style="background:linear-gradient(135deg,#201810,#180e08)">
+                  <span class="pick-badge">PICK UP</span>
+                  <div class="featured-img-inner"><img src="/assets/images/thumb-suno-ai.png" alt="" class="thumb-img" onerror="this.style.display='none'"><svg width="72" height="72" viewBox="0 0 26 26" fill="none" style="opacity:.13"><circle cx="13" cy="10" r="5" fill="#fdba74"/><path d="M4 22 C4 17 8 14 13 14 C18 14 22 17 22 22" stroke="#fdba74" stroke-width="2" fill="none"/></svg></div>
+                </div>
+                <div class="featured-body">
+                  <p class="featured-label" style="color:#fdba74">Featured Article</p>
+                  <h2 class="featured-title">Suno AI音楽生成 使い方ガイド【2026年版】初心者でも1分でプロ品質の楽曲を作る方法</h2>
+                  <p class="featured-excerpt">Suno AIで音楽を生成する方法を初心者向けに解説。無料プランの使い方・プロンプトの書き方・生成曲の活用法・有料プランの判断基準まで徹底的に説明します。</p>
+                  <div class="featured-footer"><span class="featured-date">2026.05.24</span><span class="read-more" style="color:#fdba74">続きを読む →</span></div>
+                </div>
+              </a>
+
+              <a href="/2026/05/24/soundproofing-home-studio-guide/" class="featured-card">
+                <div class="featured-img" style="background:linear-gradient(135deg,#1a1a10,#121208)">
+                  <span class="pick-badge">PICK UP</span>
+                  <div class="featured-img-inner"><img src="/assets/images/thumb-soundproofing.jpg" alt="" class="thumb-img" onerror="this.style.display='none'"><svg width="72" height="72" viewBox="0 0 26 26" fill="none" style="opacity:.13"><circle cx="13" cy="10" r="5" fill="#fde68a"/><path d="M4 22 C4 17 8 14 13 14 C18 14 22 17 22 22" stroke="#fde68a" stroke-width="2" fill="none"/></svg></div>
+                </div>
+                <div class="featured-body">
+                  <p class="featured-label" style="color:#fde68a">Featured Article</p>
+                  <h2 class="featured-title">宅録防音対策ガイド【2026年版】自宅スタジオの騒音・反響を解決する方法</h2>
+                  <p class="featured-excerpt">宅録・DTMでの防音に悩む方向けに、遮音・吸音・防振の違いから予算別DIY対策、おすすめ防音グッズまで徹底解説。集合住宅でも実践できる現実的な防音対策をまとめました。</p>
+                  <div class="featured-footer"><span class="featured-date">2026.05.24</span><span class="read-more" style="color:#fde68a">続きを読む →</span></div>
+                </div>
+              </a>
+
+              <a href="/2026/05/24/solo-dtm-setup/" class="featured-card">
+                <div class="featured-img" style="background:linear-gradient(135deg,#0e1a2a,#091520)">
+                  <span class="pick-badge">PICK UP</span>
+                  <div class="featured-img-inner"><img src="/assets/images/thumb-solo-dtm.jpg" alt="" class="thumb-img" onerror="this.style.display='none'"><svg width="72" height="72" viewBox="0 0 26 26" fill="none" style="opacity:.13"><circle cx="13" cy="10" r="5" fill="#7dd3fc"/><path d="M4 22 C4 17 8 14 13 14 C18 14 22 17 22 22" stroke="#7dd3fc" stroke-width="2" fill="none"/></svg></div>
+                </div>
+                <div class="featured-body">
+                  <p class="featured-label" style="color:#7dd3fc">Featured Article</p>
+                  <h2 class="featured-title">ソロDTM完全セットアップガイド【2026年版】一人で完結する宅録環境の作り方</h2>
+                  <p class="featured-excerpt">一人で作曲・録音・MIX・配信まで完結させるためのDTM環境構築ガイド。パソコン選び・DAW・オーディオIF・マイク・モニター環境まで、予算別に最適な構成を解説します。</p>
+                  <div class="featured-footer"><span class="featured-date">2026.05.24</span><span class="read-more" style="color:#7dd3fc">続きを読む →</span></div>
+                </div>
+              </a>
+
+              <a href="/2026/05/24/music-studio-guide/" class="featured-card">
+                <div class="featured-img" style="background:linear-gradient(135deg,#1a100e,#120a08)">
+                  <span class="pick-badge">PICK UP</span>
+                  <div class="featured-img-inner"><img src="/assets/images/thumb-music-studio.jpg" alt="" class="thumb-img" onerror="this.style.display='none'"><svg width="72" height="72" viewBox="0 0 26 26" fill="none" style="opacity:.13"><circle cx="13" cy="10" r="5" fill="#fca5a5"/><path d="M4 22 C4 17 8 14 13 14 C18 14 22 17 22 22" stroke="#fca5a5" stroke-width="2" fill="none"/></svg></div>
+                </div>
+                <div class="featured-body">
+                  <p class="featured-label" style="color:#fca5a5">Featured Article</p>
+                  <h2 class="featured-title">音楽スタジオ 選び方・予約方法 完全ガイド【2026年版】リハスタ・レコスタの違いと活用術</h2>
+                  <p class="featured-excerpt">リハーサルスタジオとレコーディングスタジオの違い、予算別の選び方、予約方法、持ち物リストまで徹底解説。バンドでの初スタジオ入りから本格録音まで対応する完全ガイドです。</p>
+                  <div class="featured-footer"><span class="featured-date">2026.05.24</span><span class="read-more" style="color:#fca5a5">続きを読む →</span></div>
+                </div>
+              </a>
+
+              <a href="/2026/05/24/music-copyright-basics/" class="featured-card">
+                <div class="featured-img" style="background:linear-gradient(135deg,#0e1a20,#091518)">
+                  <span class="pick-badge">PICK UP</span>
+                  <div class="featured-img-inner"><img src="/assets/images/thumb-copyright.png" alt="" class="thumb-img" onerror="this.style.display='none'"><svg width="72" height="72" viewBox="0 0 26 26" fill="none" style="opacity:.13"><circle cx="13" cy="10" r="5" fill="#a5f3fc"/><path d="M4 22 C4 17 8 14 13 14 C18 14 22 17 22 22" stroke="#a5f3fc" stroke-width="2" fill="none"/></svg></div>
+                </div>
+                <div class="featured-body">
+                  <p class="featured-label" style="color:#a5f3fc">Featured Article</p>
+                  <h2 class="featured-title">音楽著作権の基礎知識【2026年版】DTMクリエイターが知るべき権利と注意点</h2>
+                  <p class="featured-excerpt">DTMクリエイターが知っておくべき音楽著作権の基礎を解説。著作権の種類・JASRACの仕組み・サンプリングのルール・AI音楽の権利問題まで実務的に説明します。</p>
+                  <div class="featured-footer"><span class="featured-date">2026.05.24</span><span class="read-more" style="color:#a5f3fc">続きを読む →</span></div>
+                </div>
+              </a>
+
+              <a href="/2026/05/24/monitor-headphones-guide/" class="featured-card">
+                <div class="featured-img" style="background:linear-gradient(135deg,#14101a,#0e0a14)">
+                  <span class="pick-badge">PICK UP</span>
+                  <div class="featured-img-inner"><img src="/assets/images/thumb-monitor-headphones.jpg" alt="" class="thumb-img" onerror="this.style.display='none'"><svg width="72" height="72" viewBox="0 0 26 26" fill="none" style="opacity:.13"><circle cx="13" cy="10" r="5" fill="#d8b4fe"/><path d="M4 22 C4 17 8 14 13 14 C18 14 22 17 22 22" stroke="#d8b4fe" stroke-width="2" fill="none"/></svg></div>
+                </div>
+                <div class="featured-body">
+                  <p class="featured-label" style="color:#d8b4fe">Featured Article</p>
+                  <h2 class="featured-title">モニターヘッドフォン選び方ガイド【DTM・宅録・ミックス用おすすめ機種比較2026】</h2>
+                  <p class="featured-excerpt">DTM・宅録・ミックスに使うモニターヘッドフォンの選び方を解説。リスニング用との違い、密閉型と開放型の使い分け、予算別おすすめ機種（ATH-M50x・MDR-7506・DT770 PRO等）を比較します。</p>
+                  <div class="featured-footer"><span class="featured-date">2026.05.24</span><span class="read-more" style="color:#d8b4fe">続きを読む →</span></div>
+                </div>
+              </a>
+
+              <a href="/2026/05/24/mixing-mastering-guide/" class="featured-card">
+                <div class="featured-img" style="background:linear-gradient(135deg,#0e1a38,#0a1228)">
+                  <span class="pick-badge">PICK UP</span>
+                  <div class="featured-img-inner"><img src="/assets/images/thumb-mixing.jpg" alt="" class="thumb-img" onerror="this.style.display='none'"><svg width="72" height="72" viewBox="0 0 26 26" fill="none" style="opacity:.13"><circle cx="13" cy="10" r="5" fill="#93c5fd"/><path d="M4 22 C4 17 8 14 13 14 C18 14 22 17 22 22" stroke="#93c5fd" stroke-width="2" fill="none"/></svg></div>
+                </div>
+                <div class="featured-body">
+                  <p class="featured-label">Featured Article</p>
+                  <h2 class="featured-title">MIX・マスタリング入門【2026年版】DAWで始める音楽制作の仕上げ工程</h2>
+                  <p class="featured-excerpt">MIX（ミキシング）とマスタリングの違いをわかりやすく解説。初心者が最初に覚えるべきEQ・コンプ・リバーブの基礎から、無料DAWで実践できる仕上げ手順まで丁寧に説明します。</p>
+                  <div class="featured-footer"><span class="featured-date">2026.05.24</span><span class="read-more">続きを読む →</span></div>
+                </div>
+              </a>
+
+              <a href="/2026/05/24/guitar-effects-guide/" class="featured-card">
+                <div class="featured-img" style="background:linear-gradient(135deg,#16203a,#0f1830)">
+                  <span class="pick-badge">PICK UP</span>
+                  <div class="featured-img-inner"><img src="/assets/images/thumb-guitar-effects.jpg" alt="" class="thumb-img" onerror="this.style.display='none'"><svg width="72" height="72" viewBox="0 0 26 26" fill="none" style="opacity:.13"><circle cx="13" cy="10" r="5" fill="#c4b5fd"/><path d="M4 22 C4 17 8 14 13 14 C18 14 22 17 22 22" stroke="#c4b5fd" stroke-width="2" fill="none"/></svg></div>
+                </div>
+                <div class="featured-body">
+                  <p class="featured-label" style="color:#c4b5fd">Featured Article</p>
+                  <h2 class="featured-title">ギターエフェクター入門ガイド【歪み・空間系・マルチ 種類と選び方2026】</h2>
+                  <p class="featured-excerpt">ギターエフェクターの種類と選び方を初心者向けに解説。歪み系（OverDrive/Distortion/Fuzz）・空間系（Reverb/Delay）・変調系（Chorus/Flanger）の違いと、コンパクト vs マルチエフェクターの比較を紹介します。</p>
+                  <div class="featured-footer"><span class="featured-date">2026.05.24</span><span class="read-more" style="color:#c4b5fd">続きを読む →</span></div>
+                </div>
+              </a>
+
+              <a href="/2026/05/24/digital-piano-guide/" class="featured-card">
+                <div class="featured-img" style="background:linear-gradient(135deg,#1a1030,#120a24)">
+                  <span class="pick-badge">PICK UP</span>
+                  <div class="featured-img-inner"><img src="/assets/images/thumb-digital-piano.jpg" alt="" class="thumb-img" onerror="this.style.display='none'"><svg width="72" height="72" viewBox="0 0 26 26" fill="none" style="opacity:.13"><circle cx="13" cy="10" r="5" fill="#e879f9"/><path d="M4 22 C4 17 8 14 13 14 C18 14 22 17 22 22" stroke="#e879f9" stroke-width="2" fill="none"/></svg></div>
+                </div>
+                <div class="featured-body">
+                  <p class="featured-label" style="color:#e879f9">Featured Article</p>
+                  <h2 class="featured-title">デジタルピアノ・電子キーボード 初心者 始め方ガイド【2026年版】選び方・機材・練習法</h2>
+                  <p class="featured-excerpt">デジタルピアノ・電子キーボードを始めたい初心者向けに、違いの解説・予算別おすすめモデル・必要機材・練習方法までを徹底解説。自宅でピアノを始めるための完全ガイドです。</p>
+                  <div class="featured-footer"><span class="featured-date">2026.05.24</span><span class="read-more" style="color:#e879f9">続きを読む →</span></div>
+                </div>
+              </a>
+
+              <a href="/2026/05/24/beatstars-guide/" class="featured-card">
+                <div class="featured-img" style="background:linear-gradient(135deg,#0e201a,#091510)">
+                  <span class="pick-badge">PICK UP</span>
+                  <div class="featured-img-inner"><img src="/assets/images/thumb-beatstars.png" alt="" class="thumb-img" onerror="this.style.display='none'"><svg width="72" height="72" viewBox="0 0 26 26" fill="none" style="opacity:.13"><circle cx="13" cy="10" r="5" fill="#6ee7b7"/><path d="M4 22 C4 17 8 14 13 14 C18 14 22 17 22 22" stroke="#6ee7b7" stroke-width="2" fill="none"/></svg></div>
+                </div>
+                <div class="featured-body">
+                  <p class="featured-label" style="color:#6ee7b7">Featured Article</p>
+                  <h2 class="featured-title">BeatStars ビート販売ガイド【2026年版】登録方法・価格設定・収益の仕組みを解説</h2>
+                  <p class="featured-excerpt">BeatStarsでビートを販売する方法を徹底解説。アカウント登録・ライセンス設定・価格戦略・プロへの売り込み方まで、初心者ビートメイカー向けにわかりやすく説明します。</p>
+                  <div class="featured-footer"><span class="featured-date">2026.05.24</span><span class="read-more" style="color:#6ee7b7">続きを読む →</span></div>
+                </div>
+              </a>
+
+              <a href="/2026/05/24/band-guide/" class="featured-card">
+                <div class="featured-img" style="background:linear-gradient(135deg,#201810,#180e08)">
+                  <span class="pick-badge">PICK UP</span>
+                  <div class="featured-img-inner"><img src="/assets/images/thumb-band.png" alt="" class="thumb-img" onerror="this.style.display='none'"><svg width="72" height="72" viewBox="0 0 26 26" fill="none" style="opacity:.13"><circle cx="13" cy="10" r="5" fill="#fdba74"/><path d="M4 22 C4 17 8 14 13 14 C18 14 22 17 22 22" stroke="#fdba74" stroke-width="2" fill="none"/></svg></div>
+                </div>
+                <div class="featured-body">
+                  <p class="featured-label" style="color:#fdba74">Featured Article</p>
+                  <h2 class="featured-title">バンドの始め方 完全ガイド【2026年版】メンバー募集・スタジオ・初ライブまで</h2>
+                  <p class="featured-excerpt">バンドを組みたい初心者向けに、メンバー募集方法・パート選び・スタジオリハの進め方・ライブ出演までを徹底解説。バンドを「組む」から「動かす」まで全ステップを網羅します。</p>
+                  <div class="featured-footer"><span class="featured-date">2026.05.24</span><span class="read-more" style="color:#fdba74">続きを読む →</span></div>
+                </div>
+              </a>
+
+              <a href="/2026/05/24/audiostock-guide/" class="featured-card">
+                <div class="featured-img" style="background:linear-gradient(135deg,#1a1a10,#121208)">
+                  <span class="pick-badge">PICK UP</span>
+                  <div class="featured-img-inner"><img src="/assets/images/thumb-audiostock.png" alt="" class="thumb-img" onerror="this.style.display='none'"><svg width="72" height="72" viewBox="0 0 26 26" fill="none" style="opacity:.13"><circle cx="13" cy="10" r="5" fill="#fde68a"/><path d="M4 22 C4 17 8 14 13 14 C18 14 22 17 22 22" stroke="#fde68a" stroke-width="2" fill="none"/></svg></div>
+                </div>
+                <div class="featured-body">
+                  <p class="featured-label" style="color:#fde68a">Featured Article</p>
+                  <h2 class="featured-title">AudioStock 楽曲販売ガイド【2026年版】登録方法・審査基準・収益の仕組みを解説</h2>
+                  <p class="featured-excerpt">AudioStockで楽曲を販売する方法を徹底解説。登録手順・審査基準・価格設定・収益の仕組みから、審査通過のコツまで初心者クリエイター向けにわかりやすく説明します。</p>
+                  <div class="featured-footer"><span class="featured-date">2026.05.24</span><span class="read-more" style="color:#fde68a">続きを読む →</span></div>
+                </div>
+              </a>
+
+              <a href="/2026/05/22/drum-guide/" class="featured-card">
+                <div class="featured-img" style="background:linear-gradient(135deg,#0e1a2a,#091520)">
+                  <span class="pick-badge">PICK UP</span>
+                  <div class="featured-img-inner"><img src="/assets/images/thumb-drum.png" alt="" class="thumb-img" onerror="this.style.display='none'"><svg width="72" height="72" viewBox="0 0 26 26" fill="none" style="opacity:.13"><circle cx="13" cy="10" r="5" fill="#7dd3fc"/><path d="M4 22 C4 17 8 14 13 14 C18 14 22 17 22 22" stroke="#7dd3fc" stroke-width="2" fill="none"/></svg></div>
+                </div>
+                <div class="featured-body">
+                  <p class="featured-label" style="color:#7dd3fc">Featured Article</p>
+                  <h2 class="featured-title">電子ドラム 初心者 始め方ガイド【2026年版】選び方・機材・練習法</h2>
+                  <p class="featured-excerpt">電子ドラムを始めたい初心者向けに、アコースティックと電子の違い・予算別おすすめモデル・練習方法までを徹底解説。自宅でも始められる一台の選び方がわかります。</p>
+                  <div class="featured-footer"><span class="featured-date">2026.05.22</span><span class="read-more" style="color:#7dd3fc">続きを読む →</span></div>
+                </div>
+              </a>
+
+              <a href="/2026/05/22/bass-guide/" class="featured-card">
+                <div class="featured-img" style="background:linear-gradient(135deg,#1a100e,#120a08)">
+                  <span class="pick-badge">PICK UP</span>
+                  <div class="featured-img-inner"><img src="/assets/images/thumb-bass.png" alt="" class="thumb-img" onerror="this.style.display='none'"><svg width="72" height="72" viewBox="0 0 26 26" fill="none" style="opacity:.13"><circle cx="13" cy="10" r="5" fill="#fca5a5"/><path d="M4 22 C4 17 8 14 13 14 C18 14 22 17 22 22" stroke="#fca5a5" stroke-width="2" fill="none"/></svg></div>
+                </div>
+                <div class="featured-body">
+                  <p class="featured-label" style="color:#fca5a5">Featured Article</p>
+                  <h2 class="featured-title">エレキベース 初心者 始め方ガイド【2026年版】選び方・機材・練習法</h2>
+                  <p class="featured-excerpt">エレキベースを始めたい初心者向けに、ベースの選び方・予算別おすすめモデル・アンプなど必要機材・練習方法までを徹底解説。最初の1本を後悔なく選べます。</p>
+                  <div class="featured-footer"><span class="featured-date">2026.05.22</span><span class="read-more" style="color:#fca5a5">続きを読む →</span></div>
+                </div>
+              </a>
+
+              <a href="/2026/05/20/guitar-guide/" class="featured-card">
+                <div class="featured-img" style="background:linear-gradient(135deg,#0e1a20,#091518)">
+                  <span class="pick-badge">PICK UP</span>
+                  <div class="featured-img-inner"><img src="/assets/images/thumb-guitar.png" alt="" class="thumb-img" onerror="this.style.display='none'"><svg width="72" height="72" viewBox="0 0 26 26" fill="none" style="opacity:.13"><circle cx="13" cy="10" r="5" fill="#a5f3fc"/><path d="M4 22 C4 17 8 14 13 14 C18 14 22 17 22 22" stroke="#a5f3fc" stroke-width="2" fill="none"/></svg></div>
+                </div>
+                <div class="featured-body">
+                  <p class="featured-label" style="color:#a5f3fc">Featured Article</p>
+                  <h2 class="featured-title">エレキギター・アコースティックギター 初心者選び方ガイド【2026年版】</h2>
+                  <p class="featured-excerpt">ギターを始めたい初心者向けに、エレキとアコギの違いから予算別おすすめモデル、必要な周辺機器までを徹底解説。最初の1本の選び方を失敗なく決められます。</p>
+                  <div class="featured-footer"><span class="featured-date">2026.05.20</span><span class="read-more" style="color:#a5f3fc">続きを読む →</span></div>
                 </div>
               </a>
 
               <a href="/2026/05/17/rack-case-guide/" class="featured-card">
-                <div class="featured-img" style="background:linear-gradient(135deg,#1a1030,#120a24)">
+                <div class="featured-img" style="background:linear-gradient(135deg,#14101a,#0e0a14)">
                   <span class="pick-badge">PICK UP</span>
-                  <div class="featured-img-inner"><img src="/assets/images/thumb-rack-case.png" alt="" class="thumb-img" onerror="this.style.display='none'"><svg width="72" height="72" viewBox="0 0 26 26" fill="none" style="opacity:.13"><rect x="2" y="4" width="22" height="4" rx="1.5" stroke="#e879f9" stroke-width="1.5"/></svg></div>
+                  <div class="featured-img-inner"><img src="/assets/images/thumb-rack-case.png" alt="" class="thumb-img" onerror="this.style.display='none'"><svg width="72" height="72" viewBox="0 0 26 26" fill="none" style="opacity:.13"><circle cx="13" cy="10" r="5" fill="#d8b4fe"/><path d="M4 22 C4 17 8 14 13 14 C18 14 22 17 22 22" stroke="#d8b4fe" stroke-width="2" fill="none"/></svg></div>
                 </div>
                 <div class="featured-body">
-                  <p class="featured-label" style="color:#e879f9">Featured Article</p>
-                  <h2 class="featured-title">ラックケース選び方ガイド — ARMOR・DUPLEX・SKB 徹底比較</h2>
-                  <p class="featured-excerpt">ライブ・スタジオ・持ち運びそれぞれのシーンに最適なラックケースを解説。材質・重量・深さ・価格帯を横断比較し、用途別おすすめモデルを紹介します。</p>
-                  <div class="featured-footer"><span class="featured-date">2026.05.17</span><span class="read-more" style="color:#e879f9">続きを読む →</span></div>
-                </div>
-              </a>
-
-              <a href="/2026/05/17/cable-guide/" class="featured-card">
-                <div class="featured-img" style="background:linear-gradient(135deg,#0e201a,#091510)">
-                  <span class="pick-badge">PICK UP</span>
-                  <div class="featured-img-inner"><img src="/assets/images/thumb-cable.png" alt="" class="thumb-img" onerror="this.style.display='none'"><svg width="72" height="72" viewBox="0 0 26 26" fill="none" style="opacity:.13"><path d="M4 13 Q13 6 22 13" stroke="#34d399" stroke-width="2.5" fill="none"/></svg></div>
-                </div>
-                <div class="featured-body">
-                  <p class="featured-label" style="color:#6ee7b7">Featured Article</p>
-                  <h2 class="featured-title">ケーブル完全ガイド — XLR・TRS・TS の違いと選び方</h2>
-                  <p class="featured-excerpt">バランス接続とアンバランス接続の違い、シールド構造によるノイズ耐性の差、コネクターの種類と用途別の選び方を解説します。</p>
-                  <div class="featured-footer"><span class="featured-date">2026.05.17</span><span class="read-more" style="color:#6ee7b7">続きを読む →</span></div>
+                  <p class="featured-label" style="color:#d8b4fe">Featured Article</p>
+                  <h2 class="featured-title">ラックケース・楽器ケース完全ガイド【ARMOR・DUPLEX・SKBの定番メーカー比較】</h2>
+                  <p class="featured-excerpt">音楽機材の運搬・保護に使うラックケースと楽器ケースの選び方を解説。ARMOR・DUPLEX・SKBの定番3メーカーを比較し、運搬用フライトケースと据え置きラックの違いも詳しく紹介します。</p>
+                  <div class="featured-footer"><span class="featured-date">2026.05.17</span><span class="read-more" style="color:#d8b4fe">続きを読む →</span></div>
                 </div>
               </a>
 
               <a href="/2026/05/17/mic-stand-guide/" class="featured-card">
+                <div class="featured-img" style="background:linear-gradient(135deg,#0e1a38,#0a1228)">
+                  <span class="pick-badge">PICK UP</span>
+                  <div class="featured-img-inner"><img src="/assets/images/thumb-mic-stand.png" alt="" class="thumb-img" onerror="this.style.display='none'"><svg width="72" height="72" viewBox="0 0 26 26" fill="none" style="opacity:.13"><circle cx="13" cy="10" r="5" fill="#93c5fd"/><path d="M4 22 C4 17 8 14 13 14 C18 14 22 17 22 22" stroke="#93c5fd" stroke-width="2" fill="none"/></svg></div>
+                </div>
+                <div class="featured-body">
+                  <p class="featured-label">Featured Article</p>
+                  <h2 class="featured-title">マイクスタンドの種類と選び方【K&Mスタンド購入ガイド2026】</h2>
+                  <p class="featured-excerpt">マイクスタンドのストレート・ブーム・デスクアームの違いを解説。K&M（König & Meyer）の定番モデル比較と、用途別おすすめの選び方を初心者にもわかりやすく紹介します。</p>
+                  <div class="featured-footer"><span class="featured-date">2026.05.17</span><span class="read-more">続きを読む →</span></div>
+                </div>
+              </a>
+
+              <a href="/2026/05/17/cable-guide/" class="featured-card">
+                <div class="featured-img" style="background:linear-gradient(135deg,#16203a,#0f1830)">
+                  <span class="pick-badge">PICK UP</span>
+                  <div class="featured-img-inner"><img src="/assets/images/thumb-cable.png" alt="" class="thumb-img" onerror="this.style.display='none'"><svg width="72" height="72" viewBox="0 0 26 26" fill="none" style="opacity:.13"><circle cx="13" cy="10" r="5" fill="#c4b5fd"/><path d="M4 22 C4 17 8 14 13 14 C18 14 22 17 22 22" stroke="#c4b5fd" stroke-width="2" fill="none"/></svg></div>
+                </div>
+                <div class="featured-body">
+                  <p class="featured-label" style="color:#c4b5fd">Featured Article</p>
+                  <h2 class="featured-title">音楽制作ケーブル全種類ガイド【XLR・シールド・USB・Thunderbolt・INSERTの違いと高品位ケーブルの必要性】</h2>
+                  <p class="featured-excerpt">音楽制作・宅録で使うケーブルの種類と用途を網羅解説。XLRケーブル・シールド・INSERTケーブル・スピーカーケーブル・USBケーブル・Thunderboltケーブルの違いと、高品位ケーブルを選ぶ基準を紹介します。</p>
+                  <div class="featured-footer"><span class="featured-date">2026.05.17</span><span class="read-more" style="color:#c4b5fd">続きを読む →</span></div>
+                </div>
+              </a>
+
+              <a href="/2026/05/12/studio-monitor-guide/" class="featured-card">
+                <div class="featured-img" style="background:linear-gradient(135deg,#1a1030,#120a24)">
+                  <span class="pick-badge">PICK UP</span>
+                  <div class="featured-img-inner"><img src="/assets/images/thumb-studio-monitor.png" alt="" class="thumb-img" onerror="this.style.display='none'"><svg width="72" height="72" viewBox="0 0 26 26" fill="none" style="opacity:.13"><circle cx="13" cy="10" r="5" fill="#e879f9"/><path d="M4 22 C4 17 8 14 13 14 C18 14 22 17 22 22" stroke="#e879f9" stroke-width="2" fill="none"/></svg></div>
+                </div>
+                <div class="featured-body">
+                  <p class="featured-label" style="color:#e879f9">Featured Article</p>
+                  <h2 class="featured-title">スタジオモニタースピーカー入門 — 自宅DTMでの選び方と設置のコツ</h2>
+                  <p class="featured-excerpt">スタジオモニタースピーカーの選び方を初心者向けに解説。YAMAHA HS・KRK ROKIT・Genelecなどの定番モデルを比較し、自宅DTMでの設置方法と使い方を紹介します。</p>
+                  <div class="featured-footer"><span class="featured-date">2026.05.12</span><span class="read-more" style="color:#e879f9">続きを読む →</span></div>
+                </div>
+              </a>
+
+              <a href="/2026/05/12/midi-keyboard-guide/" class="featured-card">
+                <div class="featured-img" style="background:linear-gradient(135deg,#0e201a,#091510)">
+                  <span class="pick-badge">PICK UP</span>
+                  <div class="featured-img-inner"><img src="/assets/images/thumb-midi-keyboard.png" alt="" class="thumb-img" onerror="this.style.display='none'"><svg width="72" height="72" viewBox="0 0 26 26" fill="none" style="opacity:.13"><circle cx="13" cy="10" r="5" fill="#6ee7b7"/><path d="M4 22 C4 17 8 14 13 14 C18 14 22 17 22 22" stroke="#6ee7b7" stroke-width="2" fill="none"/></svg></div>
+                </div>
+                <div class="featured-body">
+                  <p class="featured-label" style="color:#6ee7b7">Featured Article</p>
+                  <h2 class="featured-title">MIDIキーボード初心者おすすめ5選【鍵盤数・機能別ガイド2026年版】</h2>
+                  <p class="featured-excerpt">MIDIキーボードの選び方を鍵盤数・機能別に解説。AKAI・Roland・Arturia・Nektar など主要モデルを比較し、DTM初心者が最初に選ぶべき1台を紹介します。</p>
+                  <div class="featured-footer"><span class="featured-date">2026.05.12</span><span class="read-more" style="color:#6ee7b7">続きを読む →</span></div>
+                </div>
+              </a>
+
+              <a href="/2026/05/12/headphone-guide/" class="featured-card">
                 <div class="featured-img" style="background:linear-gradient(135deg,#201810,#180e08)">
                   <span class="pick-badge">PICK UP</span>
-                  <div class="featured-img-inner"><img src="/assets/images/thumb-mic-stand.png" alt="" class="thumb-img" onerror="this.style.display='none'"><svg width="72" height="72" viewBox="0 0 26 26" fill="none" style="opacity:.13"><line x1="13" y1="2" x2="13" y2="24" stroke="#fb923c" stroke-width="2.5"/></svg></div>
+                  <div class="featured-img-inner"><img src="/assets/images/thumb-headphone.png" alt="" class="thumb-img" onerror="this.style.display='none'"><svg width="72" height="72" viewBox="0 0 26 26" fill="none" style="opacity:.13"><circle cx="13" cy="10" r="5" fill="#fdba74"/><path d="M4 22 C4 17 8 14 13 14 C18 14 22 17 22 22" stroke="#fdba74" stroke-width="2" fill="none"/></svg></div>
                 </div>
                 <div class="featured-body">
                   <p class="featured-label" style="color:#fdba74">Featured Article</p>
-                  <h2 class="featured-title">マイクスタンドの種類と選び方 — K&amp;M スタンド購入ガイド</h2>
-                  <p class="featured-excerpt">ボーカル収録・楽器マイキング・デスクトップ収録など用途別に最適なマイクスタンドを解説。ストレート・ブーム・デスクアームの違いと、K&amp;M定番モデルの用途別おすすめを解説。</p>
-                  <div class="featured-footer"><span class="featured-date">2026.05.17</span><span class="read-more" style="color:#fdba74">続きを読む →</span></div>
+                  <h2 class="featured-title">DTM・宅録用ヘッドフォンおすすめ6選【予算別・2026年版】</h2>
+                  <p class="featured-excerpt">DTMや宅録に使うヘッドフォンの選び方とおすすめ機種を予算別に解説。モニタリング用途に適した密閉型・開放型の違いや、SONY・AKG・audio-technicaの特徴を比較します。</p>
+                  <div class="featured-footer"><span class="featured-date">2026.05.12</span><span class="read-more" style="color:#fdba74">続きを読む →</span></div>
+                </div>
+              </a>
+
+              <a href="/2026/05/12/budget-setup-guide/" class="featured-card">
+                <div class="featured-img" style="background:linear-gradient(135deg,#1a1a10,#121208)">
+                  <span class="pick-badge">PICK UP</span>
+                  <div class="featured-img-inner"><img src="/assets/images/thumb-budget.png" alt="" class="thumb-img" onerror="this.style.display='none'"><svg width="72" height="72" viewBox="0 0 26 26" fill="none" style="opacity:.13"><circle cx="13" cy="10" r="5" fill="#fde68a"/><path d="M4 22 C4 17 8 14 13 14 C18 14 22 17 22 22" stroke="#fde68a" stroke-width="2" fill="none"/></svg></div>
+                </div>
+                <div class="featured-body">
+                  <p class="featured-label" style="color:#fde68a">Featured Article</p>
+                  <h2 class="featured-title">【予算別】DTM初心者の機材セット構成ガイド — 2万円・5万円・10万円</h2>
+                  <p class="featured-excerpt">DTMを始めるための機材セット構成を予算別（2万円・5万円・10万円）に解説。オーディオインターフェース・ヘッドフォン・マイク・DAWの組み合わせを具体的に紹介します。</p>
+                  <div class="featured-footer"><span class="featured-date">2026.05.12</span><span class="read-more" style="color:#fde68a">続きを読む →</span></div>
+                </div>
+              </a>
+
+              <a href="/2026/05/12/audio-interface-guide/" class="featured-card">
+                <div class="featured-img" style="background:linear-gradient(135deg,#0e1a2a,#091520)">
+                  <span class="pick-badge">PICK UP</span>
+                  <div class="featured-img-inner"><img src="/assets/images/thumb-audio-interface.png" alt="" class="thumb-img" onerror="this.style.display='none'"><svg width="72" height="72" viewBox="0 0 26 26" fill="none" style="opacity:.13"><circle cx="13" cy="10" r="5" fill="#7dd3fc"/><path d="M4 22 C4 17 8 14 13 14 C18 14 22 17 22 22" stroke="#7dd3fc" stroke-width="2" fill="none"/></svg></div>
+                </div>
+                <div class="featured-body">
+                  <p class="featured-label" style="color:#7dd3fc">Featured Article</p>
+                  <h2 class="featured-title">オーディオインターフェース選び方ガイド2026 — 初心者におすすめの機種と接続方法</h2>
+                  <p class="featured-excerpt">オーディオインターフェースの選び方を徹底解説。Focusrite Scarlett・MOTU・RolandなどをUSB・Thunderbolt別に比較し、DTM初心者に最適な1台を見つけましょう。</p>
+                  <div class="featured-footer"><span class="featured-date">2026.05.12</span><span class="read-more" style="color:#7dd3fc">続きを読む →</span></div>
+                </div>
+              </a>
+
+              <a href="/2026/05/11/music-production-basics/" class="featured-card">
+                <div class="featured-img" style="background:linear-gradient(135deg,#1a100e,#120a08)">
+                  <span class="pick-badge">PICK UP</span>
+                  <div class="featured-img-inner"><img src="/assets/images/thumb-basics.png" alt="" class="thumb-img" onerror="this.style.display='none'"><svg width="72" height="72" viewBox="0 0 26 26" fill="none" style="opacity:.13"><circle cx="13" cy="10" r="5" fill="#fca5a5"/><path d="M4 22 C4 17 8 14 13 14 C18 14 22 17 22 22" stroke="#fca5a5" stroke-width="2" fill="none"/></svg></div>
+                </div>
+                <div class="featured-body">
+                  <p class="featured-label" style="color:#fca5a5">Featured Article</p>
+                  <h2 class="featured-title">音楽制作を始める前に揃えるべき機材・環境【初心者ガイド2026】</h2>
+                  <p class="featured-excerpt">音楽制作を始めたい初心者向けに、必要な機材・ソフトウェア・環境を解説。予算別スターターセットから最初の一歩まで、無駄なく始められる方法を紹介します。</p>
+                  <div class="featured-footer"><span class="featured-date">2026.05.11</span><span class="read-more" style="color:#fca5a5">続きを読む →</span></div>
+                </div>
+              </a>
+
+              <a href="/2026/05/11/mixer-guide/" class="featured-card">
+                <div class="featured-img" style="background:linear-gradient(135deg,#0e1a20,#091518)">
+                  <span class="pick-badge">PICK UP</span>
+                  <div class="featured-img-inner"><img src="/assets/images/thumb-mixer.png" alt="" class="thumb-img" onerror="this.style.display='none'"><svg width="72" height="72" viewBox="0 0 26 26" fill="none" style="opacity:.13"><circle cx="13" cy="10" r="5" fill="#a5f3fc"/><path d="M4 22 C4 17 8 14 13 14 C18 14 22 17 22 22" stroke="#a5f3fc" stroke-width="2" fill="none"/></svg></div>
+                </div>
+                <div class="featured-body">
+                  <p class="featured-label" style="color:#a5f3fc">Featured Article</p>
+                  <h2 class="featured-title">ミキサーの使い方・選び方入門 - ゲイン・フェーダー・EQの基本を解説</h2>
+                  <p class="featured-excerpt">ミキサーの基本的な使い方をわかりやすく解説。ゲインとフェーダーの違い、EQの役割、ホームスタジオやバンド演奏での活用法まで初心者向けに紹介します。</p>
+                  <div class="featured-footer"><span class="featured-date">2026.05.11</span><span class="read-more" style="color:#a5f3fc">続きを読む →</span></div>
+                </div>
+              </a>
+
+              <a href="/2026/05/11/microphone-guide/" class="featured-card">
+                <div class="featured-img" style="background:linear-gradient(135deg,#14101a,#0e0a14)">
+                  <span class="pick-badge">PICK UP</span>
+                  <div class="featured-img-inner"><img src="/assets/images/thumb-microphone.png" alt="" class="thumb-img" onerror="this.style.display='none'"><svg width="72" height="72" viewBox="0 0 26 26" fill="none" style="opacity:.13"><circle cx="13" cy="10" r="5" fill="#d8b4fe"/><path d="M4 22 C4 17 8 14 13 14 C18 14 22 17 22 22" stroke="#d8b4fe" stroke-width="2" fill="none"/></svg></div>
+                </div>
+                <div class="featured-body">
+                  <p class="featured-label" style="color:#d8b4fe">Featured Article</p>
+                  <h2 class="featured-title">ダイナミックマイクとコンデンサーマイクの違い - 録音・宅録向け選び方ガイド</h2>
+                  <p class="featured-excerpt">ダイナミックマイクとコンデンサーマイクの違いを徹底解説。宅録・ボーカル録音・ライブ用途別のおすすめ選び方を初心者にもわかりやすく紹介します。</p>
+                  <div class="featured-footer"><span class="featured-date">2026.05.11</span><span class="read-more" style="color:#d8b4fe">続きを読む →</span></div>
+                </div>
+              </a>
+
+              <a href="/2026/05/11/effects-guide/" class="featured-card">
+                <div class="featured-img" style="background:linear-gradient(135deg,#0e1a38,#0a1228)">
+                  <span class="pick-badge">PICK UP</span>
+                  <div class="featured-img-inner"><img src="/assets/images/thumb-effects.png" alt="" class="thumb-img" onerror="this.style.display='none'"><svg width="72" height="72" viewBox="0 0 26 26" fill="none" style="opacity:.13"><circle cx="13" cy="10" r="5" fill="#93c5fd"/><path d="M4 22 C4 17 8 14 13 14 C18 14 22 17 22 22" stroke="#93c5fd" stroke-width="2" fill="none"/></svg></div>
+                </div>
+                <div class="featured-body">
+                  <p class="featured-label">Featured Article</p>
+                  <h2 class="featured-title">コンプレッサー・リバーブ・ゲートの使い方 - 音楽制作エフェクター入門</h2>
+                  <p class="featured-excerpt">音楽制作で欠かせないコンプレッサー・リバーブ・ゲートの基本的な使い方を解説。各エフェクターの役割とパラメーターを初心者向けにわかりやすく紹介します。</p>
+                  <div class="featured-footer"><span class="featured-date">2026.05.11</span><span class="read-more">続きを読む →</span></div>
+                </div>
+              </a>
+
+              <a href="/2026/05/11/daw-guide/" class="featured-card">
+                <div class="featured-img" style="background:linear-gradient(135deg,#16203a,#0f1830)">
+                  <span class="pick-badge">PICK UP</span>
+                  <div class="featured-img-inner"><img src="/assets/images/thumb-daw.png" alt="" class="thumb-img" onerror="this.style.display='none'"><svg width="72" height="72" viewBox="0 0 26 26" fill="none" style="opacity:.13"><circle cx="13" cy="10" r="5" fill="#c4b5fd"/><path d="M4 22 C4 17 8 14 13 14 C18 14 22 17 22 22" stroke="#c4b5fd" stroke-width="2" fill="none"/></svg></div>
+                </div>
+                <div class="featured-body">
+                  <p class="featured-label" style="color:#c4b5fd">Featured Article</p>
+                  <h2 class="featured-title">DAWソフトの選び方2026 - 無料から有料まで初心者向け比較ガイド</h2>
+                  <p class="featured-excerpt">音楽制作に使うDAWソフトの選び方を解説。GarageBand・Cubase・Ableton Live・Logic Proなど主要DAWを比較し、初心者におすすめの選び方を紹介します。</p>
+                  <div class="featured-footer"><span class="featured-date">2026.05.11</span><span class="read-more" style="color:#c4b5fd">続きを読む →</span></div>
                 </div>
               </a>
 
@@ -536,16 +1400,11 @@
             <button class="slider-btn slider-prev" id="slider-prev" aria-label="前">&#8249;</button>
             <button class="slider-btn slider-next" id="slider-next" aria-label="次">&#8250;</button>
             <div class="slider-dots" id="slider-dots">
-              <button class="dot active" data-idx="0"></button>
-              <button class="dot" data-idx="1"></button>
-              <button class="dot" data-idx="2"></button>
-              <button class="dot" data-idx="3"></button>
-              <button class="dot" data-idx="4"></button>
             </div>
           </div>
         </div>
 
-        <!-- Showcase — 非表示（公開準備完了後にコメント解除）
+        <!-- Showcase -->
         <div class="col-section" id="showcase">
           <div class="col-section-head">
             <span class="section-eyebrow">Creator Showcase</span>
@@ -560,7 +1419,6 @@
             </div>
           </div>
         </div>
-        -->
 
         <!-- Community 機能（WBS 2.4b） — 非表示（実装完了後に復元）
         <div class="col-section">
@@ -631,7 +1489,7 @@
       <div class="series-head">
         <h2 class="series-title">音楽制作入門シリーズ</h2>
         <div class="series-line"></div>
-        <a href="/series-list.html?series=music-production" class="series-all-link">すべて表示（10本）→</a>
+        <a href="/series-list.html?series=music-production" class="series-all-link">すべて表示（18本）→</a>
       </div>
       <div class="series-scroll-wrap">
         <div class="series-scroll">
@@ -677,7 +1535,7 @@
           </a>
 
           <a href="/2026/05/11/effects-guide/" class="series-card">
-            <div class="series-card-img"><div class="series-card-img-inner"><svg width="36" height="36" viewBox="0 0 26 26" fill="none" style="opacity:.18"><polyline points="2,18 6,10 10,15 14,7 18,13 22,9" stroke="#e879f9" stroke-width="2" fill="none"/></svg></div></div>
+            <div class="series-card-img"><div class="series-card-img-inner"><img src="/assets/images/thumb-effects.png" alt="" class="thumb-img" onerror="this.style.display='none'"><svg width="36" height="36" viewBox="0 0 26 26" fill="none" style="opacity:.18"><polyline points="2,18 6,10 10,15 14,7 18,13 22,9" stroke="#e879f9" stroke-width="2" fill="none"/></svg></div></div>
             <div class="series-card-body">
               <div class="series-card-meta"><span class="series-tag" style="background:rgba(232,121,249,.1);color:#e879f9;border:1px solid rgba(232,121,249,.2)">エフェクター</span><span class="series-date">2026.05.11</span></div>
               <h3 class="series-card-title">コンプレッサー・リバーブ・ゲートの使い方</h3>
@@ -707,7 +1565,7 @@
           </a>
 
           <a href="/2026/05/12/midi-keyboard-guide/" class="series-card">
-            <div class="series-card-img"><div class="series-card-img-inner"><img src="/assets/images/thumb-midi.png" alt="" class="thumb-img" onerror="this.style.display='none'"></div></div>
+            <div class="series-card-img"><div class="series-card-img-inner"><img src="/assets/images/thumb-midi-keyboard.png" alt="" class="thumb-img" onerror="this.style.display='none'"></div></div>
             <div class="series-card-body">
               <div class="series-card-meta"><span class="series-tag" style="background:rgba(129,140,248,.1);color:#c4b5fd;border:1px solid rgba(129,140,248,.2)">MIDI</span><span class="series-date">2026.05.12</span></div>
               <h3 class="series-card-title">MIDIキーボード選び方完全ガイド</h3>
@@ -716,8 +1574,8 @@
             </div>
           </a>
 
-          <a href="/2026/05/12/monitor-speaker-guide/" class="series-card">
-            <div class="series-card-img"><div class="series-card-img-inner"><img src="/assets/images/thumb-monitor.png" alt="" class="thumb-img" onerror="this.style.display='none'"></div></div>
+          <a href="/2026/05/12/studio-monitor-guide/" class="series-card">
+            <div class="series-card-img"><div class="series-card-img-inner"><img src="/assets/images/thumb-studio-monitor.png" alt="" class="thumb-img" onerror="this.style.display='none'"></div></div>
             <div class="series-card-body">
               <div class="series-card-meta"><span class="series-tag" style="background:rgba(6,182,212,.1);color:#67e8f9;border:1px solid rgba(6,182,212,.2)">モニター</span><span class="series-date">2026.05.12</span></div>
               <h3 class="series-card-title">モニタースピーカー選び方ガイド2026年版</h3>
@@ -726,8 +1584,8 @@
             </div>
           </a>
 
-          <a href="/2026/05/12/starter-bundle-guide/" class="series-card">
-            <div class="series-card-img"><div class="series-card-img-inner"><svg width="36" height="36" viewBox="0 0 26 26" fill="none" style="opacity:.18"><rect x="3" y="10" width="20" height="13" rx="3" stroke="#fb923c" stroke-width="1.5"/><path d="M8 10 V7 a5 5 0 0 1 10 0 v3" stroke="#fb923c" stroke-width="1.5" fill="none"/></svg></div></div>
+          <a href="/2026/05/12/budget-setup-guide/" class="series-card">
+            <div class="series-card-img"><div class="series-card-img-inner"><img src="/assets/images/thumb-budget.png" alt="" class="thumb-img" onerror="this.style.display='none'"><svg width="36" height="36" viewBox="0 0 26 26" fill="none" style="opacity:.18"><rect x="3" y="10" width="20" height="13" rx="3" stroke="#fb923c" stroke-width="1.5"/><path d="M8 10 V7 a5 5 0 0 1 10 0 v3" stroke="#fb923c" stroke-width="1.5" fill="none"/></svg></div></div>
             <div class="series-card-body">
               <div class="series-card-meta"><span class="series-tag" style="background:rgba(251,146,60,.1);color:#fdba74;border:1px solid rgba(251,146,60,.2)">予算別</span><span class="series-date">2026.05.12</span></div>
               <h3 class="series-card-title">宅録スターターセット — 予算別おすすめ構成2026</h3>
@@ -781,7 +1639,7 @@
           </a>
 
           <a href="/2026/05/24/digital-piano-guide/" class="series-card">
-            <div class="series-card-img"><div class="series-card-img-inner"><img src="/assets/images/thumb-digital-piano.png" alt="" class="thumb-img" onerror="this.style.display='none'"><svg width="36" height="36" viewBox="0 0 26 26" fill="none" style="opacity:.18"><rect x="4" y="12" width="18" height="10" rx="2" stroke="#818cf8" stroke-width="1.5"/><rect x="8" y="8" width="10" height="6" rx="1" stroke="#818cf8" stroke-width="1.5"/></svg></div></div>
+            <div class="series-card-img"><div class="series-card-img-inner"><img src="/assets/images/thumb-digital-piano.jpg" alt="" class="thumb-img" onerror="this.style.display='none'"><svg width="36" height="36" viewBox="0 0 26 26" fill="none" style="opacity:.18"><rect x="4" y="12" width="18" height="10" rx="2" stroke="#818cf8" stroke-width="1.5"/><rect x="8" y="8" width="10" height="6" rx="1" stroke="#818cf8" stroke-width="1.5"/></svg></div></div>
             <div class="series-card-body">
               <div class="series-card-meta"><span class="series-tag" style="background:rgba(129,140,248,.1);color:#c4b5fd;border:1px solid rgba(129,140,248,.2)">鍵盤</span><span class="series-date">2026.05.24</span></div>
               <h3 class="series-card-title">デジタルピアノ・キーボード 初心者始め方ガイド【2026年版】</h3>
@@ -801,7 +1659,7 @@
           </a>
 
           <a href="/2026/05/24/vocal-recording-guide/" class="series-card">
-            <div class="series-card-img"><div class="series-card-img-inner"><img src="/assets/images/thumb-vocal-recording.png" alt="" class="thumb-img" onerror="this.style.display='none'"><svg width="36" height="36" viewBox="0 0 26 26" fill="none" style="opacity:.18"><rect x="9" y="1" width="8" height="16" rx="4" fill="#a78bfa"/></svg></div></div>
+            <div class="series-card-img"><div class="series-card-img-inner"><img src="/assets/images/thumb-vocal-recording.jpg" alt="" class="thumb-img" onerror="this.style.display='none'"><svg width="36" height="36" viewBox="0 0 26 26" fill="none" style="opacity:.18"><rect x="9" y="1" width="8" height="16" rx="4" fill="#a78bfa"/></svg></div></div>
             <div class="series-card-body">
               <div class="series-card-meta"><span class="series-tag" style="background:rgba(167,139,250,.1);color:#c4b5fd;border:1px solid rgba(167,139,250,.2)">ボーカル</span><span class="series-date">2026.05.24</span></div>
               <h3 class="series-card-title">ボーカル宅録ガイド — マイク選び・録音設定・歌ってみた機材</h3>
@@ -811,7 +1669,7 @@
           </a>
 
           <a href="/2026/05/24/guitar-effects-guide/" class="series-card">
-            <div class="series-card-img"><div class="series-card-img-inner"><img src="/assets/images/thumb-guitar-effects.png" alt="" class="thumb-img" onerror="this.style.display='none'"><svg width="36" height="36" viewBox="0 0 26 26" fill="none" style="opacity:.18"><rect x="4" y="8" width="18" height="14" rx="2" stroke="#ef4444" stroke-width="1.5"/><circle cx="13" cy="15" r="4" stroke="#ef4444" stroke-width="1.5"/></svg></div></div>
+            <div class="series-card-img"><div class="series-card-img-inner"><img src="/assets/images/thumb-guitar-effects.jpg" alt="" class="thumb-img" onerror="this.style.display='none'"><svg width="36" height="36" viewBox="0 0 26 26" fill="none" style="opacity:.18"><rect x="4" y="8" width="18" height="14" rx="2" stroke="#ef4444" stroke-width="1.5"/><circle cx="13" cy="15" r="4" stroke="#ef4444" stroke-width="1.5"/></svg></div></div>
             <div class="series-card-body">
               <div class="series-card-meta"><span class="series-tag" style="background:rgba(239,68,68,.1);color:#fca5a5;border:1px solid rgba(239,68,68,.2)">エフェクター</span><span class="series-date">2026.05.24</span></div>
               <h3 class="series-card-title">ギターエフェクター入門 — 歪み・空間系・マルチの選び方</h3>
@@ -880,7 +1738,7 @@
         <div class="series-scroll">
 
           <a href="/2026/05/24/mixing-mastering-guide/" class="series-card">
-            <div class="series-card-img"><div class="series-card-img-inner"><img src="/assets/images/thumb-mixing.png" alt="" class="thumb-img" onerror="this.style.display='none'"><svg width="36" height="36" viewBox="0 0 26 26" fill="none" style="opacity:.18"><rect x="3" y="6" width="20" height="14" rx="2" stroke="#67e8f9" stroke-width="1.5"/><line x1="8" y1="10" x2="8" y2="16" stroke="#67e8f9" stroke-width="1.5"/><line x1="13" y1="8" x2="13" y2="18" stroke="#67e8f9" stroke-width="1.5"/><line x1="18" y1="11" x2="18" y2="15" stroke="#67e8f9" stroke-width="1.5"/></svg></div></div>
+            <div class="series-card-img"><div class="series-card-img-inner"><img src="/assets/images/thumb-mixing.jpg" alt="" class="thumb-img" onerror="this.style.display='none'"><svg width="36" height="36" viewBox="0 0 26 26" fill="none" style="opacity:.18"><rect x="3" y="6" width="20" height="14" rx="2" stroke="#67e8f9" stroke-width="1.5"/><line x1="8" y1="10" x2="8" y2="16" stroke="#67e8f9" stroke-width="1.5"/><line x1="13" y1="8" x2="13" y2="18" stroke="#67e8f9" stroke-width="1.5"/><line x1="18" y1="11" x2="18" y2="15" stroke="#67e8f9" stroke-width="1.5"/></svg></div></div>
             <div class="series-card-body">
               <div class="series-card-meta"><span class="series-tag" style="background:rgba(6,182,212,.1);color:#67e8f9;border:1px solid rgba(6,182,212,.2)">MIX</span><span class="series-date">2026.05.24</span></div>
               <h3 class="series-card-title">MIX・マスタリング入門 — 宅録の音を仕上げる基礎知識</h3>
@@ -900,7 +1758,7 @@
           </a>
 
           <a href="/2026/05/24/solo-dtm-setup/" class="series-card">
-            <div class="series-card-img"><div class="series-card-img-inner"><img src="/assets/images/thumb-solo-dtm.png" alt="" class="thumb-img" onerror="this.style.display='none'"><svg width="36" height="36" viewBox="0 0 26 26" fill="none" style="opacity:.18"><rect x="3" y="5" width="20" height="14" rx="2" stroke="#34d399" stroke-width="1.5"/><path d="M9 19 l8 0 M13 19 l0 2" stroke="#34d399" stroke-width="1.5"/></svg></div></div>
+            <div class="series-card-img"><div class="series-card-img-inner"><img src="/assets/images/thumb-solo-dtm.jpg" alt="" class="thumb-img" onerror="this.style.display='none'"><svg width="36" height="36" viewBox="0 0 26 26" fill="none" style="opacity:.18"><rect x="3" y="5" width="20" height="14" rx="2" stroke="#34d399" stroke-width="1.5"/><path d="M9 19 l8 0 M13 19 l0 2" stroke="#34d399" stroke-width="1.5"/></svg></div></div>
             <div class="series-card-body">
               <div class="series-card-meta"><span class="series-tag" style="background:rgba(52,211,153,.1);color:#6ee7b7;border:1px solid rgba(52,211,153,.2)">DTM</span><span class="series-date">2026.05.24</span></div>
               <h3 class="series-card-title">ソロDTM完全セットアップガイド【2026年版】</h3>
@@ -978,7 +1836,7 @@
         <div class="series-scroll">
 
           <a href="/2026/05/24/soundproofing-home-studio-guide/" class="series-card">
-            <div class="series-card-img"><div class="series-card-img-inner"><img src="/assets/images/thumb-soundproofing.png" alt="" class="thumb-img" onerror="this.style.display='none'"><svg width="36" height="36" viewBox="0 0 26 26" fill="none" style="opacity:.18"><rect x="4" y="4" width="18" height="18" rx="2" stroke="#60a5fa" stroke-width="1.5"/><path d="M8 13 Q13 8 18 13" stroke="#60a5fa" stroke-width="1.5" fill="none"/></svg></div></div>
+            <div class="series-card-img"><div class="series-card-img-inner"><img src="/assets/images/thumb-soundproofing.jpg" alt="" class="thumb-img" onerror="this.style.display='none'"><svg width="36" height="36" viewBox="0 0 26 26" fill="none" style="opacity:.18"><rect x="4" y="4" width="18" height="18" rx="2" stroke="#60a5fa" stroke-width="1.5"/><path d="M8 13 Q13 8 18 13" stroke="#60a5fa" stroke-width="1.5" fill="none"/></svg></div></div>
             <div class="series-card-body">
               <div class="series-card-meta"><span class="series-tag" style="background:rgba(59,130,246,.1);color:#93c5fd;border:1px solid rgba(59,130,246,.2)">防音</span><span class="series-date">2026.05.24</span></div>
               <h3 class="series-card-title">宅録防音対策ガイド — 吸音・遮音・防振の全対策</h3>
@@ -988,7 +1846,7 @@
           </a>
 
           <a href="/2026/05/24/music-studio-guide/" class="series-card">
-            <div class="series-card-img"><div class="series-card-img-inner"><img src="/assets/images/thumb-studio.png" alt="" class="thumb-img" onerror="this.style.display='none'"><svg width="36" height="36" viewBox="0 0 26 26" fill="none" style="opacity:.18"><rect x="3" y="8" width="20" height="14" rx="2" stroke="#34d399" stroke-width="1.5"/><path d="M8 8 V6 a5 5 0 0 1 10 0 v2" stroke="#34d399" stroke-width="1.5" fill="none"/></svg></div></div>
+            <div class="series-card-img"><div class="series-card-img-inner"><img src="/assets/images/thumb-music-studio.jpg" alt="" class="thumb-img" onerror="this.style.display='none'"><svg width="36" height="36" viewBox="0 0 26 26" fill="none" style="opacity:.18"><rect x="3" y="8" width="20" height="14" rx="2" stroke="#34d399" stroke-width="1.5"/><path d="M8 8 V6 a5 5 0 0 1 10 0 v2" stroke="#34d399" stroke-width="1.5" fill="none"/></svg></div></div>
             <div class="series-card-body">
               <div class="series-card-meta"><span class="series-tag" style="background:rgba(52,211,153,.1);color:#6ee7b7;border:1px solid rgba(52,211,153,.2)">スタジオ</span><span class="series-date">2026.05.24</span></div>
               <h3 class="series-card-title">音楽スタジオ 選び方・予約方法 完全ガイド</h3>
@@ -998,7 +1856,7 @@
           </a>
 
           <a href="/2026/05/24/monitor-headphones-guide/" class="series-card">
-            <div class="series-card-img"><div class="series-card-img-inner"><img src="/assets/images/thumb-monitor-headphones.png" alt="" class="thumb-img" onerror="this.style.display='none'"><svg width="36" height="36" viewBox="0 0 26 26" fill="none" style="opacity:.18"><path d="M6 16 Q6 8 13 8 Q20 8 20 16" stroke="#22c55e" stroke-width="1.5" fill="none"/><rect x="3" y="14" width="6" height="8" rx="2" stroke="#22c55e" stroke-width="1.5"/><rect x="17" y="14" width="6" height="8" rx="2" stroke="#22c55e" stroke-width="1.5"/></svg></div></div>
+            <div class="series-card-img"><div class="series-card-img-inner"><img src="/assets/images/thumb-monitor-headphones.jpg" alt="" class="thumb-img" onerror="this.style.display='none'"><svg width="36" height="36" viewBox="0 0 26 26" fill="none" style="opacity:.18"><path d="M6 16 Q6 8 13 8 Q20 8 20 16" stroke="#22c55e" stroke-width="1.5" fill="none"/><rect x="3" y="14" width="6" height="8" rx="2" stroke="#22c55e" stroke-width="1.5"/><rect x="17" y="14" width="6" height="8" rx="2" stroke="#22c55e" stroke-width="1.5"/></svg></div></div>
             <div class="series-card-body">
               <div class="series-card-meta"><span class="series-tag" style="background:rgba(34,197,94,.1);color:#86efac;border:1px solid rgba(34,197,94,.2)">ヘッドフォン</span><span class="series-date">2026.05.24</span></div>
               <h3 class="series-card-title">モニターヘッドフォン選び方ガイド — DTM・宅録・ミックス</h3>
@@ -1011,8 +1869,397 @@
       </div>
     </div>
 
+
+    <!-- シリーズ7: 楽器モデル詳細ガイド -->
+    <div class="series-block">
+      <div class="series-head">
+        <h2 class="series-title">楽器モデル詳細ガイド</h2>
+        <div class="series-line"></div>
+        <a href="/series-list.html?series=instrument-guide" class="series-all-link">すべて表示（9本）→</a>
+      </div>
+      <div class="series-scroll-wrap">
+        <div class="series-scroll">
+
+          <a href="/2026/05/29/gibson-les-paul-custom-guide/" class="series-card">
+            <div class="series-card-img"><div class="series-card-img-inner"><img src="/assets/images/thumb-les-paul-custom.jpg" alt="" class="thumb-img" onerror="this.style.display='none'"><svg width="36" height="36" viewBox="0 0 26 26" fill="none" style="opacity:.18"><path d="M13 4 Q18 6 18 13 Q18 20 13 22 Q8 20 8 13 Q8 6 13 4 Z" stroke="#f59e0b" stroke-width="1.5" fill="none"/></svg></div></div>
+            <div class="series-card-body">
+              <div class="series-card-meta"><span class="series-tag" style="background:rgba(245,158,11,.1);color:#fcd34d;border:1px solid rgba(245,158,11,.2)">ギター</span><span class="series-date">2026.05.29</span></div>
+              <h3 class="series-card-title">Gibson Les Paul Custom の特徴・音・選び方ガイド</h3>
+              <p class="series-card-excerpt">レスポールの最高峰。エボニー指板・ゴールドハードウェアの格式と実用性を徹底解説。</p>
+              <p class="series-card-read">続きを読む →</p>
+            </div>
+          </a>
+
+          <a href="/2026/05/29/fender-stratocaster-guide/" class="series-card">
+            <div class="series-card-img"><div class="series-card-img-inner"><img src="/assets/images/thumb-stratocaster.jpg" alt="" class="thumb-img" onerror="this.style.display='none'"><svg width="36" height="36" viewBox="0 0 26 26" fill="none" style="opacity:.18"><path d="M13 4 Q18 6 18 13 Q18 20 13 22 Q8 20 8 13 Q8 6 13 4 Z" stroke="#3b82f6" stroke-width="1.5" fill="none"/></svg></div></div>
+            <div class="series-card-body">
+              <div class="series-card-meta"><span class="series-tag" style="background:rgba(59,130,246,.1);color:#93c5fd;border:1px solid rgba(59,130,246,.2)">ギター</span><span class="series-date">2026.05.29</span></div>
+              <h3 class="series-card-title">Fender Stratocaster の特徴・音・選び方ガイド</h3>
+              <p class="series-card-excerpt">世界最多使用のギター。SSSピックアップと5ウェイスイッチが生む多彩なサウンドを解説。</p>
+              <p class="series-card-read">続きを読む →</p>
+            </div>
+          </a>
+
+          <a href="/2026/05/29/fender-telecaster-guide/" class="series-card">
+            <div class="series-card-img"><div class="series-card-img-inner"><img src="/assets/images/thumb-telecaster.jpg" alt="" class="thumb-img" onerror="this.style.display='none'"><svg width="36" height="36" viewBox="0 0 26 26" fill="none" style="opacity:.18"><path d="M13 4 Q18 6 18 13 Q18 20 13 22 Q8 20 8 13 Q8 6 13 4 Z" stroke="#f59e0b" stroke-width="1.5" fill="none"/></svg></div></div>
+            <div class="series-card-body">
+              <div class="series-card-meta"><span class="series-tag" style="background:rgba(245,158,11,.1);color:#fcd34d;border:1px solid rgba(245,158,11,.2)">ギター</span><span class="series-date">2026.05.29</span></div>
+              <h3 class="series-card-title">Fender Telecaster の特徴・音・選び方ガイド</h3>
+              <p class="series-card-excerpt">世界初の量産エレキ。シンプルなSS構成が生む力強いスナッピーサウンドを徹底解説。</p>
+              <p class="series-card-read">続きを読む →</p>
+            </div>
+          </a>
+
+          <a href="/2026/05/29/fender-jazz-bass-guide/" class="series-card">
+            <div class="series-card-img"><div class="series-card-img-inner"><img src="/assets/images/thumb-jazz-bass.jpg" alt="" class="thumb-img" onerror="this.style.display='none'"><svg width="36" height="36" viewBox="0 0 26 26" fill="none" style="opacity:.18"><path d="M13 4 Q18 6 18 13 Q18 20 13 22 Q8 20 8 13 Q8 6 13 4 Z" stroke="#a78bfa" stroke-width="1.5" fill="none"/></svg></div></div>
+            <div class="series-card-body">
+              <div class="series-card-meta"><span class="series-tag" style="background:rgba(167,139,250,.1);color:#c4b5fd;border:1px solid rgba(167,139,250,.2)">ベース</span><span class="series-date">2026.05.29</span></div>
+              <h3 class="series-card-title">Fender Jazz Bass の特徴・音・選び方ガイド</h3>
+              <p class="series-card-excerpt">細いネックと2基シングルコイルが生む明瞭なサウンド。ジャズ・ファンク・フュージョンに最適。</p>
+              <p class="series-card-read">続きを読む →</p>
+            </div>
+          </a>
+
+          <a href="/2026/05/29/fender-precision-bass-guide/" class="series-card">
+            <div class="series-card-img"><div class="series-card-img-inner"><img src="/assets/images/thumb-precision-bass.jpg" alt="" class="thumb-img" onerror="this.style.display='none'"><svg width="36" height="36" viewBox="0 0 26 26" fill="none" style="opacity:.18"><path d="M13 4 Q18 6 18 13 Q18 20 13 22 Q8 20 8 13 Q8 6 13 4 Z" stroke="#34d399" stroke-width="1.5" fill="none"/></svg></div></div>
+            <div class="series-card-body">
+              <div class="series-card-meta"><span class="series-tag" style="background:rgba(52,211,153,.1);color:#6ee7b7;border:1px solid rgba(52,211,153,.2)">ベース</span><span class="series-date">2026.05.29</span></div>
+              <h3 class="series-card-title">Fender Precision Bass の特徴・音・選び方ガイド</h3>
+              <p class="series-card-excerpt">世界初のエレキベース。スプリットコイルが生む太くパワフルなサウンドでロック・ポップを支える。</p>
+              <p class="series-card-read">続きを読む →</p>
+            </div>
+          </a>
+
+
+          <a href="/2026/05/29/fender-jazzmaster-guide/" class="series-card">
+            <div class="series-card-img"><div class="series-card-img-inner"><img src="/assets/images/thumb-jazzmaster.jpg" alt="" class="thumb-img" onerror="this.style.display='none'"><svg width="36" height="36" viewBox="0 0 26 26" fill="none" style="opacity:.18"><path d="M13 4 Q18 6 18 13 Q18 20 13 22 Q8 20 8 13 Q8 6 13 4 Z" stroke="#a855f7" stroke-width="1.5" fill="none"/></svg></div></div>
+            <div class="series-card-body">
+              <div class="series-card-meta"><span class="series-tag" style="background:rgba(168,85,247,.1);color:#d8b4fe;border:1px solid rgba(168,85,247,.2)">ギター</span><span class="series-date">2026.05.29</span></div>
+              <h3 class="series-card-title">Fender Jazzmaster の特徴・音・選び方ガイド</h3>
+              <p class="series-card-excerpt">オルタナ・シューゲイザーの象徴。広面積シングルコイルとリズム/リードサーキットを徹底解説。</p>
+              <p class="series-card-read">続きを読む →</p>
+            </div>
+          </a>
+
+          <a href="/2026/05/29/fender-jaguar-guide/" class="series-card">
+            <div class="series-card-img"><div class="series-card-img-inner"><img src="/assets/images/thumb-jaguar.jpg" alt="" class="thumb-img" onerror="this.style.display='none'"><svg width="36" height="36" viewBox="0 0 26 26" fill="none" style="opacity:.18"><path d="M13 4 Q18 6 18 13 Q18 20 13 22 Q8 20 8 13 Q8 6 13 4 Z" stroke="#10b981" stroke-width="1.5" fill="none"/></svg></div></div>
+            <div class="series-card-body">
+              <div class="series-card-meta"><span class="series-tag" style="background:rgba(16,185,129,.1);color:#6ee7b7;border:1px solid rgba(16,185,129,.2)">ギター</span><span class="series-date">2026.05.29</span></div>
+              <h3 class="series-card-title">Fender Jaguar の特徴・音・選び方ガイド</h3>
+              <p class="series-card-excerpt">24インチショートスケールと独自スイッチ群。サーフ・ガレージ・パンクのアイコニックなギター。</p>
+              <p class="series-card-read">続きを読む →</p>
+            </div>
+          </a>
+
+          <a href="/2026/05/29/musicman-stingray-bass-guide/" class="series-card">
+            <div class="series-card-img"><div class="series-card-img-inner"><img src="/assets/images/thumb-stingray-bass.jpg" alt="" class="thumb-img" onerror="this.style.display='none'"><svg width="36" height="36" viewBox="0 0 26 26" fill="none" style="opacity:.18"><path d="M13 4 Q18 6 18 13 Q18 20 13 22 Q8 20 8 13 Q8 6 13 4 Z" stroke="#ef4444" stroke-width="1.5" fill="none"/></svg></div></div>
+            <div class="series-card-body">
+              <div class="series-card-meta"><span class="series-tag" style="background:rgba(239,68,68,.1);color:#fca5a5;border:1px solid rgba(239,68,68,.2)">ベース</span><span class="series-date">2026.05.29</span></div>
+              <h3 class="series-card-title">Music Man StingRay Bass の特徴・音・選び方ガイド</h3>
+              <p class="series-card-excerpt">世界初の量産アクティブベース。ハムバッカー＋3バンドEQが生む圧倒的なスラップサウンド。</p>
+              <p class="series-card-read">続きを読む →</p>
+            </div>
+          </a>
+          <a href="/2026/05/29/guitar-bass-pickup-guide/" class="series-card">
+            <div class="series-card-img"><div class="series-card-img-inner"><img src="/assets/images/thumb-pickup-guide.jpg" alt="" class="thumb-img" onerror="this.style.display='none'"><svg width="36" height="36" viewBox="0 0 26 26" fill="none" style="opacity:.18"><rect x="4" y="10" width="18" height="6" rx="2" stroke="#e879f9" stroke-width="1.5"/><path d="M8 10 V6 M13 10 V5 M18 10 V6" stroke="#e879f9" stroke-width="1.5"/></svg></div></div>
+            <div class="series-card-body">
+              <div class="series-card-meta"><span class="series-tag" style="background:rgba(232,121,249,.1);color:#f0abfc;border:1px solid rgba(232,121,249,.2)">基礎知識</span><span class="series-date">2026.05.29</span></div>
+              <h3 class="series-card-title">ピックアップ入門ガイド — パッシブ/アクティブ/種類と選び方</h3>
+              <p class="series-card-excerpt">シングル/ハムバッカー/スプリットコイルの違いとパッシブ・アクティブの選び方を初心者向けに解説。</p>
+              <p class="series-card-read">続きを読む →</p>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </div>
   </div>
-</section>
+
+  <div class="container-wide">
+    <!-- シリーズ: 日本音楽史シリーズ -->
+    <div class="series-block">
+      <div class="series-head">
+        <h2 class="series-title">日本音楽史シリーズ</h2>
+        <div class="series-line"></div>
+        <a href="/series-list.html?series=japan-music-series" class="series-all-link">すべて表示（18本）→</a>
+      </div>
+      <div class="series-scroll">
+          <a href="/2026/05/30/japan-music-01-gs-boom/" class="series-card">
+            <div class="sc-img-wrap">
+              <img src="/assets/images/thumb-gs-boom.jpg" alt="グループサウンズ革命【1960年代】エレキギターが日本を変えた日" loading="lazy">
+            </div>
+            <div class="sc-body">
+              <p class="sc-meta"><span class="sc-tag">音楽史</span><span class="sc-date">2026.05.30</span></p>
+              <h3 class="sc-title">グループサウンズ革命【1960年代】エレキギターが日本を変えた日</h3>
+              <p class="sc-desc">続きを読む →</p>
+            </div>
+          </a>
+          <a href="/2026/05/30/japan-music-02-folk-new-music/" class="series-card">
+            <div class="sc-img-wrap">
+              <img src="/assets/images/thumb-folk-new-music.jpg" alt="フォーク・ニューミュージックの誕生【1970年代】拓郎・陽水・ユーミンが変えた日本の音楽" loading="lazy">
+            </div>
+            <div class="sc-body">
+              <p class="sc-meta"><span class="sc-tag">音楽史</span><span class="sc-date">2026.05.30</span></p>
+              <h3 class="sc-title">フォーク・ニューミュージックの誕生【1970年代】拓郎・陽水・ユーミンが変えた日本の音楽</h3>
+              <p class="sc-desc">続きを読む →</p>
+            </div>
+          </a>
+          <a href="/2026/05/30/japan-music-03-idol-candies-era/" class="series-card">
+            <div class="sc-img-wrap">
+              <img src="/assets/images/thumb-idol-candies.jpg" alt="キャンディーズ・ピンクレディーと歌謡曲黄金期【1970年代中期】アイドルが生んだ職人サウンド" loading="lazy">
+            </div>
+            <div class="sc-body">
+              <p class="sc-meta"><span class="sc-tag">音楽史</span><span class="sc-date">2026.05.30</span></p>
+              <h3 class="sc-title">キャンディーズ・ピンクレディーと歌謡曲黄金期【1970年代中期】アイドルが生んだ職人サウンド</h3>
+              <p class="sc-desc">続きを読む →</p>
+            </div>
+          </a>
+          <a href="/2026/05/30/japan-music-04-foreign-influence/" class="series-card">
+            <div class="sc-img-wrap">
+              <img src="/assets/images/thumb-godiego-fusion.jpg" alt="海外音楽の融合と日本化【1970年代後期】ゴダイゴが証明した「日本語×西洋音楽」の可能性" loading="lazy">
+            </div>
+            <div class="sc-body">
+              <p class="sc-meta"><span class="sc-tag">音楽史</span><span class="sc-date">2026.05.30</span></p>
+              <h3 class="sc-title">海外音楽の融合と日本化【1970年代後期】ゴダイゴが証明した「日本語×西洋音楽」の可能性</h3>
+              <p class="sc-desc">続きを読む →</p>
+            </div>
+          </a>
+          <a href="/2026/05/30/japan-music-05-ymo-techno/" class="series-card">
+            <div class="sc-img-wrap">
+              <img src="/assets/images/thumb-ymo-techno.jpg" alt="YMOとテクノポップ革命【1978〜1983年】シンセとシーケンサーが世界を変えた" loading="lazy">
+            </div>
+            <div class="sc-body">
+              <p class="sc-meta"><span class="sc-tag">音楽史</span><span class="sc-date">2026.05.30</span></p>
+              <h3 class="sc-title">YMOとテクノポップ革命【1978〜1983年】シンセとシーケンサーが世界を変えた</h3>
+              <p class="sc-desc">続きを読む →</p>
+            </div>
+          </a>
+          <a href="/2026/05/30/japan-music-06-80s-idol-production/" class="series-card">
+            <div class="sc-img-wrap">
+              <img src="/assets/images/thumb-80s-idol.jpg" alt="80年代アイドル黄金期の音楽制作【1980〜1988年】松田聖子・中森明菜を支えた職人サウンド" loading="lazy">
+            </div>
+            <div class="sc-body">
+              <p class="sc-meta"><span class="sc-tag">音楽史</span><span class="sc-date">2026.05.30</span></p>
+              <h3 class="sc-title">80年代アイドル黄金期の音楽制作【1980〜1988年】松田聖子・中森明菜を支えた職人サウンド</h3>
+              <p class="sc-desc">続きを読む →</p>
+            </div>
+          </a>
+          <a href="/2026/05/30/japan-music-07-80s-commercial/" class="series-card">
+            <div class="sc-img-wrap">
+              <img src="/assets/images/thumb-80s-commercial.jpg" alt="1980年代半ばの商業音楽【1984〜1987年】バブル前夜に花開いたJ-POP黄金期" loading="lazy">
+            </div>
+            <div class="sc-body">
+              <p class="sc-meta"><span class="sc-tag">音楽史</span><span class="sc-date">2026.05.30</span></p>
+              <h3 class="sc-title">1980年代半ばの商業音楽【1984〜1987年】バブル前夜に花開いたJ-POP黄金期</h3>
+              <p class="sc-desc">続きを読む →</p>
+            </div>
+          </a>
+          <a href="/2026/05/30/japan-music-08-band-boom/" class="series-card">
+            <div class="sc-img-wrap">
+              <img src="/assets/images/thumb-band-boom.jpg" alt="バンドブーム第一波【1980年代後半】BOØWY・BUCK-TICK・イカ天世代が切り開いた日本のロック" loading="lazy">
+            </div>
+            <div class="sc-body">
+              <p class="sc-meta"><span class="sc-tag">音楽史</span><span class="sc-date">2026.05.30</span></p>
+              <h3 class="sc-title">バンドブーム第一波【1980年代後半】BOØWY・BUCK-TICK・イカ天世代が切り開いた日本のロック</h3>
+              <p class="sc-desc">続きを読む →</p>
+            </div>
+          </a>
+          <a href="/2026/05/30/japan-music-09-fusion-jazz/" class="series-card">
+            <div class="sc-img-wrap">
+              <img src="/assets/images/thumb-godiego.jpg" alt="カシオペア vs T-SQUARE【1980年代フュージョン】バークリー世代が極めた日本発インストゥルメンタル" loading="lazy">
+            </div>
+            <div class="sc-body">
+              <p class="sc-meta"><span class="sc-tag">音楽史</span><span class="sc-date">2026.05.30</span></p>
+              <h3 class="sc-title">カシオペア vs T-SQUARE【1980年代フュージョン】バークリー世代が極めた日本発インストゥルメンタル</h3>
+              <p class="sc-desc">続きを読む →</p>
+            </div>
+          </a>
+          <a href="/2026/05/30/japan-music-10-visual-kei/" class="series-card">
+            <div class="sc-img-wrap">
+              <img src="/assets/images/thumb-visual-kei.jpg" alt="ヴィジュアル系とハードロック化【1990年代】X JAPAN・hide・GLAYが世界に証明したこと" loading="lazy">
+            </div>
+            <div class="sc-body">
+              <p class="sc-meta"><span class="sc-tag">音楽史</span><span class="sc-date">2026.05.30</span></p>
+              <h3 class="sc-title">ヴィジュアル系とハードロック化【1990年代】X JAPAN・hide・GLAYが世界に証明したこと</h3>
+              <p class="sc-desc">続きを読む →</p>
+            </div>
+          </a>
+          <a href="/2026/05/30/japan-music-11-komuro-jpop/" class="series-card">
+            <div class="sc-img-wrap">
+              <img src="/assets/images/thumb-komuro-jpop.jpg" alt="小室サウンドとJ-POP量産時代【1993〜1999年】TK・avexが変えた日本の音楽産業" loading="lazy">
+            </div>
+            <div class="sc-body">
+              <p class="sc-meta"><span class="sc-tag">音楽史</span><span class="sc-date">2026.05.30</span></p>
+              <h3 class="sc-title">小室サウンドとJ-POP量産時代【1993〜1999年】TK・avexが変えた日本の音楽産業</h3>
+              <p class="sc-desc">続きを読む →</p>
+            </div>
+          </a>
+          <a href="/2026/05/30/japan-music-12-shibuya-kei/" class="series-card">
+            <div class="sc-img-wrap">
+              <img src="/assets/images/thumb-shibuya-kei.jpg" alt="渋谷系・J-R&Bの時代【1993〜2000年】フリッパーズ・ギターから宇多田ヒカルまで" loading="lazy">
+            </div>
+            <div class="sc-body">
+              <p class="sc-meta"><span class="sc-tag">音楽史</span><span class="sc-date">2026.05.30</span></p>
+              <h3 class="sc-title">渋谷系・J-R&Bの時代【1993〜2000年】フリッパーズ・ギターから宇多田ヒカルまで</h3>
+              <p class="sc-desc">続きを読む →</p>
+            </div>
+          </a>
+          <a href="/2026/05/30/japan-music-13-hiphop-rb/" class="series-card">
+            <div class="sc-img-wrap">
+              <img src="/assets/images/thumb-hiphop-rb.jpg" alt="ヒップホップ・R&Bブームの台頭【2000年代】m-flo・SOUL'd OUTが拓いた日本語ラップの世界" loading="lazy">
+            </div>
+            <div class="sc-body">
+              <p class="sc-meta"><span class="sc-tag">音楽史</span><span class="sc-date">2026.05.30</span></p>
+              <h3 class="sc-title">ヒップホップ・R&Bブームの台頭【2000年代】m-flo・SOUL'd OUTが拓いた日本語ラップの世界</h3>
+              <p class="sc-desc">続きを読む →</p>
+            </div>
+          </a>
+          <a href="/2026/05/30/japan-music-14-2000s-idol/" class="series-card">
+            <div class="sc-img-wrap">
+              <img src="/assets/images/thumb-2000s-idol.jpg" alt="2000年代アイドル・着うた時代【2003〜2012年】AKB48とモバイル音楽革命" loading="lazy">
+            </div>
+            <div class="sc-body">
+              <p class="sc-meta"><span class="sc-tag">音楽史</span><span class="sc-date">2026.05.30</span></p>
+              <h3 class="sc-title">2000年代アイドル・着うた時代【2003〜2012年】AKB48とモバイル音楽革命</h3>
+              <p class="sc-desc">続きを読む →</p>
+            </div>
+          </a>
+          <a href="/2026/05/30/japan-music-15-vocaloid-dtm/" class="series-card">
+            <div class="sc-img-wrap">
+              <img src="/assets/images/thumb-vocaloid-dtm.jpg" alt="ボカロ革命とDTM民主化【2007年〜】初音ミクが変えた音楽制作の常識" loading="lazy">
+            </div>
+            <div class="sc-body">
+              <p class="sc-meta"><span class="sc-tag">音楽史</span><span class="sc-date">2026.05.30</span></p>
+              <h3 class="sc-title">ボカロ革命とDTM民主化【2007年〜】初音ミクが変えた音楽制作の常識</h3>
+              <p class="sc-desc">続きを読む →</p>
+            </div>
+          </a>
+          <a href="/2026/05/30/japan-music-16-2010s-band/" class="series-card">
+            <div class="sc-img-wrap">
+              <img src="/assets/images/thumb-2010s-band.jpg" alt="2010年代バンドリバイバル・インディーズ台頭【2010〜2019年】RADWIMPS・星野源・ゲスの極み乙女。" loading="lazy">
+            </div>
+            <div class="sc-body">
+              <p class="sc-meta"><span class="sc-tag">音楽史</span><span class="sc-date">2026.05.30</span></p>
+              <h3 class="sc-title">2010年代バンドリバイバル・インディーズ台頭【2010〜2019年】RADWIMPS・星野源・ゲスの極み乙女。</h3>
+              <p class="sc-desc">続きを読む →</p>
+            </div>
+          </a>
+          <a href="/2026/05/30/japan-music-17-city-pop-revival/" class="series-card">
+            <div class="sc-img-wrap">
+              <img src="/assets/images/thumb-city-pop-revival.jpg" alt="シティポップ・リバイバル現象【2020年代】世界が再発見した日本の「失われた音楽」" loading="lazy">
+            </div>
+            <div class="sc-body">
+              <p class="sc-meta"><span class="sc-tag">音楽史</span><span class="sc-date">2026.05.30</span></p>
+              <h3 class="sc-title">シティポップ・リバイバル現象【2020年代】世界が再発見した日本の「失われた音楽」</h3>
+              <p class="sc-desc">続きを読む →</p>
+            </div>
+          </a>
+          <a href="/2026/05/30/japan-music-18-modern-scene/" class="series-card">
+            <div class="sc-img-wrap">
+              <img src="/assets/images/thumb-modern-scene.jpg" alt="現代の日本音楽シーン【2020年代】Vtuber・サブスク・AI音楽が変えた音楽の作り方" loading="lazy">
+            </div>
+            <div class="sc-body">
+              <p class="sc-meta"><span class="sc-tag">音楽史</span><span class="sc-date">2026.05.30</span></p>
+              <h3 class="sc-title">現代の日本音楽シーン【2020年代】Vtuber・サブスク・AI音楽が変えた音楽の作り方</h3>
+              <p class="sc-desc">続きを読む →</p>
+            </div>
+          </a>
+          </a>
+      </div>
+    </div>
+
+    <!-- シリーズ: コード進行シリーズ -->
+    <div class="series-block">
+      <div class="series-head">
+        <h2 class="series-title">コード進行シリーズ</h2>
+        <div class="series-line"></div>
+        <a href="/series-list.html?series=chord-progression" class="series-all-link">すべて表示（8本）→</a>
+      </div>
+      <div class="series-scroll">
+          <a href="/2026/05/30/chord-progression-01-oudo/" class="series-card">
+            <div class="sc-img-wrap">
+              <img src="/assets/images/thumb-chord-01.jpg" alt="王道進行（Ⅳ-Ⅴ-Ⅲm-Ⅵm）完全解説 代表曲20選＋弾き方ガイド" loading="lazy">
+            </div>
+            <div class="sc-body">
+              <p class="sc-meta"><span class="sc-tag">コード進行</span><span class="sc-date">2026.05.30</span></p>
+              <h3 class="sc-title">王道進行（Ⅳ-Ⅴ-Ⅲm-Ⅵm）完全解説 代表曲20選＋弾き方ガイド</h3>
+              <p class="sc-desc">続きを読む →</p>
+            </div>
+          </a>
+          <a href="/2026/05/30/chord-progression-02-canon/" class="series-card">
+            <div class="sc-img-wrap">
+              <img src="/assets/images/thumb-chord-02.jpg" alt="カノン進行（Ⅰ-Ⅴ-Ⅵm-Ⅲm-Ⅳ-Ⅰ-Ⅳ-Ⅴ）完全解説 代表曲20選" loading="lazy">
+            </div>
+            <div class="sc-body">
+              <p class="sc-meta"><span class="sc-tag">コード進行</span><span class="sc-date">2026.05.30</span></p>
+              <h3 class="sc-title">カノン進行（Ⅰ-Ⅴ-Ⅵm-Ⅲm-Ⅳ-Ⅰ-Ⅳ-Ⅴ）完全解説 代表曲20選</h3>
+              <p class="sc-desc">続きを読む →</p>
+            </div>
+          </a>
+          <a href="/2026/05/30/chord-progression-03-komuro/" class="series-card">
+            <div class="sc-img-wrap">
+              <img src="/assets/images/thumb-chord-03.jpg" alt="小室進行（Ⅵm-Ⅳ-Ⅰ-Ⅴ）完全解説 代表曲20選" loading="lazy">
+            </div>
+            <div class="sc-body">
+              <p class="sc-meta"><span class="sc-tag">コード進行</span><span class="sc-date">2026.05.30</span></p>
+              <h3 class="sc-title">小室進行（Ⅵm-Ⅳ-Ⅰ-Ⅴ）完全解説 代表曲20選</h3>
+              <p class="sc-desc">続きを読む →</p>
+            </div>
+          </a>
+          <a href="/2026/05/30/chord-progression-04-marusa/" class="series-card">
+            <div class="sc-img-wrap">
+              <img src="/assets/images/thumb-chord-04.jpg" alt="丸サ進行（Ⅰ-Ⅵm-Ⅱm-Ⅴ）完全解説 代表曲20選" loading="lazy">
+            </div>
+            <div class="sc-body">
+              <p class="sc-meta"><span class="sc-tag">コード進行</span><span class="sc-date">2026.05.30</span></p>
+              <h3 class="sc-title">丸サ進行（Ⅰ-Ⅵm-Ⅱm-Ⅴ）完全解説 代表曲20選</h3>
+              <p class="sc-desc">続きを読む →</p>
+            </div>
+          </a>
+          <a href="/2026/05/30/chord-progression-05-junkan/" class="series-card">
+            <div class="sc-img-wrap">
+              <img src="/assets/images/thumb-chord-05.jpg" alt="循環コード（Ⅰ-Ⅵm-Ⅳ-Ⅴ）完全解説 代表曲20選" loading="lazy">
+            </div>
+            <div class="sc-body">
+              <p class="sc-meta"><span class="sc-tag">コード進行</span><span class="sc-date">2026.05.30</span></p>
+              <h3 class="sc-title">循環コード（Ⅰ-Ⅵm-Ⅳ-Ⅴ）完全解説 代表曲20選</h3>
+              <p class="sc-desc">続きを読む →</p>
+            </div>
+          </a>
+          <a href="/2026/05/30/chord-progression-06-kanashii/" class="series-card">
+            <div class="sc-img-wrap">
+              <img src="/assets/images/thumb-chord-06.jpg" alt="切ない系進行（Ⅵm-Ⅳ-Ⅴ-Ⅵm）完全解説 代表曲20選" loading="lazy">
+            </div>
+            <div class="sc-body">
+              <p class="sc-meta"><span class="sc-tag">コード進行</span><span class="sc-date">2026.05.30</span></p>
+              <h3 class="sc-title">切ない系進行（Ⅵm-Ⅳ-Ⅴ-Ⅵm）完全解説 代表曲20選</h3>
+              <p class="sc-desc">続きを読む →</p>
+            </div>
+          </a>
+          <a href="/2026/05/30/chord-progression-07-blues/" class="series-card">
+            <div class="sc-img-wrap">
+              <img src="/assets/images/thumb-chord-07.jpg" alt="ブルース進行（12小節ブルース）完全解説 代表曲20選" loading="lazy">
+            </div>
+            <div class="sc-body">
+              <p class="sc-meta"><span class="sc-tag">コード進行</span><span class="sc-date">2026.05.30</span></p>
+              <h3 class="sc-title">ブルース進行（12小節ブルース）完全解説 代表曲20選</h3>
+              <p class="sc-desc">続きを読む →</p>
+            </div>
+          </a>
+          <a href="/2026/05/30/chord-progression-08-cliche/" class="series-card">
+            <div class="sc-img-wrap">
+              <img src="/assets/images/thumb-chord-08.jpg" alt="クリシェ進行（半音下降）完全解説 代表曲20選" loading="lazy">
+            </div>
+            <div class="sc-body">
+              <p class="sc-meta"><span class="sc-tag">コード進行</span><span class="sc-date">2026.05.30</span></p>
+              <h3 class="sc-title">クリシェ進行（半音下降）完全解説 代表曲20選</h3>
+              <p class="sc-desc">続きを読む →</p>
+            </div>
+          </a>
+      </div>
+    </div>
+
+  </section>
 
 <!-- ═══ ABOUT ═══ -->
 <section class="section-about" id="about">
@@ -1028,6 +2275,7 @@
       </div>
     </div>
   </div>
+  </div>
 </section>
 
 <footer class="site-footer">
@@ -1038,7 +2286,7 @@
       </div>
       <div class="footer-links">
         <a href="#series">記事一覧</a>
-        <!-- <a href="#showcase">Showcase</a> -->
+        <a href="#showcase">Showcase</a>
         <a href="#about">About</a>
       </div>
     </div>
@@ -1050,14 +2298,16 @@
   (function() {
     var toggle = document.getElementById('nav-toggle');
     var nav = document.getElementById('site-nav');
-    if (!toggle || !nav) return;
-    toggle.addEventListener('click', function() {
-      nav.classList.toggle('open');
-      toggle.classList.toggle('open');
-    });
-    nav.querySelectorAll('a').forEach(function(a) {
-      a.addEventListener('click', function() { nav.classList.remove('open'); toggle.classList.remove('open'); });
-    });
+    var drawer = document.getElementById('nav-drawer');
+    var overlay = document.getElementById('nav-drawer-overlay');
+    var closeBtn = document.getElementById('drawer-close');
+    function openDrawer() { if (drawer) { drawer.classList.add('open'); overlay.classList.add('open'); } if (toggle) { toggle.classList.add('open'); toggle.setAttribute('aria-label', 'メニューを閉じる'); } }
+    function closeDrawer() { if (drawer) { drawer.classList.remove('open'); overlay.classList.remove('open'); } if (toggle) { toggle.classList.remove('open'); toggle.setAttribute('aria-label', 'メニューを開く'); } }
+    if (toggle) { toggle.addEventListener('click', function() { drawer && drawer.classList.contains('open') ? closeDrawer() : openDrawer(); }); }
+    if (closeBtn) { closeBtn.addEventListener('click', closeDrawer); }
+    if (overlay) { overlay.addEventListener('click', closeDrawer); }
+    if (drawer) { drawer.querySelectorAll('a').forEach(function(a) { a.addEventListener('click', closeDrawer); }); }
+    if (nav) { nav.querySelectorAll('a').forEach(function(a) { a.addEventListener('click', function() { nav.classList.remove('open'); if (toggle) { toggle.classList.remove('open'); toggle.setAttribute('aria-label', 'メニューを開く'); } }); }); }
   })();
 
   (function() {
@@ -1066,13 +2316,13 @@
     var nextBtn = document.getElementById('slider-next');
     var dotsContainer = document.getElementById('slider-dots');
     if (!track) return;
-    var total = track.children.length;
+    var total = track.querySelectorAll('.featured-card').length;
     var current = 0;
     var timer;
     var dots = dotsContainer ? dotsContainer.querySelectorAll('.dot') : [];
     function goTo(n) {
       current = ((n % total) + total) % total;
-      track.style.transform = 'translateX(-' + (current * 100) + '%)';
+      track.style.transform = 'translateX(-' + (current * track.parentElement.offsetWidth) + 'px)';
       dots.forEach(function(d, i) { d.classList.toggle('active', i === current); });
     }
     function startTimer() { clearInterval(timer); timer = setInterval(function() { goTo(current + 1); }, 5000); }
@@ -1089,6 +2339,101 @@
     }, { passive: true });
     startTimer();
   })();
+
+const ALL_POSTS = [
+  {url:"/2026/05/11/daw-guide/",title:"DAWソフトの選び方2026 - 無料から有料まで初心者向け比較ガイド",img:"/assets/images/thumb-effects.png",cat:"daw-software",catLabel:"DAW",catColor:"#67e8f9",catBg:"rgba(6,182,212,.12)",catBorder:"rgba(6,182,212,.25)"},
+  {url:"/2026/05/11/effects-guide/",title:"コンプレッサー・リバーブ・ゲートの使い方 - 音楽制作エフェクター入門",img:"/assets/images/thumb-effects.png",cat:"mix-mastering",catLabel:"MIX",catColor:"#f0abfc",catBg:"rgba(232,121,249,.12)",catBorder:"rgba(232,121,249,.25)"},
+  {url:"/2026/05/11/microphone-guide/",title:"ダイナミックマイクとコンデンサーマイクの違い - 録音・宅録向け選び方ガイド",img:"/assets/images/thumb-microphone.png",cat:"mic",catLabel:"マイク",catColor:"#93c5fd",catBg:"rgba(59,130,246,.12)",catBorder:"rgba(59,130,246,.25)"},
+  {url:"/2026/05/11/mixer-guide/",title:"ミキサーの使い方・選び方入門 - ゲイン・フェーダー・EQの基本を解説",img:"/assets/images/thumb-mixer.png",cat:"audio-interface",catLabel:"オーディオI/F",catColor:"#c4b5fd",catBg:"rgba(129,140,248,.12)",catBorder:"rgba(129,140,248,.25)"},
+  {url:"/2026/05/11/music-production-basics/",title:"音楽制作を始める前に揃えるべき機材・環境【初心者ガイド2026】",img:"/assets/images/thumb-basics.png",cat:"music-production",catLabel:"音楽制作",catColor:"#fde68a",catBg:"rgba(252,211,77,.12)",catBorder:"rgba(252,211,77,.25)"},
+  {url:"/2026/05/12/audio-interface-guide/",title:"オーディオインターフェース選び方ガイド2026 — 初心者におすすめの機種と接続方法",img:"/assets/images/thumb-audio-interface.png",cat:"audio-interface",catLabel:"オーディオI/F",catColor:"#c4b5fd",catBg:"rgba(129,140,248,.12)",catBorder:"rgba(129,140,248,.25)"},
+  {url:"/2026/05/12/budget-setup-guide/",title:"【予算別】DTM初心者の機材セット構成ガイド — 2万円・5万円・10万円",img:"/assets/images/thumb-budget.png",cat:"music-production",catLabel:"音楽制作",catColor:"#fde68a",catBg:"rgba(252,211,77,.12)",catBorder:"rgba(252,211,77,.25)"},
+  {url:"/2026/05/12/headphone-guide/",title:"DTM・宅録用ヘッドフォンおすすめ6選【予算別・2026年版】",img:"/assets/images/thumb-headphone.png",cat:"headphones-monitor",catLabel:"モニター",catColor:"#6ee7b7",catBg:"rgba(52,211,153,.12)",catBorder:"rgba(52,211,153,.25)"},
+  {url:"/2026/05/12/midi-keyboard-guide/",title:"MIDIキーボード初心者おすすめ5選【鍵盤数・機能別ガイド2026年版】",img:"/assets/images/thumb-midi-keyboard.png",cat:"keyboard-piano",catLabel:"鍵盤",catColor:"#d8b4fe",catBg:"rgba(168,85,247,.12)",catBorder:"rgba(168,85,247,.25)"},
+  {url:"/2026/05/12/studio-monitor-guide/",title:"スタジオモニタースピーカー入門 — 自宅DTMでの選び方と設置のコツ",img:"/assets/images/thumb-studio-monitor.png",cat:"headphones-monitor",catLabel:"モニター",catColor:"#6ee7b7",catBg:"rgba(52,211,153,.12)",catBorder:"rgba(52,211,153,.25)"},
+  {url:"/2026/05/17/cable-guide/",title:"音楽制作ケーブル全種類ガイド【XLR・シールド・USB・Thunderbolt・INSERTの違いと高品位ケーブルの必要性】",img:"/assets/images/thumb-cable.png",cat:"audio-interface",catLabel:"オーディオI/F",catColor:"#c4b5fd",catBg:"rgba(129,140,248,.12)",catBorder:"rgba(129,140,248,.25)"},
+  {url:"/2026/05/17/mic-stand-guide/",title:"マイクスタンドの種類と選び方【K&Mスタンド購入ガイド2026】",img:"/assets/images/thumb-mic-stand.png",cat:"mic",catLabel:"マイク",catColor:"#93c5fd",catBg:"rgba(59,130,246,.12)",catBorder:"rgba(59,130,246,.25)"},
+  {url:"/2026/05/17/rack-case-guide/",title:"ラックケース・楽器ケース完全ガイド【ARMOR・DUPLEX・SKBの定番メーカー比較】",img:"/assets/images/thumb-rack-case.png",cat:"audio-interface",catLabel:"オーディオI/F",catColor:"#c4b5fd",catBg:"rgba(129,140,248,.12)",catBorder:"rgba(129,140,248,.25)"},
+  {url:"/2026/05/20/guitar-guide/",title:"エレキギター・アコースティックギター 初心者選び方ガイド【2026年版】",img:"/assets/images/thumb-guitar.png",cat:"guitar-bass",catLabel:"ギター・ベース",catColor:"#fca5a5",catBg:"rgba(248,113,113,.12)",catBorder:"rgba(248,113,113,.25)"},
+  {url:"/2026/05/22/bass-guide/",title:"エレキベース 初心者 始め方ガイド【2026年版】選び方・機材・練習法",img:"/assets/images/thumb-bass.png",cat:"guitar-bass",catLabel:"ギター・ベース",catColor:"#fca5a5",catBg:"rgba(248,113,113,.12)",catBorder:"rgba(248,113,113,.25)"},
+  {url:"/2026/05/22/drum-guide/",title:"電子ドラム 初心者 始め方ガイド【2026年版】選び方・機材・練習法",img:"/assets/images/thumb-drum.png",cat:"drums",catLabel:"ドラム",catColor:"#86efac",catBg:"rgba(34,197,94,.12)",catBorder:"rgba(34,197,94,.25)"},
+  {url:"/2026/05/24/audiostock-guide/",title:"AudioStock 楽曲販売ガイド【2026年版】登録方法・審査基準・収益の仕組みを解説",img:"/assets/images/thumb-audiostock.png",cat:"music-production",catLabel:"音楽制作",catColor:"#fde68a",catBg:"rgba(252,211,77,.12)",catBorder:"rgba(252,211,77,.25)"},
+  {url:"/2026/05/24/band-guide/",title:"バンドの始め方 完全ガイド【2026年版】メンバー募集・スタジオ・初ライブまで",img:"/assets/images/thumb-band.png",cat:"music-production",catLabel:"音楽制作",catColor:"#fde68a",catBg:"rgba(252,211,77,.12)",catBorder:"rgba(252,211,77,.25)"},
+  {url:"/2026/05/24/beatstars-guide/",title:"BeatStars ビート販売ガイド【2026年版】登録方法・価格設定・収益の仕組みを解説",img:"/assets/images/thumb-beatstars.png",cat:"music-production",catLabel:"音楽制作",catColor:"#fde68a",catBg:"rgba(252,211,77,.12)",catBorder:"rgba(252,211,77,.25)"},
+  {url:"/2026/05/24/digital-piano-guide/",title:"デジタルピアノ・電子キーボード 初心者 始め方ガイド【2026年版】選び方・機材・練習法",img:"/assets/images/thumb-digital-piano.jpg",cat:"keyboard-piano",catLabel:"鍵盤",catColor:"#d8b4fe",catBg:"rgba(168,85,247,.12)",catBorder:"rgba(168,85,247,.25)"},
+  {url:"/2026/05/24/guitar-effects-guide/",title:"ギターエフェクター入門ガイド【歪み・空間系・マルチ 種類と選び方2026】",img:"/assets/images/thumb-guitar-effects.jpg",cat:"guitar-bass",catLabel:"ギター・ベース",catColor:"#fca5a5",catBg:"rgba(248,113,113,.12)",catBorder:"rgba(248,113,113,.25)"},
+  {url:"/2026/05/24/mixing-mastering-guide/",title:"MIX・マスタリング入門【2026年版】DAWで始める音楽制作の仕上げ工程",img:"/assets/images/thumb-mixing.jpg",cat:"mix-mastering",catLabel:"MIX",catColor:"#f0abfc",catBg:"rgba(232,121,249,.12)",catBorder:"rgba(232,121,249,.25)"},
+  {url:"/2026/05/24/monitor-headphones-guide/",title:"モニターヘッドフォン選び方ガイド【DTM・宅録・ミックス用おすすめ機種比較2026】",img:"/assets/images/thumb-monitor-headphones.jpg",cat:"headphones-monitor",catLabel:"モニター",catColor:"#6ee7b7",catBg:"rgba(52,211,153,.12)",catBorder:"rgba(52,211,153,.25)"},
+  {url:"/2026/05/24/music-copyright-basics/",title:"音楽著作権の基礎知識【2026年版】DTMクリエイターが知るべき権利と注意点",img:"/assets/images/thumb-copyright.png",cat:"music-production",catLabel:"音楽制作",catColor:"#fde68a",catBg:"rgba(252,211,77,.12)",catBorder:"rgba(252,211,77,.25)"},
+  {url:"/2026/05/24/music-studio-guide/",title:"音楽スタジオ 選び方・予約方法 完全ガイド【2026年版】リハスタ・レコスタの違いと活用術",img:"/assets/images/thumb-music-studio.jpg",cat:"music-production",catLabel:"音楽制作",catColor:"#fde68a",catBg:"rgba(252,211,77,.12)",catBorder:"rgba(252,211,77,.25)"},
+  {url:"/2026/05/24/solo-dtm-setup/",title:"ソロDTM完全セットアップガイド【2026年版】一人で完結する宅録環境の作り方",img:"/assets/images/thumb-solo-dtm.jpg",cat:"music-production",catLabel:"音楽制作",catColor:"#fde68a",catBg:"rgba(252,211,77,.12)",catBorder:"rgba(252,211,77,.25)"},
+  {url:"/2026/05/24/soundproofing-home-studio-guide/",title:"宅録防音対策ガイド【2026年版】自宅スタジオの騒音・反響を解決する方法",img:"/assets/images/thumb-soundproofing.jpg",cat:"recording-techniques",catLabel:"録音",catColor:"#fdba74",catBg:"rgba(251,146,60,.12)",catBorder:"rgba(251,146,60,.25)"},
+  {url:"/2026/05/24/suno-ai-music-guide/",title:"Suno AI音楽生成 使い方ガイド【2026年版】初心者でも1分でプロ品質の楽曲を作る方法",img:"/assets/images/thumb-suno-ai.png",cat:"music-production",catLabel:"音楽制作",catColor:"#fde68a",catBg:"rgba(252,211,77,.12)",catBorder:"rgba(252,211,77,.25)"},
+  {url:"/2026/05/24/vocal-recording-guide/",title:"ボーカル宅録ガイド【マイク選び・録音設定・歌ってみた機材セット完全解説】",img:"/assets/images/thumb-vocal-recording.jpg",cat:"recording-techniques",catLabel:"録音",catColor:"#fdba74",catBg:"rgba(251,146,60,.12)",catBorder:"rgba(251,146,60,.25)"},
+  {url:"/2026/05/24/vst-plugin-guide/",title:"VST・AUプラグイン選び方【2026年版】初心者向け無料・有料おすすめ20選",img:"/assets/images/thumb-vst-plugin.png",cat:"daw-software",catLabel:"DAW",catColor:"#67e8f9",catBg:"rgba(6,182,212,.12)",catBorder:"rgba(6,182,212,.25)"},
+  {url:"/2026/05/29/fender-jazz-bass-guide/",title:"Fender Jazz Bassの特徴・音・選び方ガイド【2026年版】ジャズベースを徹底解説",img:"/assets/images/thumb-jazz-bass.jpg",cat:"guitar-bass",catLabel:"ギター・ベース",catColor:"#fca5a5",catBg:"rgba(248,113,113,.12)",catBorder:"rgba(248,113,113,.25)"},
+  {url:"/2026/05/29/fender-precision-bass-guide/",title:"Fender Precision Bassの特徴・音・選び方ガイド【2026年版】プレシジョンベースを徹底解説",img:"/assets/images/thumb-precision-bass.jpg",cat:"guitar-bass",catLabel:"ギター・ベース",catColor:"#fca5a5",catBg:"rgba(248,113,113,.12)",catBorder:"rgba(248,113,113,.25)"},
+  {url:"/2026/05/29/fender-stratocaster-guide/",title:"Fender Stratocasterの特徴・音・選び方ガイド【2026年版】ストラトキャスターを徹底解説",img:"/assets/images/thumb-stratocaster.jpg",cat:"guitar-bass",catLabel:"ギター・ベース",catColor:"#fca5a5",catBg:"rgba(248,113,113,.12)",catBorder:"rgba(248,113,113,.25)"},
+  {url:"/2026/05/29/fender-telecaster-guide/",title:"Fender Telecasterの特徴・音・選び方ガイド【2026年版】テレキャスターを徹底解説",img:"/assets/images/thumb-telecaster.jpg",cat:"guitar-bass",catLabel:"ギター・ベース",catColor:"#fca5a5",catBg:"rgba(248,113,113,.12)",catBorder:"rgba(248,113,113,.25)"},
+  {url:"/2026/05/29/gibson-les-paul-custom-guide/",title:"Gibson Les Paul Customの特徴・音・選び方ガイド【2026年版】レスポールの最高峰",img:"/assets/images/thumb-les-paul-custom.jpg",cat:"guitar-bass",catLabel:"ギター・ベース",catColor:"#fca5a5",catBg:"rgba(248,113,113,.12)",catBorder:"rgba(248,113,113,.25)"},
+  {url:"/2026/05/29/fender-jazzmaster-guide/",title:"Fender Jazzmasterの特徴・音・選び方ガイド【2026年版】ジャズマスターを徹底解説",img:"/assets/images/thumb-jazzmaster.jpg",cat:"guitar-bass",catLabel:"ギター・ベース",catColor:"#fca5a5",catBg:"rgba(248,113,113,.12)",catBorder:"rgba(248,113,113,.25)"},
+  {url:"/2026/05/29/fender-jaguar-guide/",title:"Fender Jaguarの特徴・音・選び方ガイド【2026年版】ジャガーを徹底解説",img:"/assets/images/thumb-jaguar.jpg",cat:"guitar-bass",catLabel:"ギター・ベース",catColor:"#fca5a5",catBg:"rgba(248,113,113,.12)",catBorder:"rgba(248,113,113,.25)"},
+  {url:"/2026/05/29/musicman-stingray-bass-guide/",title:"Music Man StingRay Bassの特徴・音・選び方ガイド【2026年版】スティングレイを徹底解説",img:"/assets/images/thumb-stingray-bass.jpg",cat:"guitar-bass",catLabel:"ギター・ベース",catColor:"#fca5a5",catBg:"rgba(248,113,113,.12)",catBorder:"rgba(248,113,113,.25)"},
+  {url:"/2026/05/29/guitar-bass-pickup-guide/",title:"ギター・ベースのピックアップ入門ガイド【2026年版】パッシブ/アクティブ/種類と選び方",img:"/assets/images/thumb-pickup-guide.jpg",cat:"guitar-bass",catLabel:"ギター・ベース",catColor:"#fca5a5",catBg:"rgba(248,113,113,.12)",catBorder:"rgba(248,113,113,.25)"},
+  {url:"/2026/05/30/japan-music-01-gs-boom/",title:"グループサウンズ革命【1960年代】エレキギターが日本を変えた日",img:"/assets/images/thumb-gs-boom.jpg",cat:"music-history",catLabel:"音楽史",catColor:"#fb923c",catBg:"rgba(251,146,60,.12)",catBorder:"rgba(251,146,60,.25)"},
+  {url:"/2026/05/30/japan-music-02-folk-new-music/",title:"フォーク・ニューミュージックの誕生【1970年代】拓郎・陽水・ユーミンが変えた日本の音楽",img:"/assets/images/thumb-folk-new-music.jpg",cat:"music-history",catLabel:"音楽史",catColor:"#fb923c",catBg:"rgba(251,146,60,.12)",catBorder:"rgba(251,146,60,.25)"},
+  {url:"/2026/05/30/japan-music-03-idol-candies-era/",title:"キャンディーズ・ピンクレディーと歌謡曲黄金期【1970年代中期】アイドルが生んだ職人サウンド",img:"/assets/images/thumb-idol-candies.jpg",cat:"music-history",catLabel:"音楽史",catColor:"#fb923c",catBg:"rgba(251,146,60,.12)",catBorder:"rgba(251,146,60,.25)"},
+  {url:"/2026/05/30/japan-music-04-godiego-fusion/",title:"ゴダイゴとフュージョン時代【1970年代後期】バークリー世代が変えた日本の音楽水準",img:"/assets/images/thumb-godiego-fusion.jpg",cat:"music-history",catLabel:"音楽史",catColor:"#fb923c",catBg:"rgba(251,146,60,.12)",catBorder:"rgba(251,146,60,.25)"},
+  {url:"/2026/05/30/japan-music-05-ymo-techno/",title:"YMOとテクノポップ革命【1978〜1983年】シンセとシーケンサーが世界を変えた",img:"/assets/images/thumb-ymo-techno.jpg",cat:"music-history",catLabel:"音楽史",catColor:"#fb923c",catBg:"rgba(251,146,60,.12)",catBorder:"rgba(251,146,60,.25)"},
+  {url:"/2026/05/30/japan-music-06-80s-idol-production/",title:"80年代アイドル黄金期の音楽制作【1980〜1988年】松田聖子・中森明菜を支えた職人サウンド",img:"/assets/images/thumb-80s-idol.jpg",cat:"music-history",catLabel:"音楽史",catColor:"#fb923c",catBg:"rgba(251,146,60,.12)",catBorder:"rgba(251,146,60,.25)"},
+  {url:"/2026/05/30/japan-music-07-band-boom/",title:"バンドブーム第一波【1980年代後半】BOØWY・バクチク・イカ天世代が切り開いた日本のロック",img:"/assets/images/thumb-band-boom.jpg",cat:"music-history",catLabel:"音楽史",catColor:"#fb923c",catBg:"rgba(251,146,60,.12)",catBorder:"rgba(251,146,60,.25)"},
+  {url:"/2026/05/30/japan-music-08-visual-kei/",title:"ヴィジュアル系とハードロック化【1990年代】X JAPAN・hide・GLAYが世界に証明したこと",img:"/assets/images/thumb-visual-kei.jpg",cat:"music-history",catLabel:"音楽史",catColor:"#fb923c",catBg:"rgba(251,146,60,.12)",catBorder:"rgba(251,146,60,.25)"},
+  {url:"/2026/05/30/japan-music-09-komuro-jpop/",title:"小室サウンドとJ-POP量産時代【1993〜1999年】TK・avexが変えた日本の音楽産業",img:"/assets/images/thumb-komuro-jpop.jpg",cat:"music-history",catLabel:"音楽史",catColor:"#fb923c",catBg:"rgba(251,146,60,.12)",catBorder:"rgba(251,146,60,.25)"},
+  {url:"/2026/05/30/japan-music-10-hiphop-rb/",title:"ヒップホップ・R&Bブームの台頭【2000年代】m-flo・SOUL'd OUTが拓いた日本語ラップの世界",img:"/assets/images/thumb-hiphop-rb.jpg",cat:"music-history",catLabel:"音楽史",catColor:"#fb923c",catBg:"rgba(251,146,60,.12)",catBorder:"rgba(251,146,60,.25)"},
+  {url:"/2026/05/30/japan-music-11-vocaloid-dtm/",title:"ボカロ革命とDTM民主化【2007年〜】初音ミクが変えた音楽制作の常識",img:"/assets/images/thumb-vocaloid-dtm.jpg",cat:"music-history",catLabel:"音楽史",catColor:"#fb923c",catBg:"rgba(251,146,60,.12)",catBorder:"rgba(251,146,60,.25)"},
+  {url:"/2026/05/30/japan-music-12-city-pop-revival/",title:"シティポップ・リバイバル現象【2020年代】世界が再発見した日本の「失われた音楽」",img:"/assets/images/thumb-city-pop-revival.jpg",cat:"music-history",catLabel:"音楽史",catColor:"#fb923c",catBg:"rgba(251,146,60,.12)",catBorder:"rgba(251,146,60,.25)"},
+  {url:"/2026/05/30/japan-music-13-modern-scene/",title:"現代の日本音楽シーン【2020年代】Vtuber・サブスク・AI音楽が変えた音楽の作り方",img:"/assets/images/thumb-modern-scene.jpg",cat:"music-history",catLabel:"音楽史",catColor:"#fb923c",catBg:"rgba(251,146,60,.12)",catBorder:"rgba(251,146,60,.25)"},
+  {url:"/2026/05/30/chord-progression-01-oudo/",title:"王道進行（Ⅳ-Ⅴ-Ⅲm-Ⅵm）完全解説【コード進行シリーズ #01】代表曲20選＋弾き方ガイド",img:"/assets/images/thumb-chord-01.jpg",cat:"chord-progression",catLabel:"コード進行",catColor:"#a78bfa",catBg:"rgba(139,92,246,.12)",catBorder:"rgba(139,92,246,.25)"},
+  {url:"/2026/05/30/chord-progression-02-canon/",title:"カノン進行（Ⅰ-Ⅴ-Ⅵm-Ⅲm-Ⅳ-Ⅰ-Ⅳ-Ⅴ）完全解説【コード進行シリーズ #02】代表曲20選",img:"/assets/images/thumb-chord-02.jpg",cat:"chord-progression",catLabel:"コード進行",catColor:"#a78bfa",catBg:"rgba(139,92,246,.12)",catBorder:"rgba(139,92,246,.25)"},
+  {url:"/2026/05/30/chord-progression-03-komuro/",title:"小室進行（Ⅵm-Ⅳ-Ⅰ-Ⅴ）完全解説【コード進行シリーズ #03】代表曲20選",img:"/assets/images/thumb-chord-03.jpg",cat:"chord-progression",catLabel:"コード進行",catColor:"#a78bfa",catBg:"rgba(139,92,246,.12)",catBorder:"rgba(139,92,246,.25)"},
+  {url:"/2026/05/30/chord-progression-04-marusa/",title:"丸サ進行（Ⅰ-Ⅵm-Ⅱm-Ⅴ）完全解説【コード進行シリーズ #04】代表曲20選",img:"/assets/images/thumb-chord-04.jpg",cat:"chord-progression",catLabel:"コード進行",catColor:"#a78bfa",catBg:"rgba(139,92,246,.12)",catBorder:"rgba(139,92,246,.25)"},
+  {url:"/2026/05/30/chord-progression-05-junkan/",title:"循環コード（Ⅰ-Ⅵm-Ⅳ-Ⅴ）完全解説【コード進行シリーズ #05】代表曲20選",img:"/assets/images/thumb-chord-05.jpg",cat:"chord-progression",catLabel:"コード進行",catColor:"#a78bfa",catBg:"rgba(139,92,246,.12)",catBorder:"rgba(139,92,246,.25)"},
+  {url:"/2026/05/30/chord-progression-06-kanashii/",title:"切ない系進行（Ⅵm-Ⅳ-Ⅴ-Ⅵm）完全解説【コード進行シリーズ #06】代表曲20選",img:"/assets/images/thumb-chord-06.jpg",cat:"chord-progression",catLabel:"コード進行",catColor:"#a78bfa",catBg:"rgba(139,92,246,.12)",catBorder:"rgba(139,92,246,.25)"},
+  {url:"/2026/05/30/chord-progression-07-blues/",title:"ブルース進行（12小節ブルース）完全解説【コード進行シリーズ #07】代表曲20選",img:"/assets/images/thumb-chord-07.jpg",cat:"chord-progression",catLabel:"コード進行",catColor:"#a78bfa",catBg:"rgba(139,92,246,.12)",catBorder:"rgba(139,92,246,.25)"},
+  {url:"/2026/05/30/chord-progression-08-cliche/",title:"クリシェ進行（半音下降）完全解説【コード進行シリーズ #08】代表曲20選",img:"/assets/images/thumb-chord-08.jpg",cat:"chord-progression",catLabel:"コード進行",catColor:"#a78bfa",catBg:"rgba(139,92,246,.12)",catBorder:"rgba(139,92,246,.25)"}
+];
+const CAT_INFO = {
+  "mic": {label:"マイク",color:"#93c5fd",bg:"rgba(59,130,246,.12)",border:"rgba(59,130,246,.25)"},
+  "audio-interface": {label:"オーディオI/F",color:"#c4b5fd",bg:"rgba(129,140,248,.12)",border:"rgba(129,140,248,.25)"},
+  "headphones-monitor": {label:"モニター",color:"#6ee7b7",bg:"rgba(52,211,153,.12)",border:"rgba(52,211,153,.25)"},
+  "daw-software": {label:"DAW",color:"#67e8f9",bg:"rgba(6,182,212,.12)",border:"rgba(6,182,212,.25)"},
+  "mix-mastering": {label:"MIX",color:"#f0abfc",bg:"rgba(232,121,249,.12)",border:"rgba(232,121,249,.25)"},
+  "recording-techniques": {label:"録音",color:"#fdba74",bg:"rgba(251,146,60,.12)",border:"rgba(251,146,60,.25)"},
+  "guitar-bass": {label:"ギター・ベース",color:"#fca5a5",bg:"rgba(248,113,113,.12)",border:"rgba(248,113,113,.25)"},
+  "drums": {label:"ドラム",color:"#86efac",bg:"rgba(34,197,94,.12)",border:"rgba(34,197,94,.25)"},
+  "keyboard-piano": {label:"鍵盤",color:"#d8b4fe",bg:"rgba(168,85,247,.12)",border:"rgba(168,85,247,.25)"},
+  "music-production": {label:"音楽制作",color:"#fde68a",bg:"rgba(252,211,77,.12)",border:"rgba(252,211,77,.25)"},
+  "music-history": {label:"音楽史",color:"#fb923c",bg:"rgba(251,146,60,.12)",border:"rgba(251,146,60,.25)"}
+};
+
+// 動的カテゴリー本数更新
+(function() {
+  var counts = {};
+  ALL_POSTS.forEach(function(p) {
+    counts[p.cat] = (counts[p.cat] || 0) + 1;
+  });
+  document.querySelectorAll('.cat-sidebar-item').forEach(function(item) {
+    var href = item.getAttribute('href') || '';
+    var m = href.match(/series=([^&]+)/);
+    if (!m) return;
+    var cat = m[1];
+    var countEl = item.querySelector('.cat-sidebar-count');
+    if (countEl && counts[cat]) {
+      countEl.textContent = counts[cat] + '本';
+    }
+  });
+})();
+
 </script>
 </body>
 </html>
