@@ -5,7 +5,7 @@ description: "一人で作曲・録音・MIX・配信まで完結させるため
 date: 2026-05-24
 categories: [gear]
 tags: [DTM, 宅録, DAW, ソロ制作, 作曲, 音楽制作環境, セットアップ]
-image: /assets/images/thumb-solo-dtm.png
+image: /assets/images/thumb-solo-dtm.jpg
 ---
 
 ## ソロDTMとは — 一人で音楽制作を完結させる
@@ -45,7 +45,7 @@ image: /assets/images/thumb-solo-dtm.png
 **どちらでも本格的なDTMは可能です。** 選び方のポイントはDAWの好みです。
 
 - **Logic Pro を使いたい** → Mac一択（Mac専用）
-- **Cubase / Ableton / FL Studio** → どちらでもOK
+- **Cubase / Ableton / FL Studio**<a href="https://h.accesstrade.net/sp/cc?rk=01001xqc00os63&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fproducts%2Fdetail%2Fitem%2F324282%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="font-size:.8rem;color:#1e3a5f;font-weight:600;margin-left:.3em;">🛒</a> → どちらでもOK
 - **コストを抑えたい** → Windows＋Reaper（¥6,000）が最安構成
 
 ### パソコンの最低スペック目安
@@ -66,8 +66,8 @@ image: /assets/images/thumb-solo-dtm.png
 | **GarageBand** | Mac | 無料 | シンプル・直感的操作 | Mac初心者・スマートなUI好き |
 | **Logic Pro** | Mac | ¥32,400 | 豊富な音源・プロ品質 | Mac愛用者・本格志向 |
 | **Cubase** | Win/Mac | ¥33,000〜 | 業界標準・機能豊富 | レコーディング・ポップス制作 |
-| **Ableton Live** | Win/Mac | ¥43,780〜 | ループ・ライブ演奏が強い | EDM・ライブパフォーマンス |
-| **FL Studio** | Win/Mac | ¥17,600〜 | ビート制作・直感的UI | ビートメイカー・ヒップホップ |
+| **Ableton Live**<a href="https://h.accesstrade.net/sp/cc?rk=01001xqc00os63&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fproducts%2Fdetail%2Fitem%2F364520%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="font-size:.8rem;color:#1e3a5f;font-weight:600;margin-left:.3em;">🛒</a> | Win/Mac | ¥43,780〜 | ループ・ライブ演奏が強い | EDM・ライブパフォーマンス |
+| **FL Studio**<a href="https://h.accesstrade.net/sp/cc?rk=01001xqc00os63&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fproducts%2Fdetail%2Fitem%2F372831%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="font-size:.8rem;color:#1e3a5f;font-weight:600;margin-left:.3em;">🛒</a> | Win/Mac | ¥17,600〜 | ビート制作・直感的UI | ビートメイカー・ヒップホップ |
 | **Reaper** | Win/Mac | ¥6,000〜 | 軽量・安価・高カスタマイズ | 予算重視・自由に設定したい |
 
 **完全初心者ならGarageBand（Mac）またはCubase Elements（Win/Mac）から始めるのがおすすめです。**
@@ -138,14 +138,14 @@ image: /assets/images/thumb-solo-dtm.png
 ---
 
 <div style="display:flex;gap:.75rem;margin:2rem 0;">
-<div style="flex:1;padding:1.2rem 1.5rem;background:#f0f9ff;border-left:4px solid #0ea5e9;border-radius:8px;">
-<p style="margin:0 0 .6rem;font-weight:bold;font-size:1rem;">&#x1F3B9; サウンドハウスでDTM機材をチェック</p>
-<a href="https://h.accesstrade.net/sp/cc?rk=01001xqc00os63&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fsearch%2Findex%2F%3Fsearch_all%3D%E3%82%AA%E3%83%BC%E3%83%87%E3%82%A3%E3%82%AA%E3%82%A4%E3%83%B3%E3%82%BF%E3%83%BC%E3%83%95%E3%82%A7%E3%83%BC%E3%82%B9" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="display:inline-block;background:#0369a1;color:#fff;padding:.45rem 1.1rem;border-radius:4px;text-decoration:none;font-weight:bold;font-size:.95rem;">サウンドハウスでオーディオIF・DTM機材を探す →</a>
+<div style="flex:1;padding:.8rem 1rem 1rem;background:#e8f4fb;border-radius:10px;border:1px solid rgba(8,145,178,.25);">
+<p style="margin:0 0 .5rem;color:#374151;font-size:.82rem;font-weight:bold;">オーディオインターフェース をサウンドハウスで探す</p>
+<a href="https://h.accesstrade.net/sp/cc?rk=01001xqc00os63&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fsearch%2Findex%2F%3Fsearch_all%3D%E3%82%AA%E3%83%BC%E3%83%87%E3%82%A3%E3%82%AA%E3%82%A4%E3%83%B3%E3%82%BF%E3%83%BC%E3%83%95%E3%82%A7%E3%83%BC%E3%82%B9" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="display:block;text-decoration:none;"><img src="/assets/images/btn-soundhouse.jpg" alt="サウンドハウスで探す" width="240" style="height:auto;border-radius:8px;display:block;"></a>
 <img src="https://h.accesstrade.net/sp/rr?rk=01001xqc00os63" width="1" height="1" border="0" alt="" loading="lazy">
 </div>
-<div style="flex:1;padding:1.2rem 1.5rem;background:#fff7ed;border-left:4px solid #f97316;border-radius:8px;">
-<p style="margin:0 0 .6rem;font-weight:bold;font-size:1rem;">&#x1F6D2; 楽天市場でDTM機材をチェック</p>
-<a href="https://hb.afl.rakuten.co.jp/hgc/0b15ddc7.28c5c9ed.0b15ddc8.5d23dd4d/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2FDTM%2B%E5%88%9D%E5%BF%83%E8%80%85%2B%E6%A9%9F%E6%9D%90%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="display:inline-block;background:#bf0000;color:#fff;padding:.45rem 1.1rem;border-radius:4px;text-decoration:none;font-weight:bold;font-size:.95rem;">楽天市場でDTM機材を探す →</a>
+<div style="flex:1;padding:.8rem 1rem 1rem;background:#fdf3ee;border-radius:10px;border:1px solid rgba(234,88,12,.25);">
+<p style="margin:0 0 .5rem;color:#374151;font-size:.82rem;font-weight:bold;">オーディオインターフェース を楽天市場で探す</p>
+<a href="https://hb.afl.rakuten.co.jp/hgc/0b15ddc7.28c5c9ed.0b15ddc8.5d23dd4d/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2FDTM%2B%E5%88%9D%E5%BF%83%E8%80%85%2B%E6%A9%9F%E6%9D%90%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="display:block;text-decoration:none;"><img src="/assets/images/btn-rakuten.jpg" alt="楽天市場で探す" width="240" style="height:auto;border-radius:8px;display:block;"></a>
 <img src="//i.moshimo.com/af/i/impression?a_id=5565352&amp;p_id=54&amp;pc_id=54&amp;pl_id=616" width="1" height="1" style="border:none;" alt="" loading="lazy">
 </div>
 </div>
