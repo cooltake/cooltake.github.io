@@ -1,36 +1,41 @@
-﻿---
+---
 layout: post
 title: "フォーク・ニューミュージックの誕生【1970年代】拓郎・陽水・ユーミンが変えた日本の音楽"
 date: 2026-05-30
 tags: [ギター, 録音, 音楽制作, 初心者]
-image: /assets/images/thumb-folk-new-music.jpg
 description: "1970年代、吉田拓郎・井上陽水・荒井由実が牽引したフォーク・ニューミュージック。アコギ一本で社会を歌い、マルチトラック録音が日本の音楽制作を変えた時代の記録。"
+image: /assets/images/thumb-folk-new-music.jpg
 ---
-
 
 ## GSの反動から生まれたフォーク
 
 グループサウンズブームが去った1970年代初頭、日本の音楽シーンに新たなうねりが生まれた。エレキギターの「派手さ」への反動として、**アコースティックギター一本を抱えた若者たちが自分の言葉で歌い始めた**のだ。
 
-吉田拓郎、井上陽水、かぐや姫（南こうせつ）、フォーリーブス——彼らが持ち込んだのは、アメリカのボブ・ディラン、CSN&Yの影響を受けながらも徹底的に「日本語で」表現するスタイルだった。
+吉田拓郎、井上陽水、かぐや姫（南こうせつ）——彼らが持ち込んだのは、アメリカのボブ・ディラン、CSN&Yの影響を受けながらも徹底的に「日本語で」表現するスタイルだった。
 
----
+<figure style="margin:1.5rem 0;">
+<img src="/assets/images/japan-music-02-img1.jpg" alt="1970年代 日本のフォークシンガー" style="width:100%;border-radius:10px;height:auto;" loading="lazy">
+<figcaption style='font-size:.8rem;color:#9ca3af;text-align:center;margin-top:.3rem;'>喫茶店でギターを弾く1970年代のフォークシンガー（イメージ）</figcaption>
+</figure>
+
 
 ## 時代を分けた3つのムーブメント
 
 ### 1. フォークソング運動（1970〜73年）
 
-「友よ」「イムジン河」「神田川」——社会への問いかけと、日常のリアルを歌う。四畳半フォークと呼ばれた内省的なスタイルが若者の共感を得た。
+「友よ」「イムジン河」「神田川」——社会への問いかけと、日常のリアルを歌う。**四畳半フォーク**と呼ばれた内省的なスタイルが若者の共感を得た。
+
+この時代の歌詞の特徴は「具体的な生活の描写」だ。「神田川」では「二十四色のクレパス買って あなたはわたしに似せて描く」という一節が、当時の若者の日常をそのまま切り取った。音楽が「社会問題を叫ぶもの」から「自分たちの日常を歌うもの」へと変わった瞬間だった。
 
 **使用機材**
-- **Martin D-28 / Gibson J-45**：フォーク御三家の愛用アコギ
-- **YAMAHA FG-180**：国産フォークギターの代名詞。価格の安さで日本中に普及
+- **Martin D-28 / Gibson J-45**<a href="https://h.accesstrade.net/sp/cc?rk=01001xqc00os63&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fproducts%2Fdetail%2Fitem%2F52519%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="font-size:.8rem;color:#1e3a5f;font-weight:600;margin-left:.3em;">🛒 サウンドハウスで見る</a>：フォーク御三家の愛用アコギ
+- **YAMAHA FG-180**：国産フォークギターの代名詞。1万円台という安さで日本中に普及し、フォークブームを底辺から支えた
 
 ### 2. ニューミュージックへの進化（1974〜79年）
 
 荒井由実（ユーミン）の登場が転換点。**スタジオ録音の高度化**とともに、アレンジが一気に洗練された。
 
-松任谷由実のアルバム『ひこうき雲』（1973年）で使われたマルチトラック録音技術——これ以降、日本のポップスは「スタジオでの音作り」という概念を獲得する。
+松任谷由実のアルバム『ひこうき雲』（1973年）——当時24歳の松任谷正隆がプロデュースしたこの作品は、日本のポップスに「スタジオでの音作りという芸術」を持ち込んだ。ストリングスとアコギ、エレピが絶妙なバランスで絡み合うサウンドは、それまでの日本のフォーク・歌謡曲のどちらとも違った。
 
 **スタジオ機材の変化**
 | 機材 | 変化 |
@@ -41,15 +46,14 @@ description: "1970年代、吉田拓郎・井上陽水・荒井由実が牽引�
 
 ### 3. ニューミュージック全盛（1979〜85年）
 
-大滝詠一、山下達郎、竹内まりや——後に「シティポップ」と呼ばれるサウンドの萌芽がここにある。
+大滝詠一、山下達郎、竹内まりや——後に「シティポップ」と呼ばれるサウンドの萌芽がここにある。大滝詠一の「ロングバケイション」（1981年）は発売から3ヶ月で100万枚を突破し、「スロー・バラード消費」の時代を象徴する作品となった。
 
----
 
 ## フォーク・ニューミュージックの音作りの特徴
 
-<div style="background:linear-gradient(135deg,#1a2e1a,#1e3a1e);border-radius:12px;padding:1.5rem;margin:1.5rem 0;border:1px solid rgba(74,222,128,.3);">
-<h3 style="color:#86efac;margin-top:0;">🎵 サウンドの特徴</h3>
-<ul style="color:#e2e8f0;">
+<div style="background:rgba(255,255,255,0.10);border-radius:12px;padding:1.5rem;margin:1.5rem 0;border:1px solid rgba(74,222,128,.3);">
+<h3 style="color:#111827;margin-top:0;">🎵 サウンドの特徴</h3>
+<ul style="color:#374151;">
 <li><strong>アコギの存在感</strong>：カポタスト多用、オープンチューニング</li>
 <li><strong>ストリングスアレンジ</strong>：生オーケストラ録音が楽曲に深みを加えた</li>
 <li><strong>コーラスワーク</strong>：CSN&Y的な多重ハーモニー</li>
@@ -57,7 +61,22 @@ description: "1970年代、吉田拓郎・井上陽水・荒井由実が牽引�
 </ul>
 </div>
 
----
+
+## 代表楽曲を体験する
+
+| 楽曲 | アーティスト | 視聴 |
+|------|------------|------|
+| 「結婚しようよ」 | 吉田拓郎（1972年） | <a href="https://www.youtube.com/results?search_query=%E5%90%89%E7%94%B0%E6%8B%93%E9%83%8E%20%E7%B5%90%E5%A9%9A%E3%81%97%E3%82%88%E3%81%86%E3%82%88" target="_blank" rel="nofollow noopener" style="display:inline-flex;align-items:center;gap:.4em;color:#1e3a5f;text-decoration:none;font-weight:600;">▶ 動画を見る</a> |
+| 「夢の中へ」 | 井上陽水（1973年） | <a href="https://www.youtube.com/results?search_query=%E4%BA%95%E4%B8%8A%E9%99%BD%E6%B0%B4%20%E5%A4%A2%E3%81%AE%E4%B8%AD%E3%81%B8" target="_blank" rel="nofollow noopener" style="display:inline-flex;align-items:center;gap:.4em;color:#1e3a5f;text-decoration:none;font-weight:600;">▶ 動画を見る</a> |
+| 「神田川」 | かぐや姫（1973年） | <a href="https://www.youtube.com/results?search_query=%E3%81%8B%E3%81%90%E3%82%84%E5%A7%AB%20%E7%A5%9E%E7%94%B0%E5%B7%9D" target="_blank" rel="nofollow noopener" style="display:inline-flex;align-items:center;gap:.4em;color:#1e3a5f;text-decoration:none;font-weight:600;">▶ 動画を見る</a> |
+| 「ひこうき雲」 | 荒井由実（1973年） | <a href="https://www.youtube.com/results?search_query=%E8%8D%92%E4%BA%95%E7%94%B1%E5%AE%9F%20%E3%81%B2%E3%81%93%E3%81%86%E3%81%8D%E9%9B%B2" target="_blank" rel="nofollow noopener" style="display:inline-flex;align-items:center;gap:.4em;color:#1e3a5f;text-decoration:none;font-weight:600;">▶ 動画を見る</a> |
+| 「LONG VACATION」 | 大滝詠一（1981年） | <a href="https://www.youtube.com/results?search_query=%E5%A4%A7%E6%BB%9D%E8%A9%A0%E4%B8%80%20%E3%83%AD%E3%83%B3%E3%82%B0%E3%83%90%E3%82%B1%E3%82%A4%E3%82%B7%E3%83%A7%E3%83%B3" target="_blank" rel="nofollow noopener" style="display:inline-flex;align-items:center;gap:.4em;color:#1e3a5f;text-decoration:none;font-weight:600;">▶ 動画を見る</a> |
+
+### CDを探す
+
+<div style="margin:.8rem 0;"><span style="display:block;font-size:.78rem;color:#4b5563;margin-bottom:3px;margin-top:6px;">🔍 楽天市場で探す</span>
+<a href="https://hb.afl.rakuten.co.jp/ichiba/0b15ddc7.28c5c9ed.0b15ddc8.5d23dd4d/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%E5%90%89%E7%94%B0%E6%8B%93%E9%83%8E%20%E4%BA%95%E4%B8%8A%E9%99%BD%E6%B0%B4%20%E8%8D%92%E4%BA%95%E7%94%B1%E5%AE%9F%20CD%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="display:inline-block;text-decoration:none;"><img src="/assets/images/btn-rakuten.jpg" alt="楽天市場で探す" width="240" style="height:auto;border-radius:8px;display:block;"></a></div>
+
 
 ## 現代でこのサウンドを再現する
 
@@ -65,82 +84,47 @@ description: "1970年代、吉田拓郎・井上陽水・荒井由実が牽引�
 
 フォークサウンドの核心はアコギ。現代でもMartin、Gibsonの定番モデルは健在：
 
-<div style="margin:1.5rem 0;">
-<a href="https://hb.afl.rakuten.co.jp/ichiba/54518dd8.3792440a.54518dd9.03b99be4/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2FMartin%2B%25E3%2582%25A2%25E3%2582%25B3%25E3%2583%2592%25E3%2582%2599%25E3%2582%25BF%25E3%2583%25BC%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="display:inline-block;text-decoration:none;">
-<img src="/assets/images/btn-rakuten.jpg" alt="楽天市場で探す" width="600" height="155" style="max-width:100%;height:auto;border-radius:14px;display:block;">
-</a>
-</div>
+<figure style="margin:1.5rem 0;">
+<img src="/assets/images/japan-music-02-img2.jpg" alt="Martin D-28 Gibson J-45 アコースティックギター" style="width:100%;border-radius:10px;height:auto;" loading="lazy">
+<figcaption style='font-size:.8rem;color:#9ca3af;text-align:center;margin-top:.3rem;'>フォーク時代の定番アコギ Martin D-28（左）と Gibson J-45（右）</figcaption>
+</figure>
+
 
 ### テープエコーをプラグインで再現
 
 Roland RE-201の温かいエコーサウンドは、現代ではプラグインで手軽に再現できる：
 
-- **Roland RE-201 Space Echo**（公式ソフトウェア版）
+- **Roland RE-201 Space Echo**<a href="https://h.accesstrade.net/sp/cc?rk=01001xqc00os63&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fproducts%2Fdetail%2Fitem%2F305846%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="font-size:.8rem;color:#1e3a5f;font-weight:600;margin-left:.3em;">🛒 サウンドハウスで見る</a>（公式ソフトウェア版）
 - **Valhalla Delay**：テープサチュレーション対応
-- **Arturia Tape MELLO-FI**：アナログテープ質感
+- **Arturia Tape MELLO-FI**<a href="https://h.accesstrade.net/sp/cc?rk=01001xqc00os63&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fproducts%2Fdetail%2Fitem%2F385582%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="font-size:.8rem;color:#1e3a5f;font-weight:600;margin-left:.3em;">🛒 サウンドハウスで見る</a>：アナログテープ質感
 
-<div style="margin:1.5rem 0;">
-<a href="https://h.accesstrade.net/sp/cc?rk=0100pdhv00n9hy&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fsearch%2Findex%3Fs_category_cd%3D120%26s_maker_cd%3D%26s_search_all%3D%26s_ord%3D" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="display:inline-block;text-decoration:none;">
-<img src="/assets/images/btn-soundhouse.jpg" alt="サウンドハウスで探す" width="600" height="155" style="max-width:100%;height:auto;border-radius:14px;display:block;">
-</a>
-</div>
 
----
-
-## フォークが残したもの
-
-フォーク・ニューミュージック世代が確立した「日本語ポップスの歌詞観」は、今もJ-POPの根幹をなしている。「自分の言葉で、自分の音楽を作る」——このDIY精神は、現代のDTMクリエイターにも脈々と受け継がれている。
-
----
-
-## フォーク・ニューミュージックを聴く・学ぶ・機材を揃える
-
-### 関連アルバム・CDを探す
-
-<div style="margin:1.5rem 0;">
-<a href="https://hb.afl.rakuten.co.jp/ichiba/54518dd8.3792440a.54518dd9.03b99be4/?pc=https%3A//search.rakuten.co.jp/search/mall/%E5%90%89%E7%94%B0%E6%8B%93%E9%83%8E%2B%E4%BA%95%E4%B8%8A%E9%99%BD%E6%B0%B4%2BCD/" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="display:inline-block;text-decoration:none;">
-<img src="/assets/images/btn-rakuten.jpg" alt="楽天市場で探す" width="600" height="155" style="max-width:100%;height:auto;border-radius:14px;display:block;">
-</a>
-</div>
-
-### 関連書籍・教則本を探す
-
-<div style="margin:1.5rem 0;">
-<a href="https://hb.afl.rakuten.co.jp/ichiba/54518dd8.3792440a.54518dd9.03b99be4/?pc=https%3A//search.rakuten.co.jp/search/mall/%E3%82%A2%E3%82%B3%E3%83%BC%E3%82%B9%E3%83%86%E3%82%A3%E3%83%83%E3%82%AF%E3%82%AE%E3%82%BF%E3%83%BC%2B%E6%95%99%E5%89%87%E6%9C%AC/" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="display:inline-block;text-decoration:none;">
-<img src="/assets/images/btn-rakuten.jpg" alt="楽天市場で探す" width="600" height="155" style="max-width:100%;height:auto;border-radius:14px;display:block;">
-</a>
-</div>
-
-### 関連機材・楽器を探す
-
-<div style="display:flex;gap:.75rem;margin:1.5rem 0;">
-<a href="https://h.accesstrade.net/sp/cc?rk=0100pdhv00n9hy&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fsearch%2Findex%3Fs_category_cd%3D120%26s_maker_cd%3D%26s_search_all%3D%26s_ord%3D" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="display:block;flex:1;text-decoration:none;">
-<img src="/assets/images/btn-soundhouse.jpg" alt="サウンドハウスで探す" width="600" height="155" style="max-width:100%;height:auto;border-radius:14px;display:block;">
-</a>
-<a href="https://hb.afl.rakuten.co.jp/ichiba/54518dd8.3792440a.54518dd9.03b99be4/?pc=https%3A//search.rakuten.co.jp/search/mall/%E3%82%A2%E3%82%B3%E3%83%BC%E3%82%B9%E3%83%86%E3%82%A3%E3%83%83%E3%82%AF%E3%82%AE%E3%82%BF%E3%83%BC%2BMartin/" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="display:block;flex:1;text-decoration:none;">
-<img src="/assets/images/btn-rakuten.jpg" alt="楽天市場で探す" width="600" height="155" style="max-width:100%;height:auto;border-radius:14px;display:block;">
-</a>
-</div>
----
-
-## フォーク・ニューミュージックを深く知るための名盤ガイド
-
-### 時代別必聴アルバム5選
+## 時代別必聴アルバム5選
 
 | アルバム | アーティスト | 年 | なぜ重要か |
 |---------|------------|----|-----------|
 | 『元気です。』 | 吉田拓郎 | 1972年 | 日本語フォークロックの先駆け |
 | 『氷の世界』 | 井上陽水 | 1973年 | 日本初の100万枚突破アルバム |
 | 『ひこうき雲』 | 荒井由実 | 1973年 | 日本のポップスを変えた松任谷正隆プロデュース |
-| 『LONG VACATION』 | 大滝詠一 | 1981年 | シティポップの原点。スペクタービート全開 |
+| 『LONG VACATION』 | 大滝詠一 | 1981年 | シティポップの原点。ウォール・オブ・サウンド |
 | 『COME ALONG』 | 竹内まりや | 1981年 | 洋楽とJ-POPの橋渡し |
 
-### マルチトラック録音の発展
+### 関連書籍・教則本を探す
 
-フォーク〜ニューミュージック時代の録音技術の進化：
+<div style="margin:.8rem 0;"><span style="display:block;font-size:.78rem;color:#4b5563;margin-bottom:3px;margin-top:6px;">🔍 楽天市場で探す</span>
+<a href="https://hb.afl.rakuten.co.jp/ichiba/0b15ddc7.28c5c9ed.0b15ddc8.5d23dd4d/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%E3%82%A2%E3%82%B3%E3%83%BC%E3%82%B9%E3%83%86%E3%82%A3%E3%83%83%E3%82%AF%E3%82%AE%E3%82%BF%E3%83%BC%20%E6%95%99%E5%89%87%E6%9C%AC%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="display:inline-block;text-decoration:none;"><img src="/assets/images/btn-rakuten.jpg" alt="楽天市場で探す" width="240" style="height:auto;border-radius:8px;display:block;"></a></div>
 
-- **1972年頃**：日本のスタジオに16トラックが導入始まる
-- **1976年頃**：24トラックが普及、複雑なオーケストラ・アレンジが可能に
-- **1980年頃**：32〜48トラックで制作されるアルバムも登場
+### 関連機材を探す
 
-この技術革新が「スタジオレコーディングの芸術」としてのJ-POPを生み出した。
+
+## フォークが残したもの
+
+フォーク・ニューミュージック世代が確立した「日本語ポップスの歌詞観」は、今もJ-POPの根幹をなしている。「自分の言葉で、自分の音楽を作る」——このDIY精神は、現代のDTMクリエイターにも脈々と受け継がれている。
+
+
+
+
+<div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:.8rem;margin:2rem 0;">
+<a href="/2026/05/30/japan-music-01-gs-boom/" style="display:inline-block;padding:.5rem 1rem;background:#e8edf2;border:1px solid #c8c5c0;border-radius:8px;color:#1e3a5f;text-decoration:none;font-size:.9rem;">← #01 グループサウンズ</a>
+<a href="/2026/05/30/japan-music-03-idol-candies-era/" style="display:inline-block;padding:.5rem 1rem;background:#e8edf2;border:1px solid #c8c5c0;border-radius:8px;color:#1e3a5f;text-decoration:none;font-size:.9rem;">#03 キャンディーズ・ピンクレディー →</a>
+</div>
