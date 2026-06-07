@@ -164,7 +164,14 @@ layout: default
     .ad-notice-hero { right: 24px; font-size: .65rem; }
     .post-content { padding: 16px 6% 32px !important; border-radius: 16px; }
     .post-body { padding: 0 3% 48px; }
-  }
+    /* SVGスペック図: 横スクロール */
+    .post-content figure { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+    .post-content figure svg { min-width: 600px; }
+    /* CTAボタン2列 → 1列 */
+    .post-content div[style*="display:flex"] { flex-direction: column !important; }
+    .post-content div[style*="display: flex"] { flex-direction: column !important; }
+    /* テーブル横スクロール */
+    .post-content table { display: block; overflow-x: auto; -webkit-overflow-scrolling: touch; }  }
 </style>
 <script>
   document.addEventListener('DOMContentLoaded', function() {
@@ -186,7 +193,25 @@ layout: default
 <article>
   <div class="post-header">
     <div class="post-hero-wrap{% if page.image %} has-image{% endif %}"{% if page.image %} style="--hero-img: url('{{ page.image }}');"{% endif %}>
-      <a href="{{ '/' | relative_url }}" class="back-link">&larr; 記事一覧に戻る</a>
+      {% if page.url contains 'japan-music' %}
+      <a href="/series-list.html?series=japan-music-series" class="back-link">&larr; 同シリーズ記事一覧に戻る</a>
+      {% elsif page.url contains 'chord-progression' %}
+      <a href="/series-list.html?series=chord-progression" class="back-link">&larr; 同シリーズ記事一覧に戻る</a>
+      {% elsif page.url contains 'les-paul' or page.url contains 'stratocaster' or page.url contains 'telecaster' or page.url contains 'jazz-bass' or page.url contains 'precision-bass' or page.url contains 'pickup-guide' or page.url contains 'jazzmaster' or page.url contains 'jaguar' or page.url contains 'stingray' %}
+      <a href="/series-list.html?series=instrument-guide" class="back-link">&larr; 同シリーズ記事一覧に戻る</a>
+      {% elsif page.url contains 'guitar-guide' or page.url contains 'bass-guide' or page.url contains 'drum-guide' or page.url contains 'digital-piano' or page.url contains 'band-guide' or page.url contains 'vocal-recording' or page.url contains 'guitar-effects' %}
+      <a href="/series-list.html?series=instruments" class="back-link">&larr; 同シリーズ記事一覧に戻る</a>
+      {% elsif page.url contains 'soundproofing' or page.url contains 'music-studio' or page.url contains 'monitor-headphones' %}
+      <a href="/series-list.html?series=studio-environment" class="back-link">&larr; 同シリーズ記事一覧に戻る</a>
+      {% elsif page.url contains 'mix-mastering' or page.url contains 'vst-plugin' or page.url contains 'solo-dtm' %}
+      <a href="/series-list.html?series=dtm-techniques" class="back-link">&larr; 同シリーズ記事一覧に戻る</a>
+      {% elsif page.url contains 'suno-ai' or page.url contains 'audiostock' or page.url contains 'beatstars' or page.url contains 'music-copyright' %}
+      <a href="/series-list.html?series=ai-music" class="back-link">&larr; 同シリーズ記事一覧に戻る</a>
+      {% elsif page.url contains 'microphone' or page.url contains 'audio-interface' or page.url contains 'mixer' or page.url contains 'effects-guide' or page.url contains 'daw-guide' or page.url contains 'headphone' or page.url contains 'midi-keyboard' or page.url contains 'studio-monitor' or page.url contains 'budget-setup' or page.url contains 'music-production-basics' or page.url contains 'cable-guide' or page.url contains 'mic-stand' or page.url contains 'rack-case' %}
+      <a href="/series-list.html?series=gear" class="back-link">&larr; 同シリーズ記事一覧に戻る</a>
+      {% else %}
+      <a href="{{ '/#categories' | relative_url }}" class="back-link">&larr; 記事一覧に戻る</a>
+      {% endif %}
       <div class="post-hero-body">
         <div class="post-meta">
           <span class="post-tag">{{ page.categories | first | default: "Guide" | upcase }}</span>
@@ -204,4 +229,14 @@ layout: default
       </div>
     </div>
   </div>
+
+<button id="back-to-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="ページトップへ" style="position:fixed;bottom:1.5rem;right:1.5rem;width:44px;height:44px;border-radius:50%;background:#1e3a5f;color:#fff;border:none;cursor:pointer;font-size:1.2rem;display:none;align-items:center;justify-content:center;box-shadow:0 2px 8px rgba(0,0,0,.25);z-index:999;">▲</button>
+<script>
+(function(){
+  var btn=document.getElementById("back-to-top");
+  window.addEventListener("scroll",function(){
+    btn.style.display=window.scrollY>300?"flex":"none";
+  });
+})();
+</script>
 </article>
