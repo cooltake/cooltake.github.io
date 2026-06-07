@@ -43,9 +43,9 @@ image: /assets/images/thumb-monitor-headphones.jpg
 
 | 機種 | メーカー | タイプ | 特徴 |
 |------|---------|--------|------|
-| **ATH-M50x** | Audio-Technica | 密閉 | スタジオ標準機。着脱式ケーブル対応 |
+| **ATH-M50x**<a href="https://h.accesstrade.net/sp/cc?rk=01001xqc00os63&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fproducts%2Fdetail%2Fitem%2F192282%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="font-size:.8rem;color:#1e3a5f;font-weight:600;margin-left:.3em;">🛒</a> | Audio-Technica | 密閉 | スタジオ標準機。着脱式ケーブル対応 |
 | **DT770 PRO** | Beyerdynamic | 密閉 | ドイツ製。高音域の解像度が高い |
-| **MDR-CD900ST** | SONY | 密閉 | 日本のレコーディングスタジオの定番機 |
+| **MDR-CD900ST**<a href="https://h.accesstrade.net/sp/cc?rk=01001xqc00os63&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fproducts%2Fdetail%2Fitem%2F71265%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="font-size:.8rem;color:#1e3a5f;font-weight:600;margin-left:.3em;">🛒</a> | SONY | 密閉 | 日本のレコーディングスタジオの定番機 |
 
 ### ¥20,000〜¥40,000：ミドル帯
 
@@ -70,7 +70,7 @@ image: /assets/images/thumb-monitor-headphones.jpg
 | **主な用途** | ミックス・モニタリング全般 | 録音ブース・MA・レコスタ標準 |
 | **向いている人** | 初心者〜中級者 | プロ志向・正確な音が欲しい人 |
 
-初心者が最初の1本を選ぶなら **ATH-M50x** の使い勝手の良さが光ります。プロ機材と同じ環境で耳を鍛えたいなら **MDR-CD900ST** もあり。
+初心者が最初の1本を選ぶなら **ATH-M50x**<a href="https://h.accesstrade.net/sp/cc?rk=01001xqc00os63&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fproducts%2Fdetail%2Fitem%2F192282%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="font-size:.8rem;color:#1e3a5f;font-weight:600;margin-left:.3em;">🛒</a> の使い勝手の良さが光ります。プロ機材と同じ環境で耳を鍛えたいなら **MDR-CD900ST**<a href="https://h.accesstrade.net/sp/cc?rk=01001xqc00os63&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fproducts%2Fdetail%2Fitem%2F71265%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="font-size:.8rem;color:#1e3a5f;font-weight:600;margin-left:.3em;">🛒</a> もあり。
 
 ---
 
@@ -96,14 +96,14 @@ image: /assets/images/thumb-monitor-headphones.jpg
 ---
 
 <div style="display:flex;gap:.75rem;margin:2rem 0;">
-<div style="flex:1;padding:1.2rem 1.5rem;background:#f0f9ff;border-left:4px solid #0ea5e9;border-radius:8px;">
-<p style="margin:0 0 .6rem;font-weight:bold;font-size:1rem;">🎧 モニターヘッドフォンをサウンドハウスでチェック</p>
-<a href="https://h.accesstrade.net/sp/cc?rk=01001xqc00os63&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fsearch%2Findex%2F%3Fsearch_all%3D%25E3%2583%A2%25E3%2583%8B%25E3%2582%BF%25E3%2583%BC%25E3%2583%98%25E3%2583%83%25E3%2583%89%25E3%2583%95%25E3%2582%A9%25E3%2583%B3" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="display:inline-block;background:#0369a1;color:#fff;padding:.45rem 1.1rem;border-radius:4px;text-decoration:none;font-weight:bold;font-size:.95rem;">サウンドハウスで見る →</a>
+<div style="flex:1;padding:.8rem 1rem 1rem;background:#e8f4fb;border-radius:10px;border:1px solid rgba(8,145,178,.25);">
+<p style="margin:0 0 .5rem;color:#374151;font-size:.82rem;font-weight:bold;">�������������������� をサウンドハウスで探す</p>
+<a href="https://h.accesstrade.net/sp/cc?rk=01001xqc00os63&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fsearch%2Findex%2F%3Fsearch_all%3D%25E3%2583%A2%25E3%2583%8B%25E3%2582%BF%25E3%2583%BC%25E3%2583%98%25E3%2583%83%25E3%2583%89%25E3%2583%95%25E3%2582%A9%25E3%2583%B3" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="display:block;text-decoration:none;"><img src="/assets/images/btn-soundhouse.jpg" alt="サウンドハウスで探す" width="240" style="height:auto;border-radius:8px;display:block;"></a>
 <img src="https://h.accesstrade.net/sp/rr?rk=01001xqc00os63" width="1" height="1" border="0" alt="" loading="lazy">
 </div>
-<div style="flex:1;padding:1.2rem 1.5rem;background:#fff7ed;border-left:4px solid #f97316;border-radius:8px;">
-<p style="margin:0 0 .6rem;font-weight:bold;font-size:1rem;">🛒 楽天市場でモニターヘッドフォンを探す</p>
-<a href="https://hb.afl.rakuten.co.jp/hgc/0b15ddc7.28c5c9ed.0b15ddc8.5d23dd4d/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%25E3%2583%A2%25E3%2583%8B%25E3%2582%BF%25E3%2583%BC%25E3%2583%98%25E3%2583%83%25E3%2583%89%25E3%2583%95%25E3%2582%A9%25E3%2583%B3%2BDTM%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="display:inline-block;background:#bf0000;color:#fff;padding:.45rem 1.1rem;border-radius:4px;text-decoration:none;font-weight:bold;font-size:.95rem;">楽天市場で見る →</a>
+<div style="flex:1;padding:.8rem 1rem 1rem;background:#fdf3ee;border-radius:10px;border:1px solid rgba(234,88,12,.25);">
+<p style="margin:0 0 .5rem;color:#374151;font-size:.82rem;font-weight:bold;">�������������������� を楽天市場で探す</p>
+<a href="https://hb.afl.rakuten.co.jp/hgc/0b15ddc7.28c5c9ed.0b15ddc8.5d23dd4d/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%25E3%2583%A2%25E3%2583%8B%25E3%2582%BF%25E3%2583%BC%25E3%2583%98%25E3%2583%83%25E3%2583%89%25E3%2583%95%25E3%2582%A9%25E3%2583%B3%2BDTM%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="display:block;text-decoration:none;"><img src="/assets/images/btn-rakuten.jpg" alt="楽天市場で探す" width="240" style="height:auto;border-radius:8px;display:block;"></a>
 <img src="//i.moshimo.com/af/i/impression?a_id=5565352&amp;p_id=54&amp;pc_id=54&amp;pl_id=616" width="1" height="1" style="border:none;" alt="" loading="lazy">
 </div>
 </div>
