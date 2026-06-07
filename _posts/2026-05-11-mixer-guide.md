@@ -128,13 +128,15 @@ EQは音の周波数バランスを調整するツールです。
 ミキサーの操作はシンプルな原則の積み重ねです。「ゲインで入力を整え、フェーダーでバランスを作る」この流れを押さえれば、音作りの基本は身につきます。
 
 最初は小型のアナログミキサー（4〜8チャンネル）から始め、徐々に操作に慣れていくのがおすすめです。
-<div style="margin:2rem 0;padding:1.2rem 1.5rem;background:#fff7ed;border-left:4px solid #f97316;border-radius:8px;">
-<p style="margin:0 0 .6rem;font-weight:bold;font-size:1rem;">&#x1F6D2; この記事で紹介した機材を楽天市場でチェック</p>
-<a href="https://hb.afl.rakuten.co.jp/ichiba/54518dd8.3792440a.54518dd9.03b99be4/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%25E3%2583%259F%25E3%2582%25AD%25E3%2582%25B5%25E3%2583%25BC%2520%25E9%259F%25B3%25E6%25A5%25BD%25E5%2588%25B6%25E4%25BD%259C%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="display:inline-block;background:#bf0000;color:#fff;padding:.45rem 1.1rem;border-radius:4px;text-decoration:none;font-weight:bold;font-size:.95rem;">楽天市場でミキサーを探す →</a>
-</div>
-
-<div style="margin:2rem 0;padding:1.2rem 1.5rem;background:#f0f9ff;border-left:4px solid #0ea5e9;border-radius:8px;">
-<p style="margin:0 0 .6rem;font-weight:bold;font-size:1rem;">&#x1F3B5; サウンドハウスでもチェック（国内最大の音楽機材専門店）</p>
-<a href="https://h.accesstrade.net/sp/cc?rk=01001xqc00os63&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fsearch%2Findex%2F%3Fsearch_all%3D%25E3%2583%259F%25E3%2582%25AD%25E3%2582%25B5%25E3%2583%25BC" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="display:inline-block;background:#0369a1;color:#fff;padding:.45rem 1.1rem;border-radius:4px;text-decoration:none;font-weight:bold;font-size:.95rem;">サウンドハウスで探す →</a>
+<div style="display:flex;gap:.75rem;margin:2rem 0;">
+<div style="flex:1;padding:.8rem 1rem 1rem;background:#e8f4fb;border-radius:10px;border:1px solid rgba(8,145,178,.25);">
+<p style="margin:0 0 .5rem;color:#374151;font-size:.82rem;font-weight:bold;">ミキサー をサウンドハウスで探す</p>
+<a href="https://h.accesstrade.net/sp/cc?rk=01001xqc00os63&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fsearch%2Findex%2F%3Fsearch_all%3D%25E3%2583%259F%25E3%2582%25AD%25E3%2582%25B5%25E3%2583%25BC" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="display:block;text-decoration:none;"><img src="/assets/images/btn-soundhouse.jpg" alt="サウンドハウスで探す" width="240" style="height:auto;border-radius:8px;display:block;"></a>
 <img src="https://h.accesstrade.net/sp/rr?rk=01001xqc00os63" width="1" height="1" border="0" alt="" loading="lazy">
+</div>
+<div style="flex:1;padding:.8rem 1rem 1rem;background:#fdf3ee;border-radius:10px;border:1px solid rgba(234,88,12,.25);">
+<p style="margin:0 0 .5rem;color:#374151;font-size:.82rem;font-weight:bold;">ミキサー を楽天市場で探す</p>
+<a href="//af.moshimo.com/af/c/click?a_id=5565352&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%25E3%2583%259F%25E3%2582%25AD%25E3%2582%25B5%25E3%2583%25BC%2520%25E9%259F%25B3%25E6%25A5%25BD%25E5%2588%25B6%25E4%25BD%259C%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="display:block;text-decoration:none;"><img src="/assets/images/btn-rakuten.jpg" alt="楽天市場で探す" width="240" style="height:auto;border-radius:8px;display:block;"></a>
+<img src="//i.moshimo.com/af/i/impression?a_id=5565352&amp;p_id=54&amp;pc_id=54&amp;pl_id=616" width="1" height="1" style="border:none;" alt="" loading="lazy">
+</div>
 </div>
