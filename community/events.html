@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>イベント情報 — Cooltake Studio Community</title>
+  <link rel="icon" href="data:,">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700;9..40,800;9..40,900&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg:#0a0e1a;--card:#0f1525;--border:rgba(255,255,255,.07);
+      --text:#f1f5ff;--muted:#8896b3;--primary:#3b82f6;--secondary:#818cf8;
+      --gradient:linear-gradient(135deg,#3b82f6 0%,#818cf8 100%);
+    }
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+    html{scrollbar-gutter:stable;}
+    body{font-family:'DM Sans','Noto Sans JP',sans-serif;background:var(--bg);color:var(--text);min-height:100vh;line-height:1.7;}
+    a{text-decoration:none;color:inherit;}
+    /* HEADER */
+    .site-header{position:sticky;top:0;z-index:100;background:rgba(10,14,26,.88);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);border-bottom:1px solid var(--border);}
+    .container-wide{max-width:1547px;margin:0 auto;padding:0 28px;}
+    .site-header .container-wide{display:flex;align-items:center;justify-content:space-between;height:68px;}
+    .logo{display:flex;align-items:center;gap:12px;font-size:1.05rem;font-weight:800;letter-spacing:-.02em;}
+    .site-nav{display:flex;align-items:center;gap:4px;}
+    .site-nav a{color:var(--muted);font-size:.875rem;font-weight:500;padding:7px 14px;border-radius:8px;transition:color .2s,background .2s;}
+    .site-nav a:hover{color:var(--text);background:rgba(255,255,255,.05);}
+    .site-nav a.active{color:var(--text);background:rgba(255,255,255,.04);}
+    .nav-toggle{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:8px;}
+    .nav-toggle span{display:block;width:22px;height:2px;background:var(--text);border-radius:2px;transition:.3s;}
+    /* PAGE */
+    .page-inner{max-width:1080px;margin:0 auto;padding:48px 28px 80px;}
+    /* HERO */
+    .hero{margin-bottom:40px;}
+    .hero-eyebrow{font-size:.75rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--primary);margin-bottom:10px;}
+    .hero h1{font-size:clamp(1.6rem,3.5vw,2.25rem);font-weight:900;margin-bottom:10px;}
+    .hero p{color:var(--muted);max-width:540px;}
+    .hero-actions{display:flex;align-items:center;gap:12px;margin-top:20px;flex-wrap:wrap;}
+    .btn-cta{background:var(--gradient);color:#fff;padding:10px 22px;border-radius:9999px;font-size:.875rem;font-weight:700;transition:opacity .2s;white-space:nowrap;}
+    .btn-cta:hover{opacity:.85;}
+    .btn-outline{background:rgba(255,255,255,.06);border:1px solid var(--border);color:var(--muted);padding:10px 18px;border-radius:9999px;font-size:.875rem;font-weight:600;transition:.2s;white-space:nowrap;}
+    .btn-outline:hover{color:var(--text);border-color:rgba(255,255,255,.2);}
+    /* FILTERS */
+    .filter-row{display:flex;align-items:center;gap:8px;margin-bottom:28px;flex-wrap:wrap;}
+    .filter-chip{background:rgba(255,255,255,.04);border:1px solid var(--border);color:var(--muted);padding:6px 14px;border-radius:9999px;font-size:.8rem;font-weight:600;cursor:pointer;transition:.2s;user-select:none;}
+    .filter-chip:hover{color:var(--text);border-color:rgba(255,255,255,.2);}
+    .filter-chip.active{background:rgba(59,130,246,.12);border-color:var(--primary);color:var(--primary);}
+    .filter-sep{width:1px;height:18px;background:var(--border);}
+    /* CALENDAR HEADER */
+    .month-group{margin-bottom:40px;}
+    .month-label{font-size:.8rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);margin-bottom:16px;padding-bottom:10px;border-bottom:1px solid var(--border);}
+    /* CARD */
+    .event-card{background:var(--card);border:1px solid var(--border);border-radius:20px;display:flex;gap:0;overflow:hidden;transition:border-color .2s,transform .2s;margin-bottom:16px;}
+    .event-card:hover{border-color:rgba(59,130,246,.3);transform:translateY(-2px);}
+    .event-date-col{background:rgba(59,130,246,.07);border-right:1px solid var(--border);padding:20px 16px;display:flex;flex-direction:column;align-items:center;justify-content:center;min-width:76px;text-align:center;flex-shrink:0;}
+    .event-month{font-size:.7rem;font-weight:700;text-transform:uppercase;color:var(--muted);letter-spacing:.06em;}
+    .event-day{font-size:2rem;font-weight:900;line-height:1;background:var(--gradient);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
+    .event-dow{font-size:.72rem;color:var(--muted);font-weight:600;}
+    .event-body{padding:20px 24px;flex:1;min-width:0;}
+    .event-head{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:8px;}
+    .event-title{font-size:1.05rem;font-weight:700;line-height:1.35;overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;flex:1;}
+    .badge{display:inline-flex;align-items:center;padding:3px 10px;border-radius:6px;font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.04em;flex-shrink:0;}
+    .badge-blue{background:rgba(59,130,246,.14);color:#93c5fd;}
+    .badge-purple{background:rgba(129,140,248,.14);color:#a5b4fc;}
+    .badge-green{background:rgba(34,197,94,.14);color:#86efac;}
+    .badge-orange{background:rgba(251,146,60,.14);color:#fdba74;}
+    .event-meta{display:flex;align-items:center;gap:12px;font-size:.8rem;color:var(--muted);flex-wrap:wrap;margin-bottom:8px;}
+    .event-desc{font-size:.85rem;color:var(--muted);overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;line-height:1.6;margin-bottom:10px;}
+    .event-footer{display:flex;align-items:center;justify-content:space-between;gap:8px;flex-wrap:wrap;}
+    .event-tags{display:flex;gap:6px;flex-wrap:wrap;}
+    .tag{background:rgba(255,255,255,.04);border:1px solid var(--border);border-radius:6px;padding:2px 8px;font-size:.73rem;color:var(--muted);}
+    .tag-free{background:rgba(34,197,94,.08);border-color:rgba(34,197,94,.2);color:#86efac;}
+    .tag-paid{background:rgba(251,146,60,.08);border-color:rgba(251,146,60,.2);color:#fdba74;}
+    .tag-drink{background:rgba(250,204,21,.08);border-color:rgba(250,204,21,.2);color:#fde68a;}
+    .group-link{font-size:.78rem;color:var(--secondary);font-weight:600;background:rgba(129,140,248,.08);padding:4px 10px;border-radius:6px;transition:.2s;}
+    .group-link:hover{background:rgba(129,140,248,.18);}
+    .contact-btn{background:var(--gradient);color:#fff;padding:7px 16px;border-radius:9999px;font-size:.8rem;font-weight:700;transition:opacity .2s;cursor:pointer;border:none;white-space:nowrap;}
+    .contact-btn:hover{opacity:.85;}
+    /* TODAY MARKER */
+    .today-marker{display:flex;align-items:center;gap:12px;margin-bottom:20px;font-size:.8rem;color:var(--muted);}
+    .today-marker::before,.today-marker::after{content:'';flex:1;height:1px;background:linear-gradient(90deg,transparent,rgba(59,130,246,.3));}
+    .today-marker::after{background:linear-gradient(270deg,transparent,rgba(59,130,246,.3));}
+    /* LOAD MORE */
+    .load-more-wrap{text-align:center;margin-top:40px;}
+    .btn-load{background:rgba(255,255,255,.06);border:1px solid var(--border);color:var(--muted);padding:12px 32px;border-radius:9999px;font-size:.875rem;font-weight:600;cursor:pointer;transition:.2s;}
+    .btn-load:hover{color:var(--text);border-color:rgba(255,255,255,.2);}
+    /* EMPTY / LOADING */
+    .state-box{text-align:center;padding:80px 20px;color:var(--muted);}
+    .state-box .icon{font-size:3rem;margin-bottom:16px;}
+    .state-box h3{font-size:1.1rem;font-weight:700;color:var(--text);margin-bottom:8px;}
+    .spinner{display:inline-block;width:36px;height:36px;border:3px solid rgba(255,255,255,.08);border-top-color:var(--primary);border-radius:50%;animation:spin .8s linear infinite;}
+    @keyframes spin{to{transform:rotate(360deg);}}
+    /* FOOTER */
+    footer{text-align:center;padding:32px;color:var(--muted);font-size:.8rem;border-top:1px solid var(--border);}
+    @media(max-width:768px){
+      .container-wide{padding:0 16px;}
+      .nav-toggle{display:flex;}
+      .site-nav{display:none;flex-direction:column;gap:0;position:absolute;top:68px;left:0;right:0;background:rgba(10,14,26,.97);border-bottom:1px solid var(--border);padding:8px 0;z-index:99;}
+      .site-nav.open{display:flex;}
+      .site-nav a{padding:13px 20px;border-radius:0;display:block;}
+      .page-inner{padding:32px 16px 64px;}
+      .event-card{flex-direction:column;}
+      .event-date-col{flex-direction:row;justify-content:flex-start;gap:12px;min-width:auto;padding:14px 20px;border-right:none;border-bottom:1px solid var(--border);}
+      .event-day{font-size:1.4rem;}
+    }
+  </style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container-wide">
+  <a href="/" class="logo">
+    <svg viewBox="0 30 297 62" xmlns="http://www.w3.org/2000/svg" style="height:38px;width:auto"><g transform="matrix(0.32683223,0,0,0.32683223,0.5507297,33.769866)" fill="#4984f6"><path d="m 122.66925,2.3208558 -3.28226,8.8814032 h 19.3074 5.21299 l 2.02742,-0.198435 1.13893,-2.3115265 2.4328,-6.3714417 h -26.83728 m 24.13424,3.6684058 v 0.386148 h -24.32732 v -0.386148 h 24.32732 M 118.03547,22.207477 h 14.48055 l 5.27111,-0.198436 1.3299,-2.890748 2.85961,-7.336812 H 127.4961 l -5.28078,0.198436 -1.28374,2.697674 -2.89611,7.529886 m 29.54032,-10.425996 -4.05455,10.425996 h 14.48055 l 5.30967,-0.198436 1.33678,-2.890748 2.81417,-7.336812 H 147.57579 M 88.495151,33.405769 H 102.9757 l 5.28078,-0.198436 1.28374,-2.697674 2.89611,-7.529886 H 97.955777 l -5.2711,0.198436 -1.329918,2.890748 -2.859608,7.336812 m 25.292689,0 h 14.28748 l 5.32532,-0.198436 1.31622,-2.697674 2.81908,-7.529886 h -14.287 l -5.32533,0.198436 -1.31635,2.697674 -2.81895,7.529886 m 25.48577,0 h 14.48055 l 5.2711,-0.198436 1.29341,-2.890748 2.89611,-7.336812 h -14.48055 l -5.3076,0.198436 -1.25691,2.697674 -2.89611,7.529886 M 84.247524,44.60406 h 14.480549 l 5.280777,-0.198436 1.28374,-2.697674 2.89611,-7.722959 H 93.901223 l -5.325325,0.198435 -1.441945,3.083822 -2.886429,7.336812 m 25.292696,0 h 14.28747 l 5.32533,-0.198436 1.39308,-2.890748 2.93529,-7.529885 h -14.48055 l -5.28078,0.198435 -1.28373,2.697674 -2.89611,7.72296 m 29.15417,-10.619069 -4.05456,10.619069 h 14.48055 l 5.27111,-0.198436 1.29341,-2.890748 2.89611,-7.529885 h -19.88662 m 18.34203,10.619069 h 26.83728 l 3.28226,-8.881403 h -19.3074 c -1.72816,0 -5.80905,-0.758768 -7.25607,0.198435 -0.64346,0.425649 -0.89697,1.627318 -1.15725,2.311526 -0.79486,2.089546 -1.88329,4.195954 -2.39882,6.371442 m 27.4165,-5.406072 v 0.386148 H 160.1256 v -0.386148 h 24.32732 M 54.900279,55.609278 h 19.88662 L 78.841452,45.183282 H 64.360904 l -5.309688,0.198436 -1.29133,2.697674 -2.859607,7.529886 m 54.253791,-10.425996 -3.86148,10.425996 h 14.28747 l 5.32533,-0.198436 1.27837,-2.697674 2.85693,-7.529886 h -19.88662 m 21.23814,10.425996 h 14.48054 l 5.27051,-0.198436 1.29401,-2.890748 2.89611,-7.336812 h -14.48055 l -5.30968,0.198436 -1.25483,2.697674 -2.89611,7.529886 m 25.09961,0 h 14.48055 l 5.28078,-0.198436 1.28374,-2.697674 2.89611,-7.529886 h -14.48055 l -5.27111,0.198436 -1.3299,2.890748 -2.85962,7.336812 m -78.967255,0 h 19.500472 5.212993 l 1.99853,-0.198436 1.20657,-2.5046 2.39405,-6.178368 H 87.336708 82.12371 l -1.988842,0.198436 -1.177364,2.5046 -2.432939,6.178368 M 103.94107,50.39628 v 0.386148 H 79.613748 V 50.39628 H 103.94107 M 24.587663,66.807569 H 44.474284 L 48.528837,56.1885 H 34.048288 l -5.2711,0.198436 -1.303099,2.890748 -2.886426,7.529885 M 54.514131,56.1885 50.459577,66.807569 h 14.480549 l 5.2711,-0.198435 1.303096,-2.890749 2.886429,-7.529885 h -19.88662 m 21.045064,10.619069 h 14.480548 l 5.307602,-0.198435 1.256914,-2.697675 2.896109,-7.722959 H 85.212894 l -5.325326,0.198436 -1.355241,2.890748 -2.973132,7.529885 m 25.292695,0 h 14.28747 l 5.32533,-0.198435 1.39368,-2.890749 2.93469,-7.529885 h -14.48055 l -5.28078,0.198436 -1.34526,2.890748 -2.83458,7.529885 M 130.00606,56.1885 125.9515,66.807569 h 14.48055 l 5.27111,-0.198435 1.3299,-2.890749 2.85962,-7.529885 h -19.88662 m 21.04506,10.619069 h 14.48055 l 5.30968,-0.198435 1.33677,-2.890749 2.81418,-7.529885 h -14.28748 l -5.30968,0.198436 -1.37074,2.890748 -2.97328,7.529885 m 25.29269,0 h 19.88662 L 200.28499,56.1885 h -14.48055 l -5.28078,0.198436 -1.24516,2.697674 -2.93469,7.722959 m -126.270381,0.579222 -3.86148,10.425996 h 14.287475 l 5.309688,-0.198436 1.293409,-2.697674 2.857528,-7.529886 h -19.88662 m 21.238138,10.425996 h 19.88662 l 3.86148,-10.425996 H 80.772192 l -5.309688,0.198436 -1.291329,2.697674 -2.859608,7.529886 m 25.099618,0 h 14.480545 l 5.28078,-0.198436 1.41529,-3.083822 2.76456,-7.143738 h -14.48055 l -5.27111,0.198436 -1.331987,2.890748 -2.857528,7.336812 m 50.392305,0 h 19.88662 l 4.05456,-10.425996 h -14.48055 l -5.30968,0.198436 -1.33677,2.890748 -2.81418,7.336812 m 25.09962,0 h 14.48055 l 5.28078,-0.198436 1.28374,-2.697674 2.89611,-7.529886 h -14.48055 l -5.27111,0.198436 -1.3299,2.890748 -2.85962,7.336812 m -50.77846,-8.881404 -3.28225,8.881404 h 19.3074 5.21299 l 2.02742,-0.198436 1.13893,-2.311526 2.4328,-6.371442 H 121.12465 M 17.057778,78.005861 h 19.500472 5.212998 l 1.998523,-0.198436 1.206565,-2.5046 2.394057,-6.178368 H 27.869921 22.656924 l -1.988841,0.198436 -1.177364,2.5046 -2.432941,6.178368 M 145.2589,72.599789 v 0.386148 H 120.73851 V 72.599789 H 145.2589 M 44.667358,72.792863 v 0.386148 H 20.146962 V 72.792863 H 44.667358 M 3.9287473,78.198935 v 0.772296 H 207.42872 V 78.198935 H 3.9287473 m 12.5498087,11.58444 h 14.480549 l 5.2711,-0.198436 1.293415,-2.890748 2.89611,-7.529886 H 25.939181 l -5.270502,0.198436 -1.294013,2.890748 -2.89611,7.529886 m 54.060715,-10.61907 -4.054553,10.61907 h 14.480548 l 5.2711,-0.198436 1.329917,-2.890748 2.859608,-7.529886 h -19.88662 m 21.045064,10.61907 h 14.480545 l 5.30968,-0.198436 1.33678,-2.890748 2.81417,-7.529886 h -14.28748 l -5.309683,0.198436 -1.370733,2.890748 -2.973279,7.529886 m 25.292695,0 h 19.88662 l 4.05455,-10.61907 h -14.48055 l -5.28078,0.198436 -1.24515,2.697674 -2.93469,7.72296 m 29.15417,-10.61907 -4.05456,10.61907 h 14.48055 l 5.27111,-0.198436 1.25483,-2.697674 2.93469,-7.72296 H 146.0312 M 38.295916,89.783375 h 19.307398 5.212998 l 2.02743,-0.198436 1.193302,-2.5046 2.378413,-6.178368 H 48.721911 43.701988 l -1.988245,0.198436 -1.062354,2.311526 -2.355473,6.371442 m 125.691164,0 h 26.83728 l 3.28226,-8.881404 h -19.3074 -5.213 l -2.02741,0.198436 -1.13893,2.311526 -2.4328,6.371442 M 65.712422,84.377303 v 0.386148 H 41.3851 v -0.386148 h 24.327322 m 125.691158,0 v 0.386148 h -24.32732 v -0.386148 h 24.32732 M 16.285482,90.362597 12.230928,100.78859 h 14.480549 l 5.309685,-0.19843 1.336767,-2.890752 2.814173,-7.336811 h -19.88662 m 20.85199,10.425993 h 14.480549 l 5.2711,-0.19843 1.331997,-2.890752 2.857528,-7.336811 H 46.598097 l -5.28078,0.198435 -1.415283,3.083822 -2.764562,7.143736 M 66.291644,90.362597 62.23709,100.78859 h 14.480549 l 5.309687,-0.19843 1.29133,-2.697678 2.859608,-7.529885 H 66.291644 M 87.529782,100.78859 H 107.4164 l 3.86148,-10.425993 H 96.990407 l -5.309688,0.198435 -1.293409,2.697674 -2.857528,7.529884 m 25.099618,0 h 14.48055 l 5.28078,-0.19843 1.32232,-2.890752 2.85752,-7.336811 h -14.48055 l -5.28078,0.198435 -1.32231,2.890748 -2.85753,7.33681 m 29.15417,-10.425993 -3.86148,10.425993 h 14.28748 l 5.30967,-0.19843 1.29342,-2.697678 2.85753,-7.529885 h -19.88662 m 25.09962,0 -3.86148,10.425993 h 14.28747 l 5.32533,-0.19843 1.27837,-2.697678 2.85693,-7.529885 H 166.88319 M 36.944398,101.36781 32.889845,111.98688 h 14.480548 l 5.2711,-0.19843 1.254834,-2.69768 2.934691,-7.72296 h -19.88662 m 21.238138,10.61907 h 14.287475 l 5.309688,-0.19843 1.291329,-2.69768 2.859608,-7.72296 H 67.643161 l -5.309687,0.19844 -1.29341,2.69767 -2.857528,7.72296 m 25.099618,0 h 19.886616 l 4.05456,-10.61907 H 92.742779 l -5.2711,0.19844 -1.254834,2.69767 -2.934691,7.72296 m 29.154176,-10.61907 -4.05456,10.61907 h 14.48055 l 5.28078,-0.19843 1.24515,-2.69768 2.9347,-7.72296 h -19.88662 m 21.23813,10.61907 h 14.28748 l 5.30967,-0.19843 1.37075,-2.89075 2.97328,-7.52989 h -14.48055 l -5.30968,0.19844 -1.33677,2.89075 -2.81418,7.52988 M 53.741835,122.9921 h 14.480548 l 5.2711,-0.19843 1.293416,-2.89075 2.896109,-7.33681 H 63.20246 l -5.307602,0.19843 -1.256914,2.69768 -2.896109,7.52988 m 25.099617,0 h 14.480549 l 5.280781,-0.19843 1.283734,-2.69768 2.896114,-7.52988 H 88.302077 l -5.2711,0.19843 -1.303096,2.89075 -2.886429,7.33681 m 25.292688,0 h 14.28748 l 5.32532,-0.19843 1.31622,-2.69768 2.81908,-7.52988 h -14.28747 l -5.32533,0.19843 -1.31621,2.69768 -2.81909,7.52988 m 25.09962,0 h 14.48055 l 5.27111,-0.19843 1.30309,-2.89075 2.88643,-7.33681 h -14.48055 l -5.28078,0.19843 -1.28374,2.69768 -2.89611,7.52988 m -79.932627,11.19829 h 14.480549 l 5.2711,-0.19843 1.331997,-2.89075 2.857528,-7.33681 H 58.761758 l -5.280781,0.19843 -1.34526,2.89075 -2.834584,7.33681 m 29.154171,-10.42599 -4.054553,10.42599 h 14.480548 l 5.309688,-0.19843 1.29133,-2.69768 2.859608,-7.52988 H 78.455304 m 25.292696,0 -3.861484,10.42599 h 14.287474 l 5.30968,-0.19843 1.29342,-2.69768 2.85753,-7.52988 H 103.748 m -33.594877,21.62428 h 14.287475 l 5.325325,-0.19843 1.355242,-2.89075 2.973132,-7.52989 H 79.613748 l -5.307602,0.19844 -1.256913,2.69767 -2.89611,7.72296 m 25.292692,0 h 14.287475 l 5.32533,-0.19843 1.35524,-2.89075 2.97313,-7.52989 h -14.48055 l -5.307602,0.19844 -1.256913,2.69767 -2.89611,7.72296 M 65.905496,156.3939 h 14.480548 l 5.2711,-0.19843 1.293416,-2.89075 2.896109,-7.33681 H 75.366121 l -5.307602,0.19843 -1.256914,2.69768 z"></path></g><path fill="#f0f0f0" d="m 78.991217,74.651715 c -1.403586,-0.204529 -3.390513,-1.189106 -3.944286,-1.954518 -1.018547,-1.407814 -0.630497,-3.985777 1.345511,-8.938738 1.823383,-4.570403 2.942231,-6.650086 4.357494,-8.09959 2.410335,-2.468644 4.561072,-3.147262 9.967864,-3.145122 3.127834,0.0016 6.555575,0.314264 6.86856,0.627253 0.05486,0.05483 -0.177103,0.67897 -0.515469,1.38691 -0.584898,1.223749 -0.646848,1.281478 -1.257288,1.171591 -0.353143,-0.06356 -2.280612,-0.181291 -4.283265,-0.261617 -3.969839,-0.159215 -4.943351,-0.02389 -6.605141,0.918272 -1.419558,0.804809 -2.236676,2.310447 -4.924716,9.074371 -1.328069,3.341828 -1.480006,4.16569 -0.95535,5.180262 0.521434,1.008344 1.731289,1.354606 4.673956,1.337693 2.275266,-0.01307 5.302819,-0.294946 6.63388,-0.617634 l 0.483496,-0.117206 -0.503296,1.350086 c -0.49215,1.320194 -0.525793,1.355752 -1.519173,1.60569 -2.307041,0.580457 -7.424652,0.831733 -9.822777,0.482297 z m 17.980341,-0.07102 c -1.626043,-0.350398 -2.721695,-1.080348 -3.198951,-2.131223 -0.5205,-1.146094 -0.503944,-1.641929 0.127591,-3.821231 1.92902,-6.656643 4.973378,-9.247487 10.856892,-9.239552 2.84717,0.004 4.75437,0.63163 5.68435,1.871098 0.61766,0.823213 0.58571,3.259868 -0.0686,5.231138 -1.29012,3.886888 -3.01573,6.213767 -5.44555,7.342995 -2.12095,0.985692 -5.413007,1.294705 -7.955744,0.746775 z m 5.918752,-2.816366 c 0.66597,-0.331866 1.36575,-0.896075 1.72291,-1.389113 1.32563,-1.829978 2.73693,-6.204301 2.33922,-7.250374 -0.37158,-0.977339 -1.07892,-1.245753 -3.06369,-1.162582 -1.58564,0.06645 -1.89233,0.14801 -2.70529,0.71949 -1.16054,0.81583 -1.827567,1.832702 -2.776883,4.233342 -0.908916,2.298472 -1.087329,3.080388 -0.898759,3.938942 0.334802,1.524346 3.183462,2.006114 5.382492,0.910295 z m 11.82615,2.78331 c -0.68151,-0.17314 -1.5277,-0.5203 -1.88043,-0.771464 -0.73833,-0.525734 -1.42878,-1.89678 -1.43556,-2.850617 -0.008,-1.161348 0.81784,-3.962957 1.6947,-5.747365 1.53772,-3.129283 3.75923,-4.973369 6.73738,-5.592742 1.82184,-0.378886 5.8422,-0.163961 7.06694,0.377796 2.6164,1.157364 2.74713,4.136313 0.39825,9.07543 -1.3429,2.823797 -3.19682,4.538324 -5.72198,5.291768 -1.66237,0.496004 -5.30755,0.61143 -6.8593,0.217194 z m 6.19699,-2.781394 c 1.4277,-0.711458 2.30214,-1.995734 3.30302,-4.851153 0.93895,-2.678736 0.96489,-3.531784 0.13267,-4.363998 -0.57356,-0.573564 -0.73618,-0.61959 -2.17384,-0.615278 -3.16633,0.0095 -4.49851,1.276389 -6.0899,5.791483 -0.69195,1.963191 -0.80496,2.868389 -0.44261,3.545435 0.63057,1.178237 3.37998,1.435677 5.27066,0.493511 z m 18.22553,2.781009 c -1.32848,-0.428143 -1.86914,-1.143288 -1.86914,-2.47234 0,-0.806548 0.38525,-1.99979 1.7197,-5.326476 0.94584,-2.357892 1.76726,-4.40637 1.82539,-4.552176 0.077,-0.19313 -0.21716,-0.265103 -1.08346,-0.265103 -0.65402,0 -1.18906,-0.02389 -1.18897,-0.05298 1e-4,-0.02918 0.18087,-0.530207 0.40172,-1.113429 l 0.40154,-1.060414 1.30459,-0.10604 1.30459,-0.10604 0.69496,-1.69666 c 1.16014,-2.83235 0.96187,-2.651026 2.89861,-2.651026 0.92906,0 1.68873,0.02389 1.68816,0.05298 -5.7e-4,0.02918 -0.3346,0.948795 -0.74229,2.043636 -0.40768,1.094841 -0.74125,2.07307 -0.74125,2.173843 0,0.100773 1.10773,0.183223 2.46163,0.183223 2.26033,0 2.44934,0.03038 2.31122,0.371143 -0.0827,0.204128 -0.24913,0.657456 -0.36977,1.00739 -0.12062,0.349942 -0.29396,0.719137 -0.38518,0.820439 -0.0912,0.101311 -1.25606,0.168066 -2.58855,0.148347 l -2.4227,-0.03583 -0.47991,1.230194 c -2.76348,7.083655 -3.0889,8.229092 -2.48118,8.733456 0.35245,0.292509 1.57207,0.34914 3.05309,0.141758 0.61238,-0.08575 1.11343,-0.107723 1.11343,-0.04882 0,0.05892 -0.20086,0.63195 -0.44635,1.273463 -0.52284,1.366253 -0.59152,1.39745 -3.37113,1.531024 -1.44487,0.06942 -2.29594,0.0064 -3.00875,-0.223518 z"></path></svg>
+  </a>
+  <nav class="site-nav" id="site-nav">
+    <a href="/#series">記事一覧</a>
+    <a href="/showcase/">Showcase</a>
+    <a href="/community/members.html">メンバー募集</a>
+    <a href="/community/events.html" class="active">イベント</a>
+    <a href="/#about">About</a>
+  </nav>
+  <button class="nav-toggle" id="nav-toggle" aria-label="メニューを開く"><span></span><span></span><span></span></button>
+  </div>
+</header>
+<script>
+  (function(){var t=document.getElementById('nav-toggle'),n=document.getElementById('site-nav');if(!t||!n)return;t.addEventListener('click',function(){var o=n.classList.toggle('open');t.classList.toggle('open',o);t.setAttribute('aria-label',o?'メニューを閉じる':'メニューを開く');});n.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){n.classList.remove('open');t.classList.remove('open');t.setAttribute('aria-label','メニューを開く');});});})();
+</script>
+
+<div class="page-inner">
+  <div class="hero">
+    <div class="hero-eyebrow">Community</div>
+    <h1>🎤 イベント情報</h1>
+    <p>音楽仲間のライブ・セッション・ワークショップ情報を掲載しています。</p>
+    <div class="hero-actions">
+      <a href="/community/submit.html" class="btn-cta">+ イベントを告知する</a>
+      <a href="/community/members.html" class="btn-outline">メンバー募集を見る →</a>
+    </div>
+  </div>
+
+  <!-- FILTERS -->
+  <div class="filter-row">
+    <span class="filter-chip active" data-filter="all" onclick="setTypeFilter('all',this)">すべて</span>
+    <div class="filter-sep"></div>
+    <span class="filter-chip" data-filter="ライブ" onclick="setTypeFilter('ライブ',this)">ライブ</span>
+    <span class="filter-chip" data-filter="セッション" onclick="setTypeFilter('セッション',this)">セッション</span>
+    <span class="filter-chip" data-filter="ワークショップ" onclick="setTypeFilter('ワークショップ',this)">ワークショップ</span>
+    <span class="filter-chip" data-filter="オーディション" onclick="setTypeFilter('オーディション',this)">オーディション</span>
+    <div class="filter-sep"></div>
+    <span class="filter-chip" data-filter-fmt="オンライン" onclick="setFmtFilter('オンライン',this)">オンライン</span>
+    <span class="filter-chip" data-filter-fmt="無料" onclick="setFeeFilter('無料',this)">無料</span>
+  </div>
+
+  <!-- CONTENT -->
+  <div id="state-loading" class="state-box"><div class="spinner"></div></div>
+  <div id="state-empty" class="state-box" style="display:none">
+    <div class="icon">🎤</div>
+    <h3>まだイベント投稿がありません</h3>
+    <p>最初のイベントを告知してみましょう！</p>
+    <a href="/community/submit.html" class="btn-cta" style="display:inline-block;margin-top:16px;">+ イベントを告知する</a>
+  </div>
+  <div id="state-error" class="state-box" style="display:none">
+    <div class="icon">⚠️</div>
+    <h3>読み込みに失敗しました</h3>
+    <p>しばらく後にリロードしてみてください。</p>
+  </div>
+  <div id="events-container" style="display:none"></div>
+</div>
+
+<footer><a href="/">Cooltake Studio</a> &copy; 2026</footer>
+
+<script>
+const WORKER = 'https://cooltake-showcase.cooltakestudio.workers.dev';
+const PAGE_SIZE = 15;
+let allItems = [];
+let filtered = [];
+let displayed = 0;
+let activeType = 'all';
+let activeFmt = null;
+let activeFee = null;
+
+const DOW = ['日','月','火','水','木','金','土'];
+const MONTHS = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+
+function esc(s) {
+  return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+
+function formatEventDate(dateStr) {
+  const d = new Date(dateStr + 'T00:00:00');
+  return { month: MONTHS[d.getMonth()], day: d.getDate(), dow: DOW[d.getDay()], full: d };
+}
+
+function monthKey(dateStr) {
+  const d = new Date(dateStr + 'T00:00:00');
+  return `${d.getFullYear()}年${d.getMonth()+1}月`;
+}
+
+function fmtBadge(format) {
+  if (format === 'オンライン') return '<span class="badge badge-blue">💻 オンライン</span>';
+  if (format === 'ハイブリッド') return '<span class="badge badge-purple">🌐 ハイブリッド</span>';
+  return '<span class="badge badge-green">📍 会場</span>';
+}
+
+function feeBadge(fee_type, fee_amount, drink_fee) {
+  if (fee_type === '無料') return '<span class="tag tag-free">無料</span>';
+  if (fee_type === 'ワンドリンク制（入場無料）') {
+    const d = drink_fee ? ` ${esc(drink_fee)}` : '';
+    return `<span class="tag tag-drink">🍺 ワンドリンク制${d}</span>`;
+  }
+  if (fee_type === '有料＋ワンドリンク制') {
+    const parts = [];
+    if (fee_amount) parts.push(`¥ ${esc(fee_amount)}`);
+    if (drink_fee)  parts.push(`🍺 ${esc(drink_fee)}`);
+    else            parts.push('🍺 ワンドリンク');
+    return parts.map(p => `<span class="tag tag-paid">${p}</span>`).join('');
+  }
+  if (fee_amount) return `<span class="tag tag-paid">¥ ${esc(fee_amount)}</span>`;
+  return '<span class="tag tag-paid">有料</span>';
+}
+
+function renderCard(ev) {
+  const { month, day, dow } = formatEventDate(ev.event_date);
+  const timeStr = ev.event_time ? ` ${ev.event_time}〜` : '';
+  const locationStr = ev.format === 'オンライン' ? 'オンライン' : (ev.region || '');
+  return `
+  <div class="event-card">
+    <div class="event-date-col">
+      <div class="event-month">${month}</div>
+      <div class="event-day">${day}</div>
+      <div class="event-dow">${dow}曜</div>
+    </div>
+    <div class="event-body">
+      <div class="event-head">
+        <div class="event-title">${esc(ev.title)}</div>
+        ${fmtBadge(ev.format||'')}
+      </div>
+      <div class="event-meta">
+        <span>🕐 ${esc(ev.event_date)}${esc(timeStr)}</span>
+        ${locationStr ? `<span>📍 ${esc(locationStr)}</span>` : ''}
+        ${ev.venue ? `<span>🏠 ${esc(ev.venue)}</span>` : ''}
+        ${ev.capacity ? `<span>👤 ${esc(ev.capacity)}</span>` : ''}
+      </div>
+      <div class="event-desc">${esc(ev.description||'')}</div>
+      <div class="event-footer">
+        <div class="event-tags">
+          <span class="tag">${esc(ev.event_type||'')}</span>
+          ${feeBadge(ev.fee_type, ev.fee_amount, ev.drink_fee)}
+          ${ev.group_name ? `<a href="/community/group.html?name=${encodeURIComponent(ev.group_name)}" class="group-link">🎵 ${esc(ev.group_name)}</a>` : ''}
+        </div>
+        <button class="contact-btn" onclick="showContact(event,'${esc(ev.contact||'')}')">詳細・申込</button>
+      </div>
+    </div>
+  </div>`;
+}
+
+function showContact(e, contact) {
+  e.preventDefault();
+  alert('📬 申込・連絡先\n\n' + contact);
+}
+
+function groupByMonth(items) {
+  const groups = {};
+  const order = [];
+  items.forEach(ev => {
+    const key = monthKey(ev.event_date);
+    if (!groups[key]) { groups[key] = []; order.push(key); }
+    groups[key].push(ev);
+  });
+  return { groups, order };
+}
+
+function renderAll() {
+  const c = document.getElementById('events-container');
+  if (filtered.length === 0) {
+    c.style.display = 'none';
+    document.getElementById('state-empty').style.display = 'block';
+    return;
+  }
+  document.getElementById('state-empty').style.display = 'none';
+  c.style.display = 'block';
+  const { groups, order } = groupByMonth(filtered);
+  c.innerHTML = order.map(key => `
+    <div class="month-group">
+      <div class="month-label">${esc(key)}</div>
+      ${groups[key].map(renderCard).join('')}
+    </div>`).join('');
+}
+
+function applyFilters() {
+  filtered = allItems.filter(ev => {
+    const typeOk = activeType === 'all' || (ev.event_type||'') === activeType;
+    const fmtOk = !activeFmt || (ev.format||'') === activeFmt;
+    const feeOk = !activeFee || (ev.fee_type||'') === activeFee;
+    return typeOk && fmtOk && feeOk;
+  });
+  renderAll();
+}
+
+function setTypeFilter(type, el) {
+  document.querySelectorAll('[data-filter]').forEach(c => c.classList.remove('active'));
+  el.classList.add('active');
+  activeType = type;
+  applyFilters();
+}
+
+function setFmtFilter(fmt, el) {
+  const isActive = el.classList.contains('active');
+  document.querySelectorAll('[data-filter-fmt]').forEach(c => c.classList.remove('active'));
+  activeFmt = isActive ? null : fmt;
+  if (!isActive) el.classList.add('active');
+  applyFilters();
+}
+
+function setFeeFilter(fee, el) {
+  const isActive = el.classList.contains('active');
+  document.querySelectorAll('[data-filter-fmt="無料"]').forEach(c => c.classList.remove('active'));
+  activeFee = isActive ? null : fee;
+  if (!isActive) el.classList.add('active');
+  applyFilters();
+}
+
+async function init() {
+  try {
+    const r = await fetch(`${WORKER}?action=get_events`);
+    const d = await r.json();
+    if (!d.ok) throw new Error(d.error);
+    allItems = (d.events || []).sort((a,b) => a.event_date.localeCompare(b.event_date));
+    document.getElementById('state-loading').style.display = 'none';
+    applyFilters();
+  } catch(e) {
+    document.getElementById('state-loading').style.display = 'none';
+    document.getElementById('state-error').style.display = 'block';
+    console.error(e);
+  }
+}
+
+init();
+</script>
+</body>
+</html>
