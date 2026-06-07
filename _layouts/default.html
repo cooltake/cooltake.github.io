@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
@@ -9,9 +9,75 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700;0,9..40,800;0,9..40,900&family=Noto+Sans+JP:wght@400;500;700;900&family=Kiwi+Maru:wght@300;400;500&family=BIZ+UDPGothic:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9451940529827362" crossorigin="anonymous"></script>
-</head>
+  <style>
+    .nav-drawer-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.55);z-index:199;opacity:0;transition:opacity .28s;}
+    .nav-drawer-overlay.open{display:block;opacity:1;}
+    .nav-drawer{position:fixed;top:0;right:-320px;width:300px;max-width:86vw;height:100%;background:#0f172a;border-left:1px solid rgba(255,255,255,.1);z-index:200;overflow-y:auto;transition:right .28s cubic-bezier(.4,0,.2,1);-webkit-overflow-scrolling:touch;}
+    .nav-drawer.open{right:0;}
+    .drawer-header{display:flex;align-items:center;justify-content:space-between;padding:16px 20px;border-bottom:1px solid rgba(255,255,255,.1);}
+    .drawer-logo{font-size:.88rem;font-weight:700;color:#f0f0f0;text-decoration:none;}
+    .drawer-close{background:none;border:none;color:#94a3b8;font-size:1.3rem;cursor:pointer;padding:4px 8px;line-height:1;}
+    .drawer-section{padding:14px 20px 8px;}
+    .drawer-section-label{font-size:.58rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#06b6d4;margin-bottom:6px;}
+    .drawer-link{display:flex;align-items:center;gap:10px;padding:10px 0;color:#cbd5e1;text-decoration:none;font-size:.84rem;font-weight:500;border-bottom:1px solid rgba(255,255,255,.06);transition:color .15s;}
+    .drawer-link:last-child{border-bottom:none;}
+    .drawer-link:hover,.drawer-link:active{color:#f0f0f0;}
+    .drawer-link-icon{width:28px;height:28px;border-radius:8px;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:.82rem;}
+    .di-blue{background:rgba(59,130,246,.18);}.di-indigo{background:rgba(129,140,248,.18);}.di-cyan{background:rgba(6,182,212,.18);}
+    .di-green{background:rgba(52,211,153,.18);}.di-orange{background:rgba(251,146,60,.18);}.di-pink{background:rgba(232,121,249,.18);}
+    .di-red{background:rgba(248,113,113,.18);}.di-lime{background:rgba(163,230,53,.18);}.di-violet{background:rgba(168,85,247,.18);}
+    .di-amber{background:rgba(251,191,36,.18);}.di-rose{background:rgba(244,63,94,.18);}.di-sky{background:rgba(56,189,248,.18);}
+    .drawer-divider{height:1px;background:rgba(255,255,255,.08);margin:8px 20px;}
+    @media (min-width:769px){.nav-drawer,.nav-drawer-overlay{display:none !important;}}
+  </style></head>
 <body>
+
+  <!-- Mobile drawer overlay -->
+  <div class="nav-drawer-overlay" id="nav-drawer-overlay"></div>
+
+  <!-- Mobile drawer -->
+  <div class="nav-drawer" id="nav-drawer" role="dialog" aria-modal="true" aria-label="ナビゲーション">
+    <div class="drawer-header">
+      <a href="{{ '/' | relative_url }}" class="drawer-logo">Cooltake Studio</a>
+      <button class="drawer-close" id="drawer-close" aria-label="閉じる">&#x2715;</button>
+    </div>
+    <div class="drawer-section">
+      <div class="drawer-section-label">メニュー</div>
+      <a href="{{ '/#series' | relative_url }}" class="drawer-link"><span class="drawer-link-icon di-blue">&#x1F4CB;</span>記事一覧</a>
+      <a href="{{ '/showcase/' | relative_url }}" class="drawer-link"><span class="drawer-link-icon di-indigo">&#x1F3B8;</span>Showcase</a>
+      <a href="{{ '/#about' | relative_url }}" class="drawer-link"><span class="drawer-link-icon di-cyan">&#x2139;&#xFE0F;</span>About</a>
+    </div>
+    <div class="drawer-divider"></div>
+    <div class="drawer-section">
+      <div class="drawer-section-label">機材・ギア</div>
+      <a href="{{ '/series-list.html?series=mic' | relative_url }}" class="drawer-link"><span class="drawer-link-icon di-blue">&#x1F399;&#xFE0F;</span>マイク</a>
+      <a href="{{ '/series-list.html?series=audio-interface' | relative_url }}" class="drawer-link"><span class="drawer-link-icon di-indigo">&#x1F39B;&#xFE0F;</span>オーディオI/F・ミキサー</a>
+      <a href="{{ '/series-list.html?series=headphones-monitor' | relative_url }}" class="drawer-link"><span class="drawer-link-icon di-green">&#x1F3A7;</span>ヘッドフォン・モニター</a>
+    </div>
+    <div class="drawer-divider"></div>
+    <div class="drawer-section">
+      <div class="drawer-section-label">楽器</div>
+      <a href="{{ '/series-list.html?series=guitar-bass' | relative_url }}" class="drawer-link"><span class="drawer-link-icon di-orange">&#x1F3B8;</span>ギター・ベース</a>
+      <a href="{{ '/series-list.html?series=instrument-guide' | relative_url }}" class="drawer-link"><span class="drawer-link-icon di-amber">&#x1F3B5;</span>楽器モデル詳細ガイド</a>
+      <a href="{{ '/series-list.html?series=drums' | relative_url }}" class="drawer-link"><span class="drawer-link-icon di-red">&#x1F941;</span>ドラム・打楽器</a>
+      <a href="{{ '/series-list.html?series=keyboard-piano' | relative_url }}" class="drawer-link"><span class="drawer-link-icon di-violet">&#x1F3B9;</span>キーボード・ピアノ</a>
+    </div>
+    <div class="drawer-divider"></div>
+    <div class="drawer-section">
+      <div class="drawer-section-label">DTM・制作</div>
+      <a href="{{ '/series-list.html?series=daw-software' | relative_url }}" class="drawer-link"><span class="drawer-link-icon di-cyan">&#x1F4BB;</span>DAW・ソフト</a>
+      <a href="{{ '/series-list.html?series=recording-techniques' | relative_url }}" class="drawer-link"><span class="drawer-link-icon di-lime">&#x1F39A;&#xFE0F;</span>録音テクニック</a>
+      <a href="{{ '/series-list.html?series=mix-mastering' | relative_url }}" class="drawer-link"><span class="drawer-link-icon di-pink">&#x1F39B;&#xFE0F;</span>MIX・マスタリング</a>
+      <a href="{{ '/series-list.html?series=music-production' | relative_url }}" class="drawer-link"><span class="drawer-link-icon di-sky">&#x1F3BC;</span>音楽制作入門</a>
+    </div>
+    <div class="drawer-divider"></div>
+    <div class="drawer-section">
+      <div class="drawer-section-label">シリーズ</div>
+      <a href="{{ '/series-list.html?series=japan-music-series' | relative_url }}" class="drawer-link"><span class="drawer-link-icon di-rose">&#x1F1EF;&#x1F1F5;</span>音楽史シリーズ</a>
+      <a href="{{ '/series-list.html?series=chord-progression' | relative_url }}" class="drawer-link"><span class="drawer-link-icon di-violet">&#x1F3B5;</span>コード進行シリーズ</a>
+    </div>
+    <div style="height:32px;"></div>
+  </div>
   <header class="site-header">
     <div class="container-wide">
       <a href="{{ '/' | relative_url }}" class="logo">
@@ -19,7 +85,7 @@
       </a>
       <nav class="site-nav" id="site-nav">
         <a href="{{ '/#series' | relative_url }}">記事一覧</a>
-        <!-- <a href="{{ '/showcase/' | relative_url }}">Showcase</a> -->
+        <a href="{{ '/showcase/' | relative_url }}">Showcase</a>
         <a href="{{ '/#about' | relative_url }}">About</a>
       </nav>
       <button class="nav-toggle" id="nav-toggle" aria-label="メニューを開く">
@@ -31,19 +97,22 @@
     (function() {
       var toggle = document.querySelector('.nav-toggle');
       var nav = document.querySelector('.site-nav');
-      if (!toggle || !nav) return;
-      toggle.addEventListener('click', function() {
-        var open = nav.classList.toggle('open');
-        toggle.classList.toggle('open', open);
-        toggle.setAttribute('aria-label', open ? 'メニューを閉じる' : 'メニューを開く');
-      });
-      nav.querySelectorAll('a').forEach(function(a) {
-        a.addEventListener('click', function() {
-          nav.classList.remove('open');
-          toggle.classList.remove('open');
-          toggle.setAttribute('aria-label', 'メニューを開く');
-        });
-      });
+      var drawer = document.getElementById('nav-drawer');
+      var overlay = document.getElementById('nav-drawer-overlay');
+      var closeBtn = document.getElementById('drawer-close');
+      function openDrawer() {
+        if (drawer) { drawer.classList.add('open'); overlay.classList.add('open'); }
+        if (toggle) { toggle.classList.add('open'); toggle.setAttribute('aria-label', 'メニューを閉じる'); }
+      }
+      function closeDrawer() {
+        if (drawer) { drawer.classList.remove('open'); overlay.classList.remove('open'); }
+        if (toggle) { toggle.classList.remove('open'); toggle.setAttribute('aria-label', 'メニューを開く'); }
+      }
+      if (toggle) { toggle.addEventListener('click', function() { drawer && drawer.classList.contains('open') ? closeDrawer() : openDrawer(); }); }
+      if (closeBtn) { closeBtn.addEventListener('click', closeDrawer); }
+      if (overlay) { overlay.addEventListener('click', closeDrawer); }
+      if (drawer) { drawer.querySelectorAll('a').forEach(function(a) { a.addEventListener('click', closeDrawer); }); }
+      if (nav) { nav.querySelectorAll('a').forEach(function(a) { a.addEventListener('click', function() { nav.classList.remove('open'); if (toggle) { toggle.classList.remove('open'); toggle.setAttribute('aria-label', 'メニューを開く'); } }); }); }
     })();
   </script>
   <main>{{ content }}</main>
@@ -62,14 +131,10 @@
         </div>
         <div class="footer-links">
           <a href="{{ '/#series' | relative_url }}">記事一覧</a>
-          <!-- <a href="{{ '/showcase/' | relative_url }}">Showcase</a> -->
+          <a href="{{ '/showcase/' | relative_url }}">Showcase</a>
           <a href="{{ '/#about' | relative_url }}">About</a>
         </div>
       </div>
-      <div class="footer-links" style="margin-bottom:10px;">
-          <a href="{{ '/privacy.html' | relative_url }}">プライバシーポリシー</a>
-          <a href="{{ '/contact.html' | relative_url }}">お問い合わせ</a>
-        </div>
       <p class="footer-copy">本サイトはアフィリエイト広告を利用しています &nbsp;|&nbsp; &copy; 2026 Cooltake Studio All rights reserved.</p>
     </div>
   </footer>
