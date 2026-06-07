@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>投稿する — Cooltake Studio Community</title>
+  <link rel="icon" href="data:,">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700;9..40,800;9..40,900&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg:#0a0e1a;--card:#0f1525;--border:rgba(255,255,255,.07);
+      --text:#f1f5ff;--muted:#8896b3;--primary:#3b82f6;--secondary:#818cf8;
+      --gradient:linear-gradient(135deg,#3b82f6 0%,#818cf8 100%);
+      --error:#ef4444;--success:#22c55e;
+    }
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+    html{scrollbar-gutter:stable;}
+    body{font-family:'DM Sans','Noto Sans JP',sans-serif;background:var(--bg);color:var(--text);min-height:100vh;line-height:1.7;}
+    a{text-decoration:none;color:inherit;}
+    /* HEADER */
+    .site-header{position:sticky;top:0;z-index:100;background:rgba(10,14,26,.88);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);border-bottom:1px solid var(--border);}
+    .container-wide{max-width:1547px;margin:0 auto;padding:0 28px;}
+    .site-header .container-wide{display:flex;align-items:center;justify-content:space-between;height:68px;}
+    .logo{display:flex;align-items:center;gap:12px;font-size:1.05rem;font-weight:800;letter-spacing:-.02em;}
+    .site-nav{display:flex;align-items:center;gap:4px;}
+    .site-nav a{color:var(--muted);font-size:.875rem;font-weight:500;padding:7px 14px;border-radius:8px;transition:color .2s,background .2s;}
+    .site-nav a:hover{color:var(--text);background:rgba(255,255,255,.05);}
+    .site-nav a.active{color:var(--text);}
+    .nav-toggle{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:8px;}
+    .nav-toggle span{display:block;width:22px;height:2px;background:var(--text);border-radius:2px;transition:.3s;}
+    /* HERO */
+    .hero{text-align:center;padding:64px 28px 32px;}
+    .hero-eyebrow{font-size:.75rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--primary);margin-bottom:12px;}
+    .hero h1{font-size:clamp(1.75rem,4vw,2.5rem);font-weight:900;margin-bottom:12px;background:var(--gradient);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
+    .hero p{color:var(--muted);max-width:540px;margin:0 auto;}
+    /* STEP INDICATOR */
+    .step-bar{display:flex;align-items:center;justify-content:center;gap:0;max-width:480px;margin:0 auto 40px;padding:0 28px;}
+    .step-item{display:flex;align-items:center;gap:8px;font-size:.82rem;color:var(--muted);font-weight:500;}
+    .step-item.active{color:var(--text);}
+    .step-item.done{color:var(--success);}
+    .step-dot{width:28px;height:28px;border-radius:50%;border:2px solid var(--border);display:flex;align-items:center;justify-content:center;font-size:.75rem;font-weight:700;flex-shrink:0;transition:.3s;}
+    .step-item.active .step-dot{border-color:var(--primary);background:var(--primary);color:#fff;}
+    .step-item.done .step-dot{border-color:var(--success);background:var(--success);color:#fff;}
+    .step-connector{flex:1;height:2px;background:var(--border);margin:0 8px;}
+    .step-connector.done{background:var(--success);}
+    /* WRAP */
+    .form-wrap{max-width:660px;margin:0 auto;padding:0 28px 80px;}
+    .form-card{background:var(--card);border:1px solid var(--border);border-radius:20px;padding:36px 40px;}
+    /* TYPE SELECTOR */
+    .type-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:8px;}
+    .type-card{position:relative;background:rgba(255,255,255,.03);border:2px solid var(--border);border-radius:16px;padding:20px 12px 16px;text-align:center;cursor:pointer;transition:border-color .2s,background .2s,transform .15s;}
+    .type-card:hover{border-color:var(--primary);background:rgba(59,130,246,.06);transform:translateY(-2px);}
+    .type-card.selected{border-color:var(--primary);background:rgba(59,130,246,.1);}
+    .type-card-check{position:absolute;top:8px;right:8px;width:20px;height:20px;border-radius:50%;background:var(--primary);color:#fff;font-size:.7rem;display:none;align-items:center;justify-content:center;font-weight:900;}
+    .type-card.selected .type-card-check{display:flex;}
+    .type-icon{font-size:1.75rem;margin-bottom:8px;}
+    .type-label{font-size:.82rem;font-weight:700;color:var(--text);line-height:1.4;}
+    .type-sub{font-size:.73rem;color:var(--muted);margin-top:4px;}
+    .selected-summary{margin-top:12px;padding:10px 14px;background:rgba(59,130,246,.06);border:1px solid rgba(59,130,246,.2);border-radius:10px;font-size:.82rem;color:var(--text);}
+    .selected-summary span{font-weight:700;}
+    /* TYPE SECTION BLOCK HEADERS */
+    .type-section-block{display:flex;align-items:center;gap:16px;margin:36px -40px 28px;padding:18px 40px;border-top:1px solid;border-bottom:1px solid;}
+    .type-section-block .tsb-icon{font-size:1.6rem;flex-shrink:0;}
+    .type-section-block .tsb-title{font-size:1rem;font-weight:800;line-height:1.2;}
+    .type-section-block .tsb-sub{font-size:.78rem;margin-top:3px;opacity:.7;}
+    .type-section-block.s-showcase{background:rgba(59,130,246,.07);border-color:rgba(59,130,246,.2);color:#bfdbfe;}
+    .type-section-block.s-member{background:rgba(245,158,11,.07);border-color:rgba(245,158,11,.2);color:#fde68a;}
+    .type-section-block.s-event{background:rgba(34,197,94,.07);border-color:rgba(34,197,94,.2);color:#bbf7d0;}
+    @media(max-width:768px){.type-section-block{margin:28px -20px 20px;padding:14px 20px;}}
+    /* FORM */
+    .form-section{display:none;}
+    .form-section.visible{display:block;}
+    .section-title{font-size:.78rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin:28px 0 16px;}
+    .section-title:first-child{margin-top:0;}
+    .field{margin-bottom:20px;}
+    .field label{display:block;font-size:.875rem;font-weight:600;margin-bottom:6px;}
+    .req{color:var(--primary);margin-left:3px;}
+    .field input,.field select,.field textarea{width:100%;background:rgba(255,255,255,.04);border:1px solid var(--border);border-radius:10px;padding:10px 14px;color:var(--text);font-family:inherit;font-size:.9rem;outline:none;transition:border-color .2s;}
+    .field input:focus,.field select:focus,.field textarea:focus{border-color:var(--primary);}
+    .field select{appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%238896b3' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:calc(100% - 14px) center;}
+    .field option{background:#1a2035;}
+    .field textarea{min-height:110px;resize:vertical;}
+    .hint{font-size:.78rem;color:var(--muted);margin-top:4px;}
+    .char-count{font-size:.75rem;color:var(--muted);text-align:right;margin-top:3px;}
+    .field-error{font-size:.78rem;color:var(--error);margin-top:4px;display:none;}
+    .field-error.show{display:block;}
+    /* CHECKBOX GROUP */
+    .check-group{display:flex;flex-wrap:wrap;gap:8px;margin-top:6px;}
+    .check-chip{display:flex;align-items:center;gap:6px;background:rgba(255,255,255,.04);border:1px solid var(--border);border-radius:8px;padding:6px 12px;cursor:pointer;font-size:.82rem;transition:.2s;}
+    .check-chip:hover{border-color:var(--primary);background:rgba(59,130,246,.06);}
+    .check-chip input{accent-color:var(--primary);}
+    .check-chip.checked{border-color:var(--primary);background:rgba(59,130,246,.1);}
+    /* CONSENT */
+    .consent-item{display:flex;align-items:flex-start;gap:10px;padding:12px;background:rgba(255,255,255,.03);border-radius:10px;cursor:pointer;margin-bottom:8px;font-size:.85rem;}
+    .consent-item input{margin-top:2px;accent-color:var(--primary);flex-shrink:0;}
+    /* DIVIDER */
+    .divider{border:none;border-top:1px solid var(--border);margin:24px 0;}
+    /* NOTE */
+    .note-box{background:rgba(59,130,246,.06);border:1px solid rgba(59,130,246,.18);border-radius:12px;padding:16px 20px;margin-bottom:28px;font-size:.85rem;color:var(--muted);line-height:1.75;}
+    .note-box strong{color:var(--text);}
+    /* BUTTONS */
+    .btn-row{display:flex;gap:12px;margin-top:28px;}
+    .btn-primary{flex:1;background:var(--gradient);color:#fff;border:none;border-radius:12px;padding:14px;font-size:1rem;font-weight:700;cursor:pointer;transition:opacity .2s,transform .15s;}
+    .btn-primary:hover{opacity:.9;transform:translateY(-1px);}
+    .btn-primary:disabled{opacity:.4;cursor:not-allowed;transform:none;}
+    .btn-secondary{background:rgba(255,255,255,.06);border:1px solid var(--border);color:var(--muted);border-radius:12px;padding:14px 20px;font-size:.9rem;font-weight:600;cursor:pointer;transition:.2s;}
+    .btn-secondary:hover{background:rgba(255,255,255,.1);color:var(--text);}
+    .spinner{display:inline-block;width:18px;height:18px;border:2px solid rgba(255,255,255,.3);border-top-color:#fff;border-radius:50%;animation:spin .7s linear infinite;vertical-align:middle;margin-right:8px;}
+    @keyframes spin{to{transform:rotate(360deg);}}
+    /* SUCCESS */
+    .success-card{text-align:center;padding:48px 28px;}
+    .success-icon{font-size:3.5rem;margin-bottom:16px;}
+    .success-card h2{font-size:1.4rem;font-weight:800;margin-bottom:12px;color:var(--success);}
+    .success-card p{color:var(--muted);margin-bottom:24px;}
+    /* PART ROWS */
+    .part-category{font-size:.72rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:10px 0 6px;padding-left:2px;}
+    .part-category:first-child{margin-top:0;}
+    .part-row{display:flex;align-items:center;gap:10px;padding:8px 10px;border-radius:10px;border:1px solid var(--border);margin-bottom:6px;transition:border-color .2s,background .2s;}
+    .part-row.part-active{border-color:rgba(59,130,246,.35);background:rgba(59,130,246,.04);}
+    .part-row input[type="checkbox"]{width:16px;height:16px;accent-color:var(--primary);flex-shrink:0;cursor:pointer;}
+    .part-row-name{font-size:.875rem;font-weight:600;min-width:110px;cursor:pointer;flex-shrink:0;}
+    .part-note-input{flex:1;background:transparent;border:none;border-bottom:1px solid transparent;color:var(--muted);font-size:.8rem;font-family:inherit;padding:2px 4px;outline:none;transition:.2s;pointer-events:none;opacity:0;}
+    .part-row.part-active .part-note-input{border-bottom-color:var(--border);color:var(--text);pointer-events:auto;opacity:1;}
+    .part-row.part-active .part-note-input:focus{border-bottom-color:var(--primary);}
+    /* GROUP FIELD TIP */
+    .group-tip{font-size:.78rem;color:var(--muted);background:rgba(129,140,248,.06);border:1px solid rgba(129,140,248,.15);border-radius:8px;padding:8px 12px;margin-top:6px;}
+    /* FOOTER */
+    footer{text-align:center;padding:32px;color:var(--muted);font-size:.8rem;border-top:1px solid var(--border);}
+    @media(max-width:768px){
+      .container-wide{padding:0 16px;}
+      .nav-toggle{display:flex;}
+      .site-nav{display:none;flex-direction:column;gap:0;position:absolute;top:68px;left:0;right:0;background:rgba(10,14,26,.97);border-bottom:1px solid var(--border);padding:8px 0;z-index:99;}
+      .site-nav.open{display:flex;}
+      .site-nav a{padding:13px 20px;border-radius:0;display:block;}
+      .type-grid{grid-template-columns:1fr;}
+      .form-card{padding:24px 20px;}
+    }
+  </style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container-wide">
+  <a href="/" class="logo">
+    <svg viewBox="0 30 297 62" xmlns="http://www.w3.org/2000/svg" style="height:38px;width:auto"><g transform="matrix(0.32683223,0,0,0.32683223,0.5507297,33.769866)" fill="#4984f6"><path d="m 122.66925,2.3208558 -3.28226,8.8814032 h 19.3074 5.21299 l 2.02742,-0.198435 1.13893,-2.3115265 2.4328,-6.3714417 h -26.83728 m 24.13424,3.6684058 v 0.386148 h -24.32732 v -0.386148 h 24.32732 M 118.03547,22.207477 h 14.48055 l 5.27111,-0.198436 1.3299,-2.890748 2.85961,-7.336812 H 127.4961 l -5.28078,0.198436 -1.28374,2.697674 -2.89611,7.529886 m 29.54032,-10.425996 -4.05455,10.425996 h 14.48055 l 5.30967,-0.198436 1.33678,-2.890748 2.81417,-7.336812 H 147.57579 M 88.495151,33.405769 H 102.9757 l 5.28078,-0.198436 1.28374,-2.697674 2.89611,-7.529886 H 97.955777 l -5.2711,0.198436 -1.329918,2.890748 -2.859608,7.336812 m 25.292689,0 h 14.28748 l 5.32532,-0.198436 1.31622,-2.697674 2.81908,-7.529886 h -14.287 l -5.32533,0.198436 -1.31635,2.697674 -2.81895,7.529886 m 25.48577,0 h 14.48055 l 5.2711,-0.198436 1.29341,-2.890748 2.89611,-7.336812 h -14.48055 l -5.3076,0.198436 -1.25691,2.697674 -2.89611,7.529886 M 84.247524,44.60406 h 14.480549 l 5.280777,-0.198436 1.28374,-2.697674 2.89611,-7.722959 H 93.901223 l -5.325325,0.198435 -1.441945,3.083822 -2.886429,7.336812 m 25.292696,0 h 14.28747 l 5.32533,-0.198436 1.39308,-2.890748 2.93529,-7.529885 h -14.48055 l -5.28078,0.198435 -1.28373,2.697674 -2.89611,7.72296 m 29.15417,-10.619069 -4.05456,10.619069 h 14.48055 l 5.27111,-0.198436 1.29341,-2.890748 2.89611,-7.529885 h -19.88662 m 18.34203,10.619069 h 26.83728 l 3.28226,-8.881403 h -19.3074 c -1.72816,0 -5.80905,-0.758768 -7.25607,0.198435 -0.64346,0.425649 -0.89697,1.627318 -1.15725,2.311526 -0.79486,2.089546 -1.88329,4.195954 -2.39882,6.371442 m 27.4165,-5.406072 v 0.386148 H 160.1256 v -0.386148 h 24.32732 M 54.900279,55.609278 h 19.88662 L 78.841452,45.183282 H 64.360904 l -5.309688,0.198436 -1.29133,2.697674 -2.859607,7.529886 m 54.253791,-10.425996 -3.86148,10.425996 h 14.28747 l 5.32533,-0.198436 1.27837,-2.697674 2.85693,-7.529886 h -19.88662 m 21.23814,10.425996 h 14.48054 l 5.27051,-0.198436 1.29401,-2.890748 2.89611,-7.336812 h -14.48055 l -5.30968,0.198436 -1.25483,2.697674 -2.89611,7.529886 m 25.09961,0 h 14.48055 l 5.28078,-0.198436 1.28374,-2.697674 2.89611,-7.529886 h -14.48055 l -5.27111,0.198436 -1.3299,2.890748 -2.85962,7.336812 m -78.967255,0 h 19.500472 5.212993 l 1.99853,-0.198436 1.20657,-2.5046 2.39405,-6.178368 H 87.336708 82.12371 l -1.988842,0.198436 -1.177364,2.5046 -2.432939,6.178368 M 103.94107,50.39628 v 0.386148 H 79.613748 V 50.39628 H 103.94107 M 24.587663,66.807569 H 44.474284 L 48.528837,56.1885 H 34.048288 l -5.2711,0.198436 -1.303099,2.890748 -2.886426,7.529885 M 54.514131,56.1885 50.459577,66.807569 h 14.480549 l 5.2711,-0.198435 1.303096,-2.890749 2.886429,-7.529885 h -19.88662 m 21.045064,10.619069 h 14.480548 l 5.307602,-0.198435 1.256914,-2.697675 2.896109,-7.722959 H 85.212894 l -5.325326,0.198436 -1.355241,2.890748 -2.973132,7.529885 m 25.292695,0 h 14.28747 l 5.32533,-0.198435 1.39368,-2.890749 2.93469,-7.529885 h -14.48055 l -5.28078,0.198436 -1.34526,2.890748 -2.83458,7.529885 M 130.00606,56.1885 125.9515,66.807569 h 14.48055 l 5.27111,-0.198435 1.3299,-2.890749 2.85962,-7.529885 h -19.88662 m 21.04506,10.619069 h 14.48055 l 5.30968,-0.198435 1.33677,-2.890749 2.81418,-7.529885 h -14.28748 l -5.30968,0.198436 -1.37074,2.890748 -2.97328,7.529885 m 25.29269,0 h 19.88662 L 200.28499,56.1885 h -14.48055 l -5.28078,0.198436 -1.24516,2.697674 -2.93469,7.722959 m -126.270381,0.579222 -3.86148,10.425996 h 14.287475 l 5.309688,-0.198436 1.293409,-2.697674 2.857528,-7.529886 h -19.88662 m 21.238138,10.425996 h 19.88662 l 3.86148,-10.425996 H 80.772192 l -5.309688,0.198436 -1.291329,2.697674 -2.859608,7.529886 m 25.099618,0 h 14.480545 l 5.28078,-0.198436 1.41529,-3.083822 2.76456,-7.143738 h -14.48055 l -5.27111,0.198436 -1.331987,2.890748 -2.857528,7.336812 m 50.392305,0 h 19.88662 l 4.05456,-10.425996 h -14.48055 l -5.30968,0.198436 -1.33677,2.890748 -2.81418,7.336812 m 25.09962,0 h 14.48055 l 5.28078,-0.198436 1.28374,-2.697674 2.89611,-7.529886 h -14.48055 l -5.27111,0.198436 -1.3299,2.890748 -2.85962,7.336812 m -50.77846,-8.881404 -3.28225,8.881404 h 19.3074 5.21299 l 2.02742,-0.198436 1.13893,-2.311526 2.4328,-6.371442 H 121.12465 M 17.057778,78.005861 h 19.500472 5.212998 l 1.998523,-0.198436 1.206565,-2.5046 2.394057,-6.178368 H 27.869921 22.656924 l -1.988841,0.198436 -1.177364,2.5046 -2.432941,6.178368 M 145.2589,72.599789 v 0.386148 H 120.73851 V 72.599789 H 145.2589 M 44.667358,72.792863 v 0.386148 H 20.146962 V 72.792863 H 44.667358 M 3.9287473,78.198935 v 0.772296 H 207.42872 V 78.198935 H 3.9287473 m 12.5498087,11.58444 h 14.480549 l 5.2711,-0.198436 1.293415,-2.890748 2.89611,-7.529886 H 25.939181 l -5.270502,0.198436 -1.294013,2.890748 -2.89611,7.529886 m 54.060715,-10.61907 -4.054553,10.61907 h 14.480548 l 5.2711,-0.198436 1.329917,-2.890748 2.859608,-7.529886 h -19.88662 m 21.045064,10.61907 h 14.480545 l 5.30968,-0.198436 1.33678,-2.890748 2.81417,-7.529886 h -14.28748 l -5.309683,0.198436 -1.370733,2.890748 -2.973279,7.529886 m 25.292695,0 h 19.88662 l 4.05455,-10.61907 h -14.48055 l -5.28078,0.198436 -1.24515,2.697674 -2.93469,7.72296 m 29.15417,-10.61907 -4.05456,10.61907 h 14.48055 l 5.27111,-0.198436 1.25483,-2.697674 2.93469,-7.72296 H 146.0312 M 38.295916,89.783375 h 19.307398 5.212998 l 2.02743,-0.198436 1.193302,-2.5046 2.378413,-6.178368 H 48.721911 43.701988 l -1.988245,0.198436 -1.062354,2.311526 -2.355473,6.371442 m 125.691164,0 h 26.83728 l 3.28226,-8.881404 h -19.3074 -5.213 l -2.02741,0.198436 -1.13893,2.311526 -2.4328,6.371442 M 65.712422,84.377303 v 0.386148 H 41.3851 v -0.386148 h 24.327322 m 125.691158,0 v 0.386148 h -24.32732 v -0.386148 h 24.32732 M 16.285482,90.362597 12.230928,100.78859 h 14.480549 l 5.309685,-0.19843 1.336767,-2.890752 2.814173,-7.336811 h -19.88662 m 20.85199,10.425993 h 14.480549 l 5.2711,-0.19843 1.331997,-2.890752 2.857528,-7.336811 H 46.598097 l -5.28078,0.198435 -1.415283,3.083822 -2.764562,7.143736 M 66.291644,90.362597 62.23709,100.78859 h 14.480549 l 5.309687,-0.19843 1.29133,-2.697678 2.859608,-7.529885 H 66.291644 M 87.529782,100.78859 H 107.4164 l 3.86148,-10.425993 H 96.990407 l -5.309688,0.198435 -1.293409,2.697674 -2.857528,7.529884 m 25.099618,0 h 14.48055 l 5.28078,-0.19843 1.32232,-2.890752 2.85752,-7.336811 h -14.48055 l -5.28078,0.198435 -1.32231,2.890748 -2.85753,7.33681 m 29.15417,-10.425993 -3.86148,10.425993 h 14.28748 l 5.30967,-0.19843 1.29342,-2.697678 2.85753,-7.529885 h -19.88662 m 25.09962,0 -3.86148,10.425993 h 14.28747 l 5.32533,-0.19843 1.27837,-2.697678 2.85693,-7.529885 H 166.88319 M 36.944398,101.36781 32.889845,111.98688 h 14.480548 l 5.2711,-0.19843 1.254834,-2.69768 2.934691,-7.72296 h -19.88662 m 21.238138,10.61907 h 14.287475 l 5.309688,-0.19843 1.291329,-2.69768 2.859608,-7.72296 H 67.643161 l -5.309687,0.19844 -1.29341,2.69767 -2.857528,7.72296 m 25.099618,0 h 19.886616 l 4.05456,-10.61907 H 92.742779 l -5.2711,0.19844 -1.254834,2.69767 -2.934691,7.72296 m 29.154176,-10.61907 -4.05456,10.61907 h 14.48055 l 5.28078,-0.19843 1.24515,-2.69768 2.9347,-7.72296 h -19.88662 m 21.23813,10.61907 h 14.28748 l 5.30967,-0.19843 1.37075,-2.89075 2.97328,-7.52989 h -14.48055 l -5.30968,0.19844 -1.33677,2.89075 -2.81418,7.52988 M 53.741835,122.9921 h 14.480548 l 5.2711,-0.19843 1.293416,-2.89075 2.896109,-7.33681 H 63.20246 l -5.307602,0.19843 -1.256914,2.69768 -2.896109,7.52988 m 25.099617,0 h 14.480549 l 5.280781,-0.19843 1.283734,-2.69768 2.896114,-7.52988 H 88.302077 l -5.2711,0.19843 -1.303096,2.89075 -2.886429,7.33681 m 25.292688,0 h 14.28748 l 5.32532,-0.19843 1.31622,-2.69768 2.81908,-7.52988 h -14.28747 l -5.32533,0.19843 -1.31621,2.69768 -2.81909,7.52988 m 25.09962,0 h 14.48055 l 5.27111,-0.19843 1.30309,-2.89075 2.88643,-7.33681 h -14.48055 l -5.28078,0.19843 -1.28374,2.69768 -2.89611,7.52988 m -79.932627,11.19829 h 14.480549 l 5.2711,-0.19843 1.331997,-2.89075 2.857528,-7.33681 H 58.761758 l -5.280781,0.19843 -1.34526,2.89075 -2.834584,7.33681 m 29.154171,-10.42599 -4.054553,10.42599 h 14.480548 l 5.309688,-0.19843 1.29133,-2.69768 2.859608,-7.52988 H 78.455304 m 25.292696,0 -3.861484,10.42599 h 14.287474 l 5.30968,-0.19843 1.29342,-2.69768 2.85753,-7.52988 H 103.748 m -33.594877,21.62428 h 14.287475 l 5.325325,-0.19843 1.355242,-2.89075 2.973132,-7.52989 H 79.613748 l -5.307602,0.19844 -1.256913,2.69767 -2.89611,7.72296 m 25.292692,0 h 14.287475 l 5.32533,-0.19843 1.35524,-2.89075 2.97313,-7.52989 h -14.48055 l -5.307602,0.19844 -1.256913,2.69767 -2.89611,7.72296 M 65.905496,156.3939 h 14.480548 l 5.2711,-0.19843 1.293416,-2.89075 2.896109,-7.33681 H 75.366121 l -5.307602,0.19843 -1.256914,2.69768 z"></path></g><path fill="#f0f0f0" d="m 78.991217,74.651715 c -1.403586,-0.204529 -3.390513,-1.189106 -3.944286,-1.954518 -1.018547,-1.407814 -0.630497,-3.985777 1.345511,-8.938738 1.823383,-4.570403 2.942231,-6.650086 4.357494,-8.09959 2.410335,-2.468644 4.561072,-3.147262 9.967864,-3.145122 3.127834,0.0016 6.555575,0.314264 6.86856,0.627253 0.05486,0.05483 -0.177103,0.67897 -0.515469,1.38691 -0.584898,1.223749 -0.646848,1.281478 -1.257288,1.171591 -0.353143,-0.06356 -2.280612,-0.181291 -4.283265,-0.261617 -3.969839,-0.159215 -4.943351,-0.02389 -6.605141,0.918272 -1.419558,0.804809 -2.236676,2.310447 -4.924716,9.074371 -1.328069,3.341828 -1.480006,4.16569 -0.95535,5.180262 0.521434,1.008344 1.731289,1.354606 4.673956,1.337693 2.275266,-0.01307 5.302819,-0.294946 6.63388,-0.617634 l 0.483496,-0.117206 -0.503296,1.350086 c -0.49215,1.320194 -0.525793,1.355752 -1.519173,1.60569 -2.307041,0.580457 -7.424652,0.831733 -9.822777,0.482297 z m 17.980341,-0.07102 c -1.626043,-0.350398 -2.721695,-1.080348 -3.198951,-2.131223 -0.5205,-1.146094 -0.503944,-1.641929 0.127591,-3.821231 1.92902,-6.656643 4.973378,-9.247487 10.856892,-9.239552 2.84717,0.004 4.75437,0.63163 5.68435,1.871098 0.61766,0.823213 0.58571,3.259868 -0.0686,5.231138 -1.29012,3.886888 -3.01573,6.213767 -5.44555,7.342995 -2.12095,0.985692 -5.413007,1.294705 -7.955744,0.746775 z m 5.918752,-2.816366 c 0.66597,-0.331866 1.36575,-0.896075 1.72291,-1.389113 1.32563,-1.829978 2.73693,-6.204301 2.33922,-7.250374 -0.37158,-0.977339 -1.07892,-1.245753 -3.06369,-1.162582 -1.58564,0.06645 -1.89233,0.14801 -2.70529,0.71949 -1.16054,0.81583 -1.827567,1.832702 -2.776883,4.233342 -0.908916,2.298472 -1.087329,3.080388 -0.898759,3.938942 0.334802,1.524346 3.183462,2.006114 5.382492,0.910295 z m 11.82615,2.78331 c -0.68151,-0.17314 -1.5277,-0.5203 -1.88043,-0.771464 -0.73833,-0.525734 -1.42878,-1.89678 -1.43556,-2.850617 -0.008,-1.161348 0.81784,-3.962957 1.6947,-5.747365 1.53772,-3.129283 3.75923,-4.973369 6.73738,-5.592742 1.82184,-0.378886 5.8422,-0.163961 7.06694,0.377796 2.6164,1.157364 2.74713,4.136313 0.39825,9.07543 -1.3429,2.823797 -3.19682,4.538324 -5.72198,5.291768 -1.66237,0.496004 -5.30755,0.61143 -6.8593,0.217194 z m 6.19699,-2.781394 c 1.4277,-0.711458 2.30214,-1.995734 3.30302,-4.851153 0.93895,-2.678736 0.96489,-3.531784 0.13267,-4.363998 -0.57356,-0.573564 -0.73618,-0.61959 -2.17384,-0.615278 -3.16633,0.0095 -4.49851,1.276389 -6.0899,5.791483 -0.69195,1.963191 -0.80496,2.868389 -0.44261,3.545435 0.63057,1.178237 3.37998,1.435677 5.27066,0.493511 z m 18.22553,2.781009 c -1.32848,-0.428143 -1.86914,-1.143288 -1.86914,-2.47234 0,-0.806548 0.38525,-1.99979 1.7197,-5.326476 0.94584,-2.357892 1.76726,-4.40637 1.82539,-4.552176 0.077,-0.19313 -0.21716,-0.265103 -1.08346,-0.265103 -0.65402,0 -1.18906,-0.02389 -1.18897,-0.05298 1e-4,-0.02918 0.18087,-0.530207 0.40172,-1.113429 l 0.40154,-1.060414 1.30459,-0.10604 1.30459,-0.10604 0.69496,-1.69666 c 1.16014,-2.83235 0.96187,-2.651026 2.89861,-2.651026 0.92906,0 1.68873,0.02389 1.68816,0.05298 -5.7e-4,0.02918 -0.3346,0.948795 -0.74229,2.043636 -0.40768,1.094841 -0.74125,2.07307 -0.74125,2.173843 0,0.100773 1.10773,0.183223 2.46163,0.183223 2.26033,0 2.44934,0.03038 2.31122,0.371143 -0.0827,0.204128 -0.24913,0.657456 -0.36977,1.00739 -0.12062,0.349942 -0.29396,0.719137 -0.38518,0.820439 -0.0912,0.101311 -1.25606,0.168066 -2.58855,0.148347 l -2.4227,-0.03583 -0.47991,1.230194 c -2.76348,7.083655 -3.0889,8.229092 -2.48118,8.733456 0.35245,0.292509 1.57207,0.34914 3.05309,0.141758 0.61238,-0.08575 1.11343,-0.107723 1.11343,-0.04882 0,0.05892 -0.20086,0.63195 -0.44635,1.273463 -0.52284,1.366253 -0.59152,1.39745 -3.37113,1.531024 -1.44487,0.06942 -2.29594,0.0064 -3.00875,-0.223518 z"></path></svg>
+  </a>
+  <nav class="site-nav" id="site-nav">
+    <a href="/#series">記事一覧</a>
+    <a href="/showcase/">Showcase</a>
+    <a href="/community/members.html">メンバー募集</a>
+    <a href="/community/events.html">イベント</a>
+    <a href="/#about">About</a>
+  </nav>
+  <button class="nav-toggle" id="nav-toggle" aria-label="メニューを開く"><span></span><span></span><span></span></button>
+  </div>
+</header>
+<script>
+  (function(){var t=document.getElementById('nav-toggle'),n=document.getElementById('site-nav');if(!t||!n)return;t.addEventListener('click',function(){var o=n.classList.toggle('open');t.classList.toggle('open',o);t.setAttribute('aria-label',o?'メニューを閉じる':'メニューを開く');});n.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){n.classList.remove('open');t.classList.remove('open');t.setAttribute('aria-label','メニューを開く');});});})();
+</script>
+
+<section class="hero">
+  <div class="hero-eyebrow">Community</div>
+  <h1>投稿する</h1>
+  <p>作品発表・メンバー募集・イベント告知をひとつのフォームから投稿できます。</p>
+</section>
+
+<div class="form-wrap">
+
+  <!-- STEP BAR -->
+  <div class="step-bar">
+    <div class="step-item active" id="step1-item">
+      <div class="step-dot">1</div>
+      <span>タイプ選択</span>
+    </div>
+    <div class="step-connector" id="conn1"></div>
+    <div class="step-item" id="step2-item">
+      <div class="step-dot">2</div>
+      <span>フォーム入力</span>
+    </div>
+    <div class="step-connector" id="conn2"></div>
+    <div class="step-item" id="step3-item">
+      <div class="step-dot">3</div>
+      <span>送信完了</span>
+    </div>
+  </div>
+
+  <div class="form-card" id="formCard">
+
+    <!-- STEP 1: MULTI TYPE SELECT -->
+    <div id="step1" class="form-section visible">
+      <div class="section-title" style="margin-top:0;">投稿タイプを選んでください（複数選択可）</div>
+      <div class="type-grid">
+        <div class="type-card" data-type="showcase" onclick="toggleType('showcase',this)">
+          <div class="type-card-check">✓</div>
+          <div class="type-icon">🎵</div>
+          <div class="type-label">作品を投稿する</div>
+          <div class="type-sub">楽曲・音楽作品のShowcase</div>
+        </div>
+        <div class="type-card" data-type="member" onclick="toggleType('member',this)">
+          <div class="type-card-check">✓</div>
+          <div class="type-icon">🎸</div>
+          <div class="type-label">メンバーを募集する</div>
+          <div class="type-sub">バンド・ユニットのメンバー募集</div>
+        </div>
+        <div class="type-card" data-type="event" onclick="toggleType('event',this)">
+          <div class="type-card-check">✓</div>
+          <div class="type-icon">🎤</div>
+          <div class="type-label">イベントを告知する</div>
+          <div class="type-sub">ライブ・セッション・ワークショップ</div>
+        </div>
+      </div>
+      <div class="selected-summary" id="selected-summary" style="display:none"></div>
+      <div class="btn-row">
+        <button class="btn-primary" id="btn-next1" onclick="goStep2()" disabled>次へ →</button>
+      </div>
+    </div>
+
+    <!-- STEP 2: FORM -->
+    <div id="step2" class="form-section">
+      <form id="mainForm" novalidate>
+
+        <!-- COMMON FIELDS -->
+        <div class="section-title">基本情報</div>
+
+        <div class="field">
+          <label>投稿者名（ニックネーム）<span class="req">*</span></label>
+          <input type="text" id="f-nickname" name="nickname" placeholder="例: tanaka_beats" maxlength="30">
+          <div class="hint">2〜30文字</div>
+          <div class="field-error" id="e-nickname"></div>
+        </div>
+
+        <div class="field">
+          <label>バンド・ユニット名（任意）</label>
+          <input type="text" id="f-group_name" name="group_name" placeholder="例: The Midnight Tape" maxlength="50">
+          <div class="group-tip">💡 同じグループ名を入力すると、Showcase・メンバー募集・イベントが自動で紐づきます（2〜50文字）</div>
+        </div>
+
+        <!-- SHOWCASE FIELDS -->
+        <div id="f-showcase" class="type-fields" style="display:none">
+          <div class="type-section-block s-showcase">
+            <div class="tsb-icon">🎵</div>
+            <div><div class="tsb-title">作品投稿</div><div class="tsb-sub">楽曲・演奏・歌ってみた動画などの情報を入力してください</div></div>
+          </div>
+          <div class="field">
+            <label>作品タイトル<span class="req">*</span></label>
+            <input type="text" id="f-title-s" name="title" placeholder="例: 春の宅録 ep.01" maxlength="60">
+            <div class="char-count"><span id="cnt-title-s">0</span>/60</div>
+            <div class="field-error" id="e-title-s"></div>
+          </div>
+          <div class="field">
+            <label>ジャンル<span class="req">*</span></label>
+            <select id="f-genre" name="genre">
+              <option value="">選択してください</option>
+              <optgroup label="🎙 歌・演奏動画">
+                <option>歌ってみた</option><option>演奏してみた</option><option>叩いてみた</option>
+              </optgroup>
+              <optgroup label="🎵 オリジナル・制作">
+                <option>宅録・弾き語り</option><option>DTM・電子音楽</option><option>バンド演奏</option>
+                <option>ボカロ・UTAU</option><option>ビートメイク・ヒップホップ</option>
+                <option>アンビエント・実験音楽</option><option>その他</option>
+              </optgroup>
+            </select>
+            <div class="field-error" id="e-genre"></div>
+          </div>
+          <div class="field">
+            <label>メイン作品リンク<span class="req">*</span></label>
+            <input type="url" id="f-main_link" name="main_link" placeholder="https://youtu.be/xxxxx">
+            <div class="hint">YouTube / SoundCloud / ニコ動 / Spotify など</div>
+            <div class="field-error" id="e-main_link"></div>
+          </div>
+          <div class="field">
+            <label>追加リンク（任意）</label>
+            <input type="url" id="f-extra_link" name="extra_link" placeholder="https://booth.pm/...">
+            <div class="hint">BOOTH / note / Gumroad など</div>
+          </div>
+          <div class="field">
+            <label>作品紹介文<span class="req">*</span></label>
+            <textarea id="f-description-s" name="description" placeholder="作品のこだわり、制作背景などを教えてください。" maxlength="400"></textarea>
+            <div class="char-count"><span id="cnt-desc-s">0</span>/400</div>
+            <div class="hint">50〜400文字</div>
+            <div class="field-error" id="e-description-s"></div>
+          </div>
+          <div class="field">
+            <label>使用機材<span class="req">*</span></label>
+            <input type="text" id="f-gear" name="gear" placeholder="例: SM58, Apollo Twin, Ableton Live">
+            <div class="hint">カンマ区切り</div>
+            <div class="field-error" id="e-gear"></div>
+          </div>
+          <div class="field">
+            <label>SNSリンク（任意）</label>
+            <input type="url" id="f-sns_link" name="sns_link" placeholder="https://x.com/yourname">
+          </div>
+        </div>
+
+        <!-- MEMBER FIELDS -->
+        <div id="f-member" class="type-fields" style="display:none">
+          <div class="type-section-block s-member">
+            <div class="tsb-icon">🎸</div>
+            <div><div class="tsb-title">メンバー募集</div><div class="tsb-sub">募集するパート・活動条件などを入力してください</div></div>
+          </div>
+          <div class="field">
+            <label>募集タイトル<span class="req">*</span></label>
+            <input type="text" id="f-title-m" placeholder="例: ボーカル募集中！週1練習のロックバンド" maxlength="60">
+            <div class="char-count"><span id="cnt-title-m">0</span>/60</div>
+            <div class="field-error" id="e-title-m"></div>
+          </div>
+          <div class="field">
+            <label>募集種別<span class="req">*</span></label>
+            <select id="f-recruit_type">
+              <option value="">選択してください</option>
+              <option>バンドメンバー</option><option>セッション</option><option>サポート</option>
+              <option>ユニット</option><option>その他</option>
+            </select>
+            <div class="field-error" id="e-recruit_type"></div>
+          </div>
+          <div class="field">
+            <label>あなたのパート<span class="req">*</span></label>
+            <select id="f-my_part">
+              <option value="">選択してください</option>
+              <optgroup label="🎵 音楽パート">
+                <option>ボーカル</option><option>ギター</option><option>ベース</option><option>ドラム</option>
+                <option>キーボード</option><option>管楽器</option><option>弦楽器</option>
+                <option>DJ</option><option>トラックメイカー</option><option>コーラス</option>
+              </optgroup>
+              <optgroup label="🎨 クリエイティブ・動画">
+                <option>絵師・イラスト</option><option>動画編集</option><option>映像・MV制作</option>
+                <option>カメラ・撮影</option><option>デザイン</option>
+              </optgroup>
+              <option>その他</option>
+            </select>
+            <div class="field-error" id="e-my_part"></div>
+          </div>
+          <div class="field">
+            <label>募集パート<span class="req">*</span>（複数可・特記事項は任意）</label>
+            <div id="recruit_parts_group">
+              <div class="part-category">🎵 音楽パート</div>
+              <div class="part-row" id="pr-ボーカル"><input type="checkbox" id="pc-ボーカル" value="ボーカル" onchange="togglePartRow(this)"><label class="part-row-name" for="pc-ボーカル">ボーカル</label><input type="text" class="part-note-input" id="pn-ボーカル" placeholder="特記事項（例：ハモリ歓迎）" maxlength="60"></div>
+              <div class="part-row" id="pr-ギター"><input type="checkbox" id="pc-ギター" value="ギター" onchange="togglePartRow(this)"><label class="part-row-name" for="pc-ギター">ギター</label><input type="text" class="part-note-input" id="pn-ギター" placeholder="特記事項（例：ソロ多め歓迎）" maxlength="60"></div>
+              <div class="part-row" id="pr-ベース"><input type="checkbox" id="pc-ベース" value="ベース" onchange="togglePartRow(this)"><label class="part-row-name" for="pc-ベース">ベース</label><input type="text" class="part-note-input" id="pn-ベース" placeholder="特記事項（例：5弦も可）" maxlength="60"></div>
+              <div class="part-row" id="pr-ドラム"><input type="checkbox" id="pc-ドラム" value="ドラム" onchange="togglePartRow(this)"><label class="part-row-name" for="pc-ドラム">ドラム</label><input type="text" class="part-note-input" id="pn-ドラム" placeholder="特記事項（例：電子ドラム可）" maxlength="60"></div>
+              <div class="part-row" id="pr-キーボード"><input type="checkbox" id="pc-キーボード" value="キーボード" onchange="togglePartRow(this)"><label class="part-row-name" for="pc-キーボード">キーボード</label><input type="text" class="part-note-input" id="pn-キーボード" placeholder="特記事項（例：シンセ・ピアノ問わず）" maxlength="60"></div>
+              <div class="part-row" id="pr-管楽器"><input type="checkbox" id="pc-管楽器" value="管楽器" onchange="togglePartRow(this)"><label class="part-row-name" for="pc-管楽器">管楽器</label><input type="text" class="part-note-input" id="pn-管楽器" placeholder="特記事項（例：サックス・トランペット）" maxlength="60"></div>
+              <div class="part-row" id="pr-弦楽器"><input type="checkbox" id="pc-弦楽器" value="弦楽器" onchange="togglePartRow(this)"><label class="part-row-name" for="pc-弦楽器">弦楽器</label><input type="text" class="part-note-input" id="pn-弦楽器" placeholder="特記事項（例：バイオリン・チェロ）" maxlength="60"></div>
+              <div class="part-row" id="pr-DJ"><input type="checkbox" id="pc-DJ" value="DJ" onchange="togglePartRow(this)"><label class="part-row-name" for="pc-DJ">DJ</label><input type="text" class="part-note-input" id="pn-DJ" placeholder="特記事項（例：ターンテーブル経験者優遇）" maxlength="60"></div>
+              <div class="part-row" id="pr-トラックメイカー"><input type="checkbox" id="pc-トラックメイカー" value="トラックメイカー" onchange="togglePartRow(this)"><label class="part-row-name" for="pc-トラックメイカー">トラックメイカー</label><input type="text" class="part-note-input" id="pn-トラックメイカー" placeholder="特記事項（例：DAW問わず）" maxlength="60"></div>
+              <div class="part-row" id="pr-コーラス"><input type="checkbox" id="pc-コーラス" value="コーラス" onchange="togglePartRow(this)"><label class="part-row-name" for="pc-コーラス">コーラス</label><input type="text" class="part-note-input" id="pn-コーラス" placeholder="特記事項（例：3〜4パート希望）" maxlength="60"></div>
+              <div class="part-category">🎨 クリエイティブ・動画</div>
+              <div class="part-row" id="pr-絵師・イラスト"><input type="checkbox" id="pc-絵師・イラスト" value="絵師・イラスト" onchange="togglePartRow(this)"><label class="part-row-name" for="pc-絵師・イラスト">絵師・イラスト</label><input type="text" class="part-note-input" id="pn-絵師・イラスト" placeholder="特記事項（例：MV用イラスト）" maxlength="60"></div>
+              <div class="part-row" id="pr-動画編集"><input type="checkbox" id="pc-動画編集" value="動画編集" onchange="togglePartRow(this)"><label class="part-row-name" for="pc-動画編集">動画編集</label><input type="text" class="part-note-input" id="pn-動画編集" placeholder="特記事項（例：Premiere Pro使用者）" maxlength="60"></div>
+              <div class="part-row" id="pr-映像・MV制作"><input type="checkbox" id="pc-映像・MV制作" value="映像・MV制作" onchange="togglePartRow(this)"><label class="part-row-name" for="pc-映像・MV制作">映像・MV制作</label><input type="text" class="part-note-input" id="pn-映像・MV制作" placeholder="特記事項（例：アニメーションMV希望）" maxlength="60"></div>
+              <div class="part-row" id="pr-カメラ・撮影"><input type="checkbox" id="pc-カメラ・撮影" value="カメラ・撮影" onchange="togglePartRow(this)"><label class="part-row-name" for="pc-カメラ・撮影">カメラ・撮影</label><input type="text" class="part-note-input" id="pn-カメラ・撮影" placeholder="特記事項（例：ライブ撮影歓迎）" maxlength="60"></div>
+              <div class="part-row" id="pr-デザイン"><input type="checkbox" id="pc-デザイン" value="デザイン" onchange="togglePartRow(this)"><label class="part-row-name" for="pc-デザイン">デザイン</label><input type="text" class="part-note-input" id="pn-デザイン" placeholder="特記事項（例：ジャケット・サムネ制作）" maxlength="60"></div>
+              <div class="part-row" id="pr-その他"><input type="checkbox" id="pc-その他" value="その他" onchange="togglePartRow(this)"><label class="part-row-name" for="pc-その他">その他</label><input type="text" class="part-note-input" id="pn-その他" placeholder="どのような方を募集していますか？" maxlength="60"></div>
+            </div>
+            <div class="field-error" id="e-recruit_parts"></div>
+          </div>
+          <div class="field">
+            <label>ジャンル<span class="req">*</span>（最大3つ）</label>
+            <div class="check-group" id="genres_group">
+              <label class="check-chip"><input type="checkbox" value="ロック"> ロック</label>
+              <label class="check-chip"><input type="checkbox" value="ポップ"> ポップ</label>
+              <label class="check-chip"><input type="checkbox" value="ジャズ"> ジャズ</label>
+              <label class="check-chip"><input type="checkbox" value="クラシック"> クラシック</label>
+              <label class="check-chip"><input type="checkbox" value="R&B"> R&B</label>
+              <label class="check-chip"><input type="checkbox" value="ヒップホップ"> ヒップホップ</label>
+              <label class="check-chip"><input type="checkbox" value="エレクトロ"> エレクトロ</label>
+              <label class="check-chip"><input type="checkbox" value="フォーク"> フォーク</label>
+              <label class="check-chip"><input type="checkbox" value="メタル"> メタル</label>
+              <label class="check-chip"><input type="checkbox" value="アニソン"> アニソン</label>
+              <label class="check-chip"><input type="checkbox" value="その他"> その他</label>
+            </div>
+            <div class="field-error" id="e-genres"></div>
+          </div>
+          <div class="field">
+            <label>活動地域<span class="req">*</span></label>
+            <select id="f-region">
+              <option value="">選択してください</option>
+              <option>北海道</option><option>東北</option><option>関東（東京・神奈川・埼玉）</option>
+              <option>関東（千葉・茨城・栃木・群馬）</option><option>中部</option><option>関西</option>
+              <option>中国・四国</option><option>九州・沖縄</option><option>オンライン活動のみ</option>
+            </select>
+            <div class="field-error" id="e-region-m"></div>
+          </div>
+          <div class="field">
+            <label>活動頻度<span class="req">*</span></label>
+            <select id="f-frequency">
+              <option value="">選択してください</option>
+              <option>週1〜2回</option><option>月2〜3回</option><option>月1回</option>
+              <option>不定期</option><option>未定</option>
+            </select>
+            <div class="field-error" id="e-frequency"></div>
+          </div>
+          <div class="field">
+            <label>活動レベル<span class="req">*</span></label>
+            <select id="f-level">
+              <option value="">選択してください</option>
+              <option>初心者</option><option>アマチュア</option><option>セミプロ</option>
+              <option>プロ</option><option>問わない</option>
+            </select>
+            <div class="field-error" id="e-level"></div>
+          </div>
+          <div class="field">
+            <label>募集文<span class="req">*</span></label>
+            <textarea id="f-description-m" placeholder="バンドの雰囲気、活動スタイル、求める人物像などを教えてください。" maxlength="500"></textarea>
+            <div class="char-count"><span id="cnt-desc-m">0</span>/500</div>
+            <div class="hint">50〜500文字</div>
+            <div class="field-error" id="e-description-m"></div>
+          </div>
+          <div class="field">
+            <label>連絡先<span class="req">*</span></label>
+            <input type="text" id="f-contact-m" placeholder="例: X(Twitter) @yourname / LINE ID: xxx">
+            <div class="field-error" id="e-contact-m"></div>
+          </div>
+          <div class="field">
+            <label>参考音源リンク（任意）</label>
+            <input type="url" id="f-sample-m" placeholder="https://youtu.be/...">
+          </div>
+        </div>
+
+        <!-- EVENT FIELDS -->
+        <div id="f-event" class="type-fields" style="display:none">
+          <div class="type-section-block s-event">
+            <div class="tsb-icon">🎤</div>
+            <div><div class="tsb-title">イベント告知</div><div class="tsb-sub">ライブ・セッション・ワークショップなどの開催情報を入力してください</div></div>
+          </div>
+          <div class="field">
+            <label>イベントタイトル<span class="req">*</span></label>
+            <input type="text" id="f-title-e" placeholder="例: 宅録好き集まれ！アコースティックセッション" maxlength="80">
+            <div class="char-count"><span id="cnt-title-e">0</span>/80</div>
+            <div class="field-error" id="e-title-e"></div>
+          </div>
+          <div class="field">
+            <label>イベント種別<span class="req">*</span></label>
+            <select id="f-event_type">
+              <option value="">選択してください</option>
+              <option>ライブ</option><option>セッション</option><option>ワークショップ</option>
+              <option>オーディション</option><option>コンテスト</option><option>その他</option>
+            </select>
+            <div class="field-error" id="e-event_type"></div>
+          </div>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
+            <div class="field">
+              <label>開催日<span class="req">*</span></label>
+              <input type="date" id="f-event_date">
+              <div class="field-error" id="e-event_date"></div>
+            </div>
+            <div class="field">
+              <label>時間（任意）</label>
+              <input type="time" id="f-event_time">
+            </div>
+          </div>
+          <div class="field">
+            <label>開催形式<span class="req">*</span></label>
+            <select id="f-format" onchange="toggleRegion()">
+              <option value="">選択してください</option>
+              <option>会場</option><option>オンライン</option><option>ハイブリッド</option>
+            </select>
+            <div class="field-error" id="e-format"></div>
+          </div>
+          <div class="field" id="region-field-e">
+            <label>開催都道府県<span class="req">*</span></label>
+            <select id="f-region-e">
+              <option value="">選択してください</option>
+              <option>北海道</option><option>青森</option><option>岩手</option><option>宮城</option>
+              <option>秋田</option><option>山形</option><option>福島</option><option>茨城</option>
+              <option>栃木</option><option>群馬</option><option>埼玉</option><option>千葉</option>
+              <option>東京</option><option>神奈川</option><option>新潟</option><option>富山</option>
+              <option>石川</option><option>福井</option><option>山梨</option><option>長野</option>
+              <option>岐阜</option><option>静岡</option><option>愛知</option><option>三重</option>
+              <option>滋賀</option><option>京都</option><option>大阪</option><option>兵庫</option>
+              <option>奈良</option><option>和歌山</option><option>鳥取</option><option>島根</option>
+              <option>岡山</option><option>広島</option><option>山口</option><option>徳島</option>
+              <option>香川</option><option>愛媛</option><option>高知</option><option>福岡</option>
+              <option>佐賀</option><option>長崎</option><option>熊本</option><option>大分</option>
+              <option>宮崎</option><option>鹿児島</option><option>沖縄</option>
+            </select>
+            <div class="field-error" id="e-region-e"></div>
+          </div>
+          <div class="field">
+            <label>会場名（任意）</label>
+            <input type="text" id="f-venue" placeholder="例: 渋谷 〇〇スタジオ">
+          </div>
+          <div class="field">
+            <label>参加費<span class="req">*</span></label>
+            <select id="f-fee_type" onchange="toggleFeeFields()">
+              <option value="">選択してください</option>
+              <option>無料</option>
+              <option>有料</option>
+              <option>ワンドリンク制（入場無料）</option>
+              <option>有料＋ワンドリンク制</option>
+            </select>
+            <div class="field-error" id="e-fee_type"></div>
+          </div>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
+            <div class="field" id="fee-amount-row" style="display:none">
+              <label>入場料（任意）</label>
+              <input type="text" id="f-fee_amount" placeholder="例: ¥1,000">
+            </div>
+            <div class="field" id="fee-drink-row" style="display:none">
+              <label>ドリンク代（任意）</label>
+              <input type="text" id="f-drink_fee" placeholder="例: ¥600〜">
+            </div>
+          </div>
+          <div class="field">
+            <label>定員（任意）</label>
+            <input type="text" id="f-capacity" placeholder="例: 20名 / 制限なし">
+          </div>
+          <div class="field">
+            <label>イベント詳細<span class="req">*</span></label>
+            <textarea id="f-description-e" placeholder="開催概要、参加方法、持ち物、雰囲気などを詳しくご記入ください。" maxlength="1000"></textarea>
+            <div class="char-count"><span id="cnt-desc-e">0</span>/1000</div>
+            <div class="hint">100〜1000文字</div>
+            <div class="field-error" id="e-description-e"></div>
+          </div>
+          <div class="field">
+            <label>申込・連絡方法<span class="req">*</span></label>
+            <input type="text" id="f-contact-e" placeholder="例: Peatix URL / DM @yourname">
+            <div class="field-error" id="e-contact-e"></div>
+          </div>
+          <div class="field">
+            <label>参考動画リンク（任意）</label>
+            <input type="url" id="f-sample-e" placeholder="https://youtu.be/...">
+          </div>
+        </div>
+
+        <!-- SHARED: EMAIL & CONSENT -->
+        <div id="f-shared-bottom" style="display:none">
+          <hr class="divider">
+          <div class="section-title">連絡先</div>
+          <div class="field">
+            <label>メールアドレス<span class="req">*</span></label>
+            <input type="email" id="f-email" placeholder="your@email.com">
+            <div class="hint">審査結果の通知に使用します。公開されません。</div>
+            <div class="field-error" id="e-email"></div>
+          </div>
+          <hr class="divider">
+          <div class="section-title">同意事項</div>
+          <label class="consent-item" id="consent1">
+            <input type="checkbox" id="f-agree_terms">
+            <span><strong>投稿規約に同意します。</strong> 虚偽の情報・誹謗中傷・スパム・宣伝目的の投稿は予告なく削除し、利用を停止する場合があります。掲載・非掲載の最終判断は運営者に帰属します。</span>
+          </label>
+          <label class="consent-item" id="consent2-sc" style="display:none">
+            <input type="checkbox" id="f-agree_original">
+            <span><strong>投稿する作品の権利について確認します。</strong> オリジナル作品、または正式な許諾を得た作品のみ投稿できます。カバー・歌ってみた・演奏してみた等の二次創作を投稿する場合、使用楽曲の権利処理（JASRACライセンス取得等）は投稿者自身の責任で行うものとします。</span>
+          </label>
+          <label class="consent-item" id="consent3-sc" style="display:none">
+            <input type="checkbox" id="f-agree_rights">
+            <span><strong>著作権・肖像権・その他の権利を侵害していないことを確認します。</strong> 権利侵害が判明した場合、運営者は予告なく当該投稿を削除できます。</span>
+          </label>
+          <div class="field-error" id="e-consent"></div>
+        </div>
+
+        <div id="f-submit-row" class="btn-row" style="display:none">
+          <button type="button" class="btn-secondary" onclick="goStep1()">← 戻る</button>
+          <button type="submit" class="btn-primary" id="btn-submit">送信する</button>
+        </div>
+      </form>
+    </div>
+
+    <!-- STEP 3: SUCCESS -->
+    <div id="step3" class="form-section">
+      <div class="success-card">
+        <div class="success-icon">✅</div>
+        <h2>投稿を受け付けました！</h2>
+        <p id="success-msg">担当による審査後（通常3〜7日）に掲載されます。</p>
+        <div class="btn-row" style="justify-content:center;margin-top:8px;">
+          <a href="/showcase/" style="display:inline-block;background:var(--gradient);color:#fff;padding:12px 28px;border-radius:9999px;font-weight:700;">Showcaseを見る</a>
+          <a href="/community/members.html" style="display:inline-block;background:rgba(255,255,255,.08);border:1px solid var(--border);color:var(--muted);padding:12px 28px;border-radius:9999px;font-weight:600;margin-left:8px;">メンバー募集を見る</a>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- /form-card -->
+</div><!-- /form-wrap -->
+
+<footer><a href="/">Cooltake Studio</a> &copy; 2026</footer>
+
+<script>
+const WORKER = 'https://cooltake-showcase.cooltakestudio.workers.dev';
+// 選択中のタイプセット（順序固定: showcase → member → event）
+const TYPE_ORDER = ['showcase', 'member', 'event'];
+const TYPE_LABELS = { showcase:'作品投稿', member:'メンバー募集', event:'イベント告知' };
+let selectedTypes = new Set();
+
+// ── Step 1: タイプ選択 ─────────────────────────────────────────
+function toggleType(type, el) {
+  el.classList.toggle('selected');
+  if (selectedTypes.has(type)) selectedTypes.delete(type);
+  else selectedTypes.add(type);
+  document.getElementById('btn-next1').disabled = selectedTypes.size === 0;
+  updateSummary();
+}
+
+function updateSummary() {
+  const sum = document.getElementById('selected-summary');
+  if (selectedTypes.size === 0) { sum.style.display='none'; return; }
+  const labels = TYPE_ORDER.filter(t => selectedTypes.has(t)).map(t => TYPE_LABELS[t]);
+  sum.style.display = 'block';
+  sum.innerHTML = '選択中: <span>' + labels.join(' ＋ ') + '</span> をまとめて送信します';
+}
+
+function goStep2() {
+  if (selectedTypes.size === 0) return;
+  setStep(2);
+  // 選択タイプのセクションを表示（順序固定）
+  document.querySelectorAll('.type-fields').forEach(f => f.style.display='none');
+  TYPE_ORDER.filter(t => selectedTypes.has(t)).forEach(t => {
+    document.getElementById('f-'+t).style.display = 'block';
+  });
+  document.getElementById('f-shared-bottom').style.display = 'block';
+  document.getElementById('f-submit-row').style.display = 'flex';
+  // 著作権同意はShowcase選択時のみ
+  const isSC = selectedTypes.has('showcase');
+  document.getElementById('consent2-sc').style.display = isSC ? 'flex' : 'none';
+  document.getElementById('consent3-sc').style.display = isSC ? 'flex' : 'none';
+  // 送信ボタンのラベル更新
+  const types = TYPE_ORDER.filter(t => selectedTypes.has(t)).map(t => TYPE_LABELS[t]);
+  document.getElementById('btn-submit').textContent = types.length > 1
+    ? types.join(' ＋ ') + ' を送信する'
+    : types[0] + ' を送信する';
+}
+
+function goStep1() { setStep(1); }
+
+function setStep(n) {
+  document.getElementById('step1').classList.toggle('visible', n===1);
+  document.getElementById('step2').classList.toggle('visible', n===2);
+  document.getElementById('step3').classList.toggle('visible', n===3);
+  ['step1-item','step2-item','step3-item'].forEach((id,i) => {
+    const el = document.getElementById(id);
+    el.classList.remove('active','done');
+    if (i+1 < n) el.classList.add('done');
+    else if (i+1 === n) el.classList.add('active');
+  });
+  document.getElementById('conn1').classList.toggle('done', n>1);
+  document.getElementById('conn2').classList.toggle('done', n>2);
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+
+function toggleRegion() {
+  const fmt = document.getElementById('f-format').value;
+  document.getElementById('region-field-e').style.display = (fmt==='オンライン') ? 'none' : 'block';
+}
+
+// ── 文字数カウンター ───────────────────────────────────────────
+function bindCounter(inputId, countId) {
+  const el = document.getElementById(inputId), cnt = document.getElementById(countId);
+  if (!el||!cnt) return;
+  el.addEventListener('input', () => cnt.textContent = el.value.length);
+}
+bindCounter('f-title-s','cnt-title-s'); bindCounter('f-description-s','cnt-desc-s');
+bindCounter('f-title-m','cnt-title-m'); bindCounter('f-description-m','cnt-desc-m');
+bindCounter('f-title-e','cnt-title-e'); bindCounter('f-description-e','cnt-desc-e');
+
+// チェックボックスチップスタイル
+document.querySelectorAll('.check-chip').forEach(chip => {
+  const cb = chip.querySelector('input[type=checkbox]');
+  cb.addEventListener('change', () => chip.classList.toggle('checked', cb.checked));
+});
+
+// ── ユーティリティ ────────────────────────────────────────────
+function val(id) { const el=document.getElementById(id); return el ? el.value.trim() : ''; }
+function getChecked(groupId) {
+  return Array.from(document.querySelectorAll('#'+groupId+' input:checked')).map(c=>c.value);
+}
+function getPartsWithNotes() {
+  const parts=[], notes={};
+  document.querySelectorAll('#recruit_parts_group .part-row input[type="checkbox"]:checked').forEach(cb => {
+    parts.push(cb.value);
+    const note = document.getElementById('pn-'+cb.value)?.value.trim();
+    if (note) notes[cb.value] = note;
+  });
+  return { parts, notes };
+}
+function togglePartRow(cb) {
+  const row = cb.closest('.part-row');
+  const noteInput = document.getElementById('pn-'+cb.value);
+  if (!row) return;
+  row.classList.toggle('part-active', cb.checked);
+  if (noteInput) {
+    if (cb.checked) { noteInput.removeAttribute('disabled'); setTimeout(()=>noteInput.focus(),50); }
+    else { noteInput.value=''; noteInput.setAttribute('disabled',''); }
+  }
+}
+function showErr(id, msg) {
+  const el=document.getElementById(id); if(!el) return;
+  el.textContent=msg; el.classList.toggle('show',!!msg);
+}
+
+// ── 参加費フィールド 表示切替 ─────────────────────────────────
+function toggleFeeFields() {
+  const t = document.getElementById('f-fee_type').value;
+  const showAmount = (t === '有料' || t === '有料＋ワンドリンク制');
+  const showDrink  = (t === 'ワンドリンク制（入場無料）' || t === '有料＋ワンドリンク制');
+  document.getElementById('fee-amount-row').style.display = showAmount ? '' : 'none';
+  document.getElementById('fee-drink-row').style.display  = showDrink  ? '' : 'none';
+}
+
+// ── バリデーション（タイプ別）─────────────────────────────────
+function buildPayloads(common) {
+  const payloads = [];
+  let errors = false;
+
+  if (selectedTypes.has('showcase')) {
+    const title=val('f-title-s'), genre=val('f-genre'), main_link=val('f-main_link');
+    const description=val('f-description-s'), gear=val('f-gear');
+    const agree_original=document.getElementById('f-agree_original').checked;
+    const agree_rights=document.getElementById('f-agree_rights').checked;
+    if (title.length<5||title.length>60)          { showErr('e-title-s','5〜60文字で入力してください'); errors=true; }
+    if (!genre)                                    { showErr('e-genre','ジャンルを選択してください'); errors=true; }
+    if (!main_link)                                { showErr('e-main_link','リンクを入力してください'); errors=true; }
+    if (description.length<50||description.length>400){ showErr('e-description-s','50〜400文字で入力してください'); errors=true; }
+    if (!gear)                                     { showErr('e-gear','使用機材を入力してください'); errors=true; }
+    if (!agree_original||!agree_rights)            { showErr('e-consent','すべての同意事項にチェックしてください'); errors=true; }
+    if (!errors) payloads.push({...common, action:'submit', title, genre, main_link,
+      extra_link:val('f-extra_link'), description, gear, sns_link:val('f-sns_link'),
+      agree_original:'true', agree_rights:'true'});
+  }
+
+  if (selectedTypes.has('member')) {
+    const title=val('f-title-m'), recruit_type=val('f-recruit_type');
+    const my_part=val('f-my_part'), region=val('f-region');
+    const frequency=val('f-frequency'), level=val('f-level');
+    const description=val('f-description-m'), contact=val('f-contact-m');
+    const {parts:recruit_parts, notes:recruit_notes}=getPartsWithNotes();
+    const genres=getChecked('genres_group');
+    if (title.length<10||title.length>60)         { showErr('e-title-m','10〜60文字で入力してください'); errors=true; }
+    if (!recruit_type)                             { showErr('e-recruit_type','募集種別を選択してください'); errors=true; }
+    if (!my_part)                                  { showErr('e-my_part','あなたのパートを選択してください'); errors=true; }
+    if (recruit_parts.length===0)                  { showErr('e-recruit_parts','1つ以上選択してください'); errors=true; }
+    if (genres.length===0||genres.length>3)        { showErr('e-genres','1〜3つ選択してください'); errors=true; }
+    if (!region)                                   { showErr('e-region-m','活動地域を選択してください'); errors=true; }
+    if (!frequency)                                { showErr('e-frequency','活動頻度を選択してください'); errors=true; }
+    if (!level)                                    { showErr('e-level','活動レベルを選択してください'); errors=true; }
+    if (description.length<50||description.length>500){ showErr('e-description-m','50〜500文字で入力してください'); errors=true; }
+    if (!contact)                                  { showErr('e-contact-m','連絡先を入力してください'); errors=true; }
+    if (!errors) payloads.push({...common, action:'post_member', title, recruit_type, my_part,
+      recruit_parts:recruit_parts.join(','), recruit_parts_notes:JSON.stringify(recruit_notes),
+      genres:genres.join(','), region, frequency, level, description, contact, sample_link:val('f-sample-m')});
+  }
+
+  if (selectedTypes.has('event')) {
+    const title=val('f-title-e'), event_type=val('f-event_type');
+    const event_date=val('f-event_date'), format=val('f-format');
+    const description=val('f-description-e'), contact=val('f-contact-e');
+    const fee_type=val('f-fee_type');
+    const region = format!=='オンライン' ? val('f-region-e') : '';
+    if (title.length<10||title.length>80)         { showErr('e-title-e','10〜80文字で入力してください'); errors=true; }
+    if (!event_type)                               { showErr('e-event_type','イベント種別を選択してください'); errors=true; }
+    if (!event_date)                               { showErr('e-event_date','開催日を入力してください'); errors=true; }
+    else { const d=new Date(event_date),t=new Date();t.setHours(0,0,0,0); if(d<t){showErr('e-event_date','今日以降の日付を入力してください');errors=true;} }
+    if (!format)                                   { showErr('e-format','開催形式を選択してください'); errors=true; }
+    if (format!=='オンライン'&&!region)            { showErr('e-region-e','開催都道府県を選択してください'); errors=true; }
+    if (!fee_type)                                 { showErr('e-fee_type','参加費を選択してください'); errors=true; }
+    if (description.length<100||description.length>1000){ showErr('e-description-e','100〜1000文字で入力してください'); errors=true; }
+    if (!contact)                                  { showErr('e-contact-e','連絡先を入力してください'); errors=true; }
+    if (!errors) payloads.push({...common, action:'post_event', title, event_type, event_date,
+      event_time:val('f-event_time'), format, region, venue:val('f-venue'), fee_type,
+      fee_amount:val('f-fee_amount'), drink_fee:val('f-drink_fee'), capacity:val('f-capacity'), description, contact, sample_link:val('f-sample-e')});
+  }
+
+  return { payloads, errors };
+}
+
+// ── フォーム送信 ──────────────────────────────────────────────
+document.getElementById('mainForm').addEventListener('submit', async e => {
+  e.preventDefault();
+  document.querySelectorAll('.field-error').forEach(el => { el.textContent=''; el.classList.remove('show'); });
+
+  const nickname = val('f-nickname'), group_name = val('f-group_name'), email = val('f-email');
+  const agree_terms = document.getElementById('f-agree_terms').checked;
+  let baseErrors = false;
+
+  if (nickname.length<2||nickname.length>30)       { showErr('e-nickname','2〜30文字で入力してください'); baseErrors=true; }
+  if (group_name&&(group_name.length<2||group_name.length>50)){ showErr('e-nickname','バンド・ユニット名は2〜50文字です'); baseErrors=true; }
+  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email))  { showErr('e-email','正しいメールアドレスを入力してください'); baseErrors=true; }
+  if (!agree_terms)                                 { showErr('e-consent','投稿規約への同意が必要です'); baseErrors=true; }
+  if (baseErrors) return;
+
+  const common = { nickname, group_name, email, agree_terms:'true' };
+  const { payloads, errors } = buildPayloads(common);
+  if (errors || payloads.length === 0) return;
+
+  const btn = document.getElementById('btn-submit');
+  btn.disabled = true;
+  btn.innerHTML = '<span class="spinner"></span>送信中…';
+
+  try {
+    // 並列送信
+    const results = await Promise.all(payloads.map(p =>
+      fetch(WORKER, { method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify(p) })
+        .then(r => r.json())
+    ));
+    const failed = results.filter(r => !r.ok);
+    if (failed.length === 0) {
+      const submittedLabels = TYPE_ORDER.filter(t => selectedTypes.has(t)).map(t => TYPE_LABELS[t]);
+      document.getElementById('success-msg').textContent =
+        submittedLabels.join('・') + 'の投稿を受け付けました。担当による審査後（通常3〜7日）に掲載されます。';
+      setStep(3);
+    } else {
+      const msg = failed.map(r => r.error||(r.errors&&(Array.isArray(r.errors)?r.errors.join('/'):Object.values(r.errors).join('/')))||'エラー').join(' / ');
+      showErr('e-consent', '⚠️ ' + msg);
+      btn.disabled = false;
+      btn.innerHTML = document.querySelector('#btn-submit').textContent;
+      goStep2(); // ラベル再設定
+    }
+  } catch(err) {
+    showErr('e-consent', 'ネットワークエラーが発生しました。しばらく後にお試しください。');
+    btn.disabled = false;
+    btn.innerHTML = '送信する';
+  }
+});
+</script>
+</body>
+</html>
