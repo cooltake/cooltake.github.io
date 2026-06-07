@@ -81,9 +81,9 @@ VSTプラグイン（Virtual Studio Technology）は、DAWに追加インスト�
 | DAW | 付属プラグイン例 |
 |-----|--------------|
 | **Logic Pro** | ES2（シンセ）・Alchemy・多数のエフェクト |
-| **Ableton Live** | Wavetable（シンセ）・Analog・Operator |
+| **Ableton Live**<a href="https://h.accesstrade.net/sp/cc?rk=01001xqc00os63&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fproducts%2Fdetail%2Fitem%2F364520%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="font-size:.8rem;color:#1e3a5f;font-weight:600;margin-left:.3em;">🛒</a> | Wavetable（シンセ）・Analog・Operator |
 | **GarageBand** | 多数のソフトシンセ・ループ素材 |
-| **FL Studio** | Sytrus・Harmor・Gross Beat 等 |
+| **FL Studio**<a href="https://h.accesstrade.net/sp/cc?rk=01001xqc00os63&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fproducts%2Fdetail%2Fitem%2F372831%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="font-size:.8rem;color:#1e3a5f;font-weight:600;margin-left:.3em;">🛒</a> | Sytrus・Harmor・Gross Beat 等 |
 
 多くの場合、**付属プラグインだけでプロレベルの楽曲制作が可能**です。新しいプラグインを買う前に、まず付属プラグインを深く理解することをおすすめします。
 
@@ -102,14 +102,14 @@ VSTプラグイン（Virtual Studio Technology）は、DAWに追加インスト�
 ---
 
 <div style="display:flex;gap:.75rem;margin:2rem 0;">
-<div style="flex:1;padding:1.2rem 1.5rem;background:#f0f9ff;border-left:4px solid #0ea5e9;border-radius:8px;">
-<p style="margin:0 0 .6rem;font-weight:bold;font-size:1rem;">&#x1F3B9; サウンドハウスでDTM機材をチェック（国内最大の音楽機材専門店）</p>
-<a href="https://h.accesstrade.net/sp/cc?rk=01001xqc00os63&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fsearch%2Findex%2F%3Fsearch_all%3DDTM%2B%E3%82%BD%E3%83%95%E3%83%88%E3%82%A6%E3%82%A7%E3%82%A2" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="display:inline-block;background:#0369a1;color:#fff;padding:.45rem 1.1rem;border-radius:4px;text-decoration:none;font-weight:bold;font-size:.95rem;">サウンドハウスで探す →</a>
+<div style="flex:1;padding:.8rem 1rem 1rem;background:#e8f4fb;border-radius:10px;border:1px solid rgba(8,145,178,.25);">
+<p style="margin:0 0 .5rem;color:#374151;font-size:.82rem;font-weight:bold;">DTM ソフトウェア をサウンドハウスで探す</p>
+<a href="https://h.accesstrade.net/sp/cc?rk=01001xqc00os63&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fsearch%2Findex%2F%3Fsearch_all%3DDTM%2B%E3%82%BD%E3%83%95%E3%83%88%E3%82%A6%E3%82%A7%E3%82%A2" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="display:block;text-decoration:none;"><img src="/assets/images/btn-soundhouse.jpg" alt="サウンドハウスで探す" width="240" style="height:auto;border-radius:8px;display:block;"></a>
 <img src="https://h.accesstrade.net/sp/rr?rk=01001xqc00os63" width="1" height="1" border="0" alt="" loading="lazy">
 </div>
-<div style="flex:1;padding:1.2rem 1.5rem;background:#fff7ed;border-left:4px solid #f97316;border-radius:8px;">
-<p style="margin:0 0 .6rem;font-weight:bold;font-size:1rem;">&#x1F6D2; 楽天市場でDTM機材をチェック</p>
-<a href="https://hb.afl.rakuten.co.jp/hgc/0b15ddc7.28c5c9ed.0b15ddc8.5d23dd4d/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2FDTM+%E9%9F%B3%E6%A5%BD%E5%88%B6%E4%BD%9C%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="display:inline-block;background:#bf0000;color:#fff;padding:.45rem 1.1rem;border-radius:4px;text-decoration:none;font-weight:bold;font-size:.95rem;">楽天市場でDTM機材を探す →</a>
+<div style="flex:1;padding:.8rem 1rem 1rem;background:#fdf3ee;border-radius:10px;border:1px solid rgba(234,88,12,.25);">
+<p style="margin:0 0 .5rem;color:#374151;font-size:.82rem;font-weight:bold;">DTM ソフトウェア を楽天市場で探す</p>
+<a href="https://hb.afl.rakuten.co.jp/hgc/0b15ddc7.28c5c9ed.0b15ddc8.5d23dd4d/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2FDTM+%E9%9F%B3%E6%A5%BD%E5%88%B6%E4%BD%9C%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="display:block;text-decoration:none;"><img src="/assets/images/btn-rakuten.jpg" alt="楽天市場で探す" width="240" style="height:auto;border-radius:8px;display:block;"></a>
 <img src="//i.moshimo.com/af/i/impression?a_id=5565352&amp;p_id=54&amp;pc_id=54&amp;pl_id=616" width="1" height="1" style="border:none;" alt="" loading="lazy">
 </div>
 </div>
