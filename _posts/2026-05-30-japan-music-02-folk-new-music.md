@@ -15,7 +15,7 @@ image: /assets/images/thumb-folk-new-music.jpg
 
 <figure style="margin:1.5rem 0;">
 <img src="/assets/images/japan-music-02-img1.jpg" alt="1970年代 日本のフォークシンガー" style="width:100%;border-radius:10px;height:auto;" loading="lazy">
-<figcaption style='font-size:.8rem;color:#9ca3af;text-align:center;margin-top:.3rem;'>喫茶店でギターを弾く1970年代のフォークシンガー（イメージ）</figcaption>
+
 </figure>
 
 
@@ -51,15 +51,7 @@ image: /assets/images/thumb-folk-new-music.jpg
 
 ## フォーク・ニューミュージックの音作りの特徴
 
-<div style="background:rgba(255,255,255,0.10);border-radius:12px;padding:1.5rem;margin:1.5rem 0;border:1px solid rgba(74,222,128,.3);">
-<h3 style="color:#111827;margin-top:0;">🎵 サウンドの特徴</h3>
-<ul style="color:#374151;">
-<li><strong>アコギの存在感</strong>：カポタスト多用、オープンチューニング</li>
-<li><strong>ストリングスアレンジ</strong>：生オーケストラ録音が楽曲に深みを加えた</li>
-<li><strong>コーラスワーク</strong>：CSN&Y的な多重ハーモニー</li>
-<li><strong>テープエコー</strong>：Roland Space Echo（RE-201）の温かみのある残響</li>
-</ul>
-</div>
+<div style="background:rgba(255,255,255,0.10);border-radius:12px;padding:1.5rem;margin:1.5rem 0;border:1px solid rgba(74,222,128,.3);"><h3 style="color:#111827;margin-top:0;">🎵 サウンドの特徴</h3><ul style="color:#374151;"><li><strong>アコギの存在感</strong>：カポタスト多用、オープンチューニング</li><li><strong>ストリングスアレンジ</strong>：生オーケストラ録音が楽曲に深みを加えた</li><li><strong>コーラスワーク</strong>：CSN&Y的な多重ハーモニー</li><li><strong>テープエコー</strong>：Roland Space Echo（RE-201）の温かみのある残響</li></ul></div>
 
 
 ## 代表楽曲を体験する
@@ -72,10 +64,9 @@ image: /assets/images/thumb-folk-new-music.jpg
 | 「ひこうき雲」 | 荒井由実（1973年） | <a href="https://www.youtube.com/results?search_query=%E8%8D%92%E4%BA%95%E7%94%B1%E5%AE%9F%20%E3%81%B2%E3%81%93%E3%81%86%E3%81%8D%E9%9B%B2" target="_blank" rel="nofollow noopener" style="display:inline-flex;align-items:center;gap:.4em;color:#1e3a5f;text-decoration:none;font-weight:600;">▶ 動画を見る</a> |
 | 「LONG VACATION」 | 大滝詠一（1981年） | <a href="https://www.youtube.com/results?search_query=%E5%A4%A7%E6%BB%9D%E8%A9%A0%E4%B8%80%20%E3%83%AD%E3%83%B3%E3%82%B0%E3%83%90%E3%82%B1%E3%82%A4%E3%82%B7%E3%83%A7%E3%83%B3" target="_blank" rel="nofollow noopener" style="display:inline-flex;align-items:center;gap:.4em;color:#1e3a5f;text-decoration:none;font-weight:600;">▶ 動画を見る</a> |
 
-### CDを探す
+### 吉田拓郎・井上陽水・ユーミン——この時代の名盤を聴く
 
-<div style="margin:.8rem 0;"><span style="display:block;font-size:.78rem;color:#4b5563;margin-bottom:3px;margin-top:6px;">🔍 楽天市場で探す</span>
-<a href="https://hb.afl.rakuten.co.jp/ichiba/0b15ddc7.28c5c9ed.0b15ddc8.5d23dd4d/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%E5%90%89%E7%94%B0%E6%8B%93%E9%83%8E%20%E4%BA%95%E4%B8%8A%E9%99%BD%E6%B0%B4%20%E8%8D%92%E4%BA%95%E7%94%B1%E5%AE%9F%20CD%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="display:inline-block;text-decoration:none;"><img src="/assets/images/btn-rakuten.jpg" alt="楽天市場で探す" width="240" style="height:auto;border-radius:8px;display:block;"></a></div>
+<div style="margin:.8rem 0;"><span style="display:block;font-size:.78rem;color:#4b5563;margin-bottom:3px;margin-top:6px;">🔍 楽天市場で探す</span><a href="https://search.rakuten.co.jp/search/mall/吉田拓郎 井上陽水 荒井由実 CD/" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="display:block;text-decoration:none;text-align:center;"><img src="/assets/images/btn-rakuten.jpg" alt="楽天市場で探す" width="240" style="height:auto;border-radius:8px;display:inline-block;"></a></div>
 
 
 ## 現代でこのサウンドを再現する
@@ -86,7 +77,7 @@ image: /assets/images/thumb-folk-new-music.jpg
 
 <figure style="margin:1.5rem 0;">
 <img src="/assets/images/japan-music-02-img2.jpg" alt="Martin D-28 Gibson J-45 アコースティックギター" style="width:100%;border-radius:10px;height:auto;" loading="lazy">
-<figcaption style='font-size:.8rem;color:#9ca3af;text-align:center;margin-top:.3rem;'>フォーク時代の定番アコギ Martin D-28（左）と Gibson J-45（右）</figcaption>
+
 </figure>
 
 
@@ -111,10 +102,9 @@ Roland RE-201の温かいエコーサウンドは、現代ではプラグイン�
 
 ### 関連書籍・教則本を探す
 
-<div style="margin:.8rem 0;"><span style="display:block;font-size:.78rem;color:#4b5563;margin-bottom:3px;margin-top:6px;">🔍 楽天市場で探す</span>
-<a href="https://hb.afl.rakuten.co.jp/ichiba/0b15ddc7.28c5c9ed.0b15ddc8.5d23dd4d/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%E3%82%A2%E3%82%B3%E3%83%BC%E3%82%B9%E3%83%86%E3%82%A3%E3%83%83%E3%82%AF%E3%82%AE%E3%82%BF%E3%83%BC%20%E6%95%99%E5%89%87%E6%9C%AC%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="display:inline-block;text-decoration:none;"><img src="/assets/images/btn-rakuten.jpg" alt="楽天市場で探す" width="240" style="height:auto;border-radius:8px;display:block;"></a></div>
+<div style="margin:.8rem 0;"><span style="display:block;font-size:.78rem;color:#4b5563;margin-bottom:3px;margin-top:6px;">🔍 楽天市場で探す</span><a href="https://search.rakuten.co.jp/search/mall/アコースティックギター 教則本/" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="display:block;text-decoration:none;text-align:center;"><img src="/assets/images/btn-rakuten.jpg" alt="楽天市場で探す" width="240" style="height:auto;border-radius:8px;display:inline-block;"></a></div>
 
-### 関連機材を探す
+### 弾き語りに挑戦する——アコースティックギターを探す
 
 
 ## フォークが残したもの
@@ -124,7 +114,4 @@ Roland RE-201の温かいエコーサウンドは、現代ではプラグイン�
 
 
 
-<div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:.8rem;margin:2rem 0;">
-<a href="/2026/05/30/japan-music-01-gs-boom/" style="display:inline-block;padding:.5rem 1rem;background:#e8edf2;border:1px solid #c8c5c0;border-radius:8px;color:#1e3a5f;text-decoration:none;font-size:.9rem;">← #01 グループサウンズ</a>
-<a href="/2026/05/30/japan-music-03-idol-candies-era/" style="display:inline-block;padding:.5rem 1rem;background:#e8edf2;border:1px solid #c8c5c0;border-radius:8px;color:#1e3a5f;text-decoration:none;font-size:.9rem;">#03 キャンディーズ・ピンクレディー →</a>
-</div>
+<div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:.8rem;margin:2rem 0;"><a href="/2026/05/30/japan-music-01-gs-boom/" style="display:inline-block;padding:.5rem 1rem;background:#e8edf2;border:1px solid #c8c5c0;border-radius:8px;color:#1e3a5f;text-decoration:none;font-size:.9rem;">← #01 グループサウンズ</a><a href="/2026/05/30/japan-music-03-idol-candies-era/" style="display:inline-block;padding:.5rem 1rem;background:#e8edf2;border:1px solid #c8c5c0;border-radius:8px;color:#1e3a5f;text-decoration:none;font-size:.9rem;">#03 キャンディーズ・ピンクレディー →</a></div>
