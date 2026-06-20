@@ -52,23 +52,7 @@ image: /assets/images/thumb-vocaloid-dtm.jpg
 
 
 
-<div style="background:rgba(255,255,255,0.10);border-radius:12px;padding:1.5rem;margin:1.5rem 0;border:1px solid rgba(94,234,212,0.75);">
-
-<h3 style="color:#5eead4;margin-top:0;">💻 ボカロPたちが使ったDAW</h3>
-
-<ul style="color:#374151;">
-
-<li><strong>Cubase</strong>：最多派。VOCALOIDとの親和性が高い</li>
-
-<li><strong>FL Studio</strong>：ビートメイク寄りのボカロP多数</li>
-
-<li><strong>Domino（無料）</strong>：入門用MIDIシーケンサー。多くの人の最初の一歩</li>
-
-<li><strong>Ableton Live</strong>：エレクトロ系ボカロPに人気</li>
-
-</ul>
-
-</div>
+<div style="background:rgba(255,255,255,0.10);border-radius:12px;padding:1.5rem;margin:1.5rem 0;border:1px solid rgba(94,234,212,0.75);"><h3 style="color:#5eead4;margin-top:0;">💻 ボカロPたちが使ったDAW</h3><ul style="color:#374151;"><li><strong>Cubase</strong>：最多派。VOCALOIDとの親和性が高い</li><li><strong>FL Studio</strong>：ビートメイク寄りのボカロP多数</li><li><strong>Domino（無料）</strong>：入門用MIDIシーケンサー。多くの人の最初の一歩</li><li><strong>Ableton Live</strong>：エレクトロ系ボカロPに人気</li></ul></div>
 
 
 
@@ -79,7 +63,7 @@ image: /assets/images/thumb-vocaloid-dtm.jpg
 
 
 
-### supercell「メルト」の衝撃
+### supercell<a href="https://www.nicovideo.jp/search/ryo%20supercell%20%E3%83%A1%E3%83%AB%E3%83%88%20%E5%88%9D%E9%9F%B3%E3%83%9F%E3%82%AF" target="_blank" rel="nofollow noopener" style="color:#1e3a5f;text-decoration:none;font-weight:600;">「メルト」</a>の衝撃
 
 
 
@@ -93,11 +77,11 @@ image: /assets/images/thumb-vocaloid-dtm.jpg
 
 
 
-### wowakaの「ハート・スピナー」系列
+### wowakaの<a href="https://www.nicovideo.jp/search/wowaka%20%E3%83%8F%E3%83%BC%E3%83%88%E3%82%B9%E3%83%94%E3%83%8A%E3%83%BC%20%E5%88%9D%E9%9F%B3%E3%83%9F%E3%82%AF" target="_blank" rel="nofollow noopener" style="color:#1e3a5f;text-decoration:none;font-weight:600;">「ハート・スピナー」</a>系列
 
 
 
-wowaka（ワールドイズマイン）が確立した「高速ボカロ」スタイル：
+wowaka（<a href="https://www.nicovideo.jp/search/wowaka%20%E3%83%AF%E3%83%BC%E3%83%AB%E3%83%89%E3%82%A4%E3%82%BA%E3%83%9E%E3%82%A4%E3%83%B3%20%E5%88%9D%E9%9F%B3%E3%83%9F%E3%82%AF" target="_blank" rel="nofollow noopener" style="color:#1e3a5f;text-decoration:none;font-weight:600;">ワールドイズマイン</a>）が確立した「高速ボカロ」スタイル：
 
 - BPM 160〜200の超高速テンポ
 
@@ -140,12 +124,7 @@ wowaka（ワールドイズマイン）が確立した「高速ボカロ」ス�
 
 
 
-<div style="margin:1.5rem 0;">
-
-<span style="display:block;font-size:.78rem;color:#4b5563;margin-bottom:3px;margin-top:6px;">🛒 サウンドハウスで探す</span>
-<a href="https://h.accesstrade.net/sp/cc?rk=0100pdhv00n9hy&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fsearch%2Findex%3Fs_category_cd%3D780%26s_maker_cd%3D%26s_search_all%3D%26s_ord%3D" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="display:inline-block;text-decoration:none;"><img src="/assets/images/btn-soundhouse.jpg" alt="サウンドハウスで探す" width="240" style="max-width:100%;height:auto;border-radius:14px;display:block;"></a>
-
-</div>
+<div style="margin:1.5rem 0;"><span style="display:block;font-size:.78rem;color:#4b5563;margin-bottom:3px;margin-top:6px;">🛒 サウンドハウスで探す</span><a href="https://h.accesstrade.net/sp/cc?rk=0100pdhv00n9hy&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fsearch%2Findex%3Fs_category_cd%3D780%26s_maker_cd%3D%26s_search_all%3D%26s_ord%3D" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="display:inline-block;text-decoration:none;"><img src="/assets/images/btn-soundhouse.jpg" alt="サウンドハウスで探す" width="240" style="max-width:100%;height:auto;border-radius:14px;display:block;"></a></div>
 
 
 
@@ -159,12 +138,7 @@ wowaka（ワールドイズマイン）が確立した「高速ボカロ」ス�
 
 
 
-<div style="margin:1.5rem 0;">
-
-<span style="display:block;font-size:.78rem;color:#4b5563;margin-bottom:3px;margin-top:6px;">🔍 楽天市場で探す</span>
-<a href="https://hb.afl.rakuten.co.jp/ichiba/54518dd8.3792440a.54518dd9.03b99be4/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2FDTM%2B%25E5%2588%259D%25E5%25BF%2583%25E8%2580%2585%2B%25E3%2582%25BB%25E3%2583%2583%25E3%2583%2588%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="display:inline-block;text-decoration:none;"><img src="/assets/images/btn-rakuten.jpg" alt="楽天市場で探す" width="240" style="max-width:100%;height:auto;border-radius:14px;display:block;"></a>
-
-</div>
+<div style="margin:1.5rem 0;"><span style="display:block;font-size:.78rem;color:#4b5563;margin-bottom:3px;margin-top:6px;">🔍 楽天市場で探す</span><a href="https://search.rakuten.co.jp/search/mall/DTM+初心者+セット/" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="display:block;text-decoration:none;text-align:center;"><img src="/assets/images/btn-rakuten.jpg" alt="楽天市場で探す" width="240" style="max-width:100%;height:auto;border-radius:14px;display:block;"></a></div>
 
 
 
@@ -179,9 +153,9 @@ wowaka（ワールドイズマイン）が確立した「高速ボカロ」ス�
 
 - **ryo（supercell）** → メジャーデビュー
 
-- **kz(livetune)** → ハチ名義でも活動
+- **kz(livetune)** → 「Tell Your World」でGoogleのCMに起用され広く知られる
 
-- **ハチ（米津玄師）** → 「Lemon」で国民的アーティストへ
+- **ハチ（米津玄師）** → <a href="https://music.youtube.com/search?q=%E7%B1%B3%E6%B4%A5%E7%8E%84%E5%B8%AB%20Lemon" target="_blank" rel="nofollow noopener" style="color:#1e3a5f;text-decoration:none;font-weight:600;">「Lemon」</a>で国民的アーティストへ
 
 - **doriko** → 商業音楽へ
 
@@ -198,51 +172,28 @@ wowaka（ワールドイズマイン）が確立した「高速ボカロ」ス�
 
 
 
-### 関連アルバム・CDを探す
+### 初音ミク・VOCALOIDのアルバムを聴く——ボカロ文化の名盤
 
 
 
-<div style="margin:1.5rem 0;">
-
-<span style="display:block;font-size:.78rem;color:#4b5563;margin-bottom:3px;margin-top:6px;">🔍 楽天市場で探す</span>
-<a href="https://hb.afl.rakuten.co.jp/ichiba/54518dd8.3792440a.54518dd9.03b99be4/?pc=https%3A//search.rakuten.co.jp/search/mall/%E5%88%9D%E9%9F%B3%E3%83%9F%E3%82%AF%2BVOCALOID%2BCD/" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="display:inline-block;text-decoration:none;"><img src="/assets/images/btn-rakuten.jpg" alt="楽天市場で探す" width="240" style="max-width:100%;height:auto;border-radius:14px;display:block;"></a>
-
-</div>
+<div style="margin:1.5rem 0;"><span style="display:block;font-size:.78rem;color:#4b5563;margin-bottom:3px;margin-top:6px;">🔍 楽天市場で探す</span><a href="https://search.rakuten.co.jp/search/mall/初音ミク+VOCALOID+CD/" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="display:block;text-decoration:none;text-align:center;"><img src="/assets/images/btn-rakuten.jpg" alt="楽天市場で探す" width="240" style="max-width:100%;height:auto;border-radius:14px;display:block;"></a></div>
 
 
 
-### 関連書籍・教則本を探す
+### VOCALOIDとDTMを始める——音楽制作の入門書
 
 
 
-<div style="margin:1.5rem 0;">
-
-<span style="display:block;font-size:.78rem;color:#4b5563;margin-bottom:3px;margin-top:6px;">🔍 楽天市場で探す</span>
-<a href="https://hb.afl.rakuten.co.jp/ichiba/54518dd8.3792440a.54518dd9.03b99be4/?pc=https%3A//search.rakuten.co.jp/search/mall/DTM%2B%E5%85%A5%E9%96%80%2BCubase%2B%E6%9C%AC/" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="display:inline-block;text-decoration:none;"><img src="/assets/images/btn-rakuten.jpg" alt="楽天市場で探す" width="240" style="max-width:100%;height:auto;border-radius:14px;display:block;"></a>
-
-</div>
+<div style="margin:1.5rem 0;"><span style="display:block;font-size:.78rem;color:#4b5563;margin-bottom:3px;margin-top:6px;">🔍 楽天市場で探す</span><a href="https://search.rakuten.co.jp/search/mall/DTM+入門+Cubase+本/" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="display:block;text-decoration:none;text-align:center;"><img src="/assets/images/btn-rakuten.jpg" alt="楽天市場で探す" width="240" style="max-width:100%;height:auto;border-radius:14px;display:block;"></a></div>
 
 
 
-### 関連機材・楽器を探す
+### DTMを始める——オーディオインターフェース・MIDIキーボードを探す
 
 
 
 
-<div style="display:flex;flex-wrap:wrap;gap:.5rem;align-items:center;margin:1.5rem 0;">
-<div>
-
-<span style="display:block;font-size:.78rem;color:#4b5563;margin-bottom:3px;margin-top:6px;">🔍 楽天市場で探す</span>
-<a href="https://hb.afl.rakuten.co.jp/ichiba/54518dd8.3792440a.54518dd9.03b99be4/?pc=https%3A//search.rakuten.co.jp/search/mall/DTM%2B%E5%88%9D%E5%BF%83%E8%80%85%2B%E3%82%BB%E3%83%83%E3%83%88%2B%E3%82%AA%E3%83%BC%E3%83%87%E3%82%A3%E3%82%AA%E3%82%A4%E3%83%B3%E3%82%BF%E3%83%BC%E3%83%95%E3%82%A7%E3%83%BC%E3%82%B9/" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="display:inline-block;text-decoration:none;"><img src="/assets/images/btn-rakuten.jpg" alt="楽天市場で探す" width="240" style="max-width:100%;height:auto;border-radius:14px;display:block;"></a>
-
-</div>
-<div>
-
-<span style="display:block;font-size:.78rem;color:#4b5563;margin-bottom:3px;margin-top:6px;">🛒 サウンドハウスで探す</span>
-<a href="https://h.accesstrade.net/sp/cc?rk=0100pdhv00n9hy&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fsearch%2Findex%3Fs_category_cd%3D780%26s_maker_cd%3D%26s_search_all%3D%26s_ord%3D" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="display:inline-block;text-decoration:none;"><img src="/assets/images/btn-soundhouse.jpg" alt="サウンドハウスで探す" width="240" style="max-width:100%;height:auto;border-radius:14px;display:block;"></a>
-
-</div>
-</div>
+<div style="display:flex;flex-wrap:wrap;gap:.5rem;align-items:center;margin:1.5rem 0;"><div><span style="display:block;font-size:.78rem;color:#4b5563;margin-bottom:3px;margin-top:6px;">🔍 楽天市場で探す</span><a href="https://search.rakuten.co.jp/search/mall/DTM+初心者+セット+オーディオインターフェース/" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="display:block;text-decoration:none;text-align:center;"><img src="/assets/images/btn-rakuten.jpg" alt="楽天市場で探す" width="240" style="max-width:100%;height:auto;border-radius:14px;display:block;"></a></div><div><span style="display:block;font-size:.78rem;color:#4b5563;margin-bottom:3px;margin-top:6px;">🛒 サウンドハウスで探す</span><a href="https://h.accesstrade.net/sp/cc?rk=0100pdhv00n9hy&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fsearch%2Findex%3Fs_category_cd%3D780%26s_maker_cd%3D%26s_search_all%3D%26s_ord%3D" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="display:inline-block;text-decoration:none;"><img src="/assets/images/btn-soundhouse.jpg" alt="サウンドハウスで探す" width="240" style="max-width:100%;height:auto;border-radius:14px;display:block;"></a></div></div>
 
 
 
@@ -308,7 +259,4 @@ DAW：おそらくCubase（VOCALOIDとの相性から推測）
 | Dreamtonics Solaria | 英語AI歌声の最高峰 | 有料 |
 
 
-<div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:.8rem;margin:2rem 0;">
-<a href="/2026/05/30/japan-music-14-2000s-idol/" style="display:inline-block;padding:.5rem 1rem;background:#e8edf2;border:1px solid #c8c5c0;border-radius:8px;color:#1e3a5f;text-decoration:none;font-size:.9rem;">← #14 2000年代アイドル</a>
-<a href="/2026/05/30/japan-music-16-2010s-band/" style="display:inline-block;padding:.5rem 1rem;background:#e8edf2;border:1px solid #c8c5c0;border-radius:8px;color:#1e3a5f;text-decoration:none;font-size:.9rem;">#16 2010年代バンドリバイバル →</a>
-</div>
+<div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:.8rem;margin:2rem 0;"><a href="/2026/05/30/japan-music-14-2000s-idol/" style="display:inline-block;padding:.5rem 1rem;background:#e8edf2;border:1px solid #c8c5c0;border-radius:8px;color:#1e3a5f;text-decoration:none;font-size:.9rem;">← #14 2000年代アイドル</a><a href="/2026/05/30/japan-music-16-2010s-band/" style="display:inline-block;padding:.5rem 1rem;background:#e8edf2;border:1px solid #c8c5c0;border-radius:8px;color:#1e3a5f;text-decoration:none;font-size:.9rem;">#16 2010年代バンドリバイバル →</a></div>
