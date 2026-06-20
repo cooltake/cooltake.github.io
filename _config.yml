@@ -7,6 +7,8 @@ timezone: Asia/Tokyo
 future: true
 markdown: kramdown
 highlighter: rouge
+kramdown:
+  parse_block_html: false
 permalink: /:year/:month/:day/:title/
 plugins:
   - jekyll-feed
