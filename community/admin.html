@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>管理者画面 | Cooltake Studio Community</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#0f172a;color:#e2e8f0;min-height:100vh;}
+#login-screen{display:flex;align-items:center;justify-content:center;min-height:100vh;}
+.login-card{background:#1e293b;padding:40px;border-radius:16px;width:320px;text-align:center;}
+.login-card h1{font-size:1.2rem;margin-bottom:24px;color:#f1f5f9;}
+.login-card input{width:100%;padding:10px 14px;border-radius:8px;border:1px solid #334155;background:#0f172a;color:#e2e8f0;font-size:.95rem;margin-bottom:12px;}
+.login-card button{width:100%;padding:10px;background:#3b82f6;color:#fff;border:none;border-radius:8px;font-size:.95rem;cursor:pointer;font-weight:600;}
+.login-card button:hover{background:#2563eb;}
+#login-error{color:#f87171;font-size:.85rem;margin-top:8px;}
+#app{display:none;min-height:100vh;}
+header{background:#1e293b;padding:16px 24px;display:flex;align-items:center;gap:16px;border-bottom:1px solid #334155;}
+header h1{font-size:1rem;font-weight:700;color:#f1f5f9;flex:1;}
+header span{font-size:.8rem;color:#94a3b8;}
+.tabs{display:flex;gap:4px;padding:16px 24px 0;background:#0f172a;border-bottom:1px solid #1e293b;}
+.tab-btn{padding:8px 18px;border:none;border-radius:8px 8px 0 0;cursor:pointer;font-size:.85rem;font-weight:600;background:#1e293b;color:#94a3b8;transition:.15s;}
+.tab-btn.active{background:#3b82f6;color:#fff;}
+.tab-btn .badge{display:inline-block;background:#ef4444;color:#fff;border-radius:99px;font-size:.7rem;padding:1px 6px;margin-left:6px;}
+.content{padding:24px;max-width:900px;}
+.section-title{font-size:.75rem;font-weight:700;color:#64748b;letter-spacing:.08em;text-transform:uppercase;margin-bottom:12px;}
+.card{background:#1e293b;border-radius:12px;padding:20px;margin-bottom:12px;border:1px solid #334155;}
+.card-header{display:flex;align-items:flex-start;gap:12px;margin-bottom:12px;}
+.card-type{font-size:.7rem;font-weight:700;padding:2px 8px;border-radius:4px;white-space:nowrap;}
+.card-type.member{background:rgba(16,185,129,.15);color:#34d399;}
+.card-type.event{background:rgba(245,158,11,.15);color:#fbbf24;}
+.card-type.showcase{background:rgba(99,102,241,.15);color:#818cf8;}
+.card-title{font-size:.95rem;font-weight:700;color:#f1f5f9;flex:1;}
+.card-meta{font-size:.75rem;color:#64748b;margin-bottom:8px;}
+.card-desc{font-size:.85rem;color:#cbd5e1;line-height:1.6;white-space:pre-wrap;margin-bottom:12px;}
+.detail-table{width:100%;border-collapse:collapse;margin-bottom:12px;}
+.detail-table td{padding:4px 8px;font-size:.82rem;vertical-align:top;}
+.detail-table td:first-child{color:#94a3b8;white-space:nowrap;width:120px;}
+.detail-table td:last-child{color:#e2e8f0;}
+.action-row{display:flex;gap:8px;flex-wrap:wrap;}
+.btn{padding:7px 18px;border:none;border-radius:7px;cursor:pointer;font-size:.82rem;font-weight:600;transition:.15s;}
+.btn-approve{background:#10b981;color:#fff;}
+.btn-approve:hover{background:#059669;}
+.btn-reject{background:#374151;color:#9ca3af;}
+.btn-reject:hover{background:#ef4444;color:#fff;}
+.btn-reply{background:#3b82f6;color:#fff;}
+.btn-reply:hover{background:#2563eb;}
+.btn-sm{padding:4px 12px;font-size:.78rem;}
+.verified-badge{font-size:.7rem;color:#34d399;background:rgba(16,185,129,.1);padding:2px 7px;border-radius:4px;margin-left:6px;}
+.unverified-badge{font-size:.7rem;color:#f87171;background:rgba(239,68,68,.1);padding:2px 7px;border-radius:4px;margin-left:6px;}
+.empty{color:#64748b;font-size:.9rem;padding:32px;text-align:center;}
+.loading{color:#64748b;font-size:.85rem;padding:24px;text-align:center;}
+/* 返信ダイアログ */
+.overlay{position:fixed;inset:0;background:rgba(0,0,0,.6);display:flex;align-items:center;justify-content:center;z-index:100;}
+.dialog{background:#1e293b;border-radius:16px;padding:28px;width:480px;max-width:95vw;}
+.dialog h3{font-size:1rem;font-weight:700;margin-bottom:16px;}
+.dialog textarea{width:100%;height:120px;background:#0f172a;border:1px solid #334155;border-radius:8px;color:#e2e8f0;padding:10px;font-size:.88rem;resize:vertical;margin-bottom:12px;}
+.dialog input{width:100%;background:#0f172a;border:1px solid #334155;border-radius:8px;color:#e2e8f0;padding:8px 12px;font-size:.88rem;margin-bottom:12px;}
+.dialog-actions{display:flex;gap:8px;justify-content:flex-end;}
+.status-msg{font-size:.82rem;padding:8px 12px;border-radius:6px;margin-top:8px;}
+.status-ok{background:rgba(16,185,129,.1);color:#34d399;}
+.status-err{background:rgba(239,68,68,.1);color:#f87171;}
+/* 返信ログ */
+.reply-log{background:#0f172a;border-radius:8px;padding:12px;margin-top:8px;}
+.reply-item{border-bottom:1px solid #1e293b;padding:8px 0;font-size:.82rem;}
+.reply-item:last-child{border-bottom:none;}
+</style>
+</head>
+<body>
+
+<!-- ログイン画面 -->
+<div id="login-screen">
+  <div class="login-card">
+    <h1>🔐 管理者ログイン</h1>
+    <input type="password" id="pw-input" placeholder="管理者パスワード" autocomplete="current-password">
+    <button onclick="doLogin()">ログイン</button>
+    <div id="login-error"></div>
+  </div>
+</div>
+
+<!-- 管理画面 -->
+<div id="app">
+  <header>
+    <h1>Cooltake Studio — Community 管理</h1>
+    <span id="header-counts"></span>
+  </header>
+
+  <div class="tabs">
+    <button class="tab-btn active" onclick="switchTab('members')" id="tab-members">メンバー募集<span class="badge" id="badge-members">0</span></button>
+    <button class="tab-btn" onclick="switchTab('events')" id="tab-events">イベント情報<span class="badge" id="badge-events">0</span></button>
+    <button class="tab-btn" onclick="switchTab('showcase')" id="tab-showcase">Showcase<span class="badge" id="badge-showcase">0</span></button>
+    <button class="tab-btn" onclick="switchTab('approved')" id="tab-approved">掲載済み管理</button>
+  </div>
+
+  <div class="content" id="tab-content">
+    <div class="loading">読み込み中...</div>
+  </div>
+</div>
+
+<!-- 返信ダイアログ -->
+<div class="overlay" id="reply-dialog" style="display:none;">
+  <div class="dialog">
+    <h3>📨 投稿者へメッセージを送る</h3>
+    <p style="font-size:.82rem;color:#94a3b8;margin-bottom:12px;" id="reply-target-label"></p>
+    <textarea id="reply-message" placeholder="メッセージを入力...（10〜1000文字）"></textarea>
+    <input type="text" id="reply-from" placeholder="送信者名（任意）" value="Cooltake Studio 管理者">
+    <input type="email" id="reply-email-field" placeholder="返信用メールアドレス（任意）">
+    <div id="reply-status"></div>
+    <div class="dialog-actions">
+      <button class="btn btn-reject" onclick="closeReplyDialog()">キャンセル</button>
+      <button class="btn btn-reply" onclick="sendReply()">送信</button>
+    </div>
+  </div>
+</div>
+
+<script>
+const WORKER = 'https://cooltake-showcase.cooltakestudio.workers.dev/';
+let ADMIN_KEY = '';
+let currentTab = 'members';
+let replyTarget = null; // {postId, type, title}
+
+// ──────── ログイン ────────
+function doLogin() {
+  const pw = document.getElementById('pw-input').value.trim();
+  if (!pw) return;
+  ADMIN_KEY = pw;
+  // 簡単な検証: pendingを取得してみる
+  api({ action: 'admin_pending_members', adminKey: pw }).then(d => {
+    if (d.ok) {
+      document.getElementById('login-screen').style.display = 'none';
+      document.getElementById('app').style.display = 'block';
+      loadAll();
+    } else {
+      document.getElementById('login-error').textContent = 'パスワードが違います';
+      ADMIN_KEY = '';
+    }
+  }).catch(() => {
+    document.getElementById('login-error').textContent = '接続エラー。再度お試しください。';
+    ADMIN_KEY = '';
+  });
+}
+document.getElementById('pw-input').addEventListener('keydown', e => { if (e.key === 'Enter') doLogin(); });
+
+// ──────── タブ切り替え ────────
+function switchTab(tab) {
+  currentTab = tab;
+  document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById('tab-' + tab).classList.add('active');
+  renderTab(tab);
+}
+
+// ──────── 全データ読み込み ────────
+let allData = { members: [], events: [], showcase: [], approvedMembers: [], approvedEvents: [], approvedShowcase: [] };
+
+async function loadAll() {
+  const [membersRes, eventsRes, showcaseRes, aMRes, aERes, aSRes] = await Promise.all([
+    api({ action: 'admin_pending_members',  adminKey: ADMIN_KEY }),
+    api({ action: 'admin_pending_events',   adminKey: ADMIN_KEY }),
+    api({ action: 'admin_pending',          adminKey: ADMIN_KEY }),
+    api({ action: 'admin_approved_members', adminKey: ADMIN_KEY }),
+    api({ action: 'admin_approved_events',  adminKey: ADMIN_KEY }),
+    api({ action: 'admin_list_approved',    adminKey: ADMIN_KEY }),
+  ]);
+
+  allData.members         = membersRes.pending  || [];
+  allData.events          = eventsRes.pending   || [];
+  allData.showcase        = showcaseRes.pending || [];
+  allData.approvedMembers = aMRes.items         || [];
+  allData.approvedEvents  = aERes.items         || [];
+  allData.approvedShowcase= aSRes.posts         || [];
+
+  updateBadges();
+  renderTab(currentTab);
+}
+
+function updateBadges() {
+  document.getElementById('badge-members').textContent  = allData.members.length;
+  document.getElementById('badge-events').textContent   = allData.events.length;
+  document.getElementById('badge-showcase').textContent = allData.showcase.length;
+  document.getElementById('header-counts').textContent  =
+    `審査待ち: ${allData.members.length + allData.events.length + allData.showcase.length}件`;
+}
+
+function renderTab(tab) {
+  const el = document.getElementById('tab-content');
+  if (tab === 'members')  renderList(el, allData.members,  'member');
+  if (tab === 'events')   renderList(el, allData.events,   'event');
+  if (tab === 'showcase') renderList(el, allData.showcase, 'showcase');
+  if (tab === 'approved') renderApproved(el);
+}
+
+// ──────── 審査待ち一覧レンダリング ────────
+function renderList(el, items, type) {
+  if (!items.length) { el.innerHTML = '<div class="empty">審査待ちの投稿はありません</div>'; return; }
+  const label = { member: 'メンバー募集', event: 'イベント情報', showcase: 'Showcase' }[type];
+  el.innerHTML = `<div class="section-title">審査待ち — ${label} (${items.length}件)</div>` +
+    items.map(p => cardHtml(p, type, true)).join('');
+}
+
+function cardHtml(p, type, showActions) {
+  const verBadge = p.email_verified === false
+    ? '<span class="unverified-badge">メール未確認</span>'
+    : p.email_verified
+      ? '<span class="verified-badge">✓ メール確認済み</span>'
+      : '';
+
+  let detailHtml = '';
+  if (type === 'member') {
+    detailHtml = tableRows([
+      ['ニックネーム', p.nickname],
+      ['バンド名', p.group_name],
+      ['募集種別', p.recruit_type],
+      ['自分のパート', p.my_part],
+      ['募集パート', (p.recruit_parts||[]).join('・')],
+      ['ジャンル', (p.genres||[]).join('・')],
+      ['活動地域', p.region],
+      ['活動頻度', p.frequency],
+      ['レベル', p.level],
+      ['連絡先', p.contact],
+      ['メール', p.email],
+      ['投稿日時', fmtDate(p.submitted_at)],
+    ]);
+  } else if (type === 'event') {
+    detailHtml = tableRows([
+      ['ニックネーム', p.nickname],
+      ['バンド名', p.group_name],
+      ['イベント種別', p.event_type],
+      ['開催日時', p.event_date + (p.event_time ? ' ' + p.event_time : '')],
+      ['形式', p.format],
+      ['地域・会場', [p.region, p.venue].filter(Boolean).join(' ')],
+      ['参加費', p.fee_type + (p.fee_amount ? ` ${p.fee_amount}` : '')],
+      ['申込方法', p.contact],
+      ['メール', p.email],
+      ['投稿日時', fmtDate(p.submitted_at)],
+    ]);
+  } else {
+    detailHtml = tableRows([
+      ['ニックネーム', p.nickname],
+      ['ジャンル', p.genre],
+      ['リンク', p.main_link ? `<a href="${esc(p.main_link)}" target="_blank" style="color:#60a5fa;">${esc(p.main_link)}</a>` : ''],
+      ['機材', (p.gear||[]).join('、')],
+      ['メール', p.email],
+      ['投稿日時', fmtDate(p.submitted_at)],
+    ]);
+  }
+
+  const actions = showActions ? `
+    <div class="action-row">
+      <button class="btn btn-approve" onclick="approve('${p.id}','${type}')">✅ 承認・掲載</button>
+      <button class="btn btn-reject"  onclick="reject('${p.id}','${type}')">❌ 却下</button>
+      <button class="btn btn-reply btn-sm" onclick="openReply('${p.id}','${type}','${esc(p.title||p.nickname)}')">💬 連絡</button>
+    </div>` : `
+    <div class="action-row">
+      <button class="btn btn-reply btn-sm" onclick="openReply('${p.id}','${type}','${esc(p.title||p.nickname)}')">💬 投稿者へ連絡</button>
+      <button class="btn btn-sm" style="background:#334155;color:#94a3b8;" onclick="showReplies('${p.id}')">返信ログ</button>
+    </div>`;
+
+  return `<div class="card" id="card-${p.id}">
+    <div class="card-header">
+      <span class="card-type ${type}">${{member:'メンバー募集',event:'イベント',showcase:'Showcase'}[type]}</span>
+      <span class="card-title">${esc(p.title || p.nickname)}${verBadge}</span>
+    </div>
+    <table class="detail-table">${detailHtml}</table>
+    <div class="card-desc">${esc(p.description||'')}</div>
+    ${actions}
+    <div id="msg-${p.id}"></div>
+    <div id="replies-${p.id}"></div>
+  </div>`;
+}
+
+function tableRows(rows) {
+  return rows.filter(([,v]) => v).map(([k,v]) =>
+    `<tr><td>${esc(k)}</td><td>${v}</td></tr>`).join('');
+}
+
+// ──────── 掲載済み管理 ────────
+function renderApproved(el) {
+  const mHtml = allData.approvedMembers.length
+    ? allData.approvedMembers.map(p => cardHtml(p, 'member', false)).join('')
+    : '<div class="empty" style="padding:12px;">掲載中のメンバー募集はありません</div>';
+  const eHtml = allData.approvedEvents.length
+    ? allData.approvedEvents.map(p => cardHtml(p, 'event', false)).join('')
+    : '<div class="empty" style="padding:12px;">掲載中のイベントはありません</div>';
+  const sHtml = allData.approvedShowcase.length
+    ? allData.approvedShowcase.map(p => cardHtml(p, 'showcase', false)).join('')
+    : '<div class="empty" style="padding:12px;">掲載中のShowcase投稿はありません</div>';
+
+  el.innerHTML = `
+    <div class="section-title">掲載中 — メンバー募集 (${allData.approvedMembers.length}件)</div>
+    ${mHtml}
+    <div class="section-title" style="margin-top:24px;">掲載中 — イベント情報 (${allData.approvedEvents.length}件)</div>
+    ${eHtml}
+    <div class="section-title" style="margin-top:24px;">掲載中 — Showcase (${allData.approvedShowcase.length}件)</div>
+    ${sHtml}`;
+}
+
+// ──────── 承認・却下 ────────
+async function approve(postId, type) {
+  const actionMap = { member: 'admin_approve_member', event: 'admin_approve_event', showcase: 'admin_approve' };
+  const d = await api({ action: actionMap[type], adminKey: ADMIN_KEY, postId });
+  const msgEl = document.getElementById('msg-' + postId);
+  if (d.ok) {
+    document.getElementById('card-' + postId).style.opacity = '.4';
+    msgEl.innerHTML = '<div class="status-msg status-ok">✅ 承認しました。掲載完了メールを送信しました。</div>';
+    await loadAll();
+  } else {
+    msgEl.innerHTML = `<div class="status-msg status-err">⚠ ${esc(d.error||'エラー')}</div>`;
+  }
+}
+
+async function reject(postId, type) {
+  if (!confirm('この投稿を却下しますか？')) return;
+  const actionMap = { member: 'admin_reject_member', event: 'admin_reject_event', showcase: 'admin_reject' };
+  const d = await api({ action: actionMap[type], adminKey: ADMIN_KEY, postId });
+  const msgEl = document.getElementById('msg-' + postId);
+  if (d.ok) {
+    document.getElementById('card-' + postId).style.opacity = '.3';
+    msgEl.innerHTML = '<div class="status-msg status-err">❌ 却下しました。</div>';
+    await loadAll();
+  } else {
+    msgEl.innerHTML = `<div class="status-msg status-err">⚠ ${esc(d.error||'エラー')}</div>`;
+  }
+}
+
+// ──────── 返信ダイアログ ────────
+function openReply(postId, type, title) {
+  replyTarget = { postId, type, title };
+  document.getElementById('reply-target-label').textContent = `宛先: 「${title}」の投稿者`;
+  document.getElementById('reply-message').value = '';
+  document.getElementById('reply-status').innerHTML = '';
+  document.getElementById('reply-dialog').style.display = 'flex';
+}
+
+function closeReplyDialog() {
+  document.getElementById('reply-dialog').style.display = 'none';
+  replyTarget = null;
+}
+
+async function sendReply() {
+  if (!replyTarget) return;
+  const message  = document.getElementById('reply-message').value.trim();
+  const fromNick = document.getElementById('reply-from').value.trim() || 'Cooltake Studio 管理者';
+  const replyEmail = document.getElementById('reply-email-field').value.trim();
+  const statusEl = document.getElementById('reply-status');
+
+  if (message.length < 10) {
+    statusEl.innerHTML = '<div class="status-msg status-err">メッセージは10文字以上入力してください</div>';
+    return;
+  }
+
+  const d = await api({
+    action: 'reply_to_post',
+    postId: replyTarget.postId,
+    type: replyTarget.type,
+    fromNickname: fromNick,
+    message,
+    replyEmail,
+  });
+
+  if (d.ok) {
+    statusEl.innerHTML = '<div class="status-msg status-ok">✅ 送信しました</div>';
+    setTimeout(closeReplyDialog, 1500);
+  } else {
+    statusEl.innerHTML = `<div class="status-msg status-err">⚠ ${esc(d.error||'送信エラー')}</div>`;
+  }
+}
+
+// ──────── 返信ログ表示 ────────
+async function showReplies(postId) {
+  const el = document.getElementById('replies-' + postId);
+  const d = await api({ action: 'admin_replies', adminKey: ADMIN_KEY, postId });
+  if (!d.ok || !d.replies.length) {
+    el.innerHTML = '<div class="reply-log" style="color:#64748b;font-size:.82rem;">返信ログなし</div>';
+    return;
+  }
+  el.innerHTML = '<div class="reply-log">' +
+    d.replies.map(r =>
+      `<div class="reply-item"><span style="color:#94a3b8;">${fmtDate(r.sent_at)} — ${esc(r.senderName)}</span><br>${esc(r.message)}</div>`
+    ).join('') + '</div>';
+}
+
+// ──────── ユーティリティ ────────
+async function api(body) {
+  const r = await fetch(WORKER, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(body),
+  });
+  return r.json();
+}
+
+function esc(s) {
+  return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+
+function fmtDate(iso) {
+  if (!iso) return '';
+  const d = new Date(iso);
+  return `${d.getFullYear()}/${String(d.getMonth()+1).padStart(2,'0')}/${String(d.getDate()).padStart(2,'0')} ${String(d.getHours()).padStart(2,'0')}:${String(d.getMinutes()).padStart(2,'0')}`;
+}
+</script>
+</body>
+</html>
