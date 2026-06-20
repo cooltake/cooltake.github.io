@@ -13,30 +13,32 @@ image: /assets/images/thumb-80s-idol.jpg
 
 ### 主要プロデューサー・作曲家
 
-- **細野晴臣**（作曲・プロデュース）：松田聖子「ハートをRock」など。YMO解散後も日本ポップスの中核に。
-- **大瀧詠一**（作曲・プロデュース）：松田聖子への楽曲提供でシティポップとアイドルを結びつけた。
+- **筒美京平**（作曲）：松田聖子<a href="https://music.youtube.com/search?q=%E6%9D%BE%E7%94%B0%E8%81%96%E5%AD%90%20%E8%A3%B8%E8%B6%B3%E3%81%AE%E5%AD%A3%E7%AF%80" target="_blank" rel="nofollow noopener" style="color:#1e3a5f;text-decoration:none;font-weight:600;">「裸足の季節」</a>「青い珊瑚礁」など初期の代表曲を手がけた、日本ポップス史上最多ヒット曲を持つ作曲家。80年代アイドル黄金期を事実上設計した存在。
+- **細野晴臣**（作曲・プロデュース）：松田聖子<a href="https://music.youtube.com/search?q=%E6%9D%BE%E7%94%B0%E8%81%96%E5%AD%90%20%E3%83%8F%E3%83%BC%E3%83%88%E3%82%92Rock" target="_blank" rel="nofollow noopener" style="color:#1e3a5f;text-decoration:none;font-weight:600;">「ハートをRock」</a>など。YMO解散後も日本ポップスの中核に。
+- **大瀧詠一**（作曲・プロデュース）：松田聖子<a href="https://music.youtube.com/search?q=%E6%9D%BE%E7%94%B0%E8%81%96%E5%AD%90%20%E9%A2%A8%E7%AB%8B%E3%81%A1%E3%81%AC" target="_blank" rel="nofollow noopener" style="color:#1e3a5f;text-decoration:none;font-weight:600;">「風立ちぬ」</a>「A面で恋をして（角松敏生向け含む）」への楽曲提供でシティポップとアイドルを結びつけた。
 
 ### 主要編曲家（アレンジャー）
 
 編曲家こそが「80年代サウンド」の実際の設計者だ。
 
-- **大村雅朗**：松田聖子の多くの楽曲を編曲。「赤いスイートピー」「SWEET MEMORIES」「青い珊瑚礁」——彼のアレンジは弦楽とシンセを自在に組み合わせ、聖子の声を最大限に引き立てた。1994年に47歳で急逝。
-- **松任谷正隆**（ユーミンの夫）：松田聖子「渚のバルコニー」など多数。YMO解散後の坂本龍一とも連携し、最先端のシンセサウンドをアイドル楽曲に持ち込んだ。
-- **船山基紀**：中森明菜「少女A」「DESIRE」などを手がけた鬼才。リズムの切れ味と歌詞のシンクロが特徴。
-- **萩田光雄**：山口百恵から引き続き80年代アイドルを広く担当。百恵の「プレイバックPart2」から聖子の初期アルバムまで幅広く手がけた。
+- **大村雅朗**：松田聖子の多くの楽曲を編曲。「赤いスイートピー」<a href="https://music.youtube.com/search?q=%E6%9D%BE%E7%94%B0%E8%81%96%E5%AD%90%20SWEET%20MEMORIES" target="_blank" rel="nofollow noopener" style="color:#1e3a5f;text-decoration:none;font-weight:600;">「SWEET MEMORIES」</a><a href="https://music.youtube.com/search?q=%E6%9D%BE%E7%94%B0%E8%81%96%E5%AD%90%20%E9%9D%92%E3%81%84%E7%8F%8A%E7%91%9A%E7%A4%81" target="_blank" rel="nofollow noopener" style="color:#1e3a5f;text-decoration:none;font-weight:600;">「青い珊瑚礁」</a>——彼のアレンジは弦楽とシンセを自在に組み合わせ、聖子の声を最大限に引き立てた。1994年に47歳で急逝。
+- **松任谷正隆**（ユーミンの夫）：松田聖子<a href="https://music.youtube.com/search?q=%E6%9D%BE%E7%94%B0%E8%81%96%E5%AD%90%20%E6%B8%9A%E3%81%AE%E3%83%90%E3%83%AB%E3%82%B3%E3%83%8B%E3%83%BC" target="_blank" rel="nofollow noopener" style="color:#1e3a5f;text-decoration:none;font-weight:600;">「渚のバルコニー」</a>など多数。YMO解散後の坂本龍一とも連携し、最先端のシンセサウンドをアイドル楽曲に持ち込んだ。
+- **船山基紀**：中森明菜<a href="https://music.youtube.com/search?q=%E4%B8%AD%E6%A3%AE%E6%98%8E%E8%8F%9C%20%E5%B0%91%E5%A5%B3A" target="_blank" rel="nofollow noopener" style="color:#1e3a5f;text-decoration:none;font-weight:600;">「少女A」</a><a href="https://music.youtube.com/search?q=%E4%B8%AD%E6%A3%AE%E6%98%8E%E8%8F%9C%20DESIRE%20%E6%83%85%E7%86%B1" target="_blank" rel="nofollow noopener" style="color:#1e3a5f;text-decoration:none;font-weight:600;">「DESIRE」</a>などを手がけた鬼才。リズムの切れ味と歌詞のシンクロが特徴。
+- **萩田光雄**：山口百恵から引き続き80年代アイドルを広く担当。百恵の<a href="https://music.youtube.com/search?q=%E5%B1%B1%E5%8F%A3%E7%99%BE%E6%81%B5%20%E3%83%97%E3%83%AC%E3%82%A4%E3%83%90%E3%83%83%E3%82%AFPart2" target="_blank" rel="nofollow noopener" style="color:#1e3a5f;text-decoration:none;font-weight:600;">「プレイバックPart2」</a>から聖子の初期アルバムまで幅広く手がけた。
 - **武部聡志**：後期アイドルから中島みゆき、吉田拓郎のプロデュースへと活動を広げた。アコースティックとデジタルの橋渡し役。
-- **後藤次利**（ベーシスト兼編曲家）：中森明菜「十戒」などのダークなサウンドを設計。ベーシストとしての感覚が生きたリズム主導のアレンジが特徴。
+- **後藤次利**（ベーシスト兼編曲家）：中森明菜<a href="https://music.youtube.com/search?q=%E4%B8%AD%E6%A3%AE%E6%98%8E%E8%8F%9C%20%E5%8D%81%E6%88%92" target="_blank" rel="nofollow noopener" style="color:#1e3a5f;text-decoration:none;font-weight:600;">「十戒」</a>などのダークなサウンドを設計。ベーシストとしての感覚が生きたリズム主導のアレンジが特徴。
 
 ### 主要レコーディングエンジニア
 
 エンジニアは「音の職人」として、アレンジャーの指示を実際のサウンドに変換した。
 
+- **吉田保**（エンジニア）：松田聖子・中森明菜・山下達郎・大瀧詠一らの名盤を録音した、日本ポップス史上最も重要なレコーディングエンジニア。「A LONG VACATION」（1981年）をはじめ、80年代の「日本のポップスが世界水準に達した」と評されるアルバム群を支えた。その音像は「太く、深く、広い」と称され、アナログ卓の扱いとマイキングの精密さは伝説的。
 - **飯尾芳史**（エンジニア、バーミリオン）：多くのJ-POP・アイドル録音を手がけた第一人者。マイキングと卓のバランス感覚が絶賛された。
 - **エンジニア陣全体の特徴**：当時のソニーミュージック、東芝EMI、CBSソニーなどのスタジオには専属エンジニアがおり、レーベルごとにサウンドの個性があった。ソニーのスタジオは特にクリアで広い音場が特徴だった。
 
 <figure style="margin:1.5rem 0;">
 <img src="/assets/images/japan-music-06-img1.jpg" alt="1980年代 日本のレコーディングスタジオ コンソール" style="width:100%;border-radius:10px;height:auto;" loading="lazy">
-<figcaption style='font-size:.8rem;color:#9ca3af;text-align:center;margin-top:.3rem;'>80年代アイドルサウンドを作り上げた大型スタジオ。SSLコンソールとYamaha DX7が並ぶ（イメージ）</figcaption>
+
 </figure>
 
 
@@ -52,10 +54,7 @@ image: /assets/images/thumb-80s-idol.jpg
 | **Roland D-50** | 1987年 | PCM+デジタルシンセ。バブル期サウンドの核心 |
 | **Lexicon 224**<a href="https://h.accesstrade.net/sp/cc?rk=01001xqc00os63&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fproducts%2Fdetail%2Fitem%2F360986%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="font-size:.8rem;color:#1e3a5f;font-weight:600;margin-left:.3em;">🛒 サウンドハウスで見る</a> | 1978年〜 | デジタルリバーブ。80年代の「広がり感」の正体 |
 
-<div style="background:#e8edf2;border-radius:12px;padding:1.5rem;margin:1.5rem 0;border-left:4px solid #1e3a5f;">
-<h3 style="color:#111827;margin-top:0;">🎹 DX7が変えた音楽の世界</h3>
-<p style="color:#374151;">Yamaha DX7（1983年）は当時19万8千円という価格でありながら、飛ぶように売れた。FM音源による金属的な電子ピアノ音・ベル音・ブラス音は、80年代のポップミュージックを文字通り「定義」した。あの時代の音楽に必ずと言っていいほど入っているEレズ（DXベース）やマリンバ系の音——すべてDX7の仕業だ。</p>
-</div>
+<div style="background:#e8edf2;border-radius:12px;padding:1.5rem;margin:1.5rem 0;border-left:4px solid #1e3a5f;"><h3 style="color:#111827;margin-top:0;">🎹 DX7が変えた音楽の世界</h3><span style="display:block;color:#374151;">Yamaha DX7（1983年）は当時19万8千円という価格でありながら、飛ぶように売れた。FM音源による金属的な電子ピアノ音・ベル音・ブラス音は、80年代のポップミュージックを文字通り「定義」した。あの時代の音楽に必ずと言っていいほど入っているEレズ（DXベース）やマリンバ系の音——すべてDX7の仕業だ。</span></div>
 
 
 ## 80年代アイドルの音作りの特徴と技法
@@ -79,9 +78,7 @@ image: /assets/images/thumb-80s-idol.jpg
 2. **ピアノのスタッカート**：アコースティックピアノを短く刻んでリズム感を演出
 3. **コーラスの3度重ね**：メインボーカル + 2本のハーモニーで「天使感」を出す
 
-<div class="video-link-box" style="margin:1rem 0;padding:.7rem 1rem;background:#eef1f5;border-left:3px solid #1e3a5f;border-radius:6px;">
-<a href="https://www.youtube.com/results?search_query=%E6%9D%BE%E7%94%B0%E8%81%96%E5%AD%90%20%E8%B5%A4%E3%81%84%E3%82%B9%E3%82%A4%E3%83%BC%E3%83%88%E3%83%94%E3%83%BC" target="_blank" rel="nofollow noopener" style="display:inline-flex;align-items:center;gap:.4em;color:#1e3a5f;text-decoration:none;font-weight:600;">▶ 「赤いスイートピー」を聴く</a>
-</div>
+<div style="margin:1rem 0;padding:.7rem 1rem;background:#eef1f5;border-left:3px solid #1e3a5f;border-radius:6px;"><a href="https://music.youtube.com/search?q=%E6%9D%BE%E7%94%B0%E8%81%96%E5%AD%90%20%E8%B5%A4%E3%81%84%E3%82%B9%E3%82%A4%E3%83%BC%E3%83%88%E3%83%94%E3%83%BC" target="_blank" rel="nofollow noopener" style="display:inline-flex;align-items:center;gap:.4em;color:#1e3a5f;text-decoration:none;font-weight:600;">▶ 「赤いスイートピー」を聴く</a></div>
 
 ### コーラスエフェクト——80年代シンセの広がり感の正体
 
@@ -112,7 +109,7 @@ HF Damping：　　高域を少し落とす（デジタル的な硬さを和ら�
 
 <figure style="margin:1.5rem 0;">
 <img src="/assets/images/japan-music-06-img2.jpg" alt="Yamaha DX7 と Roland D-50" style="width:100%;border-radius:10px;height:auto;" loading="lazy">
-<figcaption style='font-size:.8rem;color:#9ca3af;text-align:center;margin-top:.3rem;'>80年代アイドルサウンドを作った2大シンセ。DX7（左）とRoland D-50（右）</figcaption>
+
 </figure>
 
 
@@ -128,20 +125,15 @@ HF Damping：　　高域を少し落とす（デジタル的な硬さを和ら�
 ```
 
 
-## CDを探す
+## 松田聖子・中森明菜の名盤を聴く——吉田保・大村雅朗が作ったサウンドを体感する
 
-<div style="margin:.8rem 0;"><span style="display:block;font-size:.78rem;color:#4b5563;margin-bottom:3px;margin-top:6px;">🔍 楽天市場で探す</span>
-<a href="https://hb.afl.rakuten.co.jp/ichiba/0b15ddc7.28c5c9ed.0b15ddc8.5d23dd4d/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%E6%9D%BE%E7%94%B0%E8%81%96%E5%AD%90%20%E4%B8%AD%E6%A3%AE%E6%98%8E%E8%8F%9C%2080%E5%B9%B4%E4%BB%A3%20CD%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="display:inline-block;text-decoration:none;"><img src="/assets/images/btn-rakuten.jpg" alt="楽天市場で探す" width="240" style="height:auto;border-radius:8px;display:block;"></a></div>
+<div style="margin:.8rem 0;"><span style="display:block;font-size:.78rem;color:#4b5563;margin-bottom:3px;margin-top:6px;">🔍 楽天市場で探す</span><a href="https://search.rakuten.co.jp/search/mall/松田聖子 中森明菜 80年代 CD/" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="display:block;text-decoration:none;text-align:center;"><img src="/assets/images/btn-rakuten.jpg" alt="楽天市場で探す" width="240" style="height:auto;border-radius:8px;display:inline-block;"></a></div>
 
-### 関連書籍を探す
+### 80年代サウンドの音作りを学ぶ——アレンジ・レコーディング技術の教則本
 
-<div style="margin:.8rem 0;"><span style="display:block;font-size:.78rem;color:#4b5563;margin-bottom:3px;margin-top:6px;">🔍 楽天市場で探す</span>
-<a href="https://hb.afl.rakuten.co.jp/ichiba/0b15ddc7.28c5c9ed.0b15ddc8.5d23dd4d/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%E9%9F%B3%E6%A5%BD%E5%88%B6%E4%BD%9C%20%E3%82%A2%E3%83%AC%E3%83%B3%E3%82%B8%20%E6%95%99%E5%89%87%E6%9C%AC%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="display:inline-block;text-decoration:none;"><img src="/assets/images/btn-rakuten.jpg" alt="楽天市場で探す" width="240" style="height:auto;border-radius:8px;display:block;"></a></div>
+<div style="margin:.8rem 0;"><span style="display:block;font-size:.78rem;color:#4b5563;margin-bottom:3px;margin-top:6px;">🔍 楽天市場で探す</span><a href="https://search.rakuten.co.jp/search/mall/音楽制作 アレンジ 教則本/" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="display:block;text-decoration:none;text-align:center;"><img src="/assets/images/btn-rakuten.jpg" alt="楽天市場で探す" width="240" style="height:auto;border-radius:8px;display:inline-block;"></a></div>
 
 
 
 
-<div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:.8rem;margin:2rem 0;">
-<a href="/2026/05/30/japan-music-05-ymo-techno/" style="display:inline-block;padding:.5rem 1rem;background:#e8edf2;border:1px solid #c8c5c0;border-radius:8px;color:#1e3a5f;text-decoration:none;font-size:.9rem;">← #05 YMO・テクノポップ</a>
-<a href="/2026/05/30/japan-music-07-80s-commercial/" style="display:inline-block;padding:.5rem 1rem;background:#e8edf2;border:1px solid #c8c5c0;border-radius:8px;color:#1e3a5f;text-decoration:none;font-size:.9rem;">#07 80年代半ば商業音楽 →</a>
-</div>
+<div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:.8rem;margin:2rem 0;"><a href="/2026/05/30/japan-music-05-ymo-techno/" style="display:inline-block;padding:.5rem 1rem;background:#e8edf2;border:1px solid #c8c5c0;border-radius:8px;color:#1e3a5f;text-decoration:none;font-size:.9rem;">← #05 YMO・テクノポップ</a><a href="/2026/05/30/japan-music-07-80s-commercial/" style="display:inline-block;padding:.5rem 1rem;background:#e8edf2;border:1px solid #c8c5c0;border-radius:8px;color:#1e3a5f;text-decoration:none;font-size:.9rem;">#07 80年代半ば商業音楽 →</a></div>
