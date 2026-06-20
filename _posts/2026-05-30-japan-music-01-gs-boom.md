@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: "グループサウンズ革命【1960年代】エレキギターが日本を変えた日"
 date: 2026-05-30
@@ -13,7 +13,7 @@ image: /assets/images/thumb-gs-boom.jpg
 
 <figure style="margin:1.5rem 0;">
 <img src="/assets/images/japan-music-01-img1.jpg" alt="1960年代 グループサウンズ ステージ" style="width:100%;border-radius:10px;height:auto;" loading="lazy">
-<figcaption style='font-size:.8rem;color:#9ca3af;text-align:center;margin-top:.3rem;'>1960年代のGSバンドたちが熱演するステージ（イメージ）</figcaption>
+
 </figure>
 
 
@@ -31,9 +31,7 @@ image: /assets/images/thumb-gs-boom.jpg
 
 来日公演を見た若者たちが「俺もあのギターを弾きたい」と楽器屋に殺到。国内のエレキギター需要が急増し、テスコ・グヤトーン・ヤマハなどの国産メーカーが急成長した。ベンチャーズ自身も「ベンチャーズのテーマ」「10番街の殺人」などで演奏法を見せ、後のGSバンドたちの教師となった。
 
-<div class="video-link-box" style="margin:1rem 0;padding:.7rem 1rem;background:#eef1f5;border-left:3px solid #1e3a5f;border-radius:6px;">
-<a href="https://www.youtube.com/results?search_query=%E3%83%99%E3%83%B3%E3%83%81%E3%83%A3%E3%83%BC%E3%82%BA%20%E6%97%A5%E6%9C%AC%E5%85%AC%E6%BC%94%201960%E5%B9%B4%E4%BB%A3" target="_blank" rel="nofollow noopener" style="display:inline-flex;align-items:center;gap:.4em;color:#1e3a5f;text-decoration:none;font-weight:600;">▶ ベンチャーズのライブ映像を見る</a>
-</div>
+<div style="margin:1rem 0;padding:.7rem 1rem;background:#eef1f5;border-left:3px solid #1e3a5f;border-radius:6px;"><a href="https://www.youtube.com/results?search_query=%E3%83%99%E3%83%B3%E3%83%81%E3%83%A3%E3%83%BC%E3%82%BA%20%E6%97%A5%E6%9C%AC%E5%85%AC%E6%BC%94%201960%E5%B9%B4%E4%BB%A3" target="_blank" rel="nofollow noopener" style="display:inline-flex;align-items:center;gap:.4em;color:#1e3a5f;text-decoration:none;font-weight:600;">▶ ベンチャーズのライブ映像を見る</a></div>
 
 
 ## GSブームを支えた楽器・機材
@@ -51,7 +49,7 @@ GSサウンドの核心はエレキギター。当時使われていた主なモ
 
 <figure style="margin:1.5rem 0;">
 <img src="/assets/images/japan-music-01-img2.jpg" alt="1960年代 ビンテージエレキギター コレクション" style="width:100%;border-radius:10px;height:auto;" loading="lazy">
-<figcaption style='font-size:.8rem;color:#9ca3af;text-align:center;margin-top:.3rem;'>GSブームを支えたビンテージエレキギター（左からMosrite、Gretsch、Stratocaster）</figcaption>
+
 </figure>
 
 **Mosriteの復刻・類似モデル**は現在も人気で、ビザールギターとして注目されています。
@@ -68,14 +66,7 @@ GSサウンドの核心はエレキギター。当時使われていた主なモ
 
 ## GSサウンドの音作りの特徴
 
-<div style="background:rgba(255,255,255,0.10);border-radius:12px;padding:1.5rem;margin:1.5rem 0;border:1px solid rgba(99,102,241,0.75);">
-<h3 style="color:#c7d2fe;margin-top:0;">🎸 GSサウンドの3要素</h3>
-<ul style="color:#374151;">
-<li><strong>クリーントーン中心</strong>：歪みは少なく、ブライトでカラッとした音</li>
-<li><strong>トレモロ・ビブラート</strong>：アームを使ったサーフサウンド的揺らぎ</li>
-<li><strong>リバーブたっぷり</strong>：スプリングリバーブで広がりを演出</li>
-</ul>
-</div>
+<div style="background:rgba(255,255,255,0.10);border-radius:12px;padding:1.5rem;margin:1.5rem 0;border:1px solid rgba(99,102,241,0.75);"><h3 style="color:#c7d2fe;margin-top:0;">🎸 GSサウンドの3要素</h3><ul style="color:#374151;"><li><strong>クリーントーン中心</strong>：歪みは少なく、ブライトでカラッとした音</li><li><strong>トレモロ・ビブラート</strong>：アームを使ったサーフサウンド的揺らぎ</li><li><strong>リバーブたっぷり</strong>：スプリングリバーブで広がりを演出</li></ul></div>
 
 
 ## GSサウンドを今すぐ体験できる楽曲・動画ガイド
@@ -90,10 +81,9 @@ GSサウンドの核心はエレキギター。当時使われていた主なモ
 | 「エメラルドの伝説」 | テンプターズ（1968年） | <a href="https://www.youtube.com/results?search_query=%E3%83%86%E3%83%B3%E3%83%97%E3%82%BF%E3%83%BC%E3%82%BA%20%E3%82%A8%E3%83%A1%E3%83%A9%E3%83%AB%E3%83%89%E3%81%AE%E4%BC%9D%E8%AA%AC" target="_blank" rel="nofollow noopener" style="display:inline-flex;align-items:center;gap:.4em;color:#1e3a5f;text-decoration:none;font-weight:600;">▶ 動画を見る</a> |
 | 「花の首飾り」 | ザ・タイガース（1968年） | <a href="https://www.youtube.com/results?search_query=%E3%82%B6%E3%83%BB%E3%82%BF%E3%82%A4%E3%82%AC%E3%83%BC%E3%82%B9%20%E8%8A%B1%E3%81%AE%E9%A6%96%E9%A3%BE%E3%82%8A" target="_blank" rel="nofollow noopener" style="display:inline-flex;align-items:center;gap:.4em;color:#1e3a5f;text-decoration:none;font-weight:600;">▶ 動画を見る</a> |
 
-### アルバム・CDを探す
+### GSブームのサウンドを聴く——スパイダース・タイガース・テンプターズのCD
 
-<div style="margin:.8rem 0;"><span style="display:block;font-size:.78rem;color:#4b5563;margin-bottom:3px;margin-top:6px;">🔍 楽天市場で探す</span>
-<a href="https://hb.afl.rakuten.co.jp/ichiba/0b15ddc7.28c5c9ed.0b15ddc8.5d23dd4d/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%E3%82%B0%E3%83%AB%E3%83%BC%E3%83%97%E3%82%B5%E3%82%A6%E3%83%B3%E3%82%BA%20CD%20%E3%83%99%E3%82%B9%E3%83%88%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="display:inline-block;text-decoration:none;"><img src="/assets/images/btn-rakuten.jpg" alt="楽天市場で探す" width="240" style="height:auto;border-radius:8px;display:block;"></a></div>
+<div style="margin:.8rem 0;"><span style="display:block;font-size:.78rem;color:#4b5563;margin-bottom:3px;margin-top:6px;">🔍 楽天市場で探す</span><a href="https://search.rakuten.co.jp/search/mall/グループサウンズ CD ベスト/" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="display:block;text-decoration:none;text-align:center;"><img src="/assets/images/btn-rakuten.jpg" alt="楽天市場で探す" width="240" style="height:auto;border-radius:8px;display:inline-block;"></a></div>
 
 
 ## 現代でGSサウンドを再現する
@@ -113,7 +103,7 @@ DAWユーザーなら以下のプラグインでGS的なサウンドを作れま
 
 - **Valhalla Vintage Verb**：スプリングリバーブモード
 - **IK Multimedia AmpliTube**：VOX AC30モデリング搭載
-- **Universal Audio OX**<a href="https://h.accesstrade.net/sp/cc?rk=01001xqc00os63&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fproducts%2Fdetail%2Fitem%2F248772%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="font-size:.8rem;color:#1e3a5f;font-weight:600;margin-left:.3em;">🛒 サウンドハウスで見る</a>：ビンテージアンプシミュレーター
+- **Universal Audio OX**：ビンテージアンプシミュレーター
 
 
 ## 覚えておきたい豆知識
@@ -135,18 +125,14 @@ DAWユーザーなら以下のプラグインでGS的なサウンドを作れま
 
 <figure style="margin:1.5rem 0;">
 <img src="/assets/images/japan-music-01-img3.jpg" alt="グループサウンズ コンサート 熱狂するファン" style="width:100%;border-radius:10px;height:auto;" loading="lazy">
-<figcaption style='font-size:.8rem;color:#9ca3af;text-align:center;margin-top:.3rem;'>GSブーム全盛期のコンサート会場（イメージ）</figcaption>
+
 </figure>
 
-### 関連書籍・教則本を探す
+### この記事を読んでエレキギターを始めたくなったら
 
-<div style="margin:.8rem 0;"><span style="display:block;font-size:.78rem;color:#4b5563;margin-bottom:3px;margin-top:6px;">🔍 楽天市場で探す</span>
-<a href="https://hb.afl.rakuten.co.jp/ichiba/0b15ddc7.28c5c9ed.0b15ddc8.5d23dd4d/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%E3%82%A8%E3%83%AC%E3%82%AD%E3%82%AE%E3%82%BF%E3%83%BC%20%E6%95%99%E5%89%87%E6%9C%AC%20%E5%88%9D%E5%BF%83%E8%80%85%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="display:inline-block;text-decoration:none;"><img src="/assets/images/btn-rakuten.jpg" alt="楽天市場で探す" width="240" style="height:auto;border-radius:8px;display:block;"></a></div>
-
+<div style="margin:.8rem 0;"><span style="display:block;font-size:.78rem;color:#4b5563;margin-bottom:3px;margin-top:6px;">🔍 楽天市場で探す</span><a href="https://search.rakuten.co.jp/search/mall/エレキギター 教則本 初心者/" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="display:block;text-decoration:none;text-align:center;"><img src="/assets/images/btn-rakuten.jpg" alt="楽天市場で探す" width="240" style="height:auto;border-radius:8px;display:inline-block;"></a></div>
 
 
 
-<div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:.8rem;margin:2rem 0;">
-<span></span>
-<a href="/2026/05/30/japan-music-02-folk-new-music/" style="display:inline-block;padding:.5rem 1rem;background:#e8edf2;border:1px solid #c8c5c0;border-radius:8px;color:#1e3a5f;text-decoration:none;font-size:.9rem;">#02 フォーク・ニューミュージック →</a>
-</div>
+
+<div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:.8rem;margin:2rem 0;"><span></span><a href="/2026/05/30/japan-music-02-folk-new-music/" style="display:inline-block;padding:.5rem 1rem;background:#e8edf2;border:1px solid #c8c5c0;border-radius:8px;color:#1e3a5f;text-decoration:none;font-size:.9rem;">#02 フォーク・ニューミュージック →</a></div>
