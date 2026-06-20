@@ -15,7 +15,7 @@ image: /assets/images/thumb-city-pop-revival.jpg
 
 
 
-2019年頃から始まったシティポップリバイバル——竹内まりや「Plastic Love」（1984年）がYouTubeのアルゴリズムで世界中に拡散し、数千万回再生を記録したことが一つのきっかけだ。
+2019年頃から始まったシティポップリバイバル——竹内まりや<a href="https://music.youtube.com/search?q=%E7%AB%B9%E5%86%85%E3%81%BE%E3%82%8A%E3%82%84%20Plastic%20Love" target="_blank" rel="nofollow noopener" style="color:#1e3a5f;text-decoration:none;font-weight:600;">「Plastic Love」</a>（1984年）がYouTubeのアルゴリズムで世界中に拡散し、数千万回再生を記録したことが一つのきっかけだ。
 
 
 
@@ -62,11 +62,11 @@ image: /assets/images/thumb-city-pop-revival.jpg
 
 | アーティスト | 代表作 | 特徴 |
 |---|---|---|
-| **山下達郎** | 「Ride On Time」「クリスマス・イブ」 | コーラスワークの職人 |
-| **竹内まりや** | 「Plastic Love」「September」 | AOR×J-POP |
-| **大貫妙子** | 「都会」「4:00 A.M.」 | フレンチポップ×シティポップ |
-| **松原みき** | 「真夜中のドア〜Stay With Me」 | 世界的バイラルヒット |
-| **杏里** | 「悲しみがとまらない」 | AORの傑作 |
+| **山下達郎** | <a href="https://music.youtube.com/search?q=%E5%B1%B1%E4%B8%8B%E9%81%94%E9%83%8E%20Ride%20On%20Time" target="_blank" rel="nofollow noopener" style="color:#1e3a5f;text-decoration:none;font-weight:600;">「Ride On Time」</a><a href="https://music.youtube.com/search?q=%E5%B1%B1%E4%B8%8B%E9%81%94%E9%83%8E%20%E3%82%AF%E3%83%AA%E3%82%B9%E3%83%9E%E3%82%B9%E3%82%A4%E3%83%96" target="_blank" rel="nofollow noopener" style="color:#1e3a5f;text-decoration:none;font-weight:600;">「クリスマス・イブ」</a> | コーラスワークの職人 |
+| **竹内まりや** | 「Plastic Love」<a href="https://music.youtube.com/search?q=%E7%AB%B9%E5%86%85%E3%81%BE%E3%82%8A%E3%82%84%20September" target="_blank" rel="nofollow noopener" style="color:#1e3a5f;text-decoration:none;font-weight:600;">「September」</a> | AOR×J-POP |
+| **大貫妙子** | <a href="https://music.youtube.com/search?q=%E5%A4%A7%E8%B2%AB%E5%A6%99%E5%AD%90%20%E9%83%BD%E4%BC%9A" target="_blank" rel="nofollow noopener" style="color:#1e3a5f;text-decoration:none;font-weight:600;">「都会」</a>「4:00 A.M.」 | フレンチポップ×シティポップ |
+| **松原みき** | <a href="https://music.youtube.com/search?q=%E6%9D%BE%E5%8E%9F%E3%81%BF%E3%81%8D%20%E7%9C%9F%E5%A4%9C%E4%B8%AD%E3%81%AE%E3%83%89%E3%82%A2%20Stay%20With%20Me" target="_blank" rel="nofollow noopener" style="color:#1e3a5f;text-decoration:none;font-weight:600;">「真夜中のドア〜Stay With Me」</a> | 世界的バイラルヒット |
+| **杏里** | <a href="https://music.youtube.com/search?q=%E6%9D%8F%E9%87%8C%20%E6%82%B2%E3%81%97%E3%81%BF%E3%81%8C%E3%81%A8%E3%81%BE%E3%82%89%E3%81%AA%E3%81%84" target="_blank" rel="nofollow noopener" style="color:#1e3a5f;text-decoration:none;font-weight:600;">「悲しみがとまらない」</a> | AORの傑作 |
 
 
 
@@ -77,25 +77,7 @@ image: /assets/images/thumb-city-pop-revival.jpg
 
 
 
-<div style="background:rgba(255,255,255,0.10);border-radius:12px;padding:1.5rem;margin:1.5rem 0;border:1px solid rgba(110,231,183,0.75);">
-
-<h3 style="color:#a7f3d0;margin-top:0;">🌙 シティポップの音楽的要素</h3>
-
-<ul style="color:#374151;">
-
-<li><strong>maj7・9thコードの多用</strong>：浮遊感のあるオシャレなコード感</li>
-
-<li><strong>ファルセットボーカル</strong>：裏声を使ったなめらかな歌い方</li>
-
-<li><strong>スラップベース</strong>：ファンク由来のパーカッシブなベース</li>
-
-<li><strong>フレットレスベース</strong>：Jaco Pastoriusの影響。竹内まりや楽曲に多い</li>
-
-<li><strong>コーラスとフランジャー</strong>：空間系エフェクトで広がりを出す</li>
-
-</ul>
-
-</div>
+<div style="background:rgba(255,255,255,0.10);border-radius:12px;padding:1.5rem;margin:1.5rem 0;border:1px solid rgba(110,231,183,0.75);"><h3 style="color:#a7f3d0;margin-top:0;">🌙 シティポップの音楽的要素</h3><ul style="color:#374151;"><li><strong>maj7・9thコードの多用</strong>：浮遊感のあるオシャレなコード感</li><li><strong>ファルセットボーカル</strong>：裏声を使ったなめらかな歌い方</li><li><strong>スラップベース</strong>：ファンク由来のパーカッシブなベース</li><li><strong>フレットレスベース</strong>：Jaco Pastoriusの影響。竹内まりや楽曲に多い</li><li><strong>コーラスとフランジャー</strong>：空間系エフェクトで広がりを出す</li></ul></div>
 
 
 
@@ -144,12 +126,7 @@ Fmaj7 → Em7 → Am7 → Dm7 → G7sus4 → G7
 
 
 
-<div style="margin:1.5rem 0;">
-
-<span style="display:block;font-size:.78rem;color:#4b5563;margin-bottom:3px;margin-top:6px;">🛒 サウンドハウスで探す</span>
-<a href="https://h.accesstrade.net/sp/cc?rk=0100pdhv00n9hy&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fsearch%2Findex%3Fs_category_cd%3D120%26s_maker_cd%3D%26s_search_all%3D%26s_ord%3D" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="display:inline-block;text-decoration:none;"><img src="/assets/images/btn-soundhouse.jpg" alt="サウンドハウスで探す" width="240" style="max-width:100%;height:auto;border-radius:14px;display:block;"></a>
-
-</div>
+<div style="margin:1.5rem 0;"><span style="display:block;font-size:.78rem;color:#4b5563;margin-bottom:3px;margin-top:6px;">🛒 サウンドハウスで探す</span><a href="https://h.accesstrade.net/sp/cc?rk=0100pdhv00n9hy&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fsearch%2Findex%3Fs_category_cd%3D120%26s_maker_cd%3D%26s_search_all%3D%26s_ord%3D" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="display:inline-block;text-decoration:none;"><img src="/assets/images/btn-soundhouse.jpg" alt="サウンドハウスで探す" width="240" style="max-width:100%;height:auto;border-radius:14px;display:block;"></a></div>
 
 
 
@@ -163,12 +140,7 @@ Fmaj7 → Em7 → Am7 → Dm7 → G7sus4 → G7
 
 
 
-<div style="margin:1.5rem 0;">
-
-<span style="display:block;font-size:.78rem;color:#4b5563;margin-bottom:3px;margin-top:6px;">🔍 楽天市場で探す</span>
-<a href="https://hb.afl.rakuten.co.jp/ichiba/54518dd8.3792440a.54518dd9.03b99be4/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%25E3%2582%A2%25E3%2582%B3%25E3%2583%BC%25E3%2582%B9%25E3%2583%86%25E3%2582%A3%25E3%2583%83%25E3%2582%AF%25E3%2582%AE%25E3%2582%BF%25E3%2583%BC%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="display:inline-block;text-decoration:none;"><img src="/assets/images/btn-rakuten.jpg" alt="楽天市場で探す" width="240" style="max-width:100%;height:auto;border-radius:14px;display:block;"></a>
-
-</div>
+<div style="margin:1.5rem 0;"><span style="display:block;font-size:.78rem;color:#4b5563;margin-bottom:3px;margin-top:6px;">🔍 楽天市場で探す</span><a href="https://search.rakuten.co.jp/search/mall/����������������������/" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="display:block;text-decoration:none;text-align:center;"><img src="/assets/images/btn-rakuten.jpg" alt="楽天市場で探す" width="240" style="max-width:100%;height:auto;border-radius:14px;display:block;"></a></div>
 
 
 
@@ -194,51 +166,28 @@ Fmaj7 → Em7 → Am7 → Dm7 → G7sus4 → G7
 
 
 
-### 関連アルバム・CDを探す
+### 山下達郎・竹内まりやのアルバムを聴く——シティポップ・リバイバルの名盤
 
 
 
-<div style="margin:1.5rem 0;">
-
-<span style="display:block;font-size:.78rem;color:#4b5563;margin-bottom:3px;margin-top:6px;">🔍 楽天市場で探す</span>
-<a href="https://hb.afl.rakuten.co.jp/ichiba/54518dd8.3792440a.54518dd9.03b99be4/?pc=https%3A//search.rakuten.co.jp/search/mall/%E5%B1%B1%E4%B8%8B%E9%81%94%E9%83%8E%2B%E7%AB%B9%E5%86%85%E3%81%BE%E3%82%8A%E3%82%84%2B%E3%82%B7%E3%83%86%E3%82%A3%E3%83%9D%E3%83%83%E3%83%97%2BCD/" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="display:inline-block;text-decoration:none;"><img src="/assets/images/btn-rakuten.jpg" alt="楽天市場で探す" width="240" style="max-width:100%;height:auto;border-radius:14px;display:block;"></a>
-
-</div>
+<div style="margin:1.5rem 0;"><span style="display:block;font-size:.78rem;color:#4b5563;margin-bottom:3px;margin-top:6px;">🔍 楽天市場で探す</span><a href="https://search.rakuten.co.jp/search/mall/山下達郎+竹内まりや+シティポップ+CD/" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="display:block;text-decoration:none;text-align:center;"><img src="/assets/images/btn-rakuten.jpg" alt="楽天市場で探す" width="240" style="max-width:100%;height:auto;border-radius:14px;display:block;"></a></div>
 
 
 
-### 関連書籍・教則本を探す
+### シティポップのコード感を学ぶ——コード進行の教則本
 
 
 
-<div style="margin:1.5rem 0;">
-
-<span style="display:block;font-size:.78rem;color:#4b5563;margin-bottom:3px;margin-top:6px;">🔍 楽天市場で探す</span>
-<a href="https://hb.afl.rakuten.co.jp/ichiba/54518dd8.3792440a.54518dd9.03b99be4/?pc=https%3A//search.rakuten.co.jp/search/mall/%E3%82%B3%E3%83%BC%E3%83%89%E9%80%B2%E8%A1%8C%2B%E3%82%AE%E3%82%BF%E3%83%BC%2B%E6%9C%AC/" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="display:inline-block;text-decoration:none;"><img src="/assets/images/btn-rakuten.jpg" alt="楽天市場で探す" width="240" style="max-width:100%;height:auto;border-radius:14px;display:block;"></a>
-
-</div>
+<div style="margin:1.5rem 0;"><span style="display:block;font-size:.78rem;color:#4b5563;margin-bottom:3px;margin-top:6px;">🔍 楽天市場で探す</span><a href="https://search.rakuten.co.jp/search/mall/コード進行+ギター+本/" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="display:block;text-decoration:none;text-align:center;"><img src="/assets/images/btn-rakuten.jpg" alt="楽天市場で探す" width="240" style="max-width:100%;height:auto;border-radius:14px;display:block;"></a></div>
 
 
 
-### 関連機材・楽器を探す
+### シティポップサウンドを作る——アコギ・MIDIキーボードを探す
 
 
 
 
-<div style="display:flex;flex-wrap:wrap;gap:.5rem;align-items:center;margin:1.5rem 0;">
-<div>
-
-<span style="display:block;font-size:.78rem;color:#4b5563;margin-bottom:3px;margin-top:6px;">🔍 楽天市場で探す</span>
-<a href="https://hb.afl.rakuten.co.jp/ichiba/54518dd8.3792440a.54518dd9.03b99be4/?pc=https%3A//search.rakuten.co.jp/search/mall/%E3%82%A2%E3%82%B3%E3%83%BC%E3%82%B9%E3%83%86%E3%82%A3%E3%83%83%E3%82%AF%E3%82%AE%E3%82%BF%E3%83%BC%2BMIDI%E3%82%AD%E3%83%BC%E3%83%9C%E3%83%BC%E3%83%89/" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="display:inline-block;text-decoration:none;"><img src="/assets/images/btn-rakuten.jpg" alt="楽天市場で探す" width="240" style="max-width:100%;height:auto;border-radius:14px;display:block;"></a>
-
-</div>
-<div>
-
-<span style="display:block;font-size:.78rem;color:#4b5563;margin-bottom:3px;margin-top:6px;">🛒 サウンドハウスで探す</span>
-<a href="https://h.accesstrade.net/sp/cc?rk=0100pdhv00n9hy&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fsearch%2Findex%3Fs_category_cd%3D120%26s_maker_cd%3D%26s_search_all%3D%26s_ord%3D" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="display:inline-block;text-decoration:none;"><img src="/assets/images/btn-soundhouse.jpg" alt="サウンドハウスで探す" width="240" style="max-width:100%;height:auto;border-radius:14px;display:block;"></a>
-
-</div>
-</div>
+<div style="display:flex;flex-wrap:wrap;gap:.5rem;align-items:center;margin:1.5rem 0;"><div><span style="display:block;font-size:.78rem;color:#4b5563;margin-bottom:3px;margin-top:6px;">🔍 楽天市場で探す</span><a href="https://search.rakuten.co.jp/search/mall/アコースティックギター+MIDIキーボード/" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="display:block;text-decoration:none;text-align:center;"><img src="/assets/images/btn-rakuten.jpg" alt="楽天市場で探す" width="240" style="max-width:100%;height:auto;border-radius:14px;display:block;"></a></div><div><span style="display:block;font-size:.78rem;color:#4b5563;margin-bottom:3px;margin-top:6px;">🛒 サウンドハウスで探す</span><a href="https://h.accesstrade.net/sp/cc?rk=0100pdhv00n9hy&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fsearch%2Findex%3Fs_category_cd%3D120%26s_maker_cd%3D%26s_search_all%3D%26s_ord%3D" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="display:inline-block;text-decoration:none;"><img src="/assets/images/btn-soundhouse.jpg" alt="サウンドハウスで探す" width="240" style="max-width:100%;height:auto;border-radius:14px;display:block;"></a></div></div>
 
 
 
@@ -307,7 +256,4 @@ Fmaj7 → Em7 → Am7 → Dm7 → G7sus4 → G7
 「Midnight Rain by Taylor Swift」にもシティポップ的なコード感が使われているという分析もあり、世界的な音楽語彙に組み込まれた。
 
 
-<div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:.8rem;margin:2rem 0;">
-<a href="/2026/05/30/japan-music-16-2010s-band/" style="display:inline-block;padding:.5rem 1rem;background:#e8edf2;border:1px solid #c8c5c0;border-radius:8px;color:#1e3a5f;text-decoration:none;font-size:.9rem;">← #16 2010年代バンドリバイバル</a>
-<a href="/2026/05/30/japan-music-18-modern-scene/" style="display:inline-block;padding:.5rem 1rem;background:#e8edf2;border:1px solid #c8c5c0;border-radius:8px;color:#1e3a5f;text-decoration:none;font-size:.9rem;">#18 現代の日本音楽 →</a>
-</div>
+<div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:.8rem;margin:2rem 0;"><a href="/2026/05/30/japan-music-16-2010s-band/" style="display:inline-block;padding:.5rem 1rem;background:#e8edf2;border:1px solid #c8c5c0;border-radius:8px;color:#1e3a5f;text-decoration:none;font-size:.9rem;">← #16 2010年代バンドリバイバル</a><a href="/2026/05/30/japan-music-18-modern-scene/" style="display:inline-block;padding:.5rem 1rem;background:#e8edf2;border:1px solid #c8c5c0;border-radius:8px;color:#1e3a5f;text-decoration:none;font-size:.9rem;">#18 現代の日本音楽 →</a></div>
