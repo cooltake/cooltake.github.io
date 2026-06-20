@@ -15,7 +15,7 @@ image: /assets/images/thumb-80s-commercial.jpg
 
 <figure style="margin:1.5rem 0;">
 <img src="/assets/images/japan-music-07-img1.jpg" alt="1985年 日本 シティポップ バブル前夜" style="width:100%;border-radius:10px;height:auto;" loading="lazy">
-<figcaption style='font-size:.8rem;color:#9ca3af;text-align:center;margin-top:.3rem;'>バブル前夜の東京——ネオンと電子音楽が交差した1985年頃の音楽シーン（イメージ）</figcaption>
+
 </figure>
 
 
@@ -23,34 +23,25 @@ image: /assets/images/thumb-80s-commercial.jpg
 
 ### シティポップ系
 
-- **角松敏生**：「For You…」「Summer Moments」——AOR（アダルト・オリエンテッド・ロック）の日本的解釈。緻密なアレンジと高品質な録音がトレードマーク。
-- **杉山清貴&オメガトライブ**：「ふたりの夏物語」「君のハートはマリンブルー」——爽やかなリゾートサウンドとシンセの組み合わせ。
-- **稲垣潤一**：「ドラマティック・レイン」「ビー・マイ・ベイビー」——都会的なメロウサウンド。
+- **角松敏生**：<a href="https://music.youtube.com/search?q=%E8%A7%92%E6%9D%BE%E6%95%8F%E7%94%9F%20For%20You" target="_blank" rel="nofollow noopener" style="color:#1e3a5f;text-decoration:none;font-weight:600;">「For You…」</a><a href="https://music.youtube.com/search?q=%E8%A7%92%E6%9D%BE%E6%95%8F%E7%94%9F%20Summer%20Moments" target="_blank" rel="nofollow noopener" style="color:#1e3a5f;text-decoration:none;font-weight:600;">「Summer Moments」</a>——AOR（アダルト・オリエンテッド・ロック）の日本的解釈。緻密なアレンジと高品質な録音がトレードマーク。
+- **杉山清貴&オメガトライブ**：<a href="https://music.youtube.com/search?q=%E6%9D%89%E5%B1%B1%E6%B8%85%E8%B2%B4%20%E3%82%AA%E3%83%A1%E3%82%AC%E3%83%88%E3%83%A9%E3%82%A4%E3%83%96%20%E3%81%B5%E3%81%9F%E3%82%8A%E3%81%AE%E5%A4%8F%E7%89%A9%E8%AA%9E" target="_blank" rel="nofollow noopener" style="color:#1e3a5f;text-decoration:none;font-weight:600;">「ふたりの夏物語」</a><a href="https://music.youtube.com/search?q=%E6%9D%89%E5%B1%B1%E6%B8%85%E8%B2%B4%20%E3%82%AA%E3%83%A1%E3%82%AC%E3%83%88%E3%83%A9%E3%82%A4%E3%83%96%20%E5%90%9B%E3%81%AE%E3%83%8F%E3%83%BC%E3%83%88%E3%81%AF%E3%83%9E%E3%83%AA%E3%83%B3%E3%83%96%E3%83%AB%E3%83%BC" target="_blank" rel="nofollow noopener" style="color:#1e3a5f;text-decoration:none;font-weight:600;">「君のハートはマリンブルー」</a>——爽やかなリゾートサウンドとシンセの組み合わせ。
+- **稲垣潤一**：<a href="https://music.youtube.com/search?q=%E7%A8%B2%E5%9E%A3%E6%BD%A4%E4%B8%80%20%E3%83%89%E3%83%A9%E3%83%9E%E3%83%86%E3%82%A3%E3%83%83%E3%82%AF%E3%83%AC%E3%82%A4%E3%83%B3" target="_blank" rel="nofollow noopener" style="color:#1e3a5f;text-decoration:none;font-weight:600;">「ドラマティック・レイン」</a><a href="https://music.youtube.com/search?q=%E7%A8%B2%E5%9E%A3%E6%BD%A4%E4%B8%80%20%E3%83%93%E3%83%BC%E3%83%9E%E3%82%A4%E3%83%99%E3%82%A4%E3%83%93%E3%83%BC" target="_blank" rel="nofollow noopener" style="color:#1e3a5f;text-decoration:none;font-weight:600;">「ビー・マイ・ベイビー」</a>——都会的なメロウサウンド。
 
 ### ロック・ポップス寄り
 
 - **渡辺美里**：「My Revolution」（1986年）——小室哲哉が手がけた爆発的ヒット。ロックとアイドルの境界を壊した。
-- **小比類巻かほる**：「Hold On Me」「Time After Time」——洋楽的な発声と力強いボーカルで新境地を開いた。
-- **岡村靖幸**：「だいすき」「Out of Blue」——R&B・ファンクの要素をJ-POPに持ち込んだ先駆者。
+- **小比類巻かほる**：<a href="https://music.youtube.com/search?q=%E5%B0%8F%E6%AF%94%E9%A1%9E%E5%B7%BB%E3%81%8B%E3%81%BB%E3%82%8B%20Hold%20On%20Me" target="_blank" rel="nofollow noopener" style="color:#1e3a5f;text-decoration:none;font-weight:600;">「Hold On Me」</a><a href="https://music.youtube.com/search?q=%E5%B0%8F%E6%AF%94%E9%A1%9E%E5%B7%BB%E3%81%8B%E3%81%BB%E3%82%8B%20Time%20After%20Time" target="_blank" rel="nofollow noopener" style="color:#1e3a5f;text-decoration:none;font-weight:600;">「Time After Time」</a>——洋楽的な発声と力強いボーカルで新境地を開いた。
+- **岡村靖幸**：<a href="https://music.youtube.com/search?q=%E5%B2%A1%E6%9D%91%E9%9D%96%E5%B9%B8%20%E3%81%A0%E3%81%84%E3%81%99%E3%81%8D" target="_blank" rel="nofollow noopener" style="color:#1e3a5f;text-decoration:none;font-weight:600;">「だいすき」</a><a href="https://music.youtube.com/search?q=%E5%B2%A1%E6%9D%91%E9%9D%96%E5%B9%B8%20Out%20of%20Blue" target="_blank" rel="nofollow noopener" style="color:#1e3a5f;text-decoration:none;font-weight:600;">「Out of Blue」</a>——R&B・ファンクの要素をJ-POPに持ち込んだ先駆者。
 
 ### グループ
 
-- **CHAGE and ASKA**：「男と女」「モーニングムーン」——フォークとポップスの融合から商業音楽へと進化。
+- **CHAGE and ASKA**：<a href="https://music.youtube.com/search?q=CHAGE%20and%20ASKA%20%E7%94%B7%E3%81%A8%E5%A5%B3" target="_blank" rel="nofollow noopener" style="color:#1e3a5f;text-decoration:none;font-weight:600;">「男と女」</a><a href="https://music.youtube.com/search?q=CHAGE%20and%20ASKA%20%E3%83%A2%E3%83%BC%E3%83%8B%E3%83%B3%E3%82%B0%E3%83%A0%E3%83%BC%E3%83%B3" target="_blank" rel="nofollow noopener" style="color:#1e3a5f;text-decoration:none;font-weight:600;">「モーニングムーン」</a>——フォークとポップスの融合から商業音楽へと進化。
 - **TM NETWORK**：「Get Wild」（1987年）——小室哲哉率いるシンセポップユニット。テクノとロックを融合させ、後の「小室サウンド」の原型を作った。
 
 
 ## サウンドの特徴——「バブル前夜」の音作り
 
-<div style="background:rgba(255,255,255,0.10);border-radius:12px;padding:1.5rem;margin:1.5rem 0;border:1px solid rgba(74,222,128,.3);">
-<h3 style="color:#111827;margin-top:0;">🎹 1984〜1987年サウンドの核心</h3>
-<ul style="color:#374151;">
-<li><strong>シンセの多層重ね</strong>：Yamaha DX7、Roland D-50を複数重ねて豊かな音壁を作る</li>
-<li><strong>デジタルリバーブの空間感</strong>：Lexicon 224の「広い空間」が当時の「豊かさ」の象徴</li>
-<li><strong>コーラスエフェクト多用</strong>：Roland JC-120の内蔵コーラスを基本とした「広がり感」</li>
-<li><strong>ビートの精密化</strong>：TR-909・LinnDrum等リズムマシンの完璧なタイミング</li>
-<li><strong>AORの影響</strong>：アメリカのMichael McDonald、Toto等の影響を受けた洗練されたアレンジ</li>
-</ul>
-</div>
+<div style="background:rgba(255,255,255,0.10);border-radius:12px;padding:1.5rem;margin:1.5rem 0;border:1px solid rgba(74,222,128,.3);"><h3 style="color:#111827;margin-top:0;">🎹 1984〜1987年サウンドの核心</h3><ul style="color:#374151;"><li><strong>シンセの多層重ね</strong>：Yamaha DX7、Roland D-50を複数重ねて豊かな音壁を作る</li><li><strong>デジタルリバーブの空間感</strong>：Lexicon 224の「広い空間」が当時の「豊かさ」の象徴</li><li><strong>コーラスエフェクト多用</strong>：Roland JC-120の内蔵コーラスを基本とした「広がり感」</li><li><strong>ビートの精密化</strong>：TR-909・LinnDrum等リズムマシンの完璧なタイミング</li><li><strong>AORの影響</strong>：アメリカのMichael McDonald、Toto等の影響を受けた洗練されたアレンジ</li></ul></div>
 
 ### 「Get Wild」（TM NETWORK, 1987年）のサウンド解剖
 
@@ -65,9 +56,7 @@ Aメロ：DX7系シンセベース + TR-909ドラム
 特徴：Yamaha DX7、Roland D-50、Korg M1をフル活用
 ```
 
-<div class="video-link-box" style="margin:1rem 0;padding:.7rem 1rem;background:#eef1f5;border-left:3px solid #1e3a5f;border-radius:6px;">
-<a href="https://www.youtube.com/results?search_query=TM%20NETWORK%20Get%20Wild" target="_blank" rel="nofollow noopener" style="display:inline-flex;align-items:center;gap:.4em;color:#1e3a5f;text-decoration:none;font-weight:600;">▶ 「Get Wild」を聴く</a>
-</div>
+<div style="margin:1rem 0;padding:.7rem 1rem;background:#eef1f5;border-left:3px solid #1e3a5f;border-radius:6px;"><a href="https://music.youtube.com/search?q=TM%20NETWORK%20Get%20Wild" target="_blank" rel="nofollow noopener" style="display:inline-flex;align-items:center;gap:.4em;color:#1e3a5f;text-decoration:none;font-weight:600;">▶ 「Get Wild」を聴く</a></div>
 
 ### 「My Revolution」（渡辺美里, 1986年）——小室哲哉の転換点
 
@@ -77,16 +66,14 @@ Aメロ：DX7系シンセベース + TR-909ドラム
 - **アレンジ**：デジタルシンセの層にロックギターを重ねる手法
 - **歌詞の方向性**：アイドル的な「恋愛」ではなく「自立と挑戦」を歌う
 
-<div class="video-link-box" style="margin:1rem 0;padding:.7rem 1rem;background:#eef1f5;border-left:3px solid #1e3a5f;border-radius:6px;">
-<a href="https://www.youtube.com/results?search_query=%E6%B8%A1%E8%BE%BA%E7%BE%8E%E9%87%8C%20My%20Revolution" target="_blank" rel="nofollow noopener" style="display:inline-flex;align-items:center;gap:.4em;color:#1e3a5f;text-decoration:none;font-weight:600;">▶ 「My Revolution」を聴く</a>
-</div>
+<div style="margin:1rem 0;padding:.7rem 1rem;background:#eef1f5;border-left:3px solid #1e3a5f;border-radius:6px;"><a href="https://music.youtube.com/search?q=%E6%B8%A1%E8%BE%BA%E7%BE%8E%E9%87%8C%20My%20Revolution" target="_blank" rel="nofollow noopener" style="display:inline-flex;align-items:center;gap:.4em;color:#1e3a5f;text-decoration:none;font-weight:600;">▶ 「My Revolution」を聴く</a></div>
 
 
 ## 機材——1985〜87年のスタジオ
 
 <figure style="margin:1.5rem 0;">
 <img src="/assets/images/japan-music-07-img2.jpg" alt="1985年 日本のレコーディングスタジオ DX7 D-50 Korg M1" style="width:100%;border-radius:10px;height:auto;" loading="lazy">
-<figcaption style='font-size:.8rem;color:#9ca3af;text-align:center;margin-top:.3rem;'>バブル前夜のスタジオ。DX7・D-50・Korg M1が並ぶ最先端のデジタル環境（イメージ）</figcaption>
+
 </figure>
 
 | 機材 | 特徴 | 代表的な使われ方 |
@@ -110,29 +97,23 @@ Aメロ：DX7系シンセベース + TR-909ドラム
 
 <figure style="margin:1.5rem 0;">
 <img src="/assets/images/japan-music-07-img3.jpg" alt="1980年代 カセットテープ ウォークマン シティポップ" style="width:100%;border-radius:10px;height:auto;" loading="lazy">
-<figcaption style='font-size:.8rem;color:#9ca3af;text-align:center;margin-top:.3rem;'>ウォークマンでシティポップを聴く1980年代の情景（イメージ）</figcaption>
+
 </figure>
 
 
-## CDを探す
+## シティポップ・TM NETWORK・渡辺美里の名盤を聴く
 
-<div style="margin:.8rem 0;"><span style="display:block;font-size:.78rem;color:#4b5563;margin-bottom:3px;margin-top:6px;">🔍 楽天市場で探す</span>
-<a href="https://hb.afl.rakuten.co.jp/ichiba/0b15ddc7.28c5c9ed.0b15ddc8.5d23dd4d/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%E3%82%B7%E3%83%86%E3%82%A3%E3%83%9D%E3%83%83%E3%83%97%2080%E5%B9%B4%E4%BB%A3%20J-POP%20CD%20TM%20NETWORK%20%E6%B8%A1%E8%BE%BA%E7%BE%8E%E9%87%8C%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="display:inline-block;text-decoration:none;"><img src="/assets/images/btn-rakuten.jpg" alt="楽天市場で探す" width="240" style="height:auto;border-radius:8px;display:block;"></a></div>
+<div style="margin:.8rem 0;"><span style="display:block;font-size:.78rem;color:#4b5563;margin-bottom:3px;margin-top:6px;">🔍 楽天市場で探す</span><a href="https://search.rakuten.co.jp/search/mall/シティポップ 80年代 J-POP CD TM NETWORK 渡辺美里/" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="display:block;text-decoration:none;text-align:center;"><img src="/assets/images/btn-rakuten.jpg" alt="楽天市場で探す" width="240" style="height:auto;border-radius:8px;display:inline-block;"></a></div>
 
-### 関連書籍を探す
+### シティポップの音楽制作を学ぶ——コード感・アレンジ技法の本
 
-<div style="margin:.8rem 0;"><span style="display:block;font-size:.78rem;color:#4b5563;margin-bottom:3px;margin-top:6px;">🔍 楽天市場で探す</span>
-<a href="https://hb.afl.rakuten.co.jp/ichiba/0b15ddc7.28c5c9ed.0b15ddc8.5d23dd4d/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%E3%82%B7%E3%83%86%E3%82%A3%E3%83%9D%E3%83%83%E3%83%97%20%E9%9F%B3%E6%A5%BD%20%E6%9C%AC%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="display:inline-block;text-decoration:none;"><img src="/assets/images/btn-rakuten.jpg" alt="楽天市場で探す" width="240" style="height:auto;border-radius:8px;display:block;"></a></div>
+<div style="margin:.8rem 0;"><span style="display:block;font-size:.78rem;color:#4b5563;margin-bottom:3px;margin-top:6px;">🔍 楽天市場で探す</span><a href="https://search.rakuten.co.jp/search/mall/シティポップ 音楽 本/" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="display:block;text-decoration:none;text-align:center;"><img src="/assets/images/btn-rakuten.jpg" alt="楽天市場で探す" width="240" style="height:auto;border-radius:8px;display:inline-block;"></a></div>
 
-### 機材を探す
+### 記事で紹介した機材——DX7・D-50のサウンドをDAWで再現する
 
-<div style="margin:.8rem 0;"><span style="display:block;font-size:.78rem;color:#4b5563;margin-bottom:3px;margin-top:6px;">🛒 サウンドハウスで探す</span>
-<a href="https://h.accesstrade.net/sp/cc?rk=01001xqc00os63&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fsearch%2Findex%3Fs_category_cd%3D311" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="display:inline-block;text-decoration:none;"><img src="/assets/images/btn-soundhouse.jpg" alt="サウンドハウスで探す" width="240" style="height:auto;border-radius:8px;display:block;"></a></div>
+<div style="margin:.8rem 0;"><span style="display:block;font-size:.78rem;color:#4b5563;margin-bottom:3px;margin-top:6px;">🛒 サウンドハウスで探す</span><a href="https://h.accesstrade.net/sp/cc?rk=01001xqc00os63&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fsearch%2Findex%3Fs_category_cd%3D311" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="display:inline-block;text-decoration:none;"><img src="/assets/images/btn-soundhouse.jpg" alt="サウンドハウスで探す" width="240" style="height:auto;border-radius:8px;display:inline-block;"></a></div>
 
 
 
 
-<div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:.8rem;margin:2rem 0;">
-<a href="/2026/05/30/japan-music-06-80s-idol-production/" style="display:inline-block;padding:.5rem 1rem;background:#e8edf2;border:1px solid #c8c5c0;border-radius:8px;color:#1e3a5f;text-decoration:none;font-size:.9rem;">← #06 80年代アイドル</a>
-<a href="/2026/05/30/japan-music-08-band-boom/" style="display:inline-block;padding:.5rem 1rem;background:#e8edf2;border:1px solid #c8c5c0;border-radius:8px;color:#1e3a5f;text-decoration:none;font-size:.9rem;">#08 バンドブーム →</a>
-</div>
+<div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:.8rem;margin:2rem 0;"><a href="/2026/05/30/japan-music-06-80s-idol-production/" style="display:inline-block;padding:.5rem 1rem;background:#e8edf2;border:1px solid #c8c5c0;border-radius:8px;color:#1e3a5f;text-decoration:none;font-size:.9rem;">← #06 80年代アイドル</a><a href="/2026/05/30/japan-music-08-band-boom/" style="display:inline-block;padding:.5rem 1rem;background:#e8edf2;border:1px solid #c8c5c0;border-radius:8px;color:#1e3a5f;text-decoration:none;font-size:.9rem;">#08 バンドブーム →</a></div>
