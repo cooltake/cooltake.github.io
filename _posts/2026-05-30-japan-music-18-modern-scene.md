@@ -34,7 +34,7 @@ image: /assets/images/thumb-modern-scene.jpg
 
 
 
-ボカロP出身の米津玄師が「Lemon」（2018年）で国民的アーティストになったことは、**「DTM出身者がポップスの頂点に立てる」**という事実を証明した。
+ボカロP出身の米津玄師が<a href="https://music.youtube.com/search?q=%E7%B1%B3%E6%B4%A5%E7%8E%84%E5%B8%AB%20Lemon" target="_blank" rel="nofollow noopener" style="color:#1e3a5f;text-decoration:none;font-weight:600;">「Lemon」</a>（2018年）で国民的アーティストになったことは、**「DTM出身者がポップスの頂点に立てる」**という事実を証明した。
 
 
 
@@ -75,23 +75,7 @@ Spotify・Apple Music・YouTube Musicが主流となり、**1曲あたりの再�
 
 
 
-<div style="background:rgba(255,255,255,0.10);border-radius:12px;padding:1.5rem;margin:1.5rem 0;border:1px solid rgba(74,222,128,0.75);">
-
-<h3 style="color:#111827;margin-top:0;">💰 ストック音楽で収益化</h3>
-
-<p style="color:#374151;">AudioStock（日本最大の音楽素材サイト）では、DTMで作った楽曲・効果音・BGMを販売できる。1曲の販売価格は数百〜数千円。コツコツと素材を蓄積することで月次の継続収益が生まれる。</p>
-
-<ul style="color:#374151;">
-
-<li>審査通過率：約70〜80%（品質基準あり）</li>
-
-<li>ロイヤリティ：販売価格の約40〜50%</li>
-
-<li>人気ジャンル：BGM・企業向けコーポレートミュージック・ゲームBGM</li>
-
-</ul>
-
-</div>
+<div style="background:rgba(255,255,255,0.10);border-radius:12px;padding:1.5rem;margin:1.5rem 0;border:1px solid rgba(74,222,128,0.75);"><h3 style="color:#111827;margin-top:0;">💰 ストック音楽で収益化</h3><span style="display:block;color:#374151;">AudioStock（日本最大の音楽素材サイト）では、DTMで作った楽曲・効果音・BGMを販売できる。1曲の販売価格は数百〜数千円。コツコツと素材を蓄積することで月次の継続収益が生まれる。</span><ul style="color:#374151;"><li>審査通過率：約70〜80%（品質基準あり）</li><li>ロイヤリティ：販売価格の約40〜50%</li><li>人気ジャンル：BGM・企業向けコーポレートミュージック・ゲームBGM</li></ul></div>
 
 
 
@@ -126,12 +110,7 @@ Spotify・Apple Music・YouTube Musicが主流となり、**1曲あたりの再�
 
 
 
-<div style="margin:1.5rem 0;">
-
-<span style="display:block;font-size:.78rem;color:#4b5563;margin-bottom:3px;margin-top:6px;">🛒 サウンドハウスで探す</span>
-<a href="https://h.accesstrade.net/sp/cc?rk=0100pdhv00n9hy&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fsearch%2Findex%3Fs_category_cd%3D780%26s_maker_cd%3D%26s_search_all%3D%26s_ord%3D" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="display:inline-block;text-decoration:none;"><img src="/assets/images/btn-soundhouse.jpg" alt="サウンドハウスで探す" width="240" style="max-width:100%;height:auto;border-radius:14px;display:block;"></a>
-
-</div>
+<div style="margin:1.5rem 0;"><span style="display:block;font-size:.78rem;color:#4b5563;margin-bottom:3px;margin-top:6px;">🛒 サウンドハウスで探す</span><a href="https://h.accesstrade.net/sp/cc?rk=0100pdhv00n9hy&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fsearch%2Findex%3Fs_category_cd%3D780%26s_maker_cd%3D%26s_search_all%3D%26s_ord%3D" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="display:inline-block;text-decoration:none;"><img src="/assets/images/btn-soundhouse.jpg" alt="サウンドハウスで探す" width="240" style="max-width:100%;height:auto;border-radius:14px;display:block;"></a></div>
 
 
 
@@ -159,12 +138,7 @@ Spotify・Apple Music・YouTube Musicが主流となり、**1曲あたりの再�
 
 
 
-<div style="margin:1.5rem 0;">
-
-<span style="display:block;font-size:.78rem;color:#4b5563;margin-bottom:3px;margin-top:6px;">🔍 楽天市場で探す</span>
-<a href="https://hb.afl.rakuten.co.jp/ichiba/54518dd8.3792440a.54518dd9.03b99be4/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2FDTM%2B%25E5%2588%259D%25E5%25BF%2583%25E8%2580%2585%2B%25E6%25A9%259F%25E6%259D%2590%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="display:inline-block;text-decoration:none;"><img src="/assets/images/btn-rakuten.jpg" alt="楽天市場で探す" width="240" style="max-width:100%;height:auto;border-radius:14px;display:block;"></a>
-
-</div>
+<div style="margin:1.5rem 0;"><span style="display:block;font-size:.78rem;color:#4b5563;margin-bottom:3px;margin-top:6px;">🔍 楽天市場で探す</span><a href="https://search.rakuten.co.jp/search/mall/DTM+初心者+機材/" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="display:block;text-decoration:none;text-align:center;"><img src="/assets/images/btn-rakuten.jpg" alt="楽天市場で探す" width="240" style="max-width:100%;height:auto;border-radius:14px;display:block;"></a></div>
 
 
 
@@ -198,51 +172,28 @@ Spotify・Apple Music・YouTube Musicが主流となり、**1曲あたりの再�
 
 
 
-### 関連アルバム・CDを探す
+### 米津玄師・YOASOBIを聴く——現代J-POPの名盤
 
 
 
-<div style="margin:1.5rem 0;">
-
-<span style="display:block;font-size:.78rem;color:#4b5563;margin-bottom:3px;margin-top:6px;">🔍 楽天市場で探す</span>
-<a href="https://hb.afl.rakuten.co.jp/ichiba/54518dd8.3792440a.54518dd9.03b99be4/?pc=https%3A//search.rakuten.co.jp/search/mall/%E7%B1%B3%E6%B4%A5%E7%8E%84%E5%B8%AB%2BYOASOBI%2BCD/" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="display:inline-block;text-decoration:none;"><img src="/assets/images/btn-rakuten.jpg" alt="楽天市場で探す" width="240" style="max-width:100%;height:auto;border-radius:14px;display:block;"></a>
-
-</div>
+<div style="margin:1.5rem 0;"><span style="display:block;font-size:.78rem;color:#4b5563;margin-bottom:3px;margin-top:6px;">🔍 楽天市場で探す</span><a href="https://search.rakuten.co.jp/search/mall/米津玄師+YOASOBI+CD/" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="display:block;text-decoration:none;text-align:center;"><img src="/assets/images/btn-rakuten.jpg" alt="楽天市場で探す" width="240" style="max-width:100%;height:auto;border-radius:14px;display:block;"></a></div>
 
 
 
-### 関連書籍・教則本を探す
+### この記事を読んで音楽制作を始めたくなったら——DTM入門書
 
 
 
-<div style="margin:1.5rem 0;">
-
-<span style="display:block;font-size:.78rem;color:#4b5563;margin-bottom:3px;margin-top:6px;">🔍 楽天市場で探す</span>
-<a href="https://hb.afl.rakuten.co.jp/ichiba/54518dd8.3792440a.54518dd9.03b99be4/?pc=https%3A//search.rakuten.co.jp/search/mall/DTM%2B%E9%9F%B3%E6%A5%BD%E5%88%B6%E4%BD%9C%2B%E5%88%9D%E5%BF%83%E8%80%85%2B%E6%9C%AC/" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="display:inline-block;text-decoration:none;"><img src="/assets/images/btn-rakuten.jpg" alt="楽天市場で探す" width="240" style="max-width:100%;height:auto;border-radius:14px;display:block;"></a>
-
-</div>
+<div style="margin:1.5rem 0;"><span style="display:block;font-size:.78rem;color:#4b5563;margin-bottom:3px;margin-top:6px;">🔍 楽天市場で探す</span><a href="https://search.rakuten.co.jp/search/mall/DTM+音楽制作+初心者+本/" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="display:block;text-decoration:none;text-align:center;"><img src="/assets/images/btn-rakuten.jpg" alt="楽天市場で探す" width="240" style="max-width:100%;height:auto;border-radius:14px;display:block;"></a></div>
 
 
 
-### 関連機材・楽器を探す
+### 現代J-POPをDTMで作る——初心者向け機材セット
 
 
 
 
-<div style="display:flex;flex-wrap:wrap;gap:.5rem;align-items:center;margin:1.5rem 0;">
-<div>
-
-<span style="display:block;font-size:.78rem;color:#4b5563;margin-bottom:3px;margin-top:6px;">🔍 楽天市場で探す</span>
-<a href="https://hb.afl.rakuten.co.jp/ichiba/54518dd8.3792440a.54518dd9.03b99be4/?pc=https%3A//search.rakuten.co.jp/search/mall/DTM%2B%E5%85%A5%E9%96%80%2B%E3%82%BB%E3%83%83%E3%83%88/" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="display:inline-block;text-decoration:none;"><img src="/assets/images/btn-rakuten.jpg" alt="楽天市場で探す" width="240" style="max-width:100%;height:auto;border-radius:14px;display:block;"></a>
-
-</div>
-<div>
-
-<span style="display:block;font-size:.78rem;color:#4b5563;margin-bottom:3px;margin-top:6px;">🛒 サウンドハウスで探す</span>
-<a href="https://h.accesstrade.net/sp/cc?rk=0100pdhv00n9hy&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fsearch%2Findex%3Fs_category_cd%3D780%26s_maker_cd%3D%26s_search_all%3D%26s_ord%3D" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="display:inline-block;text-decoration:none;"><img src="/assets/images/btn-soundhouse.jpg" alt="サウンドハウスで探す" width="240" style="max-width:100%;height:auto;border-radius:14px;display:block;"></a>
-
-</div>
-</div>
+<div style="display:flex;flex-wrap:wrap;gap:.5rem;align-items:center;margin:1.5rem 0;"><div><span style="display:block;font-size:.78rem;color:#4b5563;margin-bottom:3px;margin-top:6px;">🔍 楽天市場で探す</span><a href="https://search.rakuten.co.jp/search/mall/DTM+入門+セット/" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="display:block;text-decoration:none;text-align:center;"><img src="/assets/images/btn-rakuten.jpg" alt="楽天市場で探す" width="240" style="max-width:100%;height:auto;border-radius:14px;display:block;"></a></div><div><span style="display:block;font-size:.78rem;color:#4b5563;margin-bottom:3px;margin-top:6px;">🛒 サウンドハウスで探す</span><a href="https://h.accesstrade.net/sp/cc?rk=0100pdhv00n9hy&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fsearch%2Findex%3Fs_category_cd%3D780%26s_maker_cd%3D%26s_search_all%3D%26s_ord%3D" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="display:inline-block;text-decoration:none;"><img src="/assets/images/btn-soundhouse.jpg" alt="サウンドハウスで探す" width="240" style="max-width:100%;height:auto;border-radius:14px;display:block;"></a></div></div>
 
 
 
@@ -267,7 +218,7 @@ Spotify・Apple Music・YouTube Musicが主流となり、**1曲あたりの再�
 
 
 
-### YOASOBI「夜に駆ける」が変えた制作スタイル
+### YOASOBI<a href="https://music.youtube.com/search?q=YOASOBI%20%E5%A4%9C%E3%81%AB%E9%A7%86%E3%81%91%E3%82%8B" target="_blank" rel="nofollow noopener" style="color:#1e3a5f;text-decoration:none;font-weight:600;">「夜に駆ける」</a>が変えた制作スタイル
 
 
 
@@ -308,7 +259,4 @@ Step 6: AudioStockに投稿して収益化
 この流れがAI時代の「人間とAIの協働制作」の最前線だ。
 
 
-<div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:.8rem;margin:2rem 0;">
-<a href="/2026/05/30/japan-music-17-city-pop-revival/" style="display:inline-block;padding:.5rem 1rem;background:#e8edf2;border:1px solid #c8c5c0;border-radius:8px;color:#1e3a5f;text-decoration:none;font-size:.9rem;">← #17 シティポップ・リバイバル</a>
-<span></span>
-</div>
+<div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:.8rem;margin:2rem 0;"><a href="/2026/05/30/japan-music-17-city-pop-revival/" style="display:inline-block;padding:.5rem 1rem;background:#e8edf2;border:1px solid #c8c5c0;border-radius:8px;color:#1e3a5f;text-decoration:none;font-size:.9rem;">← #17 シティポップ・リバイバル</a><span></span></div>
