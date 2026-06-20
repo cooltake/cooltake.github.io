@@ -23,23 +23,7 @@ CD売上の長期低落、違法ダウンロードの蔓延、そしてYouTube�
 
 
 
-<div style="background:rgba(255,255,255,0.10);border-radius:12px;padding:1.5rem;margin:1.5rem 0;border:1px solid rgba(56,189,248,0.75);">
-
-<h3 style="color:#bae6fd;margin-top:0;">🎸 2010年代の特徴</h3>
-
-<ul style="color:#374151;">
-
-<li><strong>バンドリバイバル</strong>：ロックバンドが再び表舞台へ（RADWIMPS、ゲスの極み乙女。、[Alexandros]等）</li>
-
-<li><strong>ソロアーティストの多様化</strong>：星野源、あいみょん、米津玄師（10年代後半〜）</li>
-
-<li><strong>アニメ・映画タイアップ</strong>：「君の名は。」「進撃の巨人」等で世界市場へ</li>
-
-<li><strong>ストリーミング黎明期</strong>：2015年にSpotify日本上陸→消費行動が激変</li>
-
-</ul>
-
-</div>
+<div style="background:rgba(255,255,255,0.10);border-radius:12px;padding:1.5rem;margin:1.5rem 0;border:1px solid rgba(56,189,248,0.75);"><h3 style="color:#bae6fd;margin-top:0;">🎸 2010年代の特徴</h3><ul style="color:#374151;"><li><strong>バンドリバイバル</strong>：ロックバンドが再び表舞台へ（RADWIMPS、ゲスの極み乙女。、[Alexandros]等）</li><li><strong>ソロアーティストの多様化</strong>：星野源、あいみょん、米津玄師（10年代後半〜）</li><li><strong>アニメ・映画タイアップ</strong>：「君の名は。」「進撃の巨人」等で世界市場へ</li><li><strong>ストリーミング黎明期</strong>：2015年にSpotify日本上陸→消費行動が激変</li></ul></div>
 
 
 
@@ -58,19 +42,19 @@ CD売上の長期低落、違法ダウンロードの蔓延、そしてYouTube�
 
 
 
-「前前前世」は中国・台湾・東南アジアで爆発的にヒットし、日本のロックバンドが映画音楽を通じて世界に届く可能性を証明した。
+<a href="https://music.youtube.com/search?q=RADWIMPS%20%E5%89%8D%E5%89%8D%E5%89%8D%E4%B8%96" target="_blank" rel="nofollow noopener" style="color:#1e3a5f;text-decoration:none;font-weight:600;">「前前前世」</a>は中国・台湾・東南アジアで爆発的にヒットし、日本のロックバンドが映画音楽を通じて世界に届く可能性を証明した。
 
 
 
 **主な作品**:
 
-- 「ふたりごと」（2006年）— インディーズ時代から続くコアファン
+- <a href="https://music.youtube.com/search?q=RADWIMPS%20%E3%81%B5%E3%81%9F%E3%82%8A%E3%81%94%E3%81%A8" target="_blank" rel="nofollow noopener" style="color:#1e3a5f;text-decoration:none;font-weight:600;">「ふたりごと」</a>（2006年）— インディーズ時代から続くコアファン
 
-- 「おしゃかしゃま」（2011年）
+- <a href="https://music.youtube.com/search?q=RADWIMPS%20%E3%81%8A%E3%81%97%E3%82%83%E3%81%8B%E3%81%97%E3%82%83%E3%81%BE" target="_blank" rel="nofollow noopener" style="color:#1e3a5f;text-decoration:none;font-weight:600;">「おしゃかしゃま」</a>（2011年）
 
 - 「前前前世」（2016年）— 「君の名は。」主題歌
 
-- 「スパークル」（2016年）
+- <a href="https://music.youtube.com/search?q=RADWIMPS%20%E3%82%B9%E3%83%91%E3%83%BC%E3%82%AF%E3%83%AB" target="_blank" rel="nofollow noopener" style="color:#1e3a5f;text-decoration:none;font-weight:600;">「スパークル」</a>（2016年）
 
 
 
@@ -89,21 +73,7 @@ CD売上の長期低落、違法ダウンロードの蔓延、そしてYouTube�
 
 
 
-<div style="background:rgba(255,255,255,0.10);border-radius:12px;padding:1.5rem;margin:1.5rem 0;border:1px solid rgba(74,222,128,0.75);">
-
-<h3 style="color:#111827;margin-top:0;">🌟 星野源の転換点</h3>
-
-<ul style="color:#374151;">
-
-<li>「恋」（2016年）：ドラマ「逃げるは恥だが役に立つ」主題歌。「恋ダンス」で社会現象に</li>
-
-<li>「アイデア」（2018年）：NHK連続テレビ小説「半分、青い。」主題歌</li>
-
-<li>「うちで踊ろう」（2020年）：コロナ禍に自宅録音で発表→コラボ動画が世界的に拡散</li>
-
-</ul>
-
-</div>
+<div style="background:rgba(255,255,255,0.10);border-radius:12px;padding:1.5rem;margin:1.5rem 0;border:1px solid rgba(74,222,128,0.75);"><h3 style="color:#111827;margin-top:0;">🌟 星野源の転換点</h3><ul style="color:#374151;"><li><a href="https://music.youtube.com/search?q=%E6%98%9F%E9%87%8E%E6%BA%90%20%E6%81%8B" target="_blank" rel="nofollow noopener" style="color:#1e3a5f;text-decoration:none;font-weight:600;">「恋」</a>（2016年）：ドラマ「逃げるは恥だが役に立つ」主題歌。「恋ダンス」で社会現象に</li><li><a href="https://music.youtube.com/search?q=%E6%98%9F%E9%87%8E%E6%BA%90%20%E3%82%A2%E3%82%A4%E3%83%87%E3%82%A2" target="_blank" rel="nofollow noopener" style="color:#1e3a5f;text-decoration:none;font-weight:600;">「アイデア」</a>（2018年）：NHK連続テレビ小説「半分、青い。」主題歌</li><li><a href="https://music.youtube.com/search?q=%E6%98%9F%E9%87%8E%E6%BA%90%20%E3%81%86%E3%81%A1%E3%81%A7%E8%B8%8A%E3%82%8D%E3%81%86" target="_blank" rel="nofollow noopener" style="color:#1e3a5f;text-decoration:none;font-weight:600;">「うちで踊ろう」</a>（2020年）：コロナ禍に自宅録音で発表→コラボ動画が世界的に拡散</li></ul></div>
 
 
 
@@ -122,7 +92,7 @@ CD売上の長期低落、違法ダウンロードの蔓延、そしてYouTube�
 
 
 
-**代表曲**: 「猟奇的なキスを私にして」（2014年）/ 「私以外私じゃないの」（2015年）
+**代表曲**: <a href="https://music.youtube.com/search?q=%E3%82%B2%E3%82%B9%E3%81%AE%E6%A5%B5%E3%81%BF%E4%B9%99%E5%A5%B3%20%E7%8C%9F%E5%A5%87%E7%9A%84%E3%81%AA%E3%82%AD%E3%82%B9%E3%82%92%E7%A7%81%E3%81%AB%E3%81%97%E3%81%A6" target="_blank" rel="nofollow noopener" style="color:#1e3a5f;text-decoration:none;font-weight:600;">「猟奇的なキスを私にして」</a>（2014年）/ <a href="https://music.youtube.com/search?q=%E3%82%B2%E3%82%B9%E3%81%AE%E6%A5%B5%E3%81%BF%E4%B9%99%E5%A5%B3%20%E7%A7%81%E4%BB%A5%E5%A4%96%E7%A7%81%E3%81%98%E3%82%83%E3%81%AA%E3%81%84%E3%81%AE" target="_blank" rel="nofollow noopener" style="color:#1e3a5f;text-decoration:none;font-weight:600;">「私以外私じゃないの」</a>（2015年）
 
 
 
@@ -159,25 +129,7 @@ CD売上の長期低落、違法ダウンロードの蔓延、そしてYouTube�
 
 
 
-<div style="background:rgba(255,255,255,0.10);border-radius:12px;padding:1.5rem;margin:1.5rem 0;border:1px solid rgba(148,163,184,0.75);">
-
-<h3 style="color:#111827;margin-top:0;">🎛️ 2010年代の定番制作環境</h3>
-
-<table style="width:100%;color:#374151;border-collapse:collapse;">
-
-<tr style="border-bottom:1px solid rgba(148,163,184,.2);"><td style="padding:.5rem 0;"><strong>DAW</strong></td><td>Logic Pro X、Ableton Live、FL Studio</td></tr>
-
-<tr style="border-bottom:1px solid rgba(148,163,184,.2);"><td style="padding:.5rem 0;"><strong>オーディオIF</strong></td><td>Focusrite Scarlett（低価格化が急速に進んだ）</td></tr>
-
-<tr style="border-bottom:1px solid rgba(148,163,184,.2);"><td style="padding:.5rem 0;"><strong>MIDIキーボード</strong></td><td>ARTURIA、AKAI、Native Instrumentsが普及</td></tr>
-
-<tr style="border-bottom:1px solid rgba(148,163,184,.2);"><td style="padding:.5rem 0;"><strong>プラグイン</strong></td><td>Serum（2014年〜）が定番ウェーブテーブルシンセに</td></tr>
-
-<tr><td style="padding:.5rem 0;"><strong>マイク</strong></td><td>Audio-Technica AT2020がコスパ抜群として普及</td></tr>
-
-</table>
-
-</div>
+<div style="background:rgba(255,255,255,0.10);border-radius:12px;padding:1.5rem;margin:1.5rem 0;border:1px solid rgba(148,163,184,0.75);"><h3 style="color:#111827;margin-top:0;">🎛️ 2010年代の定番制作環境</h3><table style="width:100%;color:#374151;border-collapse:collapse;"><tr style="border-bottom:1px solid rgba(148,163,184,.2);"><td style="padding:.5rem 0;"><strong>DAW</strong></td><td>Logic Pro X、Ableton Live、FL Studio</td></tr><tr style="border-bottom:1px solid rgba(148,163,184,.2);"><td style="padding:.5rem 0;"><strong>オーディオIF</strong></td><td>Focusrite Scarlett（低価格化が急速に進んだ）</td></tr><tr style="border-bottom:1px solid rgba(148,163,184,.2);"><td style="padding:.5rem 0;"><strong>MIDIキーボード</strong></td><td>ARTURIA、AKAI、Native Instrumentsが普及</td></tr><tr style="border-bottom:1px solid rgba(148,163,184,.2);"><td style="padding:.5rem 0;"><strong>プラグイン</strong></td><td>Serum（2014年〜）が定番ウェーブテーブルシンセに</td></tr><tr><td style="padding:.5rem 0;"><strong>マイク</strong></td><td>Audio-Technica AT2020がコスパ抜群として普及</td></tr></table></div>
 
 
 
@@ -192,7 +144,7 @@ CD売上の長期低落、違法ダウンロードの蔓延、そしてYouTube�
 
 
 
-「CDを買う」という行為は特別なものになり、ライブ・グッズ・ファンクラブが収益の柱となる新時代が到来。2010年代末には米津玄師の「Lemon」がストリーミングで10億回再生を突破するなど、「再生回数」が音楽の価値指標になった。
+「CDを買う」という行為は特別なものになり、ライブ・グッズ・ファンクラブが収益の柱となる新時代が到来。2010年代末には米津玄師の<a href="https://music.youtube.com/search?q=%E7%B1%B3%E6%B4%A5%E7%8E%84%E5%B8%AB%20Lemon" target="_blank" rel="nofollow noopener" style="color:#1e3a5f;text-decoration:none;font-weight:600;">「Lemon」</a>がストリーミングで10億回再生を突破するなど、「再生回数」が音楽の価値指標になった。
 
 
 
@@ -209,51 +161,28 @@ CD売上の長期低落、違法ダウンロードの蔓延、そしてYouTube�
 
 
 
-### 関連アルバム・CDを探す
+### RADWIMPS・星野源・ゲスの極み乙女を聴く——2010年代バンドの名盤
 
 
 
-<div style="margin:1.5rem 0;">
-
-<span style="display:block;font-size:.78rem;color:#4b5563;margin-bottom:3px;margin-top:6px;">🔍 楽天市場で探す</span>
-<a href="https://hb.afl.rakuten.co.jp/ichiba/54518dd8.3792440a.54518dd9.03b99be4/?pc=https%3A//search.rakuten.co.jp/search/mall/RADWIMPS%2B%E6%98%9F%E9%87%8E%E6%BA%90%2B%E3%82%B2%E3%82%B9%E3%81%AE%E6%A5%B5%E3%81%BF%E4%B9%99%E5%A5%B3%2BCD/" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="display:inline-block;text-decoration:none;margin:.6rem 0;"><img src="/assets/images/btn-rakuten.jpg" alt="楽天市場で探す" width="240" style="max-width:100%;height:auto;border-radius:14px;display:block;"></a>
-
-</div>
+<div style="margin:1.5rem 0;"><span style="display:block;font-size:.78rem;color:#4b5563;margin-bottom:3px;margin-top:6px;">🔍 楽天市場で探す</span><a href="https://search.rakuten.co.jp/search/mall/RADWIMPS+星野源+ゲスの極み乙女+CD/" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="display:block;text-decoration:none;text-align:center;"><img src="/assets/images/btn-rakuten.jpg" alt="楽天市場で探す" width="240" style="max-width:100%;height:auto;border-radius:14px;display:block;"></a></div>
 
 
 
-### 関連書籍・教則本を探す
+### この記事で紹介したバンドのサウンドをコピーする——バンドスコア・教則本
 
 
 
-<div style="margin:1.5rem 0;">
-
-<span style="display:block;font-size:.78rem;color:#4b5563;margin-bottom:3px;margin-top:6px;">🔍 楽天市場で探す</span>
-<a href="https://hb.afl.rakuten.co.jp/ichiba/54518dd8.3792440a.54518dd9.03b99be4/?pc=https%3A//search.rakuten.co.jp/search/mall/%E3%82%AE%E3%82%BF%E3%83%BC%2B%E3%83%90%E3%83%B3%E3%83%89%E3%82%B9%E3%82%B3%E3%82%A2%2B%E6%95%99%E5%89%87%E6%9C%AC/" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="display:inline-block;text-decoration:none;margin:.6rem 0;"><img src="/assets/images/btn-rakuten.jpg" alt="楽天市場で探す" width="240" style="max-width:100%;height:auto;border-radius:14px;display:block;"></a>
-
-</div>
+<div style="margin:1.5rem 0;"><span style="display:block;font-size:.78rem;color:#4b5563;margin-bottom:3px;margin-top:6px;">🔍 楽天市場で探す</span><a href="https://search.rakuten.co.jp/search/mall/ギター+バンドスコア+教則本/" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="display:block;text-decoration:none;text-align:center;"><img src="/assets/images/btn-rakuten.jpg" alt="楽天市場で探す" width="240" style="max-width:100%;height:auto;border-radius:14px;display:block;"></a></div>
 
 
 
-### 関連機材・楽器を探す
+### バンドサウンドを始める——エレキギター・オーディオインターフェース
 
 
 
 
-<div style="display:flex;flex-wrap:wrap;gap:.5rem;align-items:center;margin:1.5rem 0;">
-<div>
-
-<span style="display:block;font-size:.78rem;color:#4b5563;margin-bottom:3px;margin-top:6px;">🔍 楽天市場で探す</span>
-<a href="https://hb.afl.rakuten.co.jp/ichiba/54518dd8.3792440a.54518dd9.03b99be4/?pc=https%3A//search.rakuten.co.jp/search/mall/%E3%82%A8%E3%83%AC%E3%82%AD%E3%82%AE%E3%82%BF%E3%83%BC%2B%E3%82%AA%E3%83%BC%E3%83%87%E3%82%A3%E3%82%AA%E3%82%A4%E3%83%B3%E3%82%BF%E3%83%BC%E3%83%95%E3%82%A7%E3%83%BC%E3%82%B9%2BFocusrite/" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="display:inline-block;text-decoration:none;margin:.6rem 0;"><img src="/assets/images/btn-rakuten.jpg" alt="楽天市場で探す" width="240" style="max-width:100%;height:auto;border-radius:14px;display:block;"></a>
-
-</div>
-<div>
-
-<span style="display:block;font-size:.78rem;color:#4b5563;margin-bottom:3px;margin-top:6px;">🛒 サウンドハウスで探す</span>
-<a href="https://h.accesstrade.net/sp/cc?rk=0100pdhv00n9hy&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fsearch%2Findex%3Fs_category_cd%3D130%26s_maker_cd%3D%26s_search_all%3D%26s_ord%3D" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="display:inline-block;text-decoration:none;margin:.6rem 0;"><img src="/assets/images/btn-soundhouse.jpg" alt="サウンドハウスで探す" width="240" style="max-width:100%;height:auto;border-radius:14px;display:block;"></a>
-
-</div>
-</div>
+<div style="display:flex;flex-wrap:wrap;gap:.5rem;align-items:center;margin:1.5rem 0;"><div><span style="display:block;font-size:.78rem;color:#4b5563;margin-bottom:3px;margin-top:6px;">🔍 楽天市場で探す</span><a href="https://search.rakuten.co.jp/search/mall/エレキギター+オーディオインターフェース+Focusrite/" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="display:block;text-decoration:none;text-align:center;"><img src="/assets/images/btn-rakuten.jpg" alt="楽天市場で探す" width="240" style="max-width:100%;height:auto;border-radius:14px;display:block;"></a></div><div><span style="display:block;font-size:.78rem;color:#4b5563;margin-bottom:3px;margin-top:6px;">🛒 サウンドハウスで探す</span><a href="https://h.accesstrade.net/sp/cc?rk=0100pdhv00n9hy&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fsearch%2Findex%3Fs_category_cd%3D130%26s_maker_cd%3D%26s_search_all%3D%26s_ord%3D" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="display:inline-block;text-decoration:none;margin:.6rem 0;"><img src="/assets/images/btn-soundhouse.jpg" alt="サウンドハウスで探す" width="240" style="max-width:100%;height:auto;border-radius:14px;display:block;"></a></div></div>
 
 
 
@@ -330,7 +259,4 @@ BPM：170
 - EDM：ビートプロデューサーとしての顔も持つ
 
 
-<div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:.8rem;margin:2rem 0;">
-<a href="/2026/05/30/japan-music-15-vocaloid-dtm/" style="display:inline-block;padding:.5rem 1rem;background:#e8edf2;border:1px solid #c8c5c0;border-radius:8px;color:#1e3a5f;text-decoration:none;font-size:.9rem;">← #15 ボカロ・DTM</a>
-<a href="/2026/05/30/japan-music-17-city-pop-revival/" style="display:inline-block;padding:.5rem 1rem;background:#e8edf2;border:1px solid #c8c5c0;border-radius:8px;color:#1e3a5f;text-decoration:none;font-size:.9rem;">#17 シティポップ・リバイバル →</a>
-</div>
+<div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:.8rem;margin:2rem 0;"><a href="/2026/05/30/japan-music-15-vocaloid-dtm/" style="display:inline-block;padding:.5rem 1rem;background:#e8edf2;border:1px solid #c8c5c0;border-radius:8px;color:#1e3a5f;text-decoration:none;font-size:.9rem;">← #15 ボカロ・DTM</a><a href="/2026/05/30/japan-music-17-city-pop-revival/" style="display:inline-block;padding:.5rem 1rem;background:#e8edf2;border:1px solid #c8c5c0;border-radius:8px;color:#1e3a5f;text-decoration:none;font-size:.9rem;">#17 シティポップ・リバイバル →</a></div>
