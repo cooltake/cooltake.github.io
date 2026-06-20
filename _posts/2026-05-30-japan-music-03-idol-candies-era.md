@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: "キャンディーズ・ピンクレディーと歌謡曲黄金期【1970年代中期】アイドルが生んだ職人サウンド"
 date: 2026-05-30
@@ -19,7 +19,7 @@ image: /assets/images/thumb-idol-candies.jpg
 
 <figure style="margin:1.5rem 0;">
 <img src="/assets/images/japan-music-03-img1.jpg" alt="1970年代 日本のレコーディングスタジオ" style="width:100%;border-radius:10px;height:auto;" loading="lazy">
-<figcaption style='font-size:.8rem;color:#9ca3af;text-align:center;margin-top:.3rem;'>歌謡曲黄金期の大型スタジオ。16トラックのテープレコーダーと大型コンソールが並ぶ（イメージ）</figcaption>
+
 </figure>
 
 
@@ -27,15 +27,7 @@ image: /assets/images/thumb-idol-candies.jpg
 
 ### リズムセクションの特徴
 
-<div style="background:rgba(255,255,255,0.10);border-radius:12px;padding:1.5rem;margin:1.5rem 0;border:1px solid rgba(192,132,252,.3);">
-<h3 style="color:#e9d5ff;margin-top:0;">🥁 70年代歌謡サウンドの核心</h3>
-<ul style="color:#374151;">
-<li><strong>タイトなドラム</strong>：生ドラムを近接マイキングで録音。パキッとしたスネア</li>
-<li><strong>うねるベースライン</strong>：フェンダーベースの指弾き、歌のメロディと絡む動くライン</li>
-<li><strong>カッティングギター</strong>：16分音符を刻むリズムギター、ファンクの影響</li>
-<li><strong>ストリングスセクション</strong>：生オーケストラによる弦楽アレンジ</li>
-</ul>
-</div>
+<div style="background:rgba(255,255,255,0.10);border-radius:12px;padding:1.5rem;margin:1.5rem 0;border:1px solid rgba(192,132,252,.3);"><h3 style="color:#e9d5ff;margin-top:0;">🥁 70年代歌謡サウンドの核心</h3><ul style="color:#374151;"><li><strong>タイトなドラム</strong>：生ドラムを近接マイキングで録音。パキッとしたスネア</li><li><strong>うねるベースライン</strong>：フェンダーベースの指弾き、歌のメロディと絡む動くライン</li><li><strong>カッティングギター</strong>：16分音符を刻むリズムギター、ファンクの影響</li><li><strong>ストリングスセクション</strong>：生オーケストラによる弦楽アレンジ</li></ul></div>
 
 ### 「春一番」（キャンディーズ、1976年）のアレンジを解剖
 
@@ -47,9 +39,7 @@ image: /assets/images/thumb-idol-candies.jpg
 - **サビ**：「もうすぐ春ですね」の上昇するメロディラインにストリングスが絡む
 - **ブリッジ**：コーラスの3重ハーモニーが最高音に達する「感情の頂点」
 
-<div class="video-link-box" style="margin:1rem 0;padding:.7rem 1rem;background:#eef1f5;border-left:3px solid #1e3a5f;border-radius:6px;">
-<a href="https://www.youtube.com/results?search_query=%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%87%E3%82%A3%E3%83%BC%E3%82%BA%20%E6%98%A5%E4%B8%80%E7%95%AA" target="_blank" rel="nofollow noopener" style="display:inline-flex;align-items:center;gap:.4em;color:#1e3a5f;text-decoration:none;font-weight:600;">▶ 「春一番」を聴く</a>
-</div>
+<div style="margin:1rem 0;padding:.7rem 1rem;background:#eef1f5;border-left:3px solid #1e3a5f;border-radius:6px;"><a href="https://www.youtube.com/results?search_query=%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%87%E3%82%A3%E3%83%BC%E3%82%BA%20%E6%98%A5%E4%B8%80%E7%95%AA" target="_blank" rel="nofollow noopener" style="display:inline-flex;align-items:center;gap:.4em;color:#1e3a5f;text-decoration:none;font-weight:600;">▶ 「春一番」を聴く</a></div>
 
 ### 「UFO」（ピンクレディー、1977年）のサウンド解剖
 
@@ -62,9 +52,7 @@ image: /assets/images/thumb-idol-candies.jpg
 
 「UFO」の最大の秘密は**ブラスとリズムセクションの絡み方**。ファンクに近いグルーヴを歌謡曲として成立させた都倉俊一の職人技だ。
 
-<div class="video-link-box" style="margin:1rem 0;padding:.7rem 1rem;background:#eef1f5;border-left:3px solid #1e3a5f;border-radius:6px;">
-<a href="https://www.youtube.com/results?search_query=%E3%83%94%E3%83%B3%E3%82%AF%E3%83%AC%E3%83%87%E3%82%A3%E3%83%BC%20UFO" target="_blank" rel="nofollow noopener" style="display:inline-flex;align-items:center;gap:.4em;color:#1e3a5f;text-decoration:none;font-weight:600;">▶ 「UFO」を聴く</a>
-</div>
+<div style="margin:1rem 0;padding:.7rem 1rem;background:#eef1f5;border-left:3px solid #1e3a5f;border-radius:6px;"><a href="https://www.youtube.com/results?search_query=%E3%83%94%E3%83%B3%E3%82%AF%E3%83%AC%E3%83%87%E3%82%A3%E3%83%BC%20UFO" target="_blank" rel="nofollow noopener" style="display:inline-flex;align-items:center;gap:.4em;color:#1e3a5f;text-decoration:none;font-weight:600;">▶ 「UFO」を聴く</a></div>
 
 ### 「渚のシンドバッド」（ピンクレディー、1977年）のコード進行分析
 
@@ -89,7 +77,7 @@ E → F#m → C#m → A → E → B（転調感を出す）
 
 <figure style="margin:1.5rem 0;">
 <img src="/assets/images/japan-music-03-img2.jpg" alt="Fender Rhodes と Moog Minimoog シンセサイザー" style="width:100%;border-radius:10px;height:auto;" loading="lazy">
-<figcaption style='font-size:.8rem;color:#9ca3af;text-align:center;margin-top:.3rem;'>歌謡曲黄金期のキーボード陣。FenderRhodesとMoogが70年代のサウンドを作った</figcaption>
+
 </figure>
 
 
@@ -105,31 +93,27 @@ E → F#m → C#m → A → E → B（転調感を出す）
 
 ### エレピサウンドの再現
 
-<div style="margin:.8rem 0;"><span style="display:block;font-size:.78rem;color:#4b5563;margin-bottom:3px;margin-top:6px;">🔍 楽天市場で探す</span>
-<a href="https://hb.afl.rakuten.co.jp/ichiba/0b15ddc7.28c5c9ed.0b15ddc8.5d23dd4d/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2FMIDI%E3%82%AD%E3%83%BC%E3%83%9C%E3%83%BC%E3%83%89%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="display:inline-block;text-decoration:none;"><img src="/assets/images/btn-rakuten.jpg" alt="楽天市場で探す" width="240" style="height:auto;border-radius:8px;display:block;"></a></div>
+<div style="margin:.8rem 0;"><span style="display:block;font-size:.78rem;color:#4b5563;margin-bottom:3px;margin-top:6px;">🔍 楽天市場で探す</span><a href="https://search.rakuten.co.jp/search/mall/MIDIキーボード/" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="display:block;text-decoration:none;text-align:center;"><img src="/assets/images/btn-rakuten.jpg" alt="楽天市場で探す" width="240" style="height:auto;border-radius:8px;display:inline-block;"></a></div>
 
 Fender Rhodesの音色は、以下のプラグインで高品質に再現できる：
 - **Arturia Wurli V**<a href="https://h.accesstrade.net/sp/cc?rk=01001xqc00os63&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fproducts%2Fdetail%2Fitem%2F286994%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="font-size:.8rem;color:#1e3a5f;font-weight:600;margin-left:.3em;">🛒 サウンドハウスで見る</a>（Wurlitzer再現）
-- **Native Instruments Vintage Organs**<a href="https://h.accesstrade.net/sp/cc?rk=01001xqc00os63&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fproducts%2Fdetail%2Fitem%2F241657%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="font-size:.8rem;color:#1e3a5f;font-weight:600;margin-left:.3em;">🛒 サウンドハウスで見る</a>
+- **Native Instruments Vintage Organs**
 - **Lounge Lizard EP-4**（Applied Acoustics）
 
 ### ストリングスアレンジ
 
 現代のDAWで生弦の質感を出すには、**Spitfire LABS（無料）**や**East West Hollywood Strings**が定番。パートを実際の弦楽四重奏のように分けて書くのがポイント。
 
-<div style="margin:.8rem 0;"><span style="display:block;font-size:.78rem;color:#4b5563;margin-bottom:3px;margin-top:6px;">🛒 サウンドハウスで探す</span>
-<a href="https://h.accesstrade.net/sp/cc?rk=01001xqc00os63&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fsearch%2Findex%3Fs_category_cd%3D310" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="display:inline-block;text-decoration:none;"><img src="/assets/images/btn-soundhouse.jpg" alt="サウンドハウスで探す" width="240" style="height:auto;border-radius:8px;display:block;"></a></div>
+<div style="margin:.8rem 0;"><span style="display:block;font-size:.78rem;color:#4b5563;margin-bottom:3px;margin-top:6px;">🛒 サウンドハウスで探す</span><a href="https://h.accesstrade.net/sp/cc?rk=01001xqc00os63&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fsearch%2Findex%3Fs_category_cd%3D310" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="display:inline-block;text-decoration:none;"><img src="/assets/images/btn-soundhouse.jpg" alt="サウンドハウスで探す" width="240" style="height:auto;border-radius:8px;display:inline-block;"></a></div>
 
 
-## CDを探す
+## キャンディーズ・ピンクレディーの曲を聴く
 
-<div style="margin:.8rem 0;"><span style="display:block;font-size:.78rem;color:#4b5563;margin-bottom:3px;margin-top:6px;">🔍 楽天市場で探す</span>
-<a href="https://hb.afl.rakuten.co.jp/ichiba/0b15ddc7.28c5c9ed.0b15ddc8.5d23dd4d/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%87%E3%82%A3%E3%83%BC%E3%82%BA%20%E3%83%94%E3%83%B3%E3%82%AF%E3%83%AC%E3%83%87%E3%82%A3%E3%83%BC%20CD%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="display:inline-block;text-decoration:none;"><img src="/assets/images/btn-rakuten.jpg" alt="楽天市場で探す" width="240" style="height:auto;border-radius:8px;display:block;"></a></div>
+<div style="margin:.8rem 0;"><span style="display:block;font-size:.78rem;color:#4b5563;margin-bottom:3px;margin-top:6px;">🔍 楽天市場で探す</span><a href="https://search.rakuten.co.jp/search/mall/キャンディーズ ピンクレディー CD/" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="display:block;text-decoration:none;text-align:center;"><img src="/assets/images/btn-rakuten.jpg" alt="楽天市場で探す" width="240" style="height:auto;border-radius:8px;display:inline-block;"></a></div>
 
-### 関連書籍を探す
+### 歌謡曲・アイドル音楽の作り方を学ぶ
 
-<div style="margin:.8rem 0;"><span style="display:block;font-size:.78rem;color:#4b5563;margin-bottom:3px;margin-top:6px;">🔍 楽天市場で探す</span>
-<a href="https://hb.afl.rakuten.co.jp/ichiba/0b15ddc7.28c5c9ed.0b15ddc8.5d23dd4d/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%E6%AD%8C%E8%AC%A1%E6%9B%B2%20%E9%9F%B3%E6%A5%BD%E5%88%B6%E4%BD%9C%20%E6%9C%AC%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="display:inline-block;text-decoration:none;"><img src="/assets/images/btn-rakuten.jpg" alt="楽天市場で探す" width="240" style="height:auto;border-radius:8px;display:block;"></a></div>
+<div style="margin:.8rem 0;"><span style="display:block;font-size:.78rem;color:#4b5563;margin-bottom:3px;margin-top:6px;">🔍 楽天市場で探す</span><a href="https://search.rakuten.co.jp/search/mall/歌謡曲 音楽制作 本/" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="display:block;text-decoration:none;text-align:center;"><img src="/assets/images/btn-rakuten.jpg" alt="楽天市場で探す" width="240" style="height:auto;border-radius:8px;display:inline-block;"></a></div>
 
 ## 歌謡曲が教えてくれること
 
@@ -145,7 +129,4 @@ Fender Rhodesの音色は、以下のプラグインで高品質に再現でき�
 
 
 
-<div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:.8rem;margin:2rem 0;">
-<a href="/2026/05/30/japan-music-02-folk-new-music/" style="display:inline-block;padding:.5rem 1rem;background:#e8edf2;border:1px solid #c8c5c0;border-radius:8px;color:#1e3a5f;text-decoration:none;font-size:.9rem;">← #02 フォーク・ニューミュージック</a>
-<a href="/2026/05/30/japan-music-04-foreign-influence/" style="display:inline-block;padding:.5rem 1rem;background:#e8edf2;border:1px solid #c8c5c0;border-radius:8px;color:#1e3a5f;text-decoration:none;font-size:.9rem;">#04 海外音楽の融合と日本化 →</a>
-</div>
+<div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:.8rem;margin:2rem 0;"><a href="/2026/05/30/japan-music-02-folk-new-music/" style="display:inline-block;padding:.5rem 1rem;background:#e8edf2;border:1px solid #c8c5c0;border-radius:8px;color:#1e3a5f;text-decoration:none;font-size:.9rem;">← #02 フォーク・ニューミュージック</a><a href="/2026/05/30/japan-music-04-foreign-influence/" style="display:inline-block;padding:.5rem 1rem;background:#e8edf2;border:1px solid #c8c5c0;border-radius:8px;color:#1e3a5f;text-decoration:none;font-size:.9rem;">#04 海外音楽の融合と日本化 →</a></div>
