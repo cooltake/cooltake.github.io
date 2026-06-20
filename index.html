@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
@@ -38,6 +38,31 @@
     .site-nav a:hover { color: var(--text); background: rgba(255,255,255,.05); }
     .nav-toggle { display: none; background: none; border: none; cursor: pointer; flex-direction: column; justify-content: center; gap: 5px; padding: 6px; }
     .nav-toggle span { display: block; width: 22px; height: 2px; background: var(--muted); border-radius: 2px; transition: transform .25s, opacity .25s; }
+
+    /* ── Search ── */
+    .search-btn { display: flex; align-items: center; justify-content: center; width: 36px; height: 36px; border-radius: 9999px; border: 1px solid var(--border); background: rgba(255,255,255,.05); cursor: pointer; color: var(--muted); transition: color .2s, background .2s; margin-left: 8px; flex-shrink: 0; }
+    .search-btn:hover { color: var(--text); background: rgba(255,255,255,.1); }
+    .search-overlay { position: fixed; inset: 0; z-index: 9999; background: rgba(5,8,18,.85); backdrop-filter: blur(16px); display: flex; flex-direction: column; align-items: center; padding-top: 80px; opacity: 0; pointer-events: none; transition: opacity .22s; }
+    .search-overlay.is-open { opacity: 1; pointer-events: all; }
+    .search-box { width: min(680px, calc(100vw - 40px)); }
+    .search-input-wrap { position: relative; }
+    .search-input-wrap svg { position: absolute; left: 18px; top: 50%; transform: translateY(-50%); opacity: .45; pointer-events: none; }
+    .search-input { width: 100%; padding: 16px 20px 16px 52px; border-radius: 14px; border: 1.5px solid rgba(129,140,248,.35); background: rgba(15,21,37,.95); color: var(--text); font-size: 1.05rem; font-family: inherit; outline: none; transition: border-color .2s; }
+    .search-input:focus { border-color: rgba(129,140,248,.7); }
+    .search-input::placeholder { color: var(--muted); }
+    .search-hint { font-size: .75rem; color: var(--muted); margin-top: 10px; text-align: right; padding-right: 4px; }
+    .search-results { margin-top: 14px; max-height: 55vh; overflow-y: auto; display: flex; flex-direction: column; gap: 6px; }
+    .search-results::-webkit-scrollbar { width: 4px; }
+    .search-results::-webkit-scrollbar-track { background: transparent; }
+    .search-results::-webkit-scrollbar-thumb { background: rgba(255,255,255,.15); border-radius: 2px; }
+    .search-item { display: flex; align-items: center; gap: 14px; padding: 12px 16px; border-radius: 10px; border: 1px solid var(--border); background: rgba(15,21,37,.8); text-decoration: none; color: var(--text); transition: background .15s, border-color .15s; }
+    .search-item:hover, .search-item.is-focused { background: rgba(59,130,246,.1); border-color: rgba(129,140,248,.3); }
+    .search-item-img { width: 44px; height: 44px; border-radius: 7px; object-fit: cover; flex-shrink: 0; background: rgba(255,255,255,.05); }
+    .search-item-body { flex: 1; min-width: 0; }
+    .search-item-cat { font-size: .65rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; margin-bottom: 3px; }
+    .search-item-title { font-size: .88rem; line-height: 1.45; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .search-empty { text-align: center; padding: 32px 0; color: var(--muted); font-size: .9rem; }
+    .search-close-hint { margin-top: 18px; text-align: center; font-size: .73rem; color: var(--muted); opacity: .6; }
 
     /* ── HERO ── */
     .hero { position: relative; min-height: 88vh; display: flex; flex-direction: column; justify-content: flex-start; overflow: hidden; }
@@ -342,9 +367,25 @@
       <a href="#showcase">Showcase</a>
       <a href="#about">About</a>
     </nav>
+    <button class="search-btn" id="search-open-btn" aria-label="検索">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+    </button>
     <button class="nav-toggle" id="nav-toggle" aria-label="メニューを開く"><span></span><span></span><span></span></button>
   </div>
 </header>
+
+<!-- ═══ Search Overlay ═══ -->
+<div class="search-overlay" id="search-overlay" role="dialog" aria-modal="true" aria-label="記事を検索">
+  <div class="search-box">
+    <div class="search-input-wrap">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      <input type="text" class="search-input" id="search-input" placeholder="キーワードで記事を検索..." autocomplete="off" spellcheck="false">
+    </div>
+    <p class="search-hint">↑↓ で移動　Enter で開く　Esc で閉じる</p>
+    <div class="search-results" id="search-results"></div>
+    <p class="search-close-hint">オーバーレイ外クリックで閉じる</p>
+  </div>
+</div>
 
 <!-- ═══ HERO ═══ -->
 <section class="hero">
@@ -409,7 +450,7 @@
                 <div class="cat-sidebar-name">オーディオI/F・ミキサー</div>
                 <div class="cat-sidebar-sub">機種比較・設定ガイド</div>
               </div>
-              <span class="cat-sidebar-count">2本</span>
+              <span class="cat-sidebar-count">9本</span>
             </a>
 
             <a href="/series-list.html?series=headphones-monitor" class="cat-sidebar-item">
@@ -518,7 +559,7 @@
                 <div class="cat-sidebar-name">音楽史シリーズ</div>
                 <div class="cat-sidebar-sub">GSブームから現代まで</div>
               </div>
-              <span class="cat-sidebar-count">13本</span>
+              <span class="cat-sidebar-count">18本</span>
             </a>
 
             <a href="/series-list.html?series=chord-progression" class="cat-sidebar-item">
@@ -1404,49 +1445,162 @@
           </div>
         </div>
 
-        <!-- Showcase -->
+        <!-- Showcase + Community -->
         <div class="col-section" id="showcase">
+          <!-- ── SHOWCASE ヘッダー ── -->
           <div class="col-section-head">
-            <span class="section-eyebrow">Creator Showcase</span>
+            <span class="section-eyebrow">SHOWCASE</span>
             <div class="section-line"></div>
-            <span class="showcase-badge">🎵 クリエイターの作品を発見する</span>
+            <a href="/showcase/" class="showcase-cta-link">すべて見る →</a>
           </div>
-          <div style="border:1px solid rgba(129,140,248,.2);border-radius:18px;padding:32px 28px;background:linear-gradient(135deg,rgba(129,140,248,.06),transparent 60%);">
-            <p style="font-size:.82rem;color:var(--muted);line-height:1.85;margin-bottom:22px;">あなたの楽曲・演奏・宅録作品をShowcaseに掲載しませんか。<br>YouTube・SoundCloud・ニコニコ動画のリンクで投稿できます。</p>
-            <div style="display:flex;gap:10px;flex-wrap:wrap;">
-              <a href="/showcase/" style="display:inline-flex;align-items:center;gap:7px;background:linear-gradient(135deg,#3b82f6,#818cf8);color:#fff;font-weight:700;font-size:.82rem;padding:10px 22px;border-radius:9999px;text-decoration:none;">Showcase を見る →</a>
-              <a href="/showcase/submit.html" style="display:inline-flex;align-items:center;gap:7px;background:rgba(129,140,248,.1);border:1px solid rgba(129,140,248,.3);color:#c4b5fd;font-weight:600;font-size:.82rem;padding:10px 22px;border-radius:9999px;text-decoration:none;">作品を投稿する →</a>
+          <p style="font-size:.72rem;color:var(--muted);margin:-4px 0 12px;line-height:1.5;">みんなから投稿された楽曲・演奏・宅録作品をピックアップ</p>
+
+          <!-- ── Pickup 最大6件カード（JS動的読込） ── -->
+          <div id="sc-pickup-grid" style="display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:14px;">
+            <div style="border:1px solid rgba(129,140,248,.1);border-radius:10px;background:rgba(129,140,248,.03);animation:pulse 1.5s infinite;height:160px;" class="sc-skeleton"></div>
+            <div style="border:1px solid rgba(129,140,248,.1);border-radius:10px;background:rgba(129,140,248,.03);animation:pulse 1.5s infinite;height:160px;" class="sc-skeleton"></div>
+            <div style="border:1px solid rgba(129,140,248,.1);border-radius:10px;background:rgba(129,140,248,.03);animation:pulse 1.5s infinite;height:160px;" class="sc-skeleton"></div>
+          </div>
+
+          <!-- ── SHOWCASE フッターボタン ── -->
+          <div style="display:flex;gap:8px;margin-bottom:14px;">
+            <a href="/showcase/" style="display:inline-flex;align-items:center;gap:5px;background:rgba(129,140,248,.12);border:1px solid rgba(129,140,248,.3);color:#c4b5fd;font-weight:600;font-size:.72rem;padding:5px 12px;border-radius:9999px;text-decoration:none;">すべての作品を見る →</a>
+          </div>
+
+          <!-- ── 下段: イベント情報（左） + メンバー募集（右） ── -->
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
+            <!-- イベント情報 -->
+            <div style="border:1px solid rgba(6,182,212,.25);border-radius:14px;overflow:hidden;background:linear-gradient(135deg,rgba(6,182,212,.07),transparent 60%);">
+              <img src="/assets/images/community-events.jpg" alt="イベント情報" style="width:100%;height:100px;object-fit:cover;display:block;opacity:.85;" onerror="this.style.display='none'">
+              <div style="padding:14px 16px 12px;">
+                <div style="display:flex;align-items:center;gap:7px;margin-bottom:8px;">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none"><rect x="3" y="4" width="18" height="17" rx="3" stroke="#22d3ee" stroke-width="1.6" opacity=".8"/><line x1="3" y1="9" x2="21" y2="9" stroke="#22d3ee" stroke-width="1.6" opacity=".6"/><line x1="8" y1="2" x2="8" y2="6" stroke="#22d3ee" stroke-width="1.6" stroke-linecap="round" opacity=".8"/><line x1="16" y1="2" x2="16" y2="6" stroke="#22d3ee" stroke-width="1.6" stroke-linecap="round" opacity=".8"/></svg>
+                  <span style="font-size:.84rem;font-weight:700;color:#67e8f9;">イベント情報</span>
+                </div>
+                <div id="sc-events-list">
+                  <ul style="margin:0 0 10px;padding-left:1.1em;font-size:.72rem;color:var(--muted);line-height:1.85;list-style:disc;">
+                    <li>ライブ・練習会・セッションイベントを掲載</li>
+                    <li>地域・ジャンルで絞り込み検索</li>
+                    <li>無料でイベント情報を投稿できます</li>
+                  </ul>
+                </div>
+                <a href="/community/events.html" style="display:inline-flex;align-items:center;gap:5px;background:rgba(6,182,212,.12);border:1px solid rgba(6,182,212,.3);color:#67e8f9;font-weight:600;font-size:.72rem;padding:5px 12px;border-radius:9999px;text-decoration:none;">イベントを見る →</a>
+              </div>
+            </div>
+            <!-- メンバー募集 -->
+            <div style="border:1px solid rgba(52,211,153,.25);border-radius:14px;overflow:hidden;background:linear-gradient(135deg,rgba(52,211,153,.07),transparent 60%);">
+              <img src="/assets/images/community-members.jpg" alt="メンバー募集" style="width:100%;height:100px;object-fit:cover;display:block;opacity:.85;" onerror="this.style.display='none'">
+              <div style="padding:14px 16px 12px;">
+                <div style="display:flex;align-items:center;gap:7px;margin-bottom:8px;">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none"><circle cx="9" cy="7" r="4" stroke="#34d399" stroke-width="1.6" opacity=".8"/><circle cx="17" cy="9" r="3" stroke="#34d399" stroke-width="1.6" opacity=".5"/><path d="M2 20 C2 16 5 14 9 14 C13 14 16 16 16 20" stroke="#34d399" stroke-width="1.6" fill="none" stroke-linecap="round" opacity=".8"/><path d="M16 14 C18 14 21 15 21 19" stroke="#34d399" stroke-width="1.6" fill="none" stroke-linecap="round" opacity=".5"/></svg>
+                  <span style="font-size:.84rem;font-weight:700;color:#6ee7b7;">メンバー募集</span>
+                </div>
+                <div id="sc-members-list">
+                  <ul style="margin:0 0 10px;padding-left:1.1em;font-size:.72rem;color:var(--muted);line-height:1.85;list-style:disc;">
+                    <li>バンドメンバー・音楽仲間を募集・発見</li>
+                    <li>パート・ジャンル・活動地域で絞り込み</li>
+                    <li>無料でメンバー募集を掲載できます</li>
+                  </ul>
+                </div>
+                <a href="/community/members.html" style="display:inline-flex;align-items:center;gap:5px;background:rgba(52,211,153,.12);border:1px solid rgba(52,211,153,.3);color:#6ee7b7;font-weight:600;font-size:.72rem;padding:5px 12px;border-radius:9999px;text-decoration:none;">メンバーを探す →</a>
+              </div>
             </div>
           </div>
         </div>
 
-        <!-- Community 機能（WBS 2.4b） — 非表示（実装完了後に復元）
-        <div class="col-section">
-          <div class="col-section-head">
-            <span class="section-eyebrow">Community</span>
-            <div class="section-line"></div>
-            <span style="font-size:.63rem;font-weight:700;color:var(--accent);background:rgba(6,182,212,.1);border:1px solid rgba(6,182,212,.25);padding:3px 10px;border-radius:9999px;white-space:nowrap;">近日公開</span>
+          <!-- ── 投稿ボタン（共通） ── -->
+          <div style="text-align:center;margin-top:16px;">
+            <a href="/community/submit.html" style="display:inline-flex;align-items:center;gap:7px;background:linear-gradient(135deg,rgba(129,140,248,.2),rgba(232,121,249,.15));border:1px solid rgba(129,140,248,.35);color:#e9d5ff;font-weight:700;font-size:.82rem;padding:8px 22px;border-radius:9999px;text-decoration:none;">＋ SHOWCASE・イベント・メンバー募集を投稿する</a>
           </div>
-          <div class="community-grid">
-            <div class="community-tile">
-              <span class="community-badge">Coming Soon</span>
-              <div class="community-icon">
-                <svg width="22" height="22" viewBox="0 0 26 26" fill="none"><circle cx="10" cy="9" r="5" stroke="#06b6d4" stroke-width="1.5" opacity=".7"/><circle cx="18" cy="11" r="3.5" stroke="#06b6d4" stroke-width="1.5" opacity=".5"/><path d="M2 22 C2 17 6 15 10 15 C14 15 18 17 18 22" stroke="#06b6d4" stroke-width="1.5" fill="none" stroke-linecap="round" opacity=".7"/><path d="M18 15 C20 15 23 16 23 20" stroke="#06b6d4" stroke-width="1.5" fill="none" stroke-linecap="round" opacity=".5"/></svg>
-              </div>
-              <p class="community-title">メンバー募集コーナー</p>
-              <p class="community-desc">バンドメンバーや音楽仲間を探せるマッチング機能を開発中。ジャンル・パート・地域で絞り込んで一緒に音楽を作る仲間を見つけよう。</p>
-            </div>
-            <div class="community-tile">
-              <span class="community-badge">Coming Soon</span>
-              <div class="community-icon">
-                <svg width="22" height="22" viewBox="0 0 26 26" fill="none"><rect x="3" y="5" width="20" height="16" rx="3" stroke="#06b6d4" stroke-width="1.5" opacity=".7"/><line x1="3" y1="10" x2="23" y2="10" stroke="#06b6d4" stroke-width="1.5" opacity=".5"/><line x1="9" y1="3" x2="9" y2="7" stroke="#06b6d4" stroke-width="1.5" stroke-linecap="round" opacity=".7"/><line x1="17" y1="3" x2="17" y2="7" stroke="#06b6d4" stroke-width="1.5" stroke-linecap="round" opacity=".7"/></svg>
-              </div>
-              <p class="community-title">ライブ・イベント情報</p>
-              <p class="community-desc">近くで開催されるライブや練習会、音楽イベントを投稿・発見できる情報ボードを準備中。地元のシーンをもっと身近に。</p>
-            </div>
-          </div>
-        </div>
-        -->
+
+        <!-- Showcase Pickup 動的読込スクリプト -->
+        <script>
+        (function(){
+          var WORKER = 'https://cooltake-showcase.cooltakestudio.workers.dev/';
+          function esc(s){ return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+
+          /* ── Showcase pickup 6件 ── */
+          fetch(WORKER+'?action=api&limit=6&sort=latest')
+            .then(function(r){ return r.json(); })
+            .then(function(d){
+              var el = document.getElementById('sc-pickup-grid');
+              if(!el) return;
+              var posts = (d.posts||[]).slice(0,6);
+              if(posts.length === 0){
+                el.innerHTML = '<p style="font-size:.74rem;color:var(--muted);grid-column:span 3;padding:10px 0;">まだ投稿がありません。最初の作品を投稿してみませんか？</p>';
+                return;
+              }
+              el.style.gridTemplateColumns = posts.length <= 3 ? 'repeat('+posts.length+',1fr)' : 'repeat(3,1fr)';
+              el.innerHTML = posts.map(function(p){
+                var thumb = p.youtube_thumb ? '<img src="'+esc(p.youtube_thumb)+'" alt="" style="width:100%;height:90px;object-fit:cover;border-radius:7px 7px 0 0;display:block;">' : '';
+                var desc = p.description ? '<p style="font-size:.68rem;color:var(--muted);line-height:1.5;margin:5px 0 6px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;">'+esc(p.description)+'</p>' : '';
+                var reactions = (p.reactions && (p.reactions.fire||p.reactions.music||p.reactions.heart))
+                  ? '<div style="display:flex;gap:6px;font-size:.66rem;color:var(--muted);margin-top:5px;">'
+                    +(p.reactions.fire ? '<span>🔥'+p.reactions.fire+'</span>' : '')
+                    +(p.reactions.music ? '<span>🎵'+p.reactions.music+'</span>' : '')
+                    +(p.reactions.heart ? '<span>❤️'+p.reactions.heart+'</span>' : '')
+                    +'</div>' : '';
+                return '<a href="'+esc(p.main_link||'/showcase/')+'" target="_blank" rel="noopener" style="display:block;border:1px solid rgba(129,140,248,.18);border-radius:10px;overflow:hidden;background:rgba(129,140,248,.04);text-decoration:none;transition:background .2s;" onmouseover="this.style.background=\'rgba(129,140,248,.09)\'" onmouseout="this.style.background=\'rgba(129,140,248,.04)\'">'
+                  + thumb
+                  +'<div style="padding:10px 11px 9px;">'
+                  +'<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:3px;">'
+                  +'<span style="font-size:.63rem;color:#818cf8;font-weight:700;letter-spacing:.03em;">'+esc(p.genre||'Music')+'</span>'
+                  +'<span style="font-size:.62rem;color:var(--muted);">by '+esc(p.nickname||'匿名')+'</span>'
+                  +'</div>'
+                  +'<div style="font-size:.76rem;color:#e2e8f0;font-weight:600;line-height:1.35;margin-bottom:2px;">'+esc((p.title||'').substring(0,28))+'</div>'
+                  + desc
+                  + reactions
+                  +'</div>'
+                  +'</a>';
+              }).join('');
+            })
+            .catch(function(){ /* サイレント失敗 */ });
+
+          /* ── イベント情報 最新3件 ── */
+          fetch(WORKER+'?action=get_events')
+            .then(function(r){ return r.json(); })
+            .then(function(d){
+              var el = document.getElementById('sc-events-list');
+              if(!el) return;
+              var events = (d.events||[]).slice(0,3);
+              if(events.length === 0) return; /* 投稿なし: 静的表示のまま */
+              el.innerHTML = events.map(function(ev){
+                var date = ev.event_date ? ev.event_date.replace(/T.*/,'') : '';
+                return '<div style="display:flex;justify-content:space-between;align-items:baseline;padding:5px 0;border-bottom:1px solid rgba(6,182,212,.1);">'
+                  +'<div>'
+                  +'<div style="font-size:.73rem;color:#e2e8f0;font-weight:600;line-height:1.35;">'+esc((ev.title||'').substring(0,22))+'</div>'
+                  +'<div style="font-size:.64rem;color:var(--muted);margin-top:1px;">'+esc(ev.region||'')+(ev.region&&date?' · ':'')+date+'</div>'
+                  +'</div>'
+                  +'<span style="font-size:.62rem;color:#67e8f9;white-space:nowrap;margin-left:6px;">by '+esc(ev.nickname||'匿名')+'</span>'
+                  +'</div>';
+              }).join('')
+              + '<div style="margin-top:8px;"></div>';
+            })
+            .catch(function(){});
+
+          /* ── メンバー募集 最新3件 ── */
+          fetch(WORKER+'?action=get_members')
+            .then(function(r){ return r.json(); })
+            .then(function(d){
+              var el = document.getElementById('sc-members-list');
+              if(!el) return;
+              var members = (d.members||[]).slice(0,3);
+              if(members.length === 0) return; /* 投稿なし: 静的表示のまま */
+              el.innerHTML = members.map(function(m){
+                var parts = (m.recruit_parts||'').split(',').filter(Boolean).slice(0,2).join(' / ');
+                return '<div style="display:flex;justify-content:space-between;align-items:baseline;padding:5px 0;border-bottom:1px solid rgba(52,211,153,.1);">'
+                  +'<div>'
+                  +'<div style="font-size:.73rem;color:#e2e8f0;font-weight:600;line-height:1.35;">'+esc((m.title||'').substring(0,22))+'</div>'
+                  +'<div style="font-size:.64rem;color:var(--muted);margin-top:1px;">'+esc(m.region||'')+(parts?' · '+parts:'')+'</div>'
+                  +'</div>'
+                  +'<span style="font-size:.62rem;color:#6ee7b7;white-space:nowrap;margin-left:6px;">by '+esc(m.nickname||'匿名')+'</span>'
+                  +'</div>';
+              }).join('')
+              + '<div style="margin-top:8px;"></div>';
+            })
+            .catch(function(){});
+        })();
+        </script>
 
         <!-- Coming Soon: 機能テザー — 非表示（実装完了後に復元）
         <div class="col-section">
@@ -2354,6 +2508,11 @@ const ALL_POSTS = [
   {url:"/2026/05/17/cable-guide/",title:"音楽制作ケーブル全種類ガイド【XLR・シールド・USB・Thunderbolt・INSERTの違いと高品位ケーブルの必要性】",img:"/assets/images/thumb-cable.png",cat:"audio-interface",catLabel:"オーディオI/F",catColor:"#c4b5fd",catBg:"rgba(129,140,248,.12)",catBorder:"rgba(129,140,248,.25)"},
   {url:"/2026/05/17/mic-stand-guide/",title:"マイクスタンドの種類と選び方【K&Mスタンド購入ガイド2026】",img:"/assets/images/thumb-mic-stand.png",cat:"mic",catLabel:"マイク",catColor:"#93c5fd",catBg:"rgba(59,130,246,.12)",catBorder:"rgba(59,130,246,.25)"},
   {url:"/2026/05/17/rack-case-guide/",title:"ラックケース・楽器ケース完全ガイド【ARMOR・DUPLEX・SKBの定番メーカー比較】",img:"/assets/images/thumb-rack-case.png",cat:"audio-interface",catLabel:"オーディオI/F",catColor:"#c4b5fd",catBg:"rgba(129,140,248,.12)",catBorder:"rgba(129,140,248,.25)"},
+  {url:"/2026/06/13/presonus-vs-motu-guide/",title:"PreSonus vs MOTU 徹底比較｜2chから多入力まで全ラインナップと選び方",img:"/assets/images/thumb-presonus-vs-motu.jpg",cat:"audio-interface",catLabel:"オーディオI/F",catColor:"#c4b5fd",catBg:"rgba(129,140,248,.12)",catBorder:"rgba(129,140,248,.25)"},
+  {url:"/2026/06/13/motu-avb-pro-guide/",title:"MOTUプロ機種ガイド｜AVBネットワーク世代の青い液晶機を用途別に選ぶ",img:"/assets/images/thumb-motu-avb-guide.jpg",cat:"audio-interface",catLabel:"オーディオI/F",catColor:"#c4b5fd",catBg:"rgba(129,140,248,.12)",catBorder:"rgba(129,140,248,.25)"},
+  {url:"/2026/06/13/focusrite-scarlett-guide/",title:"Focusrite Scarlett 第4世代 全機種ガイド｜ラインナップと用途別の選び方",img:"/assets/images/products/focusrite-scarlett-2i2.png",cat:"audio-interface",catLabel:"オーディオI/F",catColor:"#c4b5fd",catBg:"rgba(129,140,248,.12)",catBorder:"rgba(129,140,248,.25)"},
+  {url:"/2026/06/13/presonus-guide/",title:"PreSonus オーディオインターフェイス全機種ガイド｜Studio One連携と選び方",img:"/assets/images/products/presonus-studio-24c.png",cat:"audio-interface",catLabel:"オーディオI/F",catColor:"#c4b5fd",catBg:"rgba(129,140,248,.12)",catBorder:"rgba(129,140,248,.25)"},
+  {url:"/2026/06/13/motu-guide/",title:"MOTU オーディオインターフェイス全機種ガイド｜M-Seriesから828まで用途別選び方",img:"/assets/images/products/motu-m2.jpg",cat:"audio-interface",catLabel:"オーディオI/F",catColor:"#c4b5fd",catBg:"rgba(129,140,248,.12)",catBorder:"rgba(129,140,248,.25)"},
   {url:"/2026/05/20/guitar-guide/",title:"エレキギター・アコースティックギター 初心者選び方ガイド【2026年版】",img:"/assets/images/thumb-guitar.png",cat:"guitar-bass",catLabel:"ギター・ベース",catColor:"#fca5a5",catBg:"rgba(248,113,113,.12)",catBorder:"rgba(248,113,113,.25)"},
   {url:"/2026/05/22/bass-guide/",title:"エレキベース 初心者 始め方ガイド【2026年版】選び方・機材・練習法",img:"/assets/images/thumb-bass.png",cat:"guitar-bass",catLabel:"ギター・ベース",catColor:"#fca5a5",catBg:"rgba(248,113,113,.12)",catBorder:"rgba(248,113,113,.25)"},
   {url:"/2026/05/22/drum-guide/",title:"電子ドラム 初心者 始め方ガイド【2026年版】選び方・機材・練習法",img:"/assets/images/thumb-drum.png",cat:"drums",catLabel:"ドラム",catColor:"#86efac",catBg:"rgba(34,197,94,.12)",catBorder:"rgba(34,197,94,.25)"},
@@ -2383,16 +2542,16 @@ const ALL_POSTS = [
   {url:"/2026/05/30/japan-music-01-gs-boom/",title:"グループサウンズ革命【1960年代】エレキギターが日本を変えた日",img:"/assets/images/thumb-gs-boom.jpg",cat:"music-history",catLabel:"音楽史",catColor:"#fb923c",catBg:"rgba(251,146,60,.12)",catBorder:"rgba(251,146,60,.25)"},
   {url:"/2026/05/30/japan-music-02-folk-new-music/",title:"フォーク・ニューミュージックの誕生【1970年代】拓郎・陽水・ユーミンが変えた日本の音楽",img:"/assets/images/thumb-folk-new-music.jpg",cat:"music-history",catLabel:"音楽史",catColor:"#fb923c",catBg:"rgba(251,146,60,.12)",catBorder:"rgba(251,146,60,.25)"},
   {url:"/2026/05/30/japan-music-03-idol-candies-era/",title:"キャンディーズ・ピンクレディーと歌謡曲黄金期【1970年代中期】アイドルが生んだ職人サウンド",img:"/assets/images/thumb-idol-candies.jpg",cat:"music-history",catLabel:"音楽史",catColor:"#fb923c",catBg:"rgba(251,146,60,.12)",catBorder:"rgba(251,146,60,.25)"},
-  {url:"/2026/05/30/japan-music-04-godiego-fusion/",title:"ゴダイゴとフュージョン時代【1970年代後期】バークリー世代が変えた日本の音楽水準",img:"/assets/images/thumb-godiego-fusion.jpg",cat:"music-history",catLabel:"音楽史",catColor:"#fb923c",catBg:"rgba(251,146,60,.12)",catBorder:"rgba(251,146,60,.25)"},
+  {url:"/2026/05/30/japan-music-04-foreign-influence/",title:"ゴダイゴとフュージョン時代【1970年代後期】バークリー世代が変えた日本の音楽水準",img:"/assets/images/thumb-godiego-fusion.jpg",cat:"music-history",catLabel:"音楽史",catColor:"#fb923c",catBg:"rgba(251,146,60,.12)",catBorder:"rgba(251,146,60,.25)"},
   {url:"/2026/05/30/japan-music-05-ymo-techno/",title:"YMOとテクノポップ革命【1978〜1983年】シンセとシーケンサーが世界を変えた",img:"/assets/images/thumb-ymo-techno.jpg",cat:"music-history",catLabel:"音楽史",catColor:"#fb923c",catBg:"rgba(251,146,60,.12)",catBorder:"rgba(251,146,60,.25)"},
   {url:"/2026/05/30/japan-music-06-80s-idol-production/",title:"80年代アイドル黄金期の音楽制作【1980〜1988年】松田聖子・中森明菜を支えた職人サウンド",img:"/assets/images/thumb-80s-idol.jpg",cat:"music-history",catLabel:"音楽史",catColor:"#fb923c",catBg:"rgba(251,146,60,.12)",catBorder:"rgba(251,146,60,.25)"},
-  {url:"/2026/05/30/japan-music-07-band-boom/",title:"バンドブーム第一波【1980年代後半】BOØWY・バクチク・イカ天世代が切り開いた日本のロック",img:"/assets/images/thumb-band-boom.jpg",cat:"music-history",catLabel:"音楽史",catColor:"#fb923c",catBg:"rgba(251,146,60,.12)",catBorder:"rgba(251,146,60,.25)"},
-  {url:"/2026/05/30/japan-music-08-visual-kei/",title:"ヴィジュアル系とハードロック化【1990年代】X JAPAN・hide・GLAYが世界に証明したこと",img:"/assets/images/thumb-visual-kei.jpg",cat:"music-history",catLabel:"音楽史",catColor:"#fb923c",catBg:"rgba(251,146,60,.12)",catBorder:"rgba(251,146,60,.25)"},
-  {url:"/2026/05/30/japan-music-09-komuro-jpop/",title:"小室サウンドとJ-POP量産時代【1993〜1999年】TK・avexが変えた日本の音楽産業",img:"/assets/images/thumb-komuro-jpop.jpg",cat:"music-history",catLabel:"音楽史",catColor:"#fb923c",catBg:"rgba(251,146,60,.12)",catBorder:"rgba(251,146,60,.25)"},
-  {url:"/2026/05/30/japan-music-10-hiphop-rb/",title:"ヒップホップ・R&Bブームの台頭【2000年代】m-flo・SOUL'd OUTが拓いた日本語ラップの世界",img:"/assets/images/thumb-hiphop-rb.jpg",cat:"music-history",catLabel:"音楽史",catColor:"#fb923c",catBg:"rgba(251,146,60,.12)",catBorder:"rgba(251,146,60,.25)"},
-  {url:"/2026/05/30/japan-music-11-vocaloid-dtm/",title:"ボカロ革命とDTM民主化【2007年〜】初音ミクが変えた音楽制作の常識",img:"/assets/images/thumb-vocaloid-dtm.jpg",cat:"music-history",catLabel:"音楽史",catColor:"#fb923c",catBg:"rgba(251,146,60,.12)",catBorder:"rgba(251,146,60,.25)"},
-  {url:"/2026/05/30/japan-music-12-city-pop-revival/",title:"シティポップ・リバイバル現象【2020年代】世界が再発見した日本の「失われた音楽」",img:"/assets/images/thumb-city-pop-revival.jpg",cat:"music-history",catLabel:"音楽史",catColor:"#fb923c",catBg:"rgba(251,146,60,.12)",catBorder:"rgba(251,146,60,.25)"},
-  {url:"/2026/05/30/japan-music-13-modern-scene/",title:"現代の日本音楽シーン【2020年代】Vtuber・サブスク・AI音楽が変えた音楽の作り方",img:"/assets/images/thumb-modern-scene.jpg",cat:"music-history",catLabel:"音楽史",catColor:"#fb923c",catBg:"rgba(251,146,60,.12)",catBorder:"rgba(251,146,60,.25)"},
+  {url:"/2026/05/30/japan-music-07-80s-commercial/",title:"バンドブーム第一波【1980年代後半】BOØWY・バクチク・イカ天世代が切り開いた日本のロック",img:"/assets/images/thumb-band-boom.jpg",cat:"music-history",catLabel:"音楽史",catColor:"#fb923c",catBg:"rgba(251,146,60,.12)",catBorder:"rgba(251,146,60,.25)"},
+  {url:"/2026/05/30/japan-music-08-band-boom/",title:"ヴィジュアル系とハードロック化【1990年代】X JAPAN・hide・GLAYが世界に証明したこと",img:"/assets/images/thumb-visual-kei.jpg",cat:"music-history",catLabel:"音楽史",catColor:"#fb923c",catBg:"rgba(251,146,60,.12)",catBorder:"rgba(251,146,60,.25)"},
+  {url:"/2026/05/30/japan-music-09-fusion-jazz/",title:"小室サウンドとJ-POP量産時代【1993〜1999年】TK・avexが変えた日本の音楽産業",img:"/assets/images/thumb-komuro-jpop.jpg",cat:"music-history",catLabel:"音楽史",catColor:"#fb923c",catBg:"rgba(251,146,60,.12)",catBorder:"rgba(251,146,60,.25)"},
+  {url:"/2026/05/30/japan-music-10-visual-kei/",title:"ヒップホップ・R&Bブームの台頭【2000年代】m-flo・SOUL'd OUTが拓いた日本語ラップの世界",img:"/assets/images/thumb-hiphop-rb.jpg",cat:"music-history",catLabel:"音楽史",catColor:"#fb923c",catBg:"rgba(251,146,60,.12)",catBorder:"rgba(251,146,60,.25)"},
+  {url:"/2026/05/30/japan-music-11-komuro-jpop/",title:"ボカロ革命とDTM民主化【2007年〜】初音ミクが変えた音楽制作の常識",img:"/assets/images/thumb-vocaloid-dtm.jpg",cat:"music-history",catLabel:"音楽史",catColor:"#fb923c",catBg:"rgba(251,146,60,.12)",catBorder:"rgba(251,146,60,.25)"},
+  {url:"/2026/05/30/japan-music-12-shibuya-kei/",title:"シティポップ・リバイバル現象【2020年代】世界が再発見した日本の「失われた音楽」",img:"/assets/images/thumb-city-pop-revival.jpg",cat:"music-history",catLabel:"音楽史",catColor:"#fb923c",catBg:"rgba(251,146,60,.12)",catBorder:"rgba(251,146,60,.25)"},
+  {url:"/2026/05/30/japan-music-13-hiphop-rb/",title:"現代の日本音楽シーン【2020年代】Vtuber・サブスク・AI音楽が変えた音楽の作り方",img:"/assets/images/thumb-modern-scene.jpg",cat:"music-history",catLabel:"音楽史",catColor:"#fb923c",catBg:"rgba(251,146,60,.12)",catBorder:"rgba(251,146,60,.25)"},
   {url:"/2026/05/30/chord-progression-01-oudo/",title:"王道進行（Ⅳ-Ⅴ-Ⅲm-Ⅵm）完全解説【コード進行シリーズ #01】代表曲20選＋弾き方ガイド",img:"/assets/images/thumb-chord-01.jpg",cat:"chord-progression",catLabel:"コード進行",catColor:"#a78bfa",catBg:"rgba(139,92,246,.12)",catBorder:"rgba(139,92,246,.25)"},
   {url:"/2026/05/30/chord-progression-02-canon/",title:"カノン進行（Ⅰ-Ⅴ-Ⅵm-Ⅲm-Ⅳ-Ⅰ-Ⅳ-Ⅴ）完全解説【コード進行シリーズ #02】代表曲20選",img:"/assets/images/thumb-chord-02.jpg",cat:"chord-progression",catLabel:"コード進行",catColor:"#a78bfa",catBg:"rgba(139,92,246,.12)",catBorder:"rgba(139,92,246,.25)"},
   {url:"/2026/05/30/chord-progression-03-komuro/",title:"小室進行（Ⅵm-Ⅳ-Ⅰ-Ⅴ）完全解説【コード進行シリーズ #03】代表曲20選",img:"/assets/images/thumb-chord-03.jpg",cat:"chord-progression",catLabel:"コード進行",catColor:"#a78bfa",catBg:"rgba(139,92,246,.12)",catBorder:"rgba(139,92,246,.25)"},
@@ -2400,7 +2559,12 @@ const ALL_POSTS = [
   {url:"/2026/05/30/chord-progression-05-junkan/",title:"循環コード（Ⅰ-Ⅵm-Ⅳ-Ⅴ）完全解説【コード進行シリーズ #05】代表曲20選",img:"/assets/images/thumb-chord-05.jpg",cat:"chord-progression",catLabel:"コード進行",catColor:"#a78bfa",catBg:"rgba(139,92,246,.12)",catBorder:"rgba(139,92,246,.25)"},
   {url:"/2026/05/30/chord-progression-06-kanashii/",title:"切ない系進行（Ⅵm-Ⅳ-Ⅴ-Ⅵm）完全解説【コード進行シリーズ #06】代表曲20選",img:"/assets/images/thumb-chord-06.jpg",cat:"chord-progression",catLabel:"コード進行",catColor:"#a78bfa",catBg:"rgba(139,92,246,.12)",catBorder:"rgba(139,92,246,.25)"},
   {url:"/2026/05/30/chord-progression-07-blues/",title:"ブルース進行（12小節ブルース）完全解説【コード進行シリーズ #07】代表曲20選",img:"/assets/images/thumb-chord-07.jpg",cat:"chord-progression",catLabel:"コード進行",catColor:"#a78bfa",catBg:"rgba(139,92,246,.12)",catBorder:"rgba(139,92,246,.25)"},
-  {url:"/2026/05/30/chord-progression-08-cliche/",title:"クリシェ進行（半音下降）完全解説【コード進行シリーズ #08】代表曲20選",img:"/assets/images/thumb-chord-08.jpg",cat:"chord-progression",catLabel:"コード進行",catColor:"#a78bfa",catBg:"rgba(139,92,246,.12)",catBorder:"rgba(139,92,246,.25)"}
+  {url:"/2026/05/30/chord-progression-08-cliche/",title:"クリシェ進行（半音下降）完全解説【コード進行シリーズ #08】代表曲20選",img:"/assets/images/thumb-chord-08.jpg",cat:"chord-progression",catLabel:"コード進行",catColor:"#a78bfa",catBg:"rgba(139,92,246,.12)",catBorder:"rgba(139,92,246,.25)"},
+  {url:"/2026/05/30/japan-music-14-2000s-idol/",title:"2000年代アイドル・着うた時代【2003〜2012年】AKB48とモバイル音楽革命",img:"/assets/images/thumb-2000s-idol.jpg",cat:"japan-music",catLabel:"音楽史",catColor:"#a78bfa",catBg:"rgba(139,92,246,.12)",catBorder:"rgba(139,92,246,.25)"},
+  {url:"/2026/05/30/japan-music-15-vocaloid-dtm/",title:"ボカロ革命とDTM民主化【2007年〜】初音ミクが変えた音楽制作の常識",img:"/assets/images/thumb-vocaloid-dtm.jpg",cat:"japan-music",catLabel:"音楽史",catColor:"#a78bfa",catBg:"rgba(139,92,246,.12)",catBorder:"rgba(139,92,246,.25)"},
+  {url:"/2026/05/30/japan-music-16-2010s-band/",title:"2010年代バンドリバイバル・インディーズ台頭【2010〜2019年】RADWIMPS・星野源・ゲスの極み乙女。",img:"/assets/images/thumb-2010s-band.jpg",cat:"japan-music",catLabel:"音楽史",catColor:"#a78bfa",catBg:"rgba(139,92,246,.12)",catBorder:"rgba(139,92,246,.25)"},
+  {url:"/2026/05/30/japan-music-17-city-pop-revival/",title:"シティポップ・リバイバル現象【2020年代】世界が再発見した日本の「失われた音楽」",img:"/assets/images/thumb-city-pop-revival.jpg",cat:"japan-music",catLabel:"音楽史",catColor:"#a78bfa",catBg:"rgba(139,92,246,.12)",catBorder:"rgba(139,92,246,.25)"},
+  {url:"/2026/05/30/japan-music-18-modern-scene/",title:"現代の日本音楽シーン【2020年代】Vtuber・サブスク・AI音楽が変えた音楽の作り方",img:"/assets/images/thumb-modern-scene.jpg",cat:"japan-music",catLabel:"音楽史",catColor:"#a78bfa",catBg:"rgba(139,92,246,.12)",catBorder:"rgba(139,92,246,.25)"}
 ];
 const CAT_INFO = {
   "mic": {label:"マイク",color:"#93c5fd",bg:"rgba(59,130,246,.12)",border:"rgba(59,130,246,.25)"},
@@ -2415,6 +2579,97 @@ const CAT_INFO = {
   "music-production": {label:"音楽制作",color:"#fde68a",bg:"rgba(252,211,77,.12)",border:"rgba(252,211,77,.25)"},
   "music-history": {label:"音楽史",color:"#fb923c",bg:"rgba(251,146,60,.12)",border:"rgba(251,146,60,.25)"}
 };
+
+// ═══ Search ═══
+(function() {
+  var overlay = document.getElementById('search-overlay');
+  var input   = document.getElementById('search-input');
+  var results = document.getElementById('search-results');
+  var openBtn = document.getElementById('search-open-btn');
+  var focusIdx = -1;
+
+  function openSearch() {
+    overlay.classList.add('is-open');
+    document.body.style.overflow = 'hidden';
+    setTimeout(function() { input.focus(); }, 60);
+    render('');
+  }
+
+  function closeSearch() {
+    overlay.classList.remove('is-open');
+    document.body.style.overflow = '';
+    input.value = '';
+    results.innerHTML = '';
+    focusIdx = -1;
+  }
+
+  function highlight(text, q) {
+    if (!q) return text;
+    var escaped = q.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    return text.replace(new RegExp('(' + escaped + ')', 'gi'),
+      '<mark style="background:rgba(129,140,248,.35);color:inherit;border-radius:2px;padding:0 1px;">$1</mark>');
+  }
+
+  function render(q) {
+    var trimmed = q.trim().toLowerCase();
+    var filtered = trimmed
+      ? ALL_POSTS.filter(function(p) {
+          return p.title.toLowerCase().indexOf(trimmed) !== -1 ||
+                 p.catLabel.toLowerCase().indexOf(trimmed) !== -1;
+        })
+      : ALL_POSTS.slice(0, 8);
+
+    focusIdx = -1;
+
+    if (filtered.length === 0) {
+      results.innerHTML = '<p class="search-empty">「' + q + '」に一致する記事が見つかりませんでした。</p>';
+      return;
+    }
+
+    results.innerHTML = filtered.slice(0, 12).map(function(p, i) {
+      return '<a href="' + p.url + '" class="search-item" data-idx="' + i + '">' +
+        '<img class="search-item-img" src="' + p.img + '" alt="" onerror="this.style.opacity=\'0\'">' +
+        '<div class="search-item-body">' +
+          '<div class="search-item-cat" style="color:' + p.catColor + '">' + p.catLabel + '</div>' +
+          '<div class="search-item-title">' + highlight(p.title, trimmed) + '</div>' +
+        '</div>' +
+        '</a>';
+    }).join('');
+  }
+
+  function moveFocus(dir) {
+    var items = results.querySelectorAll('.search-item');
+    if (!items.length) return;
+    items[focusIdx] && items[focusIdx].classList.remove('is-focused');
+    focusIdx = (focusIdx + dir + items.length) % items.length;
+    items[focusIdx].classList.add('is-focused');
+    items[focusIdx].scrollIntoView({ block: 'nearest' });
+  }
+
+  openBtn && openBtn.addEventListener('click', openSearch);
+
+  document.addEventListener('keydown', function(e) {
+    if ((e.key === 'k' || e.key === 'K') && (e.ctrlKey || e.metaKey)) {
+      e.preventDefault(); openSearch(); return;
+    }
+    if (!overlay.classList.contains('is-open')) return;
+    if (e.key === 'Escape') { closeSearch(); return; }
+    if (e.key === 'ArrowDown') { e.preventDefault(); moveFocus(1); return; }
+    if (e.key === 'ArrowUp')   { e.preventDefault(); moveFocus(-1); return; }
+    if (e.key === 'Enter') {
+      var items = results.querySelectorAll('.search-item');
+      if (focusIdx >= 0 && items[focusIdx]) {
+        window.location.href = items[focusIdx].href;
+      }
+    }
+  });
+
+  input && input.addEventListener('input', function() { render(this.value); });
+
+  overlay && overlay.addEventListener('click', function(e) {
+    if (e.target === overlay) closeSearch();
+  });
+})();
 
 // 動的カテゴリー本数更新
 (function() {
@@ -2437,3 +2692,4 @@ const CAT_INFO = {
 </script>
 </body>
 </html>
+
