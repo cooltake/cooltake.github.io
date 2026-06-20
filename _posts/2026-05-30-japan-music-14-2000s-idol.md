@@ -23,23 +23,7 @@ image: /assets/images/thumb-2000s-idol.jpg
 
 
 
-<div style="background:rgba(255,255,255,0.10);border-radius:12px;padding:1.5rem;margin:1.5rem 0;border:1px solid rgba(99,102,241,0.75);">
-
-<h3 style="color:#c7d2fe;margin-top:0;">📱 着うた時代の数字</h3>
-
-<ul style="color:#374151;">
-
-<li>2007年：着うたフル市場規模 約900億円（CDシングルを逆転）</li>
-
-<li>2008年：着うた市場ピーク 約920億円</li>
-
-<li>2010年：スマートフォン普及開始→着うた市場が急速縮小</li>
-
-<li>CDアルバム市場：2000年代を通じて右肩下がり（ピーク1998年比で約半減）</li>
-
-</ul>
-
-</div>
+<div style="background:rgba(255,255,255,0.10);border-radius:12px;padding:1.5rem;margin:1.5rem 0;border:1px solid rgba(99,102,241,0.75);"><h3 style="color:#c7d2fe;margin-top:0;">📱 着うた時代の数字</h3><ul style="color:#374151;"><li>2007年：着うたフル市場規模 約900億円（CDシングルを逆転）</li><li>2008年：着うた市場ピーク 約920億円</li><li>2010年：スマートフォン普及開始→着うた市場が急速縮小</li><li>CDアルバム市場：2000年代を通じて右肩下がり（ピーク1998年比で約半減）</li></ul></div>
 
 
 
@@ -54,17 +38,17 @@ image: /assets/images/thumb-2000s-idol.jpg
 
 
 
-つんく♂が手がけるサウンドは、ディスコ・ファンク・R&Bを日本語アイドルポップに昇華した独自スタイル。「LOVEマシーン」（1999年）の爆発的ヒットから2000年代前半にかけて、グループは日本の音楽シーンを席巻した。
+つんく♂が手がけるサウンドは、ディスコ・ファンク・R&Bを日本語アイドルポップに昇華した独自スタイル。<a href="https://music.youtube.com/search?q=%E3%83%A2%E3%83%BC%E3%83%8B%E3%83%B3%E3%82%B0%E5%A8%98%20LOVE%E3%83%9E%E3%82%B7%E3%83%BC%E3%83%B3" target="_blank" rel="nofollow noopener" style="color:#1e3a5f;text-decoration:none;font-weight:600;">「LOVEマシーン」</a>（1999年）の爆発的ヒットから2000年代前半にかけて、グループは日本の音楽シーンを席巻した。
 
 
 
 **代表曲**:
 
-- 「恋愛レボリューション21」（2000年）
+- <a href="https://music.youtube.com/search?q=%E3%83%A2%E3%83%BC%E3%83%8B%E3%83%B3%E3%82%B0%E5%A8%98%20%E6%81%8B%E6%84%9B%E3%83%AC%E3%83%9C%E3%83%AA%E3%83%A5%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B321" target="_blank" rel="nofollow noopener" style="color:#1e3a5f;text-decoration:none;font-weight:600;">「恋愛レボリューション21」</a>（2000年）
 
-- 「ザ☆ピース！」（2001年）
+- <a href="https://music.youtube.com/search?q=%E3%83%A2%E3%83%BC%E3%83%8B%E3%83%B3%E3%82%B0%E5%A8%98%20%E3%82%B6%E2%98%86%E3%83%94%E3%83%BC%E3%82%B9" target="_blank" rel="nofollow noopener" style="color:#1e3a5f;text-decoration:none;font-weight:600;">「ザ☆ピース！」</a>（2001年）
 
-- 「そうだ！We're ALIVE」（2002年）
+- <a href="https://music.youtube.com/search?q=%E3%83%A2%E3%83%BC%E3%83%8B%E3%83%B3%E3%82%B0%E5%A8%98%20%E3%81%9D%E3%81%86%E3%81%A0%20We%27re%20ALIVE" target="_blank" rel="nofollow noopener" style="color:#1e3a5f;text-decoration:none;font-weight:600;">「そうだ！We're ALIVE」</a>（2002年）
 
 
 
@@ -85,11 +69,11 @@ image: /assets/images/thumb-2000s-idol.jpg
 
 **代表曲**:
 
-- 「Lovers Again」（2004年）
+- <a href="https://music.youtube.com/search?q=EXILE%20Lovers%20Again" target="_blank" rel="nofollow noopener" style="color:#1e3a5f;text-decoration:none;font-weight:600;">「Lovers Again」</a>（2004年）
 
-- 「EXILE PRIDE 〜こんな世界を愛するため〜」（2013年）
+- <a href="https://music.youtube.com/search?q=EXILE%20EXILE%20PRIDE%20%E3%81%93%E3%82%93%E3%81%AA%E4%B8%96%E7%95%8C%E3%82%92%E6%84%9B%E3%81%99%E3%82%8B%E3%81%9F%E3%82%81" target="_blank" rel="nofollow noopener" style="color:#1e3a5f;text-decoration:none;font-weight:600;">「EXILE PRIDE 〜こんな世界を愛するため〜」</a>（2013年）
 
-- 「Ti Amo」（2007年）
+- <a href="https://music.youtube.com/search?q=EXILE%20Ti%20Amo" target="_blank" rel="nofollow noopener" style="color:#1e3a5f;text-decoration:none;font-weight:600;">「Ti Amo」</a>（2007年）
 
 
 
@@ -112,23 +96,7 @@ EXILEの成功は後に**LDH**（Love Dream Happiness）という大きなエン
 
 
 
-<div style="background:rgba(255,255,255,0.10);border-radius:12px;padding:1.5rem;margin:1.5rem 0;border:1px solid rgba(244,63,94,0.75);">
-
-<h3 style="color:#fda4af;margin-top:0;">📊 AKBの記録</h3>
-
-<ul style="color:#374151;">
-
-<li>「Everyday、カチューシャ」（2011年）：初週192万枚——CDシングル歴代最高記録</li>
-
-<li>AKB総選挙：テレビの特番として成立するほどの国民的イベントに</li>
-
-<li>姉妹グループ：SKE48（名古屋）、NMB48（大阪）、HKT48（福岡）など全国展開</li>
-
-<li>海外展開：JKT48（インドネシア）、BNK48（タイ）など「48グループ」が世界へ</li>
-
-</ul>
-
-</div>
+<div style="background:rgba(255,255,255,0.10);border-radius:12px;padding:1.5rem;margin:1.5rem 0;border:1px solid rgba(244,63,94,0.75);"><h3 style="color:#fda4af;margin-top:0;">📊 AKBの記録</h3><ul style="color:#374151;"><li><a href="https://music.youtube.com/search?q=AKB48%20Everyday%20%E3%82%AB%E3%83%81%E3%83%A5%E3%83%BC%E3%82%B7%E3%83%A3" target="_blank" rel="nofollow noopener" style="color:#1e3a5f;text-decoration:none;font-weight:600;">「Everyday、カチューシャ」</a>（2011年）：初週192万枚——CDシングル歴代最高記録</li><li>AKB総選挙：テレビの特番として成立するほどの国民的イベントに</li><li>姉妹グループ：SKE48（名古屋）、NMB48（大阪）、HKT48（福岡）など全国展開</li><li>海外展開：JKT48（インドネシア）、BNK48（タイ）など「48グループ」が世界へ</li></ul></div>
 
 
 
@@ -173,51 +141,28 @@ EXILEの成功は後に**LDH**（Love Dream Happiness）という大きなエン
 
 
 
-### 関連アルバム・CDを探す
+### EXILE・モーニング娘。・AKB48を聴く——2000年代アイドルの名盤
 
 
 
-<div style="margin:1.5rem 0;">
-
-<span style="display:block;font-size:.78rem;color:#4b5563;margin-bottom:3px;margin-top:6px;">🔍 楽天市場で探す</span>
-<a href="https://hb.afl.rakuten.co.jp/ichiba/54518dd8.3792440a.54518dd9.03b99be4/?pc=https%3A//search.rakuten.co.jp/search/mall/EXILE%2B%E3%83%A2%E3%83%BC%E3%83%8B%E3%83%B3%E3%82%B0%E5%A8%98%E3%80%82%2BAKB48%2BCD/" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="display:inline-block;text-decoration:none;margin:.6rem 0;"><img src="/assets/images/btn-rakuten.jpg" alt="楽天市場で探す" width="240" style="max-width:100%;height:auto;border-radius:14px;display:block;"></a>
-
-</div>
+<div style="margin:1.5rem 0;"><span style="display:block;font-size:.78rem;color:#4b5563;margin-bottom:3px;margin-top:6px;">🔍 楽天市場で探す</span><a href="https://search.rakuten.co.jp/search/mall/EXILE+モーニング娘。+AKB48+CD/" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="display:block;text-decoration:none;text-align:center;"><img src="/assets/images/btn-rakuten.jpg" alt="楽天市場で探す" width="240" style="max-width:100%;height:auto;border-radius:14px;display:block;"></a></div>
 
 
 
-### 関連書籍・教則本を探す
+### ダンスミュージックの制作を学ぶ——振付・音楽制作の本
 
 
 
-<div style="margin:1.5rem 0;">
-
-<span style="display:block;font-size:.78rem;color:#4b5563;margin-bottom:3px;margin-top:6px;">🔍 楽天市場で探す</span>
-<a href="https://hb.afl.rakuten.co.jp/ichiba/54518dd8.3792440a.54518dd9.03b99be4/?pc=https%3A//search.rakuten.co.jp/search/mall/%E3%83%80%E3%83%B3%E3%82%B9%2B%E6%8C%AF%E3%82%8A%E4%BB%98%E3%81%91%2B%E9%9F%B3%E6%A5%BD%E5%88%B6%E4%BD%9C%2B%E6%9C%AC/" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="display:inline-block;text-decoration:none;margin:.6rem 0;"><img src="/assets/images/btn-rakuten.jpg" alt="楽天市場で探す" width="240" style="max-width:100%;height:auto;border-radius:14px;display:block;"></a>
-
-</div>
+<div style="margin:1.5rem 0;"><span style="display:block;font-size:.78rem;color:#4b5563;margin-bottom:3px;margin-top:6px;">🔍 楽天市場で探す</span><a href="https://search.rakuten.co.jp/search/mall/ダンス+振り付け+音楽制作+本/" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="display:block;text-decoration:none;text-align:center;"><img src="/assets/images/btn-rakuten.jpg" alt="楽天市場で探す" width="240" style="max-width:100%;height:auto;border-radius:14px;display:block;"></a></div>
 
 
 
-### 関連機材・楽器を探す
+### 2000年代J-POPサウンドを再現する——MIDIキーボード・シンセサイザー
 
 
 
 
-<div style="display:flex;flex-wrap:wrap;gap:.5rem;align-items:center;margin:1.5rem 0;">
-<div>
-
-<span style="display:block;font-size:.78rem;color:#4b5563;margin-bottom:3px;margin-top:6px;">🔍 楽天市場で探す</span>
-<a href="https://hb.afl.rakuten.co.jp/ichiba/54518dd8.3792440a.54518dd9.03b99be4/?pc=https%3A//search.rakuten.co.jp/search/mall/MIDI%E3%82%AD%E3%83%BC%E3%83%9C%E3%83%BC%E3%83%89%2B%E3%82%B7%E3%83%B3%E3%82%BB%E3%82%B5%E3%82%A4%E3%82%B6%E3%83%BC%2BRoland/" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="display:inline-block;text-decoration:none;margin:.6rem 0;"><img src="/assets/images/btn-rakuten.jpg" alt="楽天市場で探す" width="240" style="max-width:100%;height:auto;border-radius:14px;display:block;"></a>
-
-</div>
-<div>
-
-<span style="display:block;font-size:.78rem;color:#4b5563;margin-bottom:3px;margin-top:6px;">🛒 サウンドハウスで探す</span>
-<a href="https://h.accesstrade.net/sp/cc?rk=0100pdhv00n9hy&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fsearch%2Findex%3Fs_category_cd%3D311%26s_maker_cd%3D%26s_search_all%3D%26s_ord%3D" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="display:inline-block;text-decoration:none;margin:.6rem 0;"><img src="/assets/images/btn-soundhouse.jpg" alt="サウンドハウスで探す" width="240" style="max-width:100%;height:auto;border-radius:14px;display:block;"></a>
-
-</div>
-</div>
+<div style="display:flex;flex-wrap:wrap;gap:.5rem;align-items:center;margin:1.5rem 0;"><div><span style="display:block;font-size:.78rem;color:#4b5563;margin-bottom:3px;margin-top:6px;">🔍 楽天市場で探す</span><a href="https://search.rakuten.co.jp/search/mall/MIDIキーボード+シンセサイザー+Roland/" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="display:block;text-decoration:none;text-align:center;"><img src="/assets/images/btn-rakuten.jpg" alt="楽天市場で探す" width="240" style="max-width:100%;height:auto;border-radius:14px;display:block;"></a></div><div><span style="display:block;font-size:.78rem;color:#4b5563;margin-bottom:3px;margin-top:6px;">🛒 サウンドハウスで探す</span><a href="https://h.accesstrade.net/sp/cc?rk=0100pdhv00n9hy&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fsearch%2Findex%3Fs_category_cd%3D311%26s_maker_cd%3D%26s_search_all%3D%26s_ord%3D" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="display:inline-block;text-decoration:none;margin:.6rem 0;"><img src="/assets/images/btn-soundhouse.jpg" alt="サウンドハウスで探す" width="240" style="max-width:100%;height:auto;border-radius:14px;display:block;"></a></div></div>
 
 
 
@@ -292,7 +237,4 @@ EXILEが確立した「ダンスに最適化された楽曲設計」：
 - ブレイクダウン（静かなパート）を必ず入れる（技の見せ場）
 
 
-<div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:.8rem;margin:2rem 0;">
-<a href="/2026/05/30/japan-music-13-hiphop-rb/" style="display:inline-block;padding:.5rem 1rem;background:#e8edf2;border:1px solid #c8c5c0;border-radius:8px;color:#1e3a5f;text-decoration:none;font-size:.9rem;">← #13 ヒップホップ・R&B</a>
-<a href="/2026/05/30/japan-music-15-vocaloid-dtm/" style="display:inline-block;padding:.5rem 1rem;background:#e8edf2;border:1px solid #c8c5c0;border-radius:8px;color:#1e3a5f;text-decoration:none;font-size:.9rem;">#15 ボカロ・DTM →</a>
-</div>
+<div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:.8rem;margin:2rem 0;"><a href="/2026/05/30/japan-music-13-hiphop-rb/" style="display:inline-block;padding:.5rem 1rem;background:#e8edf2;border:1px solid #c8c5c0;border-radius:8px;color:#1e3a5f;text-decoration:none;font-size:.9rem;">← #13 ヒップホップ・R&B</a><a href="/2026/05/30/japan-music-15-vocaloid-dtm/" style="display:inline-block;padding:.5rem 1rem;background:#e8edf2;border:1px solid #c8c5c0;border-radius:8px;color:#1e3a5f;text-decoration:none;font-size:.9rem;">#15 ボカロ・DTM →</a></div>
