@@ -1,0 +1,28 @@
+{% assign suno_series = site.posts | where: "series", "suno-guide" | sort: "series_num" %}
+{% assign current_num = include.current | plus: 0 %}
+{% assign prev_post = nil %}
+{% assign next_post = nil %}
+{% for post in suno_series %}
+  {% assign n = post.series_num | plus: 0 %}
+  {% assign prev_num = current_num | minus: 1 %}
+  {% assign next_num = current_num | plus: 1 %}
+  {% if n == prev_num %}{% assign prev_post = post %}{% endif %}
+  {% if n == next_num %}{% assign next_post = post %}{% endif %}
+{% endfor %}
+<nav class="series-nav" style="display:flex;justify-content:space-between;align-items:center;margin:2rem 0;padding:1rem;background:rgba(59,130,246,.06);border:1px solid rgba(59,130,246,.2);border-radius:10px;font-size:.88rem;">
+  <div>
+    {% if prev_post %}
+      <a href="{{ prev_post.url }}" style="color:#60a5fa;">← 前の記事: {{ prev_post.title | truncate: 30 }}</a>
+    {% else %}
+      <span style="color:#475569;">← 前の記事なし</span>
+    {% endif %}
+  </div>
+  <div style="color:#64748b;font-size:.8rem;">第{{ current_num }}回 / 全12回</div>
+  <div>
+    {% if next_post %}
+      <a href="{{ next_post.url }}" style="color:#60a5fa;">次の記事: {{ next_post.title | truncate: 30 }} →</a>
+    {% else %}
+      <span style="color:#475569;">次の記事なし →</span>
+    {% endif %}
+  </div>
+</nav>
