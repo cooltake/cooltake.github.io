@@ -30,6 +30,8 @@ image: /assets/images/thumb-suno-ai.png
 2. 「Sign Up」からGoogleアカウントまたはメールで登録
 3. 無料プランが即時開始（クレジットカード不要）
 
+{% include suno-cta.html %}
+
 ### 無料プランの制限
 
 | 項目 | 無料プラン | Proプラン（$8/月） |

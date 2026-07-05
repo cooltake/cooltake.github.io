@@ -18,10 +18,14 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
 header{background:#1e293b;padding:16px 24px;display:flex;align-items:center;gap:16px;border-bottom:1px solid #334155;}
 header h1{font-size:1rem;font-weight:700;color:#f1f5f9;flex:1;}
 header span{font-size:.8rem;color:#94a3b8;}
-.tabs{display:flex;gap:4px;padding:16px 24px 0;background:#0f172a;border-bottom:1px solid #1e293b;}
+.tabs{display:flex;align-items:center;gap:4px;padding:12px 24px 0;background:#0f172a;border-bottom:1px solid #1e293b;flex-wrap:wrap;}
+.tab-group-label{font-size:.68rem;font-weight:700;color:#475569;letter-spacing:.08em;text-transform:uppercase;padding:0 6px 8px;white-space:nowrap;}
+.tab-separator{width:1px;height:28px;background:#334155;margin:0 6px 8px;}
 .tab-btn{padding:8px 18px;border:none;border-radius:8px 8px 0 0;cursor:pointer;font-size:.85rem;font-weight:600;background:#1e293b;color:#94a3b8;transition:.15s;}
 .tab-btn.active{background:#3b82f6;color:#fff;}
 .tab-btn .badge{display:inline-block;background:#ef4444;color:#fff;border-radius:99px;font-size:.7rem;padding:1px 6px;margin-left:6px;}
+.tab-btn .badge.badge-approved{background:#334155;color:#94a3b8;}
+.tab-btn.active .badge.badge-approved{background:rgba(255,255,255,.2);color:#fff;}
 .content{padding:24px;max-width:900px;}
 .section-title{font-size:.75rem;font-weight:700;color:#64748b;letter-spacing:.08em;text-transform:uppercase;margin-bottom:12px;}
 .card{background:#1e293b;border-radius:12px;padding:20px;margin-bottom:12px;border:1px solid #334155;}
@@ -85,11 +89,20 @@ header span{font-size:.8rem;color:#94a3b8;}
     <span id="header-counts"></span>
   </header>
 
+  <div style="background:rgba(245,158,11,.1);border-bottom:1px solid rgba(245,158,11,.3);color:#fbbf24;font-size:.8rem;padding:8px 24px;">
+    ⚠️ 現在調整中です。登録データは消去され復元できない可能性があります。
+  </div>
+
   <div class="tabs">
+    <div class="tab-group-label">審査待ち</div>
     <button class="tab-btn active" onclick="switchTab('members')" id="tab-members">メンバー募集<span class="badge" id="badge-members">0</span></button>
     <button class="tab-btn" onclick="switchTab('events')" id="tab-events">イベント情報<span class="badge" id="badge-events">0</span></button>
     <button class="tab-btn" onclick="switchTab('showcase')" id="tab-showcase">Showcase<span class="badge" id="badge-showcase">0</span></button>
-    <button class="tab-btn" onclick="switchTab('approved')" id="tab-approved">掲載済み管理</button>
+    <div class="tab-separator"></div>
+    <div class="tab-group-label">掲載済み</div>
+    <button class="tab-btn" onclick="switchTab('approved-members')" id="tab-approved-members">メンバー募集<span class="badge badge-approved" id="badge-approved-members">0</span></button>
+    <button class="tab-btn" onclick="switchTab('approved-events')" id="tab-approved-events">イベント情報<span class="badge badge-approved" id="badge-approved-events">0</span></button>
+    <button class="tab-btn" onclick="switchTab('approved-showcase')" id="tab-approved-showcase">Showcase<span class="badge badge-approved" id="badge-approved-showcase">0</span></button>
   </div>
 
   <div class="content" id="tab-content">
@@ -149,6 +162,7 @@ function switchTab(tab) {
   renderTab(tab);
 }
 
+
 // ──────── 全データ読み込み ────────
 let allData = { members: [], events: [], showcase: [], approvedMembers: [], approvedEvents: [], approvedShowcase: [] };
 
@@ -177,16 +191,23 @@ function updateBadges() {
   document.getElementById('badge-members').textContent  = allData.members.length;
   document.getElementById('badge-events').textContent   = allData.events.length;
   document.getElementById('badge-showcase').textContent = allData.showcase.length;
-  document.getElementById('header-counts').textContent  =
-    `審査待ち: ${allData.members.length + allData.events.length + allData.showcase.length}件`;
+  document.getElementById('badge-approved-members').textContent  = allData.approvedMembers.length;
+  document.getElementById('badge-approved-events').textContent   = allData.approvedEvents.length;
+  document.getElementById('badge-approved-showcase').textContent = allData.approvedShowcase.length;
+  const pending = allData.members.length + allData.events.length + allData.showcase.length;
+  const approved = allData.approvedMembers.length + allData.approvedEvents.length + allData.approvedShowcase.length;
+  document.getElementById('header-counts').textContent =
+    `審査待ち: ${pending}件　掲載中: ${approved}件`;
 }
 
 function renderTab(tab) {
   const el = document.getElementById('tab-content');
-  if (tab === 'members')  renderList(el, allData.members,  'member');
-  if (tab === 'events')   renderList(el, allData.events,   'event');
-  if (tab === 'showcase') renderList(el, allData.showcase, 'showcase');
-  if (tab === 'approved') renderApproved(el);
+  if (tab === 'members')           renderList(el, allData.members,          'member');
+  if (tab === 'events')            renderList(el, allData.events,           'event');
+  if (tab === 'showcase')          renderList(el, allData.showcase,         'showcase');
+  if (tab === 'approved-members')  renderApprovedSingle(el, allData.approvedMembers,  'member',   'メンバー募集');
+  if (tab === 'approved-events')   renderApprovedSingle(el, allData.approvedEvents,   'event',    'イベント情報');
+  if (tab === 'approved-showcase') renderApprovedSingle(el, allData.approvedShowcase, 'showcase', 'Showcase');
 }
 
 // ──────── 審査待ち一覧レンダリング ────────
@@ -234,11 +255,36 @@ function cardHtml(p, type, showActions) {
       ['投稿日時', fmtDate(p.submitted_at)],
     ]);
   } else {
-    detailHtml = tableRows([
+    // ジャケ写プレビュー＋サイズ情報
+    let jacketHtml = '';
+    if (p.jacket_url) {
+      const m = p.jacket_meta || {};
+      const resized = m.orig_w && (m.orig_w !== m.new_w || m.orig_h !== m.new_h);
+      const sizeInfo = m.orig_w
+        ? (resized
+            ? `元: ${m.orig_w}×${m.orig_h}px / ${fmtBytes(m.orig_size)} → 縮小後: ${m.new_w}×${m.new_h}px / ${fmtBytes(m.new_size)}`
+            : `${m.new_w}×${m.new_h}px / ${fmtBytes(m.new_size)}（縮小なし）`)
+        : '';
+      jacketHtml = `<div style="margin-bottom:12px;">
+        <img src="${esc(p.jacket_url)}" alt="ジャケ写" style="width:120px;height:120px;object-fit:cover;border-radius:8px;border:1px solid #334155;display:block;">
+        ${sizeInfo ? `<div style="font-size:.72rem;color:#64748b;margin-top:4px;">${esc(sizeInfo)}</div>` : ''}
+      </div>`;
+    }
+    const snsLinks = [
+      p.sns_x        ? `<a href="${esc(p.sns_x)}" target="_blank" style="color:#60a5fa;">𝕏</a>` : '',
+      p.sns_youtube  ? `<a href="${esc(p.sns_youtube)}" target="_blank" style="color:#60a5fa;">YouTube</a>` : '',
+      p.sns_instagram? `<a href="${esc(p.sns_instagram)}" target="_blank" style="color:#60a5fa;">Instagram</a>` : '',
+      p.sns_soundcloud?`<a href="${esc(p.sns_soundcloud)}" target="_blank" style="color:#60a5fa;">SoundCloud</a>` : '',
+      p.sns_spotify  ? `<a href="${esc(p.sns_spotify)}" target="_blank" style="color:#60a5fa;">Spotify</a>` : '',
+      p.sns_tiktok   ? `<a href="${esc(p.sns_tiktok)}" target="_blank" style="color:#60a5fa;">TikTok</a>` : '',
+    ].filter(Boolean).join('　');
+    detailHtml = (p.jacket_url ? `<tr><td style="color:#94a3b8;white-space:nowrap;width:120px;padding:4px 8px;vertical-align:top;font-size:.82rem;">ジャケ写</td><td style="padding:4px 8px;">${jacketHtml}</td></tr>` : '') +
+    tableRows([
       ['ニックネーム', p.nickname],
-      ['ジャンル', p.genre],
+      ['カテゴリ', (p.categories||p.genre||'')],
       ['リンク', p.main_link ? `<a href="${esc(p.main_link)}" target="_blank" style="color:#60a5fa;">${esc(p.main_link)}</a>` : ''],
       ['機材', (p.gear||[]).join('、')],
+      ['SNS', snsLinks || '—'],
       ['メール', p.email],
       ['投稿日時', fmtDate(p.submitted_at)],
     ]);
@@ -273,25 +319,13 @@ function tableRows(rows) {
     `<tr><td>${esc(k)}</td><td>${v}</td></tr>`).join('');
 }
 
-// ──────── 掲載済み管理 ────────
-function renderApproved(el) {
-  const mHtml = allData.approvedMembers.length
-    ? allData.approvedMembers.map(p => cardHtml(p, 'member', false)).join('')
-    : '<div class="empty" style="padding:12px;">掲載中のメンバー募集はありません</div>';
-  const eHtml = allData.approvedEvents.length
-    ? allData.approvedEvents.map(p => cardHtml(p, 'event', false)).join('')
-    : '<div class="empty" style="padding:12px;">掲載中のイベントはありません</div>';
-  const sHtml = allData.approvedShowcase.length
-    ? allData.approvedShowcase.map(p => cardHtml(p, 'showcase', false)).join('')
-    : '<div class="empty" style="padding:12px;">掲載中のShowcase投稿はありません</div>';
-
-  el.innerHTML = `
-    <div class="section-title">掲載中 — メンバー募集 (${allData.approvedMembers.length}件)</div>
-    ${mHtml}
-    <div class="section-title" style="margin-top:24px;">掲載中 — イベント情報 (${allData.approvedEvents.length}件)</div>
-    ${eHtml}
-    <div class="section-title" style="margin-top:24px;">掲載中 — Showcase (${allData.approvedShowcase.length}件)</div>
-    ${sHtml}`;
+// ──────── 掲載済み管理（カテゴリ別単一タブ） ────────
+function renderApprovedSingle(el, items, type, label) {
+  const emptyMsg = `掲載中の${label}はありません`;
+  const html = items.length
+    ? items.map(p => cardHtml(p, type, false)).join('')
+    : `<div class="empty">${emptyMsg}</div>`;
+  el.innerHTML = `<div class="section-title">掲載中 — ${label} (${items.length}件)</div>${html}`;
 }
 
 // ──────── 承認・却下 ────────
@@ -397,6 +431,13 @@ function fmtDate(iso) {
   if (!iso) return '';
   const d = new Date(iso);
   return `${d.getFullYear()}/${String(d.getMonth()+1).padStart(2,'0')}/${String(d.getDate()).padStart(2,'0')} ${String(d.getHours()).padStart(2,'0')}:${String(d.getMinutes()).padStart(2,'0')}`;
+}
+
+function fmtBytes(b) {
+  b = Number(b) || 0;
+  if (b < 1024) return b + ' B';
+  if (b < 1024 * 1024) return (b/1024).toFixed(1) + ' KB';
+  return (b/(1024*1024)).toFixed(2) + ' MB';
 }
 </script>
 </body>

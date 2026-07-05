@@ -168,6 +168,10 @@
 
 <div class="form-wrap">
 
+  <div class="note-box" style="border-color:rgba(245,158,11,.3);background:rgba(245,158,11,.08);">
+    ⚠️ <strong>現在調整中です。</strong>投稿を試すことはできますが、登録したデータは消去され、復元できない可能性があります。あらかじめご了承ください。
+  </div>
+
   <!-- STEP BAR -->
   <div class="step-bar">
     <div class="step-item active" id="step1-item">
@@ -250,19 +254,20 @@
             <div class="field-error" id="e-title-s"></div>
           </div>
           <div class="field">
-            <label>ジャンル<span class="req">*</span></label>
-            <select id="f-genre" name="genre">
-              <option value="">選択してください</option>
-              <optgroup label="🎙 歌・演奏動画">
-                <option>歌ってみた</option><option>演奏してみた</option><option>叩いてみた</option>
-              </optgroup>
-              <optgroup label="🎵 オリジナル・制作">
-                <option>宅録・弾き語り</option><option>DTM・電子音楽</option><option>バンド演奏</option>
-                <option>ボカロ・UTAU</option><option>ビートメイク・ヒップホップ</option>
-                <option>アンビエント・実験音楽</option><option>その他</option>
-              </optgroup>
-            </select>
-            <div class="field-error" id="e-genre"></div>
+            <label>カテゴリ<span class="req">*</span>（最大3つ）</label>
+            <div class="check-group" id="category_group">
+              <label class="check-chip"><input type="checkbox" name="category" value="オリジナル楽曲"> 🎵 オリジナル楽曲</label>
+              <label class="check-chip"><input type="checkbox" name="category" value="MV・映像作品"> 🎬 MV・映像作品</label>
+              <label class="check-chip"><input type="checkbox" name="category" value="歌ってみた"> 🎤 歌ってみた</label>
+              <label class="check-chip"><input type="checkbox" name="category" value="演奏してみた"> 🎸 演奏してみた</label>
+              <label class="check-chip"><input type="checkbox" name="category" value="DTM・トラック"> 💻 DTM・トラック</label>
+              <label class="check-chip"><input type="checkbox" name="category" value="宅録・弾き語り"> 🎙 宅録・弾き語り</label>
+              <label class="check-chip"><input type="checkbox" name="category" value="セッション・バンド"> 🥁 セッション・バンド</label>
+              <label class="check-chip"><input type="checkbox" name="category" value="ボカロ・UTAU"> 🤖 ボカロ・UTAU</label>
+              <label class="check-chip"><input type="checkbox" name="category" value="その他"> その他</label>
+            </div>
+            <div class="hint">純粋に楽曲を聴いてほしい方は「オリジナル楽曲」/ MVを作成した方は「MV・映像作品」も合わせて選択できます</div>
+            <div class="field-error" id="e-category"></div>
           </div>
           <div class="field">
             <label>メイン作品リンク<span class="req">*</span></label>
@@ -289,8 +294,69 @@
             <div class="field-error" id="e-gear"></div>
           </div>
           <div class="field">
-            <label>SNSリンク（任意）</label>
-            <input type="url" id="f-sns_link" name="sns_link" placeholder="https://x.com/yourname">
+            <label>SNSリンク（任意・入力したものが掲載されます）</label>
+            <div style="display:flex;flex-direction:column;gap:8px;margin-top:4px;">
+              <div style="display:flex;align-items:center;gap:8px;">
+                <span style="display:flex;align-items:center;gap:5px;width:120px;font-size:.78rem;color:var(--muted);flex-shrink:0;">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.741l7.73-8.835L1.254 2.25H8.08l4.258 5.63 5.906-5.63zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                  𝕏 (Twitter)
+                </span>
+                <input type="url" id="f-sns_x" name="sns_x" placeholder="https://x.com/yourname" style="flex:1;">
+              </div>
+              <div style="display:flex;align-items:center;gap:8px;">
+                <span style="display:flex;align-items:center;gap:5px;width:120px;font-size:.78rem;color:#ff4444;flex-shrink:0;">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                  <span style="color:var(--muted);">YouTube</span>
+                </span>
+                <input type="url" id="f-sns_youtube" name="sns_youtube" placeholder="https://youtube.com/@yourname" style="flex:1;">
+              </div>
+              <div style="display:flex;align-items:center;gap:8px;">
+                <span style="display:flex;align-items:center;gap:5px;width:120px;font-size:.78rem;flex-shrink:0;">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="url(#ig-grad)"><defs><linearGradient id="ig-grad" x1="0%" y1="100%" x2="100%" y2="0%"><stop offset="0%" style="stop-color:#f09433"/><stop offset="25%" style="stop-color:#e6683c"/><stop offset="50%" style="stop-color:#dc2743"/><stop offset="75%" style="stop-color:#cc2366"/><stop offset="100%" style="stop-color:#bc1888"/></linearGradient></defs><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+                  <span style="color:var(--muted);">Instagram</span>
+                </span>
+                <input type="url" id="f-sns_instagram" name="sns_instagram" placeholder="https://instagram.com/yourname" style="flex:1;">
+              </div>
+              <div style="display:flex;align-items:center;gap:8px;">
+                <span style="display:flex;align-items:center;gap:5px;width:120px;font-size:.78rem;color:var(--muted);flex-shrink:0;">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="#ff5500"><path d="M1.175 12.225C.887 12.225 0 12.114 0 11.65c0-.41.69-.46.918-.46H5.77c.228 0 .917.05.917.46 0 .464-.887.575-1.175.575H1.175zm-.608 2.908c-.347 0-1.154-.064-1.154-.575 0-.461.704-.521.948-.521H6.02c.244 0 .948.06.948.521 0 .511-.807.575-1.154.575H.567zm1.214 2.912c-.356 0-1.163-.064-1.163-.583 0-.467.713-.529.96-.529h5.33c.247 0 .96.062.96.529 0 .519-.807.583-1.163.583H1.781zM24 12.009c0 6.62-5.373 11.99-12 11.99S0 18.628 0 12.01C0 5.388 5.373.019 12 .019S24 5.388 24 12.01zm-6.318-1.38c0-2.36-1.93-4.271-4.314-4.271-1.78 0-3.316.999-4.02 2.445l-.02.042c-.074.175-.124.364-.124.563 0 .777.64 1.406 1.43 1.406.504 0 .942-.264 1.188-.655l.02-.038c.27-.503.8-.849 1.407-.849.88 0 1.593.71 1.593 1.587 0 .876-.713 1.587-1.593 1.587-.226 0-.438-.048-.63-.13l-.04-.02c-.25-.116-.533-.182-.833-.182-.833 0-1.507.67-1.507 1.497 0 .607.359 1.134.882 1.382l.044.018c.32.127.668.2 1.034.2C17.682 15.202 17.682 10.629 17.682 10.629z"/></svg>
+                  SoundCloud
+                </span>
+                <input type="url" id="f-sns_soundcloud" name="sns_soundcloud" placeholder="https://soundcloud.com/yourname" style="flex:1;">
+              </div>
+              <div style="display:flex;align-items:center;gap:8px;">
+                <span style="display:flex;align-items:center;gap:5px;width:120px;font-size:.78rem;color:var(--muted);flex-shrink:0;">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="#1ed760"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>
+                  Spotify
+                </span>
+                <input type="url" id="f-sns_spotify" name="sns_spotify" placeholder="https://open.spotify.com/artist/..." style="flex:1;">
+              </div>
+              <div style="display:flex;align-items:center;gap:8px;">
+                <span style="display:flex;align-items:center;gap:5px;width:120px;font-size:.78rem;color:var(--muted);flex-shrink:0;">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.78 1.52V6.75a4.85 4.85 0 0 1-1.01-.06z"/></svg>
+                  TikTok
+                </span>
+                <input type="url" id="f-sns_tiktok" name="sns_tiktok" placeholder="https://www.tiktok.com/@yourname" style="flex:1;">
+              </div>
+            </div>
+          </div>
+          <div class="field" id="f-jacket-wrap">
+            <label>ジャケット画像（任意）</label>
+            <div id="jacket-dropzone" style="border:2px dashed var(--border);border-radius:12px;padding:28px 16px;text-align:center;cursor:pointer;transition:border-color .2s;" onclick="document.getElementById('f-jacket').click()" ondragover="event.preventDefault();this.style.borderColor='var(--primary)'" ondragleave="this.style.borderColor='var(--border)'" ondrop="handleJacketDrop(event)">
+              <div id="jacket-placeholder" style="color:var(--muted);font-size:.88rem;">
+                <div style="font-size:2rem;margin-bottom:8px;">🖼</div>
+                クリックまたはドラッグ&amp;ドロップで画像を選択<br>
+                <span style="font-size:.78rem;">JPG / PNG / GIF　720×720px を超えると自動縮小</span>
+              </div>
+              <div id="jacket-preview-wrap" style="display:none;">
+                <img id="jacket-preview" style="max-width:180px;max-height:180px;border-radius:8px;object-fit:cover;" alt="プレビュー">
+                <div id="jacket-size-info" style="font-size:.75rem;color:var(--muted);margin-top:8px;line-height:1.6;"></div>
+                <button type="button" onclick="clearJacket(event)" style="margin-top:8px;font-size:.75rem;background:none;border:none;color:var(--muted);cursor:pointer;text-decoration:underline;">✕ 削除</button>
+              </div>
+              <input type="file" id="f-jacket" accept="image/jpeg,image/png,image/gif" style="display:none" onchange="handleJacketFile(this.files[0])">
+            </div>
+            <div class="hint">SoundCloud など音声のみのリンクにサムネイルを付けたい場合にアップロードしてください。YouTubeはリンクから自動取得するため不要です。</div>
+            <div class="field-error" id="e-jacket"></div>
           </div>
         </div>
 
@@ -654,10 +720,27 @@ bindCounter('f-title-s','cnt-title-s'); bindCounter('f-description-s','cnt-desc-
 bindCounter('f-title-m','cnt-title-m'); bindCounter('f-description-m','cnt-desc-m');
 bindCounter('f-title-e','cnt-title-e'); bindCounter('f-description-e','cnt-desc-e');
 
-// チェックボックスチップスタイル
+// チェックボックスチップスタイル（カテゴリは最大3つ制限）
 document.querySelectorAll('.check-chip').forEach(chip => {
   const cb = chip.querySelector('input[type=checkbox]');
-  cb.addEventListener('change', () => chip.classList.toggle('checked', cb.checked));
+  cb.addEventListener('change', () => {
+    chip.classList.toggle('checked', cb.checked);
+    // カテゴリグループの最大3つ制限
+    if (cb.name === 'category') {
+      const checked = document.querySelectorAll('#category_group input:checked');
+      if (checked.length >= 3) {
+        document.querySelectorAll('#category_group input:not(:checked)').forEach(c => {
+          c.closest('.check-chip').style.opacity = '0.4';
+          c.closest('.check-chip').style.pointerEvents = 'none';
+        });
+      } else {
+        document.querySelectorAll('#category_group input').forEach(c => {
+          c.closest('.check-chip').style.opacity = '';
+          c.closest('.check-chip').style.pointerEvents = '';
+        });
+      }
+    }
+  });
 });
 
 // ── ユーティリティ ────────────────────────────────────────────
@@ -704,18 +787,22 @@ function buildPayloads(common) {
   let errors = false;
 
   if (selectedTypes.has('showcase')) {
-    const title=val('f-title-s'), genre=val('f-genre'), main_link=val('f-main_link');
+    const title=val('f-title-s'), main_link=val('f-main_link');
     const description=val('f-description-s'), gear=val('f-gear');
+    const categories=getChecked('category_group');
     const agree_original=document.getElementById('f-agree_original').checked;
     const agree_rights=document.getElementById('f-agree_rights').checked;
-    if (title.length<5||title.length>60)          { showErr('e-title-s','5〜60文字で入力してください'); errors=true; }
-    if (!genre)                                    { showErr('e-genre','ジャンルを選択してください'); errors=true; }
-    if (!main_link)                                { showErr('e-main_link','リンクを入力してください'); errors=true; }
+    if (title.length<5||title.length>60)              { showErr('e-title-s','5〜60文字で入力してください'); errors=true; }
+    if (categories.length===0||categories.length>3)   { showErr('e-category','1〜3つ選択してください'); errors=true; }
+    if (!main_link)                                    { showErr('e-main_link','リンクを入力してください'); errors=true; }
     if (description.length<50||description.length>400){ showErr('e-description-s','50〜400文字で入力してください'); errors=true; }
-    if (!gear)                                     { showErr('e-gear','使用機材を入力してください'); errors=true; }
-    if (!agree_original||!agree_rights)            { showErr('e-consent','すべての同意事項にチェックしてください'); errors=true; }
-    if (!errors) payloads.push({...common, action:'submit', title, genre, main_link,
-      extra_link:val('f-extra_link'), description, gear, sns_link:val('f-sns_link'),
+    if (!gear)                                         { showErr('e-gear','使用機材を入力してください'); errors=true; }
+    if (!agree_original||!agree_rights)                { showErr('e-consent','すべての同意事項にチェックしてください'); errors=true; }
+    if (!errors) payloads.push({...common, action:'submit', title, categories:categories.join(','), main_link,
+      extra_link:val('f-extra_link'), description, gear,
+      sns_x:val('f-sns_x'), sns_youtube:val('f-sns_youtube'),
+      sns_instagram:val('f-sns_instagram'), sns_soundcloud:val('f-sns_soundcloud'),
+      sns_spotify:val('f-sns_spotify'), sns_tiktok:val('f-sns_tiktok'),
       agree_original:'true', agree_rights:'true'});
   }
 
@@ -764,6 +851,96 @@ function buildPayloads(common) {
   return { payloads, errors };
 }
 
+// ── ジャケット画像処理 ────────────────────────────────────────
+const MAX_DIM = 720;
+let jacketBlob = null;       // リサイズ後 Blob
+let jacketMeta = null;       // { orig_w, orig_h, orig_size, new_w, new_h, new_size }
+
+function fmtBytes(b) {
+  if (b < 1024) return b + ' B';
+  if (b < 1024 * 1024) return (b/1024).toFixed(1) + ' KB';
+  return (b/(1024*1024)).toFixed(2) + ' MB';
+}
+
+async function handleJacketFile(file) {
+  if (!file) return;
+  const ALLOWED = ['image/jpeg','image/png','image/gif'];
+  if (!ALLOWED.includes(file.type)) { showErr('e-jacket','JPG / PNG / GIF のみ対応しています'); return; }
+  showErr('e-jacket', '');
+
+  const orig_size = file.size;
+
+  // 画像をImageBitmapで読み込んで元サイズ取得
+  const bmp = await createImageBitmap(file);
+  const orig_w = bmp.width, orig_h = bmp.height;
+
+  // リサイズが必要か判定
+  let new_w = orig_w, new_h = orig_h;
+  if (orig_w > MAX_DIM || orig_h > MAX_DIM) {
+    const ratio = Math.min(MAX_DIM / orig_w, MAX_DIM / orig_h);
+    new_w = Math.round(orig_w * ratio);
+    new_h = Math.round(orig_h * ratio);
+  }
+
+  // Canvasでリサイズ
+  const canvas = document.createElement('canvas');
+  canvas.width = new_w; canvas.height = new_h;
+  const ctx = canvas.getContext('2d');
+  ctx.drawImage(bmp, 0, 0, new_w, new_h);
+  bmp.close();
+
+  // Blobに変換（GIFは静止画として扱いPNG化）
+  const mimeOut = file.type === 'image/png' ? 'image/png' : 'image/jpeg';
+  const quality = mimeOut === 'image/jpeg' ? 0.88 : undefined;
+  jacketBlob = await new Promise(r => canvas.toBlob(r, mimeOut, quality));
+  const new_size = jacketBlob.size;
+
+  jacketMeta = { orig_w, orig_h, orig_size, new_w, new_h, new_size };
+
+  // プレビュー表示
+  const previewUrl = URL.createObjectURL(jacketBlob);
+  document.getElementById('jacket-preview').src = previewUrl;
+  document.getElementById('jacket-placeholder').style.display = 'none';
+  document.getElementById('jacket-preview-wrap').style.display = 'block';
+
+  const resized = (orig_w !== new_w || orig_h !== new_h);
+  document.getElementById('jacket-size-info').innerHTML =
+    `元: ${orig_w}×${orig_h}px　${fmtBytes(orig_size)}` +
+    (resized ? `<br>縮小後: ${new_w}×${new_h}px　${fmtBytes(new_size)}` : `<br>（縮小なし）`);
+}
+
+function handleJacketDrop(e) {
+  e.preventDefault();
+  document.getElementById('jacket-dropzone').style.borderColor = 'var(--border)';
+  const file = e.dataTransfer.files[0];
+  if (file) handleJacketFile(file);
+}
+
+function clearJacket(e) {
+  e.stopPropagation();
+  jacketBlob = null; jacketMeta = null;
+  document.getElementById('f-jacket').value = '';
+  document.getElementById('jacket-preview').src = '';
+  document.getElementById('jacket-placeholder').style.display = 'block';
+  document.getElementById('jacket-preview-wrap').style.display = 'none';
+  document.getElementById('jacket-size-info').textContent = '';
+}
+
+async function uploadJacketIfNeeded() {
+  if (!jacketBlob || !jacketMeta) return null;
+  const fd = new FormData();
+  fd.append('file', jacketBlob, 'jacket.' + (jacketBlob.type === 'image/png' ? 'png' : 'jpg'));
+  fd.append('orig_w',    String(jacketMeta.orig_w));
+  fd.append('orig_h',    String(jacketMeta.orig_h));
+  fd.append('orig_size', String(jacketMeta.orig_size));
+  fd.append('new_w',     String(jacketMeta.new_w));
+  fd.append('new_h',     String(jacketMeta.new_h));
+  const res = await fetch(WORKER + '?action=upload_image', { method: 'POST', body: fd });
+  const data = await res.json();
+  if (!data.ok) throw new Error(data.error || '画像アップロードに失敗しました');
+  return data; // { url, key, meta }
+}
+
 // ── フォーム送信 ──────────────────────────────────────────────
 document.getElementById('mainForm').addEventListener('submit', async e => {
   e.preventDefault();
@@ -788,6 +965,25 @@ document.getElementById('mainForm').addEventListener('submit', async e => {
   btn.innerHTML = '<span class="spinner"></span>送信中…';
 
   try {
+    // ジャケ写アップロード（Showcaseのみ）
+    let jacketResult = null;
+    if (selectedTypes.has('showcase') && jacketBlob) {
+      btn.innerHTML = '<span class="spinner"></span>画像アップロード中…';
+      jacketResult = await uploadJacketIfNeeded();
+    }
+
+    // ジャケ写情報をShowcaseペイロードに付加
+    if (jacketResult) {
+      const scPayload = payloads.find(p => p.action === 'submit');
+      if (scPayload) {
+        scPayload.jacket_url  = jacketResult.url;
+        scPayload.jacket_key  = jacketResult.key;
+        scPayload.jacket_meta = jacketResult.meta;
+      }
+    }
+
+    btn.innerHTML = '<span class="spinner"></span>送信中…';
+
     // 並列送信
     const results = await Promise.all(payloads.map(p =>
       fetch(WORKER, { method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify(p) })
@@ -804,10 +1000,11 @@ document.getElementById('mainForm').addEventListener('submit', async e => {
       showErr('e-consent', '⚠️ ' + msg);
       btn.disabled = false;
       btn.innerHTML = document.querySelector('#btn-submit').textContent;
-      goStep2(); // ラベル再設定
+      goStep2();
     }
   } catch(err) {
-    showErr('e-consent', 'ネットワークエラーが発生しました。しばらく後にお試しください。');
+    showErr('e-jacket', err.message.includes('画像') ? err.message : '');
+    showErr('e-consent', err.message.includes('画像') ? '' : 'ネットワークエラーが発生しました。しばらく後にお試しください。');
     btn.disabled = false;
     btn.innerHTML = '送信する';
   }

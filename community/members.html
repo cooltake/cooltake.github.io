@@ -131,6 +131,10 @@
     </div>
   </div>
 
+  <div style="background:rgba(245,158,11,.08);border:1px solid rgba(245,158,11,.3);border-radius:12px;padding:14px 18px;margin-bottom:24px;font-size:.85rem;color:var(--muted);line-height:1.7;">
+    ⚠️ <strong style="color:var(--text);">現在調整中です。</strong>登録を試せますが、登録したデータは消去され復元できない可能性があります。
+  </div>
+
   <!-- FILTERS -->
   <div class="filter-row" id="filter-row">
     <span class="filter-chip active" data-filter="all" onclick="setFilter('all',this)">すべて</span>
@@ -195,8 +199,8 @@ function daysLeft(ts) {
 }
 
 function renderCard(m) {
-  const parts = (m.recruit_parts || '').split(',').filter(Boolean);
-  const genres = (m.genres || '').split(',').filter(Boolean);
+  const parts = Array.isArray(m.recruit_parts) ? m.recruit_parts : (m.recruit_parts || '').split(',').filter(Boolean);
+  const genres = Array.isArray(m.genres) ? m.genres : (m.genres || '').split(',').filter(Boolean);
   const expLabel = m.expires_at ? daysLeft(m.expires_at) : null;
   let notes = {};
   try { notes = m.recruit_parts_notes ? JSON.parse(m.recruit_parts_notes) : {}; } catch(e) {}
