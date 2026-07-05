@@ -2,8 +2,9 @@
 layout: post
 title: "カシオペア vs T-SQUARE【1980年代フュージョン】バークリー世代が極めた日本発インストゥルメンタル"
 date: 2026-05-30
+categories: [history]
 tags: [日本音楽史, カシオペア, T-SQUARE, フュージョン, インストゥルメンタル]
-description: "1980年代、カシオペアとT-SQUAREが日本フュージョンを世界水準に押し上げた。野呂一生の超絶ギター、F1テーマ<a href="https://music.youtube.com/search?q=T-SQUARE%20TRUTH" target="_blank" rel="nofollow noopener" style="color:#1e3a5f;text-decoration:none;font-weight:600;">「TRUTH」</a>の誕生——ジャズ×ロックが生んだ日本独自のインスト音楽史を解説。"
+description: "1980年代、カシオペアとT-SQUAREが日本フュージョンを世界水準に押し上げた。野呂一生の超絶ギター、F1テーマ「TRUTH」の誕生——ジャズ×ロックが生んだ日本独自のインスト音楽史を解説。"
 image: /assets/images/thumb-godiego.jpg
 ---
 

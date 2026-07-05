@@ -33,11 +33,13 @@ MCP（Model Context Protocol）とは、AIエージェント（Claude Codeなど
 
 | ステップ | ツール | 作業内容 | 所要時間 |
 |--------|------|---------|---------|
-| **STEP 1** 楽曲生成 | Suno AI | ジャンル・歌詞を指定して楽曲を出力 | 5〜10分 |
+| **STEP 1** 楽曲生成・選曲 | Suno AI | 複数曲を生成してMV化する1曲を決める | 15〜30分 |
 | **STEP 2** 構成整理 | Claude Code | 楽曲を区間に分けてシーン設計 | 5分 |
-| **STEP 3** 映像生成 | Higgsfield MCP | 各シーンの動画クリップを生成 | 30〜60分 |
+| **STEP 3** 映像生成 | Higgsfield MCP | 各シーンの動画クリップを生成（有料クレジット消費） | 30〜60分 |
 | **STEP 4** 編集・字幕 | CapCut（無料） | クリップ結合・歌詞字幕・書き出し | 20〜30分 |
 | **STEP 5** 投稿 | YouTube | アップロード・説明文・タグ設定 | 10分 |
+
+> **費用について：** Sunoの楽曲生成は低コストで何度でも試せます。映像生成（STEP 3）はクレジットを消費するため、**楽曲が決まってからSTEP 3に進む**のが効率的です。
 
 ---
 
@@ -134,49 +136,70 @@ claude mcp list
 
 ---
 
-## STEP 1：Suno AIでオリジナル楽曲を生成する
+## STEP 1：Suno AIで複数の楽曲を生成して「MV化したい1曲」を選ぶ
+
+映像生成はクレジットを消費するため、**先に楽曲を複数作って気に入った1曲を決めてからMVに着手する**のがコスト的にも効率的です。Suno AIの楽曲生成は低コスト（Proプランで約500曲/月）なので、何度でも試せます。
 
 ### 楽曲プロンプトの書き方
 
 Suno AI（[suno.com](https://suno.com)）で楽曲を生成します。ジャンル・テンポ・雰囲気を英語で具体的に書くのがコツです。
 
-**ファンク×ロック系J-POP（ボーカルあり）のプロンプト例：**
+**J-POP（女性ボーカル）のプロンプト例：**
 
 ```
-japanese pop song, funk groove, rock guitar, male vocals,
-upbeat tempo, city night vibe, catchy chorus, 
-synthesizer bass, electric guitar riff, 120bpm
+japanese pop song, female vocals, emotional and dreamy,
+piano ballad with electronic elements, soft melody,
+city night atmosphere, reverb vocals, 80bpm
 ```
 
 **Custom Mode（歌詞を自分で書く）の使い方：**
 
-Custom Modeでは `[Verse]`・`[Chorus]` タグを使って構成を指定できます。
+Custom Modeでは `[Verse]`・`[Chorus]` タグを使って構成を指定できます。女性ボーカルを指定する場合は `female vocals` をスタイル欄に必ず入れてください。
 
 ```
 [Verse 1]
-夜明けの街を走り抜けて
-あの頃の夢を追いかけてた
+夜が滲む窓の外
+あなたの声がまだ耳に残る
+消えそうで消えない灯り
+ひとりで抱えた秘密のまま
 
 [Chorus]
-ここから始まる 新しい朝
-諦めない限り 終わらない旅
+もう一度だけ呼んでよ
+その名前で呼んでよ
+ここにいるよ ここにいるよ
+届かなくても
 
 [Verse 2]
-傷だらけの手のひら握って
-もう一度だけ立ち上がる
+時計の針止まったまま
+季節だけが流れていく
+諦めようとするたびに
+あなたの笑顔が浮かぶから
 
 [Chorus]
-ここから始まる 新しい朝
-諦めない限り 終わらない旅
+もう一度だけ呼んでよ
+その名前で呼んでよ
+ここにいるよ ここにいるよ
+届かなくても
 ```
 
-### 生成した楽曲のダウンロード
+### 複数バリエーションを生成して選ぶ
 
-1. 気に入ったバージョンを選ぶ
-2. 「...」→「Download」→「Audio」でMP3をダウンロード
-3. ファイル名を `mv-track-01.mp3` など分かりやすく変更して保存
+同じプロンプトでも生成するたびに違う仕上がりになります。**まず5〜10曲作って聴き比べ**、MVにしたい1曲を選んでください。
 
-**注意：** 無料プランの楽曲は商業利用不可。YouTubeへの収益化投稿にはProプラン（$8/月）が必要です。
+| 確認ポイント | 理由 |
+|------------|------|
+| ボーカルの声質・抑揚が好みか | MVの雰囲気を決定づける |
+| サビのキャッチーさ | 視聴者に残る印象が変わる |
+| テンポが映像に合いそうか | 編集でクリップを割り当てやすいか |
+| 曲の長さ（1〜2分が最適） | 映像クリップ数=コストに直結する |
+
+### 選んだ楽曲のダウンロード
+
+1. 気に入ったバージョンの「...」→「Download」→「Audio」でMP3をダウンロード
+2. ファイル名を `mv-track.mp3` など分かりやすく変更して保存
+3. 歌詞も「...」→「Copy Lyrics」でコピーしておく（STEP 4の字幕作業に使います）
+
+**注意：** 無料プランの楽曲は商業利用不可。YouTubeへの収益化投稿にはProプラン（$10/月）が必要です。
 
 ---
 
@@ -188,7 +211,7 @@ Custom Modeでは `[Verse]`・`[Chorus]` タグを使って構成を指定でき
 
 ```
 楽曲の構成は Verse1(0:00-0:30) / Chorus(0:30-1:00) / Verse2(1:00-1:30) / Chorus(1:30-2:00) です。
-夜の東京の街中を歩く若い男性キャラクターが主人公のミュージックビデオを作ります。
+夜の東京を舞台に、雨の夜に想いを歌う若い日本人女性が主人公のミュージックビデオを作ります。
 各セクションに合う映像シーンを5〜6本提案してください。
 Higgsfield MCPで生成するための英語プロンプトも一緒に書いてください。
 ```
@@ -197,10 +220,10 @@ Higgsfield MCPで生成するための英語プロンプトも一緒に書いて
 
 | シーン | 区間 | 映像内容 | Higgsfield プロンプト |
 |------|------|---------|---------------------|
-| Scene 1 | Verse 1 | 渋谷交差点を歩くシーン | young Japanese man walking through Shibuya crossing at night, neon lights, cinematic |
-| Scene 2 | Chorus | 路地裏でカメラを見て歌うシーン | young man singing in Tokyo alley, dynamic camera, music video style |
-| Scene 3 | Verse 2 | 夜景を見下ろすビル屋上シーン | rooftop view of Tokyo city lights at night, atmospheric, moody |
-| Scene 4 | Chorus（ラスト） | スローモーションで振り返るシーン | slow motion, man turns to camera, street lights blur, emotional |
+| Scene 1 | Verse 1 | 雨の窓際でうつむく女性 | young Japanese woman sitting by rain-streaked window at night, soft backlight, cinematic, 4K |
+| Scene 2 | Chorus | 夜の路地で傘を持ちカメラを見つめる | young woman in dark alley holding umbrella, looking into camera, neon reflections on wet pavement, music video style |
+| Scene 3 | Verse 2 | 東京駅のホームで列車を見送るシーン | woman standing on train platform at night, train departing, emotional, shallow depth of field |
+| Scene 4 | Chorus（ラスト） | スローモーションで空を見上げる | slow motion, woman tilts face up toward falling rain, street lights blur, emotional close-up |
 
 ---
 
@@ -214,9 +237,9 @@ Higgsfield MCPで生成するための英語プロンプトも一緒に書いて
 Higgsfield MCPで以下のシーンの動画を生成してください。
 
 Scene 1:
-- モデル: Seedance 2.0（または Kling）
-- プロンプト: young Japanese man walking through Shibuya crossing at night, 
-  neon lights reflecting on wet pavement, cinematic, 4K, realistic
+- モデル: Kling 3.0
+- プロンプト: young Japanese woman sitting by rain-streaked window at night,
+  soft backlight, looking outside, cinematic, 4K, realistic, music video style
 - アスペクト比: 16:9
 - 尺: 8秒
 
@@ -241,9 +264,9 @@ Claude Codeへの指示：
 ```
 Higgsfield MCPのcreate_character機能を使って、
 以下の説明でキャラクターを作成してください：
-- 20代の日本人男性
-- 黒いジャケット、ジーンズ
-- 短髪、シンプルなスタイル
+- 20代の日本人女性
+- クリーム色のコート、白いワンピース
+- ショートヘア、ナチュラルメイク
 キャラクターIDを教えてください。以降のシーン生成に使います。
 ```
 
@@ -326,11 +349,11 @@ Higgsfield AIで生成した映像の権利は利用規約に準じます。商�
 
 <div style="margin:2rem 0;padding:1.2rem 1.5rem;background:#fff7ed;border-left:4px solid #f97316;border-radius:8px;">
 <p style="margin:0 0 .6rem;font-weight:bold;font-size:1rem;">&#x1F6D2; 楽天市場でDTM・録音機材をチェック</p>
-<a href="https://search.rakuten.co.jp/search/mall/DTM+音楽制作/" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="display:inline-block;background:#bf0000;color:#fff;padding:.45rem 1.1rem;border-radius:4px;text-decoration:none;font-weight:bold;font-size:.95rem;">楽天市場でDTM機材を探す →</a>
+<a href="https://search.rakuten.co.jp/search/mall/DTM+音楽制作/" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="display:block;text-decoration:none;text-align:center;"><img src="/assets/images/btn-rakuten.jpg" alt="楽天市場で探す" width="240" style="height:auto;border-radius:8px;display:inline-block;"></a>
 </div>
 
 <div style="margin:2rem 0;padding:1.2rem 1.5rem;background:#f0f9ff;border-left:4px solid #0ea5e9;border-radius:8px;">
 <p style="margin:0 0 .6rem;font-weight:bold;font-size:1rem;">&#x1F3B8; サウンドハウスで音楽機材をチェック（国内最大の音楽機材専門店）</p>
-<a href="https://h.accesstrade.net/sp/cc?rk=01001xqc00os63&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fsearch%2Findex%2F%3Fsearch_all%3DDTM" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="display:inline-block;background:#0369a1;color:#fff;padding:.45rem 1.1rem;border-radius:4px;text-decoration:none;font-weight:bold;font-size:.95rem;">サウンドハウスで探す →</a>
+<a href="https://h.accesstrade.net/sp/cc?rk=01001xqc00os63&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fsearch%2Findex%2F%3Fsearch_all%3DDTM" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="display:block;text-decoration:none;text-align:center;"><img src="/assets/images/btn-soundhouse.jpg" alt="サウンドハウスで探す" width="240" style="height:auto;border-radius:8px;display:inline-block;"></a>
 <img src="https://h.accesstrade.net/sp/rr?rk=01001xqc00os63" width="1" height="1" border="0" alt="" loading="lazy">
 </div>

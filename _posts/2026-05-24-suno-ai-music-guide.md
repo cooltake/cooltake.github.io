@@ -137,4 +137,14 @@ Suno AIで生成した楽曲を**DAWに取り込んで編集・アレンジ**す
 
 ---
 
+## もっと詳しく知りたい方へ — Sunoガイドシリーズ（全12回）
+
+Suno AIをさらに使いこなしたい方向けに、アカウント登録からプロンプト設計・日本語歌詞・Custom Mode・DAW連携・収益化まで踏み込んだ全12回のシリーズを公開しています。
+
+[Sunoガイドシリーズ 一覧を見る →](/series-list.html?series=suno-guide)
+
+---
+
 <div style="display:flex;gap:.75rem;margin:2rem 0;"><div style="flex:1;padding:.8rem 1rem 1rem;background:#e8f4fb;border-radius:10px;border:1px solid rgba(8,145,178,.25);"><span style="display:block;margin:0 0 .5rem;color:#374151;font-size:.82rem;font-weight:bold;">DTM をサウンドハウスで探す</span><a href="https://h.accesstrade.net/sp/cc?rk=01001xqc00os63&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fsearch%2Findex%2F%3Fsearch_all%3DDTM" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="display:block;text-decoration:none;text-align:center;"><img src="/assets/images/btn-soundhouse.jpg" alt="サウンドハウスで探す" width="240" style="height:auto;border-radius:8px;display:inline-block;"></a><img src="https://h.accesstrade.net/sp/rr?rk=01001xqc00os63" width="1" height="1" border="0" alt="" loading="lazy"></div><div style="flex:1;padding:.8rem 1rem 1rem;background:#fdf3ee;border-radius:10px;border:1px solid rgba(234,88,12,.25);"><span style="display:block;margin:0 0 .5rem;color:#374151;font-size:.82rem;font-weight:bold;">DTM を楽天市場で探す</span><a href="https://search.rakuten.co.jp/search/mall/DTM+音楽制作/" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="display:block;text-decoration:none;text-align:center;"><img src="/assets/images/btn-rakuten.jpg" alt="楽天市場で探す" width="240" style="height:auto;border-radius:8px;display:inline-block;"></a></div></div>
+
+{% include suno-cta.html %}

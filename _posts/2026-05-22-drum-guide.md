@@ -3,7 +3,7 @@ layout: post
 title: "電子ドラム 初心者 始め方ガイド【2026年版】選び方・機材・練習法"
 description: "電子ドラムを始めたい初心者向けに、アコースティックと電子の違い・予算別おすすめモデル・練習方法までを徹底解説。自宅でも始められる一台の選び方がわかります。"
 date: 2026-05-22
-categories: [gear]
+categories: [instrument]
 tags: [ドラム, 電子ドラム, 初心者, 選び方, 楽器, 始め方]
 image: /assets/images/thumb-drum.png
 ---

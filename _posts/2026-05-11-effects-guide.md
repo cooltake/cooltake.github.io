@@ -4,7 +4,7 @@ title: "コンプレッサー・リバーブ・ゲートの使い方 - 音楽制
 description: "音楽制作で欠かせないコンプレッサー・リバーブ・ゲートの基本的な使い方を解説。各エフェクターの役割とパラメーターを初心者向けにわかりやすく紹介します。"
 date: 2026-05-11
 image: /assets/images/thumb-effects.png
-categories: [effects]
+categories: [gear]
 tags: [コンプレッサー, リバーブ, ゲート, エフェクター, MIX]
 ---
 

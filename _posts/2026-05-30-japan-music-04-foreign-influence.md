@@ -2,6 +2,7 @@
 layout: post
 title: "海外音楽の融合と日本化【1970年代後期】ゴダイゴが証明した「日本語×西洋音楽」の可能性"
 date: 2026-05-30
+categories: [history]
 tags: [日本音楽史, ゴダイゴ, バークリー, 洋楽影響, J-POP源流]
 image: /assets/images/thumb-godiego-fusion.jpg
 description: "1970年代後期、ゴダイゴをはじめとするバークリー帰りのミュージシャンが西洋音楽理論を日本のポップスに融合。英語×日本語の歌詞スタイルとプロフェッショナルなアレンジが、後のJ-POP全体の水準を引き上げた過程を解説。"
@@ -37,7 +38,7 @@ description: "1970年代後期、ゴダイゴをはじめとするバークリ�
 
 ゴダイゴのジャンルは**ポップ・ロック**だ。バークリーで培った音楽理論をポップスの文脈で活用した。<a href="https://music.youtube.com/search?q=%E3%82%B4%E3%83%80%E3%82%A4%E3%82%B4%20Gandhara%20%E3%82%AC%E3%83%B3%E3%83%80%E3%83%BC%E3%83%A9" target="_blank" rel="nofollow noopener" style="color:#1e3a5f;text-decoration:none;font-weight:600;">「ガンダーラ」</a>「モンキー・マジック」——これらはフュージョンではなく、洗練されたポップサウンドだ。
 
-フュージョン（ジャズ×ロック）の担い手であるカシオペア・T-SQUAREは**1980年代後半**が全盛期であり、ゴダイゴとは時代的にも音楽的にも異なる（→ [#09 フュージョン カシオペア・T-SQUARE](/2026/05/30/japan-music-09-fusion-jazz/)）。
+フュージョン（ジャズ×ロック）の担い手であるカシオペア・T-SQUAREは**1980年代後半**が全盛期であり、ゴダイゴとは時代的にも音楽的にも異なる（→ [#09 フュージョン カシオペア・T-SQUARE](/history/japan-music-09-fusion-jazz/)）。
 
 
 ## 「英語×日本語」という新しい文法
@@ -88,11 +89,11 @@ description: "1970年代後期、ゴダイゴをはじめとするバークリ�
 - ゴダイゴの洗練されたアレンジ → **1980年代歌謡ポップスのレベルアップ**
 - バークリー理論の普及 → **スタジオミュージシャンの技術向上**
 - 英語×日本語の文法 → **小室サウンド・EXILEへの継承**
-- 高い演奏技術のバンド像 → **フュージョンブームの土台**（→ [#09](/2026/05/30/japan-music-09-fusion-jazz/)）
+- 高い演奏技術のバンド像 → **フュージョンブームの土台**（→ [#09](/history/japan-music-09-fusion-jazz/)）
 
 
 ## ゴダイゴのアルバムを聴く——バークリー理論が日本のポップスを変えた名盤
 
 
 
-<div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:.8rem;margin:2rem 0;"><a href="/2026/05/30/japan-music-03-idol-candies-era/" style="display:inline-block;padding:.5rem 1rem;background:#e8edf2;border:1px solid #c8c5c0;border-radius:8px;color:#1e3a5f;text-decoration:none;font-size:.9rem;">← #03 キャンディーズ・ピンクレディー</a><a href="/2026/05/30/japan-music-05-ymo-techno/" style="display:inline-block;padding:.5rem 1rem;background:#e8edf2;border:1px solid #c8c5c0;border-radius:8px;color:#1e3a5f;text-decoration:none;font-size:.9rem;">#05 YMO・テクノポップ →</a></div>
+<div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:.8rem;margin:2rem 0;"><a href="/history/japan-music-03-idol-candies-era/" style="display:inline-block;padding:.5rem 1rem;background:#e8edf2;border:1px solid #c8c5c0;border-radius:8px;color:#1e3a5f;text-decoration:none;font-size:.9rem;">← #03 キャンディーズ・ピンクレディー</a><a href="/history/japan-music-05-ymo-techno/" style="display:inline-block;padding:.5rem 1rem;background:#e8edf2;border:1px solid #c8c5c0;border-radius:8px;color:#1e3a5f;text-decoration:none;font-size:.9rem;">#05 YMO・テクノポップ →</a></div>

@@ -3,7 +3,7 @@ layout: post
 title: "デジタルピアノ・電子キーボード 初心者 始め方ガイド【2026年版】選び方・機材・練習法"
 description: "デジタルピアノ・電子キーボードを始めたい初心者向けに、違いの解説・予算別おすすめモデル・必要機材・練習方法までを徹底解説。自宅でピアノを始めるための完全ガイドです。"
 date: 2026-05-24
-categories: [gear]
+categories: [instrument]
 tags: [デジタルピアノ, 電子キーボード, ピアノ, 初心者, 選び方, 楽器, 始め方]
 image: /assets/images/thumb-digital-piano.jpg
 ---

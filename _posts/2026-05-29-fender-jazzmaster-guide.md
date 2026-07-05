@@ -3,7 +3,7 @@ layout: post
 title: "Fender Jazzmasterの特徴・音・選び方ガイド【2026年版】ジャズマスターを徹底解説"
 description: "Fender Jazzmasterの特徴・ピックアップ構成・Jaguarとの違い・Playerシリーズの選び方を解説。オルタナ・シューゲイザー・インディーロックを弾くギタリスト必見。"
 date: 2026-05-29
-categories: [gear]
+categories: [instrument]
 tags: [Fender, Jazzmaster, ジャズマスター, エレキギター, ギター選び方, オルタナ]
 image: /assets/images/thumb-jazzmaster.jpg
 ---

@@ -2,6 +2,7 @@
 layout: post
 title: "フォーク・ニューミュージックの誕生【1970年代】拓郎・陽水・ユーミンが変えた日本の音楽"
 date: 2026-05-30
+categories: [history]
 tags: [ギター, 録音, 音楽制作, 初心者]
 description: "1970年代、吉田拓郎・井上陽水・荒井由実が牽引したフォーク・ニューミュージック。アコギ一本で社会を歌い、マルチトラック録音が日本の音楽制作を変えた時代の記録。"
 image: /assets/images/thumb-folk-new-music.jpg

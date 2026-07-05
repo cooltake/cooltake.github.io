@@ -3,7 +3,7 @@ layout: post
 title: "【予算別】DTM初心者の機材セット構成ガイド — 2万円・5万円・10万円"
 description: "DTMを始めるための機材セット構成を予算別（2万円・5万円・10万円）に解説。オーディオインターフェース・ヘッドフォン・マイク・DAWの組み合わせを具体的に紹介します。"
 date: 2026-05-12
-categories: [basics]
+categories: [gear]
 tags: [DTM入門, 機材セット, 予算別, 初心者, 宅録]
 image: /assets/images/thumb-budget.png
 ---

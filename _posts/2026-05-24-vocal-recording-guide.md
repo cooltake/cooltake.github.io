@@ -3,7 +3,7 @@ layout: post
 title: "ボーカル宅録ガイド【マイク選び・録音設定・歌ってみた機材セット完全解説】"
 description: "自宅でボーカル録音を始める方法を徹底解説。マイクの選び方からオーディオIF・防音対策・DAWの録音設定まで、歌ってみた・宅録に必要なすべてをまとめました。"
 date: 2026-05-24
-categories: [gear]
+categories: [production]
 tags: [ボーカル, 宅録, 歌ってみた, マイク, 録音, ホームレコーディング, DTM, オーディオIF]
 image: /assets/images/thumb-vocal-recording.jpg
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "Gibson Les Paul Customの特徴・音・選び方ガイド【2026年版】レスポールの最高峰"
 description: "Gibson Les Paul Customの特徴・音の傾向・スタンダードとの違い・おすすめの購入方法を解説。クラシックロック・ジャズ・ファットなリードトーンを求めるギタリスト必見。"
 date: 2026-05-29
-categories: [gear]
+categories: [instrument]
 tags: [Gibson, Les Paul, レスポール, エレキギター, ギター選び方, クラシックロック]
 image: /assets/images/thumb-les-paul-custom.jpg
 ---

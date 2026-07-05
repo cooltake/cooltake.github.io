@@ -3,7 +3,7 @@ layout: post
 title: "Fender Jaguarの特徴・音・選び方ガイド【2026年版】ジャガーを徹底解説"
 description: "Fender Jaguarの特徴・短いスケール・Jazzmasterとの違い・Playerシリーズの選び方を解説。サーフ・ガレージロック・パンクを弾くギタリスト必見。"
 date: 2026-05-29
-categories: [gear]
+categories: [instrument]
 tags: [Fender, Jaguar, ジャガー, エレキギター, ギター選び方, サーフ, ガレージロック]
 image: /assets/images/thumb-jaguar.jpg
 ---

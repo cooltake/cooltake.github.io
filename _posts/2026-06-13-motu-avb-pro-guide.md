@@ -21,6 +21,8 @@ MOTUのオーディオインターフェイスには2つの世代がある。入
 
 宅録向けのMシリーズと異なり、これらは**スタジオ・ライブ・放送・インスタレーション**など、より本格的な現場での使用を前提に設計されている。
 
+> M2/M4/M6などの入門〜中級機や、848・10preの基本スペックは[MOTU オーディオインターフェイス全機種ガイド](/gear/motu-guide/)で解説している。本記事はそれよりさらに専門的な、AVBネットワークでのシステム構築とプロ用途の使い分けに焦点を当てる。
+
 ---
 
 ## 機種カタログ：役割別に整理する
@@ -49,6 +51,8 @@ MOTUの青い液晶系プロ機種は、**役割**によって4つのカテゴ�
 
 **こんな人に**: 小〜中規模スタジオのメイン機、ライブ現場への持ち出し兼用
 
+<a href="https://h.accesstrade.net/sp/cc?rk=01001xqc00os63&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fsearch%2Findex%2F%3Fsearch_all%3DMOTU%2BUltraLite%2BAVB%26category_cd%3D161" target="_blank" rel="nofollow noopener" title="サウンドハウスで見る"><img src="/assets/images/btn-soundhouse.jpg" alt="サウンドハウスで見る" height="36" style="height:36px;width:auto;border-radius:6px;display:inline-block;vertical-align:middle;margin-right:.4em;"></a>
+
 ---
 
 #### 1248（フラッグシップ）
@@ -68,6 +72,8 @@ MOTUの青い液晶系プロ機種は、**役割**によって4つのカテゴ�
 **1248**はMOTU AVBラインナップのフラッグシップ。Thunderbolt接続で最小レイテンシーを実現しつつ、AVBネットワークで複数台を統合したシステム全体の核になる。内蔵DSPのCueMix FXはハードウェア処理のためDAWに負荷をかけず、大規模セッションでも安定して動作する。
 
 **こんな人に**: プロスタジオのメイン機、大型AVBシステムの中枢
+
+<a href="https://h.accesstrade.net/sp/cc?rk=01001xqc00os63&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fsearch%2Findex%2F%3Fsearch_all%3DMOTU%2B1248%26category_cd%3D161" target="_blank" rel="nofollow noopener" title="サウンドハウスで見る"><img src="/assets/images/btn-soundhouse.jpg" alt="サウンドハウスで見る" height="36" style="height:36px;width:auto;border-radius:6px;display:inline-block;vertical-align:middle;margin-right:.4em;"></a>
 
 ---
 
@@ -97,6 +103,8 @@ MOTUの青い液晶系プロ機種は、**役割**によって4つのカテゴ�
 
 **典型的な使い方**: 1248 + 8M = 20ch同時録音（バンド一発録り対応）
 
+<a href="https://h.accesstrade.net/sp/cc?rk=01001xqc00os63&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fsearch%2Findex%2F%3Fsearch_all%3DMOTU%2B8M%26category_cd%3D161" target="_blank" rel="nofollow noopener" title="サウンドハウスで見る"><img src="/assets/images/btn-soundhouse.jpg" alt="サウンドハウスで見る" height="36" style="height:36px;width:auto;border-radius:6px;display:inline-block;vertical-align:middle;margin-right:.4em;"></a>
+
 ---
 
 #### 8Pre USB
@@ -114,6 +122,8 @@ MOTUの青い液晶系プロ機種は、**役割**によって4つのカテゴ�
 
 **こんな人に**: 既存I/FにADAT経由で8ch追加したい、予算を抑えたい
 
+<a href="https://h.accesstrade.net/sp/cc?rk=01001xqc00os63&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fsearch%2Findex%2F%3Fsearch_all%3DMOTU%2B8pre%26category_cd%3D161" target="_blank" rel="nofollow noopener" title="サウンドハウスで見る"><img src="/assets/images/btn-soundhouse.jpg" alt="サウンドハウスで見る" height="36" style="height:36px;width:auto;border-radius:6px;display:inline-block;vertical-align:middle;margin-right:.4em;"></a>
+
 ---
 
 #### 24Ai（24ch アナログ入力専用）
@@ -130,6 +140,8 @@ MOTUの青い液晶系プロ機種は、**役割**によって4つのカテゴ�
 **24Ai**は純粋な24chアナログ入力専用モジュール。アナログ出力は持たず、収録専用の入力拡張機として機能する。PAシステムのダイレクトアウトをすべて取り込んでライブ録音するシナリオが典型的な使い方だ。
 
 **典型的な構成**: PAミキサーのグループ送り24ch → 24Ai → AVB → 1248 → DAW
+
+<a href="https://h.accesstrade.net/sp/cc?rk=01001xqc00os63&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fsearch%2Findex%2F%3Fsearch_all%3DMOTU%2B24Ai%26category_cd%3D161" target="_blank" rel="nofollow noopener" title="サウンドハウスで見る"><img src="/assets/images/btn-soundhouse.jpg" alt="サウンドハウスで見る" height="36" style="height:36px;width:auto;border-radius:6px;display:inline-block;vertical-align:middle;margin-right:.4em;"></a>
 
 ---
 
@@ -155,6 +167,8 @@ DA変換と出力ch数に特化した機種。既存の録音システムにモ�
 - ライブ会場：メインPA + モニター + サイドフィル + サブウーファー個別制御
 - スタジオ：複数のヘッドフォンアンプへのキューMIX送り（12系統）
 
+<a href="https://h.accesstrade.net/sp/cc?rk=01001xqc00os63&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fsearch%2Findex%2F%3Fsearch_all%3DMOTU%2B24Ao%26category_cd%3D161" target="_blank" rel="nofollow noopener" title="サウンドハウスで見る"><img src="/assets/images/btn-soundhouse.jpg" alt="サウンドハウスで見る" height="36" style="height:36px;width:auto;border-radius:6px;display:inline-block;vertical-align:middle;margin-right:.4em;"></a>
+
 ---
 
 #### 624（6in / 24out、ESS DAC搭載）
@@ -171,11 +185,13 @@ DA変換と出力ch数に特化した機種。既存の録音システムにモ�
 
 **624**は24Aoの上位版ともいえる機種で、ESS Sabre32 Ultra DACを搭載し、DA変換の音質が際立って高い。マスタリングスタジオのモニター制御や、ハイエンドな音質が求められるインスタレーションに使われる。
 
+<a href="https://h.accesstrade.net/sp/cc?rk=01001xqc00os63&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fsearch%2Findex%2F%3Fsearch_all%3DMOTU%2B624%26category_cd%3D161" target="_blank" rel="nofollow noopener" title="サウンドハウスで見る"><img src="/assets/images/btn-soundhouse.jpg" alt="サウンドハウスで見る" height="36" style="height:36px;width:auto;border-radius:6px;display:inline-block;vertical-align:middle;margin-right:.4em;"></a>
+
 ---
 
 #### 8A（8ch DA専用）
 
-8chのアナログ出力専用モジュール。AVBネットワーク経由の信号を受け取り、8chのパワーアンプ・スピーカーシステムに送る。624・24Aoの小規模版として、小さいAVBシステムの出力段に使う。
+8chのアナログ出力専用モジュール。AVBネットワーク経由の信号を受け取り、8chのパワーアンプ・スピーカーシステムに送る。624・24Aoの小規模版として、小さいAVBシステムの出力段に使う。（※サウンドハウスでは本記事執筆時点で取り扱い確認できず。購入検討時は24Ao・624を優先候補に）
 
 ---
 
@@ -194,6 +210,8 @@ DA変換と出力ch数に特化した機種。既存の録音システムにモ�
 </table>
 
 **Monitor8**はモニタースピーカーの切り替えに特化した機種。マスタリングエンジニアが複数のリファレンススピーカー（NS-10・Auratone・メインモニター等）をワンタッチで切り替えながら音質チェックするシナリオが典型的な使い方だ。
+
+<a href="https://h.accesstrade.net/sp/cc?rk=01001xqc00os63&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fsearch%2Findex%2F%3Fsearch_all%3DMOTU%2BMonitor8%26category_cd%3D161" target="_blank" rel="nofollow noopener" title="サウンドハウスで見る"><img src="/assets/images/btn-soundhouse.jpg" alt="サウンドハウスで見る" height="36" style="height:36px;width:auto;border-radius:6px;display:inline-block;vertical-align:middle;margin-right:.4em;"></a>
 
 ---
 
@@ -279,6 +297,6 @@ AVBの真の強みは「複数のMOTU機器をEthernetで繋いで一つの大�
 
 MOTUの青い液晶機は単体スペックよりも「**どう組み合わせるか**」で真価が決まる。自分のシステムの中で「入力」「出力」「ルーティング」のどこが足りないかを明確にしてから機種を選ぼう。
 
-<div style="margin:2em 0;padding:1.2em 1.5em;background:rgba(147,197,253,.08);border:1px solid rgba(147,197,253,.25);border-radius:8px;"><strong>サウンドハウスでMOTUを探す</strong><br><a href="https://h.accesstrade.net/sp/cc?rk=01001xqc00os63&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fsearch%2Findex%2F%3Fsearch_all%3DMOTU%26category_cd%3D161" rel="nofollow" referrerpolicy="no-referrer-when-downgrade">MOTU 全製品を見る →</a></div>
+<div style="margin:2em 0;padding:1.2em 1.5em;background:rgba(147,197,253,.08);border:1px solid rgba(147,197,253,.25);border-radius:8px;"><strong>サウンドハウスでMOTUを探す</strong><br><a href="https://h.accesstrade.net/sp/cc?rk=01001xqc00os63&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fsearch%2Findex%2F%3Fsearch_all%3DMOTU%26category_cd%3D161" target="_blank" rel="nofollow noopener" title="サウンドハウスで見る"><img src="/assets/images/btn-soundhouse.jpg" alt="サウンドハウスで見る" height="36" style="height:36px;width:auto;border-radius:6px;display:inline-block;vertical-align:middle;margin-right:.4em;"></a></div>
 
 ※本記事にはアフィリエイトリンクが含まれます。

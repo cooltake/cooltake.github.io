@@ -2,6 +2,7 @@
 layout: post
 title: "ヒップホップ・R&Bブームの台頭【2000年代】m-flo・SOUL'd OUTが拓いた日本語ラップの世界"
 date: 2026-05-30
+categories: [history]
 tags: [DAW, 音楽制作, マイク, オーディオインターフェース, 録音]
 description: "m-flo・SOUL'd OUT・BENNIE Kが牽引した2000年代の日本語ヒップホップ・R&Bブーム。サンプリング文化とビートメイキングの手法、現代のDAWで同じサウンドを作る完全ガイド。"
 image: /assets/images/thumb-hiphop-rb.jpg

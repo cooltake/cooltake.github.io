@@ -3,7 +3,7 @@ layout: post
 title: "音楽著作権の基礎知識【2026年版】DTMクリエイターが知るべき権利と注意点"
 description: "DTMクリエイターが知っておくべき音楽著作権の基礎を解説。著作権の種類・JASRACの仕組み・サンプリングのルール・AI音楽の権利問題まで実務的に説明します。"
 date: 2026-05-24
-categories: [production]
+categories: [learn]
 tags: [著作権, JASRAC, 音楽権利, DTM, サンプリング, AI音楽, 楽曲販売]
 image: /assets/images/thumb-copyright.png
 ---

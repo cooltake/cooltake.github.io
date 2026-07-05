@@ -3,7 +3,7 @@ layout: post
 title: "Music Man StingRay Bassの特徴・音・選び方ガイド【2026年版】スティングレイを徹底解説"
 description: "Music Man StingRay Bassの特徴・アクティブサウンド・Fenderベースとの違い・選び方を解説。スラップ・ファンク・ロックを弾くベーシスト必見。"
 date: 2026-05-29
-categories: [gear]
+categories: [instrument]
 tags: [Music Man, StingRay, スティングレイ, エレキベース, ベース選び方, スラップ]
 image: /assets/images/thumb-stingray-bass.jpg
 ---

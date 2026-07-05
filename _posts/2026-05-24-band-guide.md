@@ -3,7 +3,7 @@ layout: post
 title: "バンドの始め方 完全ガイド【2026年版】メンバー募集・スタジオ・初ライブまで"
 description: "バンドを組みたい初心者向けに、メンバー募集方法・パート選び・スタジオリハの進め方・ライブ出演までを徹底解説。バンドを「組む」から「動かす」まで全ステップを網羅します。"
 date: 2026-05-24
-categories: [gear]
+categories: [production]
 tags: [バンド, 始め方, メンバー募集, バンド結成, ライブ, リハーサル]
 image: /assets/images/thumb-band.png
 ---

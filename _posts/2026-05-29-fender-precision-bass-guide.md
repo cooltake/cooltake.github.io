@@ -3,7 +3,7 @@ layout: post
 title: "Fender Precision Bassの特徴・音・選び方ガイド【2026年版】プレシジョンベースを徹底解説"
 description: "Fender Precision Bassの特徴・音の傾向・Jazz Bassとの違い・Playerシリーズの選び方を解説。ロック・ポップ・オルタナを支えるベーシスト必見。"
 date: 2026-05-29
-categories: [gear]
+categories: [instrument]
 tags: [Fender, Precision Bass, プレシジョンベース, プレベ, ベース選び方, ロック]
 image: /assets/images/thumb-precision-bass.jpg
 ---

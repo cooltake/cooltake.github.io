@@ -3,7 +3,7 @@ layout: post
 title: "エレキベース 初心者 始め方ガイド【2026年版】選び方・機材・練習法"
 description: "エレキベースを始めたい初心者向けに、ベースの選び方・予算別おすすめモデル・アンプなど必要機材・練習方法までを徹底解説。最初の1本を後悔なく選べます。"
 date: 2026-05-22
-categories: [gear]
+categories: [instrument]
 tags: [ベース, エレキベース, 初心者, 選び方, 楽器, 始め方]
 image: /assets/images/thumb-bass.png
 ---

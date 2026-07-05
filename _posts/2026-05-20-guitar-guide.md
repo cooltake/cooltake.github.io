@@ -3,7 +3,7 @@ layout: post
 title: "エレキギター・アコースティックギター 初心者選び方ガイド【2026年版】"
 description: "ギターを始めたい初心者向けに、エレキとアコギの違いから予算別おすすめモデル、必要な周辺機器までを徹底解説。最初の1本の選び方を失敗なく決められます。"
 date: 2026-05-20
-categories: [gear]
+categories: [instrument]
 tags: [ギター, エレキギター, アコースティックギター, 初心者, 選び方, 楽器]
 image: /assets/images/thumb-guitar.png
 ---

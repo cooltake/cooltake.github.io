@@ -2,6 +2,7 @@
 layout: post
 title: "グループサウンズ革命【1960年代】エレキギターが日本を変えた日"
 date: 2026-05-30
+categories: [history]
 tags: [ギター, エレキギター, 音楽制作, 初心者]
 description: "1960年代、ベンチャーズ来日をきっかけに爆発したグループサウンズブーム。日本にエレキギター文化を根付かせたムーブメントの全貌と、現代で同じサウンドを再現する方法を解説。"
 image: /assets/images/thumb-gs-boom.jpg

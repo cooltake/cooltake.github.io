@@ -3,7 +3,7 @@ layout: post
 title: "Fender Stratocasterの特徴・音・選び方ガイド【2026年版】ストラトキャスターを徹底解説"
 description: "Fender Stratocasterの特徴・ピックアップ構成・テレキャスターとの違い・Playerシリーズの選び方をわかりやすく解説。ロック・ブルース・ファンクを弾きたいギタリスト必見。"
 date: 2026-05-29
-categories: [gear]
+categories: [instrument]
 tags: [Fender, Stratocaster, ストラトキャスター, エレキギター, ギター選び方, ロック]
 image: /assets/images/thumb-stratocaster.jpg
 ---

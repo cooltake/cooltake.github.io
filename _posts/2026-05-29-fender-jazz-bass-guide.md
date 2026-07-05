@@ -3,7 +3,7 @@ layout: post
 title: "Fender Jazz Bassの特徴・音・選び方ガイド【2026年版】ジャズベースを徹底解説"
 description: "Fender Jazz Bassの特徴・音の傾向・Precision Bassとの違い・Playerシリーズの選び方を解説。ジャズ・フュージョン・ファンク・ロックを弾くベーシスト必見。"
 date: 2026-05-29
-categories: [gear]
+categories: [instrument]
 tags: [Fender, Jazz Bass, ジャズベース, ベース, ベース選び方, ジャズ]
 image: /assets/images/thumb-jazz-bass.jpg
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "音楽スタジオ 選び方・予約方法 完全ガイド【2026年版】リハスタ・レコスタの違いと活用術"
 description: "リハーサルスタジオとレコーディングスタジオの違い、予算別の選び方、予約方法、持ち物リストまで徹底解説。バンドでの初スタジオ入りから本格録音まで対応する完全ガイドです。"
 date: 2026-05-24
-categories: [gear]
+categories: [production]
 tags: [音楽スタジオ, リハーサルスタジオ, レコーディング, バンド, スタジオ予約]
 image: /assets/images/thumb-music-studio.jpg
 ---

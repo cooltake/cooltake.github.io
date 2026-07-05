@@ -3,7 +3,7 @@ layout: post
 title: "ミキサーの使い方・選び方入門 - ゲイン・フェーダー・EQの基本を解説"
 description: "ミキサーの基本的な使い方をわかりやすく解説。ゲインとフェーダーの違い、EQの役割、ホームスタジオやバンド演奏での活用法まで初心者向けに紹介します。"
 date: 2026-05-11
-categories: [mixer]
+categories: [gear]
 tags: [ミキサー, ゲイン, フェーダー, EQ, レコーディング]
 image: /assets/images/thumb-mixer.png
 ---

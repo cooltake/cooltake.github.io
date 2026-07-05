@@ -3,7 +3,7 @@ layout: post
 title: "Fender Telecasterの特徴・音・選び方ガイド【2026年版】テレキャスターを徹底解説"
 description: "Fender Telecasterの特徴・音の傾向・Stratocasterとの違い・Playerシリーズの選び方を解説。カントリー・ロックンロール・オルタナを弾きたいギタリスト必見。"
 date: 2026-05-29
-categories: [gear]
+categories: [instrument]
 tags: [Fender, Telecaster, テレキャスター, エレキギター, ギター選び方, カントリー]
 image: /assets/images/thumb-telecaster.jpg
 ---

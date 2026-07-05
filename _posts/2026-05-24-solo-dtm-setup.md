@@ -3,7 +3,7 @@ layout: post
 title: "ソロDTM完全セットアップガイド【2026年版】一人で完結する宅録環境の作り方"
 description: "一人で作曲・録音・MIX・配信まで完結させるためのDTM環境構築ガイド。パソコン選び・DAW・オーディオIF・マイク・モニター環境まで、予算別に最適な構成を解説します。"
 date: 2026-05-24
-categories: [gear]
+categories: [production]
 tags: [DTM, 宅録, DAW, ソロ制作, 作曲, 音楽制作環境, セットアップ]
 image: /assets/images/thumb-solo-dtm.jpg
 ---

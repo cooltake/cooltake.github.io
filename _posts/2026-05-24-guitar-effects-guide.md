@@ -3,7 +3,7 @@ layout: post
 title: "ギターエフェクター入門ガイド【歪み・空間系・マルチ 種類と選び方2026】"
 description: "ギターエフェクターの種類と選び方を初心者向けに解説。歪み系（OverDrive/Distortion/Fuzz）・空間系（Reverb/Delay）・変調系（Chorus/Flanger）の違いと、コンパクト vs マルチエフェクターの比較を紹介します。"
 date: 2026-05-24
-categories: [gear]
+categories: [instrument]
 tags: [エフェクター, ギター, 歪み, リバーブ, ディレイ, コーラス, マルチエフェクター, 初心者, ペダル]
 image: /assets/images/thumb-guitar-effects.jpg
 ---

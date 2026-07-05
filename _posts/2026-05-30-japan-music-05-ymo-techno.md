@@ -2,6 +2,7 @@
 layout: post
 title: "YMOとテクノポップ革命【1978〜1983年】シンセとシーケンサーが世界を変えた"
 date: 2026-05-30
+categories: [history]
 tags: [DAW, VST, プラグイン, キーボード, MIDI, 音楽制作]
 description: "Yellow Magic Orchestra（YMO）が世界に放ったテクノポップ革命。TR-808・MC-8・Moogが生み出した未来の音と、現代のDAW・ソフトシンセでYMOサウンドを再現する完全ガイド。"
 image: /assets/images/thumb-ymo-techno.jpg

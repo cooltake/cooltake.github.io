@@ -3,7 +3,7 @@ layout: post
 title: "BeatStars ビート販売ガイド【2026年版】登録方法・価格設定・収益の仕組みを解説"
 description: "BeatStarsでビートを販売する方法を徹底解説。アカウント登録・ライセンス設定・価格戦略・プロへの売り込み方まで、初心者ビートメイカー向けにわかりやすく説明します。"
 date: 2026-05-24
-categories: [production]
+categories: [learn]
 tags: [BeatStars, ビート販売, ビートメイク, 音楽販売, DTM, 副業, トラックメイク]
 image: /assets/images/thumb-beatstars.png
 ---

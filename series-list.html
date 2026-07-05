@@ -141,6 +141,7 @@
       <div class="drawer-section-label">シリーズ</div>
       <a href="/series-list.html?series=japan-music-series" class="drawer-link"><span class="drawer-link-icon di-rose">&#x1F1EF;&#x1F1F5;</span>音楽史シリーズ</a>
       <a href="/series-list.html?series=chord-progression" class="drawer-link"><span class="drawer-link-icon di-violet">&#x1F3B5;</span>コード進行シリーズ</a>
+      <a href="/series-list.html?series=suno-guide" class="drawer-link"><span class="drawer-link-icon di-sky">&#x1F3B6;</span>Suno AIで曲を作るシリーズ</a>
     </div>
     <div style="height:32px;"></div>
   </div>
@@ -178,217 +179,226 @@ const SERIES_DATA = {
   "mic": {
     label: "マイク",
     articles: [
-      { url:"/2026/05/11/microphone-guide/", title:"ダイナミックマイクとコンデンサーマイクの違い - 録音・宅録向け選び方ガイド", img:"/assets/images/thumb-microphone.png", excerpt:"ダイナミックマイクとコンデンサーマイクの違いを徹底解説。宅録・ボーカル録音・ライブ用途別のおすすめ選び方を初心者にもわかりやすく紹介します。" },
-      { url:"/2026/05/17/mic-stand-guide/", title:"マイクスタンドの種類と選び方【K&Mスタンド購入ガイド2026】", img:"/assets/images/thumb-mic-stand.png", excerpt:"マイクスタンドのストレート・ブーム・デスクアームの違いを解説。K&M（König & Meyer）の定番モデル比較と、用途別おすすめの選び方を初心者にもわかりやすく紹介します。" }
+      { url:"/gear/microphone-guide/", title:"ダイナミックマイクとコンデンサーマイクの違い - 録音・宅録向け選び方ガイド", img:"/assets/images/thumb-microphone.png", excerpt:"ダイナミックマイクとコンデンサーマイクの違いを徹底解説。宅録・ボーカル録音・ライブ用途別のおすすめ選び方を初心者にもわかりやすく紹介します。" },
+      { url:"/gear/mic-stand-guide/", title:"マイクスタンドの種類と選び方【K&Mスタンド購入ガイド2026】", img:"/assets/images/thumb-mic-stand.png", excerpt:"マイクスタンドのストレート・ブーム・デスクアームの違いを解説。K&M（König & Meyer）の定番モデル比較と、用途別おすすめの選び方を初心者にもわかりやすく紹介します。" }
     ]
   },
   "audio-interface": {
     label: "オーディオI/F・ミキサー",
     articles: [
-      { url:"/2026/05/11/mixer-guide/", title:"ミキサーの使い方・選び方入門 - ゲイン・フェーダー・EQの基本を解説", img:"/assets/images/thumb-mixer.png", excerpt:"ミキサーの基本的な使い方をわかりやすく解説。ゲインとフェーダーの違い、EQの役割、ホームスタジオやバンド演奏での活用法まで初心者向けに紹介します。" },
-      { url:"/2026/05/12/audio-interface-guide/", title:"オーディオインターフェース選び方ガイド2026 — 初心者におすすめの機種と接続方法", img:"/assets/images/thumb-audio-interface.png", excerpt:"オーディオインターフェースの選び方を徹底解説。Focusrite Scarlett・MOTU・RolandなどをUSB・Thunderbolt別に比較し、DTM初心者に最適な1台を見つけましょう。" },
-      { url:"/2026/05/17/cable-guide/", title:"音楽制作ケーブル全種類ガイド【XLR・シールド・USB・Thunderbolt・INSERTの違いと高品位ケーブルの必要性】", img:"/assets/images/thumb-cable.png", excerpt:"音楽制作・宅録で使うケーブルの種類と用途を網羅解説。XLRケーブル・シールド・INSERTケーブル・スピーカーケーブル・USBケーブル・Thunderboltケーブルの違いと、高品位ケーブルを選ぶ基準を紹介します。" },
-      { url:"/2026/05/17/rack-case-guide/", title:"ラックケース・楽器ケース完全ガイド【ARMOR・DUPLEX・SKBの定番メーカー比較】", img:"/assets/images/thumb-rack-case.png", excerpt:"音楽機材の運搬・保護に使うラックケースと楽器ケースの選び方を解説。ARMOR・DUPLEX・SKBの定番3メーカーを比較し、運搬用フライトケースと据え置きラックの違いも詳しく紹介します。" },
-      { url:"/2026/06/13/presonus-vs-motu-guide/", title:"PreSonus vs MOTU 徹底比較｜2chから多入力まで全ラインナップと選び方", img:"/assets/images/thumb-presonus-vs-motu.jpg", excerpt:"宅録から本格スタジオまで。PreSonusとMOTUのオーディオインターフェイス全ラインナップを価格・用途・接続方式・多出力活用で徹底比較。あなたの用途に最適な一台を見つける完全ガイド。" },
-      { url:"/2026/06/13/motu-avb-pro-guide/", title:"MOTUプロ機種ガイド｜AVBネットワーク世代の青い液晶機を用途別に選ぶ", img:"/assets/images/thumb-motu-avb-guide.jpg", excerpt:"MOTU UltraLite AVB・1248・24Ao・24Ai・Monitor8・8Mなど、AVBネットワーク対応プロ機種の違いと用途別選び方を徹底解説。スタジオ・ライブ・Atmos制作まで最適な一台を。" },
-      { url:"/2026/06/13/focusrite-scarlett-guide/", title:"Focusrite Scarlett 第4世代 全機種ガイド｜ラインナップと用途別の選び方", img:"/assets/images/products/focusrite-scarlett-2i2.png", excerpt:"Focusrite Scarlett 4th Gen のSolo・2i2・4i4・16i16・18i20を全機種比較。DTM初心者から本格マルチch録音まで、用途別おすすめを解説します。" },
-      { url:"/2026/06/13/presonus-guide/", title:"PreSonus オーディオインターフェイス全機種ガイド｜Studio One連携と選び方", img:"/assets/images/products/presonus-studio-24c.png", excerpt:"PreSonusのAudioBox GO・Studio 24c・Quantum HD/ESシリーズ・Quantum 2626を全機種比較。Studio Oneとの統合とThunderbolt低レイテンシーの強みを解説します。" },
-      { url:"/2026/06/13/motu-guide/", title:"MOTU オーディオインターフェイス全機種ガイド｜M-Seriesから828まで用途別選び方", img:"/assets/images/products/motu-m2.jpg", excerpt:"MOTUのM2/M4/M6から848・10pre・UltraLite mk5・828まで全機種を解説。AVBネットワーク・スタンドアローン・Thunderboltの特徴と用途別選び方を徹底ガイド。" }
+      { url:"/gear/mixer-guide/", title:"ミキサーの使い方・選び方入門 - ゲイン・フェーダー・EQの基本を解説", img:"/assets/images/thumb-mixer.png", excerpt:"ミキサーの基本的な使い方をわかりやすく解説。ゲインとフェーダーの違い、EQの役割、ホームスタジオやバンド演奏での活用法まで初心者向けに紹介します。" },
+      { url:"/gear/audio-interface-guide/", title:"オーディオインターフェース選び方ガイド2026 — 初心者におすすめの機種と接続方法", img:"/assets/images/thumb-audio-interface.png", excerpt:"オーディオインターフェースの選び方を徹底解説。Focusrite Scarlett・MOTU・RolandなどをUSB・Thunderbolt別に比較し、DTM初心者に最適な1台を見つけましょう。" },
+      { url:"/gear/presonus-vs-motu-guide/", title:"PreSonus vs MOTU 徹底比較｜2chから多入力まで全ラインナップと選び方", img:"/assets/images/thumb-presonus-vs-motu.jpg", excerpt:"宅録から本格スタジオまで。PreSonusとMOTUのオーディオインターフェイス全ラインナップを価格・用途・接続方式・多出力活用で徹底比較。あなたの用途に最適な一台を見つける完全ガイド。" },
+      { url:"/gear/motu-avb-pro-guide/", title:"MOTUプロ機種ガイド｜AVBネットワーク世代の青い液晶機を用途別に選ぶ", img:"/assets/images/thumb-motu-avb-guide.jpg", excerpt:"MOTU UltraLite AVB・1248・24Ao・24Ai・Monitor8・8Mなど、AVBネットワーク対応プロ機種の違いと用途別選び方を徹底解説。スタジオ・ライブ・Atmos制作まで最適な一台を。" },
+      { url:"/gear/focusrite-scarlett-guide/", title:"Focusrite Scarlett 第4世代 全機種ガイド｜ラインナップと用途別の選び方", img:"/assets/images/products/focusrite-scarlett-2i2.png", excerpt:"Focusrite Scarlett 4th Gen のSolo・2i2・4i4・16i16・18i20を全機種比較。DTM初心者から本格マルチch録音まで、用途別おすすめを解説します。" },
+      { url:"/gear/presonus-guide/", title:"PreSonus オーディオインターフェイス全機種ガイド｜Studio One連携と選び方", img:"/assets/images/products/presonus-studio-24c.png", excerpt:"PreSonusのAudioBox GO・Studio 24c・Quantum HD/ESシリーズ・Quantum 2626を全機種比較。Studio Oneとの統合とThunderbolt低レイテンシーの強みを解説します。" },
+      { url:"/gear/motu-guide/", title:"MOTU オーディオインターフェイス全機種ガイド｜M-Seriesから828まで用途別選び方", img:"/assets/images/products/motu-m2.jpg", excerpt:"MOTUのM2/M4/M6から848・10pre・UltraLite mk5・828まで全機種を解説。AVBネットワーク・スタンドアローン・Thunderboltの特徴と用途別選び方を徹底ガイド。" }
     ]
   },
   "headphones-monitor": {
     label: "ヘッドフォン・モニター",
     articles: [
-      { url:"/2026/05/12/headphone-guide/", title:"DTM・宅録用ヘッドフォンおすすめ6選【予算別・2026年版】", img:"/assets/images/thumb-headphone.png", excerpt:"DTMや宅録に使うヘッドフォンの選び方とおすすめ機種を予算別に解説。モニタリング用途に適した密閉型・開放型の違いや、SONY・AKG・audio-technicaの特徴を比較します。" },
-      { url:"/2026/05/12/studio-monitor-guide/", title:"スタジオモニタースピーカー入門 — 自宅DTMでの選び方と設置のコツ", img:"/assets/images/thumb-studio-monitor.png", excerpt:"スタジオモニタースピーカーの選び方を初心者向けに解説。YAMAHA HS・KRK ROKIT・Genelecなどの定番モデルを比較し、自宅DTMでの設置方法と使い方を紹介します。" },
-      { url:"/2026/05/24/monitor-headphones-guide/", title:"モニターヘッドフォン選び方ガイド【DTM・宅録・ミックス用おすすめ機種比較2026】", img:"/assets/images/thumb-monitor-headphones.jpg", excerpt:"DTM・宅録・ミックスに使うモニターヘッドフォンの選び方を解説。リスニング用との違い、密閉型と開放型の使い分け、予算別おすすめ機種（ATH-M50x・MDR-7506・DT770 PRO等）を比較します。" }
+      { url:"/gear/headphone-guide/", title:"DTM・宅録用ヘッドフォンおすすめ6選【予算別・2026年版】", img:"/assets/images/thumb-headphone.png", excerpt:"DTMや宅録に使うヘッドフォンの選び方とおすすめ機種を予算別に解説。モニタリング用途に適した密閉型・開放型の違いや、SONY・AKG・audio-technicaの特徴を比較します。" },
+      { url:"/gear/studio-monitor-guide/", title:"スタジオモニタースピーカー入門 — 自宅DTMでの選び方と設置のコツ", img:"/assets/images/thumb-studio-monitor.png", excerpt:"スタジオモニタースピーカーの選び方を初心者向けに解説。YAMAHA HS・KRK ROKIT・Genelecなどの定番モデルを比較し、自宅DTMでの設置方法と使い方を紹介します。" },
+      { url:"/gear/monitor-headphones-guide/", title:"モニターヘッドフォン選び方ガイド【DTM・宅録・ミックス用おすすめ機種比較2026】", img:"/assets/images/thumb-monitor-headphones.jpg", excerpt:"DTM・宅録・ミックスに使うモニターヘッドフォンの選び方を解説。リスニング用との違い、密閉型と開放型の使い分け、予算別おすすめ機種（ATH-M50x・MDR-7506・DT770 PRO等）を比較します。" }
     ]
   },
   "daw-software": {
     label: "DAW・ソフト",
     articles: [
-      { url:"/2026/05/11/daw-guide/", title:"DAWソフトの選び方2026 - 無料から有料まで初心者向け比較ガイド", img:"/assets/images/thumb-daw.png", excerpt:"音楽制作に使うDAWソフトの選び方を解説。GarageBand・Cubase・Ableton Live・Logic Proなど主要DAWを比較し、初心者におすすめの選び方を紹介します。" },
-      { url:"/2026/05/24/vst-plugin-guide/", title:"VST・AUプラグイン選び方【2026年版】初心者向け無料・有料おすすめ20選", img:"/assets/images/thumb-vst-plugin.png", excerpt:"VST・AUプラグインとは何かから、初心者が最初に揃えるべき無料・有料プラグインまで徹底解説。シンセ・エフェクト・サンプラーの種類別おすすめを紹介します。" }
+      { url:"/gear/daw-guide/", title:"DAWソフトの選び方2026 - 無料から有料まで初心者向け比較ガイド", img:"/assets/images/thumb-daw.png", excerpt:"音楽制作に使うDAWソフトの選び方を解説。GarageBand・Cubase・Ableton Live・Logic Proなど主要DAWを比較し、初心者におすすめの選び方を紹介します。" },
+      { url:"/production/vst-plugin-guide/", title:"VST・AUプラグイン選び方【2026年版】初心者向け無料・有料おすすめ20選", img:"/assets/images/thumb-vst-plugin.png", excerpt:"VST・AUプラグインとは何かから、初心者が最初に揃えるべき無料・有料プラグインまで徹底解説。シンセ・エフェクト・サンプラーの種類別おすすめを紹介します。" }
     ]
   },
   "mix-mastering": {
     label: "MIX・マスタリング",
     articles: [
-      { url:"/2026/05/11/effects-guide/", title:"コンプレッサー・リバーブ・ゲートの使い方 - 音楽制作エフェクター入門", img:"/assets/images/thumb-effects.png", excerpt:"音楽制作で欠かせないコンプレッサー・リバーブ・ゲートの基本的な使い方を解説。各エフェクターの役割とパラメーターを初心者向けにわかりやすく紹介します。" },
-      { url:"/2026/05/24/mixing-mastering-guide/", title:"MIX・マスタリング入門【2026年版】DAWで始める音楽制作の仕上げ工程", img:"/assets/images/thumb-mixing.jpg", excerpt:"MIX（ミキシング）とマスタリングの違いをわかりやすく解説。初心者が最初に覚えるべきEQ・コンプ・リバーブの基礎から、無料DAWで実践できる仕上げ手順まで丁寧に説明します。" }
+      { url:"/gear/effects-guide/", title:"コンプレッサー・リバーブ・ゲートの使い方 - 音楽制作エフェクター入門", img:"/assets/images/thumb-effects.png", excerpt:"音楽制作で欠かせないコンプレッサー・リバーブ・ゲートの基本的な使い方を解説。各エフェクターの役割とパラメーターを初心者向けにわかりやすく紹介します。" },
+      { url:"/production/mixing-mastering-guide/", title:"MIX・マスタリング入門【2026年版】DAWで始める音楽制作の仕上げ工程", img:"/assets/images/thumb-mixing.jpg", excerpt:"MIX（ミキシング）とマスタリングの違いをわかりやすく解説。初心者が最初に覚えるべきEQ・コンプ・リバーブの基礎から、無料DAWで実践できる仕上げ手順まで丁寧に説明します。" },
+      { url:"/gear/cable-guide/", title:"音楽制作ケーブル全種類ガイド【XLR・シールド・USB・Thunderbolt・INSERTの違いと高品位ケーブルの必要性】", img:"/assets/images/thumb-cable.png", excerpt:"音楽制作・宅録で使うケーブルの種類と用途を網羅解説。XLRケーブル・シールド・INSERTケーブル・スピーカーケーブル・USBケーブル・Thunderboltケーブルの違いと、高品位ケーブルを選ぶ基準を紹介します。" },
+      { url:"/gear/rack-case-guide/", title:"ラックケース・楽器ケース完全ガイド【ARMOR・DUPLEX・SKBの定番メーカー比較】", img:"/assets/images/thumb-rack-case.png", excerpt:"音楽機材の運搬・保護に使うラックケースと楽器ケースの選び方を解説。ARMOR・DUPLEX・SKBの定番3メーカーを比較し、運搬用フライトケースと据え置きラックの違いも詳しく紹介します。" }
     ]
   },
   "recording-techniques": {
     label: "録音テクニック",
     articles: [
-      { url:"/2026/05/24/soundproofing-home-studio-guide/", title:"宅録防音対策ガイド【2026年版】自宅スタジオの騒音・反響を解決する方法", img:"/assets/images/thumb-soundproofing.jpg", excerpt:"宅録・DTMでの防音に悩む方向けに、遮音・吸音・防振の違いから予算別DIY対策、おすすめ防音グッズまで徹底解説。集合住宅でも実践できる現実的な防音対策をまとめました。" },
-      { url:"/2026/05/24/vocal-recording-guide/", title:"ボーカル宅録ガイド【マイク選び・録音設定・歌ってみた機材セット完全解説】", img:"/assets/images/thumb-vocal-recording.png", excerpt:"自宅でボーカル録音を始める方法を徹底解説。マイクの選び方からオーディオIF・防音対策・DAWの録音設定まで、歌ってみた・宅録に必要なすべてをまとめました。" }
+      { url:"/production/soundproofing-home-studio-guide/", title:"宅録防音対策ガイド【2026年版】自宅スタジオの騒音・反響を解決する方法", img:"/assets/images/thumb-soundproofing.jpg", excerpt:"宅録・DTMでの防音に悩む方向けに、遮音・吸音・防振の違いから予算別DIY対策、おすすめ防音グッズまで徹底解説。集合住宅でも実践できる現実的な防音対策をまとめました。" },
+      { url:"/production/vocal-recording-guide/", title:"ボーカル宅録ガイド【マイク選び・録音設定・歌ってみた機材セット完全解説】", img:"/assets/images/thumb-vocal-recording.png", excerpt:"自宅でボーカル録音を始める方法を徹底解説。マイクの選び方からオーディオIF・防音対策・DAWの録音設定まで、歌ってみた・宅録に必要なすべてをまとめました。" }
     ]
   },
   "guitar-bass": {
     label: "ギター・ベース",
     articles: [
-      { url:"/2026/05/20/guitar-guide/", title:"エレキギター・アコースティックギター 初心者選び方ガイド【2026年版】", img:"/assets/images/thumb-guitar.png", excerpt:"ギターを始めたい初心者向けに、エレキとアコギの違いから予算別おすすめモデル、必要な周辺機器までを徹底解説。最初の1本の選び方を失敗なく決められます。" },
-      { url:"/2026/05/22/bass-guide/", title:"エレキベース 初心者 始め方ガイド【2026年版】選び方・機材・練習法", img:"/assets/images/thumb-bass.png", excerpt:"エレキベースを始めたい初心者向けに、ベースの選び方・予算別おすすめモデル・アンプなど必要機材・練習方法までを徹底解説。最初の1本を後悔なく選べます。" },
-      { url:"/2026/05/24/guitar-effects-guide/", title:"ギターエフェクター入門ガイド【歪み・空間系・マルチ 種類と選び方2026】", img:"/assets/images/thumb-guitar-effects.jpg", excerpt:"ギターエフェクターの種類と選び方を初心者向けに解説。歪み系（OverDrive/Distortion/Fuzz）・空間系（Reverb/Delay）・変調系（Chorus/Flanger）の違いと、コンパクト vs マルチエフェクターの比較を紹介します。" },
-      { url:"/2026/05/29/fender-jazz-bass-guide/", title:"Fender Jazz Bassの特徴・音・選び方ガイド【2026年版】ジャズベースを徹底解説", img:"/assets/images/thumb-jazz-bass.jpg", excerpt:"Fender Jazz Bassの特徴・音の傾向・Precision Bassとの違い・Playerシリーズの選び方を解説。ジャズ・フュージョン・ファンク・ロックを弾くベーシスト必見。" },
-      { url:"/2026/05/29/fender-precision-bass-guide/", title:"Fender Precision Bassの特徴・音・選び方ガイド【2026年版】プレシジョンベースを徹底解説", img:"/assets/images/thumb-precision-bass.jpg", excerpt:"Fender Precision Bassの特徴・音の傾向・Jazz Bassとの違い・Playerシリーズの選び方を解説。ロック・ポップ・オルタナを支えるベーシスト必見。" },
-      { url:"/2026/05/29/fender-stratocaster-guide/", title:"Fender Stratocasterの特徴・音・選び方ガイド【2026年版】ストラトキャスターを徹底解説", img:"/assets/images/thumb-stratocaster.jpg", excerpt:"Fender Stratocasterの特徴・ピックアップ構成・テレキャスターとの違い・Playerシリーズの選び方をわかりやすく解説。ロック・ブルース・ファンクを弾きたいギタリスト必見。" },
-      { url:"/2026/05/29/fender-telecaster-guide/", title:"Fender Telecasterの特徴・音・選び方ガイド【2026年版】テレキャスターを徹底解説", img:"/assets/images/thumb-telecaster.jpg", excerpt:"Fender Telecasterの特徴・音の傾向・Stratocasterとの違い・Playerシリーズの選び方を解説。カントリー・ロックンロール・オルタナを弾きたいギタリスト必見。" },
-      { url:"/2026/05/29/gibson-les-paul-custom-guide/", title:"Gibson Les Paul Customの特徴・音・選び方ガイド【2026年版】レスポールの最高峰", img:"/assets/images/thumb-les-paul-custom.jpg", excerpt:"Gibson Les Paul Customの特徴・音の傾向・スタンダードとの違い・おすすめの購入方法を解説。クラシックロック・ジャズ・ファットなリードトーンを求めるギタリスト必見。" },
-      { url:"/2026/05/29/fender-jazzmaster-guide/", title:"Fender Jazzmasterの特徴・音・選び方ガイド【2026年版】ジャズマスターを徹底解説", img:"/assets/images/thumb-jazzmaster.jpg", excerpt:"Fender Jazzmasterの特徴・ピックアップ構成・Jaguarとの違い・Playerシリーズの選び方を解説。オルタナ・シューゲイザー・インディーロックを弾くギタリスト必見。" },
-      { url:"/2026/05/29/fender-jaguar-guide/", title:"Fender Jaguarの特徴・音・選び方ガイド【2026年版】ジャガーを徹底解説", img:"/assets/images/thumb-jaguar.jpg", excerpt:"Fender Jaguarの特徴・短いスケール・Jazzmasterとの違い・Playerシリーズの選び方を解説。サーフ・ガレージロック・パンクを弾くギタリスト必見。" },
-      { url:"/2026/05/29/musicman-stingray-bass-guide/", title:"Music Man StingRay Bassの特徴・音・選び方ガイド【2026年版】スティングレイを徹底解説", img:"/assets/images/thumb-stingray-bass.jpg", excerpt:"Music Man StingRay Bassの特徴・アクティブサウンド・Fenderベースとの違い・選び方を解説。スラップ・ファンク・ロックを弾くベーシスト必見。" },
-      { url:"/2026/05/29/guitar-bass-pickup-guide/", title:"ギター・ベースのピックアップ入門ガイド【2026年版】パッシブ/アクティブ/種類と選び方", img:"/assets/images/thumb-pickup-guide.jpg", excerpt:"ギター・ベースのピックアップの種類（シングル/ハムバッカー/スプリットコイル）とパッシブ/アクティブの違いを初心者にわかりやすく解説。交換・改造を考えている方にも役立つ基礎知識。" }
+      { url:"/instrument/guitar-guide/", title:"エレキギター・アコースティックギター 初心者選び方ガイド【2026年版】", img:"/assets/images/thumb-guitar.png", excerpt:"ギターを始めたい初心者向けに、エレキとアコギの違いから予算別おすすめモデル、必要な周辺機器までを徹底解説。最初の1本の選び方を失敗なく決められます。" },
+      { url:"/instrument/bass-guide/", title:"エレキベース 初心者 始め方ガイド【2026年版】選び方・機材・練習法", img:"/assets/images/thumb-bass.png", excerpt:"エレキベースを始めたい初心者向けに、ベースの選び方・予算別おすすめモデル・アンプなど必要機材・練習方法までを徹底解説。最初の1本を後悔なく選べます。" },
+      { url:"/instrument/guitar-effects-guide/", title:"ギターエフェクター入門ガイド【歪み・空間系・マルチ 種類と選び方2026】", img:"/assets/images/thumb-guitar-effects.jpg", excerpt:"ギターエフェクターの種類と選び方を初心者向けに解説。歪み系（OverDrive/Distortion/Fuzz）・空間系（Reverb/Delay）・変調系（Chorus/Flanger）の違いと、コンパクト vs マルチエフェクターの比較を紹介します。" },
+      { url:"/instrument/fender-jazz-bass-guide/", title:"Fender Jazz Bassの特徴・音・選び方ガイド【2026年版】ジャズベースを徹底解説", img:"/assets/images/thumb-jazz-bass.jpg", excerpt:"Fender Jazz Bassの特徴・音の傾向・Precision Bassとの違い・Playerシリーズの選び方を解説。ジャズ・フュージョン・ファンク・ロックを弾くベーシスト必見。" },
+      { url:"/instrument/fender-precision-bass-guide/", title:"Fender Precision Bassの特徴・音・選び方ガイド【2026年版】プレシジョンベースを徹底解説", img:"/assets/images/thumb-precision-bass.jpg", excerpt:"Fender Precision Bassの特徴・音の傾向・Jazz Bassとの違い・Playerシリーズの選び方を解説。ロック・ポップ・オルタナを支えるベーシスト必見。" },
+      { url:"/instrument/fender-stratocaster-guide/", title:"Fender Stratocasterの特徴・音・選び方ガイド【2026年版】ストラトキャスターを徹底解説", img:"/assets/images/thumb-stratocaster.jpg", excerpt:"Fender Stratocasterの特徴・ピックアップ構成・テレキャスターとの違い・Playerシリーズの選び方をわかりやすく解説。ロック・ブルース・ファンクを弾きたいギタリスト必見。" },
+      { url:"/instrument/fender-telecaster-guide/", title:"Fender Telecasterの特徴・音・選び方ガイド【2026年版】テレキャスターを徹底解説", img:"/assets/images/thumb-telecaster.jpg", excerpt:"Fender Telecasterの特徴・音の傾向・Stratocasterとの違い・Playerシリーズの選び方を解説。カントリー・ロックンロール・オルタナを弾きたいギタリスト必見。" },
+      { url:"/instrument/gibson-les-paul-custom-guide/", title:"Gibson Les Paul Customの特徴・音・選び方ガイド【2026年版】レスポールの最高峰", img:"/assets/images/thumb-les-paul-custom.jpg", excerpt:"Gibson Les Paul Customの特徴・音の傾向・スタンダードとの違い・おすすめの購入方法を解説。クラシックロック・ジャズ・ファットなリードトーンを求めるギタリスト必見。" },
+      { url:"/instrument/fender-jazzmaster-guide/", title:"Fender Jazzmasterの特徴・音・選び方ガイド【2026年版】ジャズマスターを徹底解説", img:"/assets/images/thumb-jazzmaster.jpg", excerpt:"Fender Jazzmasterの特徴・ピックアップ構成・Jaguarとの違い・Playerシリーズの選び方を解説。オルタナ・シューゲイザー・インディーロックを弾くギタリスト必見。" },
+      { url:"/instrument/fender-jaguar-guide/", title:"Fender Jaguarの特徴・音・選び方ガイド【2026年版】ジャガーを徹底解説", img:"/assets/images/thumb-jaguar.jpg", excerpt:"Fender Jaguarの特徴・短いスケール・Jazzmasterとの違い・Playerシリーズの選び方を解説。サーフ・ガレージロック・パンクを弾くギタリスト必見。" },
+      { url:"/instrument/musicman-stingray-bass-guide/", title:"Music Man StingRay Bassの特徴・音・選び方ガイド【2026年版】スティングレイを徹底解説", img:"/assets/images/thumb-stingray-bass.jpg", excerpt:"Music Man StingRay Bassの特徴・アクティブサウンド・Fenderベースとの違い・選び方を解説。スラップ・ファンク・ロックを弾くベーシスト必見。" },
+      { url:"/instrument/guitar-bass-pickup-guide/", title:"ギター・ベースのピックアップ入門ガイド【2026年版】パッシブ/アクティブ/種類と選び方", img:"/assets/images/thumb-pickup-guide.jpg", excerpt:"ギター・ベースのピックアップの種類（シングル/ハムバッカー/スプリットコイル）とパッシブ/アクティブの違いを初心者にわかりやすく解説。交換・改造を考えている方にも役立つ基礎知識。" }
     ]
   },
   "drums": {
     label: "ドラム・打楽器",
     articles: [
-      { url:"/2026/05/22/drum-guide/", title:"電子ドラム 初心者 始め方ガイド【2026年版】選び方・機材・練習法", img:"/assets/images/thumb-drum.png", excerpt:"電子ドラムを始めたい初心者向けに、アコースティックと電子の違い・予算別おすすめモデル・練習方法までを徹底解説。自宅でも始められる一台の選び方がわかります。" }
+      { url:"/instrument/drum-guide/", title:"電子ドラム 初心者 始め方ガイド【2026年版】選び方・機材・練習法", img:"/assets/images/thumb-drum.png", excerpt:"電子ドラムを始めたい初心者向けに、アコースティックと電子の違い・予算別おすすめモデル・練習方法までを徹底解説。自宅でも始められる一台の選び方がわかります。" }
     ]
   },
   "keyboard-piano": {
     label: "キーボード・ピアノ",
     articles: [
-      { url:"/2026/05/12/midi-keyboard-guide/", title:"MIDIキーボード初心者おすすめ5選【鍵盤数・機能別ガイド2026年版】", img:"/assets/images/thumb-midi-keyboard.png", excerpt:"MIDIキーボードの選び方を鍵盤数・機能別に解説。AKAI・Roland・Arturia・Nektar など主要モデルを比較し、DTM初心者が最初に選ぶべき1台を紹介します。" },
-      { url:"/2026/05/24/digital-piano-guide/", title:"デジタルピアノ・電子キーボード 初心者 始め方ガイド【2026年版】選び方・機材・練習法", img:"/assets/images/thumb-digital-piano.jpg", excerpt:"デジタルピアノ・電子キーボードを始めたい初心者向けに、違いの解説・予算別おすすめモデル・必要機材・練習方法までを徹底解説。自宅でピアノを始めるための完全ガイドです。" }
+      { url:"/gear/midi-keyboard-guide/", title:"MIDIキーボード初心者おすすめ5選【鍵盤数・機能別ガイド2026年版】", img:"/assets/images/thumb-midi-keyboard.png", excerpt:"MIDIキーボードの選び方を鍵盤数・機能別に解説。AKAI・Roland・Arturia・Nektar など主要モデルを比較し、DTM初心者が最初に選ぶべき1台を紹介します。" },
+      { url:"/instrument/digital-piano-guide/", title:"デジタルピアノ・電子キーボード 初心者 始め方ガイド【2026年版】選び方・機材・練習法", img:"/assets/images/thumb-digital-piano.jpg", excerpt:"デジタルピアノ・電子キーボードを始めたい初心者向けに、違いの解説・予算別おすすめモデル・必要機材・練習方法までを徹底解説。自宅でピアノを始めるための完全ガイドです。" }
     ]
   },
   "music-production": {
     label: "音楽制作入門",
         articles: [
-      { url:"/2026/05/11/music-production-basics/", title:"音楽制作を始める前に揃えるべき機材・環境【初心者ガイド2026】", img:"/assets/images/thumb-basics.png", date:"2026-05-11", desc:"音楽制作を始めたい初心者向けに、必要な機材・ソフトウェア・環境を解説。" },
-      { url:"/2026/05/11/microphone-guide/", title:"マイク選び方ガイド【ダイナミック vs コンデンサー 2026年版】", img:"/assets/images/thumb-microphone.png", date:"2026-05-11", desc:"ダイナミックマイクとコンデンサーマイクの違いと選び方を解説。" },
-      { url:"/2026/05/12/audio-interface-guide/", title:"オーディオインターフェース選び方ガイド【2026年版】", img:"/assets/images/thumb-audio-interface.png", date:"2026-05-12", desc:"宅録・DTMに必要なオーディオIFの選び方を初心者向けに解説。" },
-      { url:"/2026/05/11/mixer-guide/", title:"ミキサー選び方ガイド【2026年版】アナログ・デジタル比較", img:"/assets/images/thumb-mixer.png", date:"2026-05-11", desc:"ミキサーの種類と選び方をわかりやすく解説。" },
-      { url:"/2026/05/11/effects-guide/", title:"コンプ・リバーブ・ゲート エフェクター入門ガイド【2026年版】", img:"/assets/images/thumb-effects.png", date:"2026-05-11", desc:"コンプレッサー・リバーブ・ゲートなど定番エフェクターの基礎を解説。" },
-      { url:"/2026/05/11/daw-guide/", title:"DAWソフト選び方ガイド【2026年版】初心者向け比較", img:"/assets/images/thumb-daw.png", date:"2026-05-11", desc:"Logic Pro・Ableton・Studio Oneなど主要DAWの比較と選び方。" },
-      { url:"/2026/05/12/headphone-guide/", title:"モニターヘッドフォン選び方ガイド【2026年版】", img:"/assets/images/thumb-headphone.png", date:"2026-05-12", desc:"宅録・DTMに最適なモニターヘッドフォンの選び方を解説。" },
-      { url:"/2026/05/12/midi-keyboard-guide/", title:"MIDIキーボード選び方ガイド【2026年版】", img:"/assets/images/thumb-midi-keyboard.png", date:"2026-05-12", desc:"DTM・宅録に最適なMIDIキーボードの選び方と比較。" },
-      { url:"/2026/05/12/studio-monitor-guide/", title:"モニタースピーカー選び方ガイド【2026年版】", img:"/assets/images/thumb-studio-monitor.png", date:"2026-05-12", desc:"DTM・宅録用モニタースピーカーの選び方を解説。" },
-      { url:"/2026/05/12/budget-setup-guide/", title:"宅録スターターセット【2026年版】予算別おすすめ機材構成", img:"/assets/images/thumb-budget.png", date:"2026-05-12", desc:"2万円・5万円・10万円別の宅録スターターセットを解説。" },
+      { url:"/gear/music-production-basics/", title:"音楽制作を始める前に揃えるべき機材・環境【初心者ガイド2026】", img:"/assets/images/thumb-basics.png", date:"2026-05-11", desc:"音楽制作を始めたい初心者向けに、必要な機材・ソフトウェア・環境を解説。" },
+      { url:"/gear/microphone-guide/", title:"マイク選び方ガイド【ダイナミック vs コンデンサー 2026年版】", img:"/assets/images/thumb-microphone.png", date:"2026-05-11", desc:"ダイナミックマイクとコンデンサーマイクの違いと選び方を解説。" },
+      { url:"/gear/effects-guide/", title:"コンプ・リバーブ・ゲート エフェクター入門ガイド【2026年版】", img:"/assets/images/thumb-effects.png", date:"2026-05-11", desc:"コンプレッサー・リバーブ・ゲートなど定番エフェクターの基礎を解説。" },
+      { url:"/gear/daw-guide/", title:"DAWソフト選び方ガイド【2026年版】初心者向け比較", img:"/assets/images/thumb-daw.png", date:"2026-05-11", desc:"Logic Pro・Ableton・Studio Oneなど主要DAWの比較と選び方。" },
+      { url:"/gear/headphone-guide/", title:"モニターヘッドフォン選び方ガイド【2026年版】", img:"/assets/images/thumb-headphone.png", date:"2026-05-12", desc:"宅録・DTMに最適なモニターヘッドフォンの選び方を解説。" },
+      { url:"/gear/midi-keyboard-guide/", title:"MIDIキーボード選び方ガイド【2026年版】", img:"/assets/images/thumb-midi-keyboard.png", date:"2026-05-12", desc:"DTM・宅録に最適なMIDIキーボードの選び方と比較。" },
+      { url:"/gear/studio-monitor-guide/", title:"モニタースピーカー選び方ガイド【2026年版】", img:"/assets/images/thumb-studio-monitor.png", date:"2026-05-12", desc:"DTM・宅録用モニタースピーカーの選び方を解説。" },
+      { url:"/gear/budget-setup-guide/", title:"宅録スターターセット【2026年版】予算別おすすめ機材構成", img:"/assets/images/thumb-budget.png", date:"2026-05-12", desc:"2万円・5万円・10万円別の宅録スターターセットを解説。" },
     ]
   },
   "music-history": {
     label: "日本音楽史シリーズ",
     articles: [
-      { url:"/2026/05/30/japan-music-01-gs-boom/", title:"グループサウンズ革命【1960年代】エレキギターが日本を変えた日", img:"/assets/images/thumb-gs-boom.jpg", excerpt:"1960年代、ベンチャーズ来日をきっかけに爆発したグループサウンズブーム。日本にエレキギター文化を根付かせたムーブメントの全貌と、現代で同じサウンドを再現する方法を解説。" },
-      { url:"/2026/05/30/japan-music-02-folk-new-music/", title:"フォーク・ニューミュージックの誕生【1970年代】拓郎・陽水・ユーミンが変えた日本の音楽", img:"/assets/images/thumb-folk-new-music.jpg", excerpt:"1970年代、吉田拓郎・井上陽水・荒井由実が牽引したフォーク・ニューミュージック。アコギ一本で社会を歌い、マルチトラック録音が日本の音楽制作を変えた時代の記録。" },
-      { url:"/2026/05/30/japan-music-03-idol-candies-era/", title:"キャンディーズ・ピンクレディーと歌謡曲黄金期【1970年代中期】アイドルが生んだ職人サウンド", img:"/assets/images/thumb-idol-candies.jpg", excerpt:"1970年代中期、キャンディーズ・ピンクレディーが席巻した歌謡曲黄金期。阿久悠・都倉俊一らの職人が作り上げたサウンドの秘密と、現代DTMでの再現テクニックを解説。" },
-      { url:"/2026/05/30/japan-music-04-foreign-influence/", title:"ゴダイゴとフュージョン時代【1970年代後期】バークリー世代が変えた日本の音楽水準", img:"/assets/images/thumb-godiego-fusion.jpg", excerpt:"ゴダイゴ・カシオペア・T-SQUAREが牽引した1970年代後期〜80年代のフュージョンブーム。バークリー音大帰りのミュージシャンが持ち込んだ高度な音楽理論と機材、現代のソフトシンセで再現する方法。" },
-      { url:"/2026/05/30/japan-music-05-ymo-techno/", title:"YMOとテクノポップ革命【1978〜1983年】シンセとシーケンサーが世界を変えた", img:"/assets/images/thumb-ymo-techno.jpg", excerpt:"Yellow Magic Orchestra（YMO）が世界に放ったテクノポップ革命。TR-808・MC-8・Moogが生み出した未来の音と、現代のDAW・ソフトシンセでYMOサウンドを再現する完全ガイド。" },
-      { url:"/2026/05/30/japan-music-06-80s-idol-production/", title:"80年代アイドル黄金期の音楽制作【1980〜1988年】松田聖子・中森明菜を支えた職人サウンド", img:"/assets/images/thumb-80s-idol.jpg", excerpt:"松田聖子・中森明菜・少年隊が輝いた80年代アイドル黄金期。大村雅朗・松任谷正隆ら編曲家が作り上げた「バブル前夜のサウンド」の秘密と、現代DAWでの再現テクニックを完全解説。" },
-      { url:"/2026/05/30/japan-music-07-80s-commercial/", title:"1980年代半ばの商業音楽【1984〜1987年】バブル前夜に花開いたJ-POP黄金期", img:"/assets/images/thumb-80s-commercial.jpg", excerpt:"TM NETWORK・渡辺美里・角松敏生が活躍したバブル前夜の商業音楽最盛期。シンセポップとバンドサウンドが融合したJ-POPの黄金期と、現代DTMでの再現テクニックを解説。" },
-      { url:"/2026/05/30/japan-music-08-band-boom/", title:"バンドブーム第一波【1980年代後半】BOØWY・バクチク・イカ天世代が切り開いた日本のロック", img:"/assets/images/thumb-band-boom.jpg", excerpt:"1987〜1990年、BOØWY・BUCK-TICK・THE BLUE HEARTSが牽引した空前のバンドブーム。イカ天・ホコ天が生んだDIYロック精神と、当時の機材・現代エフェクターで同じサウンドを出す方法を解説。" },
-      { url:"/2026/05/30/japan-music-09-fusion-jazz/", title:"カシオペア vs T-SQUARE【1980年代フュージョン】バークリー世代が極めた日本発インストゥルメンタル", img:"/assets/images/thumb-godiego.jpg", excerpt:"カシオペア・T-SQUAREが牽引した日本フュージョン黄金期。T-SQUAREのTRUTHがF1テーマに採用され世界で知られた、テクニカルインストゥルメンタルの歴史を解説。" },
-      { url:"/2026/05/30/japan-music-10-visual-kei/", title:"ヴィジュアル系とハードロック化【1990年代】X JAPAN・hide・GLAYが世界に証明したこと", img:"/assets/images/thumb-visual-kei.jpg", excerpt:"X JAPAN・hide・GLAY・L'Arc-en-Cielが牽引した1990年代ヴィジュアル系ムーブメント。日本独自のロック美学とハードロック技術の融合、当時の機材とアンプセッティングを現代で再現する方法。" },
-      { url:"/2026/05/30/japan-music-11-komuro-jpop/", title:"小室サウンドとJ-POP量産時代【1993〜1999年】TK・avexが変えた日本の音楽産業", img:"/assets/images/thumb-komuro-jpop.jpg", excerpt:"小室哲哉・avexが牽引した1990年代J-POPの黄金期。TRF・globe・安室奈美恵・SPEEDを生んだ「打ち込みポップス」の制作手法と、現代DTMで小室サウンドを再現する完全ガイド。" },
-      { url:"/2026/05/30/japan-music-12-shibuya-kei/", title:"渋谷系・J-R&Bの時代【1993〜2000年】フリッパーズ・ギターから宇多田ヒカルまで", img:"/assets/images/thumb-shibuya-kei.jpg", excerpt:"フリッパーズ・ギター・ピチカート・ファイヴ・小沢健二から宇多田ヒカルへ。渋谷が音楽の聖地だった時代と、渋谷系サウンドの制作テクニックを解説。" },
-      { url:"/2026/05/30/japan-music-13-hiphop-rb/", title:"ヒップホップ・R&Bブームの台頭【2000年代】m-flo・SOUL'd OUTが拓いた日本語ラップの世界", img:"/assets/images/thumb-hiphop-rb.jpg", excerpt:"m-flo・SOUL'd OUT・BENNIE Kが牽引した2000年代の日本語ヒップホップ・R&Bブーム。サンプリング文化とビートメイキングの手法、現代のDAWで同じサウンドを作る完全ガイド。" },
-      { url:"/2026/05/30/japan-music-14-2000s-idol/", title:"2000年代アイドル・着うた時代【2003〜2012年】AKB48とモバイル音楽革命", img:"/assets/images/thumb-2000s-idol.jpg", excerpt:"モーニング娘。からAKB48へ。着うた市場がCDを逆転した2000年代の音楽ビジネス大転換と、アイドルサウンドの制作手法を解説。" },
-      { url:"/2026/05/30/japan-music-15-vocaloid-dtm/", title:"ボカロ革命とDTM民主化【2007年〜】初音ミクが変えた音楽制作の常識", img:"/assets/images/thumb-vocaloid-dtm.jpg", excerpt:"2007年の初音ミク登場からニコニコ動画・YouTube・Spotifyへ。ボカロPたちが切り開いたDTM民主化の歴史と、今から音楽制作を始めるための完全スタートガイド。" },
-      { url:"/2026/05/30/japan-music-16-2010s-band/", title:"2010年代バンドリバイバル・インディーズ台頭【2010〜2019年】RADWIMPS・星野源・ゲスの極み乙女。", img:"/assets/images/thumb-2010s-band.jpg", excerpt:"RADWIMPS・星野源・ゲスの極み乙女・米津玄師が活躍した2010年代。サブスク普及前夜のインディーズシーンと、バンドサウンド制作の現代的アプローチを解説。" },
-      { url:"/2026/05/30/japan-music-17-city-pop-revival/", title:"シティポップ・リバイバル現象【2020年代】世界が再発見した日本の「失われた音楽」", img:"/assets/images/thumb-city-pop-revival.jpg", excerpt:"山下達郎・竹内まりや・大貫妙子が世界で再評価されたシティポップリバイバル現象。YouTubeアルゴリズムが発掘した80年代の名盤と、現代で「シティポップ風サウンド」を作るDTGガイド。" },
-      { url:"/2026/05/30/japan-music-18-modern-scene/", title:"現代の日本音楽シーン【2020年代】Vtuber・サブスク・AI音楽が変えた音楽の作り方", img:"/assets/images/thumb-modern-scene.jpg", excerpt:"Vtuber・サブスク・AI音楽が共存する2020年代の日本音楽シーン。米津玄師からYOASOBIまで、現代の音楽制作の潮流と、今から音楽で収益を得るためのロードマップを解説。" }
+      { url:"/history/japan-music-01-gs-boom/", title:"グループサウンズ革命【1960年代】エレキギターが日本を変えた日", img:"/assets/images/thumb-gs-boom.jpg", excerpt:"1960年代、ベンチャーズ来日をきっかけに爆発したグループサウンズブーム。日本にエレキギター文化を根付かせたムーブメントの全貌と、現代で同じサウンドを再現する方法を解説。" },
+      { url:"/history/japan-music-02-folk-new-music/", title:"フォーク・ニューミュージックの誕生【1970年代】拓郎・陽水・ユーミンが変えた日本の音楽", img:"/assets/images/thumb-folk-new-music.jpg", excerpt:"1970年代、吉田拓郎・井上陽水・荒井由実が牽引したフォーク・ニューミュージック。アコギ一本で社会を歌い、マルチトラック録音が日本の音楽制作を変えた時代の記録。" },
+      { url:"/history/japan-music-03-idol-candies-era/", title:"キャンディーズ・ピンクレディーと歌謡曲黄金期【1970年代中期】アイドルが生んだ職人サウンド", img:"/assets/images/thumb-idol-candies.jpg", excerpt:"1970年代中期、キャンディーズ・ピンクレディーが席巻した歌謡曲黄金期。阿久悠・都倉俊一らの職人が作り上げたサウンドの秘密と、現代DTMでの再現テクニックを解説。" },
+      { url:"/history/japan-music-04-foreign-influence/", title:"ゴダイゴとフュージョン時代【1970年代後期】バークリー世代が変えた日本の音楽水準", img:"/assets/images/thumb-godiego-fusion.jpg", excerpt:"ゴダイゴ・カシオペア・T-SQUAREが牽引した1970年代後期〜80年代のフュージョンブーム。バークリー音大帰りのミュージシャンが持ち込んだ高度な音楽理論と機材、現代のソフトシンセで再現する方法。" },
+      { url:"/history/japan-music-05-ymo-techno/", title:"YMOとテクノポップ革命【1978〜1983年】シンセとシーケンサーが世界を変えた", img:"/assets/images/thumb-ymo-techno.jpg", excerpt:"Yellow Magic Orchestra（YMO）が世界に放ったテクノポップ革命。TR-808・MC-8・Moogが生み出した未来の音と、現代のDAW・ソフトシンセでYMOサウンドを再現する完全ガイド。" },
+      { url:"/history/japan-music-06-80s-idol-production/", title:"80年代アイドル黄金期の音楽制作【1980〜1988年】松田聖子・中森明菜を支えた職人サウンド", img:"/assets/images/thumb-80s-idol.jpg", excerpt:"松田聖子・中森明菜・少年隊が輝いた80年代アイドル黄金期。大村雅朗・松任谷正隆ら編曲家が作り上げた「バブル前夜のサウンド」の秘密と、現代DAWでの再現テクニックを完全解説。" },
+      { url:"/history/japan-music-07-80s-commercial/", title:"1980年代半ばの商業音楽【1984〜1987年】バブル前夜に花開いたJ-POP黄金期", img:"/assets/images/thumb-80s-commercial.jpg", excerpt:"TM NETWORK・渡辺美里・角松敏生が活躍したバブル前夜の商業音楽最盛期。シンセポップとバンドサウンドが融合したJ-POPの黄金期と、現代DTMでの再現テクニックを解説。" },
+      { url:"/history/japan-music-08-band-boom/", title:"バンドブーム第一波【1980年代後半】BOØWY・バクチク・イカ天世代が切り開いた日本のロック", img:"/assets/images/thumb-band-boom.jpg", excerpt:"1987〜1990年、BOØWY・BUCK-TICK・THE BLUE HEARTSが牽引した空前のバンドブーム。イカ天・ホコ天が生んだDIYロック精神と、当時の機材・現代エフェクターで同じサウンドを出す方法を解説。" },
+      { url:"/history/japan-music-09-fusion-jazz/", title:"カシオペア vs T-SQUARE【1980年代フュージョン】バークリー世代が極めた日本発インストゥルメンタル", img:"/assets/images/thumb-godiego.jpg", excerpt:"カシオペア・T-SQUAREが牽引した日本フュージョン黄金期。T-SQUAREのTRUTHがF1テーマに採用され世界で知られた、テクニカルインストゥルメンタルの歴史を解説。" },
+      { url:"/history/japan-music-10-visual-kei/", title:"ヴィジュアル系とハードロック化【1990年代】X JAPAN・hide・GLAYが世界に証明したこと", img:"/assets/images/thumb-visual-kei.jpg", excerpt:"X JAPAN・hide・GLAY・L'Arc-en-Cielが牽引した1990年代ヴィジュアル系ムーブメント。日本独自のロック美学とハードロック技術の融合、当時の機材とアンプセッティングを現代で再現する方法。" },
+      { url:"/history/japan-music-11-komuro-jpop/", title:"小室サウンドとJ-POP量産時代【1993〜1999年】TK・avexが変えた日本の音楽産業", img:"/assets/images/thumb-komuro-jpop.jpg", excerpt:"小室哲哉・avexが牽引した1990年代J-POPの黄金期。TRF・globe・安室奈美恵・SPEEDを生んだ「打ち込みポップス」の制作手法と、現代DTMで小室サウンドを再現する完全ガイド。" },
+      { url:"/history/japan-music-12-shibuya-kei/", title:"渋谷系・J-R&Bの時代【1993〜2000年】フリッパーズ・ギターから宇多田ヒカルまで", img:"/assets/images/thumb-shibuya-kei.jpg", excerpt:"フリッパーズ・ギター・ピチカート・ファイヴ・小沢健二から宇多田ヒカルへ。渋谷が音楽の聖地だった時代と、渋谷系サウンドの制作テクニックを解説。" },
+      { url:"/history/japan-music-13-hiphop-rb/", title:"ヒップホップ・R&Bブームの台頭【2000年代】m-flo・SOUL'd OUTが拓いた日本語ラップの世界", img:"/assets/images/thumb-hiphop-rb.jpg", excerpt:"m-flo・SOUL'd OUT・BENNIE Kが牽引した2000年代の日本語ヒップホップ・R&Bブーム。サンプリング文化とビートメイキングの手法、現代のDAWで同じサウンドを作る完全ガイド。" },
+      { url:"/history/japan-music-14-2000s-idol/", title:"2000年代アイドル・着うた時代【2003〜2012年】AKB48とモバイル音楽革命", img:"/assets/images/thumb-2000s-idol.jpg", excerpt:"モーニング娘。からAKB48へ。着うた市場がCDを逆転した2000年代の音楽ビジネス大転換と、アイドルサウンドの制作手法を解説。" },
+      { url:"/history/japan-music-15-vocaloid-dtm/", title:"ボカロ革命とDTM民主化【2007年〜】初音ミクが変えた音楽制作の常識", img:"/assets/images/thumb-vocaloid-dtm.jpg", excerpt:"2007年の初音ミク登場からニコニコ動画・YouTube・Spotifyへ。ボカロPたちが切り開いたDTM民主化の歴史と、今から音楽制作を始めるための完全スタートガイド。" },
+      { url:"/history/japan-music-16-2010s-band/", title:"2010年代バンドリバイバル・インディーズ台頭【2010〜2019年】RADWIMPS・星野源・ゲスの極み乙女。", img:"/assets/images/thumb-2010s-band.jpg", excerpt:"RADWIMPS・星野源・ゲスの極み乙女・米津玄師が活躍した2010年代。サブスク普及前夜のインディーズシーンと、バンドサウンド制作の現代的アプローチを解説。" },
+      { url:"/history/japan-music-17-city-pop-revival/", title:"シティポップ・リバイバル現象【2020年代】世界が再発見した日本の「失われた音楽」", img:"/assets/images/thumb-city-pop-revival.jpg", excerpt:"山下達郎・竹内まりや・大貫妙子が世界で再評価されたシティポップリバイバル現象。YouTubeアルゴリズムが発掘した80年代の名盤と、現代で「シティポップ風サウンド」を作るDTGガイド。" },
+      { url:"/history/japan-music-18-modern-scene/", title:"現代の日本音楽シーン【2020年代】Vtuber・サブスク・AI音楽が変えた音楽の作り方", img:"/assets/images/thumb-modern-scene.jpg", excerpt:"Vtuber・サブスク・AI音楽が共存する2020年代の日本音楽シーン。米津玄師からYOASOBIまで、現代の音楽制作の潮流と、今から音楽で収益を得るためのロードマップを解説。" }
     ]
   },
   "ai-music": {
     label: "AI音楽・収益化シリーズ",
     articles: [
-      { url:"/2026/05/24/suno-ai-music-guide/", title:"Suno AI音楽生成 使い方ガイド【2026年版】初心者でも1分でプロ品質の楽曲を作る方法", img:"/assets/images/thumb-suno-ai.png", excerpt:"Suno AIで音楽を生成する方法を初心者向けに解説。無料プランの使い方・プロンプトの書き方・生成曲の活用法・有料プランの判断基準まで徹底的に説明します。" },
-      { url:"/2026/05/24/audiostock-guide/", title:"AudioStock 楽曲販売ガイド【2026年版】登録方法・審査基準・収益の仕組みを解説", img:"/assets/images/thumb-audiostock.png", excerpt:"AudioStockで楽曲を販売する方法を徹底解説。登録手順・審査基準・価格設定・収益の仕組みから、審査通過のコツまで初心者クリエイター向けにわかりやすく説明します。" },
-      { url:"/2026/05/24/beatstars-guide/", title:"BeatStars ビート販売ガイド【2026年版】登録方法・価格設定・収益の仕組みを解説", img:"/assets/images/thumb-beatstars.png", excerpt:"BeatStarsでビートを販売する方法を徹底解説。アカウント登録・ライセンス設定・価格戦略・プロへの売り込み方まで、初心者ビートメイカー向けにわかりやすく説明します。" },
-      { url:"/2026/05/24/music-copyright-basics/", title:"音楽著作権の基礎知識【2026年版】DTMクリエイターが知るべき権利と注意点", img:"/assets/images/thumb-copyright.png", excerpt:"DTMクリエイターが知っておくべき音楽著作権の基礎を解説。著作権の種類・JASRACの仕組み・サンプリングのルール・AI音楽の権利問題まで実務的に説明します。" }
+      { url:"/production/suno-ai-music-guide/", title:"Suno AI音楽生成 使い方ガイド【2026年版】初心者でも1分でプロ品質の楽曲を作る方法", img:"/assets/images/thumb-suno-ai.png", excerpt:"Suno AIで音楽を生成する方法を初心者向けに解説。無料プランの使い方・プロンプトの書き方・生成曲の活用法・有料プランの判断基準まで徹底的に説明します。" },
+      { url:"/production/higgsfield-mcp-music-video-guide/", title:"Higgsfield MCP × Claude CodeでAIミュージックビデオを作る方法【2026年版】入門者でも完結するAI動画制作ガイド", img:"/assets/images/thumb-higgsfield-mcp-music-video.jpg", excerpt:"Higgsfield MCPをClaude Codeに接続してAIミュージックビデオを作る方法を解説。Suno AIで楽曲を作り、Kling・Veo・Seedanceで映像を生成、CapCutで仕上げるフルワークフローを入門者向けに紹介します。" },
+      { url:"/learn/audiostock-guide/", title:"AudioStock 楽曲販売ガイド【2026年版】登録方法・審査基準・収益の仕組みを解説", img:"/assets/images/thumb-audiostock.png", excerpt:"AudioStockで楽曲を販売する方法を徹底解説。登録手順・審査基準・価格設定・収益の仕組みから、審査通過のコツまで初心者クリエイター向けにわかりやすく説明します。" },
+      { url:"/learn/beatstars-guide/", title:"BeatStars ビート販売ガイド【2026年版】登録方法・価格設定・収益の仕組みを解説", img:"/assets/images/thumb-beatstars.png", excerpt:"BeatStarsでビートを販売する方法を徹底解説。アカウント登録・ライセンス設定・価格戦略・プロへの売り込み方まで、初心者ビートメイカー向けにわかりやすく説明します。" },
+      { url:"/learn/music-copyright-basics/", title:"音楽著作権の基礎知識【2026年版】DTMクリエイターが知るべき権利と注意点", img:"/assets/images/thumb-copyright.png", excerpt:"DTMクリエイターが知っておくべき音楽著作権の基礎を解説。著作権の種類・JASRACの仕組み・サンプリングのルール・AI音楽の権利問題まで実務的に説明します。" }
     ]
   },
   "studio-environment": {
     label: "宅録・スタジオ環境シリーズ",
     articles: [
-      { url:"/2026/05/24/soundproofing-home-studio-guide/", title:"宅録防音対策ガイド【2026年版】自宅スタジオの騒音・反響を解決する方法", img:"/assets/images/thumb-soundproofing.jpg", excerpt:"宅録・DTMでの防音に悩む方向けに、遮音・吸音・防振の違いから予算別DIY対策、おすすめ防音グッズまで徹底解説。集合住宅でも実践できる現実的な防音対策をまとめました。" },
-      { url:"/2026/05/24/music-studio-guide/", title:"音楽スタジオ 選び方・予約方法 完全ガイド【2026年版】リハスタ・レコスタの違いと活用術", img:"/assets/images/thumb-music-studio.jpg", excerpt:"リハーサルスタジオとレコーディングスタジオの違い、予算別の選び方、予約方法、持ち物リストまで徹底解説。バンドでの初スタジオ入りから本格録音まで対応する完全ガイドです。" },
-      { url:"/2026/05/24/monitor-headphones-guide/", title:"モニターヘッドフォン選び方ガイド【DTM・宅録・ミックス用おすすめ機種比較2026】", img:"/assets/images/thumb-monitor-headphones.jpg", excerpt:"DTM・宅録・ミックスに使うモニターヘッドフォンの選び方を解説。リスニング用との違い、密閉型と開放型の使い分け、予算別おすすめ機種（ATH-M50x・MDR-7506・DT770 PRO等）を比較します。" }
+      { url:"/production/soundproofing-home-studio-guide/", title:"宅録防音対策ガイド【2026年版】自宅スタジオの騒音・反響を解決する方法", img:"/assets/images/thumb-soundproofing.jpg", excerpt:"宅録・DTMでの防音に悩む方向けに、遮音・吸音・防振の違いから予算別DIY対策、おすすめ防音グッズまで徹底解説。集合住宅でも実践できる現実的な防音対策をまとめました。" },
+      { url:"/production/music-studio-guide/", title:"音楽スタジオ 選び方・予約方法 完全ガイド【2026年版】リハスタ・レコスタの違いと活用術", img:"/assets/images/thumb-music-studio.jpg", excerpt:"リハーサルスタジオとレコーディングスタジオの違い、予算別の選び方、予約方法、持ち物リストまで徹底解説。バンドでの初スタジオ入りから本格録音まで対応する完全ガイドです。" },
+      { url:"/gear/monitor-headphones-guide/", title:"モニターヘッドフォン選び方ガイド【DTM・宅録・ミックス用おすすめ機種比較2026】", img:"/assets/images/thumb-monitor-headphones.jpg", excerpt:"DTM・宅録・ミックスに使うモニターヘッドフォンの選び方を解説。リスニング用との違い、密閉型と開放型の使い分け、予算別おすすめ機種（ATH-M50x・MDR-7506・DT770 PRO等）を比較します。" }
     ]
   },
     "instruments": {
     label: "楽器別始め方シリーズ",
     desc: "エレキギター・アコギ・ベース・ドラム・デジタルピアノ・ボーカルまで、楽器ごとの始め方を初心者向けに完全解説。",
     articles: [
-      { url:"/2026/05/20/guitar-guide/", title:"エレキギター・アコースティックギター 完全選び方ガイド【2026年版】", img:"/assets/images/thumb-guitar.png", date:"2026-05-20", desc:"ギターの始め方・選び方を初心者向けに解説。" },
-      { url:"/2026/05/22/bass-guide/", title:"エレキベース 完全初心者始め方ガイド【2026年版】", img:"/assets/images/thumb-bass.png", date:"2026-05-22", desc:"ベースの始め方・選び方を初心者向けに解説。" },
-      { url:"/2026/05/22/drum-guide/", title:"電子ドラム 完全初心者始め方ガイド【2026年版】", img:"/assets/images/thumb-drum.png", date:"2026-05-22", desc:"ドラムの始め方・選び方を初心者向けに解説。" },
-      { url:"/2026/05/24/digital-piano-guide/", title:"デジタルピアノ・電子キーボード 完全初心者始め方ガイド【2026年版】", img:"/assets/images/thumb-digital-piano.jpg", date:"2026-05-24", desc:"デジタルピアノの始め方・選び方を初心者向けに解説。" },
-      { url:"/2026/05/24/band-guide/", title:"バンドの始め方 完全ガイド【2026年版】", img:"/assets/images/thumb-band.png", date:"2026-05-24", desc:"バンド結成から初ライブまでの始め方を解説。" },
-      { url:"/2026/05/24/vocal-recording-guide/", title:"ボーカル録音ガイド【マイク選び・録音設定・歌ってみた機材セット】", img:"/assets/images/thumb-vocal-recording.jpg", date:"2026-05-24", desc:"ボーカル宅録の始め方・マイク選びを解説。" },
-      { url:"/2026/05/24/guitar-effects-guide/", title:"ギターエフェクター入門ガイド【歪み・空間系・マルチ 種類と選び方2026】", img:"/assets/images/thumb-guitar-effects.jpg", date:"2026-05-24", desc:"ギターエフェクターの種類と選び方を初心者向けに解説。" },
+      { url:"/instrument/guitar-guide/", title:"エレキギター・アコースティックギター 完全選び方ガイド【2026年版】", img:"/assets/images/thumb-guitar.png", date:"2026-05-20", desc:"ギターの始め方・選び方を初心者向けに解説。" },
+      { url:"/instrument/bass-guide/", title:"エレキベース 完全初心者始め方ガイド【2026年版】", img:"/assets/images/thumb-bass.png", date:"2026-05-22", desc:"ベースの始め方・選び方を初心者向けに解説。" },
+      { url:"/instrument/drum-guide/", title:"電子ドラム 完全初心者始め方ガイド【2026年版】", img:"/assets/images/thumb-drum.png", date:"2026-05-22", desc:"ドラムの始め方・選び方を初心者向けに解説。" },
+      { url:"/instrument/digital-piano-guide/", title:"デジタルピアノ・電子キーボード 完全初心者始め方ガイド【2026年版】", img:"/assets/images/thumb-digital-piano.jpg", date:"2026-05-24", desc:"デジタルピアノの始め方・選び方を初心者向けに解説。" },
+      { url:"/production/band-guide/", title:"バンドの始め方 完全ガイド【2026年版】", img:"/assets/images/thumb-band.png", date:"2026-05-24", desc:"バンド結成から初ライブまでの始め方を解説。" },
+      { url:"/production/vocal-recording-guide/", title:"ボーカル録音ガイド【マイク選び・録音設定・歌ってみた機材セット】", img:"/assets/images/thumb-vocal-recording.jpg", date:"2026-05-24", desc:"ボーカル宅録の始め方・マイク選びを解説。" },
+      { url:"/instrument/guitar-effects-guide/", title:"ギターエフェクター入門ガイド【歪み・空間系・マルチ 種類と選び方2026】", img:"/assets/images/thumb-guitar-effects.jpg", date:"2026-05-24", desc:"ギターエフェクターの種類と選び方を初心者向けに解説。" },
     ]
   },
   "instrument-guide": {
     label: "楽器モデル詳細ガイド",
     articles: [
-      { url:"/2026/05/29/gibson-les-paul-custom-guide/", title:"Gibson Les Paul Customの特徴・音・選び方ガイド【2026年版】レスポールの最高峰", img:"/assets/images/thumb-les-paul-custom.jpg", excerpt:"Gibson Les Paul Customの特徴・音の傾向・スタンダードとの違い・おすすめの購入方法を解説。クラシックロック・ジャズ・ファットなリードトーンを求めるギタリスト必見。" },
-      { url:"/2026/05/29/fender-stratocaster-guide/", title:"Fender Stratocasterの特徴・音・選び方ガイド【2026年版】ストラトキャスターを徹底解説", img:"/assets/images/thumb-stratocaster.jpg", excerpt:"Fender Stratocasterの特徴・ピックアップ構成・テレキャスターとの違い・Playerシリーズの選び方をわかりやすく解説。ロック・ブルース・ファンクを弾きたいギタリスト必見。" },
-      { url:"/2026/05/29/fender-telecaster-guide/", title:"Fender Telecasterの特徴・音・選び方ガイド【2026年版】テレキャスターを徹底解説", img:"/assets/images/thumb-telecaster.jpg", excerpt:"Fender Telecasterの特徴・音の傾向・Stratocasterとの違い・Playerシリーズの選び方を解説。カントリー・ロックンロール・オルタナを弾きたいギタリスト必見。" },
-      { url:"/2026/05/29/fender-jazz-bass-guide/", title:"Fender Jazz Bassの特徴・音・選び方ガイド【2026年版】ジャズベースを徹底解説", img:"/assets/images/thumb-jazz-bass.jpg", excerpt:"Fender Jazz Bassの特徴・音の傾向・Precision Bassとの違い・Playerシリーズの選び方を解説。ジャズ・フュージョン・ファンク・ロックを弾くベーシスト必見。" },
-      { url:"/2026/05/29/fender-precision-bass-guide/", title:"Fender Precision Bassの特徴・音・選び方ガイド【2026年版】プレシジョンベースを徹底解説", img:"/assets/images/thumb-precision-bass.jpg", excerpt:"Fender Precision Bassの特徴・音の傾向・Jazz Bassとの違い・Playerシリーズの選び方を解説。ロック・ポップ・オルタナを支えるベーシスト必見。" },
-      { url:"/2026/05/29/fender-jazzmaster-guide/", title:"Fender Jazzmasterの特徴・音・選び方ガイド【2026年版】ジャズマスターを徹底解説", img:"/assets/images/thumb-jazzmaster.jpg", excerpt:"Fender Jazzmasterの特徴・ピックアップ構成・Jaguarとの違い・Playerシリーズの選び方を解説。オルタナ・シューゲイザー・インディーロックを弾くギタリスト必見。" },
-      { url:"/2026/05/29/fender-jaguar-guide/", title:"Fender Jaguarの特徴・音・選び方ガイド【2026年版】ジャガーを徹底解説", img:"/assets/images/thumb-jaguar.jpg", excerpt:"Fender Jaguarの特徴・短いスケール・Jazzmasterとの違い・Playerシリーズの選び方を解説。サーフ・ガレージロック・パンクを弾くギタリスト必見。" },
-      { url:"/2026/05/29/musicman-stingray-bass-guide/", title:"Music Man StingRay Bassの特徴・音・選び方ガイド【2026年版】スティングレイを徹底解説", img:"/assets/images/thumb-stingray-bass.jpg", excerpt:"Music Man StingRay Bassの特徴・アクティブサウンド・Fenderベースとの違い・選び方を解説。スラップ・ファンク・ロックを弾くベーシスト必見。" },
-      { url:"/2026/05/29/guitar-bass-pickup-guide/", title:"ギター・ベースのピックアップ入門ガイド【2026年版】パッシブ/アクティブ/種類と選び方", img:"/assets/images/thumb-pickup-guide.jpg", excerpt:"ギター・ベースのピックアップの種類（シングル/ハムバッカー/スプリットコイル）とパッシブ/アクティブの違いを初心者にわかりやすく解説。交換・改造を考えている方にも役立つ基礎知識。" }
-    ]
-  },
-  "gear": {
-    label: "機材・周辺機器シリーズ",
-    articles: [
-      { url:"/2026/05/17/rack-case-guide/", title:"ラックケース・楽器ケース完全ガイド【ARMOR・DUPLEX・SKBの定番メーカー比較】", img:"/assets/images/thumb-rack-case.png", excerpt:"音楽機材の運搬・保護に使うラックケースと楽器ケースの選び方を解説。ARMOR・DUPLEX・SKBの定番3メーカーを比較し、運搬用フライトケースと据え置きラックの違いも詳しく紹介します。" },
-      { url:"/2026/05/17/cable-guide/", title:"音楽制作ケーブル全種類ガイド【XLR・シールド・USB・Thunderbolt・INSERTの違いと高品位ケーブルの必要性】", img:"/assets/images/thumb-cable.png", excerpt:"音楽制作・宅録で使うケーブルの種類と用途を網羅解説。XLRケーブル・シールド・INSERTケーブル・スピーカーケーブル・USBケーブル・Thunderboltケーブルの違いと、高品位ケーブルを選ぶ基準を紹介します。" },
-      { url:"/2026/05/17/mic-stand-guide/", title:"マイクスタンドの種類と選び方【K&Mスタンド購入ガイド2026】", img:"/assets/images/thumb-mic-stand.png", excerpt:"マイクスタンドのストレート・ブーム・デスクアームの違いを解説。K&M（König & Meyer）の定番モデル比較と、用途別おすすめの選び方を初心者にもわかりやすく紹介します。" }
+      { url:"/instrument/gibson-les-paul-custom-guide/", title:"Gibson Les Paul Customの特徴・音・選び方ガイド【2026年版】レスポールの最高峰", img:"/assets/images/thumb-les-paul-custom.jpg", excerpt:"Gibson Les Paul Customの特徴・音の傾向・スタンダードとの違い・おすすめの購入方法を解説。クラシックロック・ジャズ・ファットなリードトーンを求めるギタリスト必見。" },
+      { url:"/instrument/fender-stratocaster-guide/", title:"Fender Stratocasterの特徴・音・選び方ガイド【2026年版】ストラトキャスターを徹底解説", img:"/assets/images/thumb-stratocaster.jpg", excerpt:"Fender Stratocasterの特徴・ピックアップ構成・テレキャスターとの違い・Playerシリーズの選び方をわかりやすく解説。ロック・ブルース・ファンクを弾きたいギタリスト必見。" },
+      { url:"/instrument/fender-telecaster-guide/", title:"Fender Telecasterの特徴・音・選び方ガイド【2026年版】テレキャスターを徹底解説", img:"/assets/images/thumb-telecaster.jpg", excerpt:"Fender Telecasterの特徴・音の傾向・Stratocasterとの違い・Playerシリーズの選び方を解説。カントリー・ロックンロール・オルタナを弾きたいギタリスト必見。" },
+      { url:"/instrument/fender-jazz-bass-guide/", title:"Fender Jazz Bassの特徴・音・選び方ガイド【2026年版】ジャズベースを徹底解説", img:"/assets/images/thumb-jazz-bass.jpg", excerpt:"Fender Jazz Bassの特徴・音の傾向・Precision Bassとの違い・Playerシリーズの選び方を解説。ジャズ・フュージョン・ファンク・ロックを弾くベーシスト必見。" },
+      { url:"/instrument/fender-precision-bass-guide/", title:"Fender Precision Bassの特徴・音・選び方ガイド【2026年版】プレシジョンベースを徹底解説", img:"/assets/images/thumb-precision-bass.jpg", excerpt:"Fender Precision Bassの特徴・音の傾向・Jazz Bassとの違い・Playerシリーズの選び方を解説。ロック・ポップ・オルタナを支えるベーシスト必見。" },
+      { url:"/instrument/fender-jazzmaster-guide/", title:"Fender Jazzmasterの特徴・音・選び方ガイド【2026年版】ジャズマスターを徹底解説", img:"/assets/images/thumb-jazzmaster.jpg", excerpt:"Fender Jazzmasterの特徴・ピックアップ構成・Jaguarとの違い・Playerシリーズの選び方を解説。オルタナ・シューゲイザー・インディーロックを弾くギタリスト必見。" },
+      { url:"/instrument/fender-jaguar-guide/", title:"Fender Jaguarの特徴・音・選び方ガイド【2026年版】ジャガーを徹底解説", img:"/assets/images/thumb-jaguar.jpg", excerpt:"Fender Jaguarの特徴・短いスケール・Jazzmasterとの違い・Playerシリーズの選び方を解説。サーフ・ガレージロック・パンクを弾くギタリスト必見。" },
+      { url:"/instrument/musicman-stingray-bass-guide/", title:"Music Man StingRay Bassの特徴・音・選び方ガイド【2026年版】スティングレイを徹底解説", img:"/assets/images/thumb-stingray-bass.jpg", excerpt:"Music Man StingRay Bassの特徴・アクティブサウンド・Fenderベースとの違い・選び方を解説。スラップ・ファンク・ロックを弾くベーシスト必見。" },
+      { url:"/instrument/guitar-bass-pickup-guide/", title:"ギター・ベースのピックアップ入門ガイド【2026年版】パッシブ/アクティブ/種類と選び方", img:"/assets/images/thumb-pickup-guide.jpg", excerpt:"ギター・ベースのピックアップの種類（シングル/ハムバッカー/スプリットコイル）とパッシブ/アクティブの違いを初心者にわかりやすく解説。交換・改造を考えている方にも役立つ基礎知識。" }
     ]
   },
   "dtm-techniques": {
     label: "DTM・制作テクニックシリーズ",
     articles: [
-      { url:"/2026/05/24/mixing-mastering-guide/", title:"MIX・マスタリング入門【2026年版】DAWで始める音楽制作の仕上げ工程", img:"/assets/images/thumb-mixing.jpg", excerpt:"MIX（ミキシング）とマスタリングの違いをわかりやすく解説。初心者が最初に覚えるべきEQ・コンプ・リバーブの基礎から、無料DAWで実践できる仕上げ手順まで丁寧に説明します。" },
-      { url:"/2026/05/24/vst-plugin-guide/", title:"VST・AUプラグイン選び方【2026年版】初心者向け無料・有料おすすめ20選", img:"/assets/images/thumb-vst-plugin.png", excerpt:"VST・AUプラグインとは何かから、初心者が最初に揃えるべき無料・有料プラグインまで徹底解説。シンセ・エフェクト・サンプラーの種類別おすすめを紹介します。" },
-      { url:"/2026/05/24/solo-dtm-setup/", title:"ソロDTM完全セットアップガイド【2026年版】一人で完結する宅録環境の作り方", img:"/assets/images/thumb-solo-dtm.jpg", excerpt:"一人で作曲・録音・MIX・配信まで完結させるためのDTM環境構築ガイド。パソコン選び・DAW・オーディオIF・マイク・モニター環境まで、予算別に最適な構成を解説します。" }
+      { url:"/production/mixing-mastering-guide/", title:"MIX・マスタリング入門【2026年版】DAWで始める音楽制作の仕上げ工程", img:"/assets/images/thumb-mixing.jpg", excerpt:"MIX（ミキシング）とマスタリングの違いをわかりやすく解説。初心者が最初に覚えるべきEQ・コンプ・リバーブの基礎から、無料DAWで実践できる仕上げ手順まで丁寧に説明します。" },
+      { url:"/production/vst-plugin-guide/", title:"VST・AUプラグイン選び方【2026年版】初心者向け無料・有料おすすめ20選", img:"/assets/images/thumb-vst-plugin.png", excerpt:"VST・AUプラグインとは何かから、初心者が最初に揃えるべき無料・有料プラグインまで徹底解説。シンセ・エフェクト・サンプラーの種類別おすすめを紹介します。" },
+      { url:"/production/solo-dtm-setup/", title:"ソロDTM完全セットアップガイド【2026年版】一人で完結する宅録環境の作り方", img:"/assets/images/thumb-solo-dtm.jpg", excerpt:"一人で作曲・録音・MIX・配信まで完結させるためのDTM環境構築ガイド。パソコン選び・DAW・オーディオIF・マイク・モニター環境まで、予算別に最適な構成を解説します。" }
     ]
   },
     'japan-music-series': {
     title: '日本音楽ムーブメントシリーズ',
     desc: 'グループサウンズから現代まで、日本の音楽ムーブメントを時代別に解説。全18回。',
     posts: [
-      {url:'/2026/05/30/japan-music-01-gs-boom/',title:'グループサウンズ革命【1960年代】エレキギターが日本を変えた日',img:'/assets/images/thumb-gs-boom.jpg',date:'2026-05-30',desc:'GSブームから始まる日本のロック元年。ベンチャーズ来日公演が若者を変えた。'},
-      {url:'/2026/05/30/japan-music-02-folk-new-music/',title:'フォーク・ニューミュージックの誕生【1970年代】拓郎・陽水・ユーミンが変えた日本の音楽',img:'/assets/images/thumb-folk-new-music.jpg',date:'2026-05-30',desc:'吉田拓郎・井上陽水・荒井由実が牽引したフォーク・ニューミュージック時代。'},
-      {url:'/2026/05/30/japan-music-03-idol-candies-era/',title:'キャンディーズ・ピンクレディーと歌謡曲黄金期【1970年代中期】',img:'/assets/images/thumb-idol-candies.jpg',date:'2026-05-30',desc:'1970年代中期の日本アイドルブーム。職人編曲家たちが支えた歌謡曲の黄金期。'},
-      {url:'/2026/05/30/japan-music-04-foreign-influence/',title:'海外音楽の融合と日本化【1970年代後期】ゴダイゴが証明した可能性',img:'/assets/images/thumb-godiego-fusion.jpg',date:'2026-05-30',desc:'ゴダイゴ・はっぴいえんどが牽引した西洋音楽理論と日本語ポップスの融合。'},
-      {url:'/2026/05/30/japan-music-05-ymo-techno/',title:'YMOとテクノポップ革命【1978〜1983年】シンセとシーケンサーが世界を変えた',img:'/assets/images/thumb-ymo-techno.jpg',date:'2026-05-30',desc:'Yellow Magic Orchestra（YMO）が世界に放ったテクノポップ革命。TR-808が鳴り響いた時代。'},
-      {url:'/2026/05/30/japan-music-06-80s-idol-production/',title:'80年代アイドル黄金期の音楽制作【1980〜1988年】松田聖子・中森明菜を支えた職人サウンド',img:'/assets/images/thumb-80s-idol.jpg',date:'2026-05-30',desc:'松田聖子・中森明菜が輝いた80年代アイドル黄金期。大村雅朗ら職人アレンジャーの時代。'},
-      {url:'/2026/05/30/japan-music-07-80s-commercial/',title:'1980年代半ばの商業音楽【1984〜1987年】バブル前夜に花開いたJ-POP黄金期',img:'/assets/images/thumb-80s-commercial.jpg',date:'2026-05-30',desc:'TM NETWORK・渡辺美里・角松敏生が活躍したバブル前夜の商業音楽最盛期。'},
-      {url:'/2026/05/30/japan-music-08-band-boom/',title:'バンドブーム第一波【1980年代後半】BOOWY・BUCK-TICK・イカ天世代が切り開いた日本のロック',img:'/assets/images/thumb-band-boom.jpg',date:'2026-05-30',desc:'1987〜1992年。BOOWYが頂点に立ち、ホコ天・イカ天からバンドブームが社会現象に。'},
-      {url:'/2026/05/30/japan-music-09-fusion-jazz/',title:'カシオペア vs T-SQUARE【1980年代フュージョン】バークリー世代が極めた日本発インストゥルメンタル',img:'/assets/images/thumb-godiego.jpg',date:'2026-05-30',desc:'カシオペア・T-SQUAREが牽引した日本フュージョン黄金期。T-SQUAREのTRUTHがF1テーマに。'},
-      {url:'/2026/05/30/japan-music-10-visual-kei/',title:'ヴィジュアル系とハードロック化【1990年代】X JAPAN・hide・GLAYが世界に証明したこと',img:'/assets/images/thumb-visual-kei.jpg',date:'2026-05-30',desc:'X JAPAN・hide・GLAY・L Arc-en-Cielが牽引した1990年代ヴィジュアル系の台頭。'},
-      {url:'/2026/05/30/japan-music-11-komuro-jpop/',title:'小室サウンドとJ-POP量産時代【1993〜1999年】TK・avexが変えた日本の音楽産業',img:'/assets/images/thumb-komuro-jpop.jpg',date:'2026-05-30',desc:'小室哲哉・avexが牽引した1990年代J-POP黄金期。TRF・globe・安室奈美恵・SPEEDが席巻。'},
-      {url:'/2026/05/30/japan-music-12-shibuya-kei/',title:'渋谷系・J-R&Bの時代【1993〜2000年】フリッパーズ・ギターから宇多田ヒカルまで',img:'/assets/images/thumb-shibuya-kei.jpg',date:'2026-05-30',desc:'フリッパーズ・ギター・ピチカート・ファイヴ・小沢健二から宇多田ヒカルへ。渋谷が音楽の聖地だった時代。'},
-      {url:'/2026/05/30/japan-music-13-hiphop-rb/',title:'ヒップホップ・R&Bブームの台頭【2000年代】m-flo・SOUL d OUTが拓いた日本語ラップの世界',img:'/assets/images/thumb-hiphop-rb.jpg',date:'2026-05-30',desc:'m-flo・SOUL d OUT・RIP SLYMEが拓いた2000年代の日本語ヒップホップ・R&B時代。'},
-      {url:'/2026/05/30/japan-music-14-2000s-idol/',title:'2000年代アイドル・着うた時代【2003〜2012年】AKB48とモバイル音楽革命',img:'/assets/images/thumb-2000s-idol.jpg',date:'2026-05-30',desc:'モーニング娘。からAKB48へ。着うた市場がCDを逆転した2000年代の音楽ビジネス大転換。'},
-      {url:'/2026/05/30/japan-music-15-vocaloid-dtm/',title:'ボカロ革命とDTM民主化【2007年〜】初音ミクが変えた音楽制作の常識',img:'/assets/images/thumb-vocaloid-dtm.jpg',date:'2026-05-30',desc:'2007年の初音ミク登場からニコニコ動画・ボカロPへ。音楽制作の民主化が始まった。'},
-      {url:'/2026/05/30/japan-music-16-2010s-band/',title:'2010年代バンドリバイバル・インディーズ台頭【2010〜2019年】RADWIMPS・星野源・ゲスの極み乙女。',img:'/assets/images/thumb-2010s-band.jpg',date:'2026-05-30',desc:'RADWIMPS・星野源・ゲスの極み乙女・米津玄師が活躍した2010年代。サブスク普及前夜。'},
-      {url:'/2026/05/30/japan-music-17-city-pop-revival/',title:'シティポップ・リバイバル現象【2020年代】世界が再発見した日本の失われた音楽',img:'/assets/images/thumb-city-pop-revival.jpg',date:'2026-05-30',desc:'山下達郎・竹内まりや・松原みきがYouTubeで世界的に再評価されたシティポップリバイバル現象。'},
-      {url:'/2026/05/30/japan-music-18-modern-scene/',title:'現代の日本音楽シーン【2020年代】Vtuber・サブスク・AI音楽が変えた音楽の作り方',img:'/assets/images/thumb-modern-scene.jpg',date:'2026-05-30',desc:'米津玄師・YOASOBIからVTuber・AI音楽まで。現代の音楽制作の潮流を解説。'}
+      {url:'/history/japan-music-01-gs-boom/',title:'グループサウンズ革命【1960年代】エレキギターが日本を変えた日',img:'/assets/images/thumb-gs-boom.jpg',date:'2026-05-30',desc:'GSブームから始まる日本のロック元年。ベンチャーズ来日公演が若者を変えた。'},
+      {url:'/history/japan-music-02-folk-new-music/',title:'フォーク・ニューミュージックの誕生【1970年代】拓郎・陽水・ユーミンが変えた日本の音楽',img:'/assets/images/thumb-folk-new-music.jpg',date:'2026-05-30',desc:'吉田拓郎・井上陽水・荒井由実が牽引したフォーク・ニューミュージック時代。'},
+      {url:'/history/japan-music-03-idol-candies-era/',title:'キャンディーズ・ピンクレディーと歌謡曲黄金期【1970年代中期】',img:'/assets/images/thumb-idol-candies.jpg',date:'2026-05-30',desc:'1970年代中期の日本アイドルブーム。職人編曲家たちが支えた歌謡曲の黄金期。'},
+      {url:'/history/japan-music-04-foreign-influence/',title:'海外音楽の融合と日本化【1970年代後期】ゴダイゴが証明した可能性',img:'/assets/images/thumb-godiego-fusion.jpg',date:'2026-05-30',desc:'ゴダイゴ・はっぴいえんどが牽引した西洋音楽理論と日本語ポップスの融合。'},
+      {url:'/history/japan-music-05-ymo-techno/',title:'YMOとテクノポップ革命【1978〜1983年】シンセとシーケンサーが世界を変えた',img:'/assets/images/thumb-ymo-techno.jpg',date:'2026-05-30',desc:'Yellow Magic Orchestra（YMO）が世界に放ったテクノポップ革命。TR-808が鳴り響いた時代。'},
+      {url:'/history/japan-music-06-80s-idol-production/',title:'80年代アイドル黄金期の音楽制作【1980〜1988年】松田聖子・中森明菜を支えた職人サウンド',img:'/assets/images/thumb-80s-idol.jpg',date:'2026-05-30',desc:'松田聖子・中森明菜が輝いた80年代アイドル黄金期。大村雅朗ら職人アレンジャーの時代。'},
+      {url:'/history/japan-music-07-80s-commercial/',title:'1980年代半ばの商業音楽【1984〜1987年】バブル前夜に花開いたJ-POP黄金期',img:'/assets/images/thumb-80s-commercial.jpg',date:'2026-05-30',desc:'TM NETWORK・渡辺美里・角松敏生が活躍したバブル前夜の商業音楽最盛期。'},
+      {url:'/history/japan-music-08-band-boom/',title:'バンドブーム第一波【1980年代後半】BOOWY・BUCK-TICK・イカ天世代が切り開いた日本のロック',img:'/assets/images/thumb-band-boom.jpg',date:'2026-05-30',desc:'1987〜1992年。BOOWYが頂点に立ち、ホコ天・イカ天からバンドブームが社会現象に。'},
+      {url:'/history/japan-music-09-fusion-jazz/',title:'カシオペア vs T-SQUARE【1980年代フュージョン】バークリー世代が極めた日本発インストゥルメンタル',img:'/assets/images/thumb-godiego.jpg',date:'2026-05-30',desc:'カシオペア・T-SQUAREが牽引した日本フュージョン黄金期。T-SQUAREのTRUTHがF1テーマに。'},
+      {url:'/history/japan-music-10-visual-kei/',title:'ヴィジュアル系とハードロック化【1990年代】X JAPAN・hide・GLAYが世界に証明したこと',img:'/assets/images/thumb-visual-kei.jpg',date:'2026-05-30',desc:'X JAPAN・hide・GLAY・L Arc-en-Cielが牽引した1990年代ヴィジュアル系の台頭。'},
+      {url:'/history/japan-music-11-komuro-jpop/',title:'小室サウンドとJ-POP量産時代【1993〜1999年】TK・avexが変えた日本の音楽産業',img:'/assets/images/thumb-komuro-jpop.jpg',date:'2026-05-30',desc:'小室哲哉・avexが牽引した1990年代J-POP黄金期。TRF・globe・安室奈美恵・SPEEDが席巻。'},
+      {url:'/history/japan-music-12-shibuya-kei/',title:'渋谷系・J-R&Bの時代【1993〜2000年】フリッパーズ・ギターから宇多田ヒカルまで',img:'/assets/images/thumb-shibuya-kei.jpg',date:'2026-05-30',desc:'フリッパーズ・ギター・ピチカート・ファイヴ・小沢健二から宇多田ヒカルへ。渋谷が音楽の聖地だった時代。'},
+      {url:'/history/japan-music-13-hiphop-rb/',title:'ヒップホップ・R&Bブームの台頭【2000年代】m-flo・SOUL d OUTが拓いた日本語ラップの世界',img:'/assets/images/thumb-hiphop-rb.jpg',date:'2026-05-30',desc:'m-flo・SOUL d OUT・RIP SLYMEが拓いた2000年代の日本語ヒップホップ・R&B時代。'},
+      {url:'/history/japan-music-14-2000s-idol/',title:'2000年代アイドル・着うた時代【2003〜2012年】AKB48とモバイル音楽革命',img:'/assets/images/thumb-2000s-idol.jpg',date:'2026-05-30',desc:'モーニング娘。からAKB48へ。着うた市場がCDを逆転した2000年代の音楽ビジネス大転換。'},
+      {url:'/history/japan-music-15-vocaloid-dtm/',title:'ボカロ革命とDTM民主化【2007年〜】初音ミクが変えた音楽制作の常識',img:'/assets/images/thumb-vocaloid-dtm.jpg',date:'2026-05-30',desc:'2007年の初音ミク登場からニコニコ動画・ボカロPへ。音楽制作の民主化が始まった。'},
+      {url:'/history/japan-music-16-2010s-band/',title:'2010年代バンドリバイバル・インディーズ台頭【2010〜2019年】RADWIMPS・星野源・ゲスの極み乙女。',img:'/assets/images/thumb-2010s-band.jpg',date:'2026-05-30',desc:'RADWIMPS・星野源・ゲスの極み乙女・米津玄師が活躍した2010年代。サブスク普及前夜。'},
+      {url:'/history/japan-music-17-city-pop-revival/',title:'シティポップ・リバイバル現象【2020年代】世界が再発見した日本の失われた音楽',img:'/assets/images/thumb-city-pop-revival.jpg',date:'2026-05-30',desc:'山下達郎・竹内まりや・松原みきがYouTubeで世界的に再評価されたシティポップリバイバル現象。'},
+      {url:'/history/japan-music-18-modern-scene/',title:'現代の日本音楽シーン【2020年代】Vtuber・サブスク・AI音楽が変えた音楽の作り方',img:'/assets/images/thumb-modern-scene.jpg',date:'2026-05-30',desc:'米津玄師・YOASOBIからVTuber・AI音楽まで。現代の音楽制作の潮流を解説。'}
     ]
   },
   'chord-progression': {
     title: 'コード進行シリーズ',
     desc: 'J-POPからブルースまで、日本音楽で使われる定番コード進行を徹底解説。各回20曲以上の代表曲付き。',
     posts: [
-      {url:'/2026/05/30/chord-progression-01-oudo/',title:'王道進行（Ⅳ-Ⅴ-Ⅲm-Ⅵm）完全解説【コード進行シリーズ #01】代表曲20選＋弾き方ガイド',img:'/assets/images/thumb-chord-01.jpg',date:'2026-05-30',desc:'日本のJ-POP・アニソンで最も使われる王道進行を徹底解説。代表曲20曲＋楽天購入リンク付き。'},
-      {url:'/2026/05/30/chord-progression-02-canon/',title:'カノン進行（Ⅰ-Ⅴ-Ⅵm-Ⅲm-Ⅳ-Ⅰ-Ⅳ-Ⅴ）完全解説【コード進行シリーズ #02】代表曲20選',img:'/assets/images/thumb-chord-02.jpg',date:'2026-05-30',desc:'クラシックから現代J-POPまで使われるカノン進行を解説。代表曲20曲＋楽天購入リンク付き。'},
-      {url:'/2026/05/30/chord-progression-03-komuro/',title:'小室進行（Ⅵm-Ⅳ-Ⅰ-Ⅴ）完全解説【コード進行シリーズ #03】代表曲20選',img:'/assets/images/thumb-chord-03.jpg',date:'2026-05-30',desc:'90年代J-POPを席巻した小室哲哉の進行を解説。TRF・globe・安室奈美恵など代表曲20曲付き。'},
-      {url:'/2026/05/30/chord-progression-04-marusa/',title:'丸サ進行（Ⅰ-Ⅵm-Ⅱm-Ⅴ）完全解説【コード進行シリーズ #04】代表曲20選',img:'/assets/images/thumb-chord-04.jpg',date:'2026-05-30',desc:'ジャズ・シティポップの定番、丸サ進行を解説。山下達郎・竹内まりやなど代表曲20曲付き。'},
-      {url:'/2026/05/30/chord-progression-05-junkan/',title:'循環コード（Ⅰ-Ⅵm-Ⅳ-Ⅴ）完全解説【コード進行シリーズ #05】代表曲20選',img:'/assets/images/thumb-chord-05.jpg',date:'2026-05-30',desc:'ロック・ポップスの基盤、循環コードを解説。Beatles・日本のロックなど代表曲20曲付き。'},
-      {url:'/2026/05/30/chord-progression-06-kanashii/',title:'切ない系進行（Ⅵm-Ⅳ-Ⅴ-Ⅵm）完全解説【コード進行シリーズ #06】代表曲20選',img:'/assets/images/thumb-chord-06.jpg',date:'2026-05-30',desc:'切ない感情を表現する進行を解説。バラード・アニソンの名曲20曲＋楽天購入リンク付き。'},
-      {url:'/2026/05/30/chord-progression-07-blues/',title:'ブルース進行（12小節ブルース）完全解説【コード進行シリーズ #07】代表曲20選',img:'/assets/images/thumb-chord-07.jpg',date:'2026-05-30',desc:'すべての音楽の源流、12小節ブルースを解説。ブルース・ロックの名曲20曲＋楽天購入リンク付き。'},
-      {url:'/2026/05/30/chord-progression-08-cliche/',title:'クリシェ進行（半音下降）完全解説【コード進行シリーズ #08】代表曲20選',img:'/assets/images/thumb-chord-08.jpg',date:'2026-05-30',desc:'ベースラインが半音ずつ動くクリシェ進行を解説。ドラマチックな名曲20曲＋楽天購入リンク付き。'}
+      {url:'/chord/chord-progression-01-oudo/',title:'王道進行（Ⅳ-Ⅴ-Ⅲm-Ⅵm）完全解説【コード進行シリーズ #01】代表曲20選＋弾き方ガイド',img:'/assets/images/thumb-chord-01.jpg',date:'2026-05-30',desc:'日本のJ-POP・アニソンで最も使われる王道進行を徹底解説。代表曲20曲＋楽天購入リンク付き。'},
+      {url:'/chord/chord-progression-02-canon/',title:'カノン進行（Ⅰ-Ⅴ-Ⅵm-Ⅲm-Ⅳ-Ⅰ-Ⅳ-Ⅴ）完全解説【コード進行シリーズ #02】代表曲20選',img:'/assets/images/thumb-chord-02.jpg',date:'2026-05-30',desc:'クラシックから現代J-POPまで使われるカノン進行を解説。代表曲20曲＋楽天購入リンク付き。'},
+      {url:'/chord/chord-progression-03-komuro/',title:'小室進行（Ⅵm-Ⅳ-Ⅰ-Ⅴ）完全解説【コード進行シリーズ #03】代表曲20選',img:'/assets/images/thumb-chord-03.jpg',date:'2026-05-30',desc:'90年代J-POPを席巻した小室哲哉の進行を解説。TRF・globe・安室奈美恵など代表曲20曲付き。'},
+      {url:'/chord/chord-progression-04-marusa/',title:'丸サ進行（Ⅰ-Ⅵm-Ⅱm-Ⅴ）完全解説【コード進行シリーズ #04】代表曲20選',img:'/assets/images/thumb-chord-04.jpg',date:'2026-05-30',desc:'ジャズ・シティポップの定番、丸サ進行を解説。山下達郎・竹内まりやなど代表曲20曲付き。'},
+      {url:'/chord/chord-progression-05-junkan/',title:'循環コード（Ⅰ-Ⅵm-Ⅳ-Ⅴ）完全解説【コード進行シリーズ #05】代表曲20選',img:'/assets/images/thumb-chord-05.jpg',date:'2026-05-30',desc:'ロック・ポップスの基盤、循環コードを解説。Beatles・日本のロックなど代表曲20曲付き。'},
+      {url:'/chord/chord-progression-06-kanashii/',title:'切ない系進行（Ⅵm-Ⅳ-Ⅴ-Ⅵm）完全解説【コード進行シリーズ #06】代表曲20選',img:'/assets/images/thumb-chord-06.jpg',date:'2026-05-30',desc:'切ない感情を表現する進行を解説。バラード・アニソンの名曲20曲＋楽天購入リンク付き。'},
+      {url:'/chord/chord-progression-07-blues/',title:'ブルース進行（12小節ブルース）完全解説【コード進行シリーズ #07】代表曲20選',img:'/assets/images/thumb-chord-07.jpg',date:'2026-05-30',desc:'すべての音楽の源流、12小節ブルースを解説。ブルース・ロックの名曲20曲＋楽天購入リンク付き。'},
+      {url:'/chord/chord-progression-08-cliche/',title:'クリシェ進行（半音下降）完全解説【コード進行シリーズ #08】代表曲20選',img:'/assets/images/thumb-chord-08.jpg',date:'2026-05-30',desc:'ベースラインが半音ずつ動くクリシェ進行を解説。ドラマチックな名曲20曲＋楽天購入リンク付き。'}
+    ]
+  },
+  'suno-guide': {
+    title: 'Suno AIで曲を作るシリーズ',
+    desc: 'AIツールSunoを使って音楽を作る方法を入門から応用まで全12回で解説。プロンプト・楽器コントロール・DAW連携・配信まで。',
+    posts: [
+      {url:'/production/suno-guide-01/',title:'Suno AIとは？無料・有料プランの違いと始め方【第1回】',img:'/assets/images/thumb-suno-guide-01.jpg',date:'2026-06-22',desc:'アカウント作成・料金プラン・商用利用の条件を解説。最初の1曲を生成するまでをガイド。'},
+      {url:'/production/suno-guide-02/',title:'Sunoで最初の1曲を作る — シンプルプロンプトの書き方【第2回】',img:'/assets/images/thumb-suno-guide-02.jpg',date:'2026-06-22',desc:'ジャンル・楽器・BPM・ムードの指定方法を実例付きで紹介。狙ったサウンドに近づける技術を習得。'},
+      {url:'/production/suno-guide-03/',title:'Sunoで曲の構造を設計する — セクションタグの使い方【第3回】',img:'/assets/images/thumb-suno-guide-03.jpg',date:'2026-06-22',desc:'[intro][verse][chorus]などのセクションタグで曲の展開を自分でコントロールする方法を解説。'},
+      {url:'/production/suno-guide-04/',title:'Sunoでボーカル入りの楽曲を作る — 歌詞の書き方とコツ【第4回】',img:'/assets/images/thumb-suno-guide-04.jpg',date:'2026-06-23',desc:'歌詞の構成・日本語歌詞の扱い方・サビの深め方を実例付きで解説。'},
+      {url:'/production/suno-guide-05/',title:'SunoのCustom Modeを使いこなす — 全パラメータ解説【第5回】',img:'/assets/images/thumb-suno-guide-05.jpg',date:'2026-06-23',desc:'Style・Lyrics・Titleの役割と組み合わせを体系的に解説。Extend機能も紹介。'},
+      {url:'/production/suno-guide-06/',title:'Sunoで楽器をコントロールする — ギター・ピアノ・ドラム・ストリングス【第6回】',img:'/assets/images/thumb-suno-guide-06.jpg',date:'2026-06-23',desc:'特定の楽器を前面に出す・抑える・除外するプロンプト技法を楽器別キーワード一覧で解説。'},
+      {url:'/production/suno-guide-07/',title:'Sunoでフレーズ単位の制御 — イントロ・ソロ・ブレイクを意図通りに作る【第7回】',img:'/assets/images/thumb-suno-guide-07.jpg',date:'2026-06-23',desc:'[guitar solo][build up][drop]などフレーズタグで瞬間の表情を設計する方法を解説。'},
+      {url:'/production/suno-guide-08/',title:'Sunoジャンル別プロンプトレシピ — ロック・ジャズ・ローファイ・80sシンセ【第8回】',img:'/assets/images/thumb-suno-guide-08.jpg',date:'2026-06-23',desc:'第6・7回の技法をジャンル別に応用したコピペ可能なプロンプトテンプレート集。'},
+      {url:'/production/suno-guide-09/',title:'Sunoのインスト・BGMをDAWに読み込んで仕上げる【第9回】',img:'/assets/images/thumb-suno-guide-09.jpg',date:'2026-06-23',desc:'Sunoで生成したオーディオをDAWに取り込み、MIX・加工する実践フローを解説。'},
+      {url:'/production/suno-guide-10/',title:'Sunoと宅録を組み合わせる — AIトラック＋生演奏のハイブリッド制作【第10回】',img:'/assets/images/thumb-suno-guide-10.jpg',date:'2026-06-23',desc:'SunoのバッキングトラックにDAWで生演奏を重ねるハイブリッド制作手法を紹介。'},
+      {url:'/production/suno-guide-11/',title:'Sunoで作った曲を配信する — RouteNoteでSpotify・Apple Musicへ【第11回】',img:'/assets/images/thumb-suno-guide-11.jpg',date:'2026-06-23',desc:'Suno有料プランの商用利用権からRouteNote登録・配信申請までの実際のフローを解説。'},
+      {url:'/production/suno-guide-12/',title:'Sunoの限界と対策 — 音程制御・著作権・クオリティの壁を乗り越える【第12回】',img:'/assets/images/thumb-suno-guide-12.jpg',date:'2026-06-23',desc:'音程制御の限界・歌詞崩れ・著作権問題への対処法。Sunoと長く付き合うための視点。'}
     ]
   },
 };

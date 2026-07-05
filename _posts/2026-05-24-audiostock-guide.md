@@ -3,7 +3,7 @@ layout: post
 title: "AudioStock 楽曲販売ガイド【2026年版】登録方法・審査基準・収益の仕組みを解説"
 description: "AudioStockで楽曲を販売する方法を徹底解説。登録手順・審査基準・価格設定・収益の仕組みから、審査通過のコツまで初心者クリエイター向けにわかりやすく説明します。"
 date: 2026-05-24
-categories: [production]
+categories: [learn]
 tags: [AudioStock, 楽曲販売, 音楽配信, ストックミュージック, DTM, 副業]
 image: /assets/images/thumb-audiostock.png
 ---

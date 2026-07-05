@@ -1,6 +1,6 @@
 title: Cooltake Studio
 description: マイク・ミキサー・エフェクターの選び方から録音・MIXの基礎まで。音楽制作を始めたい人のための実践的ガイド。
-url: "https://staging.cooltakestudio.com"
+url: "https://www.cooltakestudio.com"
 baseurl: ""
 lang: ja
 timezone: Asia/Tokyo
@@ -9,7 +9,7 @@ markdown: kramdown
 highlighter: rouge
 kramdown:
   parse_block_html: false
-permalink: /:year/:month/:day/:title/
+permalink: /:categories/:slug/
 plugins:
   - jekyll-feed
   - jekyll-sitemap

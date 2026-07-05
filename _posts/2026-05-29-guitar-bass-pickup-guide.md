@@ -3,7 +3,7 @@ layout: post
 title: "ギター・ベースのピックアップ入門ガイド【2026年版】パッシブ/アクティブ/種類と選び方"
 description: "ギター・ベースのピックアップの種類（シングル/ハムバッカー/スプリットコイル）とパッシブ/アクティブの違いを初心者にわかりやすく解説。交換・改造を考えている方にも役立つ基礎知識。"
 date: 2026-05-29
-categories: [gear]
+categories: [instrument]
 tags: [ピックアップ, パッシブ, アクティブ, ハムバッカー, シングルコイル, エレキギター]
 image: /assets/images/thumb-pickup-guide.jpg
 ---
