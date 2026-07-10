@@ -5,7 +5,7 @@ description: "音楽制作・宅録で使うケーブルの種類と用途を網
 date: 2026-05-17
 categories: [gear]
 tags: [XLRケーブル, シールドケーブル, INSERTケーブル, スピーカーケーブル, USB, Thunderbolt, ケーブル, DTM, 宅録]
-image: /assets/images/thumb-cable.png
+image: /assets/images/thumb-cable.jpg
 ---
 
 ## 音楽制作で登場するケーブルの全種類
