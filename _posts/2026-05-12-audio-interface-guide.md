@@ -3,7 +3,7 @@ layout: post
 title: "オーディオインターフェース選び方ガイド2026 — 初心者におすすめの機種と接続方法"
 description: "オーディオインターフェースの選び方を徹底解説。Focusrite Scarlett・MOTU・RolandなどをUSB・Thunderbolt別に比較し、DTM初心者に最適な1台を見つけましょう。"
 date: 2026-05-12
-image: /assets/images/thumb-audio-interface.png
+image: /assets/images/thumb-audio-interface.jpg
 categories: [gear]
 tags: [オーディオインターフェース, Focusrite, Scarlett, DTM, 録音機材]
 ---
