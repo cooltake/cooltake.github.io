@@ -5,7 +5,7 @@ description: "ミキサーの基本的な使い方をわかりやすく解説。
 date: 2026-05-11
 categories: [gear]
 tags: [ミキサー, ゲイン, フェーダー, EQ, レコーディング]
-image: /assets/images/thumb-mixer.png
+image: /assets/images/thumb-mixer.jpg
 ---
 
 ## ミキサーは「音量バランスを整える司令塔」
