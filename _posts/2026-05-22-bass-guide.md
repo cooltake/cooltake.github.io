@@ -5,7 +5,7 @@ description: "エレキベースを始めたい初心者向けに、ベースの
 date: 2026-05-22
 categories: [instrument]
 tags: [ベース, エレキベース, 初心者, 選び方, 楽器, 始め方]
-image: /assets/images/thumb-bass.png
+image: /assets/images/thumb-bass.jpg
 ---
 
 ## エレキベースとは？ — バンドの土台を支える楽器
