@@ -5,7 +5,7 @@ description: "ギターを始めたい初心者向けに、エレキとアコギ
 date: 2026-05-20
 categories: [instrument]
 tags: [ギター, エレキギター, アコースティックギター, 初心者, 選び方, 楽器]
-image: /assets/images/thumb-guitar.png
+image: /assets/images/thumb-guitar.jpg
 ---
 
 ## エレキ vs アコギ — まず「どちらを選ぶか」を決める
