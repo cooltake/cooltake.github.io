@@ -5,7 +5,7 @@ description: "音楽機材の運搬・保護に使うラックケースと楽器
 date: 2026-05-17
 categories: [gear]
 tags: [ラックケース, フライトケース, ARMOR, DUPLEX, SKB, 楽器ケース, ライブ機材, スタジオ]
-image: /assets/images/thumb-rack-case.png
+image: /assets/images/thumb-rack-case.jpg
 ---
 
 ## ケースの種類：用途別に分類する
