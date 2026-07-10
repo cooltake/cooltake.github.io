@@ -5,7 +5,7 @@ description: "音楽制作を始めたい初心者向けに、必要な機材・
 date: 2026-05-11
 categories: [gear]
 tags: [初心者, 機材, 準備, オーディオインターフェース, DAW]
-image: /assets/images/thumb-basics.png
+image: /assets/images/thumb-basics.jpg
 ---
 
 ## 「何から始めればいい？」最初の壁を突破する
