@@ -5,7 +5,7 @@ description: "DTMや宅録に使うヘッドフォンの選び方とおすすめ
 date: 2026-05-12
 categories: [gear]
 tags: [ヘッドフォン, モニタリング, DTM, 宅録, SONY, AKG, audio-technica]
-image: /assets/images/thumb-headphone.png
+image: /assets/images/thumb-headphone.jpg
 ---
 
 
