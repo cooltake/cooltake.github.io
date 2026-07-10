@@ -9,20 +9,31 @@
   {% if n == prev_num %}{% assign prev_post = post %}{% endif %}
   {% if n == next_num %}{% assign next_post = post %}{% endif %}
 {% endfor %}
-<nav class="series-nav" style="display:flex;justify-content:space-between;align-items:center;margin:2rem 0;padding:1rem;background:rgba(59,130,246,.06);border:1px solid rgba(59,130,246,.2);border-radius:10px;font-size:.88rem;">
-  <div>
+<div style="margin:2rem 0;">
+  <p style="text-align:center;font-size:.78rem;color:#6b7280;margin-bottom:.6rem;">この記事：{{ page.title }}</p>
+  <div style="display:flex;flex-wrap:wrap;gap:.8rem;">
     {% if prev_post %}
-      <a href="{{ prev_post.url }}" style="color:#60a5fa;">← 前の記事: {{ prev_post.title | truncate: 30 }}</a>
+    <a href="{{ prev_post.url }}" style="flex:1;min-width:200px;display:block;padding:.6rem 1.1rem;background:#e8edf2;border:1px solid #c8c5c0;border-radius:8px;color:#1e3a5f;text-decoration:none;font-size:.85rem;line-height:1.5;">
+      <span style="display:block;font-size:.72rem;opacity:.75;margin-bottom:2px;">← 前の記事</span>
+      <span>{{ prev_post.title }}</span>
+    </a>
     {% else %}
-      <span style="color:#475569;">← 前の記事なし</span>
+    <div style="flex:1;min-width:200px;display:block;padding:.6rem 1.1rem;background:#f0f1f3;border:1px solid #dcd9d4;border-radius:8px;color:#9ca3af;font-size:.85rem;line-height:1.5;">
+      <span style="display:block;font-size:.72rem;opacity:.8;margin-bottom:2px;">← 前の記事</span>
+      <span>第1回が最初の記事です</span>
+    </div>
     {% endif %}
-  </div>
-  <div style="color:#64748b;font-size:.8rem;">第{{ current_num }}回 / 全12回</div>
-  <div>
     {% if next_post %}
-      <a href="{{ next_post.url }}" style="color:#60a5fa;">次の記事: {{ next_post.title | truncate: 30 }} →</a>
+    <a href="{{ next_post.url }}" style="flex:1;min-width:200px;text-align:right;display:block;padding:.6rem 1.1rem;background:#e8edf2;border:1px solid #c8c5c0;border-radius:8px;color:#1e3a5f;text-decoration:none;font-size:.85rem;line-height:1.5;">
+      <span style="display:block;font-size:.72rem;opacity:.75;margin-bottom:2px;">次の記事 →</span>
+      <span>{{ next_post.title }}</span>
+    </a>
     {% else %}
-      <span style="color:#475569;">次の記事なし →</span>
+    <div style="flex:1;min-width:200px;text-align:right;display:block;padding:.6rem 1.1rem;background:#f0f1f3;border:1px solid #dcd9d4;border-radius:8px;color:#9ca3af;font-size:.85rem;line-height:1.5;">
+      <span style="display:block;font-size:.72rem;opacity:.8;margin-bottom:2px;">次の記事 →</span>
+      <span>第12回が最終回です</span>
+    </div>
     {% endif %}
   </div>
-</nav>
+  <p style="text-align:center;margin-top:.8rem;"><a href="/series-list.html?series=suno-guide" style="color:#1e3a5f;font-size:.82rem;text-decoration:underline;">シリーズ記事一覧を見る</a></p>
+</div>
