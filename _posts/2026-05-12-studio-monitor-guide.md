@@ -5,7 +5,7 @@ description: "スタジオモニタースピーカーの選び方を初心者向
 date: 2026-05-12
 categories: [gear]
 tags: [スタジオモニター, スピーカー, YAMAHA, KRK, Genelec, DTM, ミックス]
-image: /assets/images/thumb-studio-monitor.png
+image: /assets/images/thumb-studio-monitor.jpg
 ---
 
 
