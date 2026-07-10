@@ -3,7 +3,7 @@ layout: post
 title: "ダイナミックマイクとコンデンサーマイクの違い - 録音・宅録向け選び方ガイド"
 description: "ダイナミックマイクとコンデンサーマイクの違いを徹底解説。宅録・ボーカル録音・ライブ用途別のおすすめ選び方を初心者にもわかりやすく紹介します。"
 date: 2026-05-11
-image: /assets/images/thumb-microphone.png
+image: /assets/images/thumb-microphone.jpg
 categories: [gear]
 tags: [マイク, コンデンサーマイク, ダイナミックマイク, 録音, 宅録]
 ---
