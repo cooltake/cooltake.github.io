@@ -5,7 +5,7 @@ description: "マイクスタンドのストレート・ブーム・デスクア
 date: 2026-05-17
 categories: [gear]
 tags: [マイクスタンド, K&M, ブームスタンド, ストレートスタンド, 宅録, ライブ, レコーディング]
-image: /assets/images/thumb-mic-stand.png
+image: /assets/images/thumb-mic-stand.jpg
 ---
 
 ## マイクスタンドの種類と用途
