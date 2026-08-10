@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "小室進行（Ⅵm-Ⅳ-Ⅰ-Ⅴ）完全解説【コード進行シリーズ #03】代表曲20選＋90年代J-POP完全攻略"
+title: "小室進行の有名曲20選｜Ⅵm-Ⅳ-Ⅰ-Ⅴ【コード進行 #03】"
 date: 2026-05-30
 categories: [chord]
 tags: [キーボード, DAW, 作曲, 音楽制作, DTM, MIDI]
