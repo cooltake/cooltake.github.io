@@ -167,9 +167,40 @@ layout: default
     .ad-notice-hero { right: 24px; font-size: .65rem; }
     .post-content { padding: 16px 6% 32px !important; border-radius: 16px; }
     .post-body { padding: 0 3% 48px; }
-    /* SVGスペック図: 横スクロール */
+    /* SVGスペック図: 横スクロール
+       図は情報密度が高く、幅に合わせて縮小すると文字が4px前後になり判読不能
+       （viewBox 800px幅・最小ラベル11px → 298px幅では約4.1px）。
+       そのため min-width で可読性を確保し、横スクロールで全体を見せる。
+       ただしスクロールできることが伝わらないと「見切れている」と誤認されるため、
+       スクロール可能であることを視覚的に示す。
+
+       注: 表示幅そのものを広げることはCSSからはできない。figureは記事側に
+       inline style（margin/max-width）を持ち、inline styleが優先されるため
+       !important を付けても負マージンが効かないことを実測で確認済み。 */
     .post-content figure { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+    /* スクロール affordance は横スクロールするSVG図のfigureにのみ適用する
+       （写真のfigureに出すと、スクロールできないのに示唆してしまう） */
+    .post-content figure:has(svg) {
+      /* 左右にグラデーションを出し、続きがあることを示す */
+      background:
+        linear-gradient(to right, #d6d5d2 30%, rgba(214,213,210,0)) left center / 40px 100% no-repeat,
+        linear-gradient(to left,  #d6d5d2 30%, rgba(214,213,210,0)) right center / 40px 100% no-repeat,
+        radial-gradient(farthest-side at 0% 50%, rgba(0,0,0,.16), transparent) left center / 14px 100% no-repeat,
+        radial-gradient(farthest-side at 100% 50%, rgba(0,0,0,.16), transparent) right center / 14px 100% no-repeat;
+      background-attachment: local, local, scroll, scroll;
+    }
     .post-content figure svg { min-width: 600px; }
+    /* スクロール可能であることを明示するキャプション。
+       写真(img)のfigureは横スクロールしないため、SVG図を含むfigureに限定する
+       （限定しないと写真にも「横にスクロールできます」と出て誤解を招く） */
+    .post-content figure:has(svg)::after {
+      content: "→ 横にスクロールできます";
+      display: block;
+      font-size: .7rem;
+      color: #6b7280;
+      text-align: right;
+      margin-top: 6px;
+    }
     /* CTAボタン2列 → 1列 */
     .post-content div[style*="display:flex"] { flex-direction: column !important; }
     .post-content div[style*="display: flex"] { flex-direction: column !important; }

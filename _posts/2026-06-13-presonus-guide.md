@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "PreSonus オーディオインターフェイス全機種ガイド｜Studio One連携と選び方"
-description: "PreSonusのAudioBox GO・Studio 24c・Quantum HD/ESシリーズ・Quantum 2626を全機種比較。Studio Oneとの統合とThunderbolt低レイテンシーの強みを解説します。"
+title: "PreSonus全機種の違いと選び方｜オーディオIF比較2026"
+description: "PreSonusのオーディオインターフェイスをAudioBox GO・Studio 24c・Quantum HD/ES・Quantum 2626まで全機種比較。各モデルの違いと用途別の選び方、Studio One連携の強みを解説します。"
 date: 2026-06-13
 categories: [gear]
 tags: [オーディオインターフェイス, PreSonus, Quantum, Studio One, DTM, 録音機材]
