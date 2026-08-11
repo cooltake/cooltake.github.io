@@ -19,3 +19,15 @@ defaults:
       type: "posts"
     values:
       layout: "post"
+  - scope:
+      path: "community"
+    values:
+      sitemap: false
+  - scope:
+      path: "showcase"
+    values:
+      sitemap: false
+  - scope:
+      path: "google93f3e4d8a01ab661.html"
+    values:
+      sitemap: false
