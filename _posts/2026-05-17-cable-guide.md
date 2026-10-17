@@ -6,6 +6,8 @@ date: 2026-05-17
 categories: [gear]
 tags: [XLRケーブル, シールドケーブル, INSERTケーブル, スピーカーケーブル, USB, Thunderbolt, ケーブル, DTM, 宅録]
 image: /assets/images/thumb-cable.jpg
+redirect_from:
+  - /2026/05/17/cable-guide/
 ---
 
 ## 音楽制作で登場するケーブルの全種類

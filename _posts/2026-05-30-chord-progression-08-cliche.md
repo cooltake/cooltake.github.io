@@ -6,6 +6,8 @@ categories: [chord]
 tags: [ギター, キーボード, 作曲, 音楽制作, DTM]
 image: /assets/images/thumb-chord-08.jpg
 description: "半音下降ベースラインが生む哀愁「クリシェ進行」を徹底解説。津軽海峡・Michelle（Beatles）・Hotel California（Eagles）・アニソンなど代表曲20曲を楽天購入リンク付きで完全網羅。"
+redirect_from:
+  - /2026/05/30/chord-progression-08-cliche/
 ---
 
 

@@ -6,6 +6,8 @@ date: 2026-06-21
 categories: [production]
 tags: [Higgsfield, MCP, Claude Code, AI動画, ミュージックビデオ, Suno AI, 初心者, AI連携]
 image: /assets/images/thumb-higgsfield-mcp-music-video.jpg
+redirect_from:
+  - /2026/06/21/higgsfield-mcp-music-video-guide/
 ---
 
 ## Higgsfield MCPとは？ — AIエージェントから直接動画を生成できる仕組み

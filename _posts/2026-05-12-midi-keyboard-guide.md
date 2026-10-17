@@ -6,6 +6,8 @@ date: 2026-05-12
 categories: [gear]
 tags: [MIDIキーボード, AKAI, Roland, Arturia, DTM, 打ち込み]
 image: /assets/images/thumb-midi-keyboard.jpg
+redirect_from:
+  - /2026/05/12/midi-keyboard-guide/
 ---
 
 

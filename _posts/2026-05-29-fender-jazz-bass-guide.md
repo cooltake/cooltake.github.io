@@ -6,6 +6,8 @@ date: 2026-05-29
 categories: [instrument]
 tags: [Fender, Jazz Bass, ジャズベース, ベース, ベース選び方, ジャズ]
 image: /assets/images/thumb-jazz-bass.jpg
+redirect_from:
+  - /2026/05/29/fender-jazz-bass-guide/
 ---
 
 

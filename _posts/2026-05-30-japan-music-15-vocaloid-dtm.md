@@ -6,6 +6,8 @@ categories: [history]
 tags: [DAW, VST, DTM, 音楽制作, 作曲, 初心者]
 description: "2007年の初音ミク登場からニコニコ動画・YouTube・Spotifyへ。ボカロPたちが切り開いたDTM民主化の歴史と、今から音楽制作を始めるための完全スタートガイド。"
 image: /assets/images/thumb-vocaloid-dtm.jpg
+redirect_from:
+  - /2026/05/30/japan-music-15-vocaloid-dtm/
 ---
 
 

@@ -6,6 +6,8 @@ categories: [history]
 tags: [音楽史, ギター, キーボード, 作曲, DTM]
 description: "90年代中盤、渋谷を舞台に花開いたサブカルチャー音楽「渋谷系」と、宇多田ヒカル登場で完成したJ-R&B黄金期を解説。フリッパーズ・ギター、ピチカート・ファイヴ、小沢健二、宇多田ヒカルらが変えた日本の音楽地図。"
 image: /assets/images/thumb-shibuya-kei.jpg
+redirect_from:
+  - /2026/05/30/japan-music-12-shibuya-kei/
 ---
 
 ## 渋谷系とは何だったのか

@@ -6,6 +6,8 @@ date: 2026-05-22
 categories: [instrument]
 tags: [ドラム, 電子ドラム, 初心者, 選び方, 楽器, 始め方]
 image: /assets/images/thumb-drum.png
+redirect_from:
+  - /2026/05/22/drum-guide/
 ---
 
 ## ドラムとは？ — バンドのリズムを刻む司令塔

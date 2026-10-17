@@ -6,6 +6,8 @@ categories: [chord]
 tags: [ギター, 作曲, 音楽制作, DTM]
 image: /assets/images/thumb-chord-06.jpg
 description: "ヴィジュアル系・アニソンに多い「切ない系進行」を徹底解説。紅蓮華・ロマンスの神様・X JAPANなど代表曲20曲を楽天購入リンク付きで完全網羅。Ⅲmコードが生む「泣き」の正体も解説。"
+redirect_from:
+  - /2026/05/30/chord-progression-06-kanashii/
 ---
 
 

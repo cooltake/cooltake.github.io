@@ -6,6 +6,8 @@ date: 2026-06-13
 categories: [gear]
 tags: [オーディオインターフェイス, MOTU, AVB, スタジオ, 録音機材, プロ機材]
 image: /assets/images/thumb-motu-avb-guide.jpg
+redirect_from:
+  - /2026/06/13/motu-avb-pro-guide/
 ---
 
 ## MOTUの「青い画面」が象徴するもの

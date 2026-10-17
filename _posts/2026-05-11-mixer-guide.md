@@ -6,6 +6,8 @@ date: 2026-05-11
 categories: [gear]
 tags: [ミキサー, ゲイン, フェーダー, EQ, レコーディング]
 image: /assets/images/thumb-mixer.jpg
+redirect_from:
+  - /2026/05/11/mixer-guide/
 ---
 
 ## ミキサーは「音量バランスを整える司令塔」

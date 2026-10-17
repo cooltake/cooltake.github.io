@@ -6,6 +6,8 @@ categories: [history]
 tags: [ギター, エレキギター, エフェクター, 音楽制作]
 description: "1987〜1990年、BOØWY・BUCK-TICK・THE BLUE HEARTSが牽引した空前のバンドブーム。イカ天・ホコ天が生んだDIYロック精神と、当時の機材・現代エフェクターで同じサウンドを出す方法を解説。"
 image: /assets/images/thumb-band-boom.jpg
+redirect_from:
+  - /2026/05/30/japan-music-08-band-boom/
 ---
 
 ## 「バンドをやろうぜ」の時代

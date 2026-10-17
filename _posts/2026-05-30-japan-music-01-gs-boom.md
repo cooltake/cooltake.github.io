@@ -6,6 +6,8 @@ categories: [history]
 tags: [ギター, エレキギター, 音楽制作, 初心者]
 description: "1960年代、ベンチャーズ来日をきっかけに爆発したグループサウンズブーム。日本にエレキギター文化を根付かせたムーブメントの全貌と、現代で同じサウンドを再現する方法を解説。"
 image: /assets/images/thumb-gs-boom.jpg
+redirect_from:
+  - /2026/05/30/japan-music-01-gs-boom/
 ---
 
 ## グループサウンズとは？日本のロック元年

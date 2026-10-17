@@ -6,6 +6,8 @@ categories: [history]
 tags: [ギター, キーボード, DAW, 音楽制作, 作曲]
 description: "山下達郎・竹内まりや・大貫妙子が世界で再評価されたシティポップリバイバル現象。YouTubeアルゴリズムが発掘した80年代の名盤と、現代で「シティポップ風サウンド」を作るDTGガイド。"
 image: /assets/images/thumb-city-pop-revival.jpg
+redirect_from:
+  - /2026/05/30/japan-music-17-city-pop-revival/
 ---
 
 

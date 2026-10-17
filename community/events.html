@@ -251,7 +251,7 @@ function renderCard(ev) {
         <div class="event-tags">
           <span class="tag">${esc(ev.event_type||'')}</span>
           ${feeBadge(ev.fee_type, ev.fee_amount, ev.drink_fee)}
-          ${ev.group_name ? `<a href="/community/group.html?name=${encodeURIComponent(ev.group_name)}" class="group-link">🎵 ${esc(ev.group_name)}</a>` : ''}
+          ${ev.group_name ? `<span class="group-link">🎵 ${esc(ev.group_name)}</span>` : ''}
         </div>
         <button class="contact-btn" onclick="showContact(event,'${esc(ev.contact||'')}')">詳細・申込</button>
       </div>

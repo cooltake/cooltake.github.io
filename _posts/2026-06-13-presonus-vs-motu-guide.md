@@ -6,6 +6,8 @@ date: 2026-06-13
 categories: [gear]
 tags: [オーディオインターフェイス, PreSonus, MOTU, 録音機材, スタジオ]
 image: /assets/images/thumb-presonus-vs-motu.jpg
+redirect_from:
+  - /2026/06/13/presonus-vs-motu-guide/
 ---
 
 ## PreSonusとMOTU、何が違うのか

@@ -6,6 +6,8 @@ date: 2026-05-29
 categories: [instrument]
 tags: [ピックアップ, パッシブ, アクティブ, ハムバッカー, シングルコイル, エレキギター]
 image: /assets/images/thumb-pickup-guide.jpg
+redirect_from:
+  - /2026/05/29/guitar-bass-pickup-guide/
 ---
 
 

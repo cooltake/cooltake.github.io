@@ -6,6 +6,8 @@ categories: [history]
 tags: [音楽制作, DAW, 初心者, 作曲]
 description: "1970年代中期、キャンディーズ・ピンクレディーが席巻した歌謡曲黄金期。阿久悠・都倉俊一らの職人が作り上げたサウンドの秘密と、現代DTMでの再現テクニックを解説。"
 image: /assets/images/thumb-idol-candies.jpg
+redirect_from:
+  - /2026/05/30/japan-music-03-idol-candies-era/
 ---
 
 ## 歌謡職人たちが作った黄金時代

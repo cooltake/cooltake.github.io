@@ -6,6 +6,8 @@ date: 2026-06-13
 categories: [gear]
 tags: [オーディオインターフェイス, Focusrite, Scarlett, DTM, 録音機材]
 image: /assets/images/thumb-focusrite-scarlett-guide.jpg
+redirect_from:
+  - /2026/06/13/focusrite-scarlett-guide/
 ---
 
 ## Focusrite Scarlettとは

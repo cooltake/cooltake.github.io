@@ -6,6 +6,8 @@ date: 2026-05-24
 categories: [production]
 tags: [防音, 宅録, 吸音, 遮音, スタジオ環境, DIY, 録音]
 image: /assets/images/thumb-soundproofing.jpg
+redirect_from:
+  - /2026/05/24/soundproofing-home-studio-guide/
 ---
 
 ## 宅録の「音問題」は2種類ある

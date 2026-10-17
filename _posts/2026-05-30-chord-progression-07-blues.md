@@ -6,6 +6,8 @@ categories: [chord]
 tags: [ギター, エレキギター, 音楽制作, 作曲]
 image: /assets/images/thumb-chord-07.jpg
 description: "すべてのロックの起源「ブルース進行（Ⅰ-Ⅳ-Ⅴ）」を徹底解説。尾崎豊・B'z・Chuck Berry・Led Zeppelinなど日本・海外の代表曲20曲を楽天購入リンク付きで完全網羅。12小節ブルースの弾き方も解説。"
+redirect_from:
+  - /2026/05/30/chord-progression-07-blues/
 ---
 
 

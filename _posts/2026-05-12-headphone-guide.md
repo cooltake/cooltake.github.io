@@ -6,6 +6,8 @@ date: 2026-05-12
 categories: [gear]
 tags: [ヘッドフォン, モニタリング, DTM, 宅録, SONY, AKG, audio-technica]
 image: /assets/images/thumb-headphone.jpg
+redirect_from:
+  - /2026/05/12/headphone-guide/
 ---
 
 

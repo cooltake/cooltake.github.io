@@ -6,6 +6,8 @@ date: 2026-05-17
 categories: [gear]
 tags: [マイクスタンド, K&M, ブームスタンド, ストレートスタンド, 宅録, ライブ, レコーディング]
 image: /assets/images/thumb-mic-stand.jpg
+redirect_from:
+  - /2026/05/17/mic-stand-guide/
 ---
 
 ## マイクスタンドの種類と用途

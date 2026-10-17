@@ -6,6 +6,8 @@ categories: [history]
 tags: [日本音楽史, ゴダイゴ, バークリー, 洋楽影響, J-POP源流]
 image: /assets/images/thumb-godiego-fusion.jpg
 description: "1970年代後期、ゴダイゴをはじめとするバークリー帰りのミュージシャンが西洋音楽理論を日本のポップスに融合。英語×日本語の歌詞スタイルとプロフェッショナルなアレンジが、後のJ-POP全体の水準を引き上げた過程を解説。"
+redirect_from:
+  - /2026/05/30/japan-music-04-foreign-influence/
 ---
 
 ## 1970年代後期——日本音楽が「世界標準」に追いつく転換点

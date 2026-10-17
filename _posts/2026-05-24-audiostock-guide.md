@@ -6,6 +6,8 @@ date: 2026-05-24
 categories: [learn]
 tags: [AudioStock, 楽曲販売, 音楽配信, ストックミュージック, DTM, 副業]
 image: /assets/images/thumb-audiostock.png
+redirect_from:
+  - /2026/05/24/audiostock-guide/
 ---
 
 ## AudioStockとは？ — 日本最大のストック音楽プラットフォーム

@@ -6,6 +6,8 @@ date: 2026-05-20
 categories: [instrument]
 tags: [ギター, エレキギター, アコースティックギター, 初心者, 選び方, 楽器]
 image: /assets/images/thumb-guitar.jpg
+redirect_from:
+  - /2026/05/20/guitar-guide/
 ---
 
 ## エレキ vs アコギ — まず「どちらを選ぶか」を決める

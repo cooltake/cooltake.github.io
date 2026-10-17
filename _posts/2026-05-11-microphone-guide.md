@@ -6,6 +6,8 @@ date: 2026-05-11
 image: /assets/images/thumb-microphone.jpg
 categories: [gear]
 tags: [マイク, コンデンサーマイク, ダイナミックマイク, 録音, 宅録]
+redirect_from:
+  - /2026/05/11/microphone-guide/
 ---
 
 

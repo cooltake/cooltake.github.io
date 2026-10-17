@@ -6,6 +6,8 @@ date: 2026-05-29
 categories: [instrument]
 tags: [Fender, Jazzmaster, ジャズマスター, エレキギター, ギター選び方, オルタナ]
 image: /assets/images/thumb-jazzmaster.jpg
+redirect_from:
+  - /2026/05/29/fender-jazzmaster-guide/
 ---
 
 

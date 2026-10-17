@@ -6,6 +6,8 @@ date: 2026-05-29
 categories: [instrument]
 tags: [Music Man, StingRay, スティングレイ, エレキベース, ベース選び方, スラップ]
 image: /assets/images/thumb-stingray-bass.jpg
+redirect_from:
+  - /2026/05/29/musicman-stingray-bass-guide/
 ---
 
 

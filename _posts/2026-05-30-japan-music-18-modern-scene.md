@@ -6,6 +6,8 @@ categories: [history]
 tags: [DAW, 音楽制作, DTM, Suno AI, AudioStock, 副業, 初心者]
 description: "Vtuber・サブスク・AI音楽が共存する2020年代の日本音楽シーン。米津玄師からYOASOBIまで、現代の音楽制作の潮流と、今から音楽で収益を得るためのロードマップを解説。"
 image: /assets/images/thumb-modern-scene.jpg
+redirect_from:
+  - /2026/05/30/japan-music-18-modern-scene/
 ---
 
 

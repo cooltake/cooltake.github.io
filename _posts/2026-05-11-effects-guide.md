@@ -6,6 +6,8 @@ date: 2026-05-11
 image: /assets/images/thumb-effects.jpg
 categories: [gear]
 tags: [コンプレッサー, リバーブ, ゲート, エフェクター, MIX]
+redirect_from:
+  - /2026/05/11/effects-guide/
 ---
 
 

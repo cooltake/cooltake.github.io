@@ -6,6 +6,8 @@ date: 2026-05-29
 categories: [instrument]
 tags: [Fender, Jaguar, ジャガー, エレキギター, ギター選び方, サーフ, ガレージロック]
 image: /assets/images/thumb-jaguar.jpg
+redirect_from:
+  - /2026/05/29/fender-jaguar-guide/
 ---
 
 

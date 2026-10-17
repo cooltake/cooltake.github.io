@@ -6,6 +6,8 @@ date: 2026-05-24
 categories: [learn]
 tags: [BeatStars, ビート販売, ビートメイク, 音楽販売, DTM, 副業, トラックメイク]
 image: /assets/images/thumb-beatstars.png
+redirect_from:
+  - /2026/05/24/beatstars-guide/
 ---
 
 ## BeatStarsとは？ — 世界最大のビート売買プラットフォーム
