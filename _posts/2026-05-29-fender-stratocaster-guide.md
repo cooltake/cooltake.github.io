@@ -6,6 +6,8 @@ date: 2026-05-29
 categories: [instrument]
 tags: [Fender, Stratocaster, ストラトキャスター, エレキギター, ギター選び方, ロック]
 image: /assets/images/thumb-stratocaster.jpg
+redirect_from:
+  - /2026/05/29/fender-stratocaster-guide/
 ---
 
 
@@ -61,7 +63,7 @@ image: /assets/images/thumb-stratocaster.jpg
 
 「音の幅が広い方が良い」→ Stratocaster、「シンプルで力強い音が欲しい」→ Telecasterです。
 
-<a href="/2026/05/29/fender-telecaster-guide/">→ Telecasterのガイドはこちら</a>
+<a href="/instrument/fender-telecaster-guide/">→ Telecasterのガイドはこちら</a>
 
 ---
 
@@ -76,4 +78,4 @@ image: /assets/images/thumb-stratocaster.jpg
 
 Fender Stratocasterは音楽史上最も影響力を持つギターのひとつで、あらゆるジャンルに対応できる汎用性が強みです。シングルコイルの煌びやかなサウンドとトレモロアームを活かして、自分だけのトーンを追求してください。
 
-<a href="/2026/05/20/guitar-guide/">→ エレキギター初心者ガイドはこちら</a>
+<a href="/instrument/guitar-guide/">→ エレキギター初心者ガイドはこちら</a>

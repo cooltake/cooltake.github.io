@@ -6,6 +6,8 @@ date: 2026-05-29
 categories: [instrument]
 tags: [Fender, Jazzmaster, ジャズマスター, エレキギター, ギター選び方, オルタナ]
 image: /assets/images/thumb-jazzmaster.jpg
+redirect_from:
+  - /2026/05/29/fender-jazzmaster-guide/
 ---
 
 
@@ -68,7 +70,7 @@ Jazzmasterはオフセットボディシリーズの主力モデルとして、J
 
 「弾きやすさとウォームな音」→ Jazzmaster、「短いスケールと独特の操作系が面白い」→ Jaguarです。
 
-<a href="/2026/05/29/fender-jaguar-guide/">→ Jaguarのガイドはこちら</a>
+<a href="/instrument/fender-jaguar-guide/">→ Jaguarのガイドはこちら</a>
 
 ---
 
@@ -89,5 +91,5 @@ Jazzmasterはオフセットボディシリーズの主力モデルとして、J
 
 Fender Jazzmasterは、StratocasterやTelecasterとは一線を画す個性的なサウンドと見た目が魅力のギターです。オルタナ・シューゲイザー・インディーロックのサウンドを求めるギタリストにとって、最もアイコニックな選択肢のひとつです。
 
-<a href="/2026/05/20/guitar-guide/">→ エレキギター初心者ガイドはこちら</a>
-<a href="/2026/05/29/fender-jaguar-guide/">→ Fender Jaguarのガイドはこちら</a>
+<a href="/instrument/guitar-guide/">→ エレキギター初心者ガイドはこちら</a>
+<a href="/instrument/fender-jaguar-guide/">→ Fender Jaguarのガイドはこちら</a>

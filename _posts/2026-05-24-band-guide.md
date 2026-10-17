@@ -6,6 +6,8 @@ date: 2026-05-24
 categories: [production]
 tags: [バンド, 始め方, メンバー募集, バンド結成, ライブ, リハーサル]
 image: /assets/images/thumb-band.png
+redirect_from:
+  - /2026/05/24/band-guide/
 ---
 
 ## バンドを始める前に決めること

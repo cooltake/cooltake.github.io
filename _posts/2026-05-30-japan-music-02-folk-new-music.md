@@ -6,6 +6,8 @@ categories: [history]
 tags: [ギター, 録音, 音楽制作, 初心者]
 description: "1970年代、吉田拓郎・井上陽水・荒井由実が牽引したフォーク・ニューミュージック。アコギ一本で社会を歌い、マルチトラック録音が日本の音楽制作を変えた時代の記録。"
 image: /assets/images/thumb-folk-new-music.jpg
+redirect_from:
+  - /2026/05/30/japan-music-02-folk-new-music/
 ---
 
 ## GSの反動から生まれたフォーク
@@ -115,4 +117,4 @@ Roland RE-201の温かいエコーサウンドは、現代ではプラグイン�
 
 
 
-<div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:.8rem;margin:2rem 0;"><a href="/2026/05/30/japan-music-01-gs-boom/" style="display:inline-block;padding:.5rem 1rem;background:#e8edf2;border:1px solid #c8c5c0;border-radius:8px;color:#1e3a5f;text-decoration:none;font-size:.9rem;">← #01 グループサウンズ</a><a href="/2026/05/30/japan-music-03-idol-candies-era/" style="display:inline-block;padding:.5rem 1rem;background:#e8edf2;border:1px solid #c8c5c0;border-radius:8px;color:#1e3a5f;text-decoration:none;font-size:.9rem;">#03 キャンディーズ・ピンクレディー →</a></div>
+<div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:.8rem;margin:2rem 0;"><a href="/history/japan-music-01-gs-boom/" style="display:inline-block;padding:.5rem 1rem;background:#e8edf2;border:1px solid #c8c5c0;border-radius:8px;color:#1e3a5f;text-decoration:none;font-size:.9rem;">← #01 グループサウンズ</a><a href="/history/japan-music-03-idol-candies-era/" style="display:inline-block;padding:.5rem 1rem;background:#e8edf2;border:1px solid #c8c5c0;border-radius:8px;color:#1e3a5f;text-decoration:none;font-size:.9rem;">#03 キャンディーズ・ピンクレディー →</a></div>

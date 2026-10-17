@@ -6,6 +6,8 @@ categories: [chord]
 tags: [ギター, キーボード, 作曲, 音楽制作, DTM, 初心者]
 image: /assets/images/thumb-chord-02.jpg
 description: "カノン進行が使われているアニソン・J-POP・洋楽の有名曲20曲を紹介。千本桜・愛は勝つ・Let It Beなど誰もが知る名曲のコードを掲載し、ギター・ピアノでの弾き方と300年愛される理由まで解説します。"
+redirect_from:
+  - /2026/05/30/chord-progression-02-canon/
 ---
 
 

@@ -6,6 +6,8 @@ date: 2026-07-07
 categories: [learn]
 tags: [著作権, JASRAC, NexTone, カバー曲, ライブ音源, 演奏権, 著作隣接権, 楽曲販売]
 image: /assets/images/thumb-performance-royalty.jpg
+redirect_from:
+  - /2026/07/07/performance-royalty-guide/
 ---
 
 ## 「演奏した楽曲」を売るとき、何にお金がかかるのか

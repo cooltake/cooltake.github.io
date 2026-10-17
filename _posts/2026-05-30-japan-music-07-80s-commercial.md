@@ -6,6 +6,8 @@ categories: [history]
 tags: [音楽制作, DAW, 初心者, 作曲, キーボード]
 description: "80年代アイドルとバンドブームの間に存在する「バブル前夜の商業音楽」。角松敏生・杉山清貴・渡辺美里・小比類巻かほる——この時代に完成したJ-POPの文法とサウンドを解説。"
 image: /assets/images/thumb-80s-commercial.jpg
+redirect_from:
+  - /2026/05/30/japan-music-07-80s-commercial/
 ---
 
 ## アイドルとバンドの間に——1984〜1987年の商業音楽
@@ -117,4 +119,4 @@ Aメロ：DX7系シンセベース + TR-909ドラム
 
 
 
-<div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:.8rem;margin:2rem 0;"><a href="/2026/05/30/japan-music-06-80s-idol-production/" style="display:inline-block;padding:.5rem 1rem;background:#e8edf2;border:1px solid #c8c5c0;border-radius:8px;color:#1e3a5f;text-decoration:none;font-size:.9rem;">← #06 80年代アイドル</a><a href="/2026/05/30/japan-music-08-band-boom/" style="display:inline-block;padding:.5rem 1rem;background:#e8edf2;border:1px solid #c8c5c0;border-radius:8px;color:#1e3a5f;text-decoration:none;font-size:.9rem;">#08 バンドブーム →</a></div>
+<div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:.8rem;margin:2rem 0;"><a href="/history/japan-music-06-80s-idol-production/" style="display:inline-block;padding:.5rem 1rem;background:#e8edf2;border:1px solid #c8c5c0;border-radius:8px;color:#1e3a5f;text-decoration:none;font-size:.9rem;">← #06 80年代アイドル</a><a href="/history/japan-music-08-band-boom/" style="display:inline-block;padding:.5rem 1rem;background:#e8edf2;border:1px solid #c8c5c0;border-radius:8px;color:#1e3a5f;text-decoration:none;font-size:.9rem;">#08 バンドブーム →</a></div>

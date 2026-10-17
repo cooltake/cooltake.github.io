@@ -6,6 +6,8 @@ categories: [history]
 tags: [音楽史, キーボード, 作曲, DTM, 音楽制作]
 description: "モーニング娘。からAKB48へ、着うたからYouTubeへ——2000年代の日本音楽はビジネスモデルごと激変した。EXILE・EXILE系列の台頭、EXILEブーム、そして秋元康が設計した「参加型アイドル」AKB48が音楽産業を塗り替えた10年間を解説。"
 image: /assets/images/thumb-2000s-idol.jpg
+redirect_from:
+  - /2026/05/30/japan-music-14-2000s-idol/
 ---
 
 
@@ -238,4 +240,4 @@ EXILEが確立した「ダンスに最適化された楽曲設計」：
 - ブレイクダウン（静かなパート）を必ず入れる（技の見せ場）
 
 
-<div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:.8rem;margin:2rem 0;"><a href="/2026/05/30/japan-music-13-hiphop-rb/" style="display:inline-block;padding:.5rem 1rem;background:#e8edf2;border:1px solid #c8c5c0;border-radius:8px;color:#1e3a5f;text-decoration:none;font-size:.9rem;">← #13 ヒップホップ・R&B</a><a href="/2026/05/30/japan-music-15-vocaloid-dtm/" style="display:inline-block;padding:.5rem 1rem;background:#e8edf2;border:1px solid #c8c5c0;border-radius:8px;color:#1e3a5f;text-decoration:none;font-size:.9rem;">#15 ボカロ・DTM →</a></div>
+<div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:.8rem;margin:2rem 0;"><a href="/history/japan-music-13-hiphop-rb/" style="display:inline-block;padding:.5rem 1rem;background:#e8edf2;border:1px solid #c8c5c0;border-radius:8px;color:#1e3a5f;text-decoration:none;font-size:.9rem;">← #13 ヒップホップ・R&B</a><a href="/history/japan-music-15-vocaloid-dtm/" style="display:inline-block;padding:.5rem 1rem;background:#e8edf2;border:1px solid #c8c5c0;border-radius:8px;color:#1e3a5f;text-decoration:none;font-size:.9rem;">#15 ボカロ・DTM →</a></div>

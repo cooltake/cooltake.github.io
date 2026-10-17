@@ -6,6 +6,8 @@ categories: [history]
 tags: [DAW, VST, DTM, 音楽制作, 作曲, 初心者]
 description: "2007年の初音ミク登場からニコニコ動画・YouTube・Spotifyへ。ボカロPたちが切り開いたDTM民主化の歴史と、今から音楽制作を始めるための完全スタートガイド。"
 image: /assets/images/thumb-vocaloid-dtm.jpg
+redirect_from:
+  - /2026/05/30/japan-music-15-vocaloid-dtm/
 ---
 
 
@@ -260,4 +262,4 @@ DAW：おそらくCubase（VOCALOIDとの相性から推測）
 | Dreamtonics Solaria | 英語AI歌声の最高峰 | 有料 |
 
 
-<div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:.8rem;margin:2rem 0;"><a href="/2026/05/30/japan-music-14-2000s-idol/" style="display:inline-block;padding:.5rem 1rem;background:#e8edf2;border:1px solid #c8c5c0;border-radius:8px;color:#1e3a5f;text-decoration:none;font-size:.9rem;">← #14 2000年代アイドル</a><a href="/2026/05/30/japan-music-16-2010s-band/" style="display:inline-block;padding:.5rem 1rem;background:#e8edf2;border:1px solid #c8c5c0;border-radius:8px;color:#1e3a5f;text-decoration:none;font-size:.9rem;">#16 2010年代バンドリバイバル →</a></div>
+<div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:.8rem;margin:2rem 0;"><a href="/history/japan-music-14-2000s-idol/" style="display:inline-block;padding:.5rem 1rem;background:#e8edf2;border:1px solid #c8c5c0;border-radius:8px;color:#1e3a5f;text-decoration:none;font-size:.9rem;">← #14 2000年代アイドル</a><a href="/history/japan-music-16-2010s-band/" style="display:inline-block;padding:.5rem 1rem;background:#e8edf2;border:1px solid #c8c5c0;border-radius:8px;color:#1e3a5f;text-decoration:none;font-size:.9rem;">#16 2010年代バンドリバイバル →</a></div>

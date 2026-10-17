@@ -6,6 +6,8 @@ date: 2026-05-24
 categories: [production]
 tags: [MIX, ミキシング, マスタリング, DAW, 音楽制作, 初心者]
 image: /assets/images/thumb-mixing.jpg
+redirect_from:
+  - /2026/05/24/mixing-mastering-guide/
 ---
 
 ## MIXとマスタリングの違い — まずここを押さえよう

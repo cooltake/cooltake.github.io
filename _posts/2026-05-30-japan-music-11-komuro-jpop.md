@@ -6,6 +6,9 @@ categories: [history]
 tags: [DAW, MIDI, キーボード, MIDIキーボード, 音楽制作, DTM]
 description: "小室哲哉・avexが牽引した1990年代J-POPの黄金期。TRF・globe・安室奈美恵・SPEEDを生んだ「打ち込みポップス」の制作手法と、現代DTMで小室サウンドを再現する完全ガイド。"
 image: /assets/images/thumb-komuro-jpop.jpg
+redirect_from:
+  - /2026/05/30/japan-music-11-komuro-jpop/
+  - /2026/05/30/japan-music-09-komuro-jpop/
 ---
 
 
@@ -283,4 +286,4 @@ Em → C → G → D（電子音と組み合わせると90年代感が出る）
 これらをJV-1080系のパッドサウンドで鳴らすだけで「あの時代の音」が蘇る。
 
 
-<div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:.8rem;margin:2rem 0;"><a href="/2026/05/30/japan-music-10-visual-kei/" style="display:inline-block;padding:.5rem 1rem;background:#e8edf2;border:1px solid #c8c5c0;border-radius:8px;color:#1e3a5f;text-decoration:none;font-size:.9rem;">← #10 ヴィジュアル系</a><a href="/2026/05/30/japan-music-12-shibuya-kei/" style="display:inline-block;padding:.5rem 1rem;background:#e8edf2;border:1px solid #c8c5c0;border-radius:8px;color:#1e3a5f;text-decoration:none;font-size:.9rem;">#12 渋谷系・J-R&B →</a></div>
+<div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:.8rem;margin:2rem 0;"><a href="/history/japan-music-10-visual-kei/" style="display:inline-block;padding:.5rem 1rem;background:#e8edf2;border:1px solid #c8c5c0;border-radius:8px;color:#1e3a5f;text-decoration:none;font-size:.9rem;">← #10 ヴィジュアル系</a><a href="/history/japan-music-12-shibuya-kei/" style="display:inline-block;padding:.5rem 1rem;background:#e8edf2;border:1px solid #c8c5c0;border-radius:8px;color:#1e3a5f;text-decoration:none;font-size:.9rem;">#12 渋谷系・J-R&B →</a></div>

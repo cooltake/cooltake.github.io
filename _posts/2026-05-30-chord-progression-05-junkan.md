@@ -6,6 +6,8 @@ categories: [chord]
 tags: [ギター, キーボード, 作曲, 音楽制作, 初心者]
 image: /assets/images/thumb-chord-05.jpg
 description: "50年代ロカビリーから現代J-POPまで使われる「循環コード（Ⅰ-Ⅵm-Ⅳ-Ⅴ）」を徹底解説。Stand By Me・亜麻色の髪の乙女・ロビンソンなどJ-POP代表曲20曲を楽天購入リンク付きで完全網羅。"
+redirect_from:
+  - /2026/05/30/chord-progression-05-junkan/
 ---
 
 

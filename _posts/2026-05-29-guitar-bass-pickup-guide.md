@@ -6,6 +6,8 @@ date: 2026-05-29
 categories: [instrument]
 tags: [ピックアップ, パッシブ, アクティブ, ハムバッカー, シングルコイル, エレキギター]
 image: /assets/images/thumb-pickup-guide.jpg
+redirect_from:
+  - /2026/05/29/guitar-bass-pickup-guide/
 ---
 
 
@@ -131,5 +133,5 @@ image: /assets/images/thumb-pickup-guide.jpg
 - **自然なダイナミクス** → パッシブ
 - **フラットで加工しやすい音** → アクティブ
 
-<a href="/2026/05/20/guitar-guide/">→ エレキギター初心者ガイドはこちら</a>
-<a href="/2026/05/22/bass-guide/">→ ベース初心者ガイドはこちら</a>
+<a href="/instrument/guitar-guide/">→ エレキギター初心者ガイドはこちら</a>
+<a href="/instrument/bass-guide/">→ ベース初心者ガイドはこちら</a>

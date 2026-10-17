@@ -6,6 +6,8 @@ date: 2026-05-24
 categories: [production]
 tags: [VST, プラグイン, DAW, 音楽制作, シンセサイザー, エフェクト, 初心者]
 image: /assets/images/thumb-vst-plugin.png
+redirect_from:
+  - /2026/05/24/vst-plugin-guide/
 ---
 
 ## VSTプラグインとは？ — DAWを拡張する「アプリ」

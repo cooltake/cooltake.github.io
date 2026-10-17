@@ -6,6 +6,8 @@ date: 2026-05-24
 categories: [production]
 tags: [DTM, 宅録, DAW, ソロ制作, 作曲, 音楽制作環境, セットアップ]
 image: /assets/images/thumb-solo-dtm.jpg
+redirect_from:
+  - /2026/05/24/solo-dtm-setup/
 ---
 
 ## ソロDTMとは — 一人で音楽制作を完結させる

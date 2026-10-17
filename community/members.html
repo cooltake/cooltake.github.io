@@ -229,7 +229,7 @@ function renderCard(m) {
       <span>⭐ ${esc(m.level || '')}</span>
     </div>
     <div class="card-footer">
-      ${m.group_name ? `<a href="/community/group.html?name=${encodeURIComponent(m.group_name)}" class="group-link">🎵 ${esc(m.group_name)}</a>` : '<span></span>'}
+      ${m.group_name ? `<span class="group-link">🎵 ${esc(m.group_name)}</span>` : '<span></span>'}
       <a href="mailto:?body=${encodeURIComponent('連絡先: '+m.contact)}" class="contact-btn" onclick="showContact(event,'${esc(m.contact || '')}')">連絡する</a>
     </div>
   </div>`;

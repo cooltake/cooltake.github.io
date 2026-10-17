@@ -6,6 +6,9 @@ categories: [history]
 tags: [DAW, 音楽制作, マイク, オーディオインターフェース, 録音]
 description: "m-flo・SOUL'd OUT・BENNIE Kが牽引した2000年代の日本語ヒップホップ・R&Bブーム。サンプリング文化とビートメイキングの手法、現代のDAWで同じサウンドを作る完全ガイド。"
 image: /assets/images/thumb-hiphop-rb.jpg
+redirect_from:
+  - /2026/05/30/japan-music-13-hiphop-rb/
+  - /2026/05/30/japan-music-10-hiphop-rb/
 ---
 
 
@@ -247,4 +250,4 @@ Bass:  キックに合わせたシンプルなサブベース
 この曲のBPM・コード・エフェクト構成は今も学ぶ価値がある。
 
 
-<div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:.8rem;margin:2rem 0;"><a href="/2026/05/30/japan-music-12-shibuya-kei/" style="display:inline-block;padding:.5rem 1rem;background:#e8edf2;border:1px solid #c8c5c0;border-radius:8px;color:#1e3a5f;text-decoration:none;font-size:.9rem;">← #12 渋谷系・J-R&B</a><a href="/2026/05/30/japan-music-14-2000s-idol/" style="display:inline-block;padding:.5rem 1rem;background:#e8edf2;border:1px solid #c8c5c0;border-radius:8px;color:#1e3a5f;text-decoration:none;font-size:.9rem;">#14 2000年代アイドル →</a></div>
+<div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:.8rem;margin:2rem 0;"><a href="/history/japan-music-12-shibuya-kei/" style="display:inline-block;padding:.5rem 1rem;background:#e8edf2;border:1px solid #c8c5c0;border-radius:8px;color:#1e3a5f;text-decoration:none;font-size:.9rem;">← #12 渋谷系・J-R&B</a><a href="/history/japan-music-14-2000s-idol/" style="display:inline-block;padding:.5rem 1rem;background:#e8edf2;border:1px solid #c8c5c0;border-radius:8px;color:#1e3a5f;text-decoration:none;font-size:.9rem;">#14 2000年代アイドル →</a></div>

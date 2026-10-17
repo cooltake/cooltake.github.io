@@ -6,6 +6,8 @@ categories: [history]
 tags: [音楽史, ギター, ベース, ドラム, 作曲, DTM, 音楽制作]
 description: "ストリーミング以前の最後の時代、2010年代の日本音楽は多様化と「発見の時代」だった。RADWIMPS、星野源、ゲスの極み乙女。、amazarashi——個性的なバンドが乱立し、タイアップアニメ・映画との連動で世界市場へ。サブスク普及前夜の音楽シーンを解説。"
 image: /assets/images/thumb-2010s-band.jpg
+redirect_from:
+  - /2026/05/30/japan-music-16-2010s-band/
 ---
 
 
@@ -260,4 +262,4 @@ BPM：170
 - EDM：ビートプロデューサーとしての顔も持つ
 
 
-<div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:.8rem;margin:2rem 0;"><a href="/2026/05/30/japan-music-15-vocaloid-dtm/" style="display:inline-block;padding:.5rem 1rem;background:#e8edf2;border:1px solid #c8c5c0;border-radius:8px;color:#1e3a5f;text-decoration:none;font-size:.9rem;">← #15 ボカロ・DTM</a><a href="/2026/05/30/japan-music-17-city-pop-revival/" style="display:inline-block;padding:.5rem 1rem;background:#e8edf2;border:1px solid #c8c5c0;border-radius:8px;color:#1e3a5f;text-decoration:none;font-size:.9rem;">#17 シティポップ・リバイバル →</a></div>
+<div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:.8rem;margin:2rem 0;"><a href="/history/japan-music-15-vocaloid-dtm/" style="display:inline-block;padding:.5rem 1rem;background:#e8edf2;border:1px solid #c8c5c0;border-radius:8px;color:#1e3a5f;text-decoration:none;font-size:.9rem;">← #15 ボカロ・DTM</a><a href="/history/japan-music-17-city-pop-revival/" style="display:inline-block;padding:.5rem 1rem;background:#e8edf2;border:1px solid #c8c5c0;border-radius:8px;color:#1e3a5f;text-decoration:none;font-size:.9rem;">#17 シティポップ・リバイバル →</a></div>

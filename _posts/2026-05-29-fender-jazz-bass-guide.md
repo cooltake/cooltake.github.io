@@ -6,6 +6,8 @@ date: 2026-05-29
 categories: [instrument]
 tags: [Fender, Jazz Bass, ジャズベース, ベース, ベース選び方, ジャズ]
 image: /assets/images/thumb-jazz-bass.jpg
+redirect_from:
+  - /2026/05/29/fender-jazz-bass-guide/
 ---
 
 
@@ -45,7 +47,7 @@ Fenderの2大ベースを徹底比較します。
 
 手が小さい方や細いネックが好みの場合は**Jazz Bass**、太いパワーのある音を求めるなら**Precision Bass**が向いています。
 
-<a href="/2026/05/29/fender-precision-bass-guide/">→ Precision Bassのガイドはこちら</a>
+<a href="/instrument/fender-precision-bass-guide/">→ Precision Bassのガイドはこちら</a>
 
 ---
 
@@ -69,4 +71,4 @@ Fenderの2大ベースを徹底比較します。
 
 Fender Jazz Bassはネックが細くて弾きやすく、音の表現力が高い点が魅力のベースです。ジャズ・ファンク・ポップなど幅広いジャンルに対応でき、初心者から上級者まで長く使えます。
 
-<a href="/2026/05/22/bass-guide/">→ ベース初心者ガイドはこちら</a>
+<a href="/instrument/bass-guide/">→ ベース初心者ガイドはこちら</a>

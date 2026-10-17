@@ -6,6 +6,8 @@ date: 2026-06-13
 categories: [gear]
 tags: [オーディオインターフェイス, MOTU, AVB, DTM, 録音機材, スタジオ]
 image: /assets/images/thumb-motu-guide.jpg
+redirect_from:
+  - /2026/06/13/motu-guide/
 ---
 
 ## MOTUとは

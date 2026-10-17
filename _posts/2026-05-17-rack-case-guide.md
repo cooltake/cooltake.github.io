@@ -6,6 +6,8 @@ date: 2026-05-17
 categories: [gear]
 tags: [ラックケース, フライトケース, ARMOR, DUPLEX, SKB, 楽器ケース, ライブ機材, スタジオ]
 image: /assets/images/thumb-rack-case.jpg
+redirect_from:
+  - /2026/05/17/rack-case-guide/
 ---
 
 ## ケースの種類：用途別に分類する

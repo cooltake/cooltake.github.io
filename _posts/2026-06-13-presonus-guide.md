@@ -6,6 +6,8 @@ date: 2026-06-13
 categories: [gear]
 tags: [オーディオインターフェイス, PreSonus, Quantum, Studio One, DTM, 録音機材]
 image: /assets/images/thumb-presonus-guide.jpg
+redirect_from:
+  - /2026/06/13/presonus-guide/
 ---
 
 ## PreSonusとは

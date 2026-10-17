@@ -6,6 +6,8 @@ categories: [chord]
 tags: [キーボード, DAW, 作曲, 音楽制作, DTM, MIDI]
 image: /assets/images/thumb-chord-03.jpg
 description: "小室哲哉が多用した小室進行（Ⅵm-Ⅳ-Ⅰ-Ⅴ）を徹底解説。globe・TRF・宇多田ヒカル・安室奈美恵・アニソンなど代表曲20曲を楽天購入リンク付きで完全網羅。"
+redirect_from:
+  - /2026/05/30/chord-progression-03-komuro/
 ---
 
 

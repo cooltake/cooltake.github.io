@@ -6,6 +6,9 @@ categories: [history]
 tags: [ギター, エレキギター, エフェクター, 音楽制作]
 description: "X JAPAN・hide・GLAY・L'Arc-en-Cielが牽引した1990年代ヴィジュアル系ムーブメント。日本独自のロック美学とハードロック技術の融合、当時の機材とアンプセッティングを現代で再現する方法。"
 image: /assets/images/thumb-visual-kei.jpg
+redirect_from:
+  - /2026/05/30/japan-music-10-visual-kei/
+  - /2026/05/30/japan-music-08-visual-kei/
 ---
 
 
@@ -243,4 +246,4 @@ YOSHIKI（ドラム）の演奏の特徴：
 - **ユニゾンとハーモニーの使い分け**：2本のギターが絡む複雑なアレンジ
 
 
-<div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:.8rem;margin:2rem 0;"><a href="/2026/05/30/japan-music-09-fusion-jazz/" style="display:inline-block;padding:.5rem 1rem;background:#e8edf2;border:1px solid #c8c5c0;border-radius:8px;color:#1e3a5f;text-decoration:none;font-size:.9rem;">← #09 フュージョン カシオペア・T-SQUARE</a><a href="/2026/05/30/japan-music-11-komuro-jpop/" style="display:inline-block;padding:.5rem 1rem;background:#e8edf2;border:1px solid #c8c5c0;border-radius:8px;color:#1e3a5f;text-decoration:none;font-size:.9rem;">#11 小室サウンド →</a></div>
+<div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:.8rem;margin:2rem 0;"><a href="/history/japan-music-09-fusion-jazz/" style="display:inline-block;padding:.5rem 1rem;background:#e8edf2;border:1px solid #c8c5c0;border-radius:8px;color:#1e3a5f;text-decoration:none;font-size:.9rem;">← #09 フュージョン カシオペア・T-SQUARE</a><a href="/history/japan-music-11-komuro-jpop/" style="display:inline-block;padding:.5rem 1rem;background:#e8edf2;border:1px solid #c8c5c0;border-radius:8px;color:#1e3a5f;text-decoration:none;font-size:.9rem;">#11 小室サウンド →</a></div>

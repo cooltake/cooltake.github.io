@@ -6,6 +6,8 @@ categories: [history]
 tags: [DAW, VST, プラグイン, キーボード, MIDI, 音楽制作]
 description: "Yellow Magic Orchestra（YMO）が世界に放ったテクノポップ革命。TR-808・MC-8・Moogが生み出した未来の音と、現代のDAW・ソフトシンセでYMOサウンドを再現する完全ガイド。"
 image: /assets/images/thumb-ymo-techno.jpg
+redirect_from:
+  - /2026/05/30/japan-music-05-ymo-techno/
 ---
 
 ## 3人の天才の出会い——YMOの成り立ち
@@ -127,4 +129,4 @@ YMOが37年前に鳴らした「電子音楽」は、今もDTMクリエイター
 
 
 
-<div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:.8rem;margin:2rem 0;"><a href="/2026/05/30/japan-music-04-foreign-influence/" style="display:inline-block;padding:.5rem 1rem;background:#e8edf2;border:1px solid #c8c5c0;border-radius:8px;color:#1e3a5f;text-decoration:none;font-size:.9rem;">← #04 海外音楽の融合と日本化</a><a href="/2026/05/30/japan-music-06-80s-idol-production/" style="display:inline-block;padding:.5rem 1rem;background:#e8edf2;border:1px solid #c8c5c0;border-radius:8px;color:#1e3a5f;text-decoration:none;font-size:.9rem;">#06 80年代アイドル →</a></div>
+<div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:.8rem;margin:2rem 0;"><a href="/history/japan-music-04-foreign-influence/" style="display:inline-block;padding:.5rem 1rem;background:#e8edf2;border:1px solid #c8c5c0;border-radius:8px;color:#1e3a5f;text-decoration:none;font-size:.9rem;">← #04 海外音楽の融合と日本化</a><a href="/history/japan-music-06-80s-idol-production/" style="display:inline-block;padding:.5rem 1rem;background:#e8edf2;border:1px solid #c8c5c0;border-radius:8px;color:#1e3a5f;text-decoration:none;font-size:.9rem;">#06 80年代アイドル →</a></div>

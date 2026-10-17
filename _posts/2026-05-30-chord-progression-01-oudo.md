@@ -6,6 +6,8 @@ categories: [chord]
 tags: [ギター, キーボード, 作曲, 音楽制作, DTM, 初心者]
 image: /assets/images/thumb-chord-01.jpg
 description: "日本のJ-POP・アニソンで最も使われる王道進行（Ⅳ-Ⅴ-Ⅲm-Ⅵm）を徹底解説。エヴァ・鬼滅・YOASOBI・米津玄師など代表曲20曲を紹介し、楽天で購入できる全リンク付き。ギター・ピアノでの弾き方も完全網羅。"
+redirect_from:
+  - /2026/05/30/chord-progression-01-oudo/
 ---
 
 

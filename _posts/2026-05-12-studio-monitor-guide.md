@@ -6,6 +6,9 @@ date: 2026-05-12
 categories: [gear]
 tags: [スタジオモニター, スピーカー, YAMAHA, KRK, Genelec, DTM, ミックス]
 image: /assets/images/thumb-studio-monitor.jpg
+redirect_from:
+  - /2026/05/12/studio-monitor-guide/
+  - /2026/05/12/monitor-speaker-guide/
 ---
 
 

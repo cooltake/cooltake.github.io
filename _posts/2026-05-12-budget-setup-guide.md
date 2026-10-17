@@ -6,6 +6,9 @@ date: 2026-05-12
 categories: [gear]
 tags: [DTM入門, 機材セット, 予算別, 初心者, 宅録]
 image: /assets/images/thumb-budget.jpg
+redirect_from:
+  - /2026/05/12/budget-setup-guide/
+  - /2026/05/12/starter-bundle-guide/
 ---
 
 

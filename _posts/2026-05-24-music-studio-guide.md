@@ -6,6 +6,8 @@ date: 2026-05-24
 categories: [production]
 tags: [音楽スタジオ, リハーサルスタジオ, レコーディング, バンド, スタジオ予約]
 image: /assets/images/thumb-music-studio.jpg
+redirect_from:
+  - /2026/05/24/music-studio-guide/
 ---
 
 ## スタジオには2種類ある — まず目的を決める

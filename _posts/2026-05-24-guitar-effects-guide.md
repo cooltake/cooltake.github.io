@@ -6,6 +6,8 @@ date: 2026-05-24
 categories: [instrument]
 tags: [エフェクター, ギター, 歪み, リバーブ, ディレイ, コーラス, マルチエフェクター, 初心者, ペダル]
 image: /assets/images/thumb-guitar-effects.jpg
+redirect_from:
+  - /2026/05/24/guitar-effects-guide/
 ---
 
 ## エフェクターは「ギターの声を変える道具」

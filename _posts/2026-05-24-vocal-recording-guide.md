@@ -6,6 +6,8 @@ date: 2026-05-24
 categories: [production]
 tags: [ボーカル, 宅録, 歌ってみた, マイク, 録音, ホームレコーディング, DTM, オーディオIF]
 image: /assets/images/thumb-vocal-recording.jpg
+redirect_from:
+  - /2026/05/24/vocal-recording-guide/
 ---
 
 ## 自宅でボーカルを録音するために必要なもの

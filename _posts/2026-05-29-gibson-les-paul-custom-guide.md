@@ -6,6 +6,8 @@ date: 2026-05-29
 categories: [instrument]
 tags: [Gibson, Les Paul, レスポール, エレキギター, ギター選び方, クラシックロック]
 image: /assets/images/thumb-les-paul-custom.jpg
+redirect_from:
+  - /2026/05/29/gibson-les-paul-custom-guide/
 ---
 
 
@@ -276,4 +278,4 @@ Gibson Les Paul Customは、レスポールシリーズの最高峰として格�
 - **まず試したい**: Epiphone Les Paul Customからスタート
 - **コレクターレベル**: Gibson Custom Shopを検討
 
-<a href="/2026/05/20/guitar-guide/">→ エレキギター初心者ガイドはこちら</a>
+<a href="/instrument/guitar-guide/">→ エレキギター初心者ガイドはこちら</a>

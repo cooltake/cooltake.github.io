@@ -6,6 +6,8 @@ date: 2026-05-12
 image: /assets/images/thumb-audio-interface.jpg
 categories: [gear]
 tags: [オーディオインターフェース, Focusrite, Scarlett, DTM, 録音機材]
+redirect_from:
+  - /2026/05/12/audio-interface-guide/
 ---
 
 ## オーディオインターフェースとは

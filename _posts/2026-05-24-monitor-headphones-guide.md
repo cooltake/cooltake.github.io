@@ -6,6 +6,8 @@ date: 2026-05-24
 categories: [gear]
 tags: [モニターヘッドフォン, DTM, 宅録, ミックス, Audio-Technica, SONY, Beyerdynamic, ヘッドフォン選び]
 image: /assets/images/thumb-monitor-headphones.jpg
+redirect_from:
+  - /2026/05/24/monitor-headphones-guide/
 ---
 
 ## なぜ「モニターヘッドフォン」が必要なのか

@@ -6,6 +6,8 @@ date: 2026-05-11
 categories: [gear]
 tags: [初心者, 機材, 準備, オーディオインターフェース, DAW]
 image: /assets/images/thumb-basics.jpg
+redirect_from:
+  - /2026/05/11/music-production-basics/
 ---
 
 ## 「何から始めればいい？」最初の壁を突破する

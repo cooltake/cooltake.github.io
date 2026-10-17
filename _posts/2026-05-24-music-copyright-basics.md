@@ -6,6 +6,8 @@ date: 2026-05-24
 categories: [learn]
 tags: [著作権, JASRAC, 音楽権利, DTM, サンプリング, AI音楽, 楽曲販売]
 image: /assets/images/thumb-copyright.png
+redirect_from:
+  - /2026/05/24/music-copyright-basics/
 ---
 
 ## 音楽の著作権とは？ — 2種類の権利を理解する

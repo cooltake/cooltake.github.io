@@ -6,6 +6,8 @@ categories: [history]
 tags: [ギター, エレキギター, 音楽制作, 初心者]
 description: "1960年代、ベンチャーズ来日をきっかけに爆発したグループサウンズブーム。日本にエレキギター文化を根付かせたムーブメントの全貌と、現代で同じサウンドを再現する方法を解説。"
 image: /assets/images/thumb-gs-boom.jpg
+redirect_from:
+  - /2026/05/30/japan-music-01-gs-boom/
 ---
 
 ## グループサウンズとは？日本のロック元年
@@ -136,4 +138,4 @@ DAWユーザーなら以下のプラグインでGS的なサウンドを作れま
 
 
 
-<div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:.8rem;margin:2rem 0;"><span></span><a href="/2026/05/30/japan-music-02-folk-new-music/" style="display:inline-block;padding:.5rem 1rem;background:#e8edf2;border:1px solid #c8c5c0;border-radius:8px;color:#1e3a5f;text-decoration:none;font-size:.9rem;">#02 フォーク・ニューミュージック →</a></div>
+<div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:.8rem;margin:2rem 0;"><span></span><a href="/history/japan-music-02-folk-new-music/" style="display:inline-block;padding:.5rem 1rem;background:#e8edf2;border:1px solid #c8c5c0;border-radius:8px;color:#1e3a5f;text-decoration:none;font-size:.9rem;">#02 フォーク・ニューミュージック →</a></div>

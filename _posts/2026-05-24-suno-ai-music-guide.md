@@ -6,6 +6,8 @@ date: 2026-05-24
 categories: [production]
 tags: [Suno AI, AI音楽, 音楽生成, DTM, 初心者, 楽曲制作]
 image: /assets/images/thumb-suno-ai.png
+redirect_from:
+  - /2026/05/24/suno-ai-music-guide/
 ---
 
 ## Suno AIとは？ — テキストから楽曲を生成するAIサービス

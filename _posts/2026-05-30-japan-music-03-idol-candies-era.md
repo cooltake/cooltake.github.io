@@ -6,6 +6,8 @@ categories: [history]
 tags: [音楽制作, DAW, 初心者, 作曲]
 description: "1970年代中期、キャンディーズ・ピンクレディーが席巻した歌謡曲黄金期。阿久悠・都倉俊一らの職人が作り上げたサウンドの秘密と、現代DTMでの再現テクニックを解説。"
 image: /assets/images/thumb-idol-candies.jpg
+redirect_from:
+  - /2026/05/30/japan-music-03-idol-candies-era/
 ---
 
 ## 歌謡職人たちが作った黄金時代
@@ -130,4 +132,4 @@ Fender Rhodesの音色は、以下のプラグインで高品質に再現でき�
 
 
 
-<div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:.8rem;margin:2rem 0;"><a href="/2026/05/30/japan-music-02-folk-new-music/" style="display:inline-block;padding:.5rem 1rem;background:#e8edf2;border:1px solid #c8c5c0;border-radius:8px;color:#1e3a5f;text-decoration:none;font-size:.9rem;">← #02 フォーク・ニューミュージック</a><a href="/2026/05/30/japan-music-04-foreign-influence/" style="display:inline-block;padding:.5rem 1rem;background:#e8edf2;border:1px solid #c8c5c0;border-radius:8px;color:#1e3a5f;text-decoration:none;font-size:.9rem;">#04 海外音楽の融合と日本化 →</a></div>
+<div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:.8rem;margin:2rem 0;"><a href="/history/japan-music-02-folk-new-music/" style="display:inline-block;padding:.5rem 1rem;background:#e8edf2;border:1px solid #c8c5c0;border-radius:8px;color:#1e3a5f;text-decoration:none;font-size:.9rem;">← #02 フォーク・ニューミュージック</a><a href="/history/japan-music-04-foreign-influence/" style="display:inline-block;padding:.5rem 1rem;background:#e8edf2;border:1px solid #c8c5c0;border-radius:8px;color:#1e3a5f;text-decoration:none;font-size:.9rem;">#04 海外音楽の融合と日本化 →</a></div>

@@ -6,6 +6,8 @@ categories: [history]
 tags: [音楽史, ギター, キーボード, 作曲, DTM]
 description: "90年代中盤、渋谷を舞台に花開いたサブカルチャー音楽「渋谷系」と、宇多田ヒカル登場で完成したJ-R&B黄金期を解説。フリッパーズ・ギター、ピチカート・ファイヴ、小沢健二、宇多田ヒカルらが変えた日本の音楽地図。"
 image: /assets/images/thumb-shibuya-kei.jpg
+redirect_from:
+  - /2026/05/30/japan-music-12-shibuya-kei/
 ---
 
 ## 渋谷系とは何だったのか
@@ -84,4 +86,4 @@ image: /assets/images/thumb-shibuya-kei.jpg
 ### 渋谷系サウンドを再現する——サンプラーとキーボードを探す
 
 
-<div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:.8rem;margin:2rem 0;"><a href="/2026/05/30/japan-music-11-komuro-jpop/" style="display:inline-block;padding:.5rem 1rem;background:#e8edf2;border:1px solid #c8c5c0;border-radius:8px;color:#1e3a5f;text-decoration:none;font-size:.9rem;">← #11 小室サウンド</a><a href="/2026/05/30/japan-music-13-hiphop-rb/" style="display:inline-block;padding:.5rem 1rem;background:#e8edf2;border:1px solid #c8c5c0;border-radius:8px;color:#1e3a5f;text-decoration:none;font-size:.9rem;">#13 ヒップホップ・R&B →</a></div>
+<div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:.8rem;margin:2rem 0;"><a href="/history/japan-music-11-komuro-jpop/" style="display:inline-block;padding:.5rem 1rem;background:#e8edf2;border:1px solid #c8c5c0;border-radius:8px;color:#1e3a5f;text-decoration:none;font-size:.9rem;">← #11 小室サウンド</a><a href="/history/japan-music-13-hiphop-rb/" style="display:inline-block;padding:.5rem 1rem;background:#e8edf2;border:1px solid #c8c5c0;border-radius:8px;color:#1e3a5f;text-decoration:none;font-size:.9rem;">#13 ヒップホップ・R&B →</a></div>
