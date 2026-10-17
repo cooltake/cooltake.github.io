@@ -97,5 +97,5 @@ Fenderとの比較でStingRayの個性がより明確になります。
 
 Music Man StingRay Bassは「世界初の量産アクティブベース」として登場し、50年近く経った今もスラップベースの頂点に君臨するモデルです。USA製ならではの質感と、アクティブEQによる圧倒的な音作りの自由度は他のベースには代替できません。
 
-<a href="/2026/05/22/bass-guide/">→ ベース初心者ガイドはこちら</a>
-<a href="/2026/05/29/fender-jazz-bass-guide/">→ Fender Jazz Bassのガイドはこちら</a>
+<a href="/instrument/bass-guide/">→ ベース初心者ガイドはこちら</a>
+<a href="/instrument/fender-jazz-bass-guide/">→ Fender Jazz Bassのガイドはこちら</a>

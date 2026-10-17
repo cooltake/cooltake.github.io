@@ -105,4 +105,4 @@ T-SQUAREの「TRUTH」（1987年）は、日本フュージョン史上最も有
 
 
 
-<div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:.8rem;margin:2rem 0;"><a href="/2026/05/30/japan-music-08-band-boom/" style="display:inline-block;padding:.5rem 1rem;background:#e8edf2;border:1px solid #c8c5c0;border-radius:8px;color:#1e3a5f;text-decoration:none;font-size:.9rem;">← #08 バンドブーム</a><a href="/2026/05/30/japan-music-10-visual-kei/" style="display:inline-block;padding:.5rem 1rem;background:#e8edf2;border:1px solid #c8c5c0;border-radius:8px;color:#1e3a5f;text-decoration:none;font-size:.9rem;">#10 ヴィジュアル系 →</a></div>
+<div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:.8rem;margin:2rem 0;"><a href="/history/japan-music-08-band-boom/" style="display:inline-block;padding:.5rem 1rem;background:#e8edf2;border:1px solid #c8c5c0;border-radius:8px;color:#1e3a5f;text-decoration:none;font-size:.9rem;">← #08 バンドブーム</a><a href="/history/japan-music-10-visual-kei/" style="display:inline-block;padding:.5rem 1rem;background:#e8edf2;border:1px solid #c8c5c0;border-radius:8px;color:#1e3a5f;text-decoration:none;font-size:.9rem;">#10 ヴィジュアル系 →</a></div>

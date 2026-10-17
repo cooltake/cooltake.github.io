@@ -58,7 +58,7 @@ Telecasterの音の特徴は**シンプルさの中にある力強いキャラ�
 - アーム（トレモロ）を使いたい
 - ファンク・モダンロックが主なジャンル
 
-<a href="/2026/05/29/fender-stratocaster-guide/">→ Stratocasterのガイドはこちら</a>
+<a href="/instrument/fender-stratocaster-guide/">→ Stratocasterのガイドはこちら</a>
 
 ---
 
@@ -71,4 +71,4 @@ Telecasterの音の特徴は**シンプルさの中にある力強いキャラ�
 
 Fender Telecasterは「最初のエレキギター」としても「プロが本番で使う楽器」としても長年選ばれてきた名機です。シンプルな構造が生み出す力強いトーンと、メンテナンスのしやすさが魅力です。
 
-<a href="/2026/05/20/guitar-guide/">→ エレキギター初心者ガイドはこちら</a>
+<a href="/instrument/guitar-guide/">→ エレキギター初心者ガイドはこちら</a>

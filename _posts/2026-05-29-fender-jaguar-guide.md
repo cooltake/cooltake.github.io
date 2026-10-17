@@ -71,7 +71,7 @@ Jaguarは他のFenderモデルと比べてコントロールが非常に多く�
 
 「手が小さい・テンション軽めが好み」→ Jaguar、「扱いやすさとウォームな音」→ Jazzmasterです。
 
-<a href="/2026/05/29/fender-jazzmaster-guide/">→ Jazzmasterのガイドはこちら</a>
+<a href="/instrument/fender-jazzmaster-guide/">→ Jazzmasterのガイドはこちら</a>
 
 ---
 
@@ -92,5 +92,5 @@ Jaguarは他のFenderモデルと比べてコントロールが非常に多く�
 
 Fender Jaguarはショートスケールと豊富なスイッチ類による独特の操作感が個性で、一度使いこなすと手放せなくなる中毒性があります。サーフ・ガレージ・パンク・オルタナのサウンドを求めるなら、最有力候補のひとつです。
 
-<a href="/2026/05/20/guitar-guide/">→ エレキギター初心者ガイドはこちら</a>
-<a href="/2026/05/29/fender-jazzmaster-guide/">→ Fender Jazzmasterのガイドはこちら</a>
+<a href="/instrument/guitar-guide/">→ エレキギター初心者ガイドはこちら</a>
+<a href="/instrument/fender-jazzmaster-guide/">→ Fender Jazzmasterのガイドはこちら</a>

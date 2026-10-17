@@ -139,4 +139,4 @@ HF Damping：　　高域を少し落とす（デジタル的な硬さを和ら�
 
 
 
-<div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:.8rem;margin:2rem 0;"><a href="/2026/05/30/japan-music-05-ymo-techno/" style="display:inline-block;padding:.5rem 1rem;background:#e8edf2;border:1px solid #c8c5c0;border-radius:8px;color:#1e3a5f;text-decoration:none;font-size:.9rem;">← #05 YMO・テクノポップ</a><a href="/2026/05/30/japan-music-07-80s-commercial/" style="display:inline-block;padding:.5rem 1rem;background:#e8edf2;border:1px solid #c8c5c0;border-radius:8px;color:#1e3a5f;text-decoration:none;font-size:.9rem;">#07 80年代半ば商業音楽 →</a></div>
+<div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:.8rem;margin:2rem 0;"><a href="/history/japan-music-05-ymo-techno/" style="display:inline-block;padding:.5rem 1rem;background:#e8edf2;border:1px solid #c8c5c0;border-radius:8px;color:#1e3a5f;text-decoration:none;font-size:.9rem;">← #05 YMO・テクノポップ</a><a href="/history/japan-music-07-80s-commercial/" style="display:inline-block;padding:.5rem 1rem;background:#e8edf2;border:1px solid #c8c5c0;border-radius:8px;color:#1e3a5f;text-decoration:none;font-size:.9rem;">#07 80年代半ば商業音楽 →</a></div>

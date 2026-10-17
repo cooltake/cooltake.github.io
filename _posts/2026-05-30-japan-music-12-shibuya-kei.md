@@ -86,4 +86,4 @@ redirect_from:
 ### 渋谷系サウンドを再現する——サンプラーとキーボードを探す
 
 
-<div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:.8rem;margin:2rem 0;"><a href="/2026/05/30/japan-music-11-komuro-jpop/" style="display:inline-block;padding:.5rem 1rem;background:#e8edf2;border:1px solid #c8c5c0;border-radius:8px;color:#1e3a5f;text-decoration:none;font-size:.9rem;">← #11 小室サウンド</a><a href="/2026/05/30/japan-music-13-hiphop-rb/" style="display:inline-block;padding:.5rem 1rem;background:#e8edf2;border:1px solid #c8c5c0;border-radius:8px;color:#1e3a5f;text-decoration:none;font-size:.9rem;">#13 ヒップホップ・R&B →</a></div>
+<div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:.8rem;margin:2rem 0;"><a href="/history/japan-music-11-komuro-jpop/" style="display:inline-block;padding:.5rem 1rem;background:#e8edf2;border:1px solid #c8c5c0;border-radius:8px;color:#1e3a5f;text-decoration:none;font-size:.9rem;">← #11 小室サウンド</a><a href="/history/japan-music-13-hiphop-rb/" style="display:inline-block;padding:.5rem 1rem;background:#e8edf2;border:1px solid #c8c5c0;border-radius:8px;color:#1e3a5f;text-decoration:none;font-size:.9rem;">#13 ヒップホップ・R&B →</a></div>

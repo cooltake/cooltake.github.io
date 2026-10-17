@@ -45,7 +45,7 @@ Precision Bassの音は**シンプルで力強いミッドレンジ**が核心�
 
 「バンドのリズムを支えるシンプルで力強い音」を求めるなら**Precision Bass**、「表現の幅を広げたい」なら**Jazz Bass**です。
 
-<a href="/2026/05/29/fender-jazz-bass-guide/">→ Jazz Bassのガイドはこちら</a>
+<a href="/instrument/fender-jazz-bass-guide/">→ Jazz Bassのガイドはこちら</a>
 
 ---
 
@@ -70,4 +70,4 @@ Precision Bassの音は**シンプルで力強いミッドレンジ**が核心�
 
 Fender Precision Bassはシンプルな操作と力強いサウンドでロック〜ポップのベーシストに長年愛されてきた名機です。ネックは少し太めですが、一度慣れると「プレベの音じゃないと駄目」になるほどの中毒性があります。
 
-<a href="/2026/05/22/bass-guide/">→ ベース初心者ガイドはこちら</a>
+<a href="/instrument/bass-guide/">→ ベース初心者ガイドはこちら</a>
