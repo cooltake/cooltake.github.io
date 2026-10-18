@@ -351,7 +351,7 @@ Higgsfield AIで生成した映像の権利は利用規約に準じます。商�
 
 <div style="margin:2rem 0;padding:1.2rem 1.5rem;background:#fff7ed;border-left:4px solid #f97316;border-radius:8px;">
 <p style="margin:0 0 .6rem;font-weight:bold;font-size:1rem;">&#x1F6D2; 楽天市場でDTM・録音機材をチェック</p>
-<a href="https://search.rakuten.co.jp/search/mall/DTM+音楽制作/" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="display:block;text-decoration:none;text-align:center;"><img src="/assets/images/btn-rakuten.jpg" alt="楽天市場で探す" width="240" style="height:auto;border-radius:8px;display:inline-block;"></a>
+<a href="https://hb.afl.rakuten.co.jp/hgc/58997230.53a20055.58997231.9fa569e6/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2FDTM%2B%E9%9F%B3%E6%A5%BD%E5%88%B6%E4%BD%9C%2F&m=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2FDTM%2B%E9%9F%B3%E6%A5%BD%E5%88%B6%E4%BD%9C%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="display:block;text-decoration:none;text-align:center;"><img src="/assets/images/btn-rakuten.jpg" alt="楽天市場で探す" width="240" style="height:auto;border-radius:8px;display:inline-block;"></a>
 </div>
 
 <div style="margin:2rem 0;padding:1.2rem 1.5rem;background:#f0f9ff;border-left:4px solid #0ea5e9;border-radius:8px;">

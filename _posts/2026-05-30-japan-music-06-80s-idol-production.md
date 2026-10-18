@@ -130,11 +130,11 @@ HF Damping：　　高域を少し落とす（デジタル的な硬さを和ら�
 
 ## 松田聖子・中森明菜の名盤を聴く——吉田保・大村雅朗が作ったサウンドを体感する
 
-<div style="margin:.8rem 0;"><span style="display:block;font-size:.78rem;color:#4b5563;margin-bottom:3px;margin-top:6px;">🔍 楽天市場で探す</span><a href="https://search.rakuten.co.jp/search/mall/松田聖子 中森明菜 80年代 CD/" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="display:block;text-decoration:none;text-align:center;"><img src="/assets/images/btn-rakuten.jpg" alt="楽天市場で探す" width="240" style="height:auto;border-radius:8px;display:inline-block;"></a></div>
+<div style="margin:.8rem 0;"><span style="display:block;font-size:.78rem;color:#4b5563;margin-bottom:3px;margin-top:6px;">🔍 楽天市場で探す</span><a href="https://hb.afl.rakuten.co.jp/hgc/58997230.53a20055.58997231.9fa569e6/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%E6%9D%BE%E7%94%B0%E8%81%96%E5%AD%90%20%E4%B8%AD%E6%A3%AE%E6%98%8E%E8%8F%9C%2080%E5%B9%B4%E4%BB%A3%20CD%2F&m=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%E6%9D%BE%E7%94%B0%E8%81%96%E5%AD%90%20%E4%B8%AD%E6%A3%AE%E6%98%8E%E8%8F%9C%2080%E5%B9%B4%E4%BB%A3%20CD%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="display:block;text-decoration:none;text-align:center;"><img src="/assets/images/btn-rakuten.jpg" alt="楽天市場で探す" width="240" style="height:auto;border-radius:8px;display:inline-block;"></a></div>
 
 ### 80年代サウンドの音作りを学ぶ——アレンジ・レコーディング技術の教則本
 
-<div style="margin:.8rem 0;"><span style="display:block;font-size:.78rem;color:#4b5563;margin-bottom:3px;margin-top:6px;">🔍 楽天市場で探す</span><a href="https://search.rakuten.co.jp/search/mall/音楽制作 アレンジ 教則本/" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="display:block;text-decoration:none;text-align:center;"><img src="/assets/images/btn-rakuten.jpg" alt="楽天市場で探す" width="240" style="height:auto;border-radius:8px;display:inline-block;"></a></div>
+<div style="margin:.8rem 0;"><span style="display:block;font-size:.78rem;color:#4b5563;margin-bottom:3px;margin-top:6px;">🔍 楽天市場で探す</span><a href="https://hb.afl.rakuten.co.jp/hgc/58997230.53a20055.58997231.9fa569e6/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%E9%9F%B3%E6%A5%BD%E5%88%B6%E4%BD%9C%20%E3%82%A2%E3%83%AC%E3%83%B3%E3%82%B8%20%E6%95%99%E5%89%87%E6%9C%AC%2F&m=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%E9%9F%B3%E6%A5%BD%E5%88%B6%E4%BD%9C%20%E3%82%A2%E3%83%AC%E3%83%B3%E3%82%B8%20%E6%95%99%E5%89%87%E6%9C%AC%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="display:block;text-decoration:none;text-align:center;"><img src="/assets/images/btn-rakuten.jpg" alt="楽天市場で探す" width="240" style="height:auto;border-radius:8px;display:inline-block;"></a></div>
 
 
 
