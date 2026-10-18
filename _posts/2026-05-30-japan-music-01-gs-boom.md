@@ -86,7 +86,7 @@ GSサウンドの核心はエレキギター。当時使われていた主なモ
 
 ### GSブームのサウンドを聴く——スパイダース・タイガース・テンプターズのCD
 
-<div style="margin:.8rem 0;"><span style="display:block;font-size:.78rem;color:#4b5563;margin-bottom:3px;margin-top:6px;">🔍 楽天市場で探す</span><a href="https://search.rakuten.co.jp/search/mall/グループサウンズ CD ベスト/" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="display:block;text-decoration:none;text-align:center;"><img src="/assets/images/btn-rakuten.jpg" alt="楽天市場で探す" width="240" style="height:auto;border-radius:8px;display:inline-block;"></a></div>
+<div style="margin:.8rem 0;"><span style="display:block;font-size:.78rem;color:#4b5563;margin-bottom:3px;margin-top:6px;">🔍 楽天市場で探す</span><a href="https://hb.afl.rakuten.co.jp/hgc/58997230.53a20055.58997231.9fa569e6/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%E3%82%B0%E3%83%AB%E3%83%BC%E3%83%97%E3%82%B5%E3%82%A6%E3%83%B3%E3%82%BA%20CD%20%E3%83%99%E3%82%B9%E3%83%88%2F&m=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%E3%82%B0%E3%83%AB%E3%83%BC%E3%83%97%E3%82%B5%E3%82%A6%E3%83%B3%E3%82%BA%20CD%20%E3%83%99%E3%82%B9%E3%83%88%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="display:block;text-decoration:none;text-align:center;"><img src="/assets/images/btn-rakuten.jpg" alt="楽天市場で探す" width="240" style="height:auto;border-radius:8px;display:inline-block;"></a></div>
 
 
 ## 現代でGSサウンドを再現する
@@ -133,7 +133,7 @@ DAWユーザーなら以下のプラグインでGS的なサウンドを作れま
 
 ### この記事を読んでエレキギターを始めたくなったら
 
-<div style="margin:.8rem 0;"><span style="display:block;font-size:.78rem;color:#4b5563;margin-bottom:3px;margin-top:6px;">🔍 楽天市場で探す</span><a href="https://search.rakuten.co.jp/search/mall/エレキギター 教則本 初心者/" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="display:block;text-decoration:none;text-align:center;"><img src="/assets/images/btn-rakuten.jpg" alt="楽天市場で探す" width="240" style="height:auto;border-radius:8px;display:inline-block;"></a></div>
+<div style="margin:.8rem 0;"><span style="display:block;font-size:.78rem;color:#4b5563;margin-bottom:3px;margin-top:6px;">🔍 楽天市場で探す</span><a href="https://hb.afl.rakuten.co.jp/hgc/58997230.53a20055.58997231.9fa569e6/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%E3%82%A8%E3%83%AC%E3%82%AD%E3%82%AE%E3%82%BF%E3%83%BC%20%E6%95%99%E5%89%87%E6%9C%AC%20%E5%88%9D%E5%BF%83%E8%80%85%2F&m=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%E3%82%A8%E3%83%AC%E3%82%AD%E3%82%AE%E3%82%BF%E3%83%BC%20%E6%95%99%E5%89%87%E6%9C%AC%20%E5%88%9D%E5%BF%83%E8%80%85%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="display:block;text-decoration:none;text-align:center;"><img src="/assets/images/btn-rakuten.jpg" alt="楽天市場で探す" width="240" style="height:auto;border-radius:8px;display:inline-block;"></a></div>
 
 
 

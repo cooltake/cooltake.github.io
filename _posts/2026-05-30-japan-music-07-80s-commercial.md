@@ -106,11 +106,11 @@ Aメロ：DX7系シンセベース + TR-909ドラム
 
 ## シティポップ・TM NETWORK・渡辺美里の名盤を聴く
 
-<div style="margin:.8rem 0;"><span style="display:block;font-size:.78rem;color:#4b5563;margin-bottom:3px;margin-top:6px;">🔍 楽天市場で探す</span><a href="https://search.rakuten.co.jp/search/mall/シティポップ 80年代 J-POP CD TM NETWORK 渡辺美里/" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="display:block;text-decoration:none;text-align:center;"><img src="/assets/images/btn-rakuten.jpg" alt="楽天市場で探す" width="240" style="height:auto;border-radius:8px;display:inline-block;"></a></div>
+<div style="margin:.8rem 0;"><span style="display:block;font-size:.78rem;color:#4b5563;margin-bottom:3px;margin-top:6px;">🔍 楽天市場で探す</span><a href="https://hb.afl.rakuten.co.jp/hgc/58997230.53a20055.58997231.9fa569e6/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%E3%82%B7%E3%83%86%E3%82%A3%E3%83%9D%E3%83%83%E3%83%97%2080%E5%B9%B4%E4%BB%A3%20J-POP%20CD%20TM%20NETWORK%20%E6%B8%A1%E8%BE%BA%E7%BE%8E%E9%87%8C%2F&m=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%E3%82%B7%E3%83%86%E3%82%A3%E3%83%9D%E3%83%83%E3%83%97%2080%E5%B9%B4%E4%BB%A3%20J-POP%20CD%20TM%20NETWORK%20%E6%B8%A1%E8%BE%BA%E7%BE%8E%E9%87%8C%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="display:block;text-decoration:none;text-align:center;"><img src="/assets/images/btn-rakuten.jpg" alt="楽天市場で探す" width="240" style="height:auto;border-radius:8px;display:inline-block;"></a></div>
 
 ### シティポップの音楽制作を学ぶ——コード感・アレンジ技法の本
 
-<div style="margin:.8rem 0;"><span style="display:block;font-size:.78rem;color:#4b5563;margin-bottom:3px;margin-top:6px;">🔍 楽天市場で探す</span><a href="https://search.rakuten.co.jp/search/mall/シティポップ 音楽 本/" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="display:block;text-decoration:none;text-align:center;"><img src="/assets/images/btn-rakuten.jpg" alt="楽天市場で探す" width="240" style="height:auto;border-radius:8px;display:inline-block;"></a></div>
+<div style="margin:.8rem 0;"><span style="display:block;font-size:.78rem;color:#4b5563;margin-bottom:3px;margin-top:6px;">🔍 楽天市場で探す</span><a href="https://hb.afl.rakuten.co.jp/hgc/58997230.53a20055.58997231.9fa569e6/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%E3%82%B7%E3%83%86%E3%82%A3%E3%83%9D%E3%83%83%E3%83%97%20%E9%9F%B3%E6%A5%BD%20%E6%9C%AC%2F&m=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%E3%82%B7%E3%83%86%E3%82%A3%E3%83%9D%E3%83%83%E3%83%97%20%E9%9F%B3%E6%A5%BD%20%E6%9C%AC%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="display:block;text-decoration:none;text-align:center;"><img src="/assets/images/btn-rakuten.jpg" alt="楽天市場で探す" width="240" style="height:auto;border-radius:8px;display:inline-block;"></a></div>
 
 ### 記事で紹介した機材——DX7・D-50のサウンドをDAWで再現する
 

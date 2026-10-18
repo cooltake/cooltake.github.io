@@ -96,7 +96,7 @@ E → F#m → C#m → A → E → B（転調感を出す）
 
 ### エレピサウンドの再現
 
-<div style="margin:.8rem 0;"><span style="display:block;font-size:.78rem;color:#4b5563;margin-bottom:3px;margin-top:6px;">🔍 楽天市場で探す</span><a href="https://search.rakuten.co.jp/search/mall/MIDIキーボード/" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="display:block;text-decoration:none;text-align:center;"><img src="/assets/images/btn-rakuten.jpg" alt="楽天市場で探す" width="240" style="height:auto;border-radius:8px;display:inline-block;"></a></div>
+<div style="margin:.8rem 0;"><span style="display:block;font-size:.78rem;color:#4b5563;margin-bottom:3px;margin-top:6px;">🔍 楽天市場で探す</span><a href="https://hb.afl.rakuten.co.jp/hgc/58997230.53a20055.58997231.9fa569e6/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2FMIDI%E3%82%AD%E3%83%BC%E3%83%9C%E3%83%BC%E3%83%89%2F&m=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2FMIDI%E3%82%AD%E3%83%BC%E3%83%9C%E3%83%BC%E3%83%89%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="display:block;text-decoration:none;text-align:center;"><img src="/assets/images/btn-rakuten.jpg" alt="楽天市場で探す" width="240" style="height:auto;border-radius:8px;display:inline-block;"></a></div>
 
 Fender Rhodesの音色は、以下のプラグインで高品質に再現できる：
 - **Arturia Wurli V**<a href="https://h.accesstrade.net/sp/cc?rk=01001xqc00os63&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fproducts%2Fdetail%2Fitem%2F286994%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="font-size:.8rem;color:#1e3a5f;font-weight:600;margin-left:.3em;">🛒 サウンドハウスで見る</a>（Wurlitzer再現）
@@ -112,11 +112,11 @@ Fender Rhodesの音色は、以下のプラグインで高品質に再現でき�
 
 ## キャンディーズ・ピンクレディーの曲を聴く
 
-<div style="margin:.8rem 0;"><span style="display:block;font-size:.78rem;color:#4b5563;margin-bottom:3px;margin-top:6px;">🔍 楽天市場で探す</span><a href="https://search.rakuten.co.jp/search/mall/キャンディーズ ピンクレディー CD/" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="display:block;text-decoration:none;text-align:center;"><img src="/assets/images/btn-rakuten.jpg" alt="楽天市場で探す" width="240" style="height:auto;border-radius:8px;display:inline-block;"></a></div>
+<div style="margin:.8rem 0;"><span style="display:block;font-size:.78rem;color:#4b5563;margin-bottom:3px;margin-top:6px;">🔍 楽天市場で探す</span><a href="https://hb.afl.rakuten.co.jp/hgc/58997230.53a20055.58997231.9fa569e6/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%87%E3%82%A3%E3%83%BC%E3%82%BA%20%E3%83%94%E3%83%B3%E3%82%AF%E3%83%AC%E3%83%87%E3%82%A3%E3%83%BC%20CD%2F&m=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%87%E3%82%A3%E3%83%BC%E3%82%BA%20%E3%83%94%E3%83%B3%E3%82%AF%E3%83%AC%E3%83%87%E3%82%A3%E3%83%BC%20CD%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="display:block;text-decoration:none;text-align:center;"><img src="/assets/images/btn-rakuten.jpg" alt="楽天市場で探す" width="240" style="height:auto;border-radius:8px;display:inline-block;"></a></div>
 
 ### 歌謡曲・アイドル音楽の作り方を学ぶ
 
-<div style="margin:.8rem 0;"><span style="display:block;font-size:.78rem;color:#4b5563;margin-bottom:3px;margin-top:6px;">🔍 楽天市場で探す</span><a href="https://search.rakuten.co.jp/search/mall/歌謡曲 音楽制作 本/" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="display:block;text-decoration:none;text-align:center;"><img src="/assets/images/btn-rakuten.jpg" alt="楽天市場で探す" width="240" style="height:auto;border-radius:8px;display:inline-block;"></a></div>
+<div style="margin:.8rem 0;"><span style="display:block;font-size:.78rem;color:#4b5563;margin-bottom:3px;margin-top:6px;">🔍 楽天市場で探す</span><a href="https://hb.afl.rakuten.co.jp/hgc/58997230.53a20055.58997231.9fa569e6/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%E6%AD%8C%E8%AC%A1%E6%9B%B2%20%E9%9F%B3%E6%A5%BD%E5%88%B6%E4%BD%9C%20%E6%9C%AC%2F&m=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%E6%AD%8C%E8%AC%A1%E6%9B%B2%20%E9%9F%B3%E6%A5%BD%E5%88%B6%E4%BD%9C%20%E6%9C%AC%2F" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="display:block;text-decoration:none;text-align:center;"><img src="/assets/images/btn-rakuten.jpg" alt="楽天市場で探す" width="240" style="height:auto;border-radius:8px;display:inline-block;"></a></div>
 
 ## 歌謡曲が教えてくれること
 
