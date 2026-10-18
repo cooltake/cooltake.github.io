@@ -104,6 +104,18 @@ BeatStarsだけに頼らず、YouTubeに「type beat」動画を投稿するこ�
 - ビートリンクをYouTube概要欄に貼ってBeatStarsへ誘導
 - チャンネル登録者が増えると販売数が安定する
 
+### 4. 制作環境を整える
+
+ビートの質と制作スピードは、最低限の機材で大きく変わります。特に次の3つは、ほぼすべてのビートメイカーが使っています。
+
+| 機材 | 役割 | 選び方の解説 |
+|------|------|------|
+| MIDIキーボード | ドラムパターンやメロディを打ち込む | [MIDIキーボードの選び方](/gear/midi-keyboard-guide/) |
+| オーディオインターフェース | 音の遅れを減らし、音質よく録音・再生する | [オーディオインターフェースの選び方](/gear/audio-interface-guide/) |
+| モニターヘッドホン | 低音のバランスを正確に聴き分ける | [モニターヘッドホンの選び方](/gear/monitor-headphones-guide/) |
+
+サウンドハウスで探す: <a href="https://h.accesstrade.net/sp/cc?rk=01001xqc00os63&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fsearch%2Findex%2F%3Fsearch_all%3DMIDI%25E3%2582%25AD%25E3%2583%25BC%25E3%2583%259C%25E3%2583%25BC%25E3%2583%2589" target="_blank" rel="nofollow noopener" referrerpolicy="no-referrer-when-downgrade">MIDIキーボード</a> ／ <a href="https://h.accesstrade.net/sp/cc?rk=01001xqc00os63&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fsearch%2Findex%2F%3Fsearch_all%3D%25E3%2582%25AA%25E3%2583%25BC%25E3%2583%2587%25E3%2582%25A3%25E3%2582%25AA%25E3%2582%25A4%25E3%2583%25B3%25E3%2582%25BF%25E3%2583%25BC%25E3%2583%2595%25E3%2582%25A7%25E3%2583%25BC%25E3%2582%25B9" target="_blank" rel="nofollow noopener" referrerpolicy="no-referrer-when-downgrade">オーディオインターフェース</a> ／ <a href="https://h.accesstrade.net/sp/cc?rk=01001xqc00os63&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fsearch%2Findex%2F%3Fsearch_all%3D%25E3%2583%25A2%25E3%2583%258B%25E3%2582%25BF%25E3%2583%25BC%25E3%2583%2598%25E3%2583%2583%25E3%2583%2589%25E3%2583%259B%25E3%2583%25B3" target="_blank" rel="nofollow noopener" referrerpolicy="no-referrer-when-downgrade">モニターヘッドホン</a>（PR）
+
 ---
 
 ## プランの違いと選び方
