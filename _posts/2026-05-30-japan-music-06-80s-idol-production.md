@@ -10,6 +10,8 @@ redirect_from:
   - /2026/05/30/japan-music-06-80s-idol-production/
 ---
 
+<p style="font-size:.8rem;color:#6b7280;margin:0 0 1.2rem;">※本記事の画像はAIで生成したイメージです。実在のアーティスト本人の写真ではありません。</p>
+
 ## 職人編曲家・プロデューサーたちが生んだ「80年代サウンド」
 
 1980年代前半、日本のアイドル音楽は世界的に見ても類を見ないほど高い制作クオリティを誇っていた。それを支えたのは、表に出ることのない**職人編曲家・レコーディングエンジニア・プロデューサー**たちだった。
@@ -40,8 +42,9 @@ redirect_from:
 - **エンジニア陣全体の特徴**：当時のソニーミュージック、東芝EMI、CBSソニーなどのスタジオには専属エンジニアがおり、レーベルごとにサウンドの個性があった。ソニーのスタジオは特にクリアで広い音場が特徴だった。
 
 <figure style="margin:1.5rem 0;">
-<img src="/assets/images/japan-music-06-img1.jpg" alt="1980年代 日本のレコーディングスタジオ コンソール" style="width:100%;border-radius:10px;height:auto;" loading="lazy">
+<img src="/assets/images/japan-music-06-img1.jpg" alt="1980年代 日本のレコーディングスタジオ コンソール（AI生成）" style="width:100%;border-radius:10px;height:auto;" loading="lazy">
 
+<figcaption style="font-size:.75rem;color:#6b7280;text-align:center;margin-top:.4rem;">イメージ（AI生成）</figcaption>
 </figure>
 
 
@@ -111,8 +114,9 @@ HF Damping：　　高域を少し落とす（デジタル的な硬さを和ら�
 - **ストリングスとシンセのブレンド手法**はJ-POP全般の標準アレンジとなり、90年代小室サウンドにも継承された。
 
 <figure style="margin:1.5rem 0;">
-<img src="/assets/images/japan-music-06-img2.jpg" alt="Yamaha DX7 と Roland D-50" style="width:100%;border-radius:10px;height:auto;" loading="lazy">
+<img src="/assets/images/japan-music-06-img2.jpg" alt="Yamaha DX7 と Roland D-50（AI生成）" style="width:100%;border-radius:10px;height:auto;" loading="lazy">
 
+<figcaption style="font-size:.75rem;color:#6b7280;text-align:center;margin-top:.4rem;">イメージ（AI生成）</figcaption>
 </figure>
 
 

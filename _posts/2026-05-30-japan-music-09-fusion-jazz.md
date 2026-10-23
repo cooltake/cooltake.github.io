@@ -10,6 +10,8 @@ redirect_from:
   - /2026/05/30/japan-music-09-fusion-jazz/
 ---
 
+<p style="font-size:.8rem;color:#6b7280;margin:0 0 1.2rem;">※本記事の画像はAIで生成したイメージです。実在のアーティスト本人の写真ではありません。</p>
+
 ## 1980年代——フュージョンが日本に花開く
 
 1980年代、日本の音楽シーンでひとつのジャンルが静かに、しかし確実に地位を築いていた。**フュージョン**——ジャズとロックを融合させたインストゥルメンタル音楽だ。
@@ -17,8 +19,9 @@ redirect_from:
 その中心にいたのが**カシオペア**と**T-SQUARE**。この2バンドは「日本フュージョンの2大巨頭」として切磋琢磨し、世界に通用するレベルの演奏技術と音楽性を確立した。
 
 <figure style="margin:1.5rem 0;">
-<img src="/assets/images/japan-music-05-img1.jpg" alt="1980年代日本のフュージョンバンド、キーボードとエレキギターのステージパフォーマンス" style="width:100%;border-radius:10px;height:auto;" loading="lazy">
+<img src="/assets/images/japan-music-05-img1.jpg" alt="1980年代日本のフュージョンバンド、キーボードとエレキギターのステージパフォーマンス（AI生成）" style="width:100%;border-radius:10px;height:auto;" loading="lazy">
 
+<figcaption style="font-size:.75rem;color:#6b7280;text-align:center;margin-top:.4rem;">イメージ（AI生成）</figcaption>
 </figure>
 
 
@@ -47,8 +50,9 @@ redirect_from:
 <div style="background:rgba(255,255,255,0.10);border-radius:12px;padding:1.5rem;margin:1.5rem 0;border:1px solid rgba(56,189,248,.3);"><h3 style="color:#bae6fd;margin-top:0;">🎸 カシオペアサウンドの核心</h3><ul style="color:#374151;"><li><strong>超絶テクニックの16ビート</strong>：全楽器がタイトに絡み合うファンク的グルーヴ</li><li><strong>ユニゾンフレーズ</strong>：ギター+キーボード+ベースが同じラインを弾く瞬間</li><li><strong>複雑なコード進行</strong>：Dm9→G13→Cmaj9など拡張コードを縦横に使用</li><li><strong>クリーントーン一貫主義</strong>：歪みを使わない抜けの良いサウンド</li></ul></div>
 
 <figure style="margin:1.5rem 0;">
-<img src="/assets/images/japan-music-05-img2.jpg" alt="Ibanezエレキギターとアンプ、1980年代フュージョンスタジオ機材" style="width:100%;border-radius:10px;height:auto;" loading="lazy">
+<img src="/assets/images/japan-music-05-img2.jpg" alt="Ibanezエレキギターとアンプ、1980年代フュージョンスタジオ機材（AI生成）" style="width:100%;border-radius:10px;height:auto;" loading="lazy">
 
+<figcaption style="font-size:.75rem;color:#6b7280;text-align:center;margin-top:.4rem;">イメージ（AI生成）</figcaption>
 </figure>
 
 
@@ -87,8 +91,9 @@ T-SQUAREの「TRUTH」（1987年）は、日本フュージョン史上最も有
 ## フュージョンが切り開いた「後の音楽」
 
 <figure style="margin:1.5rem 0;">
-<img src="/assets/images/japan-music-05-img3.jpg" alt="1980年代日本のスタジオ、キーボードシンセと録音機材が並ぶプロスタジオ" style="width:100%;border-radius:10px;height:auto;" loading="lazy">
+<img src="/assets/images/japan-music-05-img3.jpg" alt="1980年代日本のスタジオ、キーボードシンセと録音機材が並ぶプロスタジオ（AI生成）" style="width:100%;border-radius:10px;height:auto;" loading="lazy">
 
+<figcaption style="font-size:.75rem;color:#6b7280;text-align:center;margin-top:.4rem;">イメージ（AI生成）</figcaption>
 </figure>
 
 フュージョンの高度な演奏技術と音楽理論は、1990年代以降の日本音楽に広く受け継がれた：

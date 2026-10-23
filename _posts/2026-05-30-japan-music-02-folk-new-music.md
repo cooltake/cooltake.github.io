@@ -10,6 +10,8 @@ redirect_from:
   - /2026/05/30/japan-music-02-folk-new-music/
 ---
 
+<p style="font-size:.8rem;color:#6b7280;margin:0 0 1.2rem;">※本記事の画像はAIで生成したイメージです。実在のアーティスト本人の写真ではありません。</p>
+
 ## GSの反動から生まれたフォーク
 
 グループサウンズブームが去った1970年代初頭、日本の音楽シーンに新たなうねりが生まれた。エレキギターの「派手さ」への反動として、**アコースティックギター一本を抱えた若者たちが自分の言葉で歌い始めた**のだ。
@@ -17,8 +19,9 @@ redirect_from:
 吉田拓郎、井上陽水、かぐや姫（南こうせつ）——彼らが持ち込んだのは、アメリカのボブ・ディラン、CSN&Yの影響を受けながらも徹底的に「日本語で」表現するスタイルだった。
 
 <figure style="margin:1.5rem 0;">
-<img src="/assets/images/japan-music-02-img1.jpg" alt="1970年代 日本のフォークシンガー" style="width:100%;border-radius:10px;height:auto;" loading="lazy">
+<img src="/assets/images/japan-music-02-img1.jpg" alt="1970年代 日本のフォークシンガー（AI生成）" style="width:100%;border-radius:10px;height:auto;" loading="lazy">
 
+<figcaption style="font-size:.75rem;color:#6b7280;text-align:center;margin-top:.4rem;">イメージ（AI生成）</figcaption>
 </figure>
 
 
@@ -79,8 +82,9 @@ redirect_from:
 フォークサウンドの核心はアコギ。現代でもMartin、Gibsonの定番モデルは健在：
 
 <figure style="margin:1.5rem 0;">
-<img src="/assets/images/japan-music-02-img2.jpg" alt="Martin D-28 Gibson J-45 アコースティックギター" style="width:100%;border-radius:10px;height:auto;" loading="lazy">
+<img src="/assets/images/japan-music-02-img2.jpg" alt="Martin D-28 Gibson J-45 アコースティックギター（AI生成）" style="width:100%;border-radius:10px;height:auto;" loading="lazy">
 
+<figcaption style="font-size:.75rem;color:#6b7280;text-align:center;margin-top:.4rem;">イメージ（AI生成）</figcaption>
 </figure>
 
 

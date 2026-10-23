@@ -11,6 +11,8 @@ redirect_from:
   - /2026/05/30/japan-music-09-komuro-jpop/
 ---
 
+<p style="font-size:.8rem;color:#6b7280;margin:0 0 1.2rem;">※本記事の画像はAIで生成したイメージです。実在のアーティスト本人の写真ではありません。</p>
+
 
 
 

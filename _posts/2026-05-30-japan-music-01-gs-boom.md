@@ -10,13 +10,16 @@ redirect_from:
   - /2026/05/30/japan-music-01-gs-boom/
 ---
 
+<p style="font-size:.8rem;color:#6b7280;margin:0 0 1.2rem;">※本記事の画像はAIで生成したイメージです。実在のアーティスト本人の写真ではありません。</p>
+
 ## グループサウンズとは？日本のロック元年
 
 1960年代後半、日本の音楽シーンに突如として旋風を巻き起こした「グループサウンズ（GS）」。ザ・タイガース、ザ・スパイダース、ブルー・コメッツ、テンプターズ——これらのバンドが生み出したサウンドは、それまでの歌謡曲とはまったく異質の「電気の音」だった。
 
 <figure style="margin:1.5rem 0;">
-<img src="/assets/images/japan-music-01-img1.jpg" alt="1960年代 グループサウンズ ステージ" style="width:100%;border-radius:10px;height:auto;" loading="lazy">
+<img src="/assets/images/japan-music-01-img1.jpg" alt="1960年代 グループサウンズ ステージ（AI生成）" style="width:100%;border-radius:10px;height:auto;" loading="lazy">
 
+<figcaption style="font-size:.75rem;color:#6b7280;text-align:center;margin-top:.4rem;">イメージ（AI生成）</figcaption>
 </figure>
 
 
@@ -51,8 +54,9 @@ GSサウンドの核心はエレキギター。当時使われていた主なモ
 | Teisco・グヤトーン | 国産メーカー品 | 安価で普及、独特のチープ感 |
 
 <figure style="margin:1.5rem 0;">
-<img src="/assets/images/japan-music-01-img2.jpg" alt="1960年代 ビンテージエレキギター コレクション" style="width:100%;border-radius:10px;height:auto;" loading="lazy">
+<img src="/assets/images/japan-music-01-img2.jpg" alt="1960年代 ビンテージエレキギター コレクション（AI生成）" style="width:100%;border-radius:10px;height:auto;" loading="lazy">
 
+<figcaption style="font-size:.75rem;color:#6b7280;text-align:center;margin-top:.4rem;">イメージ（AI生成）</figcaption>
 </figure>
 
 **Mosriteの復刻・類似モデル**は現在も人気で、ビザールギターとして注目されています。
@@ -127,8 +131,9 @@ DAWユーザーなら以下のプラグインでGS的なサウンドを作れま
 このムーブメントがなければ、後の日本のロック・歌謡曲・J-POPは存在しなかったかもしれない。
 
 <figure style="margin:1.5rem 0;">
-<img src="/assets/images/japan-music-01-img3.jpg" alt="グループサウンズ コンサート 熱狂するファン" style="width:100%;border-radius:10px;height:auto;" loading="lazy">
+<img src="/assets/images/japan-music-01-img3.jpg" alt="グループサウンズ コンサート 熱狂するファン（AI生成）" style="width:100%;border-radius:10px;height:auto;" loading="lazy">
 
+<figcaption style="font-size:.75rem;color:#6b7280;text-align:center;margin-top:.4rem;">イメージ（AI生成）</figcaption>
 </figure>
 
 ### この記事を読んでエレキギターを始めたくなったら
