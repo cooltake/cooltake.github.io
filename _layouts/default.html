@@ -31,7 +31,7 @@
     @media (min-width:769px){.nav-drawer,.nav-drawer-overlay{display:none !important;}}
     @media (max-width:768px){html,body{overflow-x:clip;}}  pre{overflow-x:auto;max-width:100%;}
     .song-grid>div>div:first-child>span:nth-child(3){order:4;}
-    @media (max-width:600px){.song-grid{grid-template-columns:1fr !important;}.song-grid>div{padding:.8rem 1rem !important;}.song-grid>div>div:first-child{display:block !important;padding-left:2.3rem;text-indent:-2.3rem;margin-bottom:.3rem !important;line-height:1.5;}.song-grid>div>div:first-child>span{display:inline;margin:0 !important;line-height:1.5 !important;}.song-grid>div>div:first-child>span:nth-child(1){display:inline-block;width:1.8rem;min-width:0 !important;margin-right:.5rem !important;text-indent:0;}.song-grid>div>div:first-child>span:nth-child(2){margin-right:.3rem !important;}.song-grid>div>div:first-child>span:nth-child(3){white-space:nowrap;}.song-grid>div>div:first-child>span:nth-child(4){display:block;text-indent:0;}.song-grid>div>span{margin:.1rem 0 .5rem 0 !important;line-height:1.5 !important;}.song-grid>div>div:last-child{margin-left:0 !important;}.song-grid>div>div:last-child img{width:160px !important;}}
+    @media (max-width:600px){.song-grid{grid-template-columns:1fr !important;}.song-grid>div{padding:.8rem 1rem !important;}.song-grid>div>div:first-child{display:flex !important;flex-direction:row !important;flex-wrap:wrap !important;align-items:baseline !important;gap:0 !important;margin-bottom:.3rem !important;}.song-grid>div>div:first-child::after{content:"";order:3;flex-basis:100%;height:0;}.song-grid>div>div:first-child>span{margin:0 !important;line-height:1.5 !important;white-space:nowrap;}.song-grid>div>div:first-child>span:nth-child(1){order:4;min-width:0 !important;margin-right:.4rem !important;}.song-grid>div>div:first-child>span:nth-child(2){order:1;}.song-grid>div>div:first-child>span:nth-child(3){order:2;margin-left:.3rem !important;}.song-grid>div>div:first-child>span:nth-child(4){order:5;}.song-grid>div>span{margin:.1rem 0 .5rem 0 !important;line-height:1.5 !important;}.song-grid>div>div:last-child{margin-left:0 !important;}.song-grid>div>div:last-child img{width:160px !important;}}
   </style></head>
 <body>
 
@@ -141,5 +141,27 @@
       <p class="footer-copy">本サイトはアフィリエイト広告を利用しています &nbsp;|&nbsp; &copy; 2026 Cooltake Studio All rights reserved.</p>
     </div>
   </footer>
+<script>
+/* song-grid: スマホで「曲名（年）」「#番号 アーティスト」をそれぞれ1行に収める（収まらない行だけ文字を縮める） */
+(function(){
+  function fit(){
+    var mobile=window.matchMedia('(max-width:600px)').matches;
+    document.querySelectorAll('.song-grid > div > div:first-child').forEach(function(h){
+      var s=h.children; if(s.length<4) return;
+      [s[1],s[3]].forEach(function(e){e.style.fontSize='';});
+      if(!mobile) return;
+      var W=h.clientWidth;
+      [[s[1],s[2]],[s[3],s[0]]].forEach(function(pr){
+        var t=pr[0], o=pr[1], ow=o.getBoundingClientRect().width+parseFloat(getComputedStyle(o).marginLeft)+parseFloat(getComputedStyle(o).marginRight);
+        var tw=t.getBoundingClientRect().width;
+        if(tw+ow>W-1){var fs=parseFloat(getComputedStyle(t).fontSize); t.style.fontSize=Math.max(10,Math.floor(fs*(W-1-ow)/tw*10)/10)+'px';}
+      });
+    });
+  }
+  var tm; window.addEventListener('resize',function(){clearTimeout(tm);tm=setTimeout(fit,150);});
+  if(document.readyState!=='loading') fit(); else document.addEventListener('DOMContentLoaded',fit);
+  if(document.fonts&&document.fonts.ready) document.fonts.ready.then(fit);
+})();
+</script>
 </body>
 </html>
