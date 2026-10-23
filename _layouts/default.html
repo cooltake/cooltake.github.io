@@ -31,7 +31,7 @@
     @media (min-width:769px){.nav-drawer,.nav-drawer-overlay{display:none !important;}}
     @media (max-width:768px){html,body{overflow-x:clip;}}  pre{overflow-x:auto;max-width:100%;}
     .song-grid>div>div:first-child>span:nth-child(3){order:4;}
-    @media (max-width:600px){.song-grid{grid-template-columns:1fr !important;}.song-grid>div{padding:.8rem 1rem !important;}.song-grid>div>div:first-child{display:flex !important;flex-direction:row !important;flex-wrap:wrap !important;align-items:baseline !important;gap:0 !important;margin-bottom:.3rem !important;}.song-grid>div>div:first-child::after{content:"";order:3;flex-basis:100%;height:0;}.song-grid>div>div:first-child>span{margin:0 !important;line-height:1.5 !important;white-space:nowrap;}.song-grid>div>div:first-child>span:nth-child(1){order:4;min-width:0 !important;margin-right:.4rem !important;}.song-grid>div>div:first-child>span:nth-child(2){order:1;}.song-grid>div>div:first-child>span:nth-child(3){order:2;margin-left:.3rem !important;}.song-grid>div>div:first-child>span:nth-child(4){order:5;}.song-grid>div>span{margin:.1rem 0 .5rem 0 !important;line-height:1.5 !important;}.song-grid>div>div:last-child{margin-left:0 !important;}.song-grid>div>div:last-child img{width:160px !important;}}
+    @media (max-width:600px){.song-grid{grid-template-columns:1fr !important;}.song-grid>div{padding:.8rem 1rem !important;}.song-grid>div>div:first-child{display:flex !important;flex-direction:row !important;flex-wrap:wrap !important;align-items:baseline !important;gap:0 !important;margin-bottom:.3rem !important;}.song-grid>div>div:first-child::after{content:"";order:3;flex-basis:100%;height:0;}.song-grid>div>div:first-child>span{margin:0 !important;line-height:1.5 !important;white-space:nowrap;}.song-grid>div>div:first-child>span:nth-child(1){order:4;min-width:0 !important;margin-right:.4rem !important;}.song-grid>div>div:first-child>span:nth-child(2){order:1;}.song-grid>div>div:first-child>span:nth-child(3){order:2;}.song-grid>div>div:first-child>span:nth-child(4){order:5;}.song-grid>div>span{margin:.1rem 0 .5rem 0 !important;line-height:1.5 !important;}.song-grid>div>div:last-child{margin-left:0 !important;}.song-grid>div>div:last-child img{width:160px !important;}}
   </style></head>
 <body>
 
@@ -154,7 +154,7 @@
       [[s[1],s[2]],[s[3],s[0]]].forEach(function(pr){
         var t=pr[0], o=pr[1], ow=o.getBoundingClientRect().width+parseFloat(getComputedStyle(o).marginLeft)+parseFloat(getComputedStyle(o).marginRight);
         var tw=t.getBoundingClientRect().width;
-        if(tw+ow>W-1){var fs=parseFloat(getComputedStyle(t).fontSize); t.style.fontSize=Math.max(10,Math.floor(fs*(W-1-ow)/tw*10)/10)+'px';}
+        if(tw+ow>W-1){var fs=parseFloat(getComputedStyle(t).fontSize); fs=Math.max(10,Math.floor(fs*(W-1-ow)/tw*10)/10); t.style.fontSize=fs+'px';while(fs>10&&t.getBoundingClientRect().width+ow>W-1){fs=Math.round((fs-0.2)*10)/10; t.style.fontSize=fs+'px';}}
       });
     });
   }
