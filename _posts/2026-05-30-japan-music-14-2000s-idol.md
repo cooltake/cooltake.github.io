@@ -10,6 +10,8 @@ redirect_from:
   - /2026/05/30/japan-music-14-2000s-idol/
 ---
 
+<p style="font-size:.8rem;color:#6b7280;margin:0 0 1.2rem;">※本記事の画像はAIで生成したイメージです。実在のアーティスト本人の写真ではありません。</p>
+
 
 
 

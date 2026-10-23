@@ -10,6 +10,8 @@ redirect_from:
   - /2026/05/30/japan-music-05-ymo-techno/
 ---
 
+<p style="font-size:.8rem;color:#6b7280;margin:0 0 1.2rem;">※本記事の画像はAIで生成したイメージです。実在のアーティスト本人の写真ではありません。</p>
+
 ## 3人の天才の出会い——YMOの成り立ち
 
 1978年、Yellow Magic Orchestra（YMO）がデビューアルバムをリリースした時、世界の音楽シーンは「日本からこんな音楽が生まれるのか」と驚愕した。しかしYMOの誕生は、3人の天才がそれぞれの道を歩んだ末にたどり着いた必然だった。
@@ -27,8 +29,9 @@ redirect_from:
 **高橋幸宏**はサディスティック・ミカ・バンド（1972年〜）でドラマーとしてキャリアを積んだ。YMOではドラムと一部ボーカルを担当し、人間的な表現力と機械的精度を併せ持つドラミングでグループのグルーヴを支えた。ファッションアイコンとしても知られ、YMOのビジュアルイメージ確立に大きく貢献した。
 
 <figure style="margin:1.5rem 0;">
-<img src="/assets/images/japan-music-05-img1.jpg" alt="YMO シンセサイザーセットアップ 1978年" style="width:100%;border-radius:10px;height:auto;" loading="lazy">
+<img src="/assets/images/japan-music-05-img1.jpg" alt="テクノポップのライブのイメージ（AI生成）" style="width:100%;border-radius:10px;height:auto;" loading="lazy">
 
+<figcaption style="font-size:.75rem;color:#6b7280;text-align:center;margin-top:.4rem;">イメージ（AI生成）</figcaption>
 </figure>
 
 
@@ -88,8 +91,9 @@ YMOの音楽は日本国内にとどまらず、世界の音楽家に直接・�
 - **Perfume / 中田ヤスタカ**：YMOの子孫として現代に繋がるテクノポップ。ボーカルをシンセ的に処理する手法はYMOの直接的継承。
 
 <figure style="margin:1.5rem 0;">
-<img src="/assets/images/japan-music-05-img2.jpg" alt="Roland TR-808 と Prophet-5" style="width:100%;border-radius:10px;height:auto;" loading="lazy">
+<img src="/assets/images/japan-music-05-img2.jpg" alt="Roland TR-808 と Prophet-5（AI生成）" style="width:100%;border-radius:10px;height:auto;" loading="lazy">
 
+<figcaption style="font-size:.75rem;color:#6b7280;text-align:center;margin-top:.4rem;">イメージ（AI生成）</figcaption>
 </figure>
 
 
@@ -109,8 +113,9 @@ YMOの音楽は日本国内にとどまらず、世界の音楽家に直接・�
 - **u-he Diva**：複数ビンテージシンセのモデリング
 
 <figure style="margin:1.5rem 0;">
-<img src="/assets/images/japan-music-05-img3.jpg" alt="YMO インスパイア ホームスタジオ" style="width:100%;border-radius:10px;height:auto;" loading="lazy">
+<img src="/assets/images/japan-music-05-img3.jpg" alt="テクノポップ風のホームスタジオのイメージ（AI生成）" style="width:100%;border-radius:10px;height:auto;" loading="lazy">
 
+<figcaption style="font-size:.75rem;color:#6b7280;text-align:center;margin-top:.4rem;">イメージ（AI生成）</figcaption>
 </figure>
 
 

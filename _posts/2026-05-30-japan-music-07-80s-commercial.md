@@ -10,6 +10,8 @@ redirect_from:
   - /2026/05/30/japan-music-07-80s-commercial/
 ---
 
+<p style="font-size:.8rem;color:#6b7280;margin:0 0 1.2rem;">※本記事の画像はAIで生成したイメージです。実在のアーティスト本人の写真ではありません。</p>
+
 ## アイドルとバンドの間に——1984〜1987年の商業音楽
 
 80年代アイドルの黄金期（〜1984年）とバンドブーム（1987年〜）の間には、ある見落とされがちな時代がある。**1984〜1987年**——バブル景気に向けて日本の経済が上昇気流に乗り始め、音楽も「より洗練された商業音楽」へと急速に進化していった時期だ。
@@ -17,8 +19,9 @@ redirect_from:
 この時代の特徴は**「シティポップとアイドルとロックが交差した」**ことだ。ニューミュージックの洗練とアイドルの大衆性、フュージョンの音楽理論が一点に集まり、後の「J-POP」という概念の原型が形成された。
 
 <figure style="margin:1.5rem 0;">
-<img src="/assets/images/japan-music-07-img1.jpg" alt="1985年 日本 シティポップ バブル前夜" style="width:100%;border-radius:10px;height:auto;" loading="lazy">
+<img src="/assets/images/japan-music-07-img1.jpg" alt="1985年 日本 シティポップ バブル前夜（AI生成）" style="width:100%;border-radius:10px;height:auto;" loading="lazy">
 
+<figcaption style="font-size:.75rem;color:#6b7280;text-align:center;margin-top:.4rem;">イメージ（AI生成）</figcaption>
 </figure>
 
 
@@ -75,8 +78,9 @@ Aメロ：DX7系シンセベース + TR-909ドラム
 ## 機材——1985〜87年のスタジオ
 
 <figure style="margin:1.5rem 0;">
-<img src="/assets/images/japan-music-07-img2.jpg" alt="1985年 日本のレコーディングスタジオ DX7 D-50 Korg M1" style="width:100%;border-radius:10px;height:auto;" loading="lazy">
+<img src="/assets/images/japan-music-07-img2.jpg" alt="1985年 日本のレコーディングスタジオ DX7 D-50 Korg M1（AI生成）" style="width:100%;border-radius:10px;height:auto;" loading="lazy">
 
+<figcaption style="font-size:.75rem;color:#6b7280;text-align:center;margin-top:.4rem;">イメージ（AI生成）</figcaption>
 </figure>
 
 | 機材 | 特徴 | 代表的な使われ方 |
@@ -99,8 +103,9 @@ Aメロ：DX7系シンセベース + TR-909ドラム
 この時代のサウンドは現在も「シティポップリバイバル」「バブルポップ」として海外で再評価されている。
 
 <figure style="margin:1.5rem 0;">
-<img src="/assets/images/japan-music-07-img3.jpg" alt="1980年代 カセットテープ ウォークマン シティポップ" style="width:100%;border-radius:10px;height:auto;" loading="lazy">
+<img src="/assets/images/japan-music-07-img3.jpg" alt="1980年代 カセットテープ ウォークマン シティポップ（AI生成）" style="width:100%;border-radius:10px;height:auto;" loading="lazy">
 
+<figcaption style="font-size:.75rem;color:#6b7280;text-align:center;margin-top:.4rem;">イメージ（AI生成）</figcaption>
 </figure>
 
 

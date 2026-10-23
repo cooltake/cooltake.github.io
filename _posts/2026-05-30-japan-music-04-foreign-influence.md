@@ -10,6 +10,8 @@ redirect_from:
   - /2026/05/30/japan-music-04-foreign-influence/
 ---
 
+<p style="font-size:.8rem;color:#6b7280;margin:0 0 1.2rem;">※本記事の画像はAIで生成したイメージです。実在のアーティスト本人の写真ではありません。</p>
+
 ## 1970年代後期——日本音楽が「世界標準」に追いつく転換点
 
 1970年代後期は、日本のポップミュージックが大きく変容した時代だ。それまでの歌謡曲・フォークの文脈から飛び出し、西洋のロック・ポップス・ジャズを本格的に日本語（と英語）のポップスに落とし込む試みが始まった。
@@ -22,8 +24,9 @@ redirect_from:
 1977年、ゴダイゴが<a href="https://music.youtube.com/search?q=%E3%82%B4%E3%83%80%E3%82%A4%E3%82%B4%20Monkey%20Magic%20%E3%83%A2%E3%83%B3%E3%82%AD%E3%83%BC%E3%83%9E%E3%82%B8%E3%83%83%E3%82%AF" target="_blank" rel="nofollow noopener" style="color:#1e3a5f;text-decoration:none;font-weight:600;">「モンキー・マジック」</a>でデビューした時、日本の音楽シーンに衝撃が走った。英語と日本語を自在に行き来する歌詞、複雑なコード進行、プロフェッショナルなアンサンブル——これは当時の日本のポップスとは明らかに次元が違った。
 
 <figure style="margin:1.5rem 0;">
-<img src="/assets/images/japan-music-04-img1.jpg" alt="1970年代後期の日本のロックバンド、スタジオ録音シーン" style="width:100%;border-radius:10px;height:auto;" loading="lazy">
+<img src="/assets/images/japan-music-04-img1.jpg" alt="1970年代後期の日本のロックバンド、スタジオ録音シーン（AI生成）" style="width:100%;border-radius:10px;height:auto;" loading="lazy">
 
+<figcaption style="font-size:.75rem;color:#6b7280;text-align:center;margin-top:.4rem;">イメージ（AI生成）</figcaption>
 </figure>
 
 ### バークリー音楽大学での出会い
@@ -48,8 +51,9 @@ redirect_from:
 ゴダイゴ以前の日本のポップスは基本的に**日本語オンリー**だった。英語は「カッコいい飾り」として部分的に使われる程度。しかしゴダイゴは英語と日本語を対等に扱い、どちらでも意味が通るダブル・リリックという手法を確立した。
 
 <figure style="margin:1.5rem 0;">
-<img src="/assets/images/japan-music-04-img2.jpg" alt="英語と日本語が混在した1970年代の楽譜やレコードジャケット" style="width:100%;border-radius:10px;height:auto;" loading="lazy">
+<img src="/assets/images/japan-music-04-img2.jpg" alt="英語と日本語が混在した1970年代の楽譜やレコードジャケット（AI生成）" style="width:100%;border-radius:10px;height:auto;" loading="lazy">
 
+<figcaption style="font-size:.75rem;color:#6b7280;text-align:center;margin-top:.4rem;">イメージ（AI生成）</figcaption>
 </figure>
 
 | アーティスト | 手法 | 代表曲 |
@@ -80,8 +84,9 @@ redirect_from:
 この2つの潮流が合流する形で、1980年代の**ニューミュージック〜シティポップ**が生まれた。
 
 <figure style="margin:1.5rem 0;">
-<img src="/assets/images/japan-music-04-img3.jpg" alt="1970年代日本のレコードスタジオ、アナログ卓とテープレコーダー" style="width:100%;border-radius:10px;height:auto;" loading="lazy">
+<img src="/assets/images/japan-music-04-img3.jpg" alt="1970年代日本のレコードスタジオ、アナログ卓とテープレコーダー（AI生成）" style="width:100%;border-radius:10px;height:auto;" loading="lazy">
 
+<figcaption style="font-size:.75rem;color:#6b7280;text-align:center;margin-top:.4rem;">イメージ（AI生成）</figcaption>
 </figure>
 
 

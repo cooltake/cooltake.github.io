@@ -10,6 +10,8 @@ redirect_from:
   - /2026/05/30/japan-music-08-band-boom/
 ---
 
+<p style="font-size:.8rem;color:#6b7280;margin:0 0 1.2rem;">※本記事の画像はAIで生成したイメージです。実在のアーティスト本人の写真ではありません。</p>
+
 ## 「バンドをやろうぜ」の時代
 
 1987年、BOØWYが解散宣言を出した年、日本中の若者がギターを手に取った。「BOØWY以降」と言われるほど、このバンドの影響は絶大だった。同時期にBUCK-TICK、THE BLUE HEARTS、レッド・ウォーリアーズ、ユニコーンなどが次々とブレイク——「バンドブーム」という社会現象が起きた。
@@ -20,8 +22,9 @@ redirect_from:
 - **イカ天（三宅裕司のいかすバンド天国、1989年〜）**：TBSのオーディション番組。週1回の放送が社会現象に
 
 <figure style="margin:1.5rem 0;">
-<img src="/assets/images/japan-music-08-img1.jpg" alt="1980年代 原宿ホコ天 路上ライブ バンドブーム" style="width:100%;border-radius:10px;height:auto;" loading="lazy">
+<img src="/assets/images/japan-music-08-img1.jpg" alt="1980年代 原宿ホコ天 路上ライブ バンドブーム（AI生成）" style="width:100%;border-radius:10px;height:auto;" loading="lazy">
 
+<figcaption style="font-size:.75rem;color:#6b7280;text-align:center;margin-top:.4rem;">イメージ（AI生成）</figcaption>
 </figure>
 
 
@@ -74,8 +77,9 @@ redirect_from:
 <div style="background:#e8edf2;border-radius:12px;padding:1.5rem;margin:1.5rem 0;border-left:4px solid #1e3a5f;"><h3 style="color:#111827;margin-top:0;">🔊 80年代バンドサウンドの定番機材</h3><ul style="color:#374151;"><li><strong>Marshall JCM800</strong>：布袋寅泰の象徴的なハイゲインサウンド。この時代のロックギタリストの「基準」となったアンプ</li><li><strong>Roland JC-120（ジャズコーラス）</strong>：クリーンとコーラスの組み合わせ。今井寿がよく使用</li><li><strong>BOSS DS-1</strong>：安価で扱いやすい歪み。初心者から上級者まで幅広く使われた</li><li><strong>BOSS CE-2（コーラス）</strong>：布袋寅泰の代名詞。廃番後も中古市場で高値が続く</li><li><strong>BOSS DD-3（デジタルディレイ）</strong>：空間系の定番。クリアなリピート音</li></ul></div>
 
 <figure style="margin:1.5rem 0;">
-<img src="/assets/images/japan-music-08-img2.jpg" alt="エフェクターボード BOSS DS-1 CE-2 DD-3" style="width:100%;border-radius:10px;height:auto;" loading="lazy">
+<img src="/assets/images/japan-music-08-img2.jpg" alt="エフェクターボード BOSS DS-1 CE-2 DD-3（AI生成）" style="width:100%;border-radius:10px;height:auto;" loading="lazy">
 
+<figcaption style="font-size:.75rem;color:#6b7280;text-align:center;margin-top:.4rem;">イメージ（AI生成）</figcaption>
 </figure>
 
 

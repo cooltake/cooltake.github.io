@@ -10,6 +10,8 @@ redirect_from:
   - /2026/05/30/japan-music-03-idol-candies-era/
 ---
 
+<p style="font-size:.8rem;color:#6b7280;margin:0 0 1.2rem;">※本記事の画像はAIで生成したイメージです。実在のアーティスト本人の写真ではありません。</p>
+
 ## 歌謡職人たちが作った黄金時代
 
 1974年〜1978年——この数年間、日本の音楽シーンはキャンディーズとピンクレディーの2大勢力によって塗り替えられた。しかし彼女たちの輝きを支えていたのは、裏方に徹した**音楽職人たち**だった。
@@ -21,8 +23,9 @@ redirect_from:
 彼らが構築した「歌謡曲の文法」は、後の日本の音楽制作に深く根付いていく。
 
 <figure style="margin:1.5rem 0;">
-<img src="/assets/images/japan-music-03-img1.jpg" alt="1970年代 日本のレコーディングスタジオ" style="width:100%;border-radius:10px;height:auto;" loading="lazy">
+<img src="/assets/images/japan-music-03-img1.jpg" alt="1970年代 日本のレコーディングスタジオ（AI生成）" style="width:100%;border-radius:10px;height:auto;" loading="lazy">
 
+<figcaption style="font-size:.75rem;color:#6b7280;text-align:center;margin-top:.4rem;">イメージ（AI生成）</figcaption>
 </figure>
 
 
@@ -79,8 +82,9 @@ E → F#m → C#m → A → E → B（転調感を出す）
 | レコーダー | Studer A80（16トラック） |
 
 <figure style="margin:1.5rem 0;">
-<img src="/assets/images/japan-music-03-img2.jpg" alt="Fender Rhodes と Moog Minimoog シンセサイザー" style="width:100%;border-radius:10px;height:auto;" loading="lazy">
+<img src="/assets/images/japan-music-03-img2.jpg" alt="Fender Rhodes と Moog Minimoog シンセサイザー（AI生成）" style="width:100%;border-radius:10px;height:auto;" loading="lazy">
 
+<figcaption style="font-size:.75rem;color:#6b7280;text-align:center;margin-top:.4rem;">イメージ（AI生成）</figcaption>
 </figure>
 
 
