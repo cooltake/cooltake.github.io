@@ -107,7 +107,7 @@ Fender Rhodesの音色は、以下のプラグインで高品質に再現でき�
 
 現代のDAWで生弦の質感を出すには、**Spitfire LABS（無料）**や**East West Hollywood Strings**が定番。パートを実際の弦楽四重奏のように分けて書くのがポイント。
 
-<div style="margin:.8rem 0;"><span style="display:block;font-size:.78rem;color:#4b5563;margin-bottom:3px;margin-top:6px;">🛒 サウンドハウスで探す</span><a href="https://h.accesstrade.net/sp/cc?rk=01001xqc00os63&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fsearch%2Findex%3Fs_category_cd%3D310" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="display:inline-block;text-decoration:none;"><img src="/assets/images/btn-soundhouse.jpg" alt="サウンドハウスで探す" width="240" style="height:auto;border-radius:8px;display:inline-block;"></a></div>
+<div style="margin:.8rem 0;"><span style="display:block;font-size:.78rem;color:#4b5563;margin-bottom:3px;margin-top:6px;">🛒 サウンドハウスで探す</span><a href="https://h.accesstrade.net/sp/cc?rk=01001xqc00os63&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fsearch%2Findex%2F%3Fsearch_all%3D%25E3%2582%25B9%25E3%2583%2588%25E3%2583%25AA%25E3%2583%25B3%25E3%2582%25B0%25E3%2582%25B9%2520%25E9%259F%25B3%25E6%25BA%2590" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="display:inline-block;text-decoration:none;"><img src="/assets/images/btn-soundhouse.jpg" alt="サウンドハウスで探す" width="240" style="height:auto;border-radius:8px;display:inline-block;"></a></div>
 
 
 ## キャンディーズ・ピンクレディーの曲を聴く

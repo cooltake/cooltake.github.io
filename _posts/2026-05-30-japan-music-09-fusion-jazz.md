@@ -81,7 +81,7 @@ T-SQUAREの「TRUTH」（1987年）は、日本フュージョン史上最も有
 - **Roland JC-120（ジャズコーラス）**：クリーントーンアンプの定番
 - **Eventide Harmonizer**：ピッチシフターを使った空間系エフェクト
 
-<div style="display:flex;gap:1rem;flex-wrap:wrap;align-items:center;margin:.8rem 0;"><span style="display:block;font-size:.78rem;color:#4b5563;margin-bottom:3px;margin-top:6px;">🛒 サウンドハウスで探す</span><a href="https://h.accesstrade.net/sp/cc?rk=01001xqc00os63&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fsearch%2Findex%3Fs_category_cd%3D310" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="display:inline-block;text-decoration:none;"><img src="/assets/images/btn-soundhouse.jpg" alt="サウンドハウスで探す" width="240" style="height:auto;border-radius:8px;display:inline-block;"></a></div>
+<div style="display:flex;gap:1rem;flex-wrap:wrap;align-items:center;margin:.8rem 0;"><span style="display:block;font-size:.78rem;color:#4b5563;margin-bottom:3px;margin-top:6px;">🛒 サウンドハウスで探す</span><a href="https://h.accesstrade.net/sp/cc?rk=01001xqc00os63&url=https%3A%2F%2Fwww.soundhouse.co.jp%2Fsearch%2Findex%2F%3Fsearch_all%3DJC-120" rel="nofollow" referrerpolicy="no-referrer-when-downgrade" style="display:inline-block;text-decoration:none;"><img src="/assets/images/btn-soundhouse.jpg" alt="サウンドハウスで探す" width="240" style="height:auto;border-radius:8px;display:inline-block;"></a></div>
 
 
 ## フュージョンが切り開いた「後の音楽」
