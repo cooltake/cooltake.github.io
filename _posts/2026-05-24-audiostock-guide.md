@@ -55,7 +55,7 @@ redirect_from:
 
 AudioStockでは審査制を採用しており、すべての楽曲が審査を通過する必要があります。
 
-<figure style="margin:2rem 0;max-width:800px;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 180" style="max-width:100%;height:auto;border-radius:10px;display:block;"><rect width="800" height="180" fill="#0f172a" rx="10"/><rect x="20" y="20" width="370" height="140" fill="#1e293b" rx="8" stroke="#22c55e" stroke-width="2"/><text x="205" y="50" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#34d399" font-weight="bold">✅ 審査通過しやすい楽曲</text><text x="40" y="78" font-family="sans-serif" font-size="11" fill="#cbd5e1">● 音質が高い（ノイズ・歪みなし）</text><text x="40" y="98" font-family="sans-serif" font-size="11" fill="#cbd5e1">● 始まりと終わりが自然（フェードアウト等）</text><text x="40" y="118" font-family="sans-serif" font-size="11" fill="#cbd5e1">● 用途が明確なBGM・効果音</text><text x="40" y="138" font-family="sans-serif" font-size="11" fill="#cbd5e1">● 著作権のサンプルを使用していない</text><rect x="410" y="20" width="370" height="140" fill="#1e293b" rx="8" stroke="#ef4444" stroke-width="2"/><text x="595" y="50" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#f87171" font-weight="bold">❌ 審査落ちしやすい楽曲</text><text x="430" y="78" font-family="sans-serif" font-size="11" fill="#cbd5e1">● 録音ノイズが目立つ</text><text x="430" y="98" font-family="sans-serif" font-size="11" fill="#cbd5e1">● 著作権侵害の可能性がある素材を使用</text><text x="430" y="118" font-family="sans-serif" font-size="11" fill="#cbd5e1">● 極端に短い（10秒未満）または長すぎる</text><text x="430" y="138" font-family="sans-serif" font-size="11" fill="#cbd5e1">● AI生成楽曲（2024年以降規約禁止）</text></svg></figure>
+<figure style="margin:2rem 0;max-width:800px;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 180" style="max-width:100%;height:auto;border-radius:10px;display:block;"><rect width="800" height="180" fill="#0f172a" rx="10"/><rect x="20" y="20" width="370" height="140" fill="#1e293b" rx="8" stroke="#22c55e" stroke-width="2"/><text x="205" y="50" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#34d399" font-weight="bold">✅ 審査通過しやすい楽曲</text><text x="40" y="78" font-family="sans-serif" font-size="11" fill="#cbd5e1">● 音質が高い（ノイズ・歪みなし）</text><text x="40" y="98" font-family="sans-serif" font-size="11" fill="#cbd5e1">● 始まりと終わりが自然（フェードアウト等）</text><text x="40" y="118" font-family="sans-serif" font-size="11" fill="#cbd5e1">● 用途が明確なBGM・効果音</text><text x="40" y="138" font-family="sans-serif" font-size="11" fill="#cbd5e1">● 著作権のサンプルを使用していない</text><rect x="410" y="20" width="370" height="140" fill="#1e293b" rx="8" stroke="#ef4444" stroke-width="2"/><text x="595" y="50" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#f87171" font-weight="bold">❌ 審査落ちしやすい楽曲</text><text x="430" y="78" font-family="sans-serif" font-size="11" fill="#cbd5e1">● 録音ノイズが目立つ</text><text x="430" y="98" font-family="sans-serif" font-size="11" fill="#cbd5e1">● 著作権侵害の可能性がある素材を使用</text><text x="430" y="118" font-family="sans-serif" font-size="11" fill="#cbd5e1">● 極端に短い（10秒未満）または長すぎる</text><text x="430" y="138" font-family="sans-serif" font-size="11" fill="#cbd5e1">● AIを使った作品（規約で禁止）</text></svg></figure>
 
 ### 審査通過のための具体的なチェックリスト
 
@@ -66,7 +66,7 @@ AudioStockでは審査制を採用しており、すべての楽曲が審査を�
 - [ ] 著作権フリーの音源・サンプルのみ使用
 - [ ] タイトルと説明文に使用シーン・ジャンルが明記されている
 
-> **重要**: 2024年以降、AudioStockはAI生成楽曲の登録を規約で禁止しています。AI音楽の販売には後述のRouteNote等の配信サービスをご利用ください。
+> **重要**: AudioStockは、Suno・Udioなどの作曲AIや歌声合成ソフトを使った作品の登録を禁止しています（作曲・編曲の一部に使った場合も不可）。AI音楽の販売には後述のRouteNote等の配信サービスをご利用ください。
 
 ---
 
