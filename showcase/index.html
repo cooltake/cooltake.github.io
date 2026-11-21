@@ -549,6 +549,37 @@
     searchTimer = setTimeout(() => { searchQuery = e.target.value.trim(); applyFilter(); }, 300);
   });
 
+  // ---- ONE PLAYER AT A TIME ----
+  // 埋め込みプレーヤー（Suno・Spotify等）は再生の合図を外に出さないため、
+  // 操作されたプレーヤー（フォーカスが入ったiframe）を見張り、別のプレーヤーが
+  // 操作されたら直前のプレーヤーを読み込み直して止める。
+  let activePlayer = null;
+  function stopPlayer(fr) {
+    if (!fr || !fr.isConnected) return;
+    if (fr.src.includes('youtube.com/embed')) {
+      // YouTubeは再生前のサムネイル表示に戻す
+      const wrap = fr.parentElement;
+      if (wrap && wrap.dataset.thumbHtml) { wrap.innerHTML = wrap.dataset.thumbHtml; return; }
+    }
+    fr.replaceWith(fr.cloneNode(true));
+  }
+  function activatePlayer(fr) {
+    if (fr === activePlayer) return;
+    stopPlayer(activePlayer);
+    activePlayer = fr;
+  }
+  setInterval(() => {
+    const a = document.activeElement;
+    if (a && a.tagName === 'IFRAME' && a.closest('.embed-wrap')) activatePlayer(a);
+  }, 250);
+  // YouTubeはサムネイルを押したときにプレーヤーが作られるので、その時点で切り替える
+  document.addEventListener('click', e => {
+    const wrap = e.target.closest('.embed-wrap');
+    if (!wrap || !e.target.closest('.embed-thumb, .play-btn')) return;
+    if (!wrap.dataset.thumbHtml) wrap.dataset.thumbHtml = wrap.innerHTML;
+    setTimeout(() => { const fr = wrap.querySelector('iframe'); if (fr) activatePlayer(fr); }, 0);
+  }, true);
+
   // ---- INIT ----
   loadPosts();
 
