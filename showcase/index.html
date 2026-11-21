@@ -236,6 +236,7 @@
       <button class="genre-btn" data-genre="ボカロ・UTAU">ボカロ・UTAU</button>
       <button class="genre-btn" data-genre="ビートメイク・ヒップホップ">ビートメイク</button>
       <button class="genre-btn" data-genre="アンビエント・実験音楽">アンビエント</button>
+      <button class="genre-btn" data-genre="AI音楽">AI音楽</button>
     </div>
     <div class="filter-right">
       <select class="sort-select" id="sortSelect">
@@ -447,6 +448,12 @@
     if (ncMatch) {
       return `<div class="embed-wrap">
         <iframe src="https://embed.nicovideo.jp/watch/${ncMatch[1]}/script?w=800&h=450" allowfullscreen></iframe>
+      </div>`;
+    }
+    const sunoMatch = url.match(/suno\.com\/(?:song|embed)\/([0-9a-f-]{36})/);
+    if (sunoMatch) {
+      return `<div class="embed-wrap" style="padding-top:0;height:240px">
+        <iframe src="https://suno.com/embed/${sunoMatch[1]}" allow="autoplay; encrypted-media" loading="lazy"></iframe>
       </div>`;
     }
     const spMatch = url.match(/open\.spotify\.com\/(track|album|playlist)\/([\w]+)/);
