@@ -424,15 +424,24 @@
     </div>`;
   }
 
+  // YouTubeはサムネイルを押したときにプレーヤーを作る（属性の中に引用符を書くと壊れるため関数で組み立てる）
+  window.playYouTube = function (img) {
+    const fr = document.createElement('iframe');
+    fr.src = 'https://www.youtube.com/embed/' + encodeURIComponent(img.dataset.yt) + '?autoplay=1';
+    fr.allow = 'autoplay; encrypted-media';
+    fr.allowFullscreen = true;
+    img.parentElement.replaceChildren(fr);
+  };
+
   function buildEmbed(p) {
     const url = p.main_link || '';
-    const ytMatch = url.match(/(?:youtu\.be\/|youtube\.com\/(?:watch\?v=|embed\/))([\w-]{11})/);
+    const ytMatch = url.match(/(?:youtu\.be\/|youtube\.com\/(?:watch\?(?:[^#]*&)?v=|embed\/))([\w-]{11})/);
     if (ytMatch) {
       const vid = ytMatch[1];
       const thumb = p.youtube_thumb || `https://img.youtube.com/vi/${vid}/mqdefault.jpg`;
       return `<div class="embed-wrap">
         <img class="embed-thumb" src="${thumb}" alt="" loading="lazy"
-          onclick="this.parentElement.innerHTML='<iframe src=\\"https://www.youtube.com/embed/${vid}?autoplay=1\\" allow=\\"autoplay; encrypted-media\\" allowfullscreen></iframe>'">
+          data-yt="${vid}" onclick="playYouTube(this)">
         <button class="play-btn" onclick="this.parentElement.querySelector('.embed-thumb').click()">
           <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
         </button>
